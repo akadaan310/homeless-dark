@@ -31,3 +31,4 @@ test-results/
 playwright-report/
 .android-sdk/
 unity/**/*.fbm/
+/dist/
