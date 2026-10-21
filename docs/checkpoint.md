@@ -2,6 +2,8 @@
 
 This is a delivery record derived from the [sole governing constitution](../HOMELESS_DARK_STANDALONE_CONSTITUTION.md), not a replacement brief. **The commission is unfinished and release acceptance is false.** No native game, APK/AAB, rendered gameplay, Galaxy A16 benchmark or worldwide population simulation is delivered by this increment.
 
+Tested implementation commit: `6e72da81efb716cbc47d25687d6958af572c2ca7` on `main`, pushed to the existing remote. Source digest: `dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e`.
+
 ## What runs
 
 With the pinned .NET 8 SDK, `dotnet run --project tools/Dark.Cli -- demo /tmp/homeless-new-demo` creates a local ordinary-member fixture in a new/empty directory. It commits two sign changes to a disk journal, refuses stale authoring, resolves an exact retry once, replays the journal, saves/reloads an NPC's identity/personality/task/causal memories, and reports that NPC declining a ride. `replay` and `replay-npc` inspect those stores against caller-supplied trusted receipts in separate processes. The demo does not provision or authenticate Obex Den. Its receipt sidecars are convenient local data, not independent tamper protection, and the two stores do not form one world transaction.

@@ -225,7 +225,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -247,7 +248,7 @@
       "evidence": [
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -387,7 +388,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -430,7 +432,7 @@
       "evidence": [
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -515,7 +517,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -593,7 +596,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -652,7 +656,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -773,7 +778,7 @@
       "evidence": [
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -877,7 +882,7 @@
       "evidence": [
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -971,7 +976,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1047,7 +1053,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1121,7 +1128,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1200,7 +1208,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1281,7 +1290,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1385,7 +1395,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1492,7 +1503,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1624,7 +1636,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1792,7 +1805,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1901,7 +1915,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -1973,7 +1988,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2068,7 +2084,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2121,7 +2138,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2227,7 +2245,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2325,7 +2344,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2378,7 +2398,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2431,7 +2452,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2600,7 +2622,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2647,7 +2670,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -2943,7 +2967,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3039,7 +3064,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3149,7 +3175,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3229,7 +3256,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3326,7 +3354,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3402,7 +3431,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3514,7 +3544,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3588,7 +3619,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3660,7 +3692,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3823,7 +3856,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3902,7 +3936,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -3992,7 +4027,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4061,7 +4097,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4123,7 +4160,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4271,7 +4309,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4377,7 +4416,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4483,7 +4523,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4678,7 +4719,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4760,7 +4802,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -4860,7 +4903,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5012,7 +5056,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5140,7 +5185,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5599,7 +5645,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5663,7 +5710,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5743,7 +5791,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5823,7 +5872,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -5881,7 +5931,7 @@
       "evidence": [
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -5910,7 +5960,7 @@
       "evidence": [
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -6074,7 +6124,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6203,7 +6254,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6340,7 +6392,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6466,7 +6519,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6540,7 +6594,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6599,7 +6654,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6821,7 +6877,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6905,7 +6962,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -6985,7 +7043,8 @@
         "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
         "report": "evidence/verification/latest.json",
         "recorded_utc": "2026-10-21T08:44:41.829414+00:00",
-        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged."
+        "scope": "Previously cited portable subsets rerun against this working-tree source; whole-clause acceptance unchanged.",
+        "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7"
       }
     },
     {
@@ -7013,7 +7072,7 @@
         },
         {
           "path": "docs/implementation-plan.md",
-          "sha256": "762c0ebe7c1db9d0c5890ebfffc3c959f009c3b5518f9a897c14a899706d0cd2",
+          "sha256": "e2a3f797b8fc200e6fcefb82395167679f7b358f35d96126fc5d9a84596ce535",
           "kind": "updated implementation record; not native execution evidence"
         }
       ],
@@ -7302,5 +7361,11 @@
       }
     ],
     "scope": "118 groups are portable tests, not accepted constitutional clauses; separate reference suites are not added to this count."
+  },
+  "delivery": {
+    "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7",
+    "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
+    "record": "evidence/delivery.json",
+    "release_accepted": false
   }
 }

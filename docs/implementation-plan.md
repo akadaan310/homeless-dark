@@ -17,7 +17,7 @@ Global constraints: Unity 6 URP, Android ARM64, zero new expenditure; one founde
 - [x] Implement local authenticated-authority boundary, bounded constitution compiler, deterministic event history, NPC state and continuity in `packages/com.homeless.dark/Runtime/{Core,History,Population,Protocols}`; executable behavioral fixtures under `tests/Dark.Core.Tests` (HD-005,012,013,029,030,060,069,078,095).
 - [x] Create `unity` project, URP importer, scene build validation, native controls/camera adapter, Android build method and EditMode tests (HD-007,036–040,048,079–082). Missing hero art is an explicit refusal for the visual gate.
 - [x] Develop bounded geographic acquisition/indexing with provenance and global missing-layer report in `tools/geography`, `data` (HD-017–025,088,089). Actual regional ingest never asserts worldwide closure.
-- [ ] Run integration tests, independent review, fix findings, update per-clause ledger, actionable queue and checkpoint; commit tested increments and push without rewriting history (HD-083–099).
+- [x] Run integration tests, independent review, fix findings, update per-clause ledger, actionable queue and checkpoint; commit tested increments and push without rewriting history (HD-083–099).
 - [x] Extend the tested increment with durable inhabitant snapshots, an OSM-derived Tampa plate fixture, original deterministic sound and a strict frame-trace analyzer (HD-028–032,063–065,078,081–082,089,091–092,095). These are portable/source subsets, not native acceptance.
 
 ## Verification and review focus
