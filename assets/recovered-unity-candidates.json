@@ -1,0 +1,130 @@
+{
+  "schema": "homeless.cinematic.unity-source-candidates/0.1",
+  "as_of": "2026-10-21",
+  "target": {
+    "engine": "Unity 6",
+    "renderer": "URP",
+    "android": "ARM64",
+    "new_spend_usd": 0
+  },
+  "acquisition_states": [
+    "source_inspected",
+    "price_verified",
+    "license_verified",
+    "downloaded",
+    "integrity_verified",
+    "unity_imported",
+    "android_rendered",
+    "world_integrated"
+  ],
+  "rule": "Each state requires distinct evidence. No asset is acquired or verified by this registry. No excluded asset sources, paid prerequisites, or stylized stand-ins for cinematic hero art.",
+  "candidates": [
+    {
+      "id": "U001",
+      "name": "Unity Megacity Metro",
+      "url": "https://github.com/Unity-Technologies/megacity-metro",
+      "notes": "city technical reference; Unity Companion License; Git LFS; original city is futuristic, not literal Tampa",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U002",
+      "name": "Unity URP 3D Sample",
+      "url": "https://activation.unity3d.com/demos/urp-3d-sample",
+      "notes": "rendering reference; not a production art library",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U003",
+      "name": "Fake Interiors FREE",
+      "url": "https://assetstore.unity.com/packages/vfx/shaders/fake-interiors-free-104029",
+      "notes": "free-listed URP facade shader; not accessible interiors",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U004",
+      "name": "AERO Volumetric Fog and Mist",
+      "url": "https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/aero-volumetric-fog-and-mist-277702",
+      "notes": "free-listed; must benchmark mobile GPU and verify URP",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U005",
+      "name": "AllSky Free 10 Skyboxes",
+      "url": "https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014",
+      "notes": "free-listed skybox, not real celestial ephemerides",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U006",
+      "name": "Unity Particle Pack",
+      "url": "https://assetstore.unity.com/linkmaker/embed/package/127325/widget-wide",
+      "notes": "free-listed; resolve canonical Unity package",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U007",
+      "name": "War FX",
+      "url": "https://assetstore.unity.com/packages/vfx/particles/war-fx-5669",
+      "notes": "free-listed; optional and nonessential to nonlethal mission",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U008",
+      "name": "Unity First Person + Third Person Controllers",
+      "url": "https://assetstore.unity.com/packages/3d/characters/first-person-third-person-character-controllers-196526",
+      "notes": "free-listed input/control base, not a cinematic human asset",
+      "stage": "source_inspected",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U009",
+      "name": "ambientCG individual PBR materials",
+      "url": "https://ambientcg.com/",
+      "notes": "catalog; individual material selection and rights evidence needed",
+      "stage": "catalog_only",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    },
+    {
+      "id": "U010",
+      "name": "Adobe Mixamo animations",
+      "url": "https://www.mixamo.com/",
+      "notes": "free-use candidate; human account/access; source asset redistribution limits",
+      "stage": "catalog_only",
+      "downloaded": false,
+      "unity_imported": false,
+      "android_rendered": false
+    }
+  ],
+  "unfilled_hero_categories": [
+    "photoreal urban buildings and storefronts",
+    "walkable interiors",
+    "rigged realistic human faces and hair",
+    "detailed drivable cars with interiors",
+    "civil aircraft/boats"
+  ]
+}
