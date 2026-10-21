@@ -1,0 +1,5 @@
+
+[00:00:00.000 --> 00:00:02.920]   Welcome. Take your time, and look around.
+read_audio_data: reading audio data from '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32-16khz.wav' ...
+read_audio_data: trying to decode with miniaudio
+output_txt: saving output to '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32.txt'

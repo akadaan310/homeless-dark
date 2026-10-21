@@ -1,0 +1,194 @@
+418290 dup2(6,2) = 2
+418290 newfstatat(6,"",0x00000040078ea9a0,0x1000) = 0
+Unity Editor version:    6000.1.0f1 (9ea152932a88)
+418290 write(6,0x62057c0,51) = 51
+Branch:                  6000.1/staging
+418290 write(6,0x62057c0,40) = 40
+Build type:              Release
+418290 write(6,0x62057c0,33) = 33
+Batch mode:              YES
+418290 write(6,0x62057c0,29) = 29
+418290 uname(0x40078eb2b8) = 0
+System name:             Linux
+418290 write(6,0x62057c0,31) = 31
+Distro version:          #63~22.04.1-Ubuntu SMP Mon Aug 10 14:47:57 UTC 2026
+418290 write(6,0x62057c0,77) = 77
+Kernel version:          6.8.0-1060-oracle
+418290 write(6,0x62057c0,43) = 43
+Architecture:            x86_64
+418290 write(6,0x62057c0,32) = 32
+418290 openat(-100,"/proc/meminfo",O_RDONLY) = 8
+418290 lseek(8,0,SEEK_SET) = 0
+418290 read(8,0x62067d0,8191) = 1476
+418290 read(8,0x62067d0,8191) = 0
+Available memory:        11932 MB
+418290 write(6,0x62057c0,34) = 34
+418290 gettimeofday(0x00000040078eb228,NULL) = 0 ({tv_sec = 1792578476,tv_usec = 498580},NULL)
+Date:                    2026-10-21T10:27:56Z
+418290 write(6,0x62057c0,46) = 46
+418290 openat(-100,"/home/ubuntu/.local/share/unity3d/prefs",O_RDONLY) = -1 errno=2 (No such file or directory)
+418290 prlimit64(0,7,0,275004699720,275951650736,504) = 0
+418290 prlimit64(0,7,275004699720,0,275951650736,504) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb410) = 0 ({tv_sec = 2147682,tv_nsec = 833951400})
+[Licensing::Module] Trying to connect to existing licensing client channel...
+418290 write(6,0x62057c0,78) = 78
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb160) = 0 ({tv_sec = 2147682,tv_nsec = 834691360})
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 834873920})
+ = 0
+418290 futex(0x00000040200aea58,FUTEX_PRIVATE_FLAG|FUTEX_WAIT,0,0x0000004052abbef8,NULL,0)418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 9
+418290 fcntl(9,F_GETFL) = 2
+418290 fcntl(9,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(9,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(9) = 0
+[Licensing::IpcConnector] Channel LicenseClient-ubuntu doesn't exist
+418290 write(6,0x62057c0,69) = 69
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb270) = 0 ({tv_sec = 2147682,tv_nsec = 839667920})
+418290 pipe2(275004698864,0,248,275103658728,275415519624,7) = 0
+418290 pipe2(275004698856,0,248,275103658728,275415519624,7) = 0
+418290 clone(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|0x11,child_stack=0x0000000000000000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000004010718190) = 418373
+418290 fcntl(9,F_GETFL) = 0
+418290 clone(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|0x11,child_stack=0x0000000000000000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000004010718190) = 0
+418373 set_robust_list(275153781152,24,0,275153781136,0,7) = -1 errno=38 (Function not implemented)
+418373 dup2(11,0) = 0
+418373 dup2(10,1) = 1
+418373 close(9) = 0
+418373 close(12) = 0
+418290 fcntl(12,F_GETFL) = 1
+418290 close(10) = 0
+418290 close(11) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb1a0) = 0 ({tv_sec = 2147682,tv_nsec = 845819400})
+418290 wait4(418373,275004699068,11,0,0,0) = 0
+418290 wait4(418373,275004699060,11,0,0,0) = 0
+[Licensing::Module] Successfully launched the LicensingClient (PId: 418373)
+418290 write(6,0x62057c0,76) = 76
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb270) = 0 ({tv_sec = 2147682,tv_nsec = 847015400})
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb160) = 0 ({tv_sec = 2147682,tv_nsec = 847063960})
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 847073920})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418373 execve("/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client",{"/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client","--namedPipe","Unity-LicenseClient-ubuntu",NULL}) = -1 errno=8 (Exec format error)
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,274979092688) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 853754520})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client: 9: Syntax error: word unexpected (expecting ")")
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 866423760})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 878081600})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 895176040})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 922406160})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147682,tv_nsec = 962112680})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147683,tv_nsec = 19334760})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147683,tv_nsec = 105059960})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147683,tv_nsec = 234418040})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147683,tv_nsec = 426885320})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147683,tv_nsec = 717429520})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147684,tv_nsec = 151402920})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147684,tv_nsec = 800406200})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147685,tv_nsec = 774065320})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147687,tv_nsec = 235422480})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147689,tv_nsec = 426434280})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,7) = 0
+418290 clock_gettime(CLOCK_MONOTONIC_RAW,0x00000040078eb080) = 0 ({tv_sec = 2147692,tv_nsec = 710903960})
+418290 socket(PF_UNIX,SOCK_STREAM,IPPROTO_IP) = 10
+418290 fcntl(10,F_GETFL) = 2
+418290 fcntl(10,F_SETFL,O_RDWR|O_NONBLOCK) = 0
+418290 connect(10,0x78eaf38,38) = -1 errno=2 (No such file or directory)
+418290 close(10) = 0
+418290 clock_nanosleep(0,0,275004698768,275004698768,0,0) = -1 errno=4 (Interrupted system call)
+--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=418288, si_uid=1001} ---

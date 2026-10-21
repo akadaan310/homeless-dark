@@ -1,0 +1,6 @@
+
+[00:00:00.000 --> 00:00:02.760]   حال تريد أحاب بها مكاة
+[00:00:02.760 --> 00:00:05.480]   إن كما كاة بها في أيوقت
+read_audio_data: reading audio data from '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb-16khz.wav' ...
+read_audio_data: trying to decode with miniaudio
+output_txt: saving output to '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb.txt'

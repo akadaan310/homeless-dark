@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "3e0c70f4224fa90f3dc8a780c571389350e054c408eea9fab6e27c0ef133f0b3",
+  "filename": "3e0c70f4224fa90f3dc8a780c571389350e054c408eea9fab6e27c0ef133f0b3.wav",
+  "event_id": "evt:arrival:ar:rest",
+  "speaker": "npc:ana",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:rest",
+    "speaker": "npc:ana",
+    "language": "ar",
+    "act": "rest",
+    "slots": {}
+  },
+  "caption": "أحتاج إلى بعض الراحة.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "ar",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "ar_dict": "59bb2a9d521e53808927a44b3fe757893913c702837b25d9a96e3753374b5eab",
+      "lang/sem/ar": "43f418f8140e5a7bd7096963da20ccba9247f6be1fcdb08cb53dd7967dd72eee"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "bc011099517deca0fd56ab0171433e5f8c90768da085878c9a4d90d983899b73",
+  "synthesis_seconds": 0.018319705966860056,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 57239,
+  "duration_seconds": 2.595873015873016,
+  "peak_abs": 16070,
+  "pcm_rms": 0.07225662608796361,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

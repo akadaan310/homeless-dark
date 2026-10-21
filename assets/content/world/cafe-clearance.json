@@ -1,0 +1,802 @@
+{
+  "schema": "dark.cafe-clearance/1",
+  "recipe_sha256": "b3fda50c1642ca2626c29dabd99829f34c28c658e84a839cd7c2a06c0ab8cfbd",
+  "geometry_sha256": "d11773e8fd64a69048e67f96d0f8aefc7cee031ebfea2ce75983aa00010bcb73",
+  "translation_m": [
+    8,
+    0,
+    2.5
+  ],
+  "body_vertical_interval_m": [
+    0.1,
+    1.8
+  ],
+  "pedestrian_radius_applied_by_authority_m": 0.3,
+  "rectangles": [
+    {
+      "group": "shell_rear_and_sides",
+      "bounds": [
+        8,
+        2.68,
+        8.22,
+        10.5
+      ]
+    },
+    {
+      "group": "shell_rear_and_sides",
+      "bounds": [
+        19.78,
+        2.68,
+        20,
+        10.5
+      ]
+    },
+    {
+      "group": "shell_rear_and_sides",
+      "bounds": [
+        8.22,
+        10.28,
+        19.78,
+        10.5
+      ]
+    },
+    {
+      "group": "front_brick_plinth_and_piers",
+      "bounds": [
+        8,
+        2.5,
+        8.4,
+        2.76
+      ]
+    },
+    {
+      "group": "front_brick_plinth_and_piers",
+      "bounds": [
+        12.9,
+        2.5,
+        13.4,
+        2.76
+      ]
+    },
+    {
+      "group": "front_brick_plinth_and_piers",
+      "bounds": [
+        14.6,
+        2.5,
+        15.1,
+        2.76
+      ]
+    },
+    {
+      "group": "front_brick_plinth_and_piers",
+      "bounds": [
+        19.6,
+        2.5,
+        20,
+        2.76
+      ]
+    },
+    {
+      "group": "front_brick_plinth_and_piers",
+      "bounds": [
+        8.4,
+        2.5,
+        12.9,
+        2.76
+      ]
+    },
+    {
+      "group": "front_brick_plinth_and_piers",
+      "bounds": [
+        15.1,
+        2.5,
+        19.6,
+        2.76
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        8.4,
+        2.445,
+        8.455,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        9.9,
+        2.445,
+        9.955,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        11.4,
+        2.445,
+        11.455,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        12.85,
+        2.445,
+        12.905,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        8.4,
+        2.445,
+        12.9,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        8.365,
+        2.34,
+        12.935,
+        2.81
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        15.1,
+        2.445,
+        15.155,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        16.6,
+        2.445,
+        16.655,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        18.1,
+        2.445,
+        18.155,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        19.55,
+        2.445,
+        19.605,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        15.1,
+        2.445,
+        19.6,
+        2.72
+      ]
+    },
+    {
+      "group": "window_mullions_sills",
+      "bounds": [
+        15.065,
+        2.34,
+        19.635,
+        2.81
+      ]
+    },
+    {
+      "group": "entrance_frame",
+      "bounds": [
+        13.36,
+        2.44,
+        13.42,
+        2.75
+      ]
+    },
+    {
+      "group": "entrance_frame",
+      "bounds": [
+        14.6,
+        2.44,
+        14.66,
+        2.75
+      ]
+    },
+    {
+      "group": "door_leaf_open_static",
+      "bounds": [
+        13.401958,
+        2.617639,
+        13.496583,
+        2.699424
+      ]
+    },
+    {
+      "group": "door_leaf_open_static",
+      "bounds": [
+        13.729516,
+        3.625759,
+        13.824141,
+        3.707544
+      ]
+    },
+    {
+      "group": "door_leaf_open_static",
+      "bounds": [
+        13.401958,
+        2.617639,
+        13.824141,
+        3.707544
+      ]
+    },
+    {
+      "group": "door_glass",
+      "bounds": [
+        13.458541,
+        2.687063,
+        13.767558,
+        3.63812
+      ]
+    },
+    {
+      "group": "door_pull",
+      "bounds": [
+        13.806801,
+        3.458379,
+        13.844603,
+        3.496182
+      ]
+    },
+    {
+      "group": "service_counter",
+      "bounds": [
+        16.9,
+        8.0,
+        19.25,
+        8.75
+      ]
+    },
+    {
+      "group": "service_counter",
+      "bounds": [
+        16.84,
+        7.94,
+        19.31,
+        8.81
+      ]
+    },
+    {
+      "group": "counter_panel_recesses",
+      "bounds": [
+        17.05,
+        7.96,
+        17.53,
+        8.0
+      ]
+    },
+    {
+      "group": "counter_panel_recesses",
+      "bounds": [
+        17.7,
+        7.96,
+        18.18,
+        8.0
+      ]
+    },
+    {
+      "group": "counter_panel_recesses",
+      "bounds": [
+        18.35,
+        7.96,
+        18.83,
+        8.0
+      ]
+    },
+    {
+      "group": "table_0_top",
+      "bounds": [
+        9.45,
+        4.65,
+        10.55,
+        5.75
+      ]
+    },
+    {
+      "group": "table_0_pedestal",
+      "bounds": [
+        9.945,
+        5.145,
+        10.055,
+        5.255
+      ]
+    },
+    {
+      "group": "chair_0_-1_seat",
+      "bounds": [
+        8.91,
+        4.97,
+        9.37,
+        5.43
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        8.974,
+        5.034,
+        9.006,
+        5.066
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        8.974,
+        5.334,
+        9.006,
+        5.366
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        9.274,
+        5.034,
+        9.306,
+        5.066
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        9.274,
+        5.334,
+        9.306,
+        5.366
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        8.944,
+        5.004,
+        8.976,
+        5.036
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        8.944,
+        5.364,
+        8.976,
+        5.396
+      ]
+    },
+    {
+      "group": "chair_0_-1_frame",
+      "bounds": [
+        8.935,
+        5.0,
+        8.985,
+        5.4
+      ]
+    },
+    {
+      "group": "chair_0_1_seat",
+      "bounds": [
+        10.63,
+        4.97,
+        11.09,
+        5.43
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        10.694,
+        5.034,
+        10.726,
+        5.066
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        10.694,
+        5.334,
+        10.726,
+        5.366
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        10.994,
+        5.034,
+        11.026,
+        5.066
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        10.994,
+        5.334,
+        11.026,
+        5.366
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        11.024,
+        5.004,
+        11.056,
+        5.036
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        11.024,
+        5.364,
+        11.056,
+        5.396
+      ]
+    },
+    {
+      "group": "chair_0_1_frame",
+      "bounds": [
+        11.015,
+        5.0,
+        11.065,
+        5.4
+      ]
+    },
+    {
+      "group": "table_1_top",
+      "bounds": [
+        11.55,
+        7.45,
+        12.65,
+        8.55
+      ]
+    },
+    {
+      "group": "table_1_pedestal",
+      "bounds": [
+        12.045,
+        7.945,
+        12.155,
+        8.055
+      ]
+    },
+    {
+      "group": "chair_1_-1_seat",
+      "bounds": [
+        11.01,
+        7.77,
+        11.47,
+        8.23
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.074,
+        7.834,
+        11.106,
+        7.866
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.074,
+        8.134,
+        11.106,
+        8.166
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.374,
+        7.834,
+        11.406,
+        7.866
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.374,
+        8.134,
+        11.406,
+        8.166
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.044,
+        7.804,
+        11.076,
+        7.836
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.044,
+        8.164,
+        11.076,
+        8.196
+      ]
+    },
+    {
+      "group": "chair_1_-1_frame",
+      "bounds": [
+        11.035,
+        7.8,
+        11.085,
+        8.2
+      ]
+    },
+    {
+      "group": "chair_1_1_seat",
+      "bounds": [
+        12.73,
+        7.77,
+        13.19,
+        8.23
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        12.794,
+        7.834,
+        12.826,
+        7.866
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        12.794,
+        8.134,
+        12.826,
+        8.166
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        13.094,
+        7.834,
+        13.126,
+        7.866
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        13.094,
+        8.134,
+        13.126,
+        8.166
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        13.124,
+        7.804,
+        13.156,
+        7.836
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        13.124,
+        8.164,
+        13.156,
+        8.196
+      ]
+    },
+    {
+      "group": "chair_1_1_frame",
+      "bounds": [
+        13.115,
+        7.8,
+        13.165,
+        8.2
+      ]
+    },
+    {
+      "group": "table_2_top",
+      "bounds": [
+        15.35,
+        4.75,
+        16.45,
+        5.85
+      ]
+    },
+    {
+      "group": "table_2_pedestal",
+      "bounds": [
+        15.845,
+        5.245,
+        15.955,
+        5.355
+      ]
+    },
+    {
+      "group": "chair_2_-1_seat",
+      "bounds": [
+        14.81,
+        5.07,
+        15.27,
+        5.53
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        14.874,
+        5.134,
+        14.906,
+        5.166
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        14.874,
+        5.434,
+        14.906,
+        5.466
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        15.174,
+        5.134,
+        15.206,
+        5.166
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        15.174,
+        5.434,
+        15.206,
+        5.466
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        14.844,
+        5.104,
+        14.876,
+        5.136
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        14.844,
+        5.464,
+        14.876,
+        5.496
+      ]
+    },
+    {
+      "group": "chair_2_-1_frame",
+      "bounds": [
+        14.835,
+        5.1,
+        14.885,
+        5.5
+      ]
+    },
+    {
+      "group": "chair_2_1_seat",
+      "bounds": [
+        16.53,
+        5.07,
+        16.99,
+        5.53
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.594,
+        5.134,
+        16.626,
+        5.166
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.594,
+        5.434,
+        16.626,
+        5.466
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.894,
+        5.134,
+        16.926,
+        5.166
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.894,
+        5.434,
+        16.926,
+        5.466
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.924,
+        5.104,
+        16.956,
+        5.136
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.924,
+        5.464,
+        16.956,
+        5.496
+      ]
+    },
+    {
+      "group": "chair_2_1_frame",
+      "bounds": [
+        16.915,
+        5.1,
+        16.965,
+        5.5
+      ]
+    }
+  ],
+  "approximation": "conservative AABBs per source box/cylinder; door transformed before projection",
+  "native_collision_validation": "NOT_RUN"
+}

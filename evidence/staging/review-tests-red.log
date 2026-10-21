@@ -1,0 +1,39 @@
+test_actual_mutation_after_reserve_is_refused_at_activation (test_staging.StagingTests) ... ok
+test_allocator_exact_oracle_and_deterministic_counterexample (test_staging.StagingTests) ... ok
+test_bad_collision_spawn_and_decoder_refuse (test_staging.StagingTests) ... ok
+test_bootstrap_manifest_hashes_actual_known_art_audio (test_staging.StagingTests) ... ok
+test_caller_manifest_mutation_cannot_rebind_content (test_staging.StagingTests) ... ERROR
+test_cancel_expiry_failure_and_hysteresis (test_staging.StagingTests) ... ok
+test_current_activation_authority_and_actual_preconditions (test_staging.StagingTests) ... ok
+test_expired_reservation_and_wrong_order_refuse (test_staging.StagingTests) ... ok
+test_fifo_parent_symlink_and_missing_file_fail_promptly (test_staging.StagingTests) ... ok
+test_full_real_local_lifecycle_and_retirement (test_staging.StagingTests) ... ok
+test_idempotency_requires_current_scope_and_snapshot_continuity (test_staging.StagingTests) ... ok
+test_integrity_and_size_changes_refuse_without_partial_state (test_staging.StagingTests) ... ok
+test_low_speed_confidence_and_stale_path_estimates (test_staging.StagingTests) ... ok
+test_path_escape_symlink_and_special_file_refuse (test_staging.StagingTests) ... ok
+test_prediction_preparation_cannot_activate_or_move_actor (test_staging.StagingTests) ... ok
+test_quota_and_cancelled_prediction_baiting (test_staging.StagingTests) ... ok
+test_restore_rejects_catalog_change_and_malformed_state (test_staging.StagingTests) ... ok
+test_small_budget_deduplicates_shared_assets (test_staging.StagingTests) ... ok
+
+======================================================================
+ERROR: test_caller_manifest_mutation_cannot_rebind_content (test_staging.StagingTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_staging.py", line 73, in test_caller_manifest_mutation_cannot_rebind_content
+    for op in ['PREDICT','ADMIT','STAGE','VERIFY','DECODE']:self.call(op)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_staging.py", line 31, in call
+    return self.registry.apply(actor,scopes,req,tick,actual=actual)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/staging.py", line 212, in apply
+    candidate=Staging(self.root,self.manifest,s);candidate._validate();self._state=s;return copy.deepcopy(response)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/staging.py", line 128, in _validate
+    require(c['sha256']==self.assets[key]['sha256'] and c['bytes']==self.assets[key]['bytes'] and type(c['last_tick']) is int and 0<=c['last_tick']<=s['tick'],'CACHE','verified local asset binding')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/staging.py", line 30, in require
+    if not value:raise StageRefused(code,why)
+dark_server.staging.StageRefused: CACHE: verified local asset binding
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.686s
+
+FAILED (errors=1)

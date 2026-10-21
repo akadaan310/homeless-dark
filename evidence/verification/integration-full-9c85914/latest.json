@@ -1,0 +1,304 @@
+{
+  "schema": "homeless.portable-verification/1",
+  "recorded_utc": "2026-10-21T10:49:52.207951+00:00",
+  "base_commit": "d9907a23fdc39206f6c505c1044c08896d079b5b",
+  "working_tree_source_sha256": "9c85914b0ea164d5668bf34a6b37f9434d0b82ece2066b0c17ac5c598bcd3483",
+  "source_unchanged_during_run": true,
+  "results": [
+    {
+      "name": "core",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.Core.Tests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 9.691,
+      "log": "evidence/verification/core.log",
+      "log_sha256": "3e17158da851e3998af49283ac5bc843764c05f97554bfdd131602dbb80ff5cb"
+    },
+    {
+      "name": "mathematics",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.Math.Tests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 9.786,
+      "log": "evidence/verification/mathematics.log",
+      "log_sha256": "95822c67e251da40c5f74283b0a24d631206a0d523eab7f9002110d884a39cd5"
+    },
+    {
+      "name": "cli-build",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "build",
+        "tools/Dark.Cli"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 7.768,
+      "log": "evidence/verification/cli-build.log",
+      "log_sha256": "4867d682e266ef015c9d1008406e871d06884af0f2c886970e5956dee67e4606"
+    },
+    {
+      "name": "cli-projection",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 5.632,
+      "log": "evidence/verification/cli-projection.log",
+      "log_sha256": "dc3ddd191182b2b2f74a3f52e18a4228231ec9509faa57210d5657547e6e94ca"
+    },
+    {
+      "name": "art",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/art",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.801,
+      "log": "evidence/verification/art.log",
+      "log_sha256": "7f994896edb2606c32ab8ad4ed51fac9f6ff924b530299637f58c8f048da6e2a"
+    },
+    {
+      "name": "geography",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/geography",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 23.372,
+      "log": "evidence/verification/geography.log",
+      "log_sha256": "f8478415b20d092bfd1e7f7b459e3be3b75bbc7595997a2f0b8af56a12023b25"
+    },
+    {
+      "name": "art-integrity",
+      "argv": [
+        "/usr/bin/python3",
+        "tools/art/fetch_materials.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.344,
+      "log": "evidence/verification/art-integrity.log",
+      "log_sha256": "48af14c66dc95bc4722425e1249b317470ed8e6bddd851c12bb3c4428d87b502"
+    },
+    {
+      "name": "commission",
+      "argv": [
+        "/usr/bin/python3",
+        "tools/commission.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.108,
+      "log": "evidence/verification/commission.log",
+      "log_sha256": "f1233f5fac3f2d87bc33e5a174d13d05f219324efeebd825103c7fd45ffb6f1e"
+    },
+    {
+      "name": "audio",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/audio",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 5.442,
+      "log": "evidence/verification/audio.log",
+      "log_sha256": "c6e3c356a188a36fa525e726c372915ce41b9fabd0fce380d3af9d3c89bcc8b2"
+    },
+    {
+      "name": "telemetry",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/telemetry",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 1.481,
+      "log": "evidence/verification/telemetry.log",
+      "log_sha256": "ecdc2a872a2e476186b8aa81d4238123c083bced9d80d5fe088a4eed5ba86ef7"
+    },
+    {
+      "name": "population",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.Population.Tests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 5.695,
+      "log": "evidence/verification/population.log",
+      "log_sha256": "fb3dc0062d50af7671609c11fe8ae1a9f2b6f5c7a23d2ed848105f306f085d75"
+    },
+    {
+      "name": "tampa-kernel",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.Geography.Tests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 5.482,
+      "log": "evidence/verification/tampa-kernel.log",
+      "log_sha256": "f597e4dddbb00f4a398273da887151ddb8d5eeac2449badae22404d5b9ae9516"
+    },
+    {
+      "name": "global-population",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.PopulationAllocation.Tests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 7.094,
+      "log": "evidence/verification/global-population.log",
+      "log_sha256": "efeffb2b782d928241a03107149e7d3c0680e014fbd4bdb933c697373c93c3d8"
+    },
+    {
+      "name": "world-server",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/server",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 118.892,
+      "log": "evidence/verification/world-server.log",
+      "log_sha256": "383e3aeec0612539efcb4f2d7aed3bc6918d47b1341ff89fb2731c6096c6ff62"
+    },
+    {
+      "name": "content",
+      "argv": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/content",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 0.68,
+      "log": "evidence/verification/content.log",
+      "log_sha256": "9d25bbfe0531e8342a0ecc3aa861d3635eeb2bcc4169ec8f85571993d58cf904"
+    },
+    {
+      "name": "native-wire",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tools/environment/WorldWireTests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 3.732,
+      "log": "evidence/verification/native-wire.log",
+      "log_sha256": "f66a4879c9f06ea30b105ae962c1a950934b56774efbd2358fd3d6f9655afc1e"
+    },
+    {
+      "name": "native-wire-interop",
+      "argv": [
+        "/usr/bin/python3",
+        "tools/environment/world_wire_check.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 4.677,
+      "log": "evidence/verification/native-wire-interop.log",
+      "log_sha256": "ffd18e22fe4ee3df068cbd33cd4ec0c396a560304a6cbaaccd053d703bd044c7"
+    },
+    {
+      "name": "terrain-wire",
+      "argv": [
+        "/usr/bin/python3",
+        "tools/environment/terrain_wire_check.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 8.345,
+      "log": "evidence/verification/terrain-wire.log",
+      "log_sha256": "7001625ceea7de5ebdd5aef796be665ebeac58bea87a67928b868e4385cbc159"
+    },
+    {
+      "name": "unity-api-compile",
+      "argv": [
+        "/usr/bin/python3",
+        "tools/environment/unity_api_check.py",
+        "--editor",
+        "/tmp/homeless-native/unity-squashfs/Editor",
+        "--dotnet",
+        "/tmp/homeless-dotnet/dotnet"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 7.568,
+      "log": "evidence/verification/unity-api-compile.log",
+      "log_sha256": "c0c4b7ba96122000324157e3cd6741c37e7f7d0009381126b60525022b922de0"
+    }
+  ],
+  "unity_import": "NOT_RUN",
+  "unity_adapter_compile": "PASS",
+  "android_build": "NOT_RUN",
+  "device_tests": "NOT_RUN",
+  "native_visual_acceptance": "NOT_RUN",
+  "release_accepted": false
+}

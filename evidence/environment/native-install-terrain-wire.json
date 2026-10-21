@@ -1,0 +1,11 @@
+{
+  "schema": "dark.terrain-wire-check/1",
+  "status": "PASS",
+  "exit_code": 0,
+  "actual_source_grids": 3,
+  "samples_per_grid": 1089,
+  "scope": "Actual Python source-backed geography -> exact C# Unity contract; no engine substitutes.",
+  "native_mesh_rendering": "NOT_RUN",
+  "native_terrain_collision": "NOT_IMPLEMENTED",
+  "vertical_reference": "GEBCO approximate MSL rendered with explicitly assumed zero geoid offset; no ellipsoid conversion"
+}

@@ -1,0 +1,66 @@
+{
+  "asset": "RotorShuttle",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -4.599999904632568,
+          4.599999904632568
+        ],
+        [
+          -4.549999713897705,
+          6.069999694824219
+        ],
+        [
+          0.0680365115404129,
+          3.049999952316284
+        ]
+      ],
+      "vertices": 20240
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -4.5852532386779785,
+          4.5852532386779785
+        ],
+        [
+          -4.535253524780273,
+          6.068689823150635
+        ],
+        [
+          0.0680365115404129,
+          3.049999952316284
+        ]
+      ],
+      "vertices": 20240
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -4.599999904632568,
+          4.599999904632568
+        ],
+        [
+          -4.549999713897705,
+          6.070000171661377
+        ],
+        [
+          0.0680365115404129,
+          3.049999952316284
+        ]
+      ],
+      "vertices": 20240
+    }
+  ],
+  "preview": "evidence/content/RotorShuttle-source-preview.png"
+}

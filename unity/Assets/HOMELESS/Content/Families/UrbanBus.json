@@ -1,0 +1,39 @@
+{
+  "name": "UrbanBus",
+  "family": "bus",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 25946,
+  "mesh_objects": 193,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -1.25,
+      1.25
+    ],
+    [
+      -4.434999942779541,
+      4.510000228881836
+    ],
+    [
+      0.019999980926513672,
+      2.7799999713897705
+    ]
+  ],
+  "attachments": {
+    "driver": "DriverOccupant",
+    "wheels": 4,
+    "seats": 21
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

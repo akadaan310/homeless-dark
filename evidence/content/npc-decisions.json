@@ -1,0 +1,323 @@
+{
+  "schema": "dark.npc-decision-evidence/1",
+  "tests": 12,
+  "result": "PASS",
+  "seeded_exact_nash_games": 128,
+  "game": {
+    "schema": "dark.exact-nash2x2/1",
+    "row_utilities": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "column_utilities": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "algorithm": "exact rational support/indifference enumeration",
+    "selection": "maximum summed utility, then lexicographic probabilities",
+    "selected": {
+      "row_probability_0": {
+        "numerator": 1,
+        "denominator": 3
+      },
+      "column_probability_0": {
+        "numerator": 1,
+        "denominator": 4
+      },
+      "expected_utility_exact": [
+        {
+          "numerator": 3,
+          "denominator": 4
+        },
+        {
+          "numerator": 2,
+          "denominator": 3
+        }
+      ],
+      "expected_utilities": [
+        0.75,
+        0.6666666666666666
+      ],
+      "regret_exact": [
+        {
+          "numerator": 0,
+          "denominator": 1
+        },
+        {
+          "numerator": 0,
+          "denominator": 1
+        }
+      ],
+      "regrets": [
+        0.0,
+        0.0
+      ],
+      "max_regret": 0.0,
+      "support": "mixed"
+    },
+    "equilibria": [
+      {
+        "row_probability_0": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "column_probability_0": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "expected_utility_exact": [
+          {
+            "numerator": 3,
+            "denominator": 4
+          },
+          {
+            "numerator": 2,
+            "denominator": 3
+          }
+        ],
+        "expected_utilities": [
+          0.75,
+          0.6666666666666666
+        ],
+        "regret_exact": [
+          {
+            "numerator": 0,
+            "denominator": 1
+          },
+          {
+            "numerator": 0,
+            "denominator": 1
+          }
+        ],
+        "regrets": [
+          0.0,
+          0.0
+        ],
+        "max_regret": 0.0,
+        "support": "mixed"
+      }
+    ],
+    "baselines": {
+      "uniform": {
+        "row_probability_0": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "column_probability_0": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "expected_utility_exact": [
+          {
+            "numerator": 1,
+            "denominator": 1
+          },
+          {
+            "numerator": 3,
+            "denominator": 4
+          }
+        ],
+        "expected_utilities": [
+          1.0,
+          0.75
+        ],
+        "regret_exact": [
+          {
+            "numerator": 1,
+            "denominator": 2
+          },
+          {
+            "numerator": 1,
+            "denominator": 4
+          }
+        ],
+        "regrets": [
+          0.5,
+          0.25
+        ],
+        "max_regret": 0.5,
+        "support": "mixed"
+      },
+      "myopic": {
+        "row_probability_0": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "column_probability_0": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "expected_utility_exact": [
+          {
+            "numerator": 0,
+            "denominator": 1
+          },
+          {
+            "numerator": 2,
+            "denominator": 1
+          }
+        ],
+        "expected_utilities": [
+          0.0,
+          2.0
+        ],
+        "regret_exact": [
+          {
+            "numerator": 1,
+            "denominator": 1
+          },
+          {
+            "numerator": 0,
+            "denominator": 1
+          }
+        ],
+        "regrets": [
+          1.0,
+          0.0
+        ],
+        "max_regret": 1.0,
+        "support": "pure"
+      }
+    },
+    "assumptions": [
+      "two players choose independently from two actions",
+      "utilities are supplied model values, not inferred human preferences"
+    ],
+    "maximum_profiles_checked": 16,
+    "strategic_realism_claim": false
+  },
+  "schedule_proposals": [
+    {
+      "schema": "dark.npc-proposal/1",
+      "npc_id": "npc:ana",
+      "tick": 100,
+      "world_revision": 7,
+      "precondition_digest": "76c6c0ab652a218a64b5a3924cc32f4cc4555771bc0435fef2d20442ed960a94",
+      "action": {
+        "type": "travel",
+        "destination": "work",
+        "purpose": "work"
+      },
+      "candidate_state": {
+        "schema": "dark.npc-state/1",
+        "npc_id": "npc:ana",
+        "roles": {
+          "home": "home",
+          "work": "work",
+          "social": "cafe"
+        },
+        "work_window": [
+          100,
+          200
+        ],
+        "traits": {
+          "duty": 60,
+          "sociability": 50
+        },
+        "tick": 100,
+        "needs": {
+          "fatigue": 255,
+          "company": 310
+        },
+        "remainders": {
+          "fatigue": 0,
+          "company": 0
+        },
+        "budget": {
+          "remaining": 97,
+          "window_start": 100
+        },
+        "beliefs": {},
+        "receipts": {},
+        "decision_count": 1,
+        "definition_sha256": "5eaafec96f743548455bde83e1c1aefc6794b3df143dac41bc0e78bf566067ac"
+      },
+      "witness": {
+        "causal_observations": [],
+        "on_work_schedule": true,
+        "needs": {
+          "fatigue": 255,
+          "company": 310
+        },
+        "budget_before": 100,
+        "cost": 3,
+        "physical_validation": "NOT_RUN"
+      },
+      "authority_granted": false,
+      "durable_commit_performed": false
+    },
+    {
+      "schema": "dark.npc-proposal/1",
+      "npc_id": "npc:ana",
+      "tick": 101,
+      "world_revision": 7,
+      "precondition_digest": "d39ee58b3ff258e4e837083632d2be8b9d082c64d3be007802dd60f03f224529",
+      "action": {
+        "type": "work",
+        "destination": "work"
+      },
+      "candidate_state": {
+        "schema": "dark.npc-state/1",
+        "npc_id": "npc:ana",
+        "roles": {
+          "home": "home",
+          "work": "work",
+          "social": "cafe"
+        },
+        "work_window": [
+          100,
+          200
+        ],
+        "traits": {
+          "duty": 60,
+          "sociability": 50
+        },
+        "tick": 101,
+        "needs": {
+          "fatigue": 255,
+          "company": 310
+        },
+        "remainders": {
+          "fatigue": 1,
+          "company": 1
+        },
+        "budget": {
+          "remaining": 95,
+          "window_start": 100
+        },
+        "beliefs": {},
+        "receipts": {},
+        "decision_count": 2,
+        "definition_sha256": "5eaafec96f743548455bde83e1c1aefc6794b3df143dac41bc0e78bf566067ac"
+      },
+      "witness": {
+        "causal_observations": [],
+        "on_work_schedule": true,
+        "needs": {
+          "fatigue": 255,
+          "company": 310
+        },
+        "budget_before": 97,
+        "cost": 2,
+        "physical_validation": "NOT_RUN"
+      },
+      "authority_granted": false,
+      "durable_commit_performed": false
+    }
+  ],
+  "physical_travel": "NOT_PERFORMED_BY_DECISION_MODULE",
+  "world_integration": "owned by root; requires independent transaction and scenario tests",
+  "preconditions": "Caller supplies currently admitted local observations, actual activity and world revision. Candidate state is never committed here."
+}

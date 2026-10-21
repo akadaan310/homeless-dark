@@ -1,0 +1,60 @@
+{
+  "schema": "dark.unity-correct-ipc-probe/1",
+  "commands": {
+    "licensing": [
+      "qemu-x86_64",
+      "-L",
+      "/tmp/homeless-native/x64",
+      "/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client",
+      "--namedPipe",
+      "Unity-LicenseClient-ubuntu"
+    ],
+    "editor": [
+      "qemu-x86_64",
+      "-L",
+      "/tmp/homeless-native/x64",
+      "/tmp/homeless-native/unity-squashfs/Editor/Unity",
+      "-batchmode",
+      "-nographics",
+      "-quit",
+      "-createProject",
+      "/dev/shm/homeless-unity-correct-ipc-project",
+      "-logFile",
+      "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-correct-ipc-editor-detail.log"
+    ]
+  },
+  "licensing_environment": {
+    "DOTNET_GCHeapHardLimit": "0x10000000",
+    "DOTNET_GCConserveMemory": "9",
+    "DOTNET_PROCESSOR_COUNT": "2"
+  },
+  "correct_socket_ready": true,
+  "exit_codes": {
+    "licensing": 143,
+    "editor": 1
+  },
+  "limit_or_failure": null,
+  "elapsed_seconds": 31.658517172094434,
+  "minimum_available_memory_bytes": 5035274240,
+  "peak_diagnostic_output_bytes": 115,
+  "physical_disk_reserve_bytes": 1610612736,
+  "scope": "Unchanged official Editor and licensing client with exact Unity-prefixed IPC name; no activation or bypass requested",
+  "gameplay_project_imported": false,
+  "editor_result": "NO_VALID_UNITY_EDITOR_LICENSE",
+  "actual_editor_licensing_handshake": "PASS",
+  "license_activated": false,
+  "licensing_shutdown": "Owned IPC server terminated by harness after Editor exited; exit143 is its signal shutdown.",
+  "editor_log_redaction": {
+    "fields": [
+      "Session Id",
+      "Correlation Id",
+      "External correlation Id",
+      "Machine Id"
+    ],
+    "original_sha256": "02a4079faf0ed73f1149410dbb4d7edf04629f82536970b5ea96c408456e7ab6",
+    "redacted_sha256": "58b1edc31ca44bb11627ea029bfe3da3ec46979a37abc5b1259a8f492b9e9a79",
+    "private_original": "/tmp/homeless-native/unity-correct-ipc-editor-detail.private.log"
+  },
+  "final_diagnostic_log_bytes": 2196,
+  "sampled_output_cap_scope": "Project plus console logs monitored; final Editor-detail log size separately recorded (unlicensed startup wrote no project data)."
+}

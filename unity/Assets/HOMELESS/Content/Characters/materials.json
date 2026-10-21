@@ -1,0 +1,132 @@
+{
+  "schema": "dark.character-material-bindings/1",
+  "bindings": [
+    {
+      "material": "Citizen_Skin",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/young_lightskinned_male_diffuse.png",
+        "source": "assets/content/makehuman/system/skins/young_caucasian_male/young_lightskinned_male_diffuse.png",
+        "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+        "srgb": true
+      }
+    },
+    {
+      "material": "Citizen_Skin_Alternate",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/middleage_darkskinned_male_diffuse.png",
+        "source": "assets/content/makehuman/system/skins/middleage_african_male/middleage_darkskinned_male_diffuse.png",
+        "sha256": "ced478cfdd2b86391f0f92a4408b287ad70adb0dd0e9271ba606d0b028b47c6b",
+        "srgb": true
+      }
+    },
+    {
+      "material": "Outfit_Material",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/male_casualsuit01_diffuse.png",
+        "source": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_diffuse.png",
+        "sha256": "3fd0bba5dcbdea0ac427f644a6c7c298938f7369b8f96626621ce1e88989394e",
+        "srgb": true
+      },
+      "normal": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/male_casualsuit01_normal.png",
+        "source": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_normal.png",
+        "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+        "srgb": false
+      }
+    },
+    {
+      "material": "Hair_Material",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": true,
+      "cutoff": 0.45,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/short01_diffuse.png",
+        "source": "assets/content/makehuman/system/hair/short01/short01_diffuse.png",
+        "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949",
+        "srgb": true
+      }
+    },
+    {
+      "material": "Eyes_Material",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.3,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/brown_eye.png",
+        "source": "assets/content/makehuman/system/eyes/materials/brown_eye.png",
+        "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+        "srgb": true
+      }
+    },
+    {
+      "material": "Shoes_Material",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/shoes01_diffuse.png",
+        "source": "assets/content/makehuman/system/clothes/shoes01/shoes01_diffuse.png",
+        "sha256": "50c9a406a7f1cb6aa7b42912348e78f09d0252aa3963c8229cf18dfe8353cdbf",
+        "srgb": true
+      },
+      "normal": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/shoes01_normal.png",
+        "source": "assets/content/makehuman/system/clothes/shoes01/shoes01_normal.png",
+        "sha256": "a9bfd7223e98b8f93100e89596135e3a94e6044f9db11b4d23cec625c37a4599",
+        "srgb": false
+      }
+    },
+    {
+      "material": "Teeth_Material",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/teeth.png",
+        "source": "assets/content/makehuman/system/teeth/teeth_base/teeth.png",
+        "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43",
+        "srgb": true
+      }
+    },
+    {
+      "material": "Tongue_Material",
+      "shader": "Universal Render Pipeline/Lit",
+      "alpha_clip": false,
+      "cutoff": 0,
+      "normal_space": "OpenGL tangent-space source, native importer inspection required",
+      "smoothness": 0.18,
+      "diffuse": {
+        "path": "Assets/HOMELESS/Content/Characters/Textures/tongue01_diffuse.png",
+        "source": "assets/content/makehuman/system/tongue/tongue01/tongue01_diffuse.png",
+        "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9",
+        "srgb": true
+      }
+    }
+  ],
+  "variant_binding": "CitizenAltSkin.fbx material Citizen_Skin uses Citizen_Skin_Alternate diffuse override.",
+  "native_import": "NOT_RUN",
+  "source_resolution_preserved": true
+}

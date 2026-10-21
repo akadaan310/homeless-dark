@@ -1,0 +1,71 @@
+[
+  {
+    "command": [
+      "qemu-x86_64",
+      "-L",
+      "/tmp/homeless-native/x64",
+      "-E",
+      "LD_LIBRARY_PATH=/tmp/homeless-native/sdk/emulator/lib64",
+      "/tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+      "-qemu",
+      "-h"
+    ],
+    "exit_code": -10,
+    "selected_output": [
+      "Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)",
+      "INFO         | main: arg: /tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+      "QEMU emulator version 2.12.0 (v2.12.0-19097-g85fa07f04ef), Copyright (c) 2003-2017 Fabrice Bellard and the QEMU Project developers",
+      "usage: qemu-system-aarch64-headless [options] [disk_image]",
+      "-machine [type=]name[,prop[=value][,...]]",
+      "                selects emulated machine ('-machine help' for list)",
+      "-audio-help     print list of audio drivers and their options",
+      "-no-audio        disable audio support",
+      "-soundhw c1,... enable audio support",
+      "                and only specified sound cards (comma separated list)",
+      "                use '-soundhw help' to get the list of supported cards",
+      "                use '-soundhw all' to enable all of them",
+      "                specify machine UUID",
+      "                use network scripts 'file' (default=/etc/qemu-ifup)",
+      "                to configure it and 'dfile' (default=/etc/qemu-ifdown)",
+      "                use network helper 'helper' (default=unused/linux-x86_64/libexec/qemu-bridge-helper) to",
+      "                using the program 'helper (default=unused/linux-x86_64/libexec/qemu-bridge-helper)",
+      "                configure a hub port on QEMU VLAN 'n'",
+      "                configure or create an on-board (or machine default) NIC and",
+      "                run qemu with realtime features",
+      "                xend will use this when starting QEMU",
+      "-xen-domid-restrict     restrict set of available xen operations",
+      "                        xenpv machine type).",
+      "-daemonize      daemonize QEMU after initializing",
+      "                use 'elevateprivileges' to allow or deny QEMU process to elevate",
+      "                    main QEMU process but will allow forks and execves to run unprivileged",
+      "                use 'spawn' to avoid QEMU to spawn new threads or processes by",
+      "-fuchsia Fuchsia kernel/image run. Only standard QEMU options are allowed after, and emulator does not start Android virtual devices automatically.-allow-host-audio Allows sending of audio from audio input devices. Otherwise, zeroes out audio.-restart-when-stalled Allows restarting guest when it is stalled.-perf-stat <file> Run periodic perf stat reporter in the background and write output to specified file.-multidisplay config a number of (MAX 3) multidisplays-google-maps-key Provide an API key to use with Google maps GUI-no-location-ui Disables the location UI in the extended window-record-session Screen record the emulator session-legacy-fake-camera emulates fake camera by legacy camera HAL-crostini Turn on optimizations for running in a VM on Chrome OS-wear-auto-forward automatically forward tcp:5601 on the host to tcp:5601 on a connected phone if a connected virtual watch is detected.",
+      "See <https://qemu.org/contribute/report-**",
+      "ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)"
+    ]
+  },
+  {
+    "command": [
+      "qemu-x86_64",
+      "-L",
+      "/tmp/homeless-native/x64",
+      "-E",
+      "LD_LIBRARY_PATH=/tmp/homeless-native/sdk/emulator/lib64",
+      "/tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+      "-qemu",
+      "-soundhw",
+      "help"
+    ],
+    "exit_code": 0,
+    "selected_output": [
+      "Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)",
+      "INFO         | main: arg: /tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+      "INFO         | main: arg: -soundhw",
+      "Valid sound card names (comma separated):",
+      "hda         Intel HD Audio",
+      "virtio-snd-pci Virtio sound",
+      "-soundhw all will enable all of the above",
+      "ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)"
+    ]
+  }
+]

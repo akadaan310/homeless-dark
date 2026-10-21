@@ -1,0 +1,52 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "4e9c8e5783d5489e7d529c3e7a3f09b0cd0a5ddf45d0109cc0030b52a5f1b58f",
+  "filename": "4e9c8e5783d5489e7d529c3e7a3f09b0cd0a5ddf45d0109cc0030b52a5f1b58f.wav",
+  "event_id": "evt:arrival:ar:pair_reply",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:pair_reply",
+    "speaker": "npc:bo",
+    "language": "ar",
+    "act": "pair_reply",
+    "slots": {}
+  },
+  "caption": "بعد قليل. أنا أنتظر قهوتي.",
+  "voice": {
+    "runtime": "onnxruntime 1.23.2",
+    "model": "SILMA TTS v1 licensed Apache-2.0 ONNX export",
+    "authoring_only": true,
+    "source_lock_sha256": "57fb8291f13abb26bb4b8b8bc23b946b4b721deaca97585f3b9040b07760a07b",
+    "reference_sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f",
+    "reference_kind": "original formant synthetic voice; no real person",
+    "parameters": {
+      "onnxruntime": "1.23.2",
+      "numpy": "2.2.6",
+      "provider": "CPUExecutionProvider",
+      "threads": 2,
+      "seed": 85391,
+      "euler_calls": 31
+    }
+  },
+  "sha256": "6d4a698e9452eb89c46bc737c391c48783f36f12c271626e61c92c1c688af0b6",
+  "synthesis_seconds": 173.8330297069624,
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 49920,
+  "duration_seconds": 2.08,
+  "peak_abs": 28710,
+  "pcm_rms": 0.0887618962759541,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false,
+  "cache_hit": false,
+  "formant_fallback_filename": "f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45.wav",
+  "automated_asr": {
+    "model": "whisper.cpp base-q5_1",
+    "normalized_wer": 0.0,
+    "recognized": "بعد قليل أنا انتظر قهوتي",
+    "selection_threshold": 0.25,
+    "human_quality_acceptance": false
+  }
+}

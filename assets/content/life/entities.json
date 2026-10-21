@@ -1,0 +1,12 @@
+{
+  "schema": "dark.life-content/1",
+  "license": "CC0-1.0; original fictional entity definitions",
+  "entities": [
+    {"id":"building:cafe","kind":"building","traits":{"welcoming":0.8},"state":{"capacity":1},"provenance":{"source_id":"original-fictional-cafe","source_geometry":{"latitude":27.9594638,"longitude":-82.5054865},"geometry_status":"fictional placement near a sourced intersection; no building reconstruction"}},
+    {"id":"tree:oak","kind":"tree","traits":{"expressiveness":0.4},"provenance":{"source_id":"original-tree-fixture","source_geometry":{"local_xyz_m":[2,0,1]},"geometry_status":"authored fixture"}},
+    {"id":"cup:counter","kind":"cup","traits":{"responsiveness":0.7},"provenance":{"source_id":"original-cup-fixture","source_geometry":{"local_xyz_m":[4,1,2]},"geometry_status":"authored fixture"}},
+    {"id":"car:taxi","kind":"car","traits":{"helpfulness":0.8,"duty":0.2},"provenance":{"source_id":"original-car-fixture","source_geometry":{"local_xyz_m":[0,0,8]},"geometry_status":"authored fixture"}},
+    {"id":"star:fixture","kind":"star","traits":{"expressiveness":0.5},"provenance":{"source_id":"synthetic-star-test-point","source_geometry":{"right_ascension_deg":100,"declination_deg":20},"geometry_status":"synthetic test point; not a named star or astrometric observation"}},
+    {"id":"group:neighbors","kind":"group","traits":{"exclusive":true},"provenance":{"source_id":"original-opt-in-group","source_geometry":null,"geometry_status":"nonspatial social group"}}
+  ]
+}

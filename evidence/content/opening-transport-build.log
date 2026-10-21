@@ -1,0 +1,18 @@
+Color management: Error could not find role data role.
+Blender 3.0.1
+Color management: scene view "Filmic" not found, setting default "Standard".
+/run/user/1001/gvfs/ non-existent directory
+Info: Total files 0 | Changed 0 | Failed 0
+Info: Saved "Bicycle.blend"
+Info: Saved "RotorShuttle.blend"
+Info: Saved "Bicycle.blend"
+
+FBX export starting... '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/unity/Assets/HOMELESS/Content/Families/Bicycle.fbx'
+export finished in 2.8460 sec.
+Info: Saved "RotorShuttle.blend"
+
+FBX export starting... '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/unity/Assets/HOMELESS/Content/Families/RotorShuttle.fbx'
+export finished in 0.8176 sec.
+{"families": 10, "triangles": 251202}
+
+Blender quit

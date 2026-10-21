@@ -1,0 +1,54 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "c494b379193841bfe8b9b42cff6f8cca373a0656780cad1f8f4ca58e3f45acb4",
+  "filename": "c494b379193841bfe8b9b42cff6f8cca373a0656780cad1f8f4ca58e3f45acb4.wav",
+  "event_id": "evt:arrival:ar:offer_ride",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:offer_ride",
+    "speaker": "npc:bo",
+    "language": "ar",
+    "act": "offer_ride",
+    "slots": {
+      "destination": "cafe"
+    }
+  },
+  "caption": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+  "voice": {
+    "runtime": "onnxruntime 1.23.2",
+    "model": "SILMA TTS v1 licensed Apache-2.0 ONNX export",
+    "authoring_only": true,
+    "source_lock_sha256": "57fb8291f13abb26bb4b8b8bc23b946b4b721deaca97585f3b9040b07760a07b",
+    "reference_sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f",
+    "reference_kind": "original formant synthetic voice; no real person",
+    "parameters": {
+      "onnxruntime": "1.23.2",
+      "numpy": "2.2.6",
+      "provider": "CPUExecutionProvider",
+      "threads": 2,
+      "seed": 85391,
+      "euler_calls": 31
+    }
+  },
+  "sha256": "9b71fdf36a31e6c0ad4a31355e3fcc6f0cb7389a86bae22b3b7dc99d7a3dc373",
+  "synthesis_seconds": 267.7483542468399,
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 98304,
+  "duration_seconds": 4.096,
+  "peak_abs": 29192,
+  "pcm_rms": 0.08643079437796126,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false,
+  "cache_hit": false,
+  "formant_fallback_filename": "b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb.wav",
+  "automated_asr": {
+    "model": "whisper.cpp base-q5_1",
+    "normalized_wer": 0.1,
+    "recognized": "هل تريد الذهاب إلى المقها? يمكنك الألغاء في أي وقت",
+    "selection_threshold": 0.25,
+    "human_quality_acceptance": false
+  }
+}

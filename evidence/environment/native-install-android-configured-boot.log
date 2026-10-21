@@ -1,0 +1,676 @@
+**
+ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+[397413:397413:20261021,092327.972278:WARNING spawn_subprocess.cc:247] intermediate process terminated by signal 5 (Trace/breakpoint trap) (core dumped)
+DEBUG   | autoconfig: -skin 360x640
+DEBUG   | autoconfig: -skindir (null)
+INFO         | Saving last run QEMU version for the AVD to 2
+INFO         | Changing default hw.initialOrientation to portrait
+
+DEBUG   | init, loading /tmp/homeless-native/sdk/emulator/lib/advancedFeatures.ini
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: GLPipeChecksum = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ForceANGLE = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ForceSwiftshader = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: HYPERV = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: HVF = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: KVM = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: FastSnapshotV1 = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ScreenRecording = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VirtualScene = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VideoPlayback = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: GenericSnapshotsUI = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: WindowsOnDemandSnapshotLoad = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: WindowsHypervisorPlatform = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: LocationUiV2 = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: SnapshotAdb = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: QuickbootFileBacked = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: OnDemandSnapshotLoad = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: Vulkan = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: IpDisconnectOnLoad = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: HasSharedSlotsHostMemoryAllocator = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: CarVHalTable = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanSnapshots = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: DynamicMediaProfile = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: CarVhalReplay = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: NoDelayCloseColorBuffer = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: NoDeviceFrame = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VirtioGpuNativeSync = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanShaderFloat16Int8 = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: CarRotary = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: TvRemote = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: GuestUsesAngle = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VirtioGpuFenceContexts = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: AsyncComposeSupport = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanAstcLdrEmulation = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanYcbcrEmulation = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: NetsimWebUi = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: NetsimCliUi = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: WiFiPacketStream = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanAllocateDeviceMemoryOnly = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanAllocateHostMemory = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: QtRawKeyboardInput = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: BypassVulkanDeviceFeatureOverrides = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanDebugUtils = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanCommandBufferCheckpoints = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanVirtualQueue = on
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanRobustness = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ForceLavapipe = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ForceLavapipeForSoftwareRendering = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ForceGpuHost = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: ForceGpuSoftware = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: NetsimX = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanProtectedMemoryEmulation = off
+DEBUG   | FeatureControl::initHostFeatureAndParseDefault: VulkanUseDedicatedAhbMemoryType = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GrallocSync = off
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GrallocSync (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: EncryptUserData = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: EncryptUserData (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: IntelPerformanceMonitoringUnit = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: IntelPerformanceMonitoringUnit (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLAsyncSwap = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLAsyncSwap (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLDMA = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLDMA (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLDMA2 = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLDirectMem = off
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLESDynamicVersion = off
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GLESDynamicVersion (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: Wifi = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: Wifi (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: PlayStoreImage = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: LogcatPipe = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: LogcatPipe (guest) = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: SystemAsRoot = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: KernelDeviceTreeBlobSupport = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: DynamicPartition = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: RefCountPipe = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: HostComposition = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: WifiConfigurable = off
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioInput = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: MultiDisplay = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VulkanNullOptionalStrings = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: YUV420888toNV21 = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: YUVCache = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: KeycodeForwarding = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VulkanIgnoredHandles = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioGpuNext = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: Mac80211hwsimUserspaceManaged = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: HardwareDecoder = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioWifi = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: ModemSimulator = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioMouse = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtconsoleLogcat = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioVsockPipe = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VulkanQueueSubmitWithCommands = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VulkanBatchedDescriptorSetUpdate = off
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: Minigbm = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GnssGrpcV1 = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: AndroidbootProps = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: AndroidbootProps2 = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: DeviceSkinOverlay = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: DeviceStateOnBoot = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: HWCMultiConfigs = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioSndCard = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioTablet = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VsockSnapshotLoadFixed_b231345789 = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: DownloadableSnapshot = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: SupportPixelFold = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: DeviceKeyboardHasAssistKey = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: Uwb = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: GuestAngle = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: AndroidVirtualizationFramework = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: XrModeUI = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: VirtioDualModeMouse = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: DualModeMouseDisplayHostCursor = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: AllAppsForHomeTray = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: MicrophoneToggleUI = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: QemuCameraSensorOrientation = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: XrDimming = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: XrHandAndEyePointers = on
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: Nfc = off
+DEBUG   | FeatureControl::initGuestFeatureAndParseDefault: XrStatusLed = on
+DEBUG   | parseAndApplyOverrides, overrides='-Vulkan'
+INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+DEBUG   | Target arch = 'arm64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | Using initial system image: /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/system.img
+DEBUG   | Using initial vendor image: /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/vendor.img
+DEBUG   | autoconfig: -initdata /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/userdata.img
+DEBUG   | autoconfig: -cache /tmp/homeless-native/avd/homeless_api26.avd/cache.img
+INFO         | Increasing RAM size to 1536MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 384MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | autoconfig: -no-snapshot from AVD config.ini
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+##############################################################################
+##                        WARNING - ACTION REQUIRED                         ##
+##  Consider using the '-metrics-collection' flag to help improve the       ##
+##  emulator by sending anonymized usage data. Or use the '-no-metrics'     ##
+##  flag to bypass this warning and turn off the metrics collection.        ##
+##  In a future release this warning will turn into a one-time blocking     ##
+##  prompt to ask for explicit user input regarding metrics collection.     ##
+##                                                                          ##
+##  Please see '-help-metrics-collection' for more details. You can use     ##
+##  '-metrics-to-file' or '-metrics-to-console' flags to see what type of   ##
+##  data is being collected by emulator as part of usage statistics.        ##
+##############################################################################
+INFO         | Guest GLES Driver: Auto (ext controls)
+DEBUG   | FeatureControl::setIfNotOverriden: ForceSwiftshader is changed to enabled
+DEBUG   | emuglConfig_init: gpu_m**
+ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+**
+ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+**
+ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+ode_requested: swiftshader, no_window: 1
+
+DEBUG   | Crash dump message: 'emuglConfig_init: gpu_mode_requested: swiftshader, no_window: 1'
+INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+DEBUG   | setCurrentRenderer: swiftshader swiftshader gles:Swiftshader Indirect vulkan:Swiftshader Indirect
+DEBUG   | emuglConfig_init: GPU emulation enabled using Vulkan:'swiftshader' GLES:'swiftshader' modes
+
+DEBUG   | Crash dump message: 'emuglConfig_init: GPU emulation enabled using Vulkan:'swiftshader' GLES:'swiftshader' modes'
+DEBUG   | Crash dump message: 'Deciding if GLDirectMem/Vulkan should be enabled. Selected GLES renderer: Swiftshader Indirect Selected Vulkan renderer: Swiftshader Indirect API level: 26 '
+DEBUG   | Crash dump message: 'Host GPU selected, not enabling Vulkan because API level is < 29.'
+DEBUG   | GPU emulation enabled using Vulkan:'swiftshader' GLES:'swiftshader' modes
+DEBUG   | Adding to the library search path: /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader
+
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `homeless_api26` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU compatibility checks are not required
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Warning: AVD 'homeless_api26' will run more smoothly with 4 CPU cores (currently using 2)
+USER_WARNING | AVD 'homeless_api26' will run more smoothly with 4 CPU cores (currently using 2).
+DEBUG   | found magic skin width=360 height=640 bpp=32
+
+DEBUG   | FeatureControl::setIfNotOverriden: QuickbootFileBacked is changed to disabled
+WARNING      | Feature QuickbootFileBacked is disabled due to stability issues, if you really want that, the environment variable ANDROID_EMU_FORCE_QUICKBOOT_FILE_BACKED need to set to 1
+DEBUG   | Requested console port 5556: Inferring adb port 5557.
+DEBUG   | Creating empty ext4 cache partition: /tmp/homeless-native/avd/homeless_api26.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | FeatureControl::setIfNotOverriden: HasSharedSlotsHostMemoryAllocator is changed to disabled
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=*:V androidboot.consolepipe=qemu_pipe,pipe:logcat'
+DEBUG   | Adding boot property: 'qemu.logcat' = 'start'
+WARNING      | FeatureControl is requesting a non existing feature.
+DEBUG   | Timed out with running command |/tmp/homeless-native/sdk/platform-tools/adb version |
+DEBUG   | Failed obtain protocol version from /tmp/homeless-native/sdk/platform-tools/adb
+DEBUG   | Timed out with running command |/tmp/homeless-native/sdk/platform-tools/adb version |
+DEBUG   | Failed obtain protocol version from /tmp/homeless-native/sdk/platform-tools/adb
+DEBUG   | Timed out with running command |/usr/bin/adb version |
+DEBUG   | Failed obtain protocol version from /usr/bin/adb
+DEBUG   | Found: 0 adb executables
+DEBUG   | emulator_window_framebuffer_create: 360x640
+
+DEBUG   | FeatureControl::setIfNotOverridenOrGuestDisabled: GLESDynamicVersion is changed to enabled
+INFO         | Initializing gfxstream backend
+INFO         | startOpenglesRendererImpl: gpu info
+INFO         | 
+DEBUG   | gfxstreamFeature:GlPipeChecksum = 1
+DEBUG   | gfxstreamFeature:Vulkan = 0
+DEBUG   | gfxstreamFeature:HasSharedSlotsHostMemoryAllocator = 0
+DEBUG   | gfxstreamFeature:VulkanSnapshots = 0
+DEBUG   | gfxstreamFeature:NoDelayCloseColorBuffer = 0
+DEBUG   | gfxstreamFeature:VirtioGpuNativeSync = 0
+DEBUG   | gfxstreamFeature:VulkanShaderFloat16Int8 = 1
+DEBUG   | gfxstreamFeature:NativeTextureDecompression = 0
+DEBUG   | gfxstreamFeature:VulkanNativeSwapchain = 0
+DEBUG   | gfxstreamFeature:VirtioGpuFenceContexts = 0
+DEBUG   | gfxstreamFeature:AsyncComposeSupport = 0
+DEBUG   | gfxstreamFeature:ExternalBlob = 0
+DEBUG   | gfxstreamFeature:SystemBlob = 0
+DEBUG   | gfxstreamFeature:GrallocSync = 0
+DEBUG   | gfxstreamFeature:GlAsyncSwap = 1
+DEBUG   | gfxstreamFeature:GlDma = 1
+DEBUG   | gfxstreamFeature:GlDma2 = 0
+DEBUG   | gfxstreamFeature:GlDirectMem = 0
+DEBUG   | gfxstreamFeature:GlesDynamicVersion = 1
+DEBUG   | gfxstreamFeature:RefCountPipe = 0
+DEBUG   | gfxstreamFeature:HostComposition = 0
+DEBUG   | gfxstreamFeature:VulkanNullOptionalStrings = 0
+DEBUG   | gfxstreamFeature:Yuv420888ToNv21 = 0
+DEBUG   | gfxstreamFeature:YuvCache = 0
+DEBUG   | gfxstreamFeature:VulkanIgnoredHandles = 0
+DEBUG   | gfxstreamFeature:VirtioGpuNext = 0
+DEBUG   | gfxstreamFeature:VulkanQueueSubmitWithCommands = 0
+DEBUG   | gfxstreamFeature:VulkanBatchedDescriptorSetUpdate = 0
+DEBUG   | gfxstreamFeature:Minigbm = 0
+DEBUG   | gfxstreamFeature:HwcMultiConfigs = 0
+DEBUG   | gfxstreamFeature:VulkanAllocateDeviceMemoryOnly = 0
+DEBUG   | gfxstreamFeature:VulkanAllocateHostMemory = 0
+DEBUG   | gfxstreamFeature:GuestVulkanOnly = 0
+DEBUG   | gfxstreamFeature:BypassVulkanDeviceFeatureOverrides = 0
+DEBUG   | gfxstreamFeature:VulkanDebugUtils = 0
+DEBUG   | gfxstreamFeature:VulkanCommandBufferCheckpoints = 0
+DEBUG   | gfxstreamFeature:VulkanVirtualQueue = 1
+DEBUG   | gfxstreamFeature:VulkanRobustness = 0
+DEBUG   | gfxstreamFeature:VulkanProtectedMemoryEmulation = 0
+DEBUG   | gfxstreamFeature:VulkanUseDedicatedAhbMemoryType = 1
+DEBUG   | RenderWindow: CMD_INITIALIZE w=360 h=640
+DEBUG   | FrameBuffer::initialize()
+DEBUG   | Creating Framebuffer: 360x640, useSubWindow=1
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 360 h 640 dpi 0
+VERBOSE | SharedLibrary::open for [libGLESv2.so]: not found in map, open for the first time
+VERBOSE | SharedLibrary::open for [libGLESv2.so] (posix): begin
+VERBOSE | SharedLibrary::open for [libGLESv2.so] (posix,linux): call dlopen on [libGLESv2.so]
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader/libGLESv2.so.
+VERBOSE | SharedLibrary::open succeeded for [libGLESv2.so].
+VERBOSE | SharedLibrary::open for [libEGL.so]: not found in map, open for the first time
+VERBOSE | SharedLibrary::open for [libEGL.so] (posix): begin
+VERBOSE | SharedLibrary::open for [libEGL.so] (posix,linux): call dlopen on [libEGL.so]
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader/libEGL.so.
+VERBOSE | SharedLibrary::open succeeded for [libEGL.so].
+VERBOSE | EglOsEglDisplay: client exts: [EGL_KHR_create_context EGL_KHR_get_all_proc_addresses EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_image_base EGL_ANDROID_framebuffer_target EGL_ANDROID_recordable]
+INFO         | SharedLibrary::open for [libX11]
+VERBOSE | SharedLibrary::open for [libX11]: not found in map, open for the first time
+VERBOSE | SharedLibrary::open for [libX11] (posix): begin
+VERBOSE | SharedLibrary::open for [libX11] (posix,linux): call dlopen on [libX11.so]
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader/libX11.so.
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/libX11.so.
+VERBOSE | SharedLibrary::open for [libX11] failed (posix). dlerror: []
+WARNING      | Could not open libX11.so, try libX11.so.6
+INFO         | SharedLibrary::open for [libX11.so.6]
+VERBOSE | SharedLibrary::open for [libX11.so.6]: not found in map, open for the first time
+VERBOSE | SharedLibrary::open for [libX11.so.6] (posix): begin
+VERBOSE | SharedLibrary::open for [libX11.so.6] (posix,linux): call dlopen on [libX11.so.6]
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader/libX11.so.6.
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/libX11.so.6.
+VERBOSE | SharedLibrary::open succeeded for [libX11.so.6].
+INFO         | SharedLibrary::open for [libX11-xcb]
+VERBOSE | SharedLibrary::open for [libX11-xcb]: not found in map, open for the first time
+VERBOSE | SharedLibrary::open for [libX11-xcb] (posix): begin
+VERBOSE | SharedLibrary::open for [libX11-xcb] (posix,linux): call dlopen on [libX11-xcb.so]
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader/libX11-xcb.so.
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/libX11-xcb.so.
+VERBOSE | SharedLibrary::open for [libX11-xcb] failed (posix). dlerror: []
+WARNING      | Could not open libX11-xcb.so, try libX11-xcb.so.1
+INFO         | SharedLibrary::open for [libX11-xcb.so.1]
+VERBOSE | SharedLibrary::open for [libX11-xcb.so.1]: not found in map, open for the first time
+VERBOSE | SharedLibrary::open for [libX11-xcb.so.1] (posix): begin
+VERBOSE | SharedLibrary::open for [libX11-xcb.so.1] (posix,linux): call dlopen on [libX11-xcb.so.1]
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/gles_swiftshader/libX11-xcb.so.1.
+VERBOSE | Calling dlopen on /tmp/homeless-native/sdk/emulator/lib64/libX11-xcb.so.1.
+VERBOSE | SharedLibrary::open succeeded for [libX11-xcb.so.1].
+DEBUG   | call eglInitialize
+VERBOSE | queryConfigs: num configs: 75
+VERBOSE | glGetTexLevelParameteriv not found
+VERBOSE | glGetTexLevelParameterfv not found
+VERBOSE | glPushAttrib not found
+VERBOSE | glPushClientAttrib not found
+VERBOSE | glPopAttrib not found
+VERBOSE | glPopClientAttrib not found
+VERBOSE | glAlphaFunc not found
+VERBOSE | glBegin not found
+VERBOSE | glClientActiveTexture not found
+VERBOSE | glClipPlane not found
+VERBOSE | glColor4d not found
+VERBOSE | glColor4f not found
+VERBOSE | glColor4fv not found
+VERBOSE | glColor4ub not found
+VERBOSE | glColor4ubv not found
+VERBOSE | glColorPointer not found
+VERBOSE | glDisableClientState not found
+VERBOSE | glEnableClientState not found
+VERBOSE | glEnd not found
+VERBOSE | glFogf not found
+VERBOSE | glFogfv not found
+VERBOSE | glGetClipPlane not found
+VERBOSE | glGetDoublev not found
+VERBOSE | glGetLightfv not found
+VERBOSE | glGetMaterialfv not found
+VERBOSE | glGetPointerv not found
+VERBOSE | glGetTexEnvfv not found
+VERBOSE | glGetTexEnviv not found
+VERBOSE | glLightf not found
+VERBOSE | glLightfv not found
+VERBOSE | glLightModelf not found
+VERBOSE | glLightModelfv not found
+VERBOSE | glLoadIdentity not found
+VERBOSE | glLoadMatrixf not found
+VERBOSE | glLogicOp not found
+VERBOSE | glMaterialf not found
+VERBOSE | glMaterialfv not found
+VERBOSE | glMultiTexCoord2fv not found
+VERBOSE | glMultiTexCoord2sv not found
+VERBOSE | glMultiTexCoord3fv not found
+VERBOSE | glMultiTexCoord3sv not found
+VERBOSE | glMultiTexCoord4f not found
+VERBOSE | glMultiTexCoord4fv not found
+VERBOSE | glMultiTexCoord4sv not found
+VERBOSE | glMultMatrixf not found
+VERBOSE | glNormal3f not found
+VERBOSE | glNormal3fv not found
+VERBOSE | glNormal3sv not found
+VERBOSE | glOrtho not found
+VERBOSE | glPointParameterf not found
+VERBOSE | glPointParameterfv not found
+VERBOSE | glPointSize not found
+VERBOSE | glRotatef not found
+VERBOSE | glScalef not found
+VERBOSE | glTexEnvf not found
+VERBOSE | glTexEnvfv not found
+VERBOSE | glMatrixMode not found
+VERBOSE | glNormalPointer not found
+VERBOSE | glPopMatrix not found
+VERBOSE | glPushMatrix not found
+VERBOSE | glShadeModel not found
+VERBOSE | glTexCoordPointer not found
+VERBOSE | glTexEnvi not found
+VERBOSE | glTexEnviv not found
+VERBOSE | glTranslatef not found
+VERBOSE | glVertexPointer not found
+VERBOSE | glClipPlanef not found
+VERBOSE | glFrustumf not found
+VERBOSE | glGetClipPlanef not found
+VERBOSE | glOrthof not found
+VERBOSE | glAlphaFuncx not found
+VERBOSE | glClearColorx not found
+VERBOSE | glClearDepthx not found
+VERBOSE | glColor4x not found
+VERBOSE | glDepthRangex not found
+VERBOSE | glFogx not found
+VERBOSE | glFogxv not found
+VERBOSE | glFrustumx not found
+VERBOSE | glClipPlanex not found
+VERBOSE | glGetFixedv not found
+VERBOSE | glGetLightxv not found
+VERBOSE | glGetMaterialxv not found
+VERBOSE | glGetTexEnvxv not found
+VERBOSE | glGetTexParameterxv not found
+VERBOSE | glLightModelx not found
+VERBOSE | glLightModelxv not found
+VERBOSE | glLightx not found
+VERBOSE | glLightxv not found
+VERBOSE | glLineWidthx not found
+VERBOSE | glLoadMatrixx not found
+VERBOSE | glMaterialx not found
+VERBOSE | glMaterialxv not found
+VERBOSE | glMultMatrixx not found
+VERBOSE | glMultiTexCoord4x not found
+VERBOSE | glNormal3x not found
+VERBOSE | glOrthox not found
+VERBOSE | glPointParameterx not found
+VERBOSE | glPointParameterxv not found
+VERBOSE | glPointSizex not found
+VERBOSE | glPolygonOffsetx not found
+VERBOSE | glRotatex not found
+VERBOSE | glSampleCoveragex not found
+VERBOSE | glScalex not found
+VERBOSE | glTexEnvx not found
+VERBOSE | glTexEnvxv not found
+VERBOSE | glTexParameterx not found
+VERBOSE | glTexParameterxv not found
+VERBOSE | glTranslatex not found
+VERBOSE | glGetClipPlanex not found
+DEBUG   | vk icd software rendering, disable interop
+DEBUG   | glvk interop final: 0
+DEBUG   | Performing composition using CompositorGl.
+INFO         | Graphics Adapter Vendor Google (Google Inc.)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+DEBUG   | Renderer initialized successfully
+VERBOSE | Created RenderThread. Active RenderThreads: 1
+INFO         | Setting vsync to 60 hz
+DEBUG   | CMD_SET_VSYNC_HZ
+ERROR        | Setting read-only feature 'GLAsyncSwap' to '0'
+INFO         | Feature 'GLAsyncSwap' (50) is overridden to 'disabled'
+INFO         | Verified boot params were not found.
+INFO         | Userspace boot properties:
+INFO         |   android.qemud=1
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.serialno=EMULATOR37X2X12X0
+INFO         |   qemu=1
+INFO         |   qemu.avd_name=homeless_api26
+INFO         |   qemu.camera_hq_edge_processing=0
+INFO         |   qemu.dalvik.vm.heapsize=384m
+INFO         |   qemu.encrypt=1
+INFO         |   qemu.gles=1
+INFO         |   qemu.gltransport=pipe
+INFO         |   qemu.gltransport.drawFlushInterval=800
+INFO         |   qemu.opengles.version=196608
+INFO         |   qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   qemu.skin=360x640
+INFO         |   qemu.uirenderer=skiagl
+INFO         |   qemu.vsync=60
+INFO         |   qemu.wifi=1
+DEBUG   | Found 1 DNS servers:
+DEBUG   | 	127.0.0.53
+INFO         | Content of hardware configuration file:
+INFO         | 	hw.cpu.arch = arm64
+INFO         | 	hw.cpu.ncore = 1
+INFO         | 	hw.ramSize = 1536
+INFO         | 	hw.screen = multi-touch
+INFO         | 	hw.mainKeys = true
+INFO         | 	hw.touchpad0 = false
+INFO         | 	hw.touchpad0.width = 600
+INFO         | 	hw.touchpad0.height = 400
+INFO         | 	hw.trackBall = true
+INFO         | 	hw.keyboard = false
+INFO         | 	hw.keyboard.lid = false
+INFO         | 	hw.keyboard.charmap = qwerty2
+INFO         | 	hw.dPad = true
+INFO         | 	hw.rotaryInput = false
+INFO         | 	hw.gsmModem = true
+INFO         | 	hw.gps = true
+INFO         | 	hw.battery = true
+INFO         | 	hw.accelerometer = true
+INFO         | 	hw.accelerometer_uncalibrated = true
+INFO         | 	hw.gyroscope = true
+INFO         | 	hw.audioInput = true
+INFO         | 	hw.audioOutput = true
+INFO         | 	hw.sdCard = true
+INFO         | 	disk.cachePartition = true
+INFO         | 	disk.cachePartition.path = /tmp/homeless-native/avd/homeless_api26.avd/cache.img
+INFO         | 	disk.cachePartition.size = 66m
+INFO         | 	test.quitAfterBootTimeOut = -1
+INFO         | 	test.delayAdbTillBootComplete = 0
+INFO         | 	test.monitorAdb = 0
+INFO         | 	hw.lcd.width = 360
+INFO         | 	hw.lcd.height = 640
+INFO         | 	hw.lcd.depth = 32
+INFO         | 	hw.lcd.circular = false
+INFO         | 	hw.lcd.density = 160
+INFO         | 	hw.lcd.transparent = false
+INFO         | 	hw.lcd.backlight = true
+INFO         | 	hw.lcd.vsync = 60
+INFO         | 	hw.gltransport = pipe
+INFO         | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO         | 	hw.gltransport.asg.writeStepSize = 4096
+INFO         | 	hw.gltransport.asg.dataRingSize = 32768
+INFO         | 	hw.gltransport.drawFlushInterval = 800
+INFO         | 	hw.displayRegion.0.1.xOffset = -1
+INFO         | 	hw.displayRegion.0.1.yOffset = -1
+INFO         | 	hw.displayRegion.0.1.width = 0
+INFO         | 	hw.displayRegion.0.1.height = 0
+INFO         | 	hw.displayRegion.0.2.xOffset = -1
+INFO         | 	hw.displayRegion.0.2.yOffset = -1
+INFO         | 	hw.displayRegion.0.2.width = 0
+INFO         | 	hw.displayRegion.0.2.height = 0
+INFO         | 	hw.displayRegion.0.3.xOffset = -1
+INFO         | 	hw.displayRegion.0.3.yOffset = -1
+INFO         | 	hw.displayRegion.0.3.width = 0
+INFO         | 	hw.displayRegion.0.3.height = 0
+INFO         | 	hw.display1.width = 0
+INFO         | 	hw.display1.height = 0
+INFO         | 	hw.display1.density = 0
+INFO         | 	hw.display1.xOffset = -1
+INFO         | 	hw.display1.yOffset = -1
+INFO         | 	hw.display1.flag = 0
+INFO         | 	hw.display2.width = 0
+INFO         | 	hw.display2.height = 0
+INFO         | 	hw.display2.density = 0
+INFO         | 	hw.display2.xOffset = -1
+INFO         | 	hw.display2.yOffset = -1
+INFO         | 	hw.display2.flag = 0
+INFO         | 	hw.display3.width = 0
+INFO         | 	hw.display3.height = 0
+INFO         | 	hw.display3.density = 0
+INFO         | 	hw.display3.xOffset = -1
+INFO         | 	hw.display3.yOffset = -1
+INFO         | 	hw.display3.flag = 0
+INFO         | 	hw.multi_display_window = false
+INFO         | 	hw.hotplug_multi_display = false
+INFO         | 	hw.gpu.enabled = true
+INFO         | 	hw.gpu.mode = swiftshader
+INFO         | 	hw.initialOrientation = portrait
+INFO         | 	hw.camera.back = emulated
+INFO         | 	hw.camera.back.orientation = 90
+INFO         | 	hw.camera.front = none
+INFO         | 	hw.camera.front.orientation = 90
+INFO         | 	vm.heapSize = 384
+INFO         | 	hw.sensors.light = true
+INFO         | 	hw.sensors.pressure = true
+INFO         | 	hw.sensors.humidity = true
+INFO         | 	hw.sensors.proximity = true
+INFO         | 	hw.sensors.magnetic_field = true
+INFO         | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO         | 	hw.sensors.gyroscope_uncalibrated = true
+INFO         | 	hw.sensors.orientation = true
+INFO         | 	hw.sensors.temperature = true
+INFO         | 	hw.sensors.rgbclight = false
+INFO         | 	hw.sensor.hinge = false
+INFO         | 	hw.sensor.hinge.count = 0
+INFO         | 	hw.sensor.hinge.type = 0
+INFO         | 	hw.sensor.hinge.sub_type = 0
+INFO         | 	hw.sensor.hinge.resizable.config = 1
+INFO         | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO         | 	hw.sensor.roll = false
+INFO         | 	hw.sensor.roll.count = 0
+INFO         | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO         | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO         | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO         | 	hw.sensors.heart_rate = false
+INFO         | 	hw.sensors.wrist_tilt = false
+INFO         | 	hw.sensors.heading = false
+INFO         | 	hw.useext4 = true
+INFO         | 	kernel.path = /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/kernel-ranchu
+INFO         | 	kernel.newDeviceNaming = yes
+INFO         | 	kernel.supportsYaffs2 = no
+INFO         | 	disk.ramdisk.path = /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/ramdisk.img
+INFO         | 	disk.systemPartition.initPath = /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/system.img
+INFO         | 	disk.systemPartition.size = 2562m
+INFO         | 	disk.vendorPartition.initPath = /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/vendor.img
+INFO         | 	disk.vendorPartition.size = 800m
+INFO         | 	disk.dataPartition.path = /tmp/homeless-native/avd/homeless_api26.avd/userdata-qemu.img
+INFO         | 	disk.dataPartition.size = 512m
+INFO         | 	disk.encryptionKeyPartition.path = /tmp/homeless-native/avd/homeless_api26.avd/encryptionkey.img
+INFO         | 	PlayStore.enabled = false
+INFO         | 	avd.name = homeless_api26
+INFO         | 	avd.id = homeless_api26
+INFO         | 	fastboot.forceColdBoot = true
+INFO         | 	userdata.useQcow2 = false
+INFO         | 	firstboot.bootFromDownloadableSnapshot = true
+INFO         | 	firstboot.bootFromLocalSnapshot = true
+INFO         | 	firstboot.saveToLocalSnapshot = true
+INFO         | 	android.sdk.root = /tmp/homeless-native/sdk
+INFO         | 	android.avd.home = /tmp/homeless-native/avd
+INFO         | 	environment.width = 0
+INFO         | 	environment.height = 0
+INFO         | .
+INFO         | QEMU options list:
+INFO         | 	 argv[00] = "/tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless"
+INFO         | 	 argv[01] = "-dns-server"
+INFO         | 	 argv[02] = "127.0.0.53"
+INFO         | 	 argv[03] = "-no-audio"
+INFO         | 	 argv[04] = "-serial"
+INFO         | 	 argv[05] = "stdio"
+INFO         | 	 argv[06] = "-android-ports"
+INFO         | 	 argv[07] = "5556,5557"
+INFO         | 	 argv[08] = "-device"
+INFO         | 	 argv[09] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/tmp/homeless-native/avd/homeless_api26.avd/data/misc/pstore/pstore.bin"
+INFO         | 	 argv[10] = "-cpu"
+INFO         | 	 argv[11] = "cortex-a57"
+INFO         | 	 argv[12] = "-machine"
+INFO         | 	 argv[13] = "type=ranchu"
+INFO         | 	 argv[14] = "-m"
+INFO         | 	 argv[15] = "1536"
+INFO         | 	 argv[16] = "-lcd-density"
+INFO         | 	 argv[17] = "160"
+INFO         | 	 argv[18] = "-nodefaults"
+INFO         | 	 argv[19] = "-kernel"
+INFO         | 	 argv[20] = "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/kernel-ranchu"
+INFO         | 	 argv[21] = "-initrd"
+INFO         | 	 argv[22] = "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/ramdisk.img"
+INFO         | 	 argv[23] = "-drive"
+INFO         | 	 argv[24] = "index=0,id=vendor,if=none,file=/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/vendor.img,read-only"
+INFO         | 	 argv[25] = "-device"
+INFO         | 	 argv[26] = "virtio-blk-device,drive=vendor"
+INFO         | 	 argv[27] = "-drive"
+INFO         | 	 argv[28] = "index=1,id=encrypt,if=none,file=/tmp/homeless-native/avd/homeless_api26.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO         | 	 argv[29] = "-device"
+INFO         | 	 argv[30] = "virtio-blk-device,drive=encrypt"
+INFO         | 	 argv[31] = "-drive"
+INFO         | 	 argv[32] = "index=2,id=userdata,if=none,file=/tmp/homeless-native/avd/homeless_api26.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO         | 	 argv[33] = "-device"
+INFO         | 	 argv[34] = "virtio-blk-device,drive=userdata"
+INFO         | 	 argv[35] = "-drive"
+INFO         | 	 argv[36] = "index=3,id=cache,if=none,file=/tmp/homeless-native/avd/homeless_api26.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO         | 	 argv[37] = "-device"
+INFO         | 	 argv[38] = "virtio-blk-device,drive=cache"
+INFO         | 	 argv[39] = "-drive"
+INFO         | 	 argv[40] = "index=4,id=system,if=none,file=/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/system.img,read-only"
+INFO         | 	 argv[41] = "-device"
+INFO         | 	 argv[42] = "virtio-blk-device,drive=system"
+INFO         | 	 argv[43] = "-netdev"
+INFO         | 	 argv[44] = "user,id=mynet"
+INFO         | 	 argv[45] = "-device"
+INFO         | 	 argv[46] = "virtio-net-device,netdev=mynet"
+INFO         | 	 argv[47] = "-device"
+INFO         | 	 argv[48] = "virtio-rng-device"
+INFO         | 	 argv[49] = "-show-cursor"
+INFO         | 	 argv[50] = "-L"
+INFO         | 	 argv[51] = "/tmp/homeless-native/sdk/emulator/lib/pc-bios"
+INFO         | 	 argv[52] = "-soundhw"
+INFO         | 	 argv[53] = "hda"
+INFO         | 	 argv[54] = "-append"
+INFO         | 	 argv[55] = "no_timer_check console=ttyAMA0,38400 keep_bootcon earlyprintk=ttyAMA0 cma=260M@0-4G mac80211_hwsim.radios=2 mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on android.qemud=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR37X2X12X0 qemu=1 qemu.avd_name=homeless_api26 qemu.camera_hq_edge_processing=0 qemu.dalvik.vm.heapsize=384m qemu.encrypt=1 qemu.gles=1 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.settings.system.screen_off_timeout=2147483647 qemu.skin=360x640 qemu.uirenderer=skiagl qemu.vsync=60 qemu.wifi=1"
+INFO         | 	 argv[56] = "-android-hw"
+INFO         | 	 argv[57] = "/tmp/homeless-native/avd/homeless_api26.avd/hardware-qemu.ini"
+INFO         | Concatenated QEMU options: /tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless -dns-server 127.0.0.53 -no-audio -serial stdio -android-ports 5556,5557 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/tmp/homeless-native/avd/homeless_api26.avd/data/misc/pstore/pstore.bin -cpu cortex-a57 -machine type=ranchu -m 1536 -lcd-density 160 -nodefaults -kernel /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/kernel-ranchu -initrd /tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/ramdisk.img -drive index=0,id=vendor,if=none,file=/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/vendor.img,read-only -device virtio-blk-device,drive=vendor -drive index=1,id=encrypt,if=none,file=/tmp/homeless-native/avd/homeless_api26.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=encrypt -drive index=2,id=userdata,if=none,file=/tmp/homeless-native/avd/homeless_api26.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=userdata -drive index=3,id=cache,if=none,file=/tmp/homeless-native/avd/homeless_api26.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-device,drive=cache -drive index=4,id=system,if=none,file=/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/system.img,read-only -device virtio-blk-device,drive=system -netdev user,id=mynet -device virtio-net-device,netdev=mynet -device virtio-rng-device -show-cursor -L /tmp/homeless-native/sdk/emulator/lib/pc-bios -soundhw hda -append 'no_timer_check console=ttyAMA0,38400 keep_bootcon earlyprintk=ttyAMA0 cma=260M@0-4G mac80211_hwsim.radios=2 mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on android.qemud=1 androidboot.hardware=ranchu androidboot.serialno=EMULATOR37X2X12X0 qemu=1 qemu.avd_name=homeless_api26 qemu.camera_hq_edge_processing=0 qemu.dalvik.vm.heapsize=384m qemu.encrypt=1 qemu.gles=1 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.settings.system.screen_off_timeout=2147483647 qemu.skin=360x640 qemu.uirenderer=skiagl qemu.vsync=60 qemu.wifi=1' -android-hw /tmp/homeless-native/avd/homeless_api26.avd/hardware-qemu.ini
+DEBUG   | Android qemu version 37.2.12.0 (build_id 16428233) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | Exited a loader RenderThread @0x40026b3a40
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'back'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '384m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '1'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '160'
+DEBUG   | goldfish_events.have-dpad: true
+DEBUG   | goldfish_events.have-trackball: true
+DEBUG   | goldfish_events.have-camera: true
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: false
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: true
+WARNING: cannnot unmap ptr 0x402f7c1000 as it is in the protected range from 0x402f7c1000 to 0x408f9c1000
+WARNING: cannnot unmap ptr 0x408f801000 as it is in the protected range from 0x402f7c1000 to 0x408f9c1000
+INFO         | Monitoring duration of emulator setup.
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+qemu-system-aarch64-headless: PCI bus not available for hda
+WARNING      | QEMU main loop exits abnormally with code 1
+INFO         | Wait for emulator (pid 397413) 10 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+User defined signal 1

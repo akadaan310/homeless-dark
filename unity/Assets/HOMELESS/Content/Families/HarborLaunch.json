@@ -1,0 +1,41 @@
+{
+  "name": "HarborLaunch",
+  "family": "boat",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 13186,
+  "mesh_objects": 50,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -1.1649999618530273,
+      1.1649999618530273
+    ],
+    [
+      -3.5308642387390137,
+      3.575000047683716
+    ],
+    [
+      0.05000000074505806,
+      2.244999885559082
+    ]
+  ],
+  "attachments": {
+    "seats": 5,
+    "helm": "HelmSeat",
+    "boarding": "BoardingPoint",
+    "rudder": "Rudder",
+    "propeller": "Propeller"
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

@@ -1,0 +1,15 @@
+test_delayed_failure_cannot_replace_confirmed_retry_receipt (test_continuity.ContinuityTests) ... ok
+test_inflight_cancel_refuses_before_late_commit (test_continuity.ContinuityTests) ... ok
+test_legacy_prepared_rows_migrate_to_conservative_unknown (test_continuity.ContinuityTests) ... ok
+test_never_dispatched_cancel_and_durable_attempt_after_crash (test_continuity.ContinuityTests) ... ok
+test_outbox_altered_duplicate_stale_and_expired_preserve_intent (test_continuity.ContinuityTests) ... ok
+test_reconcile_expired_unknown_from_actual_own_events_without_dispatch (test_continuity.ContinuityTests) ... ok
+test_seurl_finite_verbs_integrity_and_no_authority_from_url (test_continuity.ContinuityTests) ... ok
+test_seurl_unsupported_verbs_and_instruction_text_are_refused (test_continuity.ContinuityTests) ... ok
+test_store_forward_unknown_commit_restarts_and_delivers_exactly_once (test_continuity.ContinuityTests) ... ok
+test_unknown_deadline_is_not_false_expiry_or_cancellation (test_continuity.ContinuityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.558s
+
+OK

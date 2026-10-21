@@ -1,0 +1,47 @@
+test_entity_effect_is_atomic_durable_and_observable_without_private_memory (test_entity_world.EntityWorldTests) ... ERROR
+test_forged_observation_and_remote_effect_are_refused_without_state_change (test_entity_world.EntityWorldTests) ... ok
+test_host_observes_own_request_and_ride_offer_does_not_take_control (test_entity_world.EntityWorldTests) ... ERROR
+test_validate_does_not_commit_nested_life_candidate (test_entity_world.EntityWorldTests) ... ERROR
+
+======================================================================
+ERROR: test_entity_effect_is_atomic_durable_and_observable_without_private_memory (test_entity_world.EntityWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_entity_world.py", line 33, in test_entity_effect_is_atomic_durable_and_observable_without_private_memory
+    before=self.w.snapshot()['life']['entities']['building:cafe']['provenance']
+KeyError: 'life'
+
+======================================================================
+ERROR: test_host_observes_own_request_and_ride_offer_does_not_take_control (test_entity_world.EntityWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_entity_world.py", line 50, in test_host_observes_own_request_and_ride_offer_does_not_take_control
+    decision=self.action('request_entry',{'entity':'building:cafe'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_entity_world.py", line 30, in action
+    return self.w.execute(self.token,{'schema':'dark.action/1','request_id':'action'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 306, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 343, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 556, in _act
+    raise Refused("UNKNOWN_OPERATION", op)
+dark_server.world.Refused: UNKNOWN_OPERATION: request_entry
+
+======================================================================
+ERROR: test_validate_does_not_commit_nested_life_candidate (test_entity_world.EntityWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_entity_world.py", line 60, in test_validate_does_not_commit_nested_life_candidate
+    before=self.w.head();self.assertEqual(self.w.validate(self.token,request)['status'],'VALID')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 312, in validate
+    self._validate_envelope(request)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 300, in _validate_envelope
+    require(finite(value) if key in ("max_distance_m", "east", "north") else isinstance(value, str),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 45, in require
+    raise Refused(code, witness, clause)
+dark_server.world.Refused: ARGUMENT_TYPE: input has the wrong type
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.275s
+
+FAILED (errors=3)

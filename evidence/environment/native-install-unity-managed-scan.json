@@ -1,0 +1,10 @@
+{
+  "url": "https://download.unity3d.com/download_unity/9ea152932a88/LinuxEditorInstaller/Unity-6000.1.0f1.tar.xz",
+  "downloaded_bytes": 201326592,
+  "scanned_members": 5261,
+  "last_member": "Editor/Data/MonoBleedingEdge/lib/mono/net_4_x-linux/System.dll",
+  "found_managed_dlls": [],
+  "duration_seconds": 22.882327273022383,
+  "stop": "RuntimeError: 192MiB compressed scan bound reached",
+  "full_archive_integrity": "NOT_VERIFIED_PARTIAL_RANGE_ONLY"
+}

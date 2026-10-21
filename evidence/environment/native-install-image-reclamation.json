@@ -1,0 +1,116 @@
+{
+  "schema": "dark.native-temporary-reclamation/1",
+  "utc": "2026-10-21T09:46:42.361057+00:00",
+  "reason": "completed bounded probes; root authorized reclaim own diagnostic image to reserve speech experiment space",
+  "archive_url": "https://dl.google.com/android/repository/sys-img/android/arm64-v8a-26_r02.zip",
+  "archive_sha256": "74785c6d7ce73a12e730bd2bceb075fb4c68e0052c8f79b78f9322b722c2923c",
+  "files": [
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/cache.img.qcow2",
+      "logical_bytes": 196616,
+      "allocated_bytes": 200704
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/multiinstance.lock",
+      "logical_bytes": 0,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/system.img.qcow2",
+      "logical_bytes": 196656,
+      "allocated_bytes": 200704
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/userdata.img",
+      "logical_bytes": 576716800,
+      "allocated_bytes": 11407360
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/encryptionkey.img.qcow2",
+      "logical_bytes": 196616,
+      "allocated_bytes": 200704
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/encryptionkey.img",
+      "logical_bytes": 1048576,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/vendor.img",
+      "logical_bytes": 102760448,
+      "allocated_bytes": 15929344
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/read-snapshot.txt",
+      "logical_bytes": 0,
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/hardware-qemu.ini.lock",
+      "logical_bytes": 7,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/package.xml",
+      "logical_bytes": 1522,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/cache.img",
+      "logical_bytes": 69206016,
+      "allocated_bytes": 5332992
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/kernel-ranchu",
+      "logical_bytes": 10715136,
+      "allocated_bytes": 10715136
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/source.properties",
+      "logical_bytes": 252,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/system.img",
+      "logical_bytes": 2686451712,
+      "allocated_bytes": 680333312
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/hardware-qemu.ini",
+      "logical_bytes": 4192,
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/ramdisk.img",
+      "logical_bytes": 1800005,
+      "allocated_bytes": 1802240
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/advancedFeatures.ini",
+      "logical_bytes": 152,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/build.prop",
+      "logical_bytes": 1908,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/qemu-version.txt",
+      "logical_bytes": 1,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/version_num.cache",
+      "logical_bytes": 3,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/homeless-native/sdk/system-images/android-26/default/arm64-v8a/NOTICE.txt",
+      "logical_bytes": 1616999,
+      "allocated_bytes": 1617920
+    }
+  ],
+  "allocated_bytes": 727777280,
+  "prior_probe_logs_preserved": true
+}

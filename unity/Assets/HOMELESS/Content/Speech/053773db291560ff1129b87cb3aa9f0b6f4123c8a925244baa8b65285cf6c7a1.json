@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1",
+  "filename": "053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1.wav",
+  "event_id": "evt:arrival:en:pair_reply",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:en:pair_reply",
+    "speaker": "npc:bo",
+    "language": "en",
+    "act": "pair_reply",
+    "slots": {}
+  },
+  "caption": "In a moment. I am waiting for my coffee.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "en-us",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "en_dict": "20ac462c63f9c0a7b8dc124ca02262c3ecfea550b723f29e10f177339ebeda10",
+      "lang/gmw/en-US": "e522a079c166599f1c9549370979e680ca5dbb62fb93ebd130dc0409f1e66ee8"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "30e6af3d2879e13370c4d3f63bb88caa302b784ba13c5dd488975742e15bda8b",
+  "synthesis_seconds": 0.018865269143134356,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 63935,
+  "duration_seconds": 2.899546485260771,
+  "peak_abs": 15800,
+  "pcm_rms": 0.06348252202582182,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

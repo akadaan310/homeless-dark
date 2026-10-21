@@ -1,0 +1,36 @@
+{
+  "scope": [
+    "packages/dark_server/staging.py",
+    "tests/server/test_staging.py"
+  ],
+  "reviewer": "hero_speech independent read-only source review",
+  "findings": [
+    {
+      "issue": "Asset index aliases caller manifest while digest uses copied manifest",
+      "fix": "Index now constructed from self.manifest deep copy",
+      "status": "fixed and re-reviewed"
+    },
+    {
+      "issue": "NUL asset path could escape typed refusal through os.open ValueError",
+      "fix": "Canonical relative path validation rejects control characters",
+      "status": "fixed and re-reviewed"
+    },
+    {
+      "issue": "JSON limit checked after decoding",
+      "fix": "1MiB maximum enforced before json.loads",
+      "status": "fixed and re-reviewed"
+    }
+  ],
+  "validation": {
+    "command": "python3 -m unittest discover -s tests/server -p test_staging.py -v",
+    "tests": 18,
+    "result": "PASS"
+  },
+  "observations": [
+    "Native collision and engine instantiation remain explicitly NOT_RUN",
+    "Activation requires current scope and actual fresh actor/path/catalog plus actor already inside source AABB",
+    "Local files opened using dir_fd/O_NOFOLLOW and checked regular size and hash",
+    "Cancelled preparation preserves admission cost; histories refuse at explicit bounds rather than silently discarding memory"
+  ],
+  "limits": "Scoped review does not certify root World admission/durability or adversarial operating-system races outside source-root trust."
+}

@@ -1,0 +1,161 @@
+{
+  "schema": "dark.global-lane-evidence/1",
+  "date": "2026-10-21",
+  "status": "PASS",
+  "scope": "Executed portable global overview ingestion, source-backed population allocation/continuity and coarse terrain sampling only",
+  "source_sha256": {
+    "tools/geography/global_layers.py": "1f7c6fbdb002ca0d73c0c37ff449b68e3edd60e2d9c65d299ed11b2c37aba23f",
+    "tools/geography/global_terrain.py": "106a6937c74101fa2c63ccfdf874547db9768d1b273d264da5fc375e9c039f20",
+    "packages/com.homeless.dark/Runtime/Population/PopulationLedger.cs": "8443c6ddbdcaef1131c34874ddddd4b97d6074eb770acd60d03f80c0b855799b",
+    "tests/Dark.PopulationAllocation.Tests/Program.cs": "eccb2b3a024850ff69e3b1d0c217894103307685096fc17185362ae9c890f998",
+    "tests/geography/test_global_layers.py": "ff6ddfdefbbd020bba1e42fb033606609b1a4822cefd05899eb59a21381c8b94",
+    "tests/geography/test_global_terrain.py": "9bfd469317a55765eb2821adb0f31e0ee6e5cf8d01e8fe6886dda7350e8f1fab"
+  },
+  "commands": [
+    {
+      "command": "python3 -m unittest discover -s tests/geography -p test_global_*.py -v",
+      "tests": 17,
+      "status": "PASS",
+      "log": "evidence/geography/global-tests.log"
+    },
+    {
+      "command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.PopulationAllocation.Tests",
+      "groups": 14,
+      "status": "PASS",
+      "log": "evidence/geography/global-population-tests.log"
+    },
+    {
+      "command": "python3 tools/geography/global_layers.py reproduce && python3 tools/geography/global_terrain.py reproduce",
+      "status": "PASS",
+      "evidence": "evidence/geography/global-reproduction.json"
+    }
+  ],
+  "source_layers": {
+    "coastline": {
+      "indexed_parts": 4133,
+      "scale": "1:10,000,000",
+      "source_features": 4133,
+      "street_precision": false,
+      "vertices": 410957
+    },
+    "countries": {
+      "indexed_parts": 4274,
+      "scale": "1:10,000,000",
+      "source_features": 258,
+      "street_precision": false,
+      "vertices": 548471
+    },
+    "lakes": {
+      "indexed_parts": 1366,
+      "scale": "1:10,000,000",
+      "source_features": 1355,
+      "street_precision": false,
+      "vertices": 162852
+    },
+    "land": {
+      "indexed_parts": 6837,
+      "scale": "1:10,000,000",
+      "source_features": 11,
+      "street_precision": false,
+      "vertices": 446175
+    },
+    "ocean": {
+      "indexed_parts": 2,
+      "scale": "1:10,000,000",
+      "source_features": 1,
+      "street_precision": false,
+      "vertices": 446789
+    },
+    "rivers": {
+      "indexed_parts": 2442,
+      "scale": "1:10,000,000",
+      "source_features": 1455,
+      "street_precision": false,
+      "vertices": 256386
+    }
+  },
+  "population": {
+    "epoch": 2024,
+    "observed_economy_count": 217,
+    "observed_economy_total": 8117484624,
+    "world_aggregate_estimate": 8140897523,
+    "unassigned_world_residual": 23412899,
+    "allocated_virtual_members": 8140897523,
+    "realized_individuals": 0,
+    "stored_individual_histories": 0,
+    "active_actors": 0,
+    "visible_characters": 0,
+    "voiced_characters": 0
+  },
+  "terrain": {
+    "coverage": "complete global grid, including poles and ocean bathymetry",
+    "gaussian_full_width_km": 32,
+    "grid": {
+      "add_offset": 0,
+      "height": 1801,
+      "max_height_m": 6282,
+      "min_height_m": -10197,
+      "ordering": "south-to-north rows, west-to-east columns, little-endian int16",
+      "registration": "gridline",
+      "scale_factor": 1,
+      "source_description": "Reduced by Gaussian Cartesian filtering (31.5 km fullwidth) from GEBCO_2025.nc [GEBCO Bathymetric Compilation Group, 2025 GEBCO 2025 Grid; https://doi.org/10.5285/37c52e96-24ea-67ce-e063-7086abc05f29]",
+      "source_history": "",
+      "source_title": "GEBCO Earth Relief 2025 at 06 arc minutes",
+      "source_z_units": null,
+      "south": -90,
+      "step_degrees": 0.1,
+      "west": -180,
+      "width": 3601
+    },
+    "height_datum": "mean sea level approximation; source mixes heterogeneous datums; not WGS84 ellipsoidal height",
+    "horizontal_crs": "geographic longitude/latitude WGS84",
+    "limitations": [
+      "6 arcminute (~11 km latitude spacing) overview with Gaussian smoothing; no road-level or building-level accuracy.",
+      "Sea-floor elevation is not water-surface elevation. Never use for navigation or safety at sea.",
+      "Sampling interpolates the overview; it does not invent higher resolution. Geoid conversion is not included."
+    ],
+    "native_collision_ready": false,
+    "runtime_file": {
+      "bytes": 12970802,
+      "path": "heights.i16",
+      "sha256": "5851f3715c7a937d95c016940447525758e37b8eb821b37e99078f90d443a0ae"
+    },
+    "schema": "dark.global-terrain/1",
+    "source": {
+      "acquired": "2026-10-21",
+      "bytes": 7371909,
+      "citation": "GEBCO Compilation Group (2025), GEBCO 2025 Grid, doi:10.5285/37c52e96-24ea-67ce-e063-7086abc05f29; Gaussian-filtered 6 arcminute derivative by GMT.",
+      "license": "Public domain; source acknowledgment and non-misrepresentation terms",
+      "license_url": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+      "processing_reference": "https://www.generic-mapping-tools.org/remote-datasets/earth-gebco.html",
+      "release": "GEBCO_2025, GMT derivative 2025-08-12",
+      "sha256": "8c6ffff1dd70f6bb6bfb7876a4d4ce2b71abd2a888fc1dfb47cac2be0edfe03d",
+      "url": "https://oceania.generic-mapping-tools.org/server/earth/earth_gebco/earth_gebco_06m_g.grd"
+    },
+    "street_scale_precision": false
+  },
+  "total_data_bytes": 134914658,
+  "negative_evidence": [
+    "evidence/geography/global-acquisition-initial.log records initial refusal of empty ISO codes on distinct aggregate rows; fixed by retaining their distinct aggregate IDs while excluding aggregates from economy sums.",
+    "evidence/geography/global-tests-initial.log records an incorrect >20000 test expectation; source-derived actual geometry part count is 19054 and the assertion now pins the observed source count."
+  ],
+  "native_collision": "NOT_RUN",
+  "full_world_street_baseline": "NOT_RUN",
+  "full_demographic_spatial_fidelity": "NOT_RUN",
+  "whole_commission_acceptance": false,
+  "remaining": [
+    "Global street/building/land-use and routable rail/maritime partitions.",
+    "Spatial demographic raster ingestion and source-epoch alignment; unassigned residual remains unlocated.",
+    "Bounded cohort schedules beyond explicit identity buckets and discrete migration events.",
+    "Native actor embodiment, quality/performance and device measurement.",
+    "Production authenticated storage/transaction wrapper for portable population snapshots."
+  ],
+  "review_fixes": {
+    "reviewer": "hero_speech",
+    "issue": "netCDF scalar attribute ctypes buffer size + malformed runtime metadata",
+    "status": "PASS",
+    "regression_log": "evidence/geography/global-tests.log",
+    "red_log": "evidence/geography/global-terrain-review-red.log",
+    "reproduction": "evidence/geography/global-terrain-review-reproduction.log"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "dark.stage-manifest/1",
+  "version": "local-bootstrap-v1",
+  "assets": [
+    {
+      "id": "hero-mesh",
+      "path": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx",
+      "bytes": 28134764,
+      "sha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef",
+      "kind": "mesh",
+      "decoder": "opaque_bytes"
+    },
+    {
+      "id": "hero-materials",
+      "path": "unity/Assets/HOMELESS/Content/Characters/materials.json",
+      "bytes": 5519,
+      "sha256": "94d58c88175d3ee268603095e18309895254c16551d26808e3f32961bc1ea6d2",
+      "kind": "material",
+      "decoder": "json"
+    },
+    {
+      "id": "hero-skin",
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/young_lightskinned_male_diffuse.png",
+      "bytes": 3693828,
+      "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+      "kind": "material",
+      "decoder": "opaque_bytes"
+    },
+    {
+      "id": "arrival-music",
+      "path": "unity/Assets/HOMELESS/Audio/original_arrival_motif.wav",
+      "bytes": 307244,
+      "sha256": "386e4ca404d00690c15069a810970bf9ca1cd7ebc0e32618f91b5f4032634ad5",
+      "kind": "music",
+      "decoder": "pcm_wave"
+    },
+    {
+      "id": "rain-audio",
+      "path": "unity/Assets/HOMELESS/Audio/synthetic_rain_wind_loop.wav",
+      "bytes": 768044,
+      "sha256": "1553e9ca833297fc674b161547365418555bf43c2716c89a81dd65333201d826",
+      "kind": "ambience",
+      "decoder": "pcm_wave"
+    },
+    {
+      "id": "greeting-voice",
+      "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav",
+      "bytes": 94882,
+      "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d",
+      "kind": "voice",
+      "decoder": "pcm_wave"
+    }
+  ]
+}

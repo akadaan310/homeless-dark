@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "f313d3b9a8c97e9babe9c46deaa05f147937f54e2f9b4ee4aadab1deca4cbe63",
+  "filename": "f313d3b9a8c97e9babe9c46deaa05f147937f54e2f9b4ee4aadab1deca4cbe63.wav",
+  "event_id": "evt:arrival:ar:farewell",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:farewell",
+    "speaker": "npc:bo",
+    "language": "ar",
+    "act": "farewell",
+    "slots": {}
+  },
+  "caption": "اعتن بنفسك. أراك لاحقا.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "ar",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "ar_dict": "59bb2a9d521e53808927a44b3fe757893913c702837b25d9a96e3753374b5eab",
+      "lang/sem/ar": "43f418f8140e5a7bd7096963da20ccba9247f6be1fcdb08cb53dd7967dd72eee"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "f3eba9e0c20a716bddb2e2c6e392153df1b039463d87715589d42e19b6a35831",
+  "synthesis_seconds": 0.02042874414473772,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 64600,
+  "duration_seconds": 2.929705215419501,
+  "peak_abs": 13835,
+  "pcm_rms": 0.05910142112198817,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

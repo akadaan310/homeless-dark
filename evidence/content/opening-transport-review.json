@@ -1,0 +1,31 @@
+{
+  "schema": "dark.opening-transport-source-review/1",
+  "assets": [
+    {
+      "name": "Bicycle",
+      "sha256": "9510b94bb605d66d934ab515b66e79d053a95f59d1c66b2245f44c7420adf4db",
+      "triangles": 36132,
+      "preview": "evidence/content/Bicycle-source-preview.png"
+    },
+    {
+      "name": "RotorShuttle",
+      "sha256": "0b1e1b10438c90c6c33a235821da62a97da2d1ad2c7b763ba356621c4fd713ae",
+      "triangles": 35566,
+      "preview": "evidence/content/RotorShuttle-source-preview.png"
+    }
+  ],
+  "performed": [
+    "Inspected actual Workbench geometry previews",
+    "Corrected stepped helicopter door boundaries using continuous source ring indices and door seals",
+    "Independent FBX reimport checks mesh finiteness, named pivots, and actual frame1-to31 rotation without pivot translation"
+  ],
+  "assessment": "Recognizable original unbranded source forms with mechanical detail; source quality is moderate and not cinematic acceptance. Bicycle saddle and helicopter cabin styling remain simple.",
+  "unpassed": [
+    "native Unity import and material appearance",
+    "mobile draw-call/LOD budget",
+    "bicycle rider hands/feet contacts",
+    "rotorcraft occupant clearance, collision and rotor dynamics",
+    "human near-camera hero-art review"
+  ],
+  "existing_character_assets_changed": false
+}

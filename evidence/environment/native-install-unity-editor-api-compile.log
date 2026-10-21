@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Dark.Core -> /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/bin/Debug/netstandard2.1/Dark.Core.dll
+  UnityApiCompile -> /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityApiCompile/bin/Debug/netstandard2.1/UnityApiCompile.dll
+  UnityEditorApiCompile -> /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityEditorApiCompile/bin/Debug/netstandard2.1/UnityEditorApiCompile.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.49

@@ -1,0 +1,47 @@
+{
+  "schema": "dark.global-terrain/1",
+  "source": {
+    "acquired": "2026-10-21",
+    "bytes": 7371909,
+    "citation": "GEBCO Compilation Group (2025), GEBCO 2025 Grid, doi:10.5285/37c52e96-24ea-67ce-e063-7086abc05f29; Gaussian-filtered 6 arcminute derivative by GMT.",
+    "license": "Public domain; source acknowledgment and non-misrepresentation terms",
+    "license_url": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+    "processing_reference": "https://www.generic-mapping-tools.org/remote-datasets/earth-gebco.html",
+    "release": "GEBCO_2025, GMT derivative 2025-08-12",
+    "sha256": "8c6ffff1dd70f6bb6bfb7876a4d4ce2b71abd2a888fc1dfb47cac2be0edfe03d",
+    "url": "https://oceania.generic-mapping-tools.org/server/earth/earth_gebco/earth_gebco_06m_g.grd"
+  },
+  "grid": {
+    "width": 3601,
+    "height": 1801,
+    "west": -180,
+    "south": -90,
+    "step_degrees": 0.1,
+    "scale_factor": 1,
+    "add_offset": 0,
+    "registration": "gridline",
+    "ordering": "south-to-north rows, west-to-east columns, little-endian int16",
+    "min_height_m": -10197,
+    "max_height_m": 6282,
+    "source_title": "GEBCO Earth Relief 2025 at 06 arc minutes",
+    "source_description": "Reduced by Gaussian Cartesian filtering (31.5 km fullwidth) from GEBCO_2025.nc [GEBCO Bathymetric Compilation Group, 2025 GEBCO 2025 Grid; https://doi.org/10.5285/37c52e96-24ea-67ce-e063-7086abc05f29]",
+    "source_history": "",
+    "source_z_units": null
+  },
+  "height_datum": "mean sea level approximation; source mixes heterogeneous datums; not WGS84 ellipsoidal height",
+  "horizontal_crs": "geographic longitude/latitude WGS84",
+  "gaussian_full_width_km": 32,
+  "coverage": "complete global grid, including poles and ocean bathymetry",
+  "native_collision_ready": false,
+  "street_scale_precision": false,
+  "runtime_file": {
+    "path": "heights.i16",
+    "bytes": 12970802,
+    "sha256": "5851f3715c7a937d95c016940447525758e37b8eb821b37e99078f90d443a0ae"
+  },
+  "limitations": [
+    "6 arcminute (~11 km latitude spacing) overview with Gaussian smoothing; no road-level or building-level accuracy.",
+    "Sea-floor elevation is not water-surface elevation. Never use for navigation or safety at sea.",
+    "Sampling interpolates the overview; it does not invent higher resolution. Geoid conversion is not included."
+  ]
+}

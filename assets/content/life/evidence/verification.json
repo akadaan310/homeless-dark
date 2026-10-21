@@ -1,0 +1,14 @@
+{
+  "schema": "dark.life-verification/1",
+  "status": "PASS",
+  "test_groups": 18,
+  "scope": "Portable deterministic candidate state only; caller owns World admission and durable commit",
+  "physical_validation": "NOT_RUN",
+  "intelligence_validation": "NOT_CLAIMED",
+  "files": {
+    "packages/dark_server/life.py": "bf9ca73eab838ae871cac67ad9c1ee75e1ac3b91a433edc6ef88270d1610fa63",
+    "tests/server/test_life.py": "addad2fdbcfbf1fcf818a345b8e1797789ec04d0363c3852533a823b54982d2c",
+    "assets/content/life/entities.json": "921520e1be0daba688cd369e31355b85b583bf0f16667a1d38d509278f5a579c"
+  },
+  "independent_review": "Three findings fixed and independently re-reviewed; eighteen tests PASS; evidence/content/life-review.json"
+}

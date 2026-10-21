@@ -1,0 +1,66 @@
+{
+  "asset": "CeramicCup",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -0.04050000011920929,
+          0.07400000095367432
+        ],
+        [
+          -0.04050000011920929,
+          0.04050000011920929
+        ],
+        [
+          0.0,
+          0.10199999809265137
+        ]
+      ],
+      "vertices": 2418
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -0.04050000011920929,
+          0.07400000095367432
+        ],
+        [
+          -0.04050000011920929,
+          0.04050000011920929
+        ],
+        [
+          0.0,
+          0.10199999809265137
+        ]
+      ],
+      "vertices": 2418
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -0.04050000011920929,
+          0.07400000095367432
+        ],
+        [
+          -0.04050000011920929,
+          0.04050000011920929
+        ],
+        [
+          0.0,
+          0.10199999809265137
+        ]
+      ],
+      "vertices": 2418
+    }
+  ],
+  "preview": "evidence/content/CeramicCup-source-preview.png"
+}

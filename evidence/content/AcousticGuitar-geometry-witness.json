@@ -1,0 +1,66 @@
+{
+  "asset": "AcousticGuitar",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -0.18660342693328857,
+          0.18660342693328857
+        ],
+        [
+          -0.4339999854564667,
+          0.06499999761581421
+        ],
+        [
+          -0.1290000081062317,
+          1.284999966621399
+        ]
+      ],
+      "vertices": 2900
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -0.18660342693328857,
+          0.18660342693328857
+        ],
+        [
+          -0.4339999854564667,
+          0.06499999761581421
+        ],
+        [
+          -0.1290000081062317,
+          1.284999966621399
+        ]
+      ],
+      "vertices": 2900
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -0.18660342693328857,
+          0.18660342693328857
+        ],
+        [
+          -0.4339999854564667,
+          0.06499999761581421
+        ],
+        [
+          -0.1290000081062317,
+          1.284999966621399
+        ]
+      ],
+      "vertices": 2900
+    }
+  ],
+  "preview": "evidence/content/AcousticGuitar-source-preview.png"
+}

@@ -1,0 +1,66 @@
+{
+  "asset": "Bicycle",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -0.30528342723846436,
+          0.30528342723846436
+        ],
+        [
+          -1.0011999607086182,
+          1.0211999416351318
+        ],
+        [
+          0.008799999952316284,
+          1.1160000562667847
+        ]
+      ],
+      "vertices": 19548
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -0.30528342723846436,
+          0.30528342723846436
+        ],
+        [
+          -1.0011907815933228,
+          1.0211907625198364
+        ],
+        [
+          0.00880791898816824,
+          1.1160000562667847
+        ]
+      ],
+      "vertices": 19548
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -0.30528342723846436,
+          0.30528342723846436
+        ],
+        [
+          -1.0011999607086182,
+          1.0211999416351318
+        ],
+        [
+          0.008799999952316284,
+          1.1160000562667847
+        ]
+      ],
+      "vertices": 19548
+    }
+  ],
+  "preview": "evidence/content/Bicycle-source-preview.png"
+}

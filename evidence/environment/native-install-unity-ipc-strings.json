@@ -1,0 +1,20 @@
+{
+  "scope": "Read-only strings from unchanged official Editor; no execution or binary patch",
+  "matches": [
+    "LicensingClient has failed validation; ignoring",
+    "LicenseClient",
+    "Connected to LicensingClient (PId: {0}, launch time: {1:F2}, total connection time: {2:F2}s)",
+    "/tmp/Unity-%s.sock",
+    "licensingClientVersion",
+    "IPC channel to LicensingClient doesn't exist; aborting\n",
+    "Successfully connected to LicensingClient on channel: \"{0}\" (connect: {1:F2}s, validation: {3:F2}s, handshake: {2:F2}s)",
+    "Failed to launch LicensingClient: {0}",
+    "/tmp/ilpp.sock-",
+    "CheckLicensingClientNotification",
+    "CheckLicensingClient",
+    "\n                    Handshaking with LicensingClient:\n                      Version:                 {0}\n                      Session Id:              {1}\n                ",
+    "Successfully launched the LicensingClient (PId: {0})",
+    "Launched LicensingClient (PId: {0}), but is not ready",
+    ".sock"
+  ]
+}

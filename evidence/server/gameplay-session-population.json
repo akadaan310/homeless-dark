@@ -1,0 +1,2023 @@
+{
+  "schema": "dark.gameplay-session/1",
+  "status": "PASS",
+  "duration_seconds": 13.433,
+  "content_sha256": "ed0dee28381fd6b7bf5aae5c38218fa21e8122dadb033809e5e75c6841f24ea8",
+  "final_node": "airport:EGLL",
+  "simulated_seconds": 68476,
+  "verification": {
+    "events": 60,
+    "head": "14f4e3caf4f4f4f5b30ca155e22d6e2dba244dd3b6df16276894b9f21999f3a1",
+    "state_hash": "77da5d7221e202d76434ebdd5ee33a4d5d473e74bff963c2b847258c9440b58b",
+    "trust_boundary": "local SQLite operator"
+  },
+  "terrain_source": {
+    "attribution": [
+      "Natural Earth public domain",
+      "GEBCO2025; GMT6arcminute filtered derivative",
+      "World Bank WDI SP.POP.TOTL2024, CC BY4.0"
+    ],
+    "natural_earth_revision": "ca96624a56bd078437bca8184e78163e5039ad19",
+    "overview_sha256": "fc707bf2487d5099de9aa7c715a751d623b2d61c264c5c44d4c252ee7a3a9765",
+    "population_allocation_sha256": "6c6343252d49bed0238cf82e0599a36b93b1aa95ed29fcb5dd46a425e51d03bb",
+    "terrain_release": "GEBCO_2025, GMT derivative 2025-08-12",
+    "terrain_runtime_sha256": "5851f3715c7a937d95c016940447525758e37b8eb821b37e99078f90d443a0ae",
+    "terrain_source_sha256": "8c6ffff1dd70f6bb6bfb7876a4d4ce2b71abd2a888fc1dfb47cac2be0edfe03d"
+  },
+  "protocol": "actual loopback HTTP with three separately authenticated clients",
+  "participants": "two human-role test clients and one external deterministic policy client; no human/LLM attendance claim",
+  "native_rendering": "NOT_RUN",
+  "physical_validation": "headless routes and portable authored volumes only",
+  "transcript": [
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:1",
+        "expected_revision": 3,
+        "operation": "talk",
+        "arguments": {
+          "target": "mira",
+          "act": "greeting"
+        }
+      },
+      "result": {
+        "data": {
+          "caption": "Hello. Good to see you.",
+          "response_act": "greeting",
+          "speech_id": "speech:4:0:mira:greeting"
+        },
+        "revision": 4,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:2",
+        "expected_revision": 4,
+        "operation": "talk",
+        "arguments": {
+          "target": "mira",
+          "act": "request_ride"
+        }
+      },
+      "result": {
+        "data": {
+          "caption": "I can help arrange a ride. Where are you going?",
+          "decision_witness": {
+            "budget_before": 100,
+            "causal_observations": [
+              "node:4:0:fictional:cafe-apron",
+              "node:4:0:fictional:mira-place",
+              "node:4:0:osm:node:8066816959"
+            ],
+            "cost": 5,
+            "game": {
+              "algorithm": "exact rational support/indifference enumeration",
+              "assumptions": [
+                "two players choose independently from two actions",
+                "utilities are supplied model values, not inferred human preferences"
+              ],
+              "baselines": {
+                "myopic": {
+                  "column_probability_0": {
+                    "denominator": 1,
+                    "numerator": 1
+                  },
+                  "expected_utilities": [
+                    5.0,
+                    5.0
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 5
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 5
+                    }
+                  ],
+                  "max_regret": 0.0,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    0.0
+                  ],
+                  "row_probability_0": {
+                    "denominator": 1,
+                    "numerator": 1
+                  },
+                  "support": "pure"
+                },
+                "uniform": {
+                  "column_probability_0": {
+                    "denominator": 2,
+                    "numerator": 1
+                  },
+                  "expected_utilities": [
+                    1.5,
+                    1.25
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 2,
+                      "numerator": 3
+                    },
+                    {
+                      "denominator": 4,
+                      "numerator": 5
+                    }
+                  ],
+                  "max_regret": 0.25,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 4,
+                      "numerator": 1
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    0.25
+                  ],
+                  "row_probability_0": {
+                    "denominator": 2,
+                    "numerator": 1
+                  },
+                  "support": "mixed"
+                }
+              },
+              "column_utilities": [
+                [
+                  5,
+                  0
+                ],
+                [
+                  -2,
+                  2
+                ]
+              ],
+              "equilibria": [
+                {
+                  "column_probability_0": {
+                    "denominator": 1,
+                    "numerator": 1
+                  },
+                  "expected_utilities": [
+                    5.0,
+                    5.0
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 5
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 5
+                    }
+                  ],
+                  "max_regret": 0.0,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    0.0
+                  ],
+                  "row_probability_0": {
+                    "denominator": 1,
+                    "numerator": 1
+                  },
+                  "support": "pure"
+                },
+                {
+                  "column_probability_0": {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  "expected_utilities": [
+                    1.0,
+                    2.0
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 1
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 2
+                    }
+                  ],
+                  "max_regret": 0.0,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    0.0
+                  ],
+                  "row_probability_0": {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  "support": "pure"
+                },
+                {
+                  "column_probability_0": {
+                    "denominator": 2,
+                    "numerator": 1
+                  },
+                  "expected_utilities": [
+                    1.5,
+                    1.1111111111111112
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 2,
+                      "numerator": 3
+                    },
+                    {
+                      "denominator": 9,
+                      "numerator": 10
+                    }
+                  ],
+                  "max_regret": 0.0,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    0.0
+                  ],
+                  "row_probability_0": {
+                    "denominator": 9,
+                    "numerator": 4
+                  },
+                  "support": "mixed"
+                }
+              ],
+              "maximum_profiles_checked": 16,
+              "row_utilities": [
+                [
+                  5,
+                  -2
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              "schema": "dark.exact-nash2x2/1",
+              "selected": {
+                "column_probability_0": {
+                  "denominator": 1,
+                  "numerator": 1
+                },
+                "expected_utilities": [
+                  5.0,
+                  5.0
+                ],
+                "expected_utility_exact": [
+                  {
+                    "denominator": 1,
+                    "numerator": 5
+                  },
+                  {
+                    "denominator": 1,
+                    "numerator": 5
+                  }
+                ],
+                "max_regret": 0.0,
+                "regret_exact": [
+                  {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  {
+                    "denominator": 1,
+                    "numerator": 0
+                  }
+                ],
+                "regrets": [
+                  0.0,
+                  0.0
+                ],
+                "row_probability_0": {
+                  "denominator": 1,
+                  "numerator": 1
+                },
+                "support": "pure"
+              },
+              "selection": "maximum summed utility, then lexicographic probabilities",
+              "strategic_realism_claim": false
+            },
+            "needs": {
+              "company": 300,
+              "fatigue": 250
+            },
+            "on_work_schedule": false,
+            "physical_validation": "NOT_RUN",
+            "sample_method": "deterministic identity/tick hash; expected strategy witness is distinct from this realized action"
+          },
+          "response_act": "offer_ride",
+          "speech_id": "speech:5:0:mira:offer_ride"
+        },
+        "revision": 5,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:3",
+        "expected_revision": 5,
+        "operation": "talk",
+        "arguments": {
+          "target": "omar",
+          "act": "request_ride"
+        }
+      },
+      "result": {
+        "data": {
+          "caption": "I need to get to work. I cannot offer a ride now.",
+          "decision_witness": {
+            "budget_before": 100,
+            "causal_observations": [
+              "node:5:0:fictional:cafe-apron",
+              "node:5:0:fictional:omar-place"
+            ],
+            "cost": 5,
+            "game": {
+              "algorithm": "exact rational support/indifference enumeration",
+              "assumptions": [
+                "two players choose independently from two actions",
+                "utilities are supplied model values, not inferred human preferences"
+              ],
+              "baselines": {
+                "myopic": {
+                  "column_probability_0": {
+                    "denominator": 1,
+                    "numerator": 1
+                  },
+                  "expected_utilities": [
+                    2.0,
+                    -2.0
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 2
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": -2
+                    }
+                  ],
+                  "max_regret": 4.0,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 4
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    4.0
+                  ],
+                  "row_probability_0": {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  "support": "pure"
+                },
+                "uniform": {
+                  "column_probability_0": {
+                    "denominator": 2,
+                    "numerator": 1
+                  },
+                  "expected_utilities": [
+                    -3.0,
+                    1.25
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": -3
+                    },
+                    {
+                      "denominator": 4,
+                      "numerator": 5
+                    }
+                  ],
+                  "max_regret": 4.5,
+                  "regret_exact": [
+                    {
+                      "denominator": 2,
+                      "numerator": 9
+                    },
+                    {
+                      "denominator": 4,
+                      "numerator": 1
+                    }
+                  ],
+                  "regrets": [
+                    4.5,
+                    0.25
+                  ],
+                  "row_probability_0": {
+                    "denominator": 2,
+                    "numerator": 1
+                  },
+                  "support": "mixed"
+                }
+              },
+              "column_utilities": [
+                [
+                  5,
+                  0
+                ],
+                [
+                  -2,
+                  2
+                ]
+              ],
+              "equilibria": [
+                {
+                  "column_probability_0": {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  "expected_utilities": [
+                    1.0,
+                    2.0
+                  ],
+                  "expected_utility_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 1
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 2
+                    }
+                  ],
+                  "max_regret": 0.0,
+                  "regret_exact": [
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    },
+                    {
+                      "denominator": 1,
+                      "numerator": 0
+                    }
+                  ],
+                  "regrets": [
+                    0.0,
+                    0.0
+                  ],
+                  "row_probability_0": {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  "support": "pure"
+                }
+              ],
+              "maximum_profiles_checked": 16,
+              "row_utilities": [
+                [
+                  -4,
+                  -11
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              "schema": "dark.exact-nash2x2/1",
+              "selected": {
+                "column_probability_0": {
+                  "denominator": 1,
+                  "numerator": 0
+                },
+                "expected_utilities": [
+                  1.0,
+                  2.0
+                ],
+                "expected_utility_exact": [
+                  {
+                    "denominator": 1,
+                    "numerator": 1
+                  },
+                  {
+                    "denominator": 1,
+                    "numerator": 2
+                  }
+                ],
+                "max_regret": 0.0,
+                "regret_exact": [
+                  {
+                    "denominator": 1,
+                    "numerator": 0
+                  },
+                  {
+                    "denominator": 1,
+                    "numerator": 0
+                  }
+                ],
+                "regrets": [
+                  0.0,
+                  0.0
+                ],
+                "row_probability_0": {
+                  "denominator": 1,
+                  "numerator": 0
+                },
+                "support": "pure"
+              },
+              "selection": "maximum summed utility, then lexicographic probabilities",
+              "strategic_realism_claim": false
+            },
+            "needs": {
+              "company": 300,
+              "fatigue": 250
+            },
+            "on_work_schedule": true,
+            "physical_validation": "NOT_RUN",
+            "sample_method": "deterministic identity/tick hash; expected strategy witness is distinct from this realized action"
+          },
+          "response_act": "decline_ride",
+          "speech_id": "speech:6:0:omar:decline_ride"
+        },
+        "revision": 6,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "companion",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:4",
+        "expected_revision": 6,
+        "operation": "sit",
+        "arguments": {}
+      },
+      "result": {
+        "data": {
+          "stance": "sitting"
+        },
+        "revision": 7,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "companion",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:5",
+        "expected_revision": 7,
+        "operation": "stand",
+        "arguments": {}
+      },
+      "result": {
+        "data": {
+          "stance": "standing"
+        },
+        "revision": 8,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "external-policy",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:6",
+        "expected_revision": 8,
+        "operation": "talk",
+        "arguments": {
+          "target": "mira",
+          "act": "greeting"
+        }
+      },
+      "result": {
+        "data": {
+          "caption": "Hello. Good to see you.",
+          "response_act": "greeting",
+          "speech_id": "speech:9:0:mira:greeting"
+        },
+        "revision": 9,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:7",
+        "expected_revision": 9,
+        "operation": "prepare_cell",
+        "arguments": {
+          "cell": "cafe-apron"
+        }
+      },
+      "result": {
+        "data": {
+          "cell": "cafe-apron",
+          "native_collision": "NOT_RUN",
+          "scope": "portable metadata admission; no Unity activation claim",
+          "witness": {
+            "actor": "traveler",
+            "cell_id": "cell:a8656d6f1f7057893d2f251386deaf9ac60caaa48ef4b18b23621e8e77a664e9",
+            "effect": {
+              "gate": "RESERVE",
+              "type": "prepared_resource_state",
+              "world_position_changed": false
+            },
+            "hash": "0938a16cde9780d63eb75247fa1a105cab3d7eb0f658f0e29014d46fc2e5601a",
+            "operation": "RESERVE",
+            "previous": "e05137ea7bf7a860ba093c9b1ee28a21aab3abd80fc64d5255b19b4845a2d4b2",
+            "revision": 9,
+            "tick": 0
+          },
+          "world_position_changed": false
+        },
+        "revision": 10,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:8",
+        "expected_revision": 10,
+        "operation": "activate_cell",
+        "arguments": {
+          "cell": "cafe-apron"
+        }
+      },
+      "result": {
+        "data": {
+          "cell": "cafe-apron",
+          "native_collision": "NOT_RUN",
+          "scope": "portable metadata admission; no Unity activation claim",
+          "witness": {
+            "actor": "traveler",
+            "cell_id": "cell:a8656d6f1f7057893d2f251386deaf9ac60caaa48ef4b18b23621e8e77a664e9",
+            "effect": {
+              "actual_position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "gate": "ACTIVATE",
+              "requires_world_commit": true,
+              "type": "cell_activation_candidate",
+              "world_position_changed": false
+            },
+            "hash": "52cc764a2856686259507c39117b68687a47dd2201a25d61a24d33b0dddabe67",
+            "operation": "ACTIVATE",
+            "previous": "0938a16cde9780d63eb75247fa1a105cab3d7eb0f658f0e29014d46fc2e5601a",
+            "revision": 10,
+            "tick": 0
+          },
+          "world_position_changed": false
+        },
+        "revision": 11,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:9",
+        "expected_revision": 11,
+        "operation": "retire_cell",
+        "arguments": {
+          "cell": "cafe-apron"
+        }
+      },
+      "result": {
+        "data": {
+          "cell": "cafe-apron",
+          "native_collision": "NOT_RUN",
+          "scope": "portable metadata admission; no Unity activation claim",
+          "witness": {
+            "actor": "traveler",
+            "cell_id": "cell:a8656d6f1f7057893d2f251386deaf9ac60caaa48ef4b18b23621e8e77a664e9",
+            "effect": {
+              "gate": "CACHE",
+              "type": "prepared_resource_state",
+              "world_position_changed": false
+            },
+            "hash": "e2c26c9213d07bc4ad36fefb171f9bb135f66593ad90c885755795e35dd1beae",
+            "operation": "CACHE",
+            "previous": "75f25cf72efc1a4039587e870e9b07214342e5e6a0abbd6956fcb9261c4ca76e",
+            "revision": 12,
+            "tick": 0
+          },
+          "world_position_changed": false
+        },
+        "revision": 12,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:10",
+        "expected_revision": 12,
+        "operation": "entity_action",
+        "arguments": {
+          "entity": "building:cafe",
+          "ability": "set_light",
+          "input": {
+            "level": 0.65
+          }
+        }
+      },
+      "result": {
+        "data": {
+          "control_transferred": false,
+          "entity": "building:cafe",
+          "host_causal_source": "authenticated local World action",
+          "physical_validation": "NOT_RUN",
+          "witness": {
+            "ability": "set_light",
+            "actor": "traveler",
+            "capability": "life:building:cafe:set_light",
+            "causal_observations": [],
+            "cost": 2,
+            "effect": {
+              "level": 0.65,
+              "type": "synthetic_light"
+            },
+            "entity_id": "building:cafe",
+            "hash": "21b54d407d1cd8761f1b91e69a79a4b23c4e83ece327cd630965bb10c8cbc2e4",
+            "previous": "57b106e5fc36a7ce6cebf8631c7852b6e9cf1dff0a0cd9df2313e58ca9d2fad8",
+            "request_id": "b41060c25420883dba8b6d52998bb04a33566300e95379f3af7a84e5d3f02489",
+            "revision": 1,
+            "source_geometry_sha256": "37faf0c633057d86a47cfabb6801dde1962c4e8ca4da9840b8f55921e2abdaad",
+            "tick": 0
+          }
+        },
+        "revision": 13,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:11",
+        "expected_revision": 13,
+        "operation": "request_entry",
+        "arguments": {
+          "entity": "building:cafe"
+        }
+      },
+      "result": {
+        "data": {
+          "control_transferred": false,
+          "entity": "building:cafe",
+          "host_causal_source": "authenticated local World action",
+          "physical_validation": "NOT_RUN",
+          "witness": {
+            "ability": "decide_entry",
+            "actor": "traveler",
+            "capability": "life:building:cafe:decide_entry",
+            "causal_observations": [
+              "world:13:1"
+            ],
+            "cost": 3,
+            "effect": {
+              "decision": "allow",
+              "fictional_permission_only": true,
+              "reason": "capacity_and_policy",
+              "type": "entry_decision",
+              "visitor": "traveler"
+            },
+            "entity_id": "building:cafe",
+            "hash": "80b16279dcbd3758c8b451785c1a0018925c75db94ef6a28f05e54b0f0b3986c",
+            "previous": "d4db5f268bc8abdfbfc1ffce7735753ded29bbb2fae6703518a19bb16ae64550",
+            "request_id": "fa949241a0b31ed56e071afb8a73596306bdc6dc695c2df34ee3b17020f3d967",
+            "revision": 3,
+            "source_geometry_sha256": "37faf0c633057d86a47cfabb6801dde1962c4e8ca4da9840b8f55921e2abdaad",
+            "tick": 0
+          }
+        },
+        "revision": 14,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:12",
+        "expected_revision": 14,
+        "operation": "encounter_population",
+        "arguments": {
+          "key": "opening-neighbor"
+        }
+      },
+      "result": {
+        "data": {
+          "metrics": {
+            "active_actors": 1,
+            "demographic_estimate": 8140897523,
+            "focused_actors": 0,
+            "stored_individual_histories": 1,
+            "stored_individuals": 1,
+            "virtual_members": 8140897522,
+            "visible_characters": 0,
+            "voiced_characters": 0
+          },
+          "person": {
+            "commitments": [],
+            "facts": [
+              "met:traveler:tick:0"
+            ],
+            "fidelity": "Active",
+            "id": "wb2024/USA/66762800",
+            "last_event_revision": 0,
+            "ordinal": 66762800,
+            "origin": "USA",
+            "policy_seed": "eb97a0660d2bb2377c090eb316528ad0f4ce0529d63373c2bdc6e18169ababe4",
+            "present": "USA",
+            "residence": "USA"
+          },
+          "retire": null,
+          "source_person_position": null,
+          "spawn": {
+            "controller": "npc",
+            "fictional_placement": true,
+            "identity": "wb2024/USA/66762800",
+            "native_collision_validation": "NOT_RUN",
+            "policy_seed": "eb97a0660d2bb2377c090eb316528ad0f4ce0529d63373c2bdc6e18169ababe4",
+            "position": {
+              "alt": 0.0,
+              "lat": 27.959472823739873,
+              "lon": -82.5052121059962
+            },
+            "present_country": "USA",
+            "requires_world_admission": true,
+            "role": "ordinary_synthetic_npc",
+            "source_person_position": null,
+            "world_actor_id": "population:USA:66762800"
+          },
+          "witness": {
+            "actor": "traveler",
+            "actual_source_country": "USA",
+            "allocation_hash": "ea2957c447598037b3fe56796c0f31eec476b66f730adfdadf185c0002112ebd",
+            "fictional_placement": true,
+            "identity": "wb2024/USA/66762800",
+            "ledger_revision": 0,
+            "operation": "encounter",
+            "population_source_sha256": "770cbf8e33263680074c1bc60a5af540ac2f55db991389bfeabebc762c528e11",
+            "world_revision": 0
+          }
+        },
+        "revision": 15,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:13",
+        "expected_revision": 15,
+        "operation": "talk",
+        "arguments": {
+          "target": "population:USA:66762800",
+          "act": "greeting"
+        }
+      },
+      "result": {
+        "data": {
+          "caption": "Hello. Good to see you.",
+          "response_act": "greeting",
+          "speech_id": "speech:16:0:population:USA:66762800:greeting"
+        },
+        "revision": 16,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "script": {
+        "status": "PROPOSED",
+        "proposals": [
+          {
+            "operation": "author",
+            "arguments": {
+              "target": "fictional:cafe-apron",
+              "text": "There is room for a shared story here."
+            }
+          }
+        ],
+        "program_digest": "a4d650e21ba51e5ea2a9cb39db64c35d8832cfd6a4b3d53fa79de30a35bdba26",
+        "observation_digest": "033f69a6f61e70ceac825996391b208cec81a87b62106b8c46d3df78a765b5f8",
+        "duration_ms": 3.744,
+        "authority_granted": false,
+        "activation": "submit each proposal through current World admission with explicit request ID and revision"
+      },
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session-script",
+        "expected_revision": 16,
+        "operation": "author",
+        "arguments": {
+          "target": "fictional:cafe-apron",
+          "text": "There is room for a shared story here."
+        }
+      },
+      "result": [
+        {
+          "request_id": "session-script",
+          "state": "delivered",
+          "digest": "1ab12a75a61614ee9d0e03c50f0df78d3555cc1e2f9b1b31578a9decd5765996",
+          "deadline": 1792578901,
+          "may_have_committed": true,
+          "response": {
+            "data": {
+              "author": "traveler",
+              "fictional": true,
+              "revision": 17,
+              "text": "There is room for a shared story here.",
+              "tick": 0
+            },
+            "revision": 17,
+            "status": "COMMITTED",
+            "tick": 0
+          }
+        }
+      ]
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:14",
+        "expected_revision": 17,
+        "operation": "travel",
+        "arguments": {
+          "destination": "osm:node:2057042478",
+          "mode": "walk"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 30.29792244683899,
+          "mode": "walk",
+          "route": [
+            "fictional:cafe-apron",
+            "osm:node:1603574189",
+            "osm:node:2057042478"
+          ]
+        },
+        "revision": 18,
+        "status": "COMMITTED",
+        "tick": 0
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:16",
+        "expected_revision": 19,
+        "operation": "travel",
+        "arguments": {
+          "destination": "osm:node:1603574189",
+          "mode": "walk"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 16.323861892534797,
+          "mode": "walk",
+          "route": [
+            "osm:node:2057042478",
+            "osm:node:1603574189"
+          ]
+        },
+        "revision": 20,
+        "status": "COMMITTED",
+        "tick": 3600
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:18",
+        "expected_revision": 21,
+        "operation": "travel",
+        "arguments": {
+          "destination": "osm:node:8066816959",
+          "mode": "walk"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 14.766709921183397,
+          "mode": "walk",
+          "route": [
+            "osm:node:1603574189",
+            "osm:node:8066816959"
+          ]
+        },
+        "revision": 22,
+        "status": "COMMITTED",
+        "tick": 7200
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:20",
+        "expected_revision": 23,
+        "operation": "travel",
+        "arguments": {
+          "destination": "osm:node:1603574189",
+          "mode": "walk"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 14.766709921183397,
+          "mode": "walk",
+          "route": [
+            "osm:node:8066816959",
+            "osm:node:1603574189"
+          ]
+        },
+        "revision": 24,
+        "status": "COMMITTED",
+        "tick": 10800
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:22",
+        "expected_revision": 25,
+        "operation": "learn_pattern",
+        "arguments": {
+          "lesson": "spruce-quarter-turn",
+          "answer": "quarter-turn-left"
+        }
+      },
+      "result": {
+        "data": {
+          "skill": "plate-rewrite",
+          "witness": {
+            "digest": "8699a170c179b705066d87ba8be96fcbdd4c02706ee301e606c174bd8f7e0c89",
+            "false_matches_under_0_01": 0,
+            "null_model": "32 seeded uniformly rotated charts; diagnostic lesson baseline, not a statistical discovery",
+            "null_scores": [
+              1.032756011295219,
+              0.9516484088710788,
+              1.6777265431078747,
+              1.9116241566227927,
+              0.6442523570904427,
+              1.3257897155593514,
+              1.5446439300018677,
+              1.803179817681459,
+              0.1064683115555194,
+              0.5519806801519875,
+              1.6635357272916256,
+              1.9619176999913799,
+              1.8515787543593019,
+              0.5280535161820044,
+              0.773702917019668,
+              0.29425257703061647,
+              0.35217731425286264,
+              0.6319937163731226,
+              1.9312469629840583,
+              0.6217526813964287,
+              0.021386002300758843,
+              0.8264217006772508,
+              1.3535713613298954,
+              1.0168138252331222,
+              0.8808418636896067,
+              0.5729813002817035,
+              0.1892472976418244,
+              0.3029269913362201,
+              1.37053048001889,
+              1.9903054860230733,
+              1.9988652131879627,
+              0.9188497002315815
+            ],
+            "plate_revision": 0,
+            "residual": 0.0,
+            "signature": {
+              "junction_degrees": [
+                4,
+                4,
+                2
+              ],
+              "length_ratio": 0.899877408123144,
+              "turn_radians": 1.5775642342108804
+            },
+            "source_fixture_sha256": "8abae87f2866dd3a43106c9c77f8f65613245c691d2111949b1b53339ec6bfef",
+            "source_path": [
+              "osm:node:2057042478",
+              "osm:node:1603574189",
+              "osm:node:8066816959"
+            ],
+            "target_factuality": "authored chart of same sourced path",
+            "transform": "positive 90-degree XZ rotation",
+            "units": "dimensionless normalized Euclidean residual"
+          }
+        },
+        "revision": 26,
+        "status": "COMMITTED",
+        "tick": 14400
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:24",
+        "expected_revision": 27,
+        "operation": "rewrite_plate",
+        "arguments": {
+          "direction": "forward",
+          "policy": "RigidCarriage"
+        }
+      },
+      "result": {
+        "data": {
+          "native_collision_validation": "NOT_RUN",
+          "plate_revision": 1,
+          "source_coordinates_unchanged": true,
+          "transport_finishes_at_tick": 14468,
+          "witness": {
+            "clause": "HD-063/064/065",
+            "embedding_changed": true,
+            "operation": "forward",
+            "physical_validation": "NOT_RUN",
+            "reachability_changed": true,
+            "rule": "boundary-edge-replace/v1",
+            "transports": [
+              {
+                "authority_witness_id": "world:28:actor:traveler",
+                "curve": {
+                  "center_xyz_m": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "end_xyz_m": [
+                    -0.099748000000001,
+                    -2.1e-05,
+                    -16.353856
+                  ],
+                  "kind": "rigid_rotation_y",
+                  "local_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "rotation_degrees": 90,
+                  "start_angle_degrees": 0,
+                  "start_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ]
+                },
+                "destination_node": "osm/node/2057042478",
+                "end_tick": 14468,
+                "entity_id": "lina",
+                "origin_node": "osm/node/2057042478",
+                "policy": "RigidCarriage",
+                "samples": [
+                  {
+                    "t": 0,
+                    "xyz_m": [
+                      -16.353856,
+                      -2.1e-05,
+                      0.099748
+                    ]
+                  },
+                  {
+                    "t": 0.25,
+                    "xyz_m": [
+                      -15.147164743048455,
+                      -2.1e-05,
+                      -6.166194610875483
+                    ]
+                  },
+                  {
+                    "t": 0.5,
+                    "xyz_m": [
+                      -11.634454963358104,
+                      -2.1e-05,
+                      -11.49338998893851
+                    ]
+                  },
+                  {
+                    "t": 0.75,
+                    "xyz_m": [
+                      -6.350504882093355,
+                      -2.1e-05,
+                      -15.07082092902535
+                    ]
+                  },
+                  {
+                    "t": 1,
+                    "xyz_m": [
+                      -0.099748000000001,
+                      -2.1e-05,
+                      -16.353856
+                    ]
+                  }
+                ],
+                "start_tick": 14460
+              },
+              {
+                "authority_witness_id": "world:28:actor:traveler",
+                "curve": {
+                  "center_xyz_m": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "end_xyz_m": [
+                    -0.099748000000001,
+                    -2.1e-05,
+                    -16.353856
+                  ],
+                  "kind": "rigid_rotation_y",
+                  "local_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "rotation_degrees": 90,
+                  "start_angle_degrees": 0,
+                  "start_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ]
+                },
+                "destination_node": "osm/node/2057042478",
+                "end_tick": 14468,
+                "entity_id": "omar",
+                "origin_node": "osm/node/2057042478",
+                "policy": "RigidCarriage",
+                "samples": [
+                  {
+                    "t": 0,
+                    "xyz_m": [
+                      -16.353856,
+                      -2.1e-05,
+                      0.099748
+                    ]
+                  },
+                  {
+                    "t": 0.25,
+                    "xyz_m": [
+                      -15.147164743048455,
+                      -2.1e-05,
+                      -6.166194610875483
+                    ]
+                  },
+                  {
+                    "t": 0.5,
+                    "xyz_m": [
+                      -11.634454963358104,
+                      -2.1e-05,
+                      -11.49338998893851
+                    ]
+                  },
+                  {
+                    "t": 0.75,
+                    "xyz_m": [
+                      -6.350504882093355,
+                      -2.1e-05,
+                      -15.07082092902535
+                    ]
+                  },
+                  {
+                    "t": 1,
+                    "xyz_m": [
+                      -0.099748000000001,
+                      -2.1e-05,
+                      -16.353856
+                    ]
+                  }
+                ],
+                "start_tick": 14460
+              },
+              {
+                "authority_witness_id": "world:28:actor:traveler",
+                "curve": {
+                  "center_xyz_m": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "end_xyz_m": [
+                    -0.099748000000001,
+                    -2.1e-05,
+                    -16.353856
+                  ],
+                  "kind": "rigid_rotation_y",
+                  "local_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "rotation_degrees": 90,
+                  "start_angle_degrees": 0,
+                  "start_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ]
+                },
+                "destination_node": "osm/node/2057042478",
+                "end_tick": 14468,
+                "entity_id": "street-bus",
+                "origin_node": "osm/node/2057042478",
+                "policy": "RigidCarriage",
+                "samples": [
+                  {
+                    "t": 0,
+                    "xyz_m": [
+                      -16.353856,
+                      -2.1e-05,
+                      0.099748
+                    ]
+                  },
+                  {
+                    "t": 0.25,
+                    "xyz_m": [
+                      -15.147164743048455,
+                      -2.1e-05,
+                      -6.166194610875483
+                    ]
+                  },
+                  {
+                    "t": 0.5,
+                    "xyz_m": [
+                      -11.634454963358104,
+                      -2.1e-05,
+                      -11.49338998893851
+                    ]
+                  },
+                  {
+                    "t": 0.75,
+                    "xyz_m": [
+                      -6.350504882093355,
+                      -2.1e-05,
+                      -15.07082092902535
+                    ]
+                  },
+                  {
+                    "t": 1,
+                    "xyz_m": [
+                      -0.099748000000001,
+                      -2.1e-05,
+                      -16.353856
+                    ]
+                  }
+                ],
+                "start_tick": 14460
+              }
+            ],
+            "work_bound": 429
+          }
+        },
+        "revision": 28,
+        "status": "COMMITTED",
+        "tick": 14460
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:27",
+        "expected_revision": 30,
+        "operation": "rewrite_plate",
+        "arguments": {
+          "direction": "inverse",
+          "policy": "RigidCarriage"
+        }
+      },
+      "result": {
+        "data": {
+          "native_collision_validation": "NOT_RUN",
+          "plate_revision": 2,
+          "source_coordinates_unchanged": true,
+          "transport_finishes_at_tick": 14476,
+          "witness": {
+            "clause": "HD-063/064/065",
+            "embedding_changed": true,
+            "operation": "forward",
+            "physical_validation": "NOT_RUN",
+            "reachability_changed": true,
+            "rule": "boundary-edge-replace/v1",
+            "transports": [
+              {
+                "authority_witness_id": "world:31:actor:traveler",
+                "curve": {
+                  "center_xyz_m": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "end_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "kind": "rigid_rotation_y",
+                  "local_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "rotation_degrees": -90,
+                  "start_angle_degrees": 90,
+                  "start_xyz_m": [
+                    -0.099748000000001,
+                    -2.1e-05,
+                    -16.353856
+                  ]
+                },
+                "destination_node": "osm/node/2057042478",
+                "end_tick": 14476,
+                "entity_id": "lina",
+                "origin_node": "osm/node/2057042478",
+                "policy": "RigidCarriage",
+                "samples": [
+                  {
+                    "t": 0,
+                    "xyz_m": [
+                      -0.099748000000001,
+                      -2.1e-05,
+                      -16.353856
+                    ]
+                  },
+                  {
+                    "t": 0.25,
+                    "xyz_m": [
+                      -6.350504882093355,
+                      -2.1e-05,
+                      -15.07082092902535
+                    ]
+                  },
+                  {
+                    "t": 0.5,
+                    "xyz_m": [
+                      -11.634454963358104,
+                      -2.1e-05,
+                      -11.49338998893851
+                    ]
+                  },
+                  {
+                    "t": 0.75,
+                    "xyz_m": [
+                      -15.147164743048455,
+                      -2.1e-05,
+                      -6.166194610875483
+                    ]
+                  },
+                  {
+                    "t": 1,
+                    "xyz_m": [
+                      -16.353856,
+                      -2.1e-05,
+                      0.099748
+                    ]
+                  }
+                ],
+                "start_tick": 14468
+              },
+              {
+                "authority_witness_id": "world:31:actor:traveler",
+                "curve": {
+                  "center_xyz_m": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "end_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "kind": "rigid_rotation_y",
+                  "local_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "rotation_degrees": -90,
+                  "start_angle_degrees": 90,
+                  "start_xyz_m": [
+                    -0.099748000000001,
+                    -2.1e-05,
+                    -16.353856
+                  ]
+                },
+                "destination_node": "osm/node/2057042478",
+                "end_tick": 14476,
+                "entity_id": "omar",
+                "origin_node": "osm/node/2057042478",
+                "policy": "RigidCarriage",
+                "samples": [
+                  {
+                    "t": 0,
+                    "xyz_m": [
+                      -0.099748000000001,
+                      -2.1e-05,
+                      -16.353856
+                    ]
+                  },
+                  {
+                    "t": 0.25,
+                    "xyz_m": [
+                      -6.350504882093355,
+                      -2.1e-05,
+                      -15.07082092902535
+                    ]
+                  },
+                  {
+                    "t": 0.5,
+                    "xyz_m": [
+                      -11.634454963358104,
+                      -2.1e-05,
+                      -11.49338998893851
+                    ]
+                  },
+                  {
+                    "t": 0.75,
+                    "xyz_m": [
+                      -15.147164743048455,
+                      -2.1e-05,
+                      -6.166194610875483
+                    ]
+                  },
+                  {
+                    "t": 1,
+                    "xyz_m": [
+                      -16.353856,
+                      -2.1e-05,
+                      0.099748
+                    ]
+                  }
+                ],
+                "start_tick": 14468
+              },
+              {
+                "authority_witness_id": "world:31:actor:traveler",
+                "curve": {
+                  "center_xyz_m": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "end_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "kind": "rigid_rotation_y",
+                  "local_xyz_m": [
+                    -16.353856,
+                    -2.1e-05,
+                    0.099748
+                  ],
+                  "rotation_degrees": -90,
+                  "start_angle_degrees": 90,
+                  "start_xyz_m": [
+                    -0.099748000000001,
+                    -2.1e-05,
+                    -16.353856
+                  ]
+                },
+                "destination_node": "osm/node/2057042478",
+                "end_tick": 14476,
+                "entity_id": "street-bus",
+                "origin_node": "osm/node/2057042478",
+                "policy": "RigidCarriage",
+                "samples": [
+                  {
+                    "t": 0,
+                    "xyz_m": [
+                      -0.099748000000001,
+                      -2.1e-05,
+                      -16.353856
+                    ]
+                  },
+                  {
+                    "t": 0.25,
+                    "xyz_m": [
+                      -6.350504882093355,
+                      -2.1e-05,
+                      -15.07082092902535
+                    ]
+                  },
+                  {
+                    "t": 0.5,
+                    "xyz_m": [
+                      -11.634454963358104,
+                      -2.1e-05,
+                      -11.49338998893851
+                    ]
+                  },
+                  {
+                    "t": 0.75,
+                    "xyz_m": [
+                      -15.147164743048455,
+                      -2.1e-05,
+                      -6.166194610875483
+                    ]
+                  },
+                  {
+                    "t": 1,
+                    "xyz_m": [
+                      -16.353856,
+                      -2.1e-05,
+                      0.099748
+                    ]
+                  }
+                ],
+                "start_tick": 14468
+              }
+            ],
+            "work_bound": 429
+          }
+        },
+        "revision": 31,
+        "status": "COMMITTED",
+        "tick": 14468
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:29",
+        "expected_revision": 32,
+        "operation": "travel",
+        "arguments": {
+          "destination": "fictional:taxi-stop",
+          "mode": "walk"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 20.42897420483421,
+          "mode": "walk",
+          "route": [
+            "osm:node:1603574189",
+            "fictional:cafe-apron",
+            "fictional:taxi-stop"
+          ]
+        },
+        "revision": 33,
+        "status": "COMMITTED",
+        "tick": 14476
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:31",
+        "expected_revision": 34,
+        "operation": "board",
+        "arguments": {
+          "vehicle": "civic-taxi",
+          "seat": "passenger"
+        }
+      },
+      "result": {
+        "data": {
+          "seat": "passenger",
+          "vehicle": "civic-taxi"
+        },
+        "revision": 35,
+        "status": "COMMITTED",
+        "tick": 18076
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:32",
+        "expected_revision": 35,
+        "operation": "consent_trip",
+        "arguments": {
+          "destination": "fictional:cafe-apron",
+          "max_distance_m": 100
+        }
+      },
+      "result": {
+        "data": {
+          "destination": "fictional:cafe-apron",
+          "max_distance_m": 100
+        },
+        "revision": 36,
+        "status": "COMMITTED",
+        "tick": 18076
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:33",
+        "expected_revision": 36,
+        "operation": "travel",
+        "arguments": {
+          "destination": "fictional:cafe-apron",
+          "mode": "taxi"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 6.454913650530018,
+          "mode": "taxi",
+          "route": [
+            "fictional:taxi-stop",
+            "fictional:cafe-apron"
+          ]
+        },
+        "revision": 37,
+        "status": "COMMITTED",
+        "tick": 18076
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:35",
+        "expected_revision": 38,
+        "operation": "exit",
+        "arguments": {}
+      },
+      "result": {
+        "data": {
+          "node": "fictional:cafe-apron"
+        },
+        "revision": 39,
+        "status": "COMMITTED",
+        "tick": 21676
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:36",
+        "expected_revision": 39,
+        "operation": "travel",
+        "arguments": {
+          "destination": "fictional:air-transfer",
+          "mode": "walk"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 12.98603114992213,
+          "mode": "walk",
+          "route": [
+            "fictional:cafe-apron",
+            "fictional:air-transfer"
+          ]
+        },
+        "revision": 40,
+        "status": "COMMITTED",
+        "tick": 21676
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:38",
+        "expected_revision": 41,
+        "operation": "board",
+        "arguments": {
+          "vehicle": "opening-shuttle",
+          "seat": "passenger"
+        }
+      },
+      "result": {
+        "data": {
+          "seat": "passenger",
+          "vehicle": "opening-shuttle"
+        },
+        "revision": 42,
+        "status": "COMMITTED",
+        "tick": 25276
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:39",
+        "expected_revision": 42,
+        "operation": "consent_trip",
+        "arguments": {
+          "destination": "airport:KTPA",
+          "max_distance_m": 100000
+        }
+      },
+      "result": {
+        "data": {
+          "destination": "airport:KTPA",
+          "max_distance_m": 100000
+        },
+        "revision": 43,
+        "status": "COMMITTED",
+        "tick": 25276
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:40",
+        "expected_revision": 43,
+        "operation": "travel",
+        "arguments": {
+          "destination": "airport:KTPA",
+          "mode": "helicopter"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 3278.539335818432,
+          "mode": "helicopter",
+          "route": [
+            "fictional:air-transfer",
+            "airport:KTPA"
+          ]
+        },
+        "revision": 44,
+        "status": "COMMITTED",
+        "tick": 25276
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:42",
+        "expected_revision": 45,
+        "operation": "exit",
+        "arguments": {}
+      },
+      "result": {
+        "data": {
+          "node": "airport:KTPA"
+        },
+        "revision": 46,
+        "status": "COMMITTED",
+        "tick": 28876
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:43",
+        "expected_revision": 46,
+        "operation": "board",
+        "arguments": {
+          "vehicle": "civil-aircraft",
+          "seat": "driver"
+        }
+      },
+      "result": {
+        "data": {
+          "seat": "driver",
+          "vehicle": "civil-aircraft"
+        },
+        "revision": 47,
+        "status": "COMMITTED",
+        "tick": 28876
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:44",
+        "expected_revision": 47,
+        "operation": "travel",
+        "arguments": {
+          "destination": "airport:EGLL",
+          "mode": "aircraft"
+        }
+      },
+      "result": {
+        "data": {
+          "distance_m": 7084816.705544736,
+          "mode": "aircraft",
+          "route": [
+            "airport:KTPA",
+            "airport:EGLL"
+          ]
+        },
+        "revision": 48,
+        "status": "COMMITTED",
+        "tick": 28876
+      }
+    },
+    {
+      "actor": "traveler",
+      "request": {
+        "schema": "dark.action/1",
+        "request_id": "session:56",
+        "expected_revision": 59,
+        "operation": "exit",
+        "arguments": {}
+      },
+      "result": {
+        "data": {
+          "node": "airport:EGLL"
+        },
+        "revision": 60,
+        "status": "COMMITTED",
+        "tick": 68476
+      }
+    }
+  ],
+  "world": "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/artifacts/gameplay-session-02/world.sqlite3"
+}

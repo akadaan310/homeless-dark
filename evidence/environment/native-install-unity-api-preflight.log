@@ -1,0 +1,15 @@
+  Determining projects to restore...
+  Restored /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityApiCompile/UnityApiCompile.csproj (in 271 ms).
+  1 of 2 projects are up-to-date for restore.
+  Dark.Core -> /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/bin/Debug/netstandard2.1/Dark.Core.dll
+/tmp/homeless-dotnet/sdk/8.0.426/Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3106: Assembly strong name "/UnityEngine.dll" is either a path which could not be found or it is a full assembly name which is badly formed. If it is a full assembly name it may contain characters that need to be escaped with backslash(\). Those characters are Equals(=), Comma(,), Quote("), Apostrophe('), Backslash(\). [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityApiCompile/UnityApiCompile.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityApiCompile/UnityApiCompile.csproj(17,5): error : Set UnityManagedDir to Managed from the verified pinned official Editor; no generated engine stubs are accepted.
+
+Build FAILED.
+
+/tmp/homeless-dotnet/sdk/8.0.426/Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3106: Assembly strong name "/UnityEngine.dll" is either a path which could not be found or it is a full assembly name which is badly formed. If it is a full assembly name it may contain characters that need to be escaped with backslash(\). Those characters are Equals(=), Comma(,), Quote("), Apostrophe('), Backslash(\). [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityApiCompile/UnityApiCompile.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/environment/UnityApiCompile/UnityApiCompile.csproj(17,5): error : Set UnityManagedDir to Managed from the verified pinned official Editor; no generated engine stubs are accepted.
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:04.91

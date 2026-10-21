@@ -1,0 +1,66 @@
+{
+  "asset": "vehicle",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -1.1200000047683716,
+          1.1200000047683716
+        ],
+        [
+          -2.321000099182129,
+          2.2899999618530273
+        ],
+        [
+          0.0029999911785125732,
+          1.5266295671463013
+        ]
+      ],
+      "vertices": 29597
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -1.734025478363037,
+          1.734025478363037
+        ],
+        [
+          -2.321000099182129,
+          2.2899999618530273
+        ],
+        [
+          0.003027228405699134,
+          1.5266295671463013
+        ]
+      ],
+      "vertices": 29597
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -1.1200000047683716,
+          1.1200000047683716
+        ],
+        [
+          -2.321000099182129,
+          2.2899999618530273
+        ],
+        [
+          0.0029999911785125732,
+          1.5266295671463013
+        ]
+      ],
+      "vertices": 29597
+    }
+  ],
+  "preview": "evidence/content/vehicle-source-preview.png"
+}

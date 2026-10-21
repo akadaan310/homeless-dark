@@ -1,0 +1,41 @@
+{
+  "name": "AcousticGuitar",
+  "family": "musical instrument",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 4586,
+  "mesh_objects": 40,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -0.18660342693328857,
+      0.18660342693328857
+    ],
+    [
+      -0.4339999854564667,
+      0.06499999761581421
+    ],
+    [
+      -0.1290000081062317,
+      1.284999966621399
+    ]
+  ],
+  "attachments": {
+    "hands": [
+      "LeftHandGrip",
+      "StrummingPoint"
+    ],
+    "strings": 6
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

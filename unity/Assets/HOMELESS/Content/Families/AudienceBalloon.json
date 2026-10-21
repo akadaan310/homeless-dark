@@ -1,0 +1,39 @@
+{
+  "name": "AudienceBalloon",
+  "family": "balloon",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 19288,
+  "mesh_objects": 57,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -3.768200159072876,
+      3.768200159072876
+    ],
+    [
+      -3.7669942378997803,
+      3.7669942378997803
+    ],
+    [
+      0.11999999731779099,
+      10.007424354553223
+    ]
+  ],
+  "attachments": {
+    "capacity": 4,
+    "boarding": "BoardingPoint",
+    "burner_height_m": 2.45
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

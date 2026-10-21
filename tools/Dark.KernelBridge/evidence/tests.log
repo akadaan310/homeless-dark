@@ -1,0 +1,16 @@
+test_bad_shapes_unknown_operations_and_input_budget_typed (test_kernel.KernelBridgeTests) ... ok
+test_describe_invokes_actual_compiled_core (test_kernel.KernelBridgeTests) ... ok
+test_direct_bridge_rejects_duplicate_keys_invalid_utf8_deep_or_oversized_json (test_kernel.KernelBridgeTests) ... ok
+test_plate_apply_actual_kernel_revision_graph_and_continuous_transport (test_kernel.KernelBridgeTests) ... ok
+test_population_bulk_inspection_restores_without_realization (test_kernel.KernelBridgeTests) ... ok
+test_population_out_of_range_corruption_and_stale_refused (test_kernel.KernelBridgeTests) ... ok
+test_population_source_resolve_move_snapshot_and_exact_retry (test_kernel.KernelBridgeTests) ... ok
+test_python_wrapper_timeout_output_budget_and_non_json (test_kernel.KernelBridgeTests) ... ok
+test_relocation_and_occupied_refusal_use_kernel_witnesses (test_kernel.KernelBridgeTests) ... ok
+test_stale_budget_straddler_missing_relocation_are_atomic_refusals (test_kernel.KernelBridgeTests) ... ok
+test_validate_and_apply_same_proposal_without_new_authority (test_kernel.KernelBridgeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 11.622s
+
+OK

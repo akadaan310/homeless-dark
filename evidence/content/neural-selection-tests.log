@@ -1,0 +1,8 @@
+test_actual_decoded_clip_selection_keeps_quality_unreviewed (test_neural_selection.NeuralSelectionTests) ... ok
+test_caption_event_and_threshold_disagreement_refuse (test_neural_selection.NeuralSelectionTests) ... ok
+test_changed_audio_bytes_refuse_even_with_passing_asr_report (test_neural_selection.NeuralSelectionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.037s
+
+OK

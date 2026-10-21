@@ -1,0 +1,46 @@
+{
+  "schema": "dark.native-squashfs-preflight/1",
+  "commands": [
+    {
+      "argv": [
+        "tar2sqfs",
+        "-q",
+        "-c",
+        "zstd",
+        "-j",
+        "1",
+        "-Q",
+        "2",
+        "/dev/shm/homeless-squashfs-probe-vdvxb6mi/fixture.sqfs"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "squashfuse",
+        "/dev/shm/homeless-squashfs-probe-vdvxb6mi/fixture.sqfs",
+        "/dev/shm/homeless-squashfs-probe-vdvxb6mi/mounted"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "sudo",
+        "-n",
+        "umount",
+        "/dev/shm/homeless-squashfs-probe-vdvxb6mi/mounted"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "fixture_read_matches": true,
+  "image_bytes": 4096,
+  "fuse_device": true,
+  "fixture_sha256": "17b6b8213eb9c4bc562e0f2b21dcca8ab8e3e49158dd650c7b2bc8e8a075bd80"
+}

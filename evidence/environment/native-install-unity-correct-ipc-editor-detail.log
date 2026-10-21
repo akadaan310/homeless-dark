@@ -1,0 +1,30 @@
+Unity Editor version:    6000.1.0f1 (9ea152932a88)
+Branch:                  6000.1/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #63~22.04.1-Ubuntu SMP Mon Aug 10 14:47:57 UTC 2026
+Kernel version:          6.8.0-1060-oracle
+Architecture:            x86_64
+Available memory:        11932 MB
+Date:                    2026-10-21T10:37:34Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu" at "2026-10-21T10:37:34.140912Z"
+[SignatureVerifier] Application signature verification not supported on this platform.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.2+bdef8f5
+  Session Id: [diagnostic identifier redacted]
+  Correlation Id: [diagnostic identifier redacted]
+  External correlation Id: [diagnostic identifier redacted]
+  Machine Id: [diagnostic identifier redacted]
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ubuntu" (connect: 0.01s, validation: 2.56s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu-notifications" at "2026-10-21T10:37:36.711826Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Successfully updated license, isAync: False, time: 1.01
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Module] Error: 'com.unity.editor.headless' was not found.
+Pro License: NO
+Initialize udev device monitor.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+No valid Unity Editor license found. Please activate your license.

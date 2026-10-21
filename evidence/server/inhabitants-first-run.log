@@ -1,0 +1,43 @@
+test_observed_demote_refuses_then_dormancy_preserves_exact_actor_memory (test_inhabitants.InhabitantWorldTests) ... ERROR
+test_world_realizes_one_source_cohort_npc_once_without_changing_total (test_inhabitants.InhabitantWorldTests) ... ERROR
+
+======================================================================
+ERROR: test_observed_demote_refuses_then_dormancy_preserves_exact_actor_memory (test_inhabitants.InhabitantWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_inhabitants.py", line 33, in test_observed_demote_refuses_then_dormancy_preserves_exact_actor_memory
+    first=self.act('encounter_population',{'key':'neighbor'})['data'];identity=first['person']['id'];actor_id=first['spawn']['world_actor_id']
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_inhabitants.py", line 22, in act
+    return self.w.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),'expected_revision':self.w.snapshot()['revision'],'operation':op,'arguments':args})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 318, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 355, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 465, in _act
+    return inhabitants.act(self,state,principal,op,args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/inhabitants.py", line 74, in act
+    seed=int(spawn['policy_seed'])
+ValueError: invalid literal for int() with base 10: '47c10101d6944f06aaad6f041820c18c151c303258a4eca24bbb837ada672f50'
+
+======================================================================
+ERROR: test_world_realizes_one_source_cohort_npc_once_without_changing_total (test_inhabitants.InhabitantWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_inhabitants.py", line 25, in test_world_realizes_one_source_cohort_npc_once_without_changing_total
+    result=self.act('encounter_population',{'key':'first-neighbor'})['data'];person=result['person']['id']
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_inhabitants.py", line 22, in act
+    return self.w.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),'expected_revision':self.w.snapshot()['revision'],'operation':op,'arguments':args})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 318, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 355, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 465, in _act
+    return inhabitants.act(self,state,principal,op,args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/inhabitants.py", line 74, in act
+    seed=int(spawn['policy_seed'])
+ValueError: invalid literal for int() with base 10: 'ff92e6c2ea9d1ddc51220cb27ae5e437ba441c389cf8fc5ea0dc39529e4ebdf0'
+
+----------------------------------------------------------------------
+Ran 2 tests in 12.038s
+
+FAILED (errors=2)

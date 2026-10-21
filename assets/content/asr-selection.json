@@ -1,0 +1,12 @@
+{
+  "state": "FREE_SELECTED",
+  "runtime_repository": "https://github.com/ggml-org/whisper.cpp",
+  "runtime_revision": "231638a0717b7822784297e5980965ffcec05810",
+  "runtime_license": "MIT",
+  "model_repository": "https://huggingface.co/ggerganov/whisper.cpp",
+  "model_revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+  "model_file": "ggml-tiny.bin",
+  "model_license": "MIT",
+  "purpose": "Offline synthetic English/Arabic ASR evaluation; no microphone recording or private corpus",
+  "native_device_benchmark": "NOT_RUN"
+}

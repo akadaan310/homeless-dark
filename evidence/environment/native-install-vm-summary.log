@@ -1,0 +1,103 @@
+{
+  "schema": "homeless-vm-behavior-check/1",
+  "results": [
+    {
+      "name": "core",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.Core.Tests"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.368,
+      "log": "evidence/environment/native-install-vm-core.log"
+    },
+    {
+      "name": "math",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tests/Dark.Math.Tests"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 3.9,
+      "log": "evidence/environment/native-install-vm-math.log"
+    },
+    {
+      "name": "cli-persistent-fixture",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tools/Dark.Cli",
+        "--",
+        "demo",
+        "/tmp/homeless-vm-world-bo43quoj"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.468,
+      "log": "evidence/environment/native-install-vm-cli-persistent-fixture.log"
+    },
+    {
+      "name": "world-wire",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tools/environment/WorldWireTests"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 3.891,
+      "log": "evidence/environment/native-install-vm-world-wire.log"
+    },
+    {
+      "name": "unity-syntax-self-test",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tools/environment/UnitySyntax",
+        "--",
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 5.153,
+      "log": "evidence/environment/native-install-vm-unity-syntax-self-test.log"
+    },
+    {
+      "name": "unity-syntax",
+      "argv": [
+        "/tmp/homeless-dotnet/dotnet",
+        "run",
+        "--project",
+        "tools/environment/UnitySyntax",
+        "--",
+        "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 5.416,
+      "log": "evidence/environment/native-install-vm-unity-syntax.log"
+    },
+    {
+      "name": "unity-real-api",
+      "argv": [
+        "/usr/bin/python3",
+        "tools/environment/unity_api_check.py",
+        "--dotnet",
+        "/tmp/homeless-dotnet/dotnet"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 7.624,
+      "log": "evidence/environment/native-install-vm-unity-real-api.log"
+    }
+  ],
+  "portable_checks_status": "PASS",
+  "unity_semantic_compilation": "PASS_REAL_OFFICIAL_REFERENCES",
+  "unity_editor_project_import": "NOT_RUN",
+  "unity_rendering": "NOT_RUN",
+  "android_gameplay": "NOT_RUN",
+  "galaxy_a16_measurement": "NOT_RUN",
+  "scope": "Portable scenarios, syntax and actual-assembly semantic compilation when installed; native lifecycle/import/render/device acceptance remain separate."
+}

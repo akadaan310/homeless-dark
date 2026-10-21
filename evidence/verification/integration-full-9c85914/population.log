@@ -1,0 +1,16 @@
+PASS snapshot persists exact identity, personality, task and ordered causal memory
+PASS reloaded actor rejects duplicate, remote and backdated observations before later save
+PASS separate writer and reader processes retain actual NPC decision and causal identity
+PASS caller identity is bound before save and restore, even with a valid alien checksum
+PASS stale save and untrusted replay cannot replace the latest checkpoint
+PASS truncation and corrupt bytes refuse without replacing memory or modifying damaged file
+PASS valid checksums cannot admit unsupported schema or invalid snapshot semantics
+PASS oversized files and excessive memory counts are bounded before restore
+PASS malformed UTF8, field lengths, negative ticks and trailing payload are typed refusals
+PASS generation exhaustion refuses overwrite instead of wrapping identity history
+PASS failed first publish cleans its temporary snapshot and preserves existing directory
+PASS maximum existing 256-memory contract persists without loss
+PASS missing state and invalid receipts do not invent or mutate an inhabitant
+PASS writer lock refusal preserves live actor and original bytes
+PASS snapshot receipts are deterministic for identical payload and generation
+POPULATION: 15 passed, 0 failed

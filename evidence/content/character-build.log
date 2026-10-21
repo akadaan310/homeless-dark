@@ -1,0 +1,34 @@
+Color management: Error could not find role data role.
+Blender 3.0.1
+Color management: scene view "Filmic" not found, setting default "Standard".
+/run/user/1001/gvfs/ non-existent directory
+Info: Total files 9 | Changed 9 | Failed 0
+Info: Saved "CitizenSource.blend"
+Info: Total files 9 | Changed 0 | Failed 0
+Info: Saved "CitizenSource.blend"
+Info: Saved "CitizenSource.blend"
+Info: Total files 9 | Changed 0 | Failed 0
+Info: Saved "CitizenSource.blend"
+
+FBX export starting... '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/unity/Assets/HOMELESS/Content/Characters/Citizen.fbx'
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+export finished in 7.6277 sec.
+
+FBX export starting... '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/unity/Assets/HOMELESS/Content/Characters/CitizenAltSkin.fbx'
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+(bpy.data.armatures['MakeHuman_Default_163'], 'POSE')
+export finished in 7.4176 sec.
+{"bones": 163, "clips": 8, "meshes": 7}
+
+Blender quit

@@ -1,8 +1,8 @@
 {
   "schema": "homeless.task-queue/1",
-  "recorded_utc": "2026-10-21T08:36:26.465848+00:00",
+  "recorded_utc": "2026-10-21T10:51:19.249986+00:00",
   "release_accepted": false,
-  "note": "Actionable portable and source work remains READY. This checkpoint does not assert that the entire commission is complete or that every remaining task is externally blocked. Dependencies describe later integrated outputs; READY tasks may have immediately actionable preparation. No unattended relaunch/continuous execution is operating.",
+  "note": "Active implementation continuation. Native installation proceeds in parallel with independently executable work. COMPLETE_SUBSET never closes a whole acceptance clause; release remains false.",
   "items": [
     {
       "id": "portable-regression",
@@ -82,10 +82,10 @@
       "owner": "runtime-delivery",
       "status": "BLOCKED",
       "dependencies": [],
-      "scope": "Connect an already available eligible licensed supported Unity worker",
-      "available_host": "No compatible worker connected; local ARM64 Linux cannot run supported Unity Editor",
-      "blocker": "Gateway lists zero servers; no Editor/license/Android SDK/NDK/JDK on local ARM64 machine. User access-details question pending.",
-      "next_command": "Read docs/unity-build.md; on supplied worker inspect Unity6000.1.0f1, activated eligible license and Android modules before running its batch commands.",
+      "scope": "Verified official Editor executes and its normal licensing-client handshake completes. A valid installed license/account entitlement is absent.",
+      "available_host": "Official Unity6000.1.0f1 runs under QEMU on this ARM64 VM; actual Unity/URP semantic compilation passes; normal project startup lacks a valid Editor license.",
+      "blocker": "Actual normal startup: Access token is unavailable; no matching entitlements; No valid Unity Editor license found.",
+      "next_command": "python3 tools/environment/native_readiness.py",
       "affected_clauses": [
         "HD-000",
         "HD-008",
@@ -102,8 +102,8 @@
         "compatible-unity-worker"
       ],
       "scope": "Import source masters, generate URP art-review scene, inspect materials/collision/audio",
-      "available_host": "No compatible worker connected; local ARM64 Linux cannot run supported Unity Editor",
-      "blocker": "Requires compatible Editor; source scripts are not Unity-compiled.",
+      "available_host": "Official Unity6000.1.0f1 runs under QEMU on this ARM64 VM; actual Unity/URP semantic compilation passes; normal project startup lacks a valid Editor license.",
+      "blocker": "Actual sources compile against pinned Unity assemblies; full Editor project import/render requires valid licensing.",
       "next_command": "Run documented Homeless.Editor.SourceSceneBuilder.PrepareArtReview and EditMode tests on the compatible worker; see docs/unity-build.md for exact argv.",
       "affected_clauses": [
         "HD-000.A",
@@ -121,12 +121,12 @@
     {
       "id": "hero-art-production",
       "owner": "visual-audio",
-      "status": "READY",
+      "status": "IN_PROGRESS",
       "dependencies": [],
-      "scope": "Acquire or author realistic humans/hair/clothing/motion, vehicles/interiors, aircraft/boats, region foliage and performance assets",
+      "scope": "Acquired rigged human masters, actual FBX exports and original vehicle/foliage/instrument families; native visual acceptance pending.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "python3 tools/art/fetch_materials.py --help",
+      "next_command": "python3 -m unittest discover -s tests/content -p test_assets.py -v",
       "affected_clauses": [
         "HD-000.A",
         "HD-000.B",
@@ -141,12 +141,12 @@
     {
       "id": "bounded-geography-layers",
       "owner": "geography-population",
-      "status": "READY",
+      "status": "COMPLETE_SUBSET",
       "dependencies": [],
-      "scope": "Budgeted actual terrain/population/maritime/timezone/weather/celestial acquisition and parsers",
+      "scope": "Global NaturalEarth overview and GEBCO6arcminute grid, actual sources and bounded pure read service. Detailed global streets/buildings remain incomplete.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "python3 tools/geography/reproduce.py",
+      "next_command": "python3 -m unittest discover -s tests/geography -p test_global_*.py -v",
       "affected_clauses": [
         "HD-017",
         "HD-018",
@@ -182,14 +182,14 @@
     {
       "id": "population-realization",
       "owner": "geography-population",
-      "status": "READY",
+      "status": "IN_PROGRESS",
       "dependencies": [
         "bounded-geography-layers"
       ],
-      "scope": "Actual selected-epoch allocation, virtual/cohort/individual scheduling, migration and sparse identity/history",
+      "scope": "Exact2024 allocation8,140,897,523 and actual C#-backed World encounter/demotion/restoration execute; WorldPop2024 source acquired, spatial weighting integration in progress.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Math.Tests",
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.PopulationAllocation.Tests",
       "affected_clauses": [
         "HD-025",
         "HD-028",
@@ -199,19 +199,19 @@
         "HD-032",
         "HD-089"
       ],
-      "measurable_output": "Reconcile actual source totals and benchmark tractable schedule against individual baseline; no duplicate migration. Existing exact allocation tests are only starting kernels; globally allocated population remains0."
+      "measurable_output": "Exact WDI country allocation and explicit23,412,899 residual retained; lazy identities conserve total. World resident memories survive demotion/reopening/restoration. Density-driven settlement allocation and full planetary fidelity acceptance remain incomplete."
     },
     {
       "id": "protocol-binding",
       "owner": "integration",
-      "status": "READY",
+      "status": "COMPLETE_SUBSET",
       "dependencies": [
         "portable-regression"
       ],
-      "scope": "Implement compatible actual PURL/SEURL/ACSP adapters after pinned source inspection",
+      "scope": "Actual PURL-shaped discovery/validate/invoke/scoped receipts; finite SEURL description parser; no claim of complete reference protocol conformance.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "cat evidence/references/protocols.json",
+      "next_command": "python3 -m unittest discover -s tests/server -p test_protocol.py -v",
       "affected_clauses": [
         "HD-012",
         "HD-013",
@@ -224,14 +224,14 @@
     {
       "id": "bounded-script-worker",
       "owner": "runtime-delivery",
-      "status": "READY",
+      "status": "COMPLETE_SUBSET",
       "dependencies": [
         "protocol-binding"
       ],
-      "scope": "Select and integrate zero-cost bounded computation worker with typed effect imports",
+      "scope": "Actual QuickJS ARM worker, CPU/memory/output limits and seccomp IO denial; proposals flow through persistent Outbox and actual HTTP admission.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "rg -n '70\\. Shells|memory/fuel|Kill/restart' HOMELESS_DARK_STANDALONE_CONSTITUTION.md",
+      "next_command": "python3 -m unittest discover -s tests/server -p test_worker.py -v",
       "affected_clauses": [
         "HD-070",
         "HD-095"
@@ -272,15 +272,15 @@
     {
       "id": "live-world-effects",
       "owner": "living-world",
-      "status": "READY",
+      "status": "IN_PROGRESS",
       "dependencies": [
         "portable-regression",
         "inhabitant-disk-continuity"
       ],
-      "scope": "Shared event/world transactions, model families, sparse communication, NPC schedules and fictional contributions",
+      "scope": "Single authoritative world with NPC travel/schedules, exact2x2 strategic model, entities, plate transforms, transport and source-based global geography. Full model and native interaction coverage remains.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Core.Tests",
+      "next_command": "python3 tools/gameplay_session.py --output artifacts/session-next --report evidence/server/session-next.json",
       "affected_clauses": [
         "HD-012",
         "HD-012.1",
@@ -303,15 +303,15 @@
     {
       "id": "cross-store-recovery",
       "owner": "runtime-delivery",
-      "status": "READY",
+      "status": "IN_PROGRESS",
       "dependencies": [
         "inhabitant-disk-continuity",
         "live-world-effects"
       ],
-      "scope": "Transactional trusted heads, world snapshots, migrations, crash and backup restoration",
+      "scope": "World effects share SQLite transaction; real CLI process kill/reopen and exact unknown-outcome reconciliation tested. Backup, compaction and longer soak remain.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Core.Tests",
+      "next_command": "python3 -m unittest discover -s tests/server -p test_cli.py -v",
       "affected_clauses": [
         "HD-015",
         "HD-069",
@@ -323,12 +323,12 @@
     {
       "id": "speech-and-sound",
       "owner": "visual-audio",
-      "status": "READY",
+      "status": "IN_PROGRESS",
       "dependencies": [],
-      "scope": "Original/cleared environmental sound, captions and an offline speech baseline",
+      "scope": "Actual cached English/Arabic speech and grounded act lifecycle; Arabic neural synthesis/ASR evaluation running. Naturalness and native hearing acceptance remain.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "python3 tools/audio/synthesize.py --check",
+      "next_command": "python3 -m unittest discover -s tests/content -p test_speech.py -v",
       "affected_clauses": [
         "HD-043",
         "HD-044",
@@ -346,7 +346,7 @@
     {
       "id": "native-living-gameplay",
       "owner": "living-world",
-      "status": "BLOCKED",
+      "status": "IN_PROGRESS",
       "dependencies": [
         "compatible-unity-worker",
         "hero-art-production",
@@ -354,10 +354,10 @@
         "population-realization",
         "tampa-source-plate"
       ],
-      "scope": "Third-person founder/member arrival, animation, transport, grammar mechanics, region travel and saves",
-      "available_host": "No compatible worker connected; local ARM64 Linux cannot run supported Unity Editor",
-      "blocker": "No runnable native project import yet; high-fidelity hero families and substantial gameplay not implemented. Portable subwork remains separately READY.",
-      "next_command": "Read docs/unity-build.md; implement missing game content before invoking SourceSceneBuilder.BuildAndroid, which intentionally refuses incomplete content.",
+      "scope": "Unity gameplay scene builder and client compile against real pinned Editor+URP references; translated Editor import/render and Android build pending.",
+      "available_host": "Official Unity6000.1.0f1 runs under QEMU on this ARM64 VM; actual Unity/URP semantic compilation passes; normal project startup lacks a valid Editor license.",
+      "blocker": "Full Editor import/render and Android build require valid licensing; source client development continues independently.",
+      "next_command": "python3 tools/environment/native_readiness.py",
       "affected_clauses": [
         "HD-002",
         "HD-003",
@@ -411,15 +411,15 @@
     {
       "id": "network-participants",
       "owner": "runtime-delivery",
-      "status": "READY",
+      "status": "COMPLETE_SUBSET",
       "dependencies": [
         "protocol-binding",
         "live-world-effects"
       ],
-      "scope": "Authoritative local multi-participant faults/interest filtering then actual external-controller session",
+      "scope": "Three separately authenticated actual HTTP clients exercised; two human-role test clients and external deterministic policy process. Actual human/LLM attendance unverified.",
       "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
       "blocker": null,
-      "next_command": "cat evidence/references/protocols.json",
+      "next_command": "python3 -m unittest discover -s tests/server -p test_protocol.py -v",
       "affected_clauses": [
         "HD-076",
         "HD-077",
@@ -456,6 +456,21 @@
         "HD-099"
       ],
       "measurable_output": "All mandatory clauses accepted with actual evidence and distributable hashes. Ledger integrity alone never grants release acceptance."
+    },
+    {
+      "id": "android-emulator-boot",
+      "owner": "runtime-delivery",
+      "status": "IN_PROGRESS",
+      "dependencies": [],
+      "scope": "Actual API26 kernel/image and translated emulator investigation, independent of Unity licensing.",
+      "available_host": "QEMU, adb, Java17, software graphics; no KVM. Sparse image in bounded RAM filesystem.",
+      "blocker": null,
+      "next_command": "Read docs/native-install-options.md and run the latest bounded Android boot probe with current resource guards.",
+      "affected_clauses": [
+        "HD-008",
+        "HD-080"
+      ],
+      "measurable_output": "Actual adb boot-complete/runtime result, image/tool hashes and logs. Kernel startup alone is not a usable Android/game boot."
     }
   ]
 }

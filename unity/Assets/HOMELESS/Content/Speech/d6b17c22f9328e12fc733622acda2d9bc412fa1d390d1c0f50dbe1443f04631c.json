@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "d6b17c22f9328e12fc733622acda2d9bc412fa1d390d1c0f50dbe1443f04631c",
+  "filename": "d6b17c22f9328e12fc733622acda2d9bc412fa1d390d1c0f50dbe1443f04631c.wav",
+  "event_id": "evt:arrival:ar:refuse_ride",
+  "speaker": "npc:ana",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:refuse_ride",
+    "speaker": "npc:ana",
+    "language": "ar",
+    "act": "refuse_ride",
+    "slots": {}
+  },
+  "caption": "لا، شكرا. أفضل المشي.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "ar",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "ar_dict": "59bb2a9d521e53808927a44b3fe757893913c702837b25d9a96e3753374b5eab",
+      "lang/sem/ar": "43f418f8140e5a7bd7096963da20ccba9247f6be1fcdb08cb53dd7967dd72eee"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "14996fb51752e1453407bb351f797e3e9c748b34e3da77099180b69dbe8a558a",
+  "synthesis_seconds": 0.01939470786601305,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 68091,
+  "duration_seconds": 3.088027210884354,
+  "peak_abs": 15603,
+  "pcm_rms": 0.0697729897265343,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

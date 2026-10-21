@@ -1,0 +1,5 @@
+
+[00:00:00.000 --> 00:00:03.000]   أمك! وقت كبير حالك!
+read_audio_data: reading audio data from '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/f1dad70c13c2723497e14f102a62d03eb99aa4e6503d8fd85ebc85432c04a629-16khz.wav' ...
+read_audio_data: trying to decode with miniaudio
+output_txt: saving output to '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/f1dad70c13c2723497e14f102a62d03eb99aa4e6503d8fd85ebc85432c04a629.txt'

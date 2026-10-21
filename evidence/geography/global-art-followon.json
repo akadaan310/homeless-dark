@@ -1,0 +1,44 @@
+{
+  "source": "Unity-Technologies/megacity-metro",
+  "commit": "07652ee74a1f322c2c3e607020f07be720175680",
+  "license": "Unity Companion License; Unity-dependent project restriction retained",
+  "license_evidence": "assets/evidence/megacity/LICENCE.md",
+  "provenance_evidence": "assets/evidence/megacity/lfs-inventory.json",
+  "all_procedural_building_master_count": 37,
+  "all_procedural_building_master_bytes": 44234392,
+  "budgeted_candidates": [
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_1x1_short_54.fbx",
+      "pointer": true,
+      "oid": "sha256:a8759338db1fc579c68c9e9f07c6f3b8009a0e57b8db6ef88e8f3092343f983a",
+      "lfs_size_bytes": 278208,
+      "pointer_sha256": "af08857caa56b070522e2cf351ace7791a0965e5dd96bc7ef6b1daa695a117d8"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_2x1_medium_45.fbx",
+      "pointer": true,
+      "oid": "sha256:00f08ee983c5ec87b5965c0af96af9cf36ea379cfbbb7129564676acbceb4a55",
+      "lfs_size_bytes": 443296,
+      "pointer_sha256": "5e64490b8bdbb154004a03aadbf8cea4c72d9f9a3010a055b4caa233bf4c8ae1"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_short_16.fbx",
+      "pointer": true,
+      "oid": "sha256:5123d417ac6691b1c38547e06d663ffdb4076d5b5eac8c34ddb1ef254573f165",
+      "lfs_size_bytes": 318240,
+      "pointer_sha256": "6b1e8acbbd9ed39d86a69cb89422bb6ec0faa9ce794e98a89cf30b255617f7dc"
+    }
+  ],
+  "selected_bytes": 1039744,
+  "downloaded_by_this_followon": false,
+  "next_steps": [
+    "Download selected LFS object by exact pointer SHA256; preserve source license and FBX .meta.",
+    "Read matching material/prefab GUID references before claiming visually complete reuse.",
+    "Import in pinned Unity; measure mesh/texture/material costs and inspect actual geometry."
+  ],
+  "limitations": [
+    "Metadata is a feasible acquisition route, not native imported or visually accepted content.",
+    "Unity-dependent art cannot be relabeled as general-purpose unrestricted art.",
+    "No source textures, materials, or runtime perf results are inferred from a FBX pointer."
+  ]
+}

@@ -1,0 +1,24 @@
+test_ride_response_has_executed_equilibrium_witness_and_no_control_takeover (test_npc_world.NpcWorldTests) ... ERROR
+test_schedule_moves_to_work_and_preserves_actual_progress_across_reopen (test_npc_world.NpcWorldTests) ... FAIL
+test_two_replicas_execute_identical_schedule_history (test_npc_world.NpcWorldTests) ... ok
+
+======================================================================
+ERROR: test_ride_response_has_executed_equilibrium_witness_and_no_control_takeover (test_npc_world.NpcWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_npc_world.py", line 27, in test_ride_response_has_executed_equilibrium_witness_and_no_control_takeover
+    game=response['data']['decision_witness']['game']
+KeyError: 'decision_witness'
+
+======================================================================
+FAIL: test_schedule_moves_to_work_and_preserves_actual_progress_across_reopen (test_npc_world.NpcWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_npc_world.py", line 16, in test_schedule_moves_to_work_and_preserves_actual_progress_across_reopen
+    w.advance(61,'start-shift');s=w.snapshot();self.assertIn('omar',s['journeys'])
+AssertionError: 'omar' not found in {}
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.405s
+
+FAILED (failures=1, errors=1)

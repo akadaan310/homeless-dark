@@ -1,0 +1,1737 @@
+{
+  "actors": {
+    "lina": {
+      "controller": "npc",
+      "duty": 0.4,
+      "goal": "socialize",
+      "node": "osm:node:2057042478",
+      "schedule": {
+        "roles": {
+          "home": "osm:node:2057042478",
+          "social": "osm:node:2057042478",
+          "work": "osm:node:8066816959"
+        },
+        "work_window": [
+          28800,
+          61200
+        ]
+      },
+      "sociability": 0.7
+    },
+    "london-resident": {
+      "controller": "npc",
+      "duty": 0.6,
+      "goal": "work",
+      "node": "airport:EGLL",
+      "sociability": 0.5
+    },
+    "mira": {
+      "controller": "npc",
+      "duty": 0.2,
+      "goal": "socialize",
+      "node": "fictional:mira-place",
+      "schedule": {
+        "roles": {
+          "home": "fictional:mira-place",
+          "social": "fictional:cafe-apron",
+          "work": "osm:node:8066816959"
+        },
+        "work_window": [
+          14400,
+          28800
+        ]
+      },
+      "sociability": 0.82
+    },
+    "omar": {
+      "controller": "npc",
+      "duty": 0.9,
+      "goal": "work",
+      "node": "fictional:omar-place",
+      "schedule": {
+        "roles": {
+          "home": "fictional:omar-place",
+          "social": "fictional:cafe-apron",
+          "work": "osm:node:2057042478"
+        },
+        "work_window": [
+          0,
+          28800
+        ]
+      },
+      "sociability": 0.25
+    }
+  },
+  "clearance_source": {
+    "geometry_sha256": "d11773e8fd64a69048e67f96d0f8aefc7cee031ebfea2ce75983aa00010bcb73",
+    "recipe_sha256": "b3fda50c1642ca2626c29dabd99829f34c28c658e84a839cd7c2a06c0ab8cfbd"
+  },
+  "edges": [
+    {
+      "a": "osm:node:10922060653",
+      "b": "osm:node:4520926406",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:0",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:10922060653",
+      "b": "osm:node:6903707635",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:1",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:1603574189",
+      "b": "osm:node:2057042478",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:2",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:1603574189",
+      "b": "osm:node:4520926405",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:3",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:1603574189",
+      "b": "osm:node:4520926406",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:4",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:1603574189",
+      "b": "osm:node:8066816959",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:5",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:2057042478",
+      "b": "osm:node:6952194838",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:6",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:2057042478",
+      "b": "osm:node:8066816960",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:7",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:2057042478",
+      "b": "osm:node:8066816962",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:8",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:4520926405",
+      "b": "osm:node:6851163691",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:9",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:5941737372",
+      "b": "osm:node:8066816962",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:10",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:5941737376",
+      "b": "osm:node:6952194838",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:11",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:5941750923",
+      "b": "osm:node:8066816960",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:12",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:6851151280",
+      "b": "osm:node:6851163691",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:13",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:6903707629",
+      "b": "osm:node:6903707642",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:14",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "osm:node:6903707629",
+      "b": "osm:node:8066816959",
+      "factuality": "fictional travel permission on sourced centreline geometry",
+      "id": "street:15",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bus",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ],
+      "real_access_validated": false
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "osm:node:1603574189",
+      "factuality": "authored frontage transfer; not a real measured driveway",
+      "id": "fictional:cafe-frontage",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:mira-place",
+      "factuality": "authored local approach; not a measured real-world driveway",
+      "id": "fictional:mira-place:approach",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:omar-place",
+      "factuality": "authored local approach; not a measured real-world driveway",
+      "id": "fictional:omar-place:approach",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:sedan-parking",
+      "factuality": "authored local approach; not a measured real-world driveway",
+      "id": "fictional:sedan-parking:approach",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:taxi-stop",
+      "factuality": "authored local approach; not a measured real-world driveway",
+      "id": "fictional:taxi-stop:approach",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:air-transfer",
+      "factuality": "authored local approach; not a measured real-world driveway",
+      "id": "fictional:air-transfer:approach",
+      "modes": [
+        "walk",
+        "guided",
+        "drive",
+        "taxi",
+        "bike",
+        "scooter",
+        "motorcycle"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:neighbor-place:0",
+      "factuality": "authored fictional population encounter approach; no real resident location is inferred",
+      "id": "fictional:neighbor-place:0:approach",
+      "modes": [
+        "walk",
+        "guided"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:neighbor-place:1",
+      "factuality": "authored fictional population encounter approach; no real resident location is inferred",
+      "id": "fictional:neighbor-place:1:approach",
+      "modes": [
+        "walk",
+        "guided"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:neighbor-place:2",
+      "factuality": "authored fictional population encounter approach; no real resident location is inferred",
+      "id": "fictional:neighbor-place:2:approach",
+      "modes": [
+        "walk",
+        "guided"
+      ]
+    },
+    {
+      "a": "fictional:cafe-apron",
+      "b": "fictional:neighbor-place:3",
+      "factuality": "authored fictional population encounter approach; no real resident location is inferred",
+      "id": "fictional:neighbor-place:3:approach",
+      "modes": [
+        "walk",
+        "guided"
+      ]
+    },
+    {
+      "a": "fictional:air-transfer",
+      "b": "airport:KTPA",
+      "factuality": "authored air corridor; not an actual scheduled or permitted flight",
+      "id": "fictional:opening-air-transfer",
+      "modes": [
+        "helicopter"
+      ]
+    },
+    {
+      "a": "airport:KTPA",
+      "b": "airport:EGLL",
+      "factuality": "authored great-circle journey; no actual airline, airspace or weather clearance",
+      "id": "fictional:flight:EGLL",
+      "modes": [
+        "aircraft"
+      ]
+    },
+    {
+      "a": "airport:KTPA",
+      "b": "airport:FACT",
+      "factuality": "authored great-circle journey; no actual airline, airspace or weather clearance",
+      "id": "fictional:flight:FACT",
+      "modes": [
+        "aircraft"
+      ]
+    },
+    {
+      "a": "airport:KTPA",
+      "b": "airport:KLAX",
+      "factuality": "authored great-circle journey; no actual airline, airspace or weather clearance",
+      "id": "fictional:flight:KLAX",
+      "modes": [
+        "aircraft"
+      ]
+    },
+    {
+      "a": "airport:KTPA",
+      "b": "airport:OMDB",
+      "factuality": "authored great-circle journey; no actual airline, airspace or weather clearance",
+      "id": "fictional:flight:OMDB",
+      "modes": [
+        "aircraft"
+      ]
+    },
+    {
+      "a": "airport:KTPA",
+      "b": "airport:RJTT",
+      "factuality": "authored great-circle journey; no actual airline, airspace or weather clearance",
+      "id": "fictional:flight:RJTT",
+      "modes": [
+        "aircraft"
+      ]
+    },
+    {
+      "a": "airport:KTPA",
+      "b": "airport:YSSY",
+      "factuality": "authored great-circle journey; no actual airline, airspace or weather clearance",
+      "id": "fictional:flight:YSSY",
+      "modes": [
+        "aircraft"
+      ]
+    }
+  ],
+  "id": "earth-opening-v1",
+  "life": {
+    "definitions": [
+      {
+        "id": "building:cafe",
+        "kind": "building",
+        "provenance": {
+          "geometry_status": "fictional asset placement on sourced local chart",
+          "source_geometry": {
+            "alt": 0.0,
+            "lat": 27.9594638,
+            "lon": -82.50534422162765
+          },
+          "source_id": "authored:building:cafe"
+        }
+      },
+      {
+        "id": "tree:palm",
+        "kind": "tree",
+        "provenance": {
+          "geometry_status": "fictional asset placement on sourced local chart",
+          "source_geometry": {
+            "alt": 0.0,
+            "lat": 27.95950891869936,
+            "lon": -82.50553731370441
+          },
+          "source_id": "authored:tree:palm"
+        }
+      },
+      {
+        "id": "cup:counter",
+        "kind": "cup",
+        "provenance": {
+          "geometry_status": "fictional asset placement on sourced local chart",
+          "source_geometry": {
+            "alt": 0.0,
+            "lat": 27.95953914822793,
+            "lon": -82.50530966830866
+          },
+          "source_id": "authored:cup:counter"
+        }
+      },
+      {
+        "id": "car:civic-taxi",
+        "kind": "car",
+        "provenance": {
+          "geometry_status": "fictional asset placement on sourced local chart",
+          "source_geometry": {
+            "alt": 0.0,
+            "lat": 27.959442143024308,
+            "lon": -82.50528324518237
+          },
+          "source_id": "authored:car:civic-taxi"
+        },
+        "traits": {
+          "duty": 0.3,
+          "helpfulness": 0.8
+        }
+      }
+    ],
+    "placements": {
+      "building:cafe": {
+        "node": "fictional:cafe-apron",
+        "radius_m": 16
+      },
+      "car:civic-taxi": {
+        "radius_m": 5,
+        "vehicle": "civic-taxi"
+      },
+      "cup:counter": {
+        "node": "fictional:counter-cup",
+        "radius_m": 3
+      },
+      "tree:palm": {
+        "node": "fictional:palm",
+        "radius_m": 8
+      }
+    },
+    "public_abilities": {
+      "building:cafe": [
+        "set_light"
+      ],
+      "car:civic-taxi": [
+        "signal"
+      ],
+      "cup:counter": [
+        "nudge"
+      ],
+      "tree:palm": [
+        "glow"
+      ]
+    }
+  },
+  "limitations": [
+    "No real road route outside the acquired Tampa extract.",
+    "Air links are authored travel corridors; schedules, airspace restrictions and live weather are not validated.",
+    "ready means route-simulation data exists; no native scene, collision or airport safety certification.",
+    "Route distance sums spherical source segments; driving lane curvature and local obstacles require native validation."
+  ],
+  "mechanics": "tampa-plate/1",
+  "nodes": {
+    "airport:EGLL": {
+      "alt": 30.097734193200615,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "London Heathrow Airport",
+      "lat": 51.470748,
+      "lon": -0.459909,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "83",
+      "source_id": "ourairports:2434"
+    },
+    "airport:FACT": {
+      "alt": 49.470594004996826,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "Cape Town International Airport",
+      "lat": -33.97403,
+      "lon": 18.604333,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "151",
+      "source_id": "ourairports:2775"
+    },
+    "airport:KLAX": {
+      "alt": 24.167884932296694,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "Los Angeles International Airport",
+      "lat": 33.942501,
+      "lon": -118.407997,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "125",
+      "source_id": "ourairports:3632"
+    },
+    "airport:KTPA": {
+      "alt": 9.974149399998634,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "Tampa International Airport",
+      "lat": 27.9755,
+      "lon": -82.533203,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "26",
+      "source_id": "ourairports:3926"
+    },
+    "airport:OMDB": {
+      "alt": 9.52713249599584,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "Dubai International Airport",
+      "lat": 25.24979,
+      "lon": 55.370992,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "62",
+      "source_id": "ourairports:5235"
+    },
+    "airport:RJTT": {
+      "alt": -6.575219809601714,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "Tokyo Haneda International Airport",
+      "lat": 35.549678,
+      "lon": 139.786958,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "35",
+      "source_id": "ourairports:5627"
+    },
+    "airport:YSSY": {
+      "alt": 8.803845412000296,
+      "altitude_datum": "authored coarse GEBCO support: approximate MSL with geoid separation assumed0; source elevation retained separately",
+      "label": "Sydney Kingsford Smith International Airport",
+      "lat": -33.946098,
+      "lon": 151.177002,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_elevation_ft": "21",
+      "source_id": "ourairports:27145"
+    },
+    "fictional:air-transfer": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Authored air transfer",
+      "lat": 27.959418681300644,
+      "lon": -82.50522226873707,
+      "native_collision_ready": false,
+      "public": true,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:air-transfer"
+    },
+    "fictional:cafe-apron": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Caf\u00e9 entrance",
+      "lat": 27.9594638,
+      "lon": -82.50534422162765,
+      "native_collision_ready": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:cafe-frontage"
+    },
+    "fictional:counter-cup": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Counter cup",
+      "lat": 27.95953914822793,
+      "lon": -82.50530966830866,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:counter-cup"
+    },
+    "fictional:mira-place": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Caf\u00e9 greeting",
+      "lat": 27.959465604747976,
+      "lon": -82.5053584494649,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:mira-place"
+    },
+    "fictional:neighbor-place:0": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Neighborhood meeting place",
+      "lat": 27.959472823739873,
+      "lon": -82.5052121059962,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:neighbor-place:0"
+    },
+    "fictional:neighbor-place:1": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Neighborhood meeting place",
+      "lat": 27.959472823739873,
+      "lon": -82.50518161777354,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:neighbor-place:1"
+    },
+    "fictional:neighbor-place:2": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Neighborhood meeting place",
+      "lat": 27.959472823739873,
+      "lon": -82.50515112955091,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:neighbor-place:2"
+    },
+    "fictional:neighbor-place:3": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Neighborhood meeting place",
+      "lat": 27.959472823739873,
+      "lon": -82.50512064132826,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:neighbor-place:3"
+    },
+    "fictional:omar-place": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Caf\u00e9 work entrance",
+      "lat": 27.959465604747976,
+      "lon": -82.50531983104955,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:omar-place"
+    },
+    "fictional:palm": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Caf\u00e9 palm",
+      "lat": 27.95950891869936,
+      "lon": -82.50553731370441,
+      "native_collision_ready": false,
+      "public": false,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:palm"
+    },
+    "fictional:sedan-parking": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Parked sedan",
+      "lat": 27.959442143024308,
+      "lon": -82.50534422162765,
+      "native_collision_ready": false,
+      "public": true,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:sedan-parking"
+    },
+    "fictional:taxi-stop": {
+      "alt": 0.0,
+      "altitude_datum": "authored local ground=0",
+      "label": "Taxi stop",
+      "lat": 27.959442143024308,
+      "lon": -82.50528324518237,
+      "native_collision_ready": false,
+      "public": true,
+      "readiness_scope": "headless authored geometry",
+      "ready": true,
+      "source_id": "authored:fictional:taxi-stop"
+    },
+    "osm:node:10922060653": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 10922060653",
+      "lat": 27.9594598,
+      "lon": -82.5049741,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/10922060653"
+    },
+    "osm:node:1603574189": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Spruce junction",
+      "lat": 27.9594638,
+      "lon": -82.5054865,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/1603574189"
+    },
+    "osm:node:2057042478": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 2057042478",
+      "lat": 27.9594647,
+      "lon": -82.5056527,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/2057042478"
+    },
+    "osm:node:4520926405": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 4520926405",
+      "lat": 27.9593434,
+      "lon": -82.5054827,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/4520926405"
+    },
+    "osm:node:4520926406": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 4520926406",
+      "lat": 27.9594624,
+      "lon": -82.5053057,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/4520926406"
+    },
+    "osm:node:5941737372": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 5941737372",
+      "lat": 27.9594668,
+      "lon": -82.5060361,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/5941737372"
+    },
+    "osm:node:5941737376": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 5941737376",
+      "lat": 27.9592559,
+      "lon": -82.5056563,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/5941737376"
+    },
+    "osm:node:5941750923": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 5941750923",
+      "lat": 27.9599884,
+      "lon": -82.5056532,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/5941750923"
+    },
+    "osm:node:6851151280": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 6851151280",
+      "lat": 27.9587194,
+      "lon": -82.5054631,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/6851151280"
+    },
+    "osm:node:6851163691": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 6851163691",
+      "lat": 27.9591068,
+      "lon": -82.5054753,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/6851163691"
+    },
+    "osm:node:6903707629": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 6903707629",
+      "lat": 27.9597212,
+      "lon": -82.5054867,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/6903707629"
+    },
+    "osm:node:6903707635": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 6903707635",
+      "lat": 27.9594583,
+      "lon": -82.5047806,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/6903707635"
+    },
+    "osm:node:6903707642": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 6903707642",
+      "lat": 27.9599296,
+      "lon": -82.5054816,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/6903707642"
+    },
+    "osm:node:6952194838": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 6952194838",
+      "lat": 27.9593421,
+      "lon": -82.5056546,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/6952194838"
+    },
+    "osm:node:8066816959": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 8066816959",
+      "lat": 27.9595966,
+      "lon": -82.5054866,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/8066816959"
+    },
+    "osm:node:8066816960": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 8066816960",
+      "lat": 27.9596009,
+      "lon": -82.5056528,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/8066816960"
+    },
+    "osm:node:8066816962": {
+      "alt": 0.0,
+      "altitude_datum": "authored reference plane; source height unknown",
+      "label": "Street 8066816962",
+      "lat": 27.9594656,
+      "lon": -82.5058231,
+      "native_collision_ready": false,
+      "readiness_scope": "headless route simulation",
+      "ready": true,
+      "source_id": "osm/node/8066816962"
+    }
+  },
+  "physical_validation": "NOT_RUN",
+  "population": "wb2024",
+  "population_spawns": [
+    "fictional:neighbor-place:0",
+    "fictional:neighbor-place:1",
+    "fictional:neighbor-place:2",
+    "fictional:neighbor-place:3"
+  ],
+  "schema": "dark.world-content/1",
+  "source_versions": {
+    "OSM_attribution": "\u00a9 OpenStreetMap contributors; ODbL-1.0",
+    "airports_sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75",
+    "permission_layer": "authored fiction; source tags are not silently converted into access grants",
+    "tampa_fixture_sha256": "8abae87f2866dd3a43106c9c77f8f65613245c691d2111949b1b53339ec6bfef"
+  },
+  "spawn": "fictional:cafe-apron",
+  "streaming": {
+    "cells": {
+      "cafe-apron": {
+        "assets": [
+          "hero-mesh",
+          "hero-materials",
+          "hero-skin",
+          "arrival-music",
+          "rain-audio",
+          "greeting-voice",
+          "apron-volume"
+        ],
+        "node": "fictional:cafe-apron",
+        "portable_collision": true
+      }
+    },
+    "manifest": {
+      "assets": [
+        {
+          "bytes": 28134764,
+          "decoder": "opaque_bytes",
+          "id": "hero-mesh",
+          "kind": "mesh",
+          "path": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx",
+          "sha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef"
+        },
+        {
+          "bytes": 5519,
+          "decoder": "json",
+          "id": "hero-materials",
+          "kind": "material",
+          "path": "unity/Assets/HOMELESS/Content/Characters/materials.json",
+          "sha256": "94d58c88175d3ee268603095e18309895254c16551d26808e3f32961bc1ea6d2"
+        },
+        {
+          "bytes": 3693828,
+          "decoder": "opaque_bytes",
+          "id": "hero-skin",
+          "kind": "material",
+          "path": "unity/Assets/HOMELESS/Content/Characters/Textures/young_lightskinned_male_diffuse.png",
+          "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963"
+        },
+        {
+          "bytes": 307244,
+          "decoder": "pcm_wave",
+          "id": "arrival-music",
+          "kind": "music",
+          "path": "unity/Assets/HOMELESS/Audio/original_arrival_motif.wav",
+          "sha256": "386e4ca404d00690c15069a810970bf9ca1cd7ebc0e32618f91b5f4032634ad5"
+        },
+        {
+          "bytes": 768044,
+          "decoder": "pcm_wave",
+          "id": "rain-audio",
+          "kind": "ambience",
+          "path": "unity/Assets/HOMELESS/Audio/synthetic_rain_wind_loop.wav",
+          "sha256": "1553e9ca833297fc674b161547365418555bf43c2716c89a81dd65333201d826"
+        },
+        {
+          "bytes": 94882,
+          "decoder": "pcm_wave",
+          "id": "greeting-voice",
+          "kind": "voice",
+          "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav",
+          "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d"
+        },
+        {
+          "bytes": 105,
+          "decoder": "collision_aabb",
+          "id": "apron-volume",
+          "kind": "collision",
+          "path": "assets/content/world/cafe-apron-volume.json",
+          "sha256": "e5556a5dc71e9013f0de0407ae55d227b0fbdf5a9763dc119d4f9410e7c5e545"
+        }
+      ],
+      "schema": "dark.stage-manifest/1",
+      "version": "opening-5f5e8984d327f5f7"
+    }
+  },
+  "vehicles": {
+    "civic-sedan": {
+      "asset": "CivicSedan",
+      "autonomous": false,
+      "capacity": 4,
+      "mode": "drive",
+      "node": "fictional:sedan-parking"
+    },
+    "civic-taxi": {
+      "asset": "CivicSedan",
+      "autonomous": true,
+      "capacity": 3,
+      "mode": "taxi",
+      "node": "fictional:taxi-stop"
+    },
+    "civil-aircraft": {
+      "asset": "CivilAircraft",
+      "autonomous": false,
+      "capacity": 8,
+      "mode": "aircraft",
+      "node": "airport:KTPA"
+    },
+    "cycle": {
+      "asset": "Bicycle",
+      "autonomous": false,
+      "capacity": 1,
+      "mode": "bike",
+      "node": "fictional:cafe-apron"
+    },
+    "opening-shuttle": {
+      "asset": "RotorShuttle",
+      "autonomous": true,
+      "capacity": 4,
+      "mode": "helicopter",
+      "node": "fictional:air-transfer"
+    },
+    "street-bus": {
+      "asset": "CityBus",
+      "autonomous": true,
+      "capacity": 16,
+      "mode": "bus",
+      "node": "osm:node:2057042478"
+    }
+  },
+  "walk_regions": [
+    {
+      "anchor": "osm:node:1603574189",
+      "blockers": [
+        [
+          8,
+          2.68,
+          8.22,
+          10.5
+        ],
+        [
+          19.78,
+          2.68,
+          20,
+          10.5
+        ],
+        [
+          8.22,
+          10.28,
+          19.78,
+          10.5
+        ],
+        [
+          8,
+          2.5,
+          8.4,
+          2.76
+        ],
+        [
+          12.9,
+          2.5,
+          13.4,
+          2.76
+        ],
+        [
+          14.6,
+          2.5,
+          15.1,
+          2.76
+        ],
+        [
+          19.6,
+          2.5,
+          20,
+          2.76
+        ],
+        [
+          8.4,
+          2.5,
+          12.9,
+          2.76
+        ],
+        [
+          15.1,
+          2.5,
+          19.6,
+          2.76
+        ],
+        [
+          8.4,
+          2.445,
+          8.455,
+          2.72
+        ],
+        [
+          9.9,
+          2.445,
+          9.955,
+          2.72
+        ],
+        [
+          11.4,
+          2.445,
+          11.455,
+          2.72
+        ],
+        [
+          12.85,
+          2.445,
+          12.905,
+          2.72
+        ],
+        [
+          8.4,
+          2.445,
+          12.9,
+          2.72
+        ],
+        [
+          8.365,
+          2.34,
+          12.935,
+          2.81
+        ],
+        [
+          15.1,
+          2.445,
+          15.155,
+          2.72
+        ],
+        [
+          16.6,
+          2.445,
+          16.655,
+          2.72
+        ],
+        [
+          18.1,
+          2.445,
+          18.155,
+          2.72
+        ],
+        [
+          19.55,
+          2.445,
+          19.605,
+          2.72
+        ],
+        [
+          15.1,
+          2.445,
+          19.6,
+          2.72
+        ],
+        [
+          15.065,
+          2.34,
+          19.635,
+          2.81
+        ],
+        [
+          13.36,
+          2.44,
+          13.42,
+          2.75
+        ],
+        [
+          14.6,
+          2.44,
+          14.66,
+          2.75
+        ],
+        [
+          13.401958,
+          2.617639,
+          13.496583,
+          2.699424
+        ],
+        [
+          13.729516,
+          3.625759,
+          13.824141,
+          3.707544
+        ],
+        [
+          13.401958,
+          2.617639,
+          13.824141,
+          3.707544
+        ],
+        [
+          13.458541,
+          2.687063,
+          13.767558,
+          3.63812
+        ],
+        [
+          13.806801,
+          3.458379,
+          13.844603,
+          3.496182
+        ],
+        [
+          16.9,
+          8.0,
+          19.25,
+          8.75
+        ],
+        [
+          16.84,
+          7.94,
+          19.31,
+          8.81
+        ],
+        [
+          17.05,
+          7.96,
+          17.53,
+          8.0
+        ],
+        [
+          17.7,
+          7.96,
+          18.18,
+          8.0
+        ],
+        [
+          18.35,
+          7.96,
+          18.83,
+          8.0
+        ],
+        [
+          9.45,
+          4.65,
+          10.55,
+          5.75
+        ],
+        [
+          9.945,
+          5.145,
+          10.055,
+          5.255
+        ],
+        [
+          8.91,
+          4.97,
+          9.37,
+          5.43
+        ],
+        [
+          8.974,
+          5.034,
+          9.006,
+          5.066
+        ],
+        [
+          8.974,
+          5.334,
+          9.006,
+          5.366
+        ],
+        [
+          9.274,
+          5.034,
+          9.306,
+          5.066
+        ],
+        [
+          9.274,
+          5.334,
+          9.306,
+          5.366
+        ],
+        [
+          8.944,
+          5.004,
+          8.976,
+          5.036
+        ],
+        [
+          8.944,
+          5.364,
+          8.976,
+          5.396
+        ],
+        [
+          8.935,
+          5.0,
+          8.985,
+          5.4
+        ],
+        [
+          10.63,
+          4.97,
+          11.09,
+          5.43
+        ],
+        [
+          10.694,
+          5.034,
+          10.726,
+          5.066
+        ],
+        [
+          10.694,
+          5.334,
+          10.726,
+          5.366
+        ],
+        [
+          10.994,
+          5.034,
+          11.026,
+          5.066
+        ],
+        [
+          10.994,
+          5.334,
+          11.026,
+          5.366
+        ],
+        [
+          11.024,
+          5.004,
+          11.056,
+          5.036
+        ],
+        [
+          11.024,
+          5.364,
+          11.056,
+          5.396
+        ],
+        [
+          11.015,
+          5.0,
+          11.065,
+          5.4
+        ],
+        [
+          11.55,
+          7.45,
+          12.65,
+          8.55
+        ],
+        [
+          12.045,
+          7.945,
+          12.155,
+          8.055
+        ],
+        [
+          11.01,
+          7.77,
+          11.47,
+          8.23
+        ],
+        [
+          11.074,
+          7.834,
+          11.106,
+          7.866
+        ],
+        [
+          11.074,
+          8.134,
+          11.106,
+          8.166
+        ],
+        [
+          11.374,
+          7.834,
+          11.406,
+          7.866
+        ],
+        [
+          11.374,
+          8.134,
+          11.406,
+          8.166
+        ],
+        [
+          11.044,
+          7.804,
+          11.076,
+          7.836
+        ],
+        [
+          11.044,
+          8.164,
+          11.076,
+          8.196
+        ],
+        [
+          11.035,
+          7.8,
+          11.085,
+          8.2
+        ],
+        [
+          12.73,
+          7.77,
+          13.19,
+          8.23
+        ],
+        [
+          12.794,
+          7.834,
+          12.826,
+          7.866
+        ],
+        [
+          12.794,
+          8.134,
+          12.826,
+          8.166
+        ],
+        [
+          13.094,
+          7.834,
+          13.126,
+          7.866
+        ],
+        [
+          13.094,
+          8.134,
+          13.126,
+          8.166
+        ],
+        [
+          13.124,
+          7.804,
+          13.156,
+          7.836
+        ],
+        [
+          13.124,
+          8.164,
+          13.156,
+          8.196
+        ],
+        [
+          13.115,
+          7.8,
+          13.165,
+          8.2
+        ],
+        [
+          15.35,
+          4.75,
+          16.45,
+          5.85
+        ],
+        [
+          15.845,
+          5.245,
+          15.955,
+          5.355
+        ],
+        [
+          14.81,
+          5.07,
+          15.27,
+          5.53
+        ],
+        [
+          14.874,
+          5.134,
+          14.906,
+          5.166
+        ],
+        [
+          14.874,
+          5.434,
+          14.906,
+          5.466
+        ],
+        [
+          15.174,
+          5.134,
+          15.206,
+          5.166
+        ],
+        [
+          15.174,
+          5.434,
+          15.206,
+          5.466
+        ],
+        [
+          14.844,
+          5.104,
+          14.876,
+          5.136
+        ],
+        [
+          14.844,
+          5.464,
+          14.876,
+          5.496
+        ],
+        [
+          14.835,
+          5.1,
+          14.885,
+          5.5
+        ],
+        [
+          16.53,
+          5.07,
+          16.99,
+          5.53
+        ],
+        [
+          16.594,
+          5.134,
+          16.626,
+          5.166
+        ],
+        [
+          16.594,
+          5.434,
+          16.626,
+          5.466
+        ],
+        [
+          16.894,
+          5.134,
+          16.926,
+          5.166
+        ],
+        [
+          16.894,
+          5.434,
+          16.926,
+          5.466
+        ],
+        [
+          16.924,
+          5.104,
+          16.956,
+          5.136
+        ],
+        [
+          16.924,
+          5.464,
+          16.956,
+          5.496
+        ],
+        [
+          16.915,
+          5.1,
+          16.965,
+          5.5
+        ]
+      ],
+      "bounds": [
+        -80,
+        -90,
+        80,
+        75
+      ],
+      "corridor_width_m": 2,
+      "free_rects": [
+        [
+          -7,
+          -1.5,
+          22,
+          12
+        ]
+      ],
+      "scope": "headless authored clearance envelope; Unity collider readiness remains separate",
+      "synthetic": true
+    }
+  ]
+}

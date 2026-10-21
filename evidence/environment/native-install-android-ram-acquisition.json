@@ -1,0 +1,165 @@
+{
+  "schema": "dark.android-ram-acquisition/1",
+  "url": "https://dl.google.com/android/repository/sys-img/android/arm64-v8a-26_r02.zip",
+  "expected_sha256": "74785c6d7ce73a12e730bd2bceb075fb4c68e0052c8f79b78f9322b722c2923c",
+  "expected_bytes": 330014927,
+  "files": [
+    {
+      "name": "arm64-v8a/advancedFeatures.ini",
+      "logical_bytes": 152,
+      "allocated_bytes": 4096,
+      "sha256": "d272c766f27bb8753c5847dda9a6bdd8d4b187882f5dea50c407fe697fb166c8",
+      "zip_crc32": "4b9af115"
+    },
+    {
+      "name": "arm64-v8a/kernel-ranchu",
+      "logical_bytes": 10715136,
+      "allocated_bytes": 10674176,
+      "sha256": "c1be868c98d531fb898f237131534e0219ae328aee5dbd4432022ff6f2a6eed5",
+      "zip_crc32": "4e9378f5"
+    },
+    {
+      "name": "arm64-v8a/NOTICE.txt",
+      "logical_bytes": 1616999,
+      "allocated_bytes": 1617920,
+      "sha256": "0c342214e4d83012f084dc18d8006c56d1f9492f7eec40dcb56eebc4927545ad",
+      "zip_crc32": "ca21369e"
+    },
+    {
+      "name": "arm64-v8a/build.prop",
+      "logical_bytes": 1908,
+      "allocated_bytes": 4096,
+      "sha256": "37609b8c1f390472951c9f3464172964eda62a6f863e3d41fa046d299eab9898",
+      "zip_crc32": "bf1f6fd8"
+    },
+    {
+      "name": "arm64-v8a/userdata.img",
+      "logical_bytes": 576716800,
+      "allocated_bytes": 10944512,
+      "sha256": "4fd338ba314a290dfee8955fcd945f2ec50d1353f5f5e1811beb2586faee91b7",
+      "zip_crc32": "17c6567a"
+    },
+    {
+      "name": "arm64-v8a/source.properties",
+      "logical_bytes": 252,
+      "allocated_bytes": 4096,
+      "sha256": "7ce6482b64f1ef61eb1b8bba35125fc34a1f3966d987842f70c10bff771c60fb",
+      "zip_crc32": "f55d142b"
+    },
+    {
+      "name": "arm64-v8a/data/benchmarktest64/libjavacore-benchmarks/libjavacore-benchmarks64",
+      "logical_bytes": 108040,
+      "allocated_bytes": 110592,
+      "sha256": "48dd957ba452a40c349bca8aa7d54e9bb0f5e0852443ceb1c7e4b750bbb00308",
+      "zip_crc32": "ed6dc13d"
+    },
+    {
+      "name": "arm64-v8a/data/nativetest64/libjavacore-unit-tests/libjavacore-unit-tests",
+      "logical_bytes": 209144,
+      "allocated_bytes": 212992,
+      "sha256": "df4eb8fb10e800191fe0f21d076db6c31d43ebe85b35b9fb56b3123407ba3ffc",
+      "zip_crc32": "2afab29d"
+    },
+    {
+      "name": "arm64-v8a/data/nativetest64/memory_replay_tests/memory_replay_tests64",
+      "logical_bytes": 284832,
+      "allocated_bytes": 286720,
+      "sha256": "ee5c3292e1c919e6d794eda8cc872614df7d401a7c1dabc53305c08bee3682b5",
+      "zip_crc32": "35f3d3d1"
+    },
+    {
+      "name": "arm64-v8a/data/nativetest64/nvram_hal_test/nvram_hal_test",
+      "logical_bytes": 263472,
+      "allocated_bytes": 266240,
+      "sha256": "650885b6d631c418496b083174ca4ac8f8324eb44a6d077c1d0ad9a0732491b9",
+      "zip_crc32": "da062f1a"
+    },
+    {
+      "name": "arm64-v8a/data/nativetest64/asan-test/asan-test",
+      "logical_bytes": 4023536,
+      "allocated_bytes": 4026368,
+      "sha256": "ec110e92c6099d0d185e589de7c778486056357dbfc64d28b89620f03690636d",
+      "zip_crc32": "869fee48"
+    },
+    {
+      "name": "arm64-v8a/data/nativetest64/bsdiff_unittest/bsdiff_unittest",
+      "logical_bytes": 404008,
+      "allocated_bytes": 405504,
+      "sha256": "04113f2a46410faa4e74d80a2d2ac8229a5ca10b2c8139880417dc4a194d61c5",
+      "zip_crc32": "702ae2db"
+    },
+    {
+      "name": "arm64-v8a/data/app/SmokeTest/SmokeTest.apk",
+      "logical_bytes": 10175,
+      "allocated_bytes": 12288,
+      "sha256": "f80e728ba18c9cff73ee477f39fe01181ea7c02a345e3ac5869b150c40228487",
+      "zip_crc32": "d45ea377"
+    },
+    {
+      "name": "arm64-v8a/data/app/ApiDemos/ApiDemos.apk",
+      "logical_bytes": 5279901,
+      "allocated_bytes": 5283840,
+      "sha256": "cfa3e1edbd1ce2df525b46a026399c5152dace1cead152b88690deec8cfadc2f",
+      "zip_crc32": "287f9829"
+    },
+    {
+      "name": "arm64-v8a/data/app/SmokeTestApp/SmokeTestApp.apk",
+      "logical_bytes": 5328,
+      "allocated_bytes": 8192,
+      "sha256": "ffa6dd643f6964719cfed47ffd9780beedbe44febe41a4ddc7ed530109783b71",
+      "zip_crc32": "9d90231f"
+    },
+    {
+      "name": "arm64-v8a/data/app/GestureBuilder/GestureBuilder.apk",
+      "logical_bytes": 29973,
+      "allocated_bytes": 32768,
+      "sha256": "871b0cb49006c0959f4e0120c9e66e68776b6952c3a65c495d6a1f288638579e",
+      "zip_crc32": "1ee123ae"
+    },
+    {
+      "name": "arm64-v8a/data/misc/wifi/WifiConfigStore.xml",
+      "logical_bytes": 2427,
+      "allocated_bytes": 4096,
+      "sha256": "f9fb2931f1d952ea0503b277d71fea3468b3cd3ecb6e5e441f21b7521aceb1a3",
+      "zip_crc32": "0e567c25"
+    },
+    {
+      "name": "arm64-v8a/ramdisk.img",
+      "logical_bytes": 1800005,
+      "allocated_bytes": 1802240,
+      "sha256": "91273f48434fcf03b504d1420fa35ff8364162b4f15a54eb757a85d78b0bdb78",
+      "zip_crc32": "254901dc"
+    },
+    {
+      "name": "arm64-v8a/system.img",
+      "logical_bytes": 2686451712,
+      "allocated_bytes": 677810176,
+      "sha256": "5d3d82f15eb113f42030842fdfe9b410091d4f8c401c63e55b2c5cfcd1a8745d",
+      "zip_crc32": "a02b6587"
+    },
+    {
+      "name": "arm64-v8a/vendor.img",
+      "logical_bytes": 102760448,
+      "allocated_bytes": 15618048,
+      "sha256": "62085f1ebd1a3ce9d546ce092985fcc9953c50fcb5e5cda9b6091d38430deb83",
+      "zip_crc32": "f0207413"
+    },
+    {
+      "name": "arm64-v8a/encryptionkey.img",
+      "logical_bytes": 1048576,
+      "allocated_bytes": 0,
+      "sha256": "30e14955ebf1352266dc2ff8067e68104607e750abb9d3b36582b8af909fcb58",
+      "zip_crc32": "a738ea1c"
+    }
+  ],
+  "status": "VERIFIED",
+  "verified_sha256": "74785c6d7ce73a12e730bd2bceb075fb4c68e0052c8f79b78f9322b722c2923c",
+  "downloaded_bytes": 330014927,
+  "physical_image_bytes": 729128960,
+  "logical_image_bytes": 3391732824,
+  "download_archive_reclaimed": true,
+  "elapsed_seconds": 24.818341098725796,
+  "available_memory_bytes": 4832796672,
+  "shm_free_bytes": 1186459648,
+  "physical_disk_free_bytes": 2014281728
+}

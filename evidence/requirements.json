@@ -41,9 +41,23 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The official Unity6000.1.0f1 executable runs through QEMU and all14 runtime/Editor sources compile against136 real pinned Unity/URP assemblies. Python/C# observation, action and terrain interchange executes.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/unity-api-compile.log",
+            "evidence/verification/native-wire-interop.log",
+            "evidence/verification/terrain-wire.log",
+            "evidence/environment/native-install-unity-correct-ipc.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Unity project and URP source preparation do not establish native Android rendering or device fidelity."
+        "Normal Editor licensing handshake reports no installed license or matching entitlement. Full project import, native rendering, APK/AAB and device execution remain unrun."
       ]
     },
     {
@@ -1073,9 +1087,20 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Building, tree, cup, vehicle, star and group Life adapters propose typed effects with observations, capabilities and bounded memories. World commits local authorized entity effects atomically and independently tests forged, remote, stale and malformed input refusal.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No complete universal subject registry with all required version/budget/migration/strata fields exists."
+        "The admitted entity repertoire is bounded; every constitutional model, rich environmental causality and native experiential acceptance are not complete."
       ]
     },
     {
@@ -1118,10 +1143,20 @@
             "evidence/verification/initial/core.log"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Building, tree, cup, vehicle, star and group Life adapters propose typed effects with observations, capabilities and bounded memories. World commits local authorized entity effects atomically and independently tests forged, remote, stale and malformed input refusal.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Inhabitant models bounded local observations/personality and in-memory snapshots only; universal entity life, persistent realization and asymmetric abilities remain incomplete."
+        "The admitted entity repertoire is bounded; every constitutional model, rich environmental causality and native experiential acceptance are not complete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1148,9 +1183,20 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Building, tree, cup, vehicle, star and group Life adapters propose typed effects with observations, capabilities and bounded memories. World commits local authorized entity effects atomically and independently tests forged, remote, stale and malformed input refusal.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Composable building/car/tree/object agency and group conflict policies are not implemented."
+        "The admitted entity repertoire is bounded; every constitutional model, rich environmental causality and native experiential acceptance are not complete."
       ]
     },
     {
@@ -1198,10 +1244,21 @@
             "evidence/verification/initial/core.log"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "An actual SQLite authority, bounded authenticated loopback HTTP service and external clients execute shared ordered actions, movement, local observations, NPC policies, typed refusal and exact retry. An actual HTTP playthrough commits60 events across three separately authenticated clients.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "SignWorld provides one local transactional domain, not the complete authoritative world tuple, conflict policy or snapshot archive."
+        "This is a bounded local authority and scripted test-client session. It does not establish distributed planetary scale, human/LLM attendance, native prediction/interpolation quality or all protocol reference conformance."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1280,10 +1337,21 @@
             "evidence/core/review-fixes.md"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "An actual SQLite authority, bounded authenticated loopback HTTP service and external clients execute shared ordered actions, movement, local observations, NPC policies, typed refusal and exact retry. An actual HTTP playthrough commits60 events across three separately authenticated clients.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Monotonic local authentication ticks and canonical sign replay pass; fixed-step scheduling, catch-up, timezone and presentation/audio clock integration remain absent."
+        "This is a bounded local authority and scripted test-client session. It does not establish distributed planetary scale, human/LLM attendance, native prediction/interpolation quality or all protocol reference conformance."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1384,11 +1452,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired pinned Natural Earth global coast/land/ocean/admin/lake/river layers and GEBCO2025-derived0.1degree global heights support actual arbitrary-coordinate queries, date-line/polar tests and bounded33x33 terrain responses.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/geography.log",
+            "evidence/verification/world-server.log",
+            "evidence/verification/terrain-wire.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "WGS84/ECEF/ENU kernels pass bounded numerical fixtures; Unity origin shifts, altitude-datum integration and streamed flight-to-ground continuity remain unrun.",
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Coarse global overview is implemented. Detailed worldwide roads/buildings/imagery, higher-resolution support geometry and native collision/coverage acceptance remain incomplete. Heights retain source MSL and explicit geoid0 approximation; the grid is32km-filtered."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1493,10 +1572,22 @@
             "evidence/geography/storage-budget.json"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired pinned Natural Earth global coast/land/ocean/admin/lake/river layers and GEBCO2025-derived0.1degree global heights support actual arbitrary-coordinate queries, date-line/polar tests and bounded33x33 terrain responses.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/geography.log",
+            "evidence/verification/world-server.log",
+            "evidence/verification/terrain-wire.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Global manifest enumerates missing layer placeholders, not a complete filename-level partition inventory; most global layers are unacquired."
+        "Coarse global overview is implemented. Detailed worldwide roads/buildings/imagery, higher-resolution support geometry and native collision/coverage acceptance remain incomplete. Heights retain source MSL and explicit geoid0 approximation; the grid is32km-filtered."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1625,11 +1716,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired pinned Natural Earth global coast/land/ocean/admin/lake/river layers and GEBCO2025-derived0.1degree global heights support actual arbitrary-coordinate queries, date-line/polar tests and bounded33x33 terrain responses.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/geography.log",
+            "evidence/verification/world-server.log",
+            "evidence/verification/terrain-wire.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Atomic bounded CSV/OSM imports and one airport index pass; global PBF/Parquet partitioning, deduplication, routable topology and resume checkpoints remain absent.",
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Coarse global overview is implemented. Detailed worldwide roads/buildings/imagery, higher-resolution support geometry and native collision/coverage acceptance remain incomplete. Heights retain source MSL and explicit geoid0 approximation; the grid is32km-filtered."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1656,9 +1758,22 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired pinned Natural Earth global coast/land/ocean/admin/lake/river layers and GEBCO2025-derived0.1degree global heights support actual arbitrary-coordinate queries, date-line/polar tests and bounded33x33 terrain responses.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/geography.log",
+            "evidence/verification/world-server.log",
+            "evidence/verification/terrain-wire.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No selected/ingested terrain or imagery/3D Tiles production baseline or native Cesium integration exists."
+        "Coarse global overview is implemented. Detailed worldwide roads/buildings/imagery, higher-resolution support geometry and native collision/coverage acceptance remain incomplete. Heights retain source MSL and explicit geoid0 approximation; the grid is32km-filtered."
       ]
     },
     {
@@ -1795,10 +1910,22 @@
             "evidence/geography/storage-budget.json"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired pinned Natural Earth global coast/land/ocean/admin/lake/river layers and GEBCO2025-derived0.1degree global heights support actual arbitrary-coordinate queries, date-line/polar tests and bounded33x33 terrain responses.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/geography.log",
+            "evidence/verification/world-server.log",
+            "evidence/verification/terrain-wire.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Missing layers/partitions are explicit, but no every-coordinate loadable environment resolver, coverage heatmap or global baseline closure exists."
+        "Coarse global overview is implemented. Detailed worldwide roads/buildings/imagery, higher-resolution support geometry and native collision/coverage acceptance remain incomplete. Heights retain source MSL and explicit geoid0 approximation; the grid is32km-filtered."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1825,9 +1952,20 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Actual local-file staging verifies hashes and byte budgets, decodes metadata/PCM/collision volumes, separates preparation/reservation/activation and revalidates current host conditions. Expiry frees resources at the reservation deadline and admission reserves capacity for terminal cleanup.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No runtime cell streaming state machine, cancellation-aware decoder, collision readiness or versioned bundle cache exists."
+        "Portable byte/metadata admission does not establish Unity GPU upload, physical collision readiness, global predictive streaming or final performance distributions."
       ]
     },
     {
@@ -1846,9 +1984,21 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No hierarchical worldwide multimodal route graph or local native navigation integration is delivered."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ]
     },
     {
@@ -1906,9 +2056,22 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The actual C# ledger conserves8,140,897,523 WDI2024 people across217 economies plus an explicit23,412,899 nonspatial residual. Stable lazy identities, movement, fidelity, bounded realization and exact conservation are exercised. World calls that kernel for encounter/demotion/restoration and preserves detailed resident memories across reopening.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/global-population.log",
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "WorldPop metadata is inspected only; no demographic raster sums, globally allocated identities or all-six population measures are realized."
+        "Country totals and lazy identity allocation do not establish settlement-level demographic placement, all planetary individual state, dense crowds or native fidelity switching. Authored cast and synthetic local spawn locations remain separately identified."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -1978,10 +2141,22 @@
             "evidence/math/report.md"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The actual C# ledger conserves8,140,897,523 WDI2024 people across217 economies plus an explicit23,412,899 nonspatial residual. Stable lazy identities, movement, fidelity, bounded realization and exact conservation are exercised. World calls that kernel for encounter/demotion/restoration and preserves detailed resident memories across reopening.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/global-population.log",
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Exact integer parent-total apportionment passes; stable identity ranges, resident/present migration accounting and sourced worldwide reconciliation are not implemented."
+        "Country totals and lazy identity allocation do not establish settlement-level demographic placement, all planetary individual state, dense crowds or native fidelity switching. Authored cast and synthetic local spawn locations remain separately identified."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -2008,9 +2183,22 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The actual C# ledger conserves8,140,897,523 WDI2024 people across217 economies plus an explicit23,412,899 nonspatial residual. Stable lazy identities, movement, fidelity, bounded realization and exact conservation are exercised. World calls that kernel for encounter/demotion/restoration and preserves detailed resident memories across reopening.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/global-population.log",
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No durable virtual/cohort/individual/active/embodied promotion-demotion scheduler or approximation benchmark exists."
+        "Country totals and lazy identity allocation do not establish settlement-level demographic placement, all planetary individual state, dense crowds or native fidelity switching. Authored cast and synthetic local spawn locations remain separately identified."
       ]
     },
     {
@@ -2029,9 +2217,22 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The actual C# ledger conserves8,140,897,523 WDI2024 people across217 economies plus an explicit23,412,899 nonspatial residual. Stable lazy identities, movement, fidelity, bounded realization and exact conservation are exercised. World calls that kernel for encounter/demotion/restoration and preserves detailed resident memories across reopening.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/global-population.log",
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No measured crowd capacity curves or target-device CPU/GPU/thermal/voice scheduling benchmark exists."
+        "Country totals and lazy identity allocation do not establish settlement-level demographic placement, all planetary individual state, dense crowds or native fidelity switching. Authored cast and synthetic local spawn locations remain separately identified."
       ]
     },
     {
@@ -2074,10 +2275,21 @@
             "evidence/verification/initial/core.log"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "An actual SQLite authority, bounded authenticated loopback HTTP service and external clients execute shared ordered actions, movement, local observations, NPC policies, typed refusal and exact retry. An actual HTTP playthrough commits60 events across three separately authenticated clients.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Local actor/session IDs and an NPC utility fixture are not a shared authenticated human/AI/NPC observation-action runtime."
+        "This is a bounded local authority and scripted test-client session. It does not establish distributed planetary scale, human/LLM attendance, native prediction/interpolation quality or all protocol reference conformance."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -2333,11 +2545,20 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "World runs independent goal/needs policies, source-graph NPC journeys, causal local speech and ride refusals. Exact rational2x2 Nash witnesses are integrated for strategic ride interaction; deterministic replicas and stale/changed observations are tested.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "A local personality-based ride refusal and observation memory pass; full goals/needs/schedules/planning/resources and durable multi-day continuity are absent.",
-        "Normal separate-process snapshot reload is tested; forced-kill/power-loss, parent-directory fsync, external-receipt transaction, integrated world persistence, Android lifecycle and worldwide population remain unverified."
+        "Bounded schedules, speech acts, beliefs and exact small games are implemented. Broader language variation, multi-day economy/social life, large-scale benchmarks and native conversational experience remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -2388,10 +2609,20 @@
             "evidence/verification/initial/core.log"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "World runs independent goal/needs policies, source-graph NPC journeys, causal local speech and ride refusals. Exact rational2x2 Nash witnesses are integrated for strategic ride interaction; deterministic replicas and stale/changed observations are tested.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "A deterministic ride utility witness is not a strategic-game/equilibrium implementation."
+        "Bounded schedules, speech acts, beliefs and exact small games are implemented. Broader language variation, multi-day economy/social life, large-scale benchmarks and native conversational experience remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -2442,10 +2673,20 @@
             "evidence/verification/initial/core.log"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "World runs independent goal/needs policies, source-graph NPC journeys, causal local speech and ride refusals. Exact rational2x2 Nash witnesses are integrated for strategic ride interaction; deterministic replicas and stale/changed observations are tested.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Admitted-cell observation and unseen-event nonreaction pass in a local fixture; scoped rumors, propagation/decay and counterfactual social baselines are absent."
+        "Bounded schedules, speech acts, beliefs and exact small games are implemented. Broader language variation, multi-day economy/social life, large-scale benchmarks and native conversational experience remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -2514,9 +2755,20 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "World runs independent goal/needs policies, source-graph NPC journeys, causal local speech and ride refusals. Exact rational2x2 Nash witnesses are integrated for strategic ride interaction; deterministic replicas and stale/changed observations are tested.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No independent native NPC-pair conversation, directional overhearing, occlusion/masking or committed speech lifecycle is implemented."
+        "Bounded schedules, speech acts, beliefs and exact small games are implemented. Broader language variation, multi-day economy/social life, large-scale benchmarks and native conversational experience remain incomplete."
       ]
     },
     {
@@ -2709,9 +2961,21 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "ReviewWalker source offers a provisional art-review control adapter; native compilation, streamed locomotion, animation grounding and full accessibility remain unrun."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ]
     },
     {
@@ -2779,9 +3043,20 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired licensed detailed rigged human masters and independently authored articulated transport/prop families are exported to actual FBX. The13-family final import inventory and19 content tests execute; assets remain separate from source/native acceptance.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/content.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No acquired/imported qualified humanoid animation, retargeting, blend tree or IK pipeline exists."
+        "Source art/import checks do not establish cinematic Unity footage, final LOD/device budgets, every region or all locomotion/rider animation quality. Further bike fitting and Arabic speech experiments remain separate ongoing work."
       ]
     },
     {
@@ -2809,9 +3084,20 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired licensed detailed rigged human masters and independently authored articulated transport/prop families are exported to actual FBX. The13-family final import inventory and19 content tests execute; assets remain separate from source/native acceptance.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/content.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Realistic rigged human, skin/hair/wardrobe, facial and close-up character content remains unbuilt; recipes are not assets."
+        "Source art/import checks do not establish cinematic Unity footage, final LOD/device budgets, every region or all locomotion/rider animation quality. Further bike fitting and Arabic speech experiments remain separate ongoing work."
       ]
     },
     {
@@ -2839,9 +3125,21 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Detailed vehicle adapters, seats/interiors/physics, lane traffic and deadlock recovery are not implemented."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ]
     },
     {
@@ -2869,9 +3167,21 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Manual/passenger/taxi/entourage journey modes and consensual seat/control transitions are not implemented."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ]
     },
     {
@@ -2957,10 +3267,21 @@
             "data/geography/ourairports-coverage.json"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "86,258 pinned airport reference records are indexed; player flight, aircraft art/interiors, runways, dynamics, boarding and collision-ready landing are absent."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -3054,10 +3375,21 @@
             "data/geography/ourairports-coverage.json"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Marina del Rey place-label source exists; harbor geometry, vessels, buoyancy/navigation, boarding and water visual/audio agreement are absent."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -3246,10 +3578,20 @@
             "assets/evidence/license-snapshot-hashes.json"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired licensed detailed rigged human masters and independently authored articulated transport/prop families are exported to actual FBX. The13-family final import inventory and19 content tests execute; assets remain separate from source/native acceptance.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/content.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Exact licensed PBR sources and an original café are prepared; hero-family alternatives, acquired humans/motion/vehicles/audio and device fitness remain incomplete."
+        "Source art/import checks do not establish cinematic Unity footage, final LOD/device budgets, every region or all locomotion/rider animation quality. Further bike fitting and Arabic speech experiments remain separate ongoing work."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -3344,10 +3686,20 @@
             "assets/evidence/license-snapshot-hashes.json"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired licensed detailed rigged human masters and independently authored articulated transport/prop families are exported to actual FBX. The13-family final import inventory and19 content tests execute; assets remain separate from source/native acceptance.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/content.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Downloads, source hashes and original geometry tests pass; imported/normalized/rigged/collision/optimized/built/device transitions have not been executed."
+        "Source art/import checks do not establish cinematic Unity footage, final LOD/device budgets, every region or all locomotion/rider animation quality. Further bike fitting and Arabic speech experiments remain separate ongoing work."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -4298,11 +4650,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The authenticated World uses the actual C# source-anchored plate kernel. Learned operative rewrites, inhabitant transport, route changes, reopen mid-transition and witnessed inverse run in the HTTP gameplay session; manual navigation respects the rewritten route graph.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/verification/tampa-kernel.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Two-plate immutable graph reconnection/rotation and reachability classification pass synthetic fixtures; player learning and physical Unity realization remain absent.",
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Source identity and fictional topology remain distinct. Native collision/nav/body transport, arbitrary learned grammars and complete portal/dynamics acceptance remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -4405,11 +4768,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The authenticated World uses the actual C# source-anchored plate kernel. Learned operative rewrites, inhabitant transport, route changes, reopen mid-transition and witnessed inverse run in the HTTP gameplay session; manual navigation respects the rewritten route graph.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/verification/tampa-kernel.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Explicit boundary rewrite/inverse/refusal fixtures pass; general rewrite overlap arbitration, durable witnesses and physical inverse admission are incomplete.",
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Source identity and fictional topology remain distinct. Native collision/nav/body transport, arbitrary learned grammars and complete portal/dynamics acceptance remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -4512,11 +4886,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The authenticated World uses the actual C# source-anchored plate kernel. Learned operative rewrites, inhabitant transport, route changes, reopen mid-transition and witnessed inverse run in the HTTP gameplay session; manual navigation respects the rewritten route graph.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/verification/tampa-kernel.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "All three policies pass bounded point-entity mathematical fixtures, including straddler refusal; safe physical carriage, attachments, seats/audio/nav and disconnect are unrun.",
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Source identity and fictional topology remain distinct. Native collision/nav/body transport, arbitrary learned grammars and complete portal/dynamics acceptance remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -4564,9 +4949,22 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The authenticated World uses the actual C# source-anchored plate kernel. Learned operative rewrites, inhabitant transport, route changes, reopen mid-transition and witnessed inverse run in the HTTP gameplay session; manual navigation respects the rewritten route graph.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/verification/tampa-kernel.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Plate reachability flags are computed, but affected-route invalidation, stale observer knowledge and divergence repair are not implemented."
+        "Source identity and fictional topology remain distinct. Native collision/nav/body transport, arbitrary learned grammars and complete portal/dynamics acceptance remain incomplete."
       ]
     },
     {
@@ -4585,9 +4983,22 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The authenticated World uses the actual C# source-anchored plate kernel. Learned operative rewrites, inhabitant transport, route changes, reopen mid-transition and witnessed inverse run in the HTTP gameplay session; manual navigation respects the rewritten route graph.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/verification/tampa-kernel.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No path-signature matching across geographic/sky/music charts, null baseline or learned playable affordance exists."
+        "Source identity and fictional topology remain distinct. Native collision/nav/body transport, arbitrary learned grammars and complete portal/dynamics acceptance remain incomplete."
       ]
     },
     {
@@ -4708,11 +5119,20 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The real QuickJS worker executes bounded proposal programs under CPU/memory/syscall limits. Authenticated CLI submission passes through the same World checks; durable outbox reconciliation and sealed SEURL descriptions do not grant authority.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Pure canonical ResourceAddress discovery and pinned PURL reference tests pass; full PURL/SEURL/ACSP compatible invocation and durable cross-host transport are unimplemented.",
-        "Normal separate-process snapshot reload is tested; forced-kill/power-loss, parent-directory fsync, external-receipt transaction, integrated world persistence, Android lifecycle and worldwide population remain unverified."
+        "This is a bounded protocol/worker integration. All PURL/SEURL/ACSP reference semantics, operating-system scheme registration and every contribution workflow remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -4792,10 +5212,20 @@
             "evidence/core/cli-npc-green.log"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The real QuickJS worker executes bounded proposal programs under CPU/memory/syscall limits. Authenticated CLI submission passes through the same World checks; durable outbox reconciliation and sealed SEURL descriptions do not grant authority.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "darkctl describe/validate/demo/replay provides bounded local sign fixtures; no player-safe worker shell/Wasm/QuickJS execution sandbox is implemented."
+        "This is a bounded protocol/worker integration. All PURL/SEURL/ACSP reference semantics, operating-system scheme registration and every contribution workflow remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -4822,9 +5252,20 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Actual local-file staging verifies hashes and byte budgets, decodes metadata/PCM/collision volumes, separates preparation/reservation/activation and revalidates current host conditions. Expiry frees resources at the reservation deadline and admission reserves capacity for terminal cleanup.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No rendezvous preparation/activation state machine, measured time-to-use or shared reservation manifests exist."
+        "Portable byte/metadata admission does not establish Unity GPU upload, physical collision readiness, global predictive streaming or final performance distributions."
       ]
     },
     {
@@ -4843,9 +5284,20 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Actual local-file staging verifies hashes and byte budgets, decodes metadata/PCM/collision volumes, separates preparation/reservation/activation and revalidates current host conditions. Expiry frees resources at the reservation deadline and admission reserves capacity for terminal cleanup.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No speculation quota/hysteresis/cancellation/backpressure system or exact small-fixture budget oracle exists."
+        "Portable byte/metadata admission does not establish Unity GPU upload, physical collision readiness, global predictive streaming or final performance distributions."
       ]
     },
     {
@@ -5046,10 +5498,21 @@
             "evidence/verification/initial/geography.log"
           ],
           "working_tree_source_sha256": "8f0c91ddba0817102ca434be6bbf3e1ed9be014f1e21013bad0bad501567ba33"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "An actual SQLite authority, bounded authenticated loopback HTTP service and external clients execute shared ordered actions, movement, local observations, NPC policies, typed refusal and exact retry. An actual HTTP playthrough commits60 events across three separately authenticated clients.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "CLI structured local results and geography HTTP failure validation pass subsets; complete service/network schema, deadlines/retries and responsive native offline flow are absent."
+        "This is a bounded local authority and scripted test-client session. It does not establish distributed planetary scale, human/LLM attendance, native prediction/interpolation quality or all protocol reference conformance."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -5076,9 +5539,21 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "An actual SQLite authority, bounded authenticated loopback HTTP service and external clients execute shared ordered actions, movement, local observations, NPC policies, typed refusal and exact retry. An actual HTTP playthrough commits60 events across three separately authenticated clients.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No actual two-human/external-AI networked session, interest scoping, prediction/interpolation or reconnect speech deduplication exists."
+        "This is a bounded local authority and scripted test-client session. It does not establish distributed planetary scale, human/LLM attendance, native prediction/interpolation quality or all protocol reference conformance."
       ]
     },
     {
@@ -5174,11 +5649,20 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "SQLite FULL/WAL transactions persist shared actor, journey, skills, observations, contributions and event lineage. Actual server SIGKILL/reopen, exact retry, altered retry/corruption refusal and unknown outbox reconciliation execute; dormant population restores exact detailed memories.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Local sign journal restore and exactly-once retries pass; complete actor/world/transport/relationship/versioned save, Android lifecycle and backup restore remain incomplete.",
-        "Normal separate-process snapshot reload is tested; forced-kill/power-loss, parent-directory fsync, external-receipt transaction, integrated world persistence, Android lifecycle and worldwide population remain unverified."
+        "Android lifecycle, battery interruption, backup restoration/versioned migrations and long-session storage compaction remain incomplete. Hash history trusts the local SQLite operator."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -5236,10 +5720,23 @@
         }
       ],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The official Unity6000.1.0f1 executable runs through QEMU and all14 runtime/Editor sources compile against136 real pinned Unity/URP assemblies. Python/C# observation, action and terrain interchange executes.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/unity-api-compile.log",
+            "evidence/verification/native-wire-interop.log",
+            "evidence/verification/terrain-wire.log",
+            "evidence/environment/native-install-unity-correct-ipc.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "Unity project/pinned Editor/package and batch build sources exist, but supported Editor import, resolved lock, Android toolchain and actual native APK/AAB are unavailable.",
-        "Execution dependency: inspected aarch64 Linux host has no supported licensed Unity Editor/Android build route and no connected inspected Galaxy A16. Native execution requires an already available zero-new-charge compatible worker/device. Portable source/tool/data work remains actionable."
+        "Normal Editor licensing handshake reports no installed license or matching entitlement. Full project import, native rendering, APK/AAB and device execution remain unrun."
       ]
     },
     {
@@ -5310,11 +5807,23 @@
             "evidence/environment/dotnet-install.json",
             "evidence/environment/session-runtime.json"
           ]
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The official Unity6000.1.0f1 executable runs through QEMU and all14 runtime/Editor sources compile against136 real pinned Unity/URP assemblies. Python/C# observation, action and terrain interchange executes.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/unity-api-compile.log",
+            "evidence/verification/native-wire-interop.log",
+            "evidence/verification/terrain-wire.log",
+            "evidence/environment/native-install-unity-correct-ipc.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "No inspected compatible free licensed Unity worker is accessible; current aarch64 Linux host cannot supply the supported Editor route.",
-        "Execution dependency: inspected aarch64 Linux host has no supported licensed Unity Editor/Android build route and no connected inspected Galaxy A16. Native execution requires an already available zero-new-charge compatible worker/device. Portable source/tool/data work remains actionable."
+        "Normal Editor licensing handshake reports no installed license or matching entitlement. Full project import, native rendering, APK/AAB and device execution remain unrun."
       ]
     },
     {
@@ -6243,11 +6752,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Acquired pinned Natural Earth global coast/land/ocean/admin/lake/river layers and GEBCO2025-derived0.1degree global heights support actual arbitrary-coordinate queries, date-line/polar tests and bounded33x33 terrain responses.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/geography.log",
+            "evidence/verification/world-server.log",
+            "evidence/verification/terrain-wire.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "1000 geodesy round trips and regional source hashes are not stratified scene/traversal or complete global partition acceptance.",
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Coarse global overview is implemented. Detailed worldwide roads/buildings/imagery, higher-resolution support geometry and native collision/coverage acceptance remain incomplete. Heights retain source MSL and explicit geoid0 approximation; the grid is32km-filtered."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -6381,11 +6901,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The actual C# ledger conserves8,140,897,523 WDI2024 people across217 economies plus an explicit23,412,899 nonspatial residual. Stable lazy identities, movement, fidelity, bounded realization and exact conservation are exercised. World calls that kernel for encounter/demotion/restoration and preserves detailed resident memories across reopening.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/global-population.log",
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Exact allocation math passes but sourced demographic totals, global identities, persisted population scheduler and known-NPC restart travel are unverified.",
-        "Normal separate-process snapshot reload is tested; forced-kill/power-loss, parent-directory fsync, external-receipt transaction, integrated world persistence, Android lifecycle and worldwide population remain unverified."
+        "Country totals and lazy identity allocation do not establish settlement-level demographic placement, all planetary individual state, dense crowds or native fidelity switching. Authored cast and synthetic local spawn locations remain separately identified."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -6412,9 +6943,21 @@
       "build_commit": null,
       "evidence": [],
       "reviewer": "Codex pipeline_review; clause/evidence mapping inspection only, no product acceptance",
-      "verified_subsets": [],
+      "verified_subsets": [
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "Authoritative journeys exercise explicit modal graph edges, continuous position/altitude, seat/driver authority, taxi consent, cancellation/resume and ground-air-ground/water trips. Manual traversal checks authored clearance and admitted topology. The integrated HTTP session reaches London from Tampa.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
+        }
+      ],
       "unresolved_limitations": [
-        "No end-to-end native walking/drive/passenger/cycle/flight/boat/balloon acceptance journey exists."
+        "These are headless route and authored-clearance mechanics. Native tire/airfoil/hull physics, traffic, all production transport routes, animational fit and target-device acceptance remain incomplete."
       ]
     },
     {
@@ -6509,10 +7052,22 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "The authenticated World uses the actual C# source-anchored plate kernel. Learned operative rewrites, inhabitant transport, route changes, reopen mid-transition and witnessed inverse run in the HTTP gameplay session; manual navigation respects the rewritten route graph.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log",
+            "evidence/verification/tampa-kernel.log",
+            "evidence/server/gameplay-session-final-increment.json"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Source-anchored mathematical policy execution now exists; authenticated durable gameplay rewrite, runtime authored divergence, physical collision/nav/body transport, safe spawn and native player use remain absent."
+        "Source identity and fictional topology remain distinct. Native collision/nav/body transport, arbitrary learned grammars and complete portal/dynamics acceptance remain incomplete."
       ],
       "latest_regression": {
         "status": "PASS",
@@ -6866,11 +7421,20 @@
             "evidence/reviews/extension-review.md"
           ],
           "working_tree_source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e"
+        },
+        {
+          "increment": "authoritative-world-continuation",
+          "description": "SQLite FULL/WAL transactions persist shared actor, journey, skills, observations, contributions and event lineage. Actual server SIGKILL/reopen, exact retry, altered retry/corruption refusal and unknown outbox reconciliation execute; dormant population restores exact detailed memories.",
+          "observed_result": "PASS",
+          "scope": "Only this declared executed subset; no whole-clause/native acceptance.",
+          "evidence_paths": [
+            "evidence/verification/world-server.log"
+          ],
+          "working_tree_source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101"
         }
       ],
       "unresolved_limitations": [
-        "Typed authority/journal/downloader failures pass focused portable scenarios; full app offline/load/low-disk/memory/process-death/corrupt-bundle/prediction/route acceptance is absent.",
-        "Normal separate-process snapshot reload is tested; forced-kill/power-loss, parent-directory fsync, external-receipt transaction, integrated world persistence, Android lifecycle and worldwide population remain unverified."
+        "Android lifecycle, battery interruption, backup restoration/versioned migrations and long-session storage compaction remain incomplete. Hash history trusts the local SQLite operator."
       ],
       "latest_regression": {
         "status": "PASS",

@@ -1,0 +1,24 @@
+{
+  "schema": "homeless.content-selection/1",
+  "state": "FREE_SELECTED",
+  "license_evidence": "https://github.com/makehumancommunity/makehuman/blob/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.md",
+  "makehuman_revision": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+  "archive": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+  "selected_prefixes": [
+    "clothes/male_casualsuit01/",
+    "hair/short01/",
+    "teeth/teeth_base/",
+    "tongue/tongue01/",
+    "eyes/high-poly/",
+    "skins/young_caucasian_male/",
+    "skins/middleage_african_male/",
+    "clothes/shoes01/"
+  ],
+  "selected_files": [
+    "eyes/materials/brown.mhmat",
+    "eyes/materials/brown_eye.png"
+  ],
+  "native_visual_acceptance": "NOT_RUN",
+  "speech": "espeak-ng offline formant synthesis; no cloned or recorded person voice",
+  "vehicle": "original unbranded fictional sedan; no third-party vehicle model"
+}

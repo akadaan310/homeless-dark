@@ -1,0 +1,19 @@
+test_boat_trip_and_unready_destination_refuse_without_mutation (test_world.WorldTests) ... ok
+test_disconnect_during_trip_and_exact_retry_after_restart (test_world.WorldTests) ... ok
+test_identity_expiry_and_no_self_assigned_founder (test_world.WorldTests) ... ok
+test_invalid_commands_and_budget_refusals_leave_state_unchanged (test_world.WorldTests) ... ok
+test_npc_refusal_and_independent_clock_schedule (test_world.WorldTests) ... ok
+test_overlay_and_braid_are_not_visit_and_no_unlearned_portal (test_world.WorldTests) ... ok
+test_read_is_pure_and_distant_npc_does_not_know_local_conversation (test_world.WorldTests) ... ok
+test_revision_exact_retry_and_altered_duplicate (test_world.WorldTests) ... ok
+test_revocation_survives_restart (test_world.WorldTests) ... ok
+test_scoped_authoring_and_contribution_persists_across_reopen (test_world.WorldTests) ... ok
+test_tampered_state_refuses_and_existing_world_never_reseeded (test_world.WorldTests) ... ok
+test_taxi_consent_and_ground_air_ground_journey (test_world.WorldTests) ... ok
+test_two_riders_capacity_driver_control_and_attached_movement (test_world.WorldTests) ... ok
+test_walking_is_continuous_cancel_stops_without_teleport_and_resumes (test_world.WorldTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.315s
+
+OK

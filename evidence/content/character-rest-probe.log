@@ -1,0 +1,11 @@
+Color management: Error could not find role data role.
+Blender 3.0.1
+Color management: scene view "Filmic" not found, setting default "Standard".
+/run/user/1001/gvfs/ non-existent directory
+Read blend: /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/assets/content/authored/CitizenSource.blend
+Saved: '/tmp/homeless-rest.png'
+ Time: 00:01.95 (Saving: 00:00.05)
+
+[('CitizenBody', 13380, 0), ('Outfit', 8426, 0), ('Hair', 2984, 0), ('Eyes', 1064, 0), ('Teeth', 3868, 0), ('Tongue', 226, 0)]
+
+Blender quit

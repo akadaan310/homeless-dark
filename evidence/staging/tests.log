@@ -1,0 +1,23 @@
+test_actual_mutation_after_reserve_is_refused_at_activation (test_staging.StagingTests) ... ok
+test_allocator_exact_oracle_and_deterministic_counterexample (test_staging.StagingTests) ... ok
+test_bad_collision_spawn_and_decoder_refuse (test_staging.StagingTests) ... ok
+test_bootstrap_manifest_hashes_actual_known_art_audio (test_staging.StagingTests) ... ok
+test_caller_manifest_mutation_cannot_rebind_content (test_staging.StagingTests) ... ok
+test_cancel_expiry_failure_and_hysteresis (test_staging.StagingTests) ... ok
+test_current_activation_authority_and_actual_preconditions (test_staging.StagingTests) ... ok
+test_expired_reservation_and_wrong_order_refuse (test_staging.StagingTests) ... ok
+test_fifo_parent_symlink_and_missing_file_fail_promptly (test_staging.StagingTests) ... ok
+test_full_real_local_lifecycle_and_retirement (test_staging.StagingTests) ... ok
+test_idempotency_requires_current_scope_and_snapshot_continuity (test_staging.StagingTests) ... ok
+test_integrity_and_size_changes_refuse_without_partial_state (test_staging.StagingTests) ... ok
+test_low_speed_confidence_and_stale_path_estimates (test_staging.StagingTests) ... ok
+test_path_escape_symlink_and_special_file_refuse (test_staging.StagingTests) ... ok
+test_prediction_preparation_cannot_activate_or_move_actor (test_staging.StagingTests) ... ok
+test_quota_and_cancelled_prediction_baiting (test_staging.StagingTests) ... ok
+test_restore_rejects_catalog_change_and_malformed_state (test_staging.StagingTests) ... ok
+test_small_budget_deduplicates_shared_assets (test_staging.StagingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.666s
+
+OK

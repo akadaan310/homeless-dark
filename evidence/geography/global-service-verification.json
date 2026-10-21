@@ -1,0 +1,62 @@
+{
+  "schema": "dark.geography-service-verification/1",
+  "status": "PASS",
+  "test_groups": 12,
+  "scope": "Pure installed-source global overview API; authenticated HTTP/native rendering owned by other modules",
+  "startup_hash_seconds": 0.09627664322033525,
+  "source_hash_validation": "three pinned derived files; verified terrain metadata layout",
+  "requests": [
+    {
+      "name": "Tampa",
+      "latitude": 27.9594638,
+      "longitude": -82.5054865,
+      "wall_seconds": 2.4123629848472774,
+      "process_cpu_seconds": 1.7186180400000002,
+      "python_tracemalloc_peak_bytes": 74926421,
+      "response_bytes": 63570,
+      "environmental_state": "land",
+      "center_height_m_msl": 10.191058744519937
+    },
+    {
+      "name": "Himalaya",
+      "latitude": 28,
+      "longitude": 86.8,
+      "wall_seconds": 2.377218132838607,
+      "process_cpu_seconds": 1.6870629999999998,
+      "python_tracemalloc_peak_bytes": 74865072,
+      "response_bytes": 62045,
+      "environmental_state": "land",
+      "center_height_m_msl": 5656.0
+    },
+    {
+      "name": "Pacific",
+      "latitude": 0,
+      "longitude": -140,
+      "wall_seconds": 2.959726586006582,
+      "process_cpu_seconds": 2.1330648799999996,
+      "python_tracemalloc_peak_bytes": 74918756,
+      "response_bytes": 66770,
+      "environmental_state": "ocean",
+      "center_height_m_msl": -4299.0
+    },
+    {
+      "name": "NorthPole",
+      "latitude": 90,
+      "longitude": 120,
+      "wall_seconds": 2.697799996007234,
+      "process_cpu_seconds": 1.7452997999999997,
+      "python_tracemalloc_peak_bytes": 74911617,
+      "response_bytes": 62172,
+      "environmental_state": "ocean",
+      "center_height_m_msl": -4213.0
+    }
+  ],
+  "source_resolution": "NaturalEarth1:10million; GEBCO2025/GMT0.1degree32km Gaussian overview",
+  "native_collision": "NOT_RUN",
+  "height_datum": "MSL approximation; rendering geoid offset0 explicitly assumed",
+  "files": {
+    "packages/dark_server/geography.py": "ba0d841bf16c44711bd44f726b6ce3449bfa271358c40146bd907f05eb3d977a",
+    "tests/server/test_geography_service.py": "e73dcca3dd0fb3e180d8a62556d819f7ddb3ea031bc715c30990099efea91567"
+  },
+  "timing_scope": "Recorded before final bounded environment cache; correctness tests and source hashes updated after cache/country additions"
+}

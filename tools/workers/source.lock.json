@@ -1,0 +1,21 @@
+{
+  "source_url": "https://bellard.org/quickjs/quickjs-2026-06-04.tar.xz",
+  "source_sha256": "b376e839b322978313d929fd20663b11ba58b75df5a46c126dd19ea2fa70ad2a",
+  "source_bytes": 621500,
+  "license": "MIT",
+  "binary_path": "artifacts/workers/dark-js",
+  "binary_sha256": "ed60c64d177bc3771d83782aa5c0939e363e670e3149744c7903b5981ccd7f86",
+  "source_version": "2026-06-04",
+  "host_imports": [],
+  "os_filter": "Linux seccomp allowlist; no file-open/network/exec syscalls",
+  "limits": {
+    "engine_memory_bytes": 16777216,
+    "process_address_space_bytes": 134217728,
+    "CPU_seconds": 1,
+    "engine_deadline_seconds": 0.15,
+    "interrupt_callbacks": 10000,
+    "stdin_bytes": 65536,
+    "stdout_bytes": 65537
+  },
+  "security_claim": "bounded worker with defense in depth; not a formally audited JS engine or general host shell"
+}

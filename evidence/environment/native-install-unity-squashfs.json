@@ -1,0 +1,242 @@
+{
+  "schema": "dark.unity-squashfs-acquisition/1",
+  "url": "https://download.unity3d.com/download_unity/9ea152932a88/LinuxEditorInstaller/Unity.tar.xz",
+  "expected_bytes": 4519451520,
+  "expected_md5": "8afcf8e7770623c480ad835cd93d2897",
+  "image_cap_bytes": 5368709120,
+  "available_ram_floor_bytes": 3221225472,
+  "timeout_seconds": 1200,
+  "input_bytes": 4519451520,
+  "samples": [
+    {
+      "elapsed_seconds": 0.0,
+      "input_bytes": 0,
+      "image_bytes": 0,
+      "available_ram_bytes": 9538846720
+    },
+    {
+      "elapsed_seconds": 20.1,
+      "input_bytes": 48234496,
+      "image_bytes": 44998175,
+      "available_ram_bytes": 9491677184
+    },
+    {
+      "elapsed_seconds": 40.1,
+      "input_bytes": 112197632,
+      "image_bytes": 112287228,
+      "available_ram_bytes": 9604796416
+    },
+    {
+      "elapsed_seconds": 60.2,
+      "input_bytes": 168820736,
+      "image_bytes": 166623635,
+      "available_ram_bytes": 9437442048
+    },
+    {
+      "elapsed_seconds": 80.2,
+      "input_bytes": 243269632,
+      "image_bytes": 257576944,
+      "available_ram_bytes": 9559322624
+    },
+    {
+      "elapsed_seconds": 100.3,
+      "input_bytes": 315621376,
+      "image_bytes": 347917676,
+      "available_ram_bytes": 9663275008
+    },
+    {
+      "elapsed_seconds": 120.3,
+      "input_bytes": 441450496,
+      "image_bytes": 492565515,
+      "available_ram_bytes": 9516486656
+    },
+    {
+      "elapsed_seconds": 140.4,
+      "input_bytes": 536870912,
+      "image_bytes": 623564960,
+      "available_ram_bytes": 9231872000
+    },
+    {
+      "elapsed_seconds": 160.5,
+      "input_bytes": 678428672,
+      "image_bytes": 736094409,
+      "available_ram_bytes": 9252433920
+    },
+    {
+      "elapsed_seconds": 180.5,
+      "input_bytes": 794820608,
+      "image_bytes": 833626886,
+      "available_ram_bytes": 9127718912
+    },
+    {
+      "elapsed_seconds": 200.6,
+      "input_bytes": 987758592,
+      "image_bytes": 1029976919,
+      "available_ram_bytes": 9079316480
+    },
+    {
+      "elapsed_seconds": 220.6,
+      "input_bytes": 1102053376,
+      "image_bytes": 1146403249,
+      "available_ram_bytes": 8512933888
+    },
+    {
+      "elapsed_seconds": 240.7,
+      "input_bytes": 1277165568,
+      "image_bytes": 1323802582,
+      "available_ram_bytes": 8806256640
+    },
+    {
+      "elapsed_seconds": 260.7,
+      "input_bytes": 1447034880,
+      "image_bytes": 1495682406,
+      "available_ram_bytes": 8631222272
+    },
+    {
+      "elapsed_seconds": 280.8,
+      "input_bytes": 1619001344,
+      "image_bytes": 1540666583,
+      "available_ram_bytes": 8591966208
+    },
+    {
+      "elapsed_seconds": 300.8,
+      "input_bytes": 1802502144,
+      "image_bytes": 1644296823,
+      "available_ram_bytes": 8485396480
+    },
+    {
+      "elapsed_seconds": 320.9,
+      "input_bytes": 1973420032,
+      "image_bytes": 1732742116,
+      "available_ram_bytes": 8381775872
+    },
+    {
+      "elapsed_seconds": 340.9,
+      "input_bytes": 2142240768,
+      "image_bytes": 1908100726,
+      "available_ram_bytes": 8230084608
+    },
+    {
+      "elapsed_seconds": 361.0,
+      "input_bytes": 2327838720,
+      "image_bytes": 2094800628,
+      "available_ram_bytes": 7458828288
+    },
+    {
+      "elapsed_seconds": 381.0,
+      "input_bytes": 2502950912,
+      "image_bytes": 2271125600,
+      "available_ram_bytes": 7850856448
+    },
+    {
+      "elapsed_seconds": 401.1,
+      "input_bytes": 2681208832,
+      "image_bytes": 2456548207,
+      "available_ram_bytes": 7608107008
+    },
+    {
+      "elapsed_seconds": 421.1,
+      "input_bytes": 2863661056,
+      "image_bytes": 2641370660,
+      "available_ram_bytes": 7422640128
+    },
+    {
+      "elapsed_seconds": 441.2,
+      "input_bytes": 3036676096,
+      "image_bytes": 2815339995,
+      "available_ram_bytes": 7235104768
+    },
+    {
+      "elapsed_seconds": 461.2,
+      "input_bytes": 3214934016,
+      "image_bytes": 2994538226,
+      "available_ram_bytes": 7062958080
+    },
+    {
+      "elapsed_seconds": 481.3,
+      "input_bytes": 3401580544,
+      "image_bytes": 3183857495,
+      "available_ram_bytes": 6868512768
+    },
+    {
+      "elapsed_seconds": 501.3,
+      "input_bytes": 3594518528,
+      "image_bytes": 3378286379,
+      "available_ram_bytes": 6676422656
+    },
+    {
+      "elapsed_seconds": 521.4,
+      "input_bytes": 3758096384,
+      "image_bytes": 3552069082,
+      "available_ram_bytes": 6494588928
+    },
+    {
+      "elapsed_seconds": 541.4,
+      "input_bytes": 3944742912,
+      "image_bytes": 3744216654,
+      "available_ram_bytes": 6175690752
+    },
+    {
+      "elapsed_seconds": 561.5,
+      "input_bytes": 4102029312,
+      "image_bytes": 3914279196,
+      "available_ram_bytes": 6091280384
+    },
+    {
+      "elapsed_seconds": 581.5,
+      "input_bytes": 4168089600,
+      "image_bytes": 4008188728,
+      "available_ram_bytes": 6012940288
+    },
+    {
+      "elapsed_seconds": 601.6,
+      "input_bytes": 4225761280,
+      "image_bytes": 4061658783,
+      "available_ram_bytes": 6001147904
+    },
+    {
+      "elapsed_seconds": 621.6,
+      "input_bytes": 4316987392,
+      "image_bytes": 4152143296,
+      "available_ram_bytes": 5823188992
+    },
+    {
+      "elapsed_seconds": 641.7,
+      "input_bytes": 4406116352,
+      "image_bytes": 4256209174,
+      "available_ram_bytes": 5825540096
+    },
+    {
+      "elapsed_seconds": 661.7,
+      "input_bytes": 4484759552,
+      "image_bytes": 4294561882,
+      "available_ram_bytes": 5823807488
+    }
+  ],
+  "status": "VERIFIED",
+  "argv": [
+    "tar2sqfs",
+    "-q",
+    "-s",
+    "-c",
+    "zstd",
+    "-X",
+    "level=10",
+    "-j",
+    "1",
+    "-Q",
+    "2",
+    "/dev/shm/homeless-unity-6000.1.0f1.sqfs"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 672.755,
+  "archive_sha256": "7b4d601907aee88578258619a3f58e05db6e856ce0ea97205757cf00bc963804",
+  "archive_md5": "8afcf8e7770623c480ad835cd93d2897",
+  "transfer_done": true,
+  "errors": [],
+  "termination_reason": null,
+  "image_bytes": 4340637696,
+  "image_path": "/dev/shm/homeless-unity-6000.1.0f1.sqfs",
+  "unity_activation_verified": false,
+  "unity_gameplay_executed": false
+}

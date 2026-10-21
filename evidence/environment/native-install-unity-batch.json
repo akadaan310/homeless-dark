@@ -1,0 +1,29 @@
+{
+  "schema": "dark.unity-native-startup/1",
+  "command": [
+    "qemu-x86_64",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "/tmp/homeless-native/unity-squashfs/Editor/Unity",
+    "-batchmode",
+    "-nographics",
+    "-quit",
+    "-createProject",
+    "/dev/shm/homeless-unity-startup-project",
+    "-logFile",
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-batch.log"
+  ],
+  "exit_code": 199,
+  "elapsed_seconds": 76.67047324310988,
+  "limit_reached": null,
+  "minimum_available_memory_bytes": 5246160896,
+  "peak_project_bytes": 0,
+  "scope": "Actual translated Linux Editor startup with an empty diagnostic project; no activation bypass.",
+  "license_activated": false,
+  "gameplay_project_imported": false,
+  "native_gameplay_tested": false,
+  "logs": [
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-batch.log",
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-batch-console.log"
+  ]
+}

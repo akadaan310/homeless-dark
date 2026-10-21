@@ -1,0 +1,17 @@
+test_actual_land_admin_population_and_declared_resolution (test_geography_service.GeographyServiceTests) ... ok
+test_bad_coordinates_and_budget_refuse (test_geography_service.GeographyServiceTests) ... ok
+test_bounded_33_grid_actual_heights_and_center (test_geography_service.GeographyServiceTests) ... ok
+test_cheap_height_cache_is_canonical_bounded_and_source_checked (test_geography_service.GeographyServiceTests) ... ok
+test_country_resolves_unique_source_mapping_without_grid_or_ocean_invention (test_geography_service.GeographyServiceTests) ... ok
+test_date_line_equivalence_and_grid_wrap (test_geography_service.GeographyServiceTests) ... ok
+test_ocean_bathymetry_is_not_water_surface (test_geography_service.GeographyServiceTests) ... ok
+test_pole_longitude_canonical_and_finite_grid (test_geography_service.GeographyServiceTests) ... ok
+test_population_bounds_residual_and_no_spatial_invention (test_geography_service.GeographyServiceTests) ... ok
+test_random_world_positions_have_real_finite_samples (test_geography_service.GeographyServiceTests) ... ok
+test_returned_views_cannot_mutate_loaded_allocation (test_geography_service.GeographyServiceTests) ... ok
+test_tangent_grid_distances_remain_bounded_at_poles_and_seam (test_geography_service.GeographyServiceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 9.273s
+
+OK

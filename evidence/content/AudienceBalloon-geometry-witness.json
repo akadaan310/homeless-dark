@@ -1,0 +1,66 @@
+{
+  "asset": "AudienceBalloon",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -3.768200159072876,
+          3.768200159072876
+        ],
+        [
+          -3.7669942378997803,
+          3.7669942378997803
+        ],
+        [
+          0.11999999731779099,
+          10.007424354553223
+        ]
+      ],
+      "vertices": 10024
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -3.768200159072876,
+          3.768200159072876
+        ],
+        [
+          -3.7669942378997803,
+          3.7669942378997803
+        ],
+        [
+          0.11999999731779099,
+          10.007424354553223
+        ]
+      ],
+      "vertices": 10024
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -3.768200159072876,
+          3.768200159072876
+        ],
+        [
+          -3.7669942378997803,
+          3.7669942378997803
+        ],
+        [
+          0.11999999731779099,
+          10.007424354553223
+        ]
+      ],
+      "vertices": 10024
+    }
+  ],
+  "preview": "evidence/content/AudienceBalloon-source-preview.png"
+}

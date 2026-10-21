@@ -1,0 +1,77 @@
+{"act": "continue_task", "cache_hit": true}
+{"act": "offer_ride", "cache_hit": true}
+{"act": "refuse_ride", "cache_hit": true}
+{"act": "welcome_member", "cache_hit": true}
+{"act": "pair_coffee", "cache_hit": true}
+{"act": "pair_reply", "cache_hit": true}
+{"act": "greeting", "cache_hit": true}
+{"act": "server_offer_ride", "cache_hit": true}
+{"act": "decline_ride", "cache_hit": true}
+{"act": "farewell", "cache_hit": true}
+{"act": "describe_work_work", "cache_hit": true}
+{"act": "describe_work_talk", "cache_hit": true}
+{"act": "work", "cache_hit": true}
+{"act": "socialize", "step": 1, "elapsed_seconds": 5.157269949093461}
+{"act": "socialize", "step": 2, "elapsed_seconds": 8.580857273191214}
+{"act": "socialize", "step": 3, "elapsed_seconds": 12.020154864061624}
+{"act": "socialize", "step": 4, "elapsed_seconds": 18.306368156336248}
+{"act": "socialize", "step": 5, "elapsed_seconds": 24.3680943059735}
+{"act": "socialize", "step": 6, "elapsed_seconds": 27.74100603023544}
+{"act": "socialize", "step": 7, "elapsed_seconds": 31.545187051407993}
+{"act": "socialize", "step": 8, "elapsed_seconds": 37.972002590075135}
+{"act": "socialize", "step": 9, "elapsed_seconds": 42.78926692716777}
+{"act": "socialize", "step": 10, "elapsed_seconds": 47.58342556236312}
+{"act": "socialize", "step": 11, "elapsed_seconds": 54.17636764794588}
+{"act": "socialize", "step": 12, "elapsed_seconds": 62.67239058436826}
+{"act": "socialize", "step": 13, "elapsed_seconds": 68.93043413525447}
+{"act": "socialize", "step": 14, "elapsed_seconds": 74.42718733102083}
+{"act": "socialize", "step": 15, "elapsed_seconds": 79.80843681935221}
+{"act": "socialize", "step": 16, "elapsed_seconds": 86.94653563015163}
+{"act": "socialize", "step": 17, "elapsed_seconds": 94.47438077209517}
+{"act": "socialize", "step": 18, "elapsed_seconds": 102.99317488726228}
+{"act": "socialize", "step": 19, "elapsed_seconds": 110.69940208597109}
+{"act": "socialize", "step": 20, "elapsed_seconds": 114.31881393119693}
+{"act": "socialize", "step": 21, "elapsed_seconds": 117.71319195535034}
+{"act": "socialize", "step": 22, "elapsed_seconds": 121.26180437626317}
+{"act": "socialize", "step": 23, "elapsed_seconds": 127.28139799414203}
+{"act": "socialize", "step": 24, "elapsed_seconds": 133.7817227100022}
+{"act": "socialize", "step": 25, "elapsed_seconds": 138.35885379416868}
+{"act": "socialize", "step": 26, "elapsed_seconds": 141.88093911623582}
+{"act": "socialize", "step": 27, "elapsed_seconds": 146.10690247826278}
+{"act": "socialize", "step": 28, "elapsed_seconds": 152.66997834295034}
+{"act": "socialize", "step": 29, "elapsed_seconds": 157.78858115617186}
+{"act": "socialize", "step": 30, "elapsed_seconds": 161.17922202125192}
+{"act": "socialize", "step": 31, "elapsed_seconds": 164.57074836594984}
+{"schema": "dark.neural-speech-probe/1", "model": "SILMA independent bilingual pretrain, licensed Apache-2.0 ONNX export", "caption": "من الجميل أن تكون مع الآخرين.", "spoken_text": "من الجميل أن تكون مع الآخرين.", "act": "socialize", "reference_caption": "Welcome. Take your time and look around.", "reference_sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f", "reference_kind": "original formant synthetic voice; no real person", "voice_imitation_requested": false, "language": "ar", "sample_rate": 24000, "audio_sha256": "dc4741208f53c3436c904184f7d1ace155707e38cdd5dd7b5e7811eb7077d674", "audio_seconds": 2.3253333333333335, "synthesis_seconds": 164.68094895826653, "duration_scale": 1.0, "reference_rms_before": 0.06444820761680603, "normalize_reference_to_point_one": false, "recognized": "من الجميل أن تكون مع الآخرين", "normalized_wer": 0.0, "human_intelligibility": "NOT_RUN", "native_device": "NOT_RUN", "public_clip_selection": "experimental_not_automatically_selected", "runtime": {"onnxruntime": "1.23.2", "numpy": "2.2.6", "provider": "CPUExecutionProvider", "threads": 2, "seed": 85391, "euler_calls": 31}}
+{"act": "rest", "step": 1, "elapsed_seconds": 4.4274309608154}
+{"act": "rest", "step": 2, "elapsed_seconds": 8.915125793777406}
+{"act": "rest", "step": 3, "elapsed_seconds": 14.420715377666056}
+{"act": "rest", "step": 4, "elapsed_seconds": 20.538616755977273}
+{"act": "rest", "step": 5, "elapsed_seconds": 26.249151055701077}
+{"act": "rest", "step": 6, "elapsed_seconds": 32.03416429692879}
+{"act": "rest", "step": 7, "elapsed_seconds": 37.75165439164266}
+{"act": "rest", "step": 8, "elapsed_seconds": 42.32962091267109}
+{"act": "rest", "step": 9, "elapsed_seconds": 48.57518694689497}
+{"act": "rest", "step": 10, "elapsed_seconds": 54.21234050486237}
+{"act": "rest", "step": 11, "elapsed_seconds": 63.83720833156258}
+{"act": "rest", "step": 12, "elapsed_seconds": 71.07877533370629}
+{"act": "rest", "step": 13, "elapsed_seconds": 76.83018535980955}
+{"act": "rest", "step": 14, "elapsed_seconds": 82.59853505296633}
+{"act": "rest", "step": 15, "elapsed_seconds": 88.20194315584376}
+{"act": "rest", "step": 16, "elapsed_seconds": 94.14412146992981}
+{"act": "rest", "step": 17, "elapsed_seconds": 101.65812601381913}
+{"act": "rest", "step": 18, "elapsed_seconds": 109.55044909566641}
+{"act": "rest", "step": 19, "elapsed_seconds": 117.52258367463946}
+{"act": "rest", "step": 20, "elapsed_seconds": 122.33624608581886}
+{"act": "rest", "step": 21, "elapsed_seconds": 128.53019015770406}
+{"act": "rest", "step": 22, "elapsed_seconds": 135.26861059758812}
+{"act": "rest", "step": 23, "elapsed_seconds": 143.28053266275674}
+{"act": "rest", "step": 24, "elapsed_seconds": 152.8381168586202}
+{"act": "rest", "step": 25, "elapsed_seconds": 159.7120748287998}
+{"act": "rest", "step": 26, "elapsed_seconds": 167.18758004065603}
+{"act": "rest", "step": 27, "elapsed_seconds": 172.78332770755515}
+{"act": "rest", "step": 28, "elapsed_seconds": 179.33005493786186}
+{"act": "rest", "step": 29, "elapsed_seconds": 186.13300560368225}
+{"act": "rest", "step": 30, "elapsed_seconds": 191.77948238980025}
+{"act": "rest", "step": 31, "elapsed_seconds": 197.4361961679533}
+{"schema": "dark.neural-speech-probe/1", "model": "SILMA independent bilingual pretrain, licensed Apache-2.0 ONNX export", "caption": "أحتاج إلى بعض الراحة.", "spoken_text": "أحتاج إلى بعض الراحة.", "act": "rest", "reference_caption": "Welcome. Take your time and look around.", "reference_sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f", "reference_kind": "original formant synthetic voice; no real person", "voice_imitation_requested": false, "language": "ar", "sample_rate": 24000, "audio_sha256": "0234e3b37d076d0bf86408825f1698299e3ae27175708c0d6b78177e6b31db5c", "audio_seconds": 1.6746666666666667, "synthesis_seconds": 197.57810697471723, "duration_scale": 1.0, "reference_rms_before": 0.06444820761680603, "normalize_reference_to_point_one": false, "recognized": "احتاج إلى بعض الرحة", "normalized_wer": 0.25, "human_intelligibility": "NOT_RUN", "native_device": "NOT_RUN", "public_clip_selection": "experimental_not_automatically_selected", "runtime": {"onnxruntime": "1.23.2", "numpy": "2.2.6", "provider": "CPUExecutionProvider", "threads": 2, "seed": 85391, "euler_calls": 31}}

@@ -1,0 +1,38 @@
+{
+  "name": "SubtropicalPalm",
+  "family": "foliage",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 54936,
+  "mesh_objects": 918,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -2.2566683292388916,
+      2.25249981880188
+    ],
+    [
+      -2.2567591667175293,
+      2.256899833679199
+    ],
+    [
+      -0.023618802428245544,
+      6.038647174835205
+    ]
+  ],
+  "attachments": {
+    "wind_root": "WindBendRoot",
+    "botanical_claim": "original palm-inspired; not a scanned or certified species reconstruction"
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

@@ -1,0 +1,7 @@
+NAMESPACE_COLLISION {"unboarded_actor": null, "vehicle_displacement_m": 2.7999999992927727, "actor_displacement_m": 0.0, "vehicle_driver": null}
+MALFORMED talk TypeError unhashable type: 'list' head_unchanged= True
+MALFORMED travel TypeError unhashable type: 'dict' head_unchanged= True
+MALFORMED board TypeError unhashable type: 'list' head_unchanged= True
+MALFORMED overlay TypeError unhashable type: 'list' head_unchanged= True
+VALIDATE_ENCODING ValueError Out of range float values are not JSON compliant
+AUTH_BEFORE_ISSUANCE {'actor': 'p', 'role': 'member', 'scopes': []}

@@ -1,0 +1,35 @@
+{
+  "schema": "dark.asr-source/1",
+  "selection": {
+    "state": "FREE_SELECTED",
+    "runtime_repository": "https://github.com/ggml-org/whisper.cpp",
+    "runtime_revision": "231638a0717b7822784297e5980965ffcec05810",
+    "runtime_license": "MIT",
+    "model_repository": "https://huggingface.co/ggerganov/whisper.cpp",
+    "model_revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "model_file": "ggml-tiny.bin",
+    "model_license": "MIT",
+    "purpose": "Offline synthetic English/Arabic ASR evaluation; no microphone recording or private corpus",
+    "native_device_benchmark": "NOT_RUN"
+  },
+  "source_archive": {
+    "url": "https://codeload.github.com/ggml-org/whisper.cpp/tar.gz/231638a0717b7822784297e5980965ffcec05810",
+    "bytes": 9715902,
+    "sha256": "f69100f71ce6c815624994362cd8a8eaaa26d678e5ce518ed35900d4b679e721"
+  },
+  "model": {
+    "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.bin",
+    "bytes": 77691713,
+    "sha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21"
+  },
+  "model_card": {
+    "url": "https://huggingface.co/ggerganov/whisper.cpp/raw/5359861c739e955e79d9a303bcbc70fb988958b1/README.md",
+    "bytes": 3196,
+    "sha256": "21fd967098804f33fc84e803fb0e5ab7666d71801f4027cf28a65e7af09c1758"
+  },
+  "runtime_binary_sha256": "e7bb0197affd330df8182b12ebc0b7a96c2c7170238ea85f99ff1d081dbc367b",
+  "runtime_path": "/tmp/homeless-whisper-cpp/build/bin/whisper-cli",
+  "runtime_distributed": false,
+  "runtime_rebuild_command": "python3 tools/content/asr.py --prepare",
+  "native_device": "NOT_RUN"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "dark.geography-service-review/1",
+  "status": "No additional defect found in scoped read-only review",
+  "independent_tests": 12,
+  "reviewed": [
+    "pinned runtime data bytes and coarse-resolution disclosure",
+    "finite numeric ranges with bool rejection",
+    "canonical antimeridian/pole handling and spherical tangent grid",
+    "bounded grid/output and environment/height caches",
+    "explicit MSL/ellipsoid approximation and no collision claim",
+    "country code derives from unique source administrative intersection with exact population mapping",
+    "returned arrays/metadata are newly composed; no exposed cache aliases found"
+  ],
+  "limits": [
+    "Read-only view does not realize global population or confer host authority",
+    "Source file signatures detect ordinary changes; filesystem adversary resistance is outside this review"
+  ]
+}

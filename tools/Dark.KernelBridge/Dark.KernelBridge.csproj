@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../packages/com.homeless.dark/Dark.Core.csproj" />
+    <None Include="../../data/geography/derived/tampa-two-plate-fixture.json" Link="Fixtures/tampa-two-plate-fixture.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../data/geography/global/population-shards.tsv" Link="Fixtures/population-shards.tsv" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

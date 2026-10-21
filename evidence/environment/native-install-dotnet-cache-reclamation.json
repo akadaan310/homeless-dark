@@ -1,0 +1,9 @@
+{
+  "schema": "dark.native-temporary-reclamation/1",
+  "path": "/tmp/homeless-dotnet-sdk.tar.gz",
+  "bytes": 212311900,
+  "sha256": "efed09de05d15406aecd8f60da389fb436103171923c67c28b42b7285c2af818",
+  "reason": "root authorized removal of own duplicate SDK archive; installed SDK retained",
+  "installed_sdk": "/tmp/homeless-dotnet",
+  "reacquire_url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.426/dotnet-sdk-8.0.426-linux-arm64.tar.gz"
+}

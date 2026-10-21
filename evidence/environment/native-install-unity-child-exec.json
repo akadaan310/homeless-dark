@@ -1,0 +1,20 @@
+{
+  "command": [
+    "qemu-x86_64",
+    "-strace",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "/tmp/homeless-native/unity-squashfs/Editor/Unity",
+    "-batchmode",
+    "-nographics",
+    "-quit",
+    "-createProject",
+    "/dev/shm/homeless-unity-exec-trace",
+    "-logFile",
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-exec-trace.log"
+  ],
+  "exit_code": -15,
+  "deadline_seconds": 15,
+  "elapsed_seconds": 15.034199722111225,
+  "execve_trace": []
+}

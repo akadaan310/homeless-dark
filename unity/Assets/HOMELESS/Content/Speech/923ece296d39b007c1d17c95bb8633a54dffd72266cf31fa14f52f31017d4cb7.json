@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "923ece296d39b007c1d17c95bb8633a54dffd72266cf31fa14f52f31017d4cb7",
+  "filename": "923ece296d39b007c1d17c95bb8633a54dffd72266cf31fa14f52f31017d4cb7.wav",
+  "event_id": "evt:arrival:ar:greeting",
+  "speaker": "npc:ana",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:greeting",
+    "speaker": "npc:ana",
+    "language": "ar",
+    "act": "greeting",
+    "slots": {}
+  },
+  "caption": "مرحبا. تسعدني رؤيتك.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "ar",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "ar_dict": "59bb2a9d521e53808927a44b3fe757893913c702837b25d9a96e3753374b5eab",
+      "lang/sem/ar": "43f418f8140e5a7bd7096963da20ccba9247f6be1fcdb08cb53dd7967dd72eee"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "73243d2544a7aff65d0d08038d5ea272f9656c156592add8b3932ef2912ea1d9",
+  "synthesis_seconds": 0.020599544048309326,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 64213,
+  "duration_seconds": 2.912154195011338,
+  "peak_abs": 13721,
+  "pcm_rms": 0.060795824824751564,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

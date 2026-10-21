@@ -1,0 +1,5 @@
+
+[00:00:00.000 --> 00:00:05.000]   في حماة مقلات تحنساً.
+read_audio_data: reading audio data from '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/02c8d0836ba05ddaa1c22a56ee07f9b94651843d93bf59262371b5952b552b17-16khz.wav' ...
+read_audio_data: trying to decode with miniaudio
+output_txt: saving output to '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/asr/02c8d0836ba05ddaa1c22a56ee07f9b94651843d93bf59262371b5952b552b17.txt'

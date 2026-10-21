@@ -1,0 +1,16 @@
+PASS Actual World Bank 2024 estimates, explicitly unassigned residual and allocation
+PASS Hierarchy exact conservation and deterministic 64 cohort quotient/remainders
+PASS Stable identity range boundaries, canonicalization and policy seed
+PASS Promotion, demotion and re-promotion retain facts, commitments, seed and identity
+PASS Active/stored budgets refuse without partial mutation or erasing continuity
+PASS Visitor travel conserves present and resident counts with no double counting
+PASS Migration changes residence while preserving original stable identity
+PASS Duplicate movement returns original witness; conflicts/stale updates do not mutate
+PASS Snapshot resumes memories, movement, pending commitments and request idempotency
+PASS Corrupt/truncated/source-mismatched snapshots are refused
+PASS Memory and movement history are bounded with explicit refusal
+PASS 1500 deterministic migrations/trips agree with all-individual reference seed 25026
+MEASURE 100000 lazy lookups elapsed_ms=1961; host ARM64 .NET8, not native crowd performance
+PASS Range allocation 217 economies plus residual resolves 100000 unique identities without realization
+PASS Invalid shards, overflow and unsupported capacities are rejected
+Population allocation: 14 passed; 0 failed

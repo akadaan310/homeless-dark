@@ -18,3 +18,5 @@ data/cache/
 *.jks
 *.ulf
 *.alf
+# Local bearer credentials for the native client
+connection.json

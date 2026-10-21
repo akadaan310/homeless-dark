@@ -1,0 +1,592 @@
+{
+  "schema": "dark.staging-local-probe/1",
+  "scope": "Six actual known local art/audio files through portable DECODE; no collision resource, activation/native rendering not claimed",
+  "manifest": {
+    "schema": "dark.stage-manifest/1",
+    "version": "local-bootstrap-v1",
+    "assets": [
+      {
+        "id": "hero-mesh",
+        "path": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx",
+        "bytes": 28134764,
+        "sha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef",
+        "kind": "mesh",
+        "decoder": "opaque_bytes"
+      },
+      {
+        "id": "hero-materials",
+        "path": "unity/Assets/HOMELESS/Content/Characters/materials.json",
+        "bytes": 5519,
+        "sha256": "94d58c88175d3ee268603095e18309895254c16551d26808e3f32961bc1ea6d2",
+        "kind": "material",
+        "decoder": "json"
+      },
+      {
+        "id": "hero-skin",
+        "path": "unity/Assets/HOMELESS/Content/Characters/Textures/young_lightskinned_male_diffuse.png",
+        "bytes": 3693828,
+        "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+        "kind": "material",
+        "decoder": "opaque_bytes"
+      },
+      {
+        "id": "arrival-music",
+        "path": "unity/Assets/HOMELESS/Audio/original_arrival_motif.wav",
+        "bytes": 307244,
+        "sha256": "386e4ca404d00690c15069a810970bf9ca1cd7ebc0e32618f91b5f4032634ad5",
+        "kind": "music",
+        "decoder": "pcm_wave"
+      },
+      {
+        "id": "rain-audio",
+        "path": "unity/Assets/HOMELESS/Audio/synthetic_rain_wind_loop.wav",
+        "bytes": 768044,
+        "sha256": "1553e9ca833297fc674b161547365418555bf43c2716c89a81dd65333201d826",
+        "kind": "ambience",
+        "decoder": "pcm_wave"
+      },
+      {
+        "id": "greeting-voice",
+        "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav",
+        "bytes": 94882,
+        "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d",
+        "kind": "voice",
+        "decoder": "pcm_wave"
+      }
+    ]
+  },
+  "total_manifest_bytes": 33004281,
+  "candidate": {
+    "schema": "dark.staging-state/1",
+    "manifest_sha256": "29be3d4a723ca7205c49afc096675cf5a6627c752afe2de466c7e45b46d8ba53",
+    "limits": {
+      "cells": 32,
+      "assets": 128,
+      "resident_bytes": 67108864,
+      "per_actor_cells": 4,
+      "admissions_per_60_ticks": 4
+    },
+    "revision": 6,
+    "tick": 0,
+    "cells": {
+      "hero-audio": {
+        "owner": "operator",
+        "gate": "VERIFY",
+        "lifecycle": "decoded",
+        "assets": [
+          "arrival-music",
+          "greeting-voice",
+          "hero-materials",
+          "hero-mesh",
+          "hero-skin",
+          "rain-audio"
+        ],
+        "observation": {
+          "assets": [
+            "hero-mesh",
+            "hero-materials",
+            "hero-skin",
+            "arrival-music",
+            "rain-audio",
+            "greeting-voice"
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ]
+          ],
+          "path_revision": 1,
+          "mode": "walk",
+          "speed_mps": 1.4,
+          "speed_confidence": 0.8,
+          "wait_ticks": 2,
+          "observed_tick": 0,
+          "anticipated_tick": null,
+          "visible": true,
+          "ttl_ticks": 100
+        },
+        "prediction": {
+          "path_distance_m": 7.0,
+          "time_to_use_ticks": 8.25,
+          "basis": "path_speed_wait_age",
+          "state_age_ticks": 0,
+          "score_is_probability": false,
+          "tick_duration_seconds": 1
+        },
+        "expires_tick": 100,
+        "changed_tick": 0,
+        "staged_bytes": 33004281,
+        "decoded": {
+          "arrival-music": {
+            "decoder": "pcm_wave",
+            "frames": 153600,
+            "channels": 1,
+            "rate_hz": 48000,
+            "duration_seconds": 3.2,
+            "decoded_pcm_bytes": 307200
+          },
+          "greeting-voice": {
+            "decoder": "pcm_wave",
+            "frames": 47419,
+            "channels": 1,
+            "rate_hz": 22050,
+            "duration_seconds": 2.1505215419501136,
+            "decoded_pcm_bytes": 94838
+          },
+          "hero-materials": {
+            "decoder": "json",
+            "root_type": "dict",
+            "canonical_sha256": "15b08786c8dde9eb00a642b1392d7fdd45d0fc48ceeb08a6c31fe8fccbf92e94",
+            "semantic_validation": "NOT_CLAIMED"
+          },
+          "hero-mesh": {
+            "decoder": "opaque_bytes",
+            "bytes": 28134764,
+            "semantic_decode": "UNSUPPORTED",
+            "native_instantiation": "NOT_RUN"
+          },
+          "hero-skin": {
+            "decoder": "opaque_bytes",
+            "bytes": 3693828,
+            "semantic_decode": "UNSUPPORTED",
+            "native_instantiation": "NOT_RUN"
+          },
+          "rain-audio": {
+            "decoder": "pcm_wave",
+            "frames": 384000,
+            "channels": 1,
+            "rate_hz": 48000,
+            "duration_seconds": 8.0,
+            "decoded_pcm_bytes": 768000
+          }
+        },
+        "instance": null,
+        "reservation": null,
+        "generation": 1
+      }
+    },
+    "cache": {
+      "arrival-music": {
+        "sha256": "386e4ca404d00690c15069a810970bf9ca1cd7ebc0e32618f91b5f4032634ad5",
+        "bytes": 307244,
+        "last_tick": 0
+      },
+      "greeting-voice": {
+        "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d",
+        "bytes": 94882,
+        "last_tick": 0
+      },
+      "hero-materials": {
+        "sha256": "94d58c88175d3ee268603095e18309895254c16551d26808e3f32961bc1ea6d2",
+        "bytes": 5519,
+        "last_tick": 0
+      },
+      "hero-mesh": {
+        "sha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef",
+        "bytes": 28134764,
+        "last_tick": 0
+      },
+      "hero-skin": {
+        "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+        "bytes": 3693828,
+        "last_tick": 0
+      },
+      "rain-audio": {
+        "sha256": "1553e9ca833297fc674b161547365418555bf43c2716c89a81dd65333201d826",
+        "bytes": 768044,
+        "last_tick": 0
+      }
+    },
+    "admissions": {
+      "operator": [
+        0
+      ]
+    },
+    "events": [
+      {
+        "revision": 1,
+        "tick": 0,
+        "actor": "operator",
+        "cell_id": "hero-audio",
+        "operation": "OBSERVE",
+        "effect": {
+          "type": "observed_intent",
+          "world_position_changed": false
+        },
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "c9929b7a638b2c39ee07cc485ae5ef3d1526b2a8e884c310a152f46c116a7e37"
+      },
+      {
+        "revision": 2,
+        "tick": 0,
+        "actor": "operator",
+        "cell_id": "hero-audio",
+        "operation": "PREDICT",
+        "effect": {
+          "type": "prepared_resource_state",
+          "gate": "PREDICT",
+          "world_position_changed": false,
+          "prediction": {
+            "path_distance_m": 7.0,
+            "time_to_use_ticks": 8.25,
+            "basis": "path_speed_wait_age",
+            "state_age_ticks": 0,
+            "score_is_probability": false,
+            "tick_duration_seconds": 1
+          }
+        },
+        "previous": "c9929b7a638b2c39ee07cc485ae5ef3d1526b2a8e884c310a152f46c116a7e37",
+        "hash": "0457eb80814dc9f56930134a5b1e5dc4c60aaf0a2bb8e0c8df2bbea41b03b037"
+      },
+      {
+        "revision": 3,
+        "tick": 0,
+        "actor": "operator",
+        "cell_id": "hero-audio",
+        "operation": "ADMIT",
+        "effect": {
+          "type": "prepared_resource_state",
+          "gate": "ADMIT",
+          "world_position_changed": false
+        },
+        "previous": "0457eb80814dc9f56930134a5b1e5dc4c60aaf0a2bb8e0c8df2bbea41b03b037",
+        "hash": "9eb453ebd2e73dbf306a5470c30358d89864e24866d966b79ad78c0ea1d63ffe"
+      },
+      {
+        "revision": 4,
+        "tick": 0,
+        "actor": "operator",
+        "cell_id": "hero-audio",
+        "operation": "STAGE",
+        "effect": {
+          "type": "prepared_resource_state",
+          "gate": "STAGE",
+          "world_position_changed": false,
+          "verified_bytes": 33004281
+        },
+        "previous": "9eb453ebd2e73dbf306a5470c30358d89864e24866d966b79ad78c0ea1d63ffe",
+        "hash": "2b696b50ba1e9443084648fe670e06b86267099f83a018332f818b528b122c58"
+      },
+      {
+        "revision": 5,
+        "tick": 0,
+        "actor": "operator",
+        "cell_id": "hero-audio",
+        "operation": "VERIFY",
+        "effect": {
+          "type": "prepared_resource_state",
+          "gate": "VERIFY",
+          "world_position_changed": false,
+          "verified_bytes": 33004281
+        },
+        "previous": "2b696b50ba1e9443084648fe670e06b86267099f83a018332f818b528b122c58",
+        "hash": "d95cbe825e6078d8b847771d8ca3518e4e17321c698f5439f457e88261025cdd"
+      },
+      {
+        "revision": 6,
+        "tick": 0,
+        "actor": "operator",
+        "cell_id": "hero-audio",
+        "operation": "DECODE",
+        "effect": {
+          "type": "prepared_resource_state",
+          "gate": "DECODE",
+          "world_position_changed": false,
+          "verified_bytes": 33004281
+        },
+        "previous": "d95cbe825e6078d8b847771d8ca3518e4e17321c698f5439f457e88261025cdd",
+        "hash": "b7ad2e3487460f977a4cba616f2ba2d7cda39c8c904e78ae5944e0172c4dae14"
+      }
+    ],
+    "requests": {
+      "[\"operator\",\"0\"]": {
+        "fingerprint": "6128fcb4551d64252e0b321f9fcd09c089fa37e52c99bcc3f406b4446dbf6f10",
+        "response": {
+          "status": "PROPOSED",
+          "revision": 1,
+          "effect": {
+            "type": "observed_intent",
+            "world_position_changed": false
+          },
+          "witness": {
+            "revision": 1,
+            "tick": 0,
+            "actor": "operator",
+            "cell_id": "hero-audio",
+            "operation": "OBSERVE",
+            "effect": {
+              "type": "observed_intent",
+              "world_position_changed": false
+            },
+            "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+            "hash": "c9929b7a638b2c39ee07cc485ae5ef3d1526b2a8e884c310a152f46c116a7e37"
+          },
+          "authority_granted": false,
+          "durable_commit_performed": false,
+          "physical_validation": "NOT_RUN"
+        }
+      },
+      "[\"operator\",\"1\"]": {
+        "fingerprint": "7057176a8a34dd4f5862ab82bec5eeee56acad722e2f3c145ec5a8fc85c99020",
+        "response": {
+          "status": "PROPOSED",
+          "revision": 2,
+          "effect": {
+            "type": "prepared_resource_state",
+            "gate": "PREDICT",
+            "world_position_changed": false,
+            "prediction": {
+              "path_distance_m": 7.0,
+              "time_to_use_ticks": 8.25,
+              "basis": "path_speed_wait_age",
+              "state_age_ticks": 0,
+              "score_is_probability": false,
+              "tick_duration_seconds": 1
+            }
+          },
+          "witness": {
+            "revision": 2,
+            "tick": 0,
+            "actor": "operator",
+            "cell_id": "hero-audio",
+            "operation": "PREDICT",
+            "effect": {
+              "type": "prepared_resource_state",
+              "gate": "PREDICT",
+              "world_position_changed": false,
+              "prediction": {
+                "path_distance_m": 7.0,
+                "time_to_use_ticks": 8.25,
+                "basis": "path_speed_wait_age",
+                "state_age_ticks": 0,
+                "score_is_probability": false,
+                "tick_duration_seconds": 1
+              }
+            },
+            "previous": "c9929b7a638b2c39ee07cc485ae5ef3d1526b2a8e884c310a152f46c116a7e37",
+            "hash": "0457eb80814dc9f56930134a5b1e5dc4c60aaf0a2bb8e0c8df2bbea41b03b037"
+          },
+          "authority_granted": false,
+          "durable_commit_performed": false,
+          "physical_validation": "NOT_RUN"
+        }
+      },
+      "[\"operator\",\"2\"]": {
+        "fingerprint": "884584073eab5b5ef1f1a51761edf0254d18def53a5f8b9b6a6bf95d2b353bdc",
+        "response": {
+          "status": "PROPOSED",
+          "revision": 3,
+          "effect": {
+            "type": "prepared_resource_state",
+            "gate": "ADMIT",
+            "world_position_changed": false
+          },
+          "witness": {
+            "revision": 3,
+            "tick": 0,
+            "actor": "operator",
+            "cell_id": "hero-audio",
+            "operation": "ADMIT",
+            "effect": {
+              "type": "prepared_resource_state",
+              "gate": "ADMIT",
+              "world_position_changed": false
+            },
+            "previous": "0457eb80814dc9f56930134a5b1e5dc4c60aaf0a2bb8e0c8df2bbea41b03b037",
+            "hash": "9eb453ebd2e73dbf306a5470c30358d89864e24866d966b79ad78c0ea1d63ffe"
+          },
+          "authority_granted": false,
+          "durable_commit_performed": false,
+          "physical_validation": "NOT_RUN"
+        }
+      },
+      "[\"operator\",\"3\"]": {
+        "fingerprint": "42e54020b8f70482a3090f92f51ac88930e83cb45a5fd5f84b7a01c526c9243e",
+        "response": {
+          "status": "PROPOSED",
+          "revision": 4,
+          "effect": {
+            "type": "prepared_resource_state",
+            "gate": "STAGE",
+            "world_position_changed": false,
+            "verified_bytes": 33004281
+          },
+          "witness": {
+            "revision": 4,
+            "tick": 0,
+            "actor": "operator",
+            "cell_id": "hero-audio",
+            "operation": "STAGE",
+            "effect": {
+              "type": "prepared_resource_state",
+              "gate": "STAGE",
+              "world_position_changed": false,
+              "verified_bytes": 33004281
+            },
+            "previous": "9eb453ebd2e73dbf306a5470c30358d89864e24866d966b79ad78c0ea1d63ffe",
+            "hash": "2b696b50ba1e9443084648fe670e06b86267099f83a018332f818b528b122c58"
+          },
+          "authority_granted": false,
+          "durable_commit_performed": false,
+          "physical_validation": "NOT_RUN"
+        }
+      },
+      "[\"operator\",\"4\"]": {
+        "fingerprint": "10f278e6e26b3fafbb68ff61bdf255753fe45885e5c9ee08b0796e9b85b41ebd",
+        "response": {
+          "status": "PROPOSED",
+          "revision": 5,
+          "effect": {
+            "type": "prepared_resource_state",
+            "gate": "VERIFY",
+            "world_position_changed": false,
+            "verified_bytes": 33004281
+          },
+          "witness": {
+            "revision": 5,
+            "tick": 0,
+            "actor": "operator",
+            "cell_id": "hero-audio",
+            "operation": "VERIFY",
+            "effect": {
+              "type": "prepared_resource_state",
+              "gate": "VERIFY",
+              "world_position_changed": false,
+              "verified_bytes": 33004281
+            },
+            "previous": "2b696b50ba1e9443084648fe670e06b86267099f83a018332f818b528b122c58",
+            "hash": "d95cbe825e6078d8b847771d8ca3518e4e17321c698f5439f457e88261025cdd"
+          },
+          "authority_granted": false,
+          "durable_commit_performed": false,
+          "physical_validation": "NOT_RUN"
+        }
+      },
+      "[\"operator\",\"5\"]": {
+        "fingerprint": "0536b33be8a9edfcc09dcd683c2da517bc091059bf57168828b052a48ed9bfbf",
+        "response": {
+          "status": "PROPOSED",
+          "revision": 6,
+          "effect": {
+            "type": "prepared_resource_state",
+            "gate": "DECODE",
+            "world_position_changed": false,
+            "verified_bytes": 33004281
+          },
+          "witness": {
+            "revision": 6,
+            "tick": 0,
+            "actor": "operator",
+            "cell_id": "hero-audio",
+            "operation": "DECODE",
+            "effect": {
+              "type": "prepared_resource_state",
+              "gate": "DECODE",
+              "world_position_changed": false,
+              "verified_bytes": 33004281
+            },
+            "previous": "d95cbe825e6078d8b847771d8ca3518e4e17321c698f5439f457e88261025cdd",
+            "hash": "b7ad2e3487460f977a4cba616f2ba2d7cda39c8c904e78ae5944e0172c4dae14"
+          },
+          "authority_granted": false,
+          "durable_commit_performed": false,
+          "physical_validation": "NOT_RUN"
+        }
+      }
+    },
+    "head": "b7ad2e3487460f977a4cba616f2ba2d7cda39c8c904e78ae5944e0172c4dae14",
+    "metrics": {
+      "actual_bytes_read": 99012843,
+      "read_elapsed_ns": 86675251,
+      "wasted_stage_bytes": 0,
+      "reserved_unique_bytes": 33004281,
+      "activation_count": 0
+    },
+    "checksum": "f71eaae90128a4474087c65a7f366d27e72df1e798e39331e0676b2a35ddc728"
+  },
+  "measurements": [
+    {
+      "wall_elapsed_ns": 154891396,
+      "process_cpu_ns": 120058640,
+      "python_tracemalloc_peak_bytes": 56380586,
+      "actual_bytes_read": 99012843
+    },
+    {
+      "wall_elapsed_ns": 134150532,
+      "process_cpu_ns": 104667080,
+      "python_tracemalloc_peak_bytes": 56346083,
+      "actual_bytes_read": 99012843
+    },
+    {
+      "wall_elapsed_ns": 116711906,
+      "process_cpu_ns": 104253520,
+      "python_tracemalloc_peak_bytes": 56345603,
+      "actual_bytes_read": 99012843
+    },
+    {
+      "wall_elapsed_ns": 153451156,
+      "process_cpu_ns": 104549600,
+      "python_tracemalloc_peak_bytes": 56345729,
+      "actual_bytes_read": 99012843
+    },
+    {
+      "wall_elapsed_ns": 112289469,
+      "process_cpu_ns": 103780360,
+      "python_tracemalloc_peak_bytes": 56345603,
+      "actual_bytes_read": 99012843
+    }
+  ],
+  "distribution": {
+    "wall_elapsed_ns": {
+      "min": 112289469,
+      "median": 134150532,
+      "max": 154891396
+    },
+    "process_cpu_ns": {
+      "min": 103780360,
+      "median": 104549600,
+      "max": 120058640
+    },
+    "python_tracemalloc_peak_bytes": {
+      "min": 56345603,
+      "median": 56345729,
+      "max": 56380586
+    },
+    "actual_bytes_read": {
+      "min": 99012843,
+      "median": 99012843,
+      "max": 99012843
+    }
+  },
+  "native_memory": "NOT_MEASURED",
+  "gpu_memory": "NOT_MEASURED",
+  "physical_validation": "NOT_RUN",
+  "allocation_counterexample": {
+    "greedy": {
+      "ids": [
+        "a"
+      ],
+      "bytes": 3,
+      "benefit": 5
+    },
+    "exact": {
+      "ids": [
+        "b",
+        "c"
+      ],
+      "bytes": 4,
+      "benefit": 6
+    },
+    "missed_benefit": 1,
+    "unused_bytes": 1,
+    "score_is_probability": false
+  },
+  "code_sha256": "13d45e9f6bedfd9ed63481a04ecafaeb3b439646ae5c78d291b082f0b7cac4b7"
+}

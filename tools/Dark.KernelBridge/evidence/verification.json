@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Portable invocation of existing C# kernels, no world authority or native acceptance",
+  "tests": 10,
+  "code_sha256": {
+    "tools/Dark.KernelBridge/Program.cs": "932e42ca1d514b1c620accd602b8eab1c4e691fdd8a593ef5d8136a744905414",
+    "packages/dark_server/kernel.py": "ef60b2d270cb28c08d5ab87af5897f571289c026c51b3003ad5777e7f849208e",
+    "tests/server/test_kernel.py": "2587e993447e0f7d6950b76f1cd91f3cccba73472d20b412a6bd54296bfcf8d2"
+  },
+  "command": "python3 -m unittest discover -s tests/server -p test_kernel.py -v",
+  "log": "tools/Dark.KernelBridge/evidence/tests.log",
+  "kernel_dll_sha256": "4009dc878fc74426c09fa0c94f150abc20c290e50b2c27fca24fa5f79e9e3cec",
+  "native_physics": "NOT_RUN",
+  "whole_commission_acceptance": false
+}

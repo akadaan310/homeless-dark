@@ -1,0 +1,49 @@
+test_learning_requires_actual_path_memory_and_grants_an_operative_skill (test_mechanics.MechanicsTests) ... ok
+test_occupied_rotation_disconnect_inverse_and_graph_change (test_mechanics.MechanicsTests) ... ERROR
+test_relocation_keeps_registered_vehicle_seats_attached (test_mechanics.MechanicsTests) ... ERROR
+test_unlearned_rewrite_and_occupied_refusal_leave_world_unchanged (test_mechanics.MechanicsTests) ... ok
+
+======================================================================
+ERROR: test_occupied_rotation_disconnect_inverse_and_graph_change (test_mechanics.MechanicsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 59, in test_occupied_rotation_disconnect_inverse_and_graph_change
+    result=self.action('rewrite_plate',{'direction':'forward','policy':'RigidCarriage'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 29, in action
+    return self.world.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 306, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 343, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 448, in _act
+    if op == "rewrite_plate": return mechanics.rewrite(state, actor, args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/mechanics.py", line 143, in rewrite
+    require(result['status']=='ADMITTED','KERNEL_REFUSED',result.get('reason','kernel refused'),'HD-064')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 45, in require
+    raise Refused(code, witness, clause)
+dark_server.world.Refused: KERNEL_REFUSED: HD-064:work-budget
+
+======================================================================
+ERROR: test_relocation_keeps_registered_vehicle_seats_attached (test_mechanics.MechanicsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 83, in test_relocation_keeps_registered_vehicle_seats_attached
+    self.action('rewrite_plate',{'direction':'forward','policy':'WitnessedRelocation'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 29, in action
+    return self.world.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 306, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 343, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 448, in _act
+    if op == "rewrite_plate": return mechanics.rewrite(state, actor, args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/mechanics.py", line 143, in rewrite
+    require(result['status']=='ADMITTED','KERNEL_REFUSED',result.get('reason','kernel refused'),'HD-064')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 45, in require
+    raise Refused(code, witness, clause)
+dark_server.world.Refused: KERNEL_REFUSED: HD-064:work-budget
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.072s
+
+FAILED (errors=2)

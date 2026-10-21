@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078",
+  "filename": "867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078.wav",
+  "event_id": "evt:arrival:en:greeting",
+  "speaker": "npc:ana",
+  "canonical_act": {
+    "event_id": "evt:arrival:en:greeting",
+    "speaker": "npc:ana",
+    "language": "en",
+    "act": "greeting",
+    "slots": {}
+  },
+  "caption": "Hello. Good to see you.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "en-us",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "en_dict": "20ac462c63f9c0a7b8dc124ca02262c3ecfea550b723f29e10f177339ebeda10",
+      "lang/gmw/en-US": "e522a079c166599f1c9549370979e680ca5dbb62fb93ebd130dc0409f1e66ee8"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "1a39073e3c5d1ecc46eb5bb1e5443233ceef521557f06c289aa8d4bdbdabce30",
+  "synthesis_seconds": 0.02693349914625287,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 45397,
+  "duration_seconds": 2.0588208616780044,
+  "peak_abs": 20846,
+  "pcm_rms": 0.06086094592637298,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

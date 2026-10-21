@@ -1,0 +1,36 @@
+PASS UTF-8/mixed JSON round trip
+PASS deterministic serialized round trip
+PASS malformed input refused 2
+PASS malformed input refused 3
+PASS malformed input refused 4
+PASS malformed input refused 5
+PASS malformed input refused 6
+PASS malformed input refused 7
+PASS malformed input refused 8
+PASS malformed input refused 9
+PASS malformed input refused 10
+PASS malformed input refused 11
+PASS malformed input refused 12
+PASS malformed input refused 13
+PASS malformed input refused 14
+PASS nesting budget
+PASS string budget
+PASS nonfinite output
+PASS fractional revision
+PASS loopback private configuration
+PASS credential origin refused 20
+PASS credential origin refused 21
+PASS credential origin refused 22
+PASS credential origin refused 23
+PASS credential origin refused 24
+PASS server version and stable retry envelope
+PASS retry cannot pick up subsequently mutated input
+PASS actual observation contract
+PASS admitted Life presentation contract
+PASS out-of-domain Life offset refused before presentation
+PASS unknown schema
+PASS geographic bounds
+PASS Python authority observation parsed by actual Unity wire contract
+PASS Python mechanics observation contract
+PASS Python public Life observation contract
+35 portable wire checks passed; Unity native execution NOT_RUN

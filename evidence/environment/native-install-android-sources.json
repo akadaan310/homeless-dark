@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://dl.google.com/android/repository/commandlinetools-linux-11479570_latest.zip",
+    "bytes": 157033049,
+    "verified_manifest_sha1": "2e1a11866ce7146dee1456152ff64d6c8158b2c0",
+    "sha256": "9673a4b9bdfc49a26022b047af0b8a91da74ed951ffd7dbe04181bce36980e6d"
+  },
+  {
+    "url": "https://dl.google.com/android/repository/emulator-linux_x64-16428233.zip",
+    "bytes": 349654171,
+    "verified_manifest_sha1": "cd7362ea55dfb86a418958138dc396e74165dd01",
+    "sha256": "b08fc43d8608d2955f607f1b287beb525041e730086bdca3af152accac3af9c1"
+  },
+  {
+    "url": "https://dl.google.com/android/repository/sys-img/android/arm64-v8a-26_r02.zip",
+    "bytes": 330014927,
+    "verified_manifest_sha1": "12353141d08dd302fbebc03872f0e1ca7357c55f",
+    "sha256": "74785c6d7ce73a12e730bd2bceb075fb4c68e0052c8f79b78f9322b722c2923c",
+    "extracted": [
+      {
+        "name": "arm64-v8a/advancedFeatures.ini",
+        "logical_bytes": 152,
+        "allocated_bytes": 4096
+      },
+      {
+        "name": "arm64-v8a/kernel-ranchu",
+        "logical_bytes": 10715136,
+        "allocated_bytes": 10715136
+      },
+      {
+        "name": "arm64-v8a/NOTICE.txt",
+        "logical_bytes": 1616999,
+        "allocated_bytes": 1617920
+      },
+      {
+        "name": "arm64-v8a/build.prop",
+        "logical_bytes": 1908,
+        "allocated_bytes": 4096
+      },
+      {
+        "name": "arm64-v8a/userdata.img",
+        "logical_bytes": 576716800,
+        "allocated_bytes": 11403264
+      },
+      {
+        "name": "arm64-v8a/source.properties",
+        "logical_bytes": 252,
+        "allocated_bytes": 4096
+      },
+      {
+        "name": "arm64-v8a/ramdisk.img",
+        "logical_bytes": 1800005,
+        "allocated_bytes": 1802240
+      },
+      {
+        "name": "arm64-v8a/system.img",
+        "logical_bytes": 2686451712,
+        "allocated_bytes": 680333312
+      },
+      {
+        "name": "arm64-v8a/vendor.img",
+        "logical_bytes": 102760448,
+        "allocated_bytes": 15925248
+      },
+      {
+        "name": "arm64-v8a/encryptionkey.img",
+        "logical_bytes": 1048576,
+        "allocated_bytes": 0
+      }
+    ],
+    "logical_extracted_bytes": 3381111988,
+    "nonzero_written_bytes": 721792180,
+    "allocated_bytes": 721809408,
+    "native_boot": "NOT_RUN"
+  }
+]

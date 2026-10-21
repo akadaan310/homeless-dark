@@ -1,0 +1,30 @@
+{
+  "output": "evidence/environment/native-install-readiness.json",
+  "host": {
+    "architecture": "aarch64",
+    "kernel": "6.8.0-1060-oracle",
+    "cpu_count": 2,
+    "disk_free_bytes": 2334466048,
+    "kvm_device_present": false,
+    "binder_device_present": false
+  },
+  "exit_codes": {
+    "jdk": 0,
+    "adb": 0,
+    "qemu_user": 0,
+    "qemu_system": 0,
+    "software_gl": 0,
+    "blender": 0,
+    "espeak": 0,
+    "cmake": 0,
+    "sdkmanager": 0,
+    "android_engine": 0,
+    "android_acceleration": 8,
+    "binder_module": 1,
+    "packages": 0,
+    "x64_syscall_fixture": 42,
+    "arm_machine_tcg": 0,
+    "arm_machine_kvm": 1,
+    "unity_translated_version": 0
+  }
+}

@@ -1,0 +1,3 @@
+HUGE_INTEGER OverflowError int too large to convert to float head_unchanged True
+REMOTE_CANCEL Refused PREPARATION_RANGE: local preparation maximum2km head_unchanged True
+CELL_AFTER_CANCEL {'tick': 2000, 'cell_gate': 'RESERVE', 'cell_expires': 120, 'actor_node': 'harbor', 'reserved_unique_bytes': 94}

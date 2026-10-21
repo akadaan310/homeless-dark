@@ -1,0 +1,8 @@
+test_manual_clearance_does_not_reintroduce_removed_graph_edges (test_navigation.NavigationTests) ... ok
+test_route_reentry_from_manual_position_is_continuous (test_navigation.NavigationTests) ... ok
+test_short_route_to_nearest_node_does_not_complete_before_approach (test_navigation.NavigationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.364s
+
+OK

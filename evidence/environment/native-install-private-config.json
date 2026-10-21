@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": [
+    "private mode0600",
+    "exclusive creation refuses overwrite",
+    "credential absent from stdout/stderr",
+    "nonloopback HTTP refused"
+  ]
+}

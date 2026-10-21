@@ -1,0 +1,119 @@
+{
+  "source_version": "v3.0.1",
+  "files": [
+    {
+      "path": "config.ocio",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/config.ocio",
+      "bytes": 8564,
+      "sha256": "5c1023b6f0fa652fdf1738cd3114a0503d102ba854dc4eb74c786da174cb39ec"
+    },
+    {
+      "path": "filmic/filmic_desat65cube.spi3d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_desat65cube.spi3d",
+      "bytes": 9121032,
+      "sha256": "2c3dcccb5db817156737691924ade43d8daad16282cc6be3a9e242744002a0bb"
+    },
+    {
+      "path": "filmic/filmic_false_color.spi3d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_false_color.spi3d",
+      "bytes": 6013068,
+      "sha256": "98e1c0cf04f54dbe75526089e80308e735864228290648f64f68a79b3457ae60"
+    },
+    {
+      "path": "filmic/filmic_to_0-35_1-30.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_0-35_1-30.spi1d",
+      "bytes": 94270,
+      "sha256": "0ea26b926904d395085968e400c187afc3ca6bd20365f086520201b024504565"
+    },
+    {
+      "path": "filmic/filmic_to_0-48_1-09.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_0-48_1-09.spi1d",
+      "bytes": 94270,
+      "sha256": "c165ededf8613a4bbaeb4b86923e6c0750e85c2d0e503d5813440d2d05490ae9"
+    },
+    {
+      "path": "filmic/filmic_to_0-60_1-04.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_0-60_1-04.spi1d",
+      "bytes": 94270,
+      "sha256": "d6eb719914486271fd74a81188b17e8fe2308f163d311311eae30bd8328cb7e9"
+    },
+    {
+      "path": "filmic/filmic_to_0-70_1-03.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_0-70_1-03.spi1d",
+      "bytes": 94270,
+      "sha256": "ff0e4cd3745c3d6857c163ee33caa2c796d6c5bddd91859e4646518110bf5b13"
+    },
+    {
+      "path": "filmic/filmic_to_0-85_1-011.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_0-85_1-011.spi1d",
+      "bytes": 94270,
+      "sha256": "49611d68ea8d7fb454266ad239ab91213f05d41affc32ab552d1097d4b3028cd"
+    },
+    {
+      "path": "filmic/filmic_to_0.99_1-0075.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_0.99_1-0075.spi1d",
+      "bytes": 94270,
+      "sha256": "b75f1de373e704c757217170c5245801e241014ced7d664b213e02b791674c27"
+    },
+    {
+      "path": "filmic/filmic_to_1.20_1-00.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/filmic/filmic_to_1.20_1-00.spi1d",
+      "bytes": 94270,
+      "sha256": "9bdef6f44239b090482cc3570895167432a59e28fb49a8b4288d75f29f912a9e"
+    },
+    {
+      "path": "luts/dci_xyz.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/dci_xyz.spi1d",
+      "bytes": 852036,
+      "sha256": "37d000c9f16354bb66fd047f5b7c7482c23c261a943ba5ef9835ae19f0a9605a"
+    },
+    {
+      "path": "luts/lg10.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/lg10.spi1d",
+      "bytes": 57606,
+      "sha256": "1b76ef0a8604c003cb851676a49014dba9910dee0ab3e96ac666cc95159599a5"
+    },
+    {
+      "path": "luts/rec709.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/rec709.spi1d",
+      "bytes": 95572,
+      "sha256": "98f5b218666c1e9c227b28ecb1ecf1aa3f9ba64ceb8ce9c02310befd399a63f9"
+    },
+    {
+      "path": "luts/srgb.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/srgb.spi1d",
+      "bytes": 1460811,
+      "sha256": "0928cc0b9f3c42b8101c67b701dcc4ba002c8a38060f0569522cac1eb7f0ce04"
+    },
+    {
+      "path": "luts/srgb_inv.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/srgb_inv.spi1d",
+      "bytes": 1728015,
+      "sha256": "82be644be7667c32ac656006c1c430b73e4f9765892f9a0bf6ead5961e179806"
+    },
+    {
+      "path": "luts/srgb_to_xyz.spimtx",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/srgb_to_xyz.spimtx",
+      "bytes": 105,
+      "sha256": "625c0adfaf9e314e3bfd852d7c2188245f0caac799035acb398ef6a6f82729ff"
+    },
+    {
+      "path": "luts/vd16.spi1d",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/vd16.spi1d",
+      "bytes": 3679499,
+      "sha256": "3ddcaa9f1966344eb0ec00e41e65286e77db05e0ce2bde4f22daf115df398889"
+    },
+    {
+      "path": "luts/xyz_D65_to_E.spimtx",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/xyz_D65_to_E.spimtx",
+      "bytes": 105,
+      "sha256": "2235ea90d0d81eca24766747001e8ebba21f418c6d7e2b6aef20fb790deb2ef8"
+    },
+    {
+      "path": "luts/xyz_to_aces.spimtx",
+      "url": "https://raw.githubusercontent.com/blender/blender/v3.0.1/release/datafiles/colormanagement/luts/xyz_to_aces.spimtx",
+      "bytes": 138,
+      "sha256": "4af121671257710ceb9cb9a18c58faed8467f5cea51321badc645a718eafa6fc"
+    }
+  ]
+}

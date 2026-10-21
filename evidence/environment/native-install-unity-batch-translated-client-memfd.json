@@ -1,0 +1,39 @@
+{
+  "schema": "dark.unity-native-startup/1",
+  "command": [
+    "qemu-x86_64",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "/tmp/homeless-native/unity-squashfs/Editor/Unity",
+    "-batchmode",
+    "-nographics",
+    "-quit",
+    "-createProject",
+    "/dev/shm/homeless-unity-startup-project-translated-client-memfd",
+    "-logFile",
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-batch-translated-client-memfd.log"
+  ],
+  "exit_code": -15,
+  "elapsed_seconds": 7.235936072189361,
+  "limit_reached": "3 GiB available-memory reserve",
+  "minimum_available_memory_bytes": 3217346560,
+  "peak_project_bytes": 0,
+  "scope": "Actual translated Linux Editor startup with an empty diagnostic project; no activation bypass.",
+  "license_activated": false,
+  "gameplay_project_imported": false,
+  "native_gameplay_tested": false,
+  "logs": [
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-batch-translated-client-memfd.log",
+    "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/environment/native-install-unity-batch-console-translated-client-memfd.log"
+  ],
+  "licensing_command": [
+    "qemu-x86_64",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client",
+    "--namedPipe",
+    "LicenseClient-ubuntu"
+  ],
+  "licensing_process_exit": 143,
+  "allow_licensing_sparse_memfd": true
+}

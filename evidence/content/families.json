@@ -1,0 +1,442 @@
+{
+  "schema": "dark.source-families/1",
+  "assets": [
+    {
+      "name": "RotorShuttle",
+      "family": "four-seat helicopter",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 35566,
+      "mesh_objects": 234,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -4.599999904632568,
+          4.599999904632568
+        ],
+        [
+          -4.549999713897705,
+          6.069999694824219
+        ],
+        [
+          0.0680365115404129,
+          3.049999952316284
+        ]
+      ],
+      "attachments": {
+        "seats": 4,
+        "pilot": "PilotSeat",
+        "passengers": [
+          "FrontRightOccupant",
+          "RearLeftOccupant",
+          "RearRightOccupant"
+        ],
+        "rotors": [
+          "MainRotor",
+          "TailRotor"
+        ],
+        "rotor_axis": "each pivot localZ; TailRotor has fixed localY90degree orientation",
+        "doors": [
+          "LeftCabinDoor",
+          "RightCabinDoor"
+        ],
+        "door_axis": "localZ",
+        "landing_gear": "two fixed skids with structural support struts",
+        "boarding": "BoardingPoint"
+      },
+      "actions": [
+        "LeftCabinDoor_Open",
+        "RightCabinDoor_Open",
+        "MainRotor_Spin",
+        "TailRotor_Spin"
+      ],
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "Bicycle",
+      "family": "bicycle",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 36132,
+      "mesh_objects": 330,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -0.30528342723846436,
+          0.30528342723846436
+        ],
+        [
+          -1.0011999607086182,
+          1.0211999416351318
+        ],
+        [
+          0.008799999952316284,
+          1.1160000562667847
+        ]
+      ],
+      "attachments": {
+        "seats": 1,
+        "rider": "RiderSeat",
+        "wheels": [
+          "FrontWheel",
+          "RearWheel"
+        ],
+        "wheel_axis": "localX",
+        "wheel_radius_m": 0.34,
+        "pedals": "Crank",
+        "hands": [
+          "LeftHandGrip",
+          "RightHandGrip"
+        ],
+        "rider_pose": "NOT_RUN; seated car pose is not bicycle contact proof"
+      },
+      "actions": [
+        "FrontWheel_Spin",
+        "RearWheel_Spin",
+        "Crank_Pedal"
+      ],
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "CeramicCup",
+      "family": "interactive cup",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 4828,
+      "mesh_objects": 2,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -0.04050000011920929,
+          0.07400000095367432
+        ],
+        [
+          -0.04050000011920929,
+          0.04050000011920929
+        ],
+        [
+          0.0,
+          0.10199999809265137
+        ]
+      ],
+      "attachments": {
+        "grip": "GripPoint",
+        "rim": "RimCenter",
+        "hollow": true,
+        "source_pivot": "bottom-center",
+        "collision": "NOT_RUN"
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "CoastalSixAircraft",
+      "family": "small passenger aircraft",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 24400,
+      "mesh_objects": 45,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -5.099999904632568,
+          5.099999904632568
+        ],
+        [
+          -3.695000171661377,
+          3.5999999046325684
+        ],
+        [
+          -5.551115123125783e-17,
+          2.950000047683716
+        ]
+      ],
+      "attachments": {
+        "seats": 6,
+        "pilot": "PilotSeat",
+        "propeller": "Propeller",
+        "flaps": [
+          "Flap_-1",
+          "Flap_1"
+        ]
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "AcousticGuitar",
+      "family": "musical instrument",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 4586,
+      "mesh_objects": 40,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -0.18660342693328857,
+          0.18660342693328857
+        ],
+        [
+          -0.4339999854564667,
+          0.06499999761581421
+        ],
+        [
+          -0.1290000081062317,
+          1.284999966621399
+        ]
+      ],
+      "attachments": {
+        "hands": [
+          "LeftHandGrip",
+          "StrummingPoint"
+        ],
+        "strings": 6
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "HarborLaunch",
+      "family": "boat",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 13186,
+      "mesh_objects": 50,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -1.1649999618530273,
+          1.1649999618530273
+        ],
+        [
+          -3.5308642387390137,
+          3.575000047683716
+        ],
+        [
+          0.05000000074505806,
+          2.244999885559082
+        ]
+      ],
+      "attachments": {
+        "seats": 5,
+        "helm": "HelmSeat",
+        "boarding": "BoardingPoint",
+        "rudder": "Rudder",
+        "propeller": "Propeller"
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "UrbanBus",
+      "family": "bus",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 25946,
+      "mesh_objects": 193,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -4.434999942779541,
+          4.510000228881836
+        ],
+        [
+          0.019999980926513672,
+          2.7799999713897705
+        ]
+      ],
+      "attachments": {
+        "driver": "DriverOccupant",
+        "wheels": 4,
+        "seats": 21
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "DeliveryTruck",
+      "family": "truck",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 34062,
+      "mesh_objects": 190,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -3.434999942779541,
+          3.2350001335144043
+        ],
+        [
+          0.019999980926513672,
+          2.859999895095825
+        ]
+      ],
+      "attachments": {
+        "driver": "CabSeatOccupant",
+        "wheels": 6,
+        "seats": 2
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "SubtropicalPalm",
+      "family": "foliage",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 54936,
+      "mesh_objects": 918,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -2.2566683292388916,
+          2.25249981880188
+        ],
+        [
+          -2.2567591667175293,
+          2.256899833679199
+        ],
+        [
+          -0.023618802428245544,
+          6.038647174835205
+        ]
+      ],
+      "attachments": {
+        "wind_root": "WindBendRoot",
+        "botanical_claim": "original palm-inspired; not a scanned or certified species reconstruction"
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    },
+    {
+      "name": "AudienceBalloon",
+      "family": "balloon",
+      "license": "CC0-1.0",
+      "source": "original mathematical surface and mechanical detail authoring",
+      "triangles": 19288,
+      "mesh_objects": 57,
+      "units": "meters",
+      "blender_axes": {
+        "up": "+Z",
+        "front": "-Y"
+      },
+      "bounds_m": [
+        [
+          -3.768200159072876,
+          3.768200159072876
+        ],
+        [
+          -3.7669942378997803,
+          3.7669942378997803
+        ],
+        [
+          0.11999999731779099,
+          10.007424354553223
+        ]
+      ],
+      "attachments": {
+        "capacity": 4,
+        "boarding": "BoardingPoint",
+        "burner_height_m": 2.45
+      },
+      "native_import": "NOT_RUN",
+      "visual_acceptance": "NOT_RUN",
+      "gameplay_status": "source_only",
+      "limitations": [
+        "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+        "Named control/boarding transforms require runtime binding and acceptance scenarios."
+      ]
+    }
+  ]
+}

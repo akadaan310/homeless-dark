@@ -37,3 +37,13 @@ The user explicitly authorizes execution, parallel teams and main commits in the
 ## Executed increment boundaries
 
 Checked tasks above indicate implemented source/portable subsets only. Native adapter compilation, scenes, APK/AAB, world coverage, actual population, physical transport, gameplay and aesthetic acceptance remain unfulfilled. The derived requirement ledger retains those gaps. Original audio, bounded frame-trace analysis, versioned NPC persistence and the sourced Tampa fixture extend this initial increment; their exact final results are recorded in evidence/verification/latest.json. No dependency blocker is used to label unrelated unfinished portable work complete.
+
+## Continued implementation — commissioner instruction, 21 October 2026
+
+The commissioner explicitly authorizes local system installation and emulation investigation and directs continued implementation without questions. Native requirements stay on the executable queue; missing native tooling must not end independent development. CLI gameplay will test actual authoritative actions and recovery, while retaining distinct native visual/device gates.
+
+- [ ] Install/probe free VM toolchains, software graphics, Unity and Android emulation routes; record actual commands and resource constraints.
+- [ ] Acquire affordable global source layers and actual epoch population counts; allocate conserved virtual populations with sparse realization/migration.
+- [ ] Acquire/author rigged detailed hero source and articulated vehicles; synthesize actual offline speech with cache/caption/interruption tests.
+- [ ] Build one persistent authoritative gameplay runtime with scoped identities, live NPC schedules/conversations, movement, seats, consented multimodal trips, learning/authoring and durable replay. Expose CLI and compatible bounded protocol adapters; Unity consumes this authority.
+- [ ] Execute integrated headless journeys and adversarial recovery/permission tests, then integrate native adapters and run every available native/emulator check. Continue remaining mathematical, content and experiential work rather than ending at the first tooling blocker.

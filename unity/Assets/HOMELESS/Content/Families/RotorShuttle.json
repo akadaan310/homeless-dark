@@ -1,0 +1,61 @@
+{
+  "name": "RotorShuttle",
+  "family": "four-seat helicopter",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 35566,
+  "mesh_objects": 234,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -4.599999904632568,
+      4.599999904632568
+    ],
+    [
+      -4.549999713897705,
+      6.069999694824219
+    ],
+    [
+      0.0680365115404129,
+      3.049999952316284
+    ]
+  ],
+  "attachments": {
+    "seats": 4,
+    "pilot": "PilotSeat",
+    "passengers": [
+      "FrontRightOccupant",
+      "RearLeftOccupant",
+      "RearRightOccupant"
+    ],
+    "rotors": [
+      "MainRotor",
+      "TailRotor"
+    ],
+    "rotor_axis": "each pivot localZ; TailRotor has fixed localY90degree orientation",
+    "doors": [
+      "LeftCabinDoor",
+      "RightCabinDoor"
+    ],
+    "door_axis": "localZ",
+    "landing_gear": "two fixed skids with structural support struts",
+    "boarding": "BoardingPoint"
+  },
+  "actions": [
+    "LeftCabinDoor_Open",
+    "RightCabinDoor_Open",
+    "MainRotor_Spin",
+    "TailRotor_Spin"
+  ],
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

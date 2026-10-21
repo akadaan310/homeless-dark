@@ -1,0 +1,179 @@
+{
+  "schema": "homeless.character-content/1",
+  "license": "CC0-1.0",
+  "rig_bones": 163,
+  "meshes": [
+    {
+      "name": "CitizenBody",
+      "vertices": 7800,
+      "triangles": 15500
+    },
+    {
+      "name": "Outfit",
+      "vertices": 8426,
+      "triangles": 16672
+    },
+    {
+      "name": "Hair",
+      "vertices": 2984,
+      "triangles": 3678
+    },
+    {
+      "name": "Eyes",
+      "vertices": 1064,
+      "triangles": 2040
+    },
+    {
+      "name": "Shoes",
+      "vertices": 1722,
+      "triangles": 3320
+    },
+    {
+      "name": "Teeth",
+      "vertices": 3868,
+      "triangles": 7120
+    },
+    {
+      "name": "Tongue",
+      "vertices": 226,
+      "triangles": 448
+    }
+  ],
+  "clips": [
+    {
+      "name": "Idle",
+      "frames": [
+        1,
+        61
+      ],
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {},
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "WalkInPlace",
+      "frames": [
+        1,
+        31
+      ],
+      "fps": 30,
+      "duration_seconds": 1.0,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {
+        "left_heel_phase": 0,
+        "right_heel_phase": 0.5
+      },
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "JogInPlace",
+      "frames": [
+        1,
+        25
+      ],
+      "fps": 30,
+      "duration_seconds": 0.8,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {
+        "left_heel_phase": 0,
+        "right_heel_phase": 0.5
+      },
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "Wave",
+      "frames": [
+        1,
+        61
+      ],
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {},
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "Talk",
+      "frames": [
+        1,
+        61
+      ],
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {},
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "Listen",
+      "frames": [
+        1,
+        61
+      ],
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {},
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "Seated",
+      "frames": [
+        1,
+        31
+      ],
+      "fps": 30,
+      "duration_seconds": 1.0,
+      "loop": true,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {},
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    },
+    {
+      "name": "EnterVehicle",
+      "frames": [
+        1,
+        61
+      ],
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": false,
+      "root_motion": "in_place_except_seated_pelvis_offset",
+      "source": "original authored deterministic keyframes",
+      "contact_markers": {},
+      "foot_contact_native_verified": false,
+      "retarget_native_verified": false
+    }
+  ],
+  "source_height_m": 1.6658899784088135,
+  "source_only": true,
+  "native_import": "NOT_RUN",
+  "close_up_cinematic_gate": "NOT_RUN",
+  "limitations": [
+    "Two skin variants share topology, outfit and original keyframe motions; not a complete diverse appearance library.",
+    "Original keyframe motion has not passed native foot contacts, stairs, vehicle alignment, retarget or facial quality review.",
+    "Skin uses source diffuse; no claimed measured skin scattering or mobile shader calibration."
+  ]
+}

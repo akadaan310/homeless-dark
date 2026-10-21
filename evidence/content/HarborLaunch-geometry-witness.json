@@ -1,0 +1,66 @@
+{
+  "asset": "HarborLaunch",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -1.1649999618530273,
+          1.1649999618530273
+        ],
+        [
+          -3.5308642387390137,
+          3.575000047683716
+        ],
+        [
+          0.05000000074505806,
+          2.244999885559082
+        ]
+      ],
+      "vertices": 6958
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -1.1649999618530273,
+          1.1649999618530273
+        ],
+        [
+          -3.5308642387390137,
+          3.575000047683716
+        ],
+        [
+          0.05000000074505806,
+          2.244999885559082
+        ]
+      ],
+      "vertices": 6958
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -1.1649999618530273,
+          1.1649999618530273
+        ],
+        [
+          -3.5308642387390137,
+          3.575000047683716
+        ],
+        [
+          0.05000000074505806,
+          2.244999885559082
+        ]
+      ],
+      "vertices": 6958
+    }
+  ],
+  "preview": "evidence/content/HarborLaunch-source-preview.png"
+}

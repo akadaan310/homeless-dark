@@ -1,0 +1,56 @@
+test_all_life_fields_shared_contracts_and_addressability (test_life.LifeTests) ... ok
+test_budget_clock_stale_revision_and_bad_shapes_refuse (test_life.LifeTests) ... ok
+test_building_light_and_cooldown_scope_refusals_are_atomic (test_life.LifeTests) ... ok
+test_building_uses_causal_entry_observation_and_can_decline (test_life.LifeTests) ... ok
+test_car_ride_policy_proposes_without_taking_control (test_life.LifeTests) ... ok
+test_cup_reactive_offset_is_synthetic_not_claimed_physics (test_life.LifeTests) ... FAIL
+test_deterministic_replay_and_source_geometry_immutable (test_life.LifeTests) ... ok
+test_exact_retry_after_current_authorization_and_conflict (test_life.LifeTests) ... ok
+test_exclusive_membership_and_group_cycles_refuse_atomically (test_life.LifeTests) ... ok
+test_malformed_snapshot_and_source_mutation_are_typed_refusals (test_life.LifeTests) ... ERROR
+test_one_weather_event_cannot_be_counted_twice (test_life.LifeTests) ... FAIL
+test_snapshot_restores_identity_memories_relations_and_continuity (test_life.LifeTests) ... ok
+test_sparse_groups_enforce_opt_in_identity_and_exclusive_conflict (test_life.LifeTests) ... ok
+test_star_expression_never_changes_source_astrometry (test_life.LifeTests) ... FAIL
+test_tree_reacts_to_weather_and_expresses_bounded_glow (test_life.LifeTests) ... ok
+
+======================================================================
+ERROR: test_malformed_snapshot_and_source_mutation_are_typed_refusals (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 154, in test_malformed_snapshot_and_source_mutation_are_typed_refusals
+    with self.assertRaises(self.m.LifeRefused):self.m.LifeRegistry.restore(state)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/life.py", line 116, in restore
+    result=cls(copy.deepcopy(state));result._validate_snapshot();return result
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/life.py", line 130, in _validate_snapshot
+    name(key);require(isinstance(life,dict) and set(life)==LIFE_FIELDS and life['entity_id']==key and life['kind'] in _ABILITIES,'ENTITY_SCHEMA','identity or life fields')
+TypeError: unhashable type: 'list'
+
+======================================================================
+FAIL: test_cup_reactive_offset_is_synthetic_not_claimed_physics (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 71, in test_cup_reactive_offset_is_synthetic_not_claimed_physics
+    self.assertAlmostEqual(self.registry.inspect('cup:counter')['state']['offset_xz_m'][0],.07)
+AssertionError: 0.1 != 0.07 within 7 places (0.03 difference)
+
+======================================================================
+FAIL: test_one_weather_event_cannot_be_counted_twice (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 145, in test_one_weather_event_cannot_be_counted_twice
+    with self.assertRaises(self.m.LifeRefused):self.call('tree:oak','react_weather',tick=20)
+AssertionError: LifeRefused not raised
+
+======================================================================
+FAIL: test_star_expression_never_changes_source_astrometry (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 89, in test_star_expression_never_changes_source_astrometry
+    self.assertEqual(self.registry.inspect('star:fixture')['state']['magnitude_offset'],-.05)
+AssertionError: -0.1 != -0.05
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.103s
+
+FAILED (failures=3, errors=1)

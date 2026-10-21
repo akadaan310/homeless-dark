@@ -1,0 +1,55 @@
+{
+  "name": "Bicycle",
+  "family": "bicycle",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 36132,
+  "mesh_objects": 330,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -0.30528342723846436,
+      0.30528342723846436
+    ],
+    [
+      -1.0011999607086182,
+      1.0211999416351318
+    ],
+    [
+      0.008799999952316284,
+      1.1160000562667847
+    ]
+  ],
+  "attachments": {
+    "seats": 1,
+    "rider": "RiderSeat",
+    "wheels": [
+      "FrontWheel",
+      "RearWheel"
+    ],
+    "wheel_axis": "localX",
+    "wheel_radius_m": 0.34,
+    "pedals": "Crank",
+    "hands": [
+      "LeftHandGrip",
+      "RightHandGrip"
+    ],
+    "rider_pose": "NOT_RUN; seated car pose is not bicycle contact proof"
+  },
+  "actions": [
+    "FrontWheel_Spin",
+    "RearWheel_Spin",
+    "Crank_Pedal"
+  ],
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

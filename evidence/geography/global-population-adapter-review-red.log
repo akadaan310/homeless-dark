@@ -1,0 +1,31 @@
+test_active_bound_is_configurable_below_absolute256 (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_actual_arrival_trip_migration_and_exact_conservation (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_exact_country_authority_ready_spawn_and_no_arbitrary_identity (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_forged_destination_missing_arrival_and_stale_input_refuse (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_owned_promotion_demotion_and_memories_survive_restart (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_repeated_encounter_key_never_duplicates_or_teleports (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_restore_reconciles_each_encounter_with_real_ledger (test_population_world_adapter.PopulationAdapterTests) ... FAIL
+test_restore_refuses_malformed_or_inconsistent_replay_records (test_population_world_adapter.PopulationAdapterTests) ... FAIL
+test_snapshot_and_idempotency_preserve_exact_real_ledger (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_source_total_zero_initial_realization_and_lazy_country_encounter (test_population_world_adapter.PopulationAdapterTests) ... ok
+
+======================================================================
+FAIL: test_restore_reconciles_each_encounter_with_real_ledger (test_population_world_adapter.PopulationAdapterTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_population_world_adapter.py", line 86, in test_restore_reconciles_each_encounter_with_real_ledger
+    with self.assertRaises(self.m.PopulationRefused,msg=key):self.m.PopulationRuntime.restore(changed)
+AssertionError: PopulationRefused not raised : active
+
+======================================================================
+FAIL: test_restore_refuses_malformed_or_inconsistent_replay_records (test_population_world_adapter.PopulationAdapterTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_population_world_adapter.py", line 97, in test_restore_refuses_malformed_or_inconsistent_replay_records
+    with self.assertRaises(self.m.PopulationRefused):self.m.PopulationRuntime.restore(changed)
+AssertionError: PopulationRefused not raised
+
+----------------------------------------------------------------------
+Ran 10 tests in 11.592s
+
+FAILED (failures=2)

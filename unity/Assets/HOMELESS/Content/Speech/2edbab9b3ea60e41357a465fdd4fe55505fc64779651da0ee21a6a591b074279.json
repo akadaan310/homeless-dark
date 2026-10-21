@@ -1,0 +1,46 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279",
+  "filename": "2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279.wav",
+  "event_id": "evt:arrival:en:offer_ride",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:en:offer_ride",
+    "speaker": "npc:bo",
+    "language": "en",
+    "act": "offer_ride",
+    "slots": {
+      "destination": "cafe"
+    }
+  },
+  "caption": "Would you like a ride to the cafe? You can cancel at any time.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "en-us",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "en_dict": "20ac462c63f9c0a7b8dc124ca02262c3ecfea550b723f29e10f177339ebeda10",
+      "lang/gmw/en-US": "e522a079c166599f1c9549370979e680ca5dbb62fb93ebd130dc0409f1e66ee8"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "8d6ceb67351791a0e1e1e126af2fbe38f4b5111a092ad426ab906699913aa4a6",
+  "synthesis_seconds": 0.024747745133936405,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 91952,
+  "duration_seconds": 4.17015873015873,
+  "peak_abs": 18104,
+  "pcm_rms": 0.06420612263562692,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

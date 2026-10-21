@@ -1,0 +1,60 @@
+{
+  "schema": "dark.kernel-result/1",
+  "operation": "population_move",
+  "status": "OK",
+  "authority_granted": false,
+  "physical_validation": "NOT_RUN",
+  "revision": 1,
+  "person": {
+    "id": "wb2024/USA/7",
+    "origin": "USA",
+    "ordinal": 7,
+    "residence": "USA",
+    "present": "BRA",
+    "fidelity": "Active",
+    "policy_seed": "a44dde538d8925da007b912eeee5849242a01e7b22e68f41608cbc9465266707",
+    "facts": [
+      "met:fixture-player:tick100"
+    ],
+    "commitments": [
+      "return-to-cafe"
+    ],
+    "last_event_revision": 1
+  },
+  "snapshot": "dark.population-snapshot/1\nea2957c447598037b3fe56796c0f31eec476b66f730adfdadf185c0002112ebd\n1\nS\twb2024/USA/7\tUSA\tBRA\t1\t1\nF\twb2024/USA/7\tbWV0OmZpeHR1cmUtcGxheWVyOnRpY2sxMDA=\nC\twb2024/USA/7\tcmV0dXJuLXRvLWNhZmU=\nM\tfixture-trip\twb2024/USA/7\tBRA\t0\t1\nH\t45210aa7cdf84e394dd54bac0532a0560237d21f6a8ecb41286d4b308b3cd65d\n",
+  "allocation_hash": "ea2957c447598037b3fe56796c0f31eec476b66f730adfdadf185c0002112ebd",
+  "source_epoch": "World Bank WDI SP.POP.TOTL 2024",
+  "population_source_sha256": "770cbf8e33263680074c1bc60a5af540ac2f55db991389bfeabebc762c528e11",
+  "metrics": {
+    "demographic_estimate": 8140897523,
+    "virtual_members": 8140897522,
+    "stored_individuals": 1,
+    "stored_individual_histories": 1,
+    "active_actors": 1,
+    "focused_actors": 0,
+    "visible_characters": 0,
+    "voiced_characters": 0
+  },
+  "counts": {
+    "USA": {
+      "residents": 340003797,
+      "present": 340003796,
+      "visitors": 0,
+      "absent_residents": 1
+    },
+    "BRA": {
+      "residents": 211998573,
+      "present": 211998574,
+      "visitors": 1,
+      "absent_residents": 0
+    }
+  },
+  "movement": {
+    "request_id": "fixture-trip",
+    "person_id": "wb2024/USA/7",
+    "destination": "BRA",
+    "migration": false,
+    "revision": 1
+  },
+  "spatial_fidelity": "source economy totals plus explicitly unassigned world residual; no raster density inferred"
+}

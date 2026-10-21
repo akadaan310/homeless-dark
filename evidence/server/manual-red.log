@@ -1,0 +1,21 @@
+.......E...........
+======================================================================
+ERROR: test_manual_walk_has_speed_expiry_and_authored_collision_limits (test_world.WorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 234, in test_manual_walk_has_speed_expiry_and_authored_collision_limits
+    act(1,1,'diagonal');world.advance(1,'one')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 231, in act
+    return world.execute(token,{'schema':'dark.action/1','request_id':rid,'expected_revision':world.snapshot()['revision'],
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 294, in execute
+    self._validate_envelope(request)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 289, in _validate_envelope
+    require(finite(value) if key == "max_distance_m" else isinstance(value, str),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 43, in require
+    raise Refused(code, witness, clause)
+dark_server.world.Refused: ARGUMENT_TYPE: east has the wrong type
+
+----------------------------------------------------------------------
+Ran 19 tests in 2.075s
+
+FAILED (errors=1)

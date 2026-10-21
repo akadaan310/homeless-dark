@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46",
+  "filename": "9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46.wav",
+  "event_id": "evt:arrival:en:continue_task",
+  "speaker": "npc:ana",
+  "canonical_act": {
+    "event_id": "evt:arrival:en:continue_task",
+    "speaker": "npc:ana",
+    "language": "en",
+    "act": "continue_task",
+    "slots": {}
+  },
+  "caption": "I need to finish this delivery. We can talk later.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "en-us",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "en_dict": "20ac462c63f9c0a7b8dc124ca02262c3ecfea550b723f29e10f177339ebeda10",
+      "lang/gmw/en-US": "e522a079c166599f1c9549370979e680ca5dbb62fb93ebd130dc0409f1e66ee8"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "49df8fd087e9213c5fde87a152b46f937f05bdf3b4ad6701e97f684f2605a7b4",
+  "synthesis_seconds": 0.022558745928108692,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 80160,
+  "duration_seconds": 3.635374149659864,
+  "peak_abs": 16684,
+  "pcm_rms": 0.06592751820547205,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

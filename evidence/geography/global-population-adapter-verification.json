@@ -1,0 +1,22 @@
+{
+  "schema": "dark.population-runtime-verification/1",
+  "status": "PASS",
+  "tests": 10,
+  "backend": "actual compiled .NET8 Dark.KernelBridge -> PopulationLedger; no Python population counter",
+  "source_epoch": 2024,
+  "source_world_estimate": 8140897523,
+  "initial_active": 0,
+  "initial_stored": 0,
+  "max_active": 256,
+  "scope": "Candidate source-cohort introduction, history, demotion, scoped promotion and host-witnessed travel/migration; host owns World admission",
+  "physical_validation": "NOT_RUN",
+  "independent_review": "PENDING",
+  "files": {
+    "packages/dark_server/population_runtime.py": "70179c5d4cb45a419222903491adc8a46006b78e3d37781588fffc3755b394aa",
+    "tests/server/test_population_world_adapter.py": "9f1ce669c408c325ce7290a8221a81a232d6c1cf6b614129ceedf8928728ae2a"
+  },
+  "review_findings_fixed": [
+    "per-encounter actual ledger reconciliation",
+    "strict cached request and response continuity"
+  ]
+}

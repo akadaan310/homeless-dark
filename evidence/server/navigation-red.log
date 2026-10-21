@@ -1,0 +1,35 @@
+test_manual_clearance_does_not_reintroduce_removed_graph_edges (test_navigation.NavigationTests) ... FAIL
+test_route_reentry_from_manual_position_is_continuous (test_navigation.NavigationTests) ... ERROR
+
+======================================================================
+ERROR: test_route_reentry_from_manual_position_is_continuous (test_navigation.NavigationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_navigation.py", line 30, in test_route_reentry_from_manual_position_is_continuous
+    act('travel',{'destination':'corner','mode':'walk'},'route')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_navigation.py", line 27, in act
+    def act(op,args,rid):return w.execute(token,{'schema':'dark.action/1','request_id':rid,'expected_revision':w.snapshot()['revision'],'operation':op,'arguments':args})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 318, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 355, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 546, in _act
+    route, length = self._route(state, mover["node"], args["destination"], mode)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 439, in _route
+    require(start in nodes, "BETWEEN_NODES", "resume or finish the current segment before rerouting")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 45, in require
+    raise Refused(code, witness, clause)
+dark_server.world.Refused: BETWEEN_NODES: resume or finish the current segment before rerouting
+
+======================================================================
+FAIL: test_manual_clearance_does_not_reintroduce_removed_graph_edges (test_navigation.NavigationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_navigation.py", line 23, in test_manual_clearance_does_not_reintroduce_removed_graph_edges
+    separated=World.create(Path(tmp)/'b',c);self.assertFalse(separated._walkable(separated.snapshot(),mid))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.150s
+
+FAILED (failures=1, errors=1)

@@ -1,0 +1,7 @@
+test_observed_demote_refuses_then_dormancy_preserves_exact_actor_memory (test_inhabitants.InhabitantWorldTests) ... ok
+test_world_realizes_one_source_cohort_npc_once_without_changing_total (test_inhabitants.InhabitantWorldTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 10.932s
+
+OK

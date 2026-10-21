@@ -1,0 +1,13 @@
+{
+  "command": [
+    "qemu-x86_64",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client",
+    "--showEntitlements"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 20.61754916701466,
+  "limit_reached": null,
+  "scope": "Unmodified official licensing client, local entitlement read only; no credentials or activation submitted"
+}

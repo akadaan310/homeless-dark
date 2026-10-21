@@ -1,0 +1,158 @@
+{
+  "schema": "dark.asr-evaluation/1",
+  "model": "whisper tiny multilingual GGML",
+  "host": "Linux ARM64 CPU, two inference threads",
+  "corpus": "12 original synthetic formant-speech lines; no human microphone data",
+  "results": [
+    {
+      "event_id": "evt:arrival:en:continue_task",
+      "language": "en",
+      "reference": "I need to finish this delivery. We can talk later.",
+      "recognized": "I need to finish this delivery. We can talk later.",
+      "word_error_rate": 0.0,
+      "wall_seconds": 4.711587772239,
+      "audio_seconds": 3.635374149659864,
+      "input_sha256": "db1b91f18bddb708c9b94c1f60a0e648f3a23e56051c18aaa56581fac7af4b81",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:en:offer_ride",
+      "language": "en",
+      "reference": "Would you like a ride to the cafe? You can cancel at any time.",
+      "recognized": "Would you like a ride to the cafe?\nYou can cancel at any time.",
+      "word_error_rate": 0.0,
+      "wall_seconds": 3.7458445210941136,
+      "audio_seconds": 4.17015873015873,
+      "input_sha256": "79a9aabc7a67511e07e432db1f92e7c69fcaf3bc310761ffa95ae66137c39eff",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:en:refuse_ride",
+      "language": "en",
+      "reference": "No, thank you. I would rather walk.",
+      "recognized": "No thank you. I will rather walk.",
+      "word_error_rate": 0.14285714285714285,
+      "wall_seconds": 3.881954899057746,
+      "audio_seconds": 3.044716553287982,
+      "input_sha256": "3a720e89ea0e5bcd879c0a10de04fbd8bdfab8668dd1803f0965340b21f07296",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:en:welcome_member",
+      "language": "en",
+      "reference": "Welcome. Take your time and look around.",
+      "recognized": "Welcome. Take your time, and look around.",
+      "word_error_rate": 0.0,
+      "wall_seconds": 3.460142968222499,
+      "audio_seconds": 3.3025850340136054,
+      "input_sha256": "633a2c7a903392f9916900d25fa5c5558d5264b629a14541c9a105cde6bbc845",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:en:pair_coffee",
+      "language": "en",
+      "reference": "The rain has stopped. Shall we sit outside?",
+      "recognized": "The rain first topped, shall we sit outside?",
+      "word_error_rate": 0.25,
+      "wall_seconds": 3.522795760538429,
+      "audio_seconds": 3.3413151927437643,
+      "input_sha256": "e7cc3679eb9f9ac22b7b944323e06d8c2737306c957fa345b88b02629233384b",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:en:pair_reply",
+      "language": "en",
+      "reference": "In a moment. I am waiting for my coffee.",
+      "recognized": "at the moment. I am waiting for my car fee.",
+      "word_error_rate": 0.4444444444444444,
+      "wall_seconds": 3.664892134256661,
+      "audio_seconds": 2.899546485260771,
+      "input_sha256": "72793105885fca333a4bf535a679f3ce261b6dcd4cb66d5b77b2060978a50cf7",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:ar:continue_task",
+      "language": "ar",
+      "reference": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "recognized": "في حماة مقلات تحنساً.",
+      "word_error_rate": 1.0,
+      "wall_seconds": 6.799198056571186,
+      "audio_seconds": 5.161496598639456,
+      "input_sha256": "d2e78f713ea835bb5b071afa46c24619453012661a04fb296c54fbce33bc899f",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:ar:offer_ride",
+      "language": "ar",
+      "reference": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "recognized": "حال تريد أحاب بها مكاة\nإن كما كاة بها في أيوقت",
+      "word_error_rate": 1.0,
+      "wall_seconds": 8.823539315257221,
+      "audio_seconds": 5.793922902494331,
+      "input_sha256": "667b51911cd773018fe96eab8594202cec3c5cb413f93b70d615f0a45d3e44c4",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:ar:refuse_ride",
+      "language": "ar",
+      "reference": "لا، شكرا. أفضل المشي.",
+      "recognized": "أحكرة أفضل المحيث",
+      "word_error_rate": 0.75,
+      "wall_seconds": 3.8467211932875216,
+      "audio_seconds": 3.088027210884354,
+      "input_sha256": "c1e176d7fc0a97336769dec2a1e2de9940659d424548e498bd1b8cdbc7c5b28a",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:ar:welcome_member",
+      "language": "ar",
+      "reference": "أهلا بك. خذ وقتك وانظر حولك.",
+      "recognized": "أمك! وقت كبير حالك!",
+      "word_error_rate": 1.0,
+      "wall_seconds": 6.061517470050603,
+      "audio_seconds": 3.2587755102040816,
+      "input_sha256": "0297d0675f5ac0acbf9a0e552ba6ff6c89f439005bd701be4816a4e62d52a1c4",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:ar:pair_coffee",
+      "language": "ar",
+      "reference": "توقف المطر. هل نجلس في الخارج؟",
+      "recognized": "وكفر مقرمه حالنس فيه حالج",
+      "word_error_rate": 1.0,
+      "wall_seconds": 6.6925565977580845,
+      "audio_seconds": 3.7150566893424037,
+      "input_sha256": "8b475f96650d507ddd3a3424bebf473a31bb3f8dbf692b93f20001a7e4c15c5e",
+      "intent_proposed": null,
+      "world_action_committed": false
+    },
+    {
+      "event_id": "evt:arrival:ar:pair_reply",
+      "language": "ar",
+      "reference": "بعد قليل. أنا أنتظر قهوتي.",
+      "recognized": "بمتكليل أكتفقوتي",
+      "word_error_rate": 1.0,
+      "wall_seconds": 4.46133949002251,
+      "audio_seconds": 3.0680725623582767,
+      "input_sha256": "9e979b90151464a523da8c588c029a219e9e51a129aeb89811f72cab9e1be2af",
+      "intent_proposed": null,
+      "world_action_committed": false
+    }
+  ],
+  "limitations": [
+    "Synthetic fixture does not measure live English/Arabic speech, noise, accents or microphone latency.",
+    "Tiny-model output may be wrong. No recognized text executes host or gameplay actions."
+  ],
+  "quality_gate": "NOT_PASSED",
+  "native_device": "NOT_RUN"
+}

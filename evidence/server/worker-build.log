@@ -1,0 +1,18 @@
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c:3: warning: "_GNU_SOURCE" redefined
+    3 | #define _GNU_SOURCE
+      | 
+<command-line>: note: this is the location of the previous definition
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c: In function ‘main’:
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c:81:56: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |         if(a_blocked && b_blocked && c_blocked) {(void)write(1,good,strlen(good));return 0;}
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c:113:25: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  113 |             else {(void)write(1,text,size);(void)write(1,"\n",1);}
+      |                         ^~~~~~~~~~~~~~~~~~
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c:113:50: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  113 |             else {(void)write(1,text,size);(void)write(1,"\n",1);}
+      |                                                  ^~~~~~~~~~~~~~~
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c: In function ‘refuse’:
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/workers/dark_js.c:66:44: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   66 |     if(n>0 && n<(int)sizeof(result)) (void)write(STDOUT_FILENO,result,(size_t)n);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,14 @@
+Unity Editor version:    6000.1.0f1 (9ea152932a88)
+Branch:                  6000.1/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #63~22.04.1-Ubuntu SMP Mon Aug 10 14:47:57 UTC 2026
+Kernel version:          6.8.0-1060-oracle
+Architecture:            x86_64
+Available memory:        11932 MB
+Date:                    2026-10-21T10:29:41Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-ubuntu doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 419307)
+/tmp/homeless-native/unity-squashfs/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client: 9: Syntax error: word unexpected (expecting ")")

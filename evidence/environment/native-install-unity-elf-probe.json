@@ -1,0 +1,12 @@
+{
+  "url": "https://download.unity3d.com/download_unity/9ea152932a88/LinuxEditorInstaller/Unity-6000.1.0f1.tar.xz",
+  "response_status": 206,
+  "content_range": "bytes 0-8388607/4519451520",
+  "downloaded_bytes": 8388608,
+  "partial_sha256": "371a1a66c9b6c3365a8a73331de1533d8b5c217c2367a87a68fb92395ec3a4c2",
+  "member": "Editor/libcompress_bc7e.so",
+  "member_size": 1095672,
+  "elf_prefix_hex": "7f454c4602010100000000000000000003003e000100000040b00000000000004000000000000000b8b010000000000000000000400038000a0040001d001a00",
+  "elf_machine": 62,
+  "full_archive_integrity": "NOT_VERIFIED_PARTIAL_RANGE_ONLY"
+}

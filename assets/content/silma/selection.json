@@ -1,0 +1,50 @@
+{
+  "state": "FREE_SELECTED",
+  "upstream": "silma-ai/silma-tts",
+  "upstream_revision": "226dd7a65cadf51f9a6dbe3953fc89003b3844d5",
+  "export_repository": "OpenVoiceOS/phoonnx-f5tts",
+  "export_revision": "acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf",
+  "license": "Apache-2.0 per silma-tts-v1 README and primary SILMA model card",
+  "files": [
+    {
+      "file": "F5_Decode.onnx",
+      "bytes": 62546929,
+      "sha256": "4fd5ab10d6edf0e6882252c30857dadbf01d4f2b233f9163ed7522d5184a50e8",
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-f5tts/resolve/acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf/silma-tts-v1/F5_Decode.onnx"
+    },
+    {
+      "file": "F5_Preprocess.onnx",
+      "bytes": 73904440,
+      "sha256": "8d7a43fbd05dc3176f171436e36d9832610fbb811cd7cdc2bcbd19c8d56fdf87",
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-f5tts/resolve/acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf/silma-tts-v1/F5_Preprocess.onnx"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1150,
+      "sha256": null,
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-f5tts/resolve/acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf/silma-tts-v1/README.md"
+    },
+    {
+      "file": "config.json",
+      "bytes": 156367,
+      "sha256": null,
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-f5tts/resolve/acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf/silma-tts-v1/config.json"
+    },
+    {
+      "file": "model.onnx",
+      "bytes": 612437669,
+      "sha256": "6b253b3512a7f9974089ca1231aff08537db44d51a6cb0a0fb89d562c624c888",
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-f5tts/resolve/acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf/silma-tts-v1/model.onnx"
+    },
+    {
+      "file": "vocab.txt",
+      "bytes": 36357,
+      "sha256": null,
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-f5tts/resolve/acd1a76bf92d6f82094e8bcc4bdcc40f0c466adf/silma-tts-v1/vocab.txt"
+    }
+  ],
+  "voice_conditioning": "Only our original synthetic espeak-ng output; no real-person reference voice or private corpus.",
+  "cache_directory": "/tmp/homeless-silma-models",
+  "cache_excluded_from_git": true,
+  "native_runtime": "NOT_RUN"
+}

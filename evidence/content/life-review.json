@@ -1,0 +1,30 @@
+{
+  "scope": [
+    "packages/dark_server/life.py",
+    "tests/server/test_life.py"
+  ],
+  "reviewer": "hero_speech independent scoped source review",
+  "findings": [
+    {
+      "issue": "Huge int numerical ability escaped as OverflowError",
+      "resolution": "finite compares bounded range before math.isfinite",
+      "status": "fixed and re-reviewed"
+    },
+    {
+      "issue": "Malformed event restored with AttributeError",
+      "resolution": "event required fields checked before event access; restore catches shape errors",
+      "status": "fixed and re-reviewed"
+    },
+    {
+      "issue": "Malformed observations restored then failed later with KeyError",
+      "resolution": "restore validates observation shape, payload, source, time, identity and causal refs",
+      "status": "fixed and re-reviewed"
+    }
+  ],
+  "validation": {
+    "command": "python3 -m unittest discover -s tests/server -p test_life.py -v",
+    "result": "PASS",
+    "tests": 18
+  },
+  "limits": "Read-only source and targeted regression review; does not establish World authorization, durable transaction or physical behavior correctness."
+}

@@ -1,0 +1,339 @@
+{
+  "schema": "dark.arabic-comparison/1",
+  "results": [
+    {
+      "act": "continue_task",
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "caption": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "spoken_text": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "recognized": "في حماة مقلات تحنساً.",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 6.872204568702728,
+      "input_sha256": "d2e78f713ea835bb5b071afa46c24619453012661a04fb296c54fbce33bc899f"
+    },
+    {
+      "act": "continue_task",
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "caption": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "spoken_text": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "recognized": "يحاول يا ماء في مقلاتة نساعة",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 29.408861286006868,
+      "input_sha256": "d2e78f713ea835bb5b071afa46c24619453012661a04fb296c54fbce33bc899f"
+    },
+    {
+      "act": "continue_task",
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "caption": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "spoken_text": "يَجِبُ أَنْ أُنْهِيَ هَذَا الْعَمَلَ. يُمْكِنُنَا التَّحَدُّثُ لَاحِقًا.",
+      "recognized": "يجب أن تنصرها في أمامة. يمكن أن تنصرها في قامة.",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 7.457341026049107,
+      "input_sha256": "cfd0cbd8725022a726c2498adc4a3f773c1b4077b42dad34366488fcacc37bce"
+    },
+    {
+      "act": "continue_task",
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "caption": "يجب أن أنهي هذا العمل. يمكننا التحدث لاحقا.",
+      "spoken_text": "يَجِبُ أَنْ أُنْهِيَ هَذَا الْعَمَلَ. يُمْكِنُنَا التَّحَدُّثُ لَاحِقًا.",
+      "recognized": "يرى موحن في أحاق ملا ينكيوات تهدو صورة حيقاً.",
+      "raw_wer": 1.125,
+      "normalized_wer": 1.125,
+      "wall_seconds": 9.468468177132308,
+      "input_sha256": "cfd0cbd8725022a726c2498adc4a3f773c1b4077b42dad34366488fcacc37bce"
+    },
+    {
+      "act": "offer_ride",
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "caption": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "spoken_text": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "recognized": "حال تريد أحاب بها مكاة\nإن كما كاة بها في أيوقت",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 7.132868115790188,
+      "input_sha256": "667b51911cd773018fe96eab8594202cec3c5cb413f93b70d615f0a45d3e44c4"
+    },
+    {
+      "act": "offer_ride",
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "caption": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "spoken_text": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "recognized": "هل تريد أحاب إعاما حاقم كوكا إعافي عيوات؟",
+      "raw_wer": 0.8,
+      "normalized_wer": 0.8,
+      "wall_seconds": 8.776760953012854,
+      "input_sha256": "667b51911cd773018fe96eab8594202cec3c5cb413f93b70d615f0a45d3e44c4"
+    },
+    {
+      "act": "offer_ride",
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "caption": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "spoken_text": "هَلْ تُرِيدُ الذَّهَابَ إِلَى الْمَقْهَى؟ يُمْكِنُكَ الْإِلْغَاءُ فِي أَيِّ وَقْتٍ.",
+      "recognized": "حال تريدوها محيلا مكحا\nيمكنك حيلا في عيواتي",
+      "raw_wer": 0.8,
+      "normalized_wer": 0.8,
+      "wall_seconds": 9.004270812962204,
+      "input_sha256": "398c7cfb91079c94e12294b7da6f0eeb0747da7ac2932082592d1731670f44d5"
+    },
+    {
+      "act": "offer_ride",
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "caption": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+      "spoken_text": "هَلْ تُرِيدُ الذَّهَابَ إِلَى الْمَقْهَى؟ يُمْكِنُكَ الْإِلْغَاءُ فِي أَيِّ وَقْتٍ.",
+      "recognized": "حال تريدون حاما إلا مكحا يومكيوكا إلا أفضي عيوكسين",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 9.159220489673316,
+      "input_sha256": "398c7cfb91079c94e12294b7da6f0eeb0747da7ac2932082592d1731670f44d5"
+    },
+    {
+      "act": "refuse_ride",
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "caption": "لا، شكرا. أفضل المشي.",
+      "spoken_text": "لا، شكرا. أفضل المشي.",
+      "recognized": "أحكرة أفضل المحيث",
+      "raw_wer": 0.75,
+      "normalized_wer": 0.75,
+      "wall_seconds": 3.8636137838475406,
+      "input_sha256": "c1e176d7fc0a97336769dec2a1e2de9940659d424548e498bd1b8cdbc7c5b28a"
+    },
+    {
+      "act": "refuse_ride",
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "caption": "لا، شكرا. أفضل المشي.",
+      "spoken_text": "لا، شكرا. أفضل المشي.",
+      "recognized": "لا شرافنا ماشي.",
+      "raw_wer": 0.75,
+      "normalized_wer": 0.75,
+      "wall_seconds": 6.4189507882110775,
+      "input_sha256": "c1e176d7fc0a97336769dec2a1e2de9940659d424548e498bd1b8cdbc7c5b28a"
+    },
+    {
+      "act": "refuse_ride",
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "caption": "لا، شكرا. أفضل المشي.",
+      "spoken_text": "لَا، شُكْرًا. أُفَضِّلُ الْمَشْيَ.",
+      "recognized": "لأشوف أكثر من أمشاء",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 4.597286529839039,
+      "input_sha256": "30f7868ebbdf7c716cf048df6f55da1ff6b47cad9326feb47b2a740484306a90"
+    },
+    {
+      "act": "refuse_ride",
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "caption": "لا، شكرا. أفضل المشي.",
+      "spoken_text": "لَا، شُكْرًا. أُفَضِّلُ الْمَشْيَ.",
+      "recognized": "لا شكرا أفنوا ماشاء",
+      "raw_wer": 0.5,
+      "normalized_wer": 0.5,
+      "wall_seconds": 6.656254160683602,
+      "input_sha256": "30f7868ebbdf7c716cf048df6f55da1ff6b47cad9326feb47b2a740484306a90"
+    },
+    {
+      "act": "welcome_member",
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "caption": "أهلا بك. خذ وقتك وانظر حولك.",
+      "spoken_text": "أهلا بك. خذ وقتك وانظر حولك.",
+      "recognized": "أمك! وقت كبير حالك!",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 5.993132038041949,
+      "input_sha256": "0297d0675f5ac0acbf9a0e552ba6ff6c89f439005bd701be4816a4e62d52a1c4"
+    },
+    {
+      "act": "welcome_member",
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "caption": "أهلا بك. خذ وقتك وانظر حولك.",
+      "spoken_text": "أهلا بك. خذ وقتك وانظر حولك.",
+      "recognized": "أمك وطعوا في حالكا!",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 6.746420887764543,
+      "input_sha256": "0297d0675f5ac0acbf9a0e552ba6ff6c89f439005bd701be4816a4e62d52a1c4"
+    },
+    {
+      "act": "welcome_member",
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "caption": "أهلا بك. خذ وقتك وانظر حولك.",
+      "spoken_text": "أَهْلًا بِكَ. خُذْ وَقْتَكَ وَانْظُرْ حَوْلَكَ.",
+      "recognized": "فنبيكا! فوكتكا وانبوكا!",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 4.828123626764864,
+      "input_sha256": "42f4ac670439ab202bb370deaf75704afab8359a6e66f99b628f227258c5d56a"
+    },
+    {
+      "act": "welcome_member",
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "caption": "أهلا بك. خذ وقتك وانظر حولك.",
+      "spoken_text": "أَهْلًا بِكَ. خُذْ وَقْتَكَ وَانْظُرْ حَوْلَكَ.",
+      "recognized": "أفن بيكا. أوكتك وامو حقا.",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 7.666692967992276,
+      "input_sha256": "42f4ac670439ab202bb370deaf75704afab8359a6e66f99b628f227258c5d56a"
+    },
+    {
+      "act": "pair_coffee",
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "caption": "توقف المطر. هل نجلس في الخارج؟",
+      "spoken_text": "توقف المطر. هل نجلس في الخارج؟",
+      "recognized": "وكفر مقرمه حالنس فيه حالج",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 6.64335324568674,
+      "input_sha256": "8b475f96650d507ddd3a3424bebf473a31bb3f8dbf692b93f20001a7e4c15c5e"
+    },
+    {
+      "act": "pair_coffee",
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "caption": "توقف المطر. هل نجلس في الخارج؟",
+      "spoken_text": "توقف المطر. هل نجلس في الخارج؟",
+      "recognized": "\"تا فا مطاق \" \"النسفي \" \"اقاج \"",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 15.72494922298938,
+      "input_sha256": "8b475f96650d507ddd3a3424bebf473a31bb3f8dbf692b93f20001a7e4c15c5e"
+    },
+    {
+      "act": "pair_coffee",
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "caption": "توقف المطر. هل نجلس في الخارج؟",
+      "spoken_text": "تَوَقَّفَ الْمَطَرُ. هَلْ نَجْلِسُ فِي الْخَارِجِ؟",
+      "recognized": "تلاك فا مطلوب حالة ليسوفي حالة ليسوفي حالة ليجيب",
+      "raw_wer": 1.5,
+      "normalized_wer": 1.5,
+      "wall_seconds": 5.2226447546854615,
+      "input_sha256": "1423a9d8e11e1b3f7ab7cf5f4a70006b3b5ffb4479f26cdcc48a31598c855288"
+    },
+    {
+      "act": "pair_coffee",
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "caption": "توقف المطر. هل نجلس في الخارج؟",
+      "spoken_text": "تَوَقَّفَ الْمَطَرُ. هَلْ نَجْلِسُ فِي الْخَارِجِ؟",
+      "recognized": "شاوحا ماتلو حالا لسوفي حاريين",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 7.540480981115252,
+      "input_sha256": "1423a9d8e11e1b3f7ab7cf5f4a70006b3b5ffb4479f26cdcc48a31598c855288"
+    },
+    {
+      "act": "pair_reply",
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "caption": "بعد قليل. أنا أنتظر قهوتي.",
+      "spoken_text": "بعد قليل. أنا أنتظر قهوتي.",
+      "recognized": "بمتكليل أكتفقوتي",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 4.394245281815529,
+      "input_sha256": "9e979b90151464a523da8c588c029a219e9e51a129aeb89811f72cab9e1be2af"
+    },
+    {
+      "act": "pair_reply",
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "caption": "بعد قليل. أنا أنتظر قهوتي.",
+      "spoken_text": "بعد قليل. أنا أنتظر قهوتي.",
+      "recognized": "بمسكالي أعطيك بأكودي",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 7.242366333026439,
+      "input_sha256": "9e979b90151464a523da8c588c029a219e9e51a129aeb89811f72cab9e1be2af"
+    },
+    {
+      "act": "pair_reply",
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "caption": "بعد قليل. أنا أنتظر قهوتي.",
+      "spoken_text": "بَعْدَ قَلِيلٍ. أَنَا أَنْتَظِرُ قَهْوَتِي.",
+      "recognized": "ممتاقة لين. ممتاقة لكاقة.",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 11.659231034107506,
+      "input_sha256": "ec8279cd07379516c4bd5b43710fc0fa8adf77d46db5ea3c233cc4acb2ba6a88"
+    },
+    {
+      "act": "pair_reply",
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "caption": "بعد قليل. أنا أنتظر قهوتي.",
+      "spoken_text": "بَعْدَ قَلِيلٍ. أَنَا أَنْتَظِرُ قَهْوَتِي.",
+      "recognized": "ممتقى ليلين\nأمتقى لوقت أكثر",
+      "raw_wer": 1.0,
+      "normalized_wer": 1.0,
+      "wall_seconds": 8.115122486837208,
+      "input_sha256": "ec8279cd07379516c4bd5b43710fc0fa8adf77d46db5ea3c233cc4acb2ba6a88"
+    }
+  ],
+  "means": [
+    {
+      "tts_variant": "unvowelled",
+      "model": "tiny",
+      "samples": 6,
+      "mean_normalized_wer": 0.9583333333333334,
+      "mean_raw_wer": 0.9583333333333334
+    },
+    {
+      "tts_variant": "unvowelled",
+      "model": "base-q5_1",
+      "samples": 6,
+      "mean_normalized_wer": 0.9249999999999999,
+      "mean_raw_wer": 0.9249999999999999
+    },
+    {
+      "tts_variant": "vowelled",
+      "model": "tiny",
+      "samples": 6,
+      "mean_normalized_wer": 1.05,
+      "mean_raw_wer": 1.05
+    },
+    {
+      "tts_variant": "vowelled",
+      "model": "base-q5_1",
+      "samples": 6,
+      "mean_normalized_wer": 0.9375,
+      "mean_raw_wer": 0.9375
+    }
+  ],
+  "base_model": {
+    "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base-q5_1.bin",
+    "bytes": 59707625,
+    "sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898",
+    "license": "MIT",
+    "state": "FREE_SELECTED",
+    "purpose": "Compare actual Arabic synthetic-speech recognition; no human voice corpus"
+  },
+  "human_intelligibility": "NOT_RUN",
+  "native_device": "NOT_RUN",
+  "quality_gate": "NOT_PASSED",
+  "scoring": "Whitespace/punctuation WER; normalized score additionally removes Arabic combining marks/tatweel, normalizes alef variants and alef maqsura.",
+  "limitations": [
+    "Six scripted synthetic lines only. Vowelled condition changes explicit pronunciation and speed155to140; it is a combined intervention, not isolated causal attribution.",
+    "A recognizer agreement score is not proof of human intelligibility or voice naturalness."
+  ]
+}

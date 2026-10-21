@@ -1,0 +1,66 @@
+{
+  "asset": "SubtropicalPalm",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -2.2566683292388916,
+          2.25249981880188
+        ],
+        [
+          -2.2567591667175293,
+          2.256899833679199
+        ],
+        [
+          -0.023618802428245544,
+          6.038647174835205
+        ]
+      ],
+      "vertices": 30552
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -2.2566683292388916,
+          2.25249981880188
+        ],
+        [
+          -2.2567591667175293,
+          2.256899833679199
+        ],
+        [
+          -0.023618802428245544,
+          6.038647174835205
+        ]
+      ],
+      "vertices": 30552
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -2.2566683292388916,
+          2.25249981880188
+        ],
+        [
+          -2.2567591667175293,
+          2.256899833679199
+        ],
+        [
+          -0.023618802428245544,
+          6.038647174835205
+        ]
+      ],
+      "vertices": 30552
+    }
+  ],
+  "preview": "evidence/content/SubtropicalPalm-source-preview.png"
+}

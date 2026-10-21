@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44",
+  "filename": "a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav",
+  "event_id": "evt:arrival:en:socialize",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:en:socialize",
+    "speaker": "npc:bo",
+    "language": "en",
+    "act": "socialize",
+    "slots": {}
+  },
+  "caption": "It is good to have some company.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "en-us",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "en_dict": "20ac462c63f9c0a7b8dc124ca02262c3ecfea550b723f29e10f177339ebeda10",
+      "lang/gmw/en-US": "e522a079c166599f1c9549370979e680ca5dbb62fb93ebd130dc0409f1e66ee8"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d",
+  "synthesis_seconds": 0.03438113396987319,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 47419,
+  "duration_seconds": 2.1505215419501136,
+  "peak_abs": 20862,
+  "pcm_rms": 0.06541696928720164,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

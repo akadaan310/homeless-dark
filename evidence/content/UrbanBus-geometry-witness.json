@@ -1,0 +1,66 @@
+{
+  "asset": "UrbanBus",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -4.434999942779541,
+          4.510000228881836
+        ],
+        [
+          0.019999980926513672,
+          2.7799999713897705
+        ]
+      ],
+      "vertices": 13881
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -4.434999942779541,
+          4.510000228881836
+        ],
+        [
+          0.019999980926513672,
+          2.7799999713897705
+        ]
+      ],
+      "vertices": 13881
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -4.434999942779541,
+          4.510000228881836
+        ],
+        [
+          0.019999980926513672,
+          2.7799999713897705
+        ]
+      ],
+      "vertices": 13881
+    }
+  ],
+  "preview": "evidence/content/UrbanBus-source-preview.png"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "homeless.vehicle-content/1",
+  "asset": "CivicSedan",
+  "license": "CC0-1.0",
+  "source": "original authored geometry",
+  "brand": "fictional unbranded",
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y",
+    "right": "+X"
+  },
+  "source_triangles": 55156,
+  "mesh_objects": 476,
+  "doors": [
+    "LeftFrontDoor",
+    "LeftRearDoor",
+    "RightFrontDoor",
+    "RightRearDoor"
+  ],
+  "wheels": [
+    "LeftFrontWheel",
+    "LeftRearWheel",
+    "RightFrontWheel",
+    "RightRearWheel"
+  ],
+  "seats": 4,
+  "wheel_radius_m": 0.335,
+  "wheelbase_m": 2.86,
+  "steering_transform": "SteeringWheel",
+  "seat_anchor_suffix": "Seat_OccupantAnchor",
+  "door_hinge_axis": "local Z before FBX conversion",
+  "wheel_spin_axis": "local X",
+  "native_import": "NOT_RUN",
+  "drivable_status": "display_only_until_native_dynamics_and_seating_pass",
+  "cinematic_visual_gate": "NOT_RUN",
+  "source_review": "pending generated preview",
+  "limitations": [
+    "Original source master has no optimized LODs yet.",
+    "Wheel/body arch penetration and seat/door fit require native collision and motion review.",
+    "Animation shows rig mechanics only; vehicle physics, traffic and authority belong to the game adapter."
+  ]
+}

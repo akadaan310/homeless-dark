@@ -1,0 +1,72 @@
+{
+  "packages": 100,
+  "omitted_graphics_vendor_packages": [
+    "libgl1-mesa-dri",
+    "libglx-mesa0"
+  ],
+  "scope": "isolated loader/headless dependencies only",
+  "installed_upper_bound_bytes": 114250752,
+  "download_bytes": 34460564,
+  "largest": [
+    [
+      "libicu70",
+      35270656
+    ],
+    [
+      "libc6",
+      13921280
+    ],
+    [
+      "libgtk-3-0",
+      10526720
+    ],
+    [
+      "libssl3",
+      5981184
+    ],
+    [
+      "libglib2.0-0",
+      4193280
+    ],
+    [
+      "libstdc++6",
+      2821120
+    ],
+    [
+      "shared-mime-info",
+      2809856
+    ],
+    [
+      "libgnutls30",
+      2351104
+    ],
+    [
+      "libxml2",
+      2148352
+    ],
+    [
+      "libunistring2",
+      1787904
+    ],
+    [
+      "libx11-6",
+      1420288
+    ],
+    [
+      "libepoxy0",
+      1413120
+    ],
+    [
+      "libgcrypt20",
+      1395712
+    ],
+    [
+      "libcairo2",
+      1383424
+    ],
+    [
+      "libp11-kit0",
+      1323008
+    ]
+  ]
+}

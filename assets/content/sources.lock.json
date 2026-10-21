@@ -1,0 +1,266 @@
+{
+  "schema": "homeless.content-sources/1",
+  "files": [
+    {
+      "path": "assets/content/makehuman/LICENSE.md",
+      "bytes": 3598,
+      "sha256": "edd99571ca62698f78c943fd4fffb159a413c315fa0d4819d3cec5cadaf8b4f1",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.md",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/LICENSE.ASSETS.md",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.ASSETS.md",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/makehuman/data/3dobjs/base.obj",
+      "bytes": 1749303,
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/3dobjs/base.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/makehuman/data/rigs/default.mhskel",
+      "bytes": 117790,
+      "sha256": "99f179bce0aa850b45d4191a1d0d234c5851f881c057439470ded3bddf729a24",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/rigs/default.mhskel",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/makehuman/data/rigs/default_weights.mhw",
+      "bytes": 897521,
+      "sha256": "0f3641d651ae3d00ad6b4ccee43142edb109d3bd909d27d9e4139ef1beed8625",
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/rigs/default_weights.mhw",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/young_caucasian_male/young_lightskinned_male_diffuse.png",
+      "bytes": 3693828,
+      "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#skins/young_caucasian_male/young_lightskinned_male_diffuse.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/young_caucasian_male/young_caucasian_male.mhmat",
+      "bytes": 1462,
+      "sha256": "6eda60b07ff2afbde078a2535ef3913593d84e9de92b2eb76c30f396a181fe2e",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#skins/young_caucasian_male/young_caucasian_male.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/middleage_african_male/middleage_darkskinned_male_diffuse.png",
+      "bytes": 3046762,
+      "sha256": "ced478cfdd2b86391f0f92a4408b287ad70adb0dd0e9271ba606d0b028b47c6b",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#skins/middleage_african_male/middleage_darkskinned_male_diffuse.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/middleage_african_male/middleage_african_male.mhmat",
+      "bytes": 1465,
+      "sha256": "865b23cde5d2116107f9e8ce3a2ec2315440ed103c301ec8bc0e1d85e29830c9",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#skins/middleage_african_male/middleage_african_male.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.mhclo",
+      "bytes": 119049,
+      "sha256": "7994e38f7cdcee0bd5f55101660badcce0162fcdfc7f432218dd1eb301626252",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/shoes01/shoes01.mhclo",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01_diffuse.png",
+      "bytes": 1335772,
+      "sha256": "50c9a406a7f1cb6aa7b42912348e78f09d0252aa3963c8229cf18dfe8353cdbf",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/shoes01/shoes01_diffuse.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01_normal.png",
+      "bytes": 875473,
+      "sha256": "a9bfd7223e98b8f93100e89596135e3a94e6044f9db11b4d23cec625c37a4599",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/shoes01/shoes01_normal.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.mhw",
+      "bytes": 324727,
+      "sha256": "b377d91e6d0264521f672c3990c366b2631103accba4921fc3965c2ed5ce395b",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/shoes01/shoes01.mhw",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.mhmat",
+      "bytes": 1161,
+      "sha256": "db1711e2dfea4dd8c24459643603a190d9a9da603fd26da5542002a73d740be8",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/shoes01/shoes01.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.obj",
+      "bytes": 136910,
+      "sha256": "eac355a842a8eb8ae2f09fac8dd18a877a24ef2521ed2d6bf38559b42ce4b49a",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/shoes01/shoes01.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_diffuse.png",
+      "bytes": 5531728,
+      "sha256": "3fd0bba5dcbdea0ac427f644a6c7c298938f7369b8f96626621ce1e88989394e",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/male_casualsuit01/male_casualsuit01_diffuse.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_normal.png",
+      "bytes": 1738660,
+      "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/male_casualsuit01/male_casualsuit01_normal.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01.mhmat",
+      "bytes": 1345,
+      "sha256": "043b25cefd398261b893d3dae58c81fc3e9633a25a01eafe66963591f5ad6eb6",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/male_casualsuit01/male_casualsuit01.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01.mhclo",
+      "bytes": 570419,
+      "sha256": "78503ed7f56c149843d85e06e1164bc6871ce7319b2ef689237046352cc90de4",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/male_casualsuit01/male_casualsuit01.mhclo",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_ao.png",
+      "bytes": 785596,
+      "sha256": "9402d75d71318ef3ad90ee59f8b8688effefd13b3ec56423330e005bed5cd6c0",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/male_casualsuit01/male_casualsuit01_ao.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01.obj",
+      "bytes": 699545,
+      "sha256": "001921d237e408c35103720d046aa37f9c5512db1a179a5ede6a065cd504ba89",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#clothes/male_casualsuit01/male_casualsuit01.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth_base.obj",
+      "bytes": 313110,
+      "sha256": "f55198069e55d360c4b4cc7ecb1cc292b2c7665753ab8b65eabf46a8783f2875",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#teeth/teeth_base/teeth_base.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth_base.mhclo",
+      "bytes": 263220,
+      "sha256": "9edc3deff3bb97a95c791878064dd069a74a38f95ea6d9707a9ba68d888b3b5c",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#teeth/teeth_base/teeth_base.mhclo",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth.mhmat",
+      "bytes": 1086,
+      "sha256": "3baeff72d9eb06ca16c3cff7ca2ab304216717dee247e0d88f1dc33037c8320e",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#teeth/teeth_base/teeth.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth.png",
+      "bytes": 1799930,
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#teeth/teeth_base/teeth.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01.mhclo",
+      "bytes": 201588,
+      "sha256": "ae1ffaa98da5753b803b3a173bede4895d2215e6bb94763f3765a71f0e984f35",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#hair/short01/short01.mhclo",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01.mhmat",
+      "bytes": 1314,
+      "sha256": "01e2e12ce3f3d3c859225456660acadcdd27d4f4b4d888bcbd6f11998cadd975",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#hair/short01/short01.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01.obj",
+      "bytes": 194450,
+      "sha256": "d998d8416f9b5d5591f1d756f4d292288d000a6951bc0f4d2e8e72727bbc44fa",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#hair/short01/short01.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01_diffuse.png",
+      "bytes": 2354146,
+      "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#hair/short01/short01_diffuse.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01.obj",
+      "bytes": 17155,
+      "sha256": "12f4a6a9f85abae2ce3b4aa42d8119e1f679a437e0e89cb928ec68b29a7a1587",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#tongue/tongue01/tongue01.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01.mhmat",
+      "bytes": 1261,
+      "sha256": "7769df66c69b8c09a0ec713d70d8381abbb08ac82207369f5413970495cd4340",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#tongue/tongue01/tongue01.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01_diffuse.png",
+      "bytes": 625419,
+      "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#tongue/tongue01/tongue01_diffuse.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01.mhclo",
+      "bytes": 2113,
+      "sha256": "61d825899cd78ff3146fa1324118060cb44b095fae1427d408c199ade74e3c9e",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#tongue/tongue01/tongue01.mhclo",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/materials/brown.mhmat",
+      "bytes": 1247,
+      "sha256": "4abad93ce50541c08127721e77bce035640c9f16bed16cd0f5524b1cd5908465",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#eyes/materials/brown.mhmat",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/materials/brown_eye.png",
+      "bytes": 610817,
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#eyes/materials/brown_eye.png",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/high-poly/high-poly.obj",
+      "bytes": 100882,
+      "sha256": "da2493215b708a344c33dc72f2a9a5b8fa985dcc5a70ad3b208995cf871da8e1",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#eyes/high-poly/high-poly.obj",
+      "license": "CC0-1.0"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/high-poly/high-poly.mhclo",
+      "bytes": 72490,
+      "sha256": "b183cfe37120ab726f9b3f2ea6cd3a64c44ce7b4bd91a77c841cf70c04f83a0d",
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip#eyes/high-poly/high-poly.mhclo",
+      "license": "CC0-1.0"
+    }
+  ],
+  "archive_bytes": 280737770,
+  "source_master_resolution_preserved": true
+}

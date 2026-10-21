@@ -1,0 +1,29 @@
+{
+  "schema": "dark.neural-speech-probe/1",
+  "model": "SILMA independent bilingual pretrain, licensed Apache-2.0 ONNX export",
+  "caption": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+  "spoken_text": "هل تريد الذهاب إلى المقهى؟ يمكنك الإلغاء في أي وقت.",
+  "act": "offer_ride",
+  "reference_caption": "Welcome. Take your time and look around.",
+  "reference_sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f",
+  "reference_kind": "original formant synthetic voice; no real person",
+  "voice_imitation_requested": false,
+  "language": "ar",
+  "sample_rate": 24000,
+  "audio_sha256": "9b71fdf36a31e6c0ad4a31355e3fcc6f0cb7389a86bae22b3b7dc99d7a3dc373",
+  "audio_seconds": 4.096,
+  "synthesis_seconds": 267.7483542468399,
+  "recognized": "هل تريد الذهاب إلى المقها? يمكنك الألغاء في أي وقت",
+  "normalized_wer": 0.1,
+  "human_intelligibility": "NOT_RUN",
+  "native_device": "NOT_RUN",
+  "public_clip_selection": "experimental_not_automatically_selected",
+  "runtime": {
+    "onnxruntime": "1.23.2",
+    "numpy": "2.2.6",
+    "provider": "CPUExecutionProvider",
+    "threads": 2,
+    "seed": 85391,
+    "euler_calls": 31
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "building": {
+    "id": "dark.life.building",
+    "version": 1,
+    "alphabet": [
+      "decide_entry",
+      "observe",
+      "set_light"
+    ],
+    "state": {
+      "light": 0.0,
+      "door": "closed",
+      "capacity": 10,
+      "occupants": []
+    },
+    "grammar": {
+      "set_light": {
+        "level": "number 0..1"
+      },
+      "decide_entry": {
+        "visitor": "actor ID"
+      },
+      "observe": {
+        "observation": "typed kind/subject/tick/payload with causal ID"
+      }
+    },
+    "contextual_ranking": {
+      "method": "explicit deterministic rules",
+      "implementation": "LifeRegistry._effect",
+      "no_equilibrium_or_intelligence_claim": true
+    },
+    "denotation": {
+      "layer": "synthetic simulation only",
+      "source_geometry": "immutable"
+    },
+    "transition": "LifeRegistry.apply",
+    "projections": {
+      "inspection": "LifeRegistry.inspect",
+      "effect": "result.witness.effect"
+    },
+    "invariants": [
+      "stable identity",
+      "source geometry unchanged",
+      "bounded memory/observations/events",
+      "monotonic trusted simulation tick",
+      "exact scoped authority"
+    ],
+    "dependencies": [
+      "dark.life-state/1",
+      "caller-owned World transaction authority"
+    ],
+    "effect_types": [
+      "agentic",
+      "reactive"
+    ],
+    "capability_requirements": "exact life:<entity-id>:<ability>; caller supplies currently admitted scopes",
+    "clock": {
+      "source": "caller authoritative simulation tick",
+      "wall_clock_reads": false
+    },
+    "resource_budget": {
+      "entities": 4096,
+      "snapshot_bytes": 1048576,
+      "events": 1024,
+      "memory_per_entity": 64,
+      "observations_per_entity": 64,
+      "units_per_60_ticks": 100,
+      "abilities": {
+        "set_light": {
+          "cost": 2,
+          "cooldown_ticks": 5
+        },
+        "decide_entry": {
+          "cost": 3,
+          "cooldown_ticks": 1
+        }
+      }
+    },
+    "verifier": "LifeRegistry._validate_snapshot and typed ability validators",
+    "witness": "causal event with revision, actor, capability, prior hash, observation IDs and effect",
+    "migration": {
+      "schema": "dark.life-state/1",
+      "unsupported_schema": "typed refusal; no reseed"
+    }
+  },
+  "tree": {
+    "id": "dark.life.tree",
+    "version": 1,
+    "alphabet": [
+      "glow",
+      "observe",
+      "react_weather"
+    ],
+    "state": {
+      "moisture": 0.4,
+      "glow": 0.0
+    },
+    "grammar": {
+      "react_weather": {},
+      "glow": {
+        "level": "number 0..0.2"
+      },
+      "observe": {
+        "observation": "typed kind/subject/tick/payload with causal ID"
+      }
+    },
+    "contextual_ranking": {
+      "method": "explicit deterministic rules",
+      "implementation": "LifeRegistry._effect",
+      "no_equilibrium_or_intelligence_claim": true
+    },
+    "denotation": {
+      "layer": "synthetic simulation only",
+      "source_geometry": "immutable"
+    },
+    "transition": "LifeRegistry.apply",
+    "projections": {
+      "inspection": "LifeRegistry.inspect",
+      "effect": "result.witness.effect"
+    },
+    "invariants": [
+      "stable identity",
+      "source geometry unchanged",
+      "bounded memory/observations/events",
+      "monotonic trusted simulation tick",
+      "exact scoped authority"
+    ],
+    "dependencies": [
+      "dark.life-state/1",
+      "caller-owned World transaction authority"
+    ],
+    "effect_types": [
+      "expressive",
+      "reactive"
+    ],
+    "capability_requirements": "exact life:<entity-id>:<ability>; caller supplies currently admitted scopes",
+    "clock": {
+      "source": "caller authoritative simulation tick",
+      "wall_clock_reads": false
+    },
+    "resource_budget": {
+      "entities": 4096,
+      "snapshot_bytes": 1048576,
+      "events": 1024,
+      "memory_per_entity": 64,
+      "observations_per_entity": 64,
+      "units_per_60_ticks": 100,
+      "abilities": {
+        "react_weather": {
+          "cost": 2,
+          "cooldown_ticks": 10
+        },
+        "glow": {
+          "cost": 1,
+          "cooldown_ticks": 1
+        }
+      }
+    },
+    "verifier": "LifeRegistry._validate_snapshot and typed ability validators",
+    "witness": "causal event with revision, actor, capability, prior hash, observation IDs and effect",
+    "migration": {
+      "schema": "dark.life-state/1",
+      "unsupported_schema": "typed refusal; no reseed"
+    }
+  },
+  "cup": {
+    "id": "dark.life.cup",
+    "version": 1,
+    "alphabet": [
+      "nudge",
+      "observe"
+    ],
+    "state": {
+      "offset_xz_m": [
+        0.0,
+        0.0
+      ]
+    },
+    "grammar": {
+      "nudge": {
+        "dx": "number -0.25..0.25 metres",
+        "dz": "number -0.25..0.25 metres"
+      },
+      "observe": {
+        "observation": "typed kind/subject/tick/payload with causal ID"
+      }
+    },
+    "contextual_ranking": {
+      "method": "explicit deterministic rules",
+      "implementation": "LifeRegistry._effect",
+      "no_equilibrium_or_intelligence_claim": true
+    },
+    "denotation": {
+      "layer": "synthetic simulation only",
+      "source_geometry": "immutable"
+    },
+    "transition": "LifeRegistry.apply",
+    "projections": {
+      "inspection": "LifeRegistry.inspect",
+      "effect": "result.witness.effect"
+    },
+    "invariants": [
+      "stable identity",
+      "source geometry unchanged",
+      "bounded memory/observations/events",
+      "monotonic trusted simulation tick",
+      "exact scoped authority"
+    ],
+    "dependencies": [
+      "dark.life-state/1",
+      "caller-owned World transaction authority"
+    ],
+    "effect_types": [
+      "reactive"
+    ],
+    "capability_requirements": "exact life:<entity-id>:<ability>; caller supplies currently admitted scopes",
+    "clock": {
+      "source": "caller authoritative simulation tick",
+      "wall_clock_reads": false
+    },
+    "resource_budget": {
+      "entities": 4096,
+      "snapshot_bytes": 1048576,
+      "events": 1024,
+      "memory_per_entity": 64,
+      "observations_per_entity": 64,
+      "units_per_60_ticks": 100,
+      "abilities": {
+        "nudge": {
+          "cost": 1,
+          "cooldown_ticks": 1
+        }
+      }
+    },
+    "verifier": "LifeRegistry._validate_snapshot and typed ability validators",
+    "witness": "causal event with revision, actor, capability, prior hash, observation IDs and effect",
+    "migration": {
+      "schema": "dark.life-state/1",
+      "unsupported_schema": "typed refusal; no reseed"
+    }
+  },
+  "car": {
+    "id": "dark.life.car",
+    "version": 1,
+    "alphabet": [
+      "decide_ride",
+      "observe",
+      "signal"
+    ],
+    "state": {
+      "signal": "off",
+      "energy": 1.0,
+      "last_offer": null
+    },
+    "grammar": {
+      "decide_ride": {
+        "requester": "actor ID"
+      },
+      "signal": {
+        "direction": "left|right|hazard|off"
+      },
+      "observe": {
+        "observation": "typed kind/subject/tick/payload with causal ID"
+      }
+    },
+    "contextual_ranking": {
+      "method": "explicit deterministic rules",
+      "implementation": "LifeRegistry._effect",
+      "no_equilibrium_or_intelligence_claim": true
+    },
+    "denotation": {
+      "layer": "synthetic simulation only",
+      "source_geometry": "immutable"
+    },
+    "transition": "LifeRegistry.apply",
+    "projections": {
+      "inspection": "LifeRegistry.inspect",
+      "effect": "result.witness.effect"
+    },
+    "invariants": [
+      "stable identity",
+      "source geometry unchanged",
+      "bounded memory/observations/events",
+      "monotonic trusted simulation tick",
+      "exact scoped authority"
+    ],
+    "dependencies": [
+      "dark.life-state/1",
+      "caller-owned World transaction authority"
+    ],
+    "effect_types": [
+      "agentic",
+      "expressive"
+    ],
+    "capability_requirements": "exact life:<entity-id>:<ability>; caller supplies currently admitted scopes",
+    "clock": {
+      "source": "caller authoritative simulation tick",
+      "wall_clock_reads": false
+    },
+    "resource_budget": {
+      "entities": 4096,
+      "snapshot_bytes": 1048576,
+      "events": 1024,
+      "memory_per_entity": 64,
+      "observations_per_entity": 64,
+      "units_per_60_ticks": 100,
+      "abilities": {
+        "decide_ride": {
+          "cost": 3,
+          "cooldown_ticks": 2
+        },
+        "signal": {
+          "cost": 1,
+          "cooldown_ticks": 1
+        }
+      }
+    },
+    "verifier": "LifeRegistry._validate_snapshot and typed ability validators",
+    "witness": "causal event with revision, actor, capability, prior hash, observation IDs and effect",
+    "migration": {
+      "schema": "dark.life-state/1",
+      "unsupported_schema": "typed refusal; no reseed"
+    }
+  },
+  "star": {
+    "id": "dark.life.star",
+    "version": 1,
+    "alphabet": [
+      "observe",
+      "twinkle"
+    ],
+    "state": {
+      "magnitude_offset": 0.0
+    },
+    "grammar": {
+      "twinkle": {
+        "magnitude_offset": "number -0.2..0.2"
+      },
+      "observe": {
+        "observation": "typed kind/subject/tick/payload with causal ID"
+      }
+    },
+    "contextual_ranking": {
+      "method": "explicit deterministic rules",
+      "implementation": "LifeRegistry._effect",
+      "no_equilibrium_or_intelligence_claim": true
+    },
+    "denotation": {
+      "layer": "synthetic simulation only",
+      "source_geometry": "immutable"
+    },
+    "transition": "LifeRegistry.apply",
+    "projections": {
+      "inspection": "LifeRegistry.inspect",
+      "effect": "result.witness.effect"
+    },
+    "invariants": [
+      "stable identity",
+      "source geometry unchanged",
+      "bounded memory/observations/events",
+      "monotonic trusted simulation tick",
+      "exact scoped authority"
+    ],
+    "dependencies": [
+      "dark.life-state/1",
+      "caller-owned World transaction authority"
+    ],
+    "effect_types": [
+      "expressive"
+    ],
+    "capability_requirements": "exact life:<entity-id>:<ability>; caller supplies currently admitted scopes",
+    "clock": {
+      "source": "caller authoritative simulation tick",
+      "wall_clock_reads": false
+    },
+    "resource_budget": {
+      "entities": 4096,
+      "snapshot_bytes": 1048576,
+      "events": 1024,
+      "memory_per_entity": 64,
+      "observations_per_entity": 64,
+      "units_per_60_ticks": 100,
+      "abilities": {
+        "twinkle": {
+          "cost": 1,
+          "cooldown_ticks": 1
+        }
+      }
+    },
+    "verifier": "LifeRegistry._validate_snapshot and typed ability validators",
+    "witness": "causal event with revision, actor, capability, prior hash, observation IDs and effect",
+    "migration": {
+      "schema": "dark.life-state/1",
+      "unsupported_schema": "typed refusal; no reseed"
+    }
+  },
+  "group": {
+    "id": "dark.life.group",
+    "version": 1,
+    "alphabet": [
+      "join",
+      "leave",
+      "observe",
+      "propose_pattern"
+    ],
+    "state": {
+      "members": {},
+      "last_pattern": null
+    },
+    "grammar": {
+      "join": {
+        "member": "self identity",
+        "role": "participant|observer"
+      },
+      "leave": {
+        "member": "self identity"
+      },
+      "propose_pattern": {
+        "pattern": "welcome|quiet"
+      },
+      "observe": {
+        "observation": "typed kind/subject/tick/payload with causal ID"
+      }
+    },
+    "contextual_ranking": {
+      "method": "explicit deterministic rules",
+      "implementation": "LifeRegistry._effect",
+      "no_equilibrium_or_intelligence_claim": true
+    },
+    "denotation": {
+      "layer": "synthetic simulation only",
+      "source_geometry": "immutable"
+    },
+    "transition": "LifeRegistry.apply",
+    "projections": {
+      "inspection": "LifeRegistry.inspect",
+      "effect": "result.witness.effect"
+    },
+    "invariants": [
+      "stable identity",
+      "source geometry unchanged",
+      "bounded memory/observations/events",
+      "monotonic trusted simulation tick",
+      "exact scoped authority"
+    ],
+    "dependencies": [
+      "dark.life-state/1",
+      "caller-owned World transaction authority"
+    ],
+    "effect_types": [
+      "agentic",
+      "reactive"
+    ],
+    "capability_requirements": "exact life:<entity-id>:<ability>; caller supplies currently admitted scopes",
+    "clock": {
+      "source": "caller authoritative simulation tick",
+      "wall_clock_reads": false
+    },
+    "resource_budget": {
+      "entities": 4096,
+      "snapshot_bytes": 1048576,
+      "events": 1024,
+      "memory_per_entity": 64,
+      "observations_per_entity": 64,
+      "units_per_60_ticks": 100,
+      "abilities": {
+        "join": {
+          "cost": 1,
+          "cooldown_ticks": 1
+        },
+        "leave": {
+          "cost": 1,
+          "cooldown_ticks": 1
+        },
+        "propose_pattern": {
+          "cost": 2,
+          "cooldown_ticks": 2
+        }
+      }
+    },
+    "verifier": "LifeRegistry._validate_snapshot and typed ability validators",
+    "witness": "causal event with revision, actor, capability, prior hash, observation IDs and effect",
+    "migration": {
+      "schema": "dark.life-state/1",
+      "unsupported_schema": "typed refusal; no reseed"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "scope": [
+    "packages/dark_server/continuity.py",
+    "tests/server/test_continuity.py",
+    "tools/darkctl.py"
+  ],
+  "reviewer": "hero_speech independent read-only review",
+  "critical_race_result": "No additional race defect found in scoped review",
+  "verified_design": [
+    "SQLite attempted marker commits before network dispatch",
+    "Cancellation refuses attempted or unknown outcomes",
+    "Delayed failure cannot replace a confirmed committed receipt",
+    "Expired unknown attempts are not falsely labelled never dispatched",
+    "CLI binds actor through current authenticated observe response"
+  ],
+  "finding": {
+    "issue": "malformed list operation/verb raised raw TypeError",
+    "status": "fixed with string guards, regression re-run"
+  },
+  "validation": {
+    "command": "python3 -m unittest discover -s tests/server -p test_continuity.py -v",
+    "tests": 10,
+    "result": "PASS"
+  },
+  "limits": "Trust in authenticated client receipts and World exact-request admission remains outside Outbox; not a complete protocol/security audit."
+}

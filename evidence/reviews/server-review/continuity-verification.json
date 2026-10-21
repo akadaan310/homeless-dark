@@ -1,0 +1,10 @@
+{
+  "scope": "Dispatch/cancel race, durable unknown outcomes, conservative v1 migration and receipt reconciliation",
+  "tests": 10,
+  "status": "PASS",
+  "independent_review": "PASS; evidence/content/continuity-review.json",
+  "files": {
+    "packages/dark_server/continuity.py": "f6d4c4bb7275cbfb3eb9bbb33a452a0c7949a5a2e74e32620f2cbff89e008ce0",
+    "tests/server/test_continuity.py": "bd9bf1292e5117641fb628f5cd0071c5d69a6f85ab0156878eb87556fed9cd09"
+  }
+}

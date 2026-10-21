@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>UNITY_ANDROID;UNITY_6000_1_OR_NEWER;ENABLE_IL2CPP</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../packages/com.homeless.dark/Dark.Core.csproj" />
+    <Reference Include="$(UnityManagedDir)/UnityEngine/UnityEngine.dll" />
+    <Reference Include="$(UnityManagedDir)/UnityEngine/UnityEngine.*.dll" />
+    <Compile Include="../../../unity/Assets/HOMELESS/Runtime/**/*.cs" Link="Runtime/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+  <Target Name="RequireRealUnityReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(UnityManagedDir)' == '' Or !Exists('$(UnityManagedDir)/UnityEngine/UnityEngine.CoreModule.dll')"
+           Text="Set UnityManagedDir to Managed from the verified pinned official Editor; no generated engine stubs are accepted." />
+  </Target>
+</Project>

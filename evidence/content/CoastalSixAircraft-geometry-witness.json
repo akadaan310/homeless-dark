@@ -1,0 +1,66 @@
+{
+  "asset": "CoastalSixAircraft",
+  "renderer": "Blender Workbench studio/texture under Xvfb/Mesa",
+  "native_unity": false,
+  "pbr_lighting_acceptance": false,
+  "frames": [
+    {
+      "clip": "mechanics",
+      "frame": 1,
+      "bounds_m": [
+        [
+          -5.099999904632568,
+          5.099999904632568
+        ],
+        [
+          -3.695000171661377,
+          3.5999999046325684
+        ],
+        [
+          -5.551115123125783e-17,
+          2.950000047683716
+        ]
+      ],
+      "vertices": 12494
+    },
+    {
+      "clip": "mechanics",
+      "frame": 30,
+      "bounds_m": [
+        [
+          -5.099999904632568,
+          5.099999904632568
+        ],
+        [
+          -3.695000171661377,
+          3.5999999046325684
+        ],
+        [
+          -5.551115123125783e-17,
+          2.950000047683716
+        ]
+      ],
+      "vertices": 12494
+    },
+    {
+      "clip": "mechanics",
+      "frame": 61,
+      "bounds_m": [
+        [
+          -5.099999904632568,
+          5.099999904632568
+        ],
+        [
+          -3.695000171661377,
+          3.5999999046325684
+        ],
+        [
+          -5.551115123125783e-17,
+          2.950000047683716
+        ]
+      ],
+      "vertices": 12494
+    }
+  ],
+  "preview": "evidence/content/CoastalSixAircraft-source-preview.png"
+}

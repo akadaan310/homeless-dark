@@ -1,0 +1,43 @@
+{
+  "name": "CoastalSixAircraft",
+  "family": "small passenger aircraft",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 24400,
+  "mesh_objects": 45,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -5.099999904632568,
+      5.099999904632568
+    ],
+    [
+      -3.695000171661377,
+      3.5999999046325684
+    ],
+    [
+      -5.551115123125783e-17,
+      2.950000047683716
+    ]
+  ],
+  "attachments": {
+    "seats": 6,
+    "pilot": "PilotSeat",
+    "propeller": "Propeller",
+    "flaps": [
+      "Flap_-1",
+      "Flap_1"
+    ]
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

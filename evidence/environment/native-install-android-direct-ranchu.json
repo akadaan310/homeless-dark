@@ -1,0 +1,31 @@
+{
+  "command": [
+    "qemu-x86_64",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "-E",
+    "LD_LIBRARY_PATH=/tmp/homeless-native/sdk/emulator/lib64",
+    "/tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+    "-qemu",
+    "-machine",
+    "ranchu",
+    "-cpu",
+    "cortex-a57",
+    "-m",
+    "128",
+    "-nodefaults",
+    "-S",
+    "-display",
+    "none",
+    "-monitor",
+    "none",
+    "-serial",
+    "null",
+    "-no-audio",
+    "-qmp",
+    "stdio"
+  ],
+  "exit_code": 2,
+  "stdout": "Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)\nERROR        | You did not specify a virtual device name, and the system\ndirectory could not be found.\n\nIf you are an Android SDK user, please use '@<name>' or '-avd <name>'\nto start a given virtual device (use -list-avds to print available ones).\n\nOtherwise, follow the instructions in -help-disk-images to start the emulator\n\n",
+  "stderr": "**\nERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)\n[424702:424702:20261021,104223.234116:WARNING spawn_subprocess.cc:247] intermediate process terminated by signal 5 (Trace/breakpoint trap) (core dumped)\n"
+}

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>UNITY_EDITOR;UNITY_EDITOR_LINUX;UNITY_6000_1_OR_NEWER</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../UnityApiCompile/UnityApiCompile.csproj" />
+    <Reference Include="$(UnityManagedDir)/UnityEngine/*.dll" />
+    <Reference Include="$(UnityTemplateAssemblies)/Unity.RenderPipelines.*.dll" />
+    <Reference Include="$(UnityTemplateAssemblies)/Unity.Mathematics.dll" />
+    <Reference Include="$(UnityTemplateAssemblies)/Unity.Collections.dll" />
+    <Reference Include="$(UnityTemplateAssemblies)/Unity.Burst.dll" />
+    <Compile Include="../../../unity/Assets/HOMELESS/Editor/**/*.cs" Link="Editor/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+  <Target Name="RequireRealUnityEditorReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(UnityManagedDir)' == '' Or !Exists('$(UnityManagedDir)/UnityEditor.dll')"
+           Text="Set UnityManagedDir to the pinned official Editor Managed directory." />
+    <Error Condition="'$(UnityTemplateAssemblies)' == '' Or !Exists('$(UnityTemplateAssemblies)/Unity.RenderPipelines.Universal.Runtime.dll')"
+           Text="Set UnityTemplateAssemblies to the pinned official 3D template ScriptAssemblies; stubs are not accepted." />
+  </Target>
+</Project>

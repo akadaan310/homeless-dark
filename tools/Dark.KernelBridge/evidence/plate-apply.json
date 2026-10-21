@@ -1,0 +1,764 @@
+{
+  "schema": "dark.kernel-result/1",
+  "operation": "plate_apply",
+  "status": "ADMITTED",
+  "authority_granted": false,
+  "physical_validation": "NOT_RUN",
+  "reason": "mathematical-snapshot-admitted; physical-validation-NOT_RUN",
+  "revision": 1,
+  "next_state": {
+    "revision": 1,
+    "plates": [
+      {
+        "id": "fictional/tampa/fixed",
+        "center_xyz_m": [
+          0,
+          0,
+          0
+        ],
+        "angle_degrees": 0
+      },
+      {
+        "id": "fictional/tampa/spruce-branches",
+        "center_xyz_m": [
+          0,
+          0,
+          0
+        ],
+        "angle_degrees": 90
+      }
+    ],
+    "nodes": [
+      {
+        "id": "osm/node/10922060653",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          50.419471,
+          -0.000199,
+          -0.443169
+        ]
+      },
+      {
+        "id": "osm/node/1603574189",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "osm/node/2057042478",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -16.353856,
+          -2.1e-05,
+          0.099748
+        ]
+      },
+      {
+        "id": "osm/node/4520926405",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          0.373915,
+          -1.4e-05,
+          -13.342583
+        ]
+      },
+      {
+        "id": "osm/node/4520926406",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          17.790476,
+          -2.5e-05,
+          -0.155133
+        ]
+      },
+      {
+        "id": "osm/node/5941737372",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -54.079897,
+          -0.000229,
+          0.332578
+        ]
+      },
+      {
+        "id": "osm/node/5941737376",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -16.708123,
+          -6.4e-05,
+          -23.039216
+        ]
+      },
+      {
+        "id": "osm/node/5941750923",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -16.402976,
+          -0.000287,
+          58.135554
+        ]
+      },
+      {
+        "id": "osm/node/6851151280",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          2.302544,
+          -0.000536,
+          -82.493508
+        ]
+      },
+      {
+        "id": "osm/node/6851163691",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          1.102069,
+          -0.000123,
+          -39.56231
+        ]
+      },
+      {
+        "id": "osm/node/6903707629",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          -0.01968,
+          -6.4e-05,
+          28.524759
+        ]
+      },
+      {
+        "id": "osm/node/6903707635",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          69.459612,
+          -0.000378,
+          -0.609303
+        ]
+      },
+      {
+        "id": "osm/node/6903707642",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          0.482151,
+          -0.00021,
+          51.619398
+        ]
+      },
+      {
+        "id": "osm/node/6952194838",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -16.540832,
+          -3.6e-05,
+          -13.486636
+        ]
+      },
+      {
+        "id": "osm/node/8066816959",
+        "plate_id": "fictional/tampa/fixed",
+        "local_xyz_m": [
+          -0.00984,
+          -1.7e-05,
+          14.716736
+        ]
+      },
+      {
+        "id": "osm/node/8066816960",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -16.363675,
+          -3.9e-05,
+          15.193268
+        ]
+      },
+      {
+        "id": "osm/node/8066816962",
+        "plate_id": "fictional/tampa/spruce-branches",
+        "local_xyz_m": [
+          -33.120986,
+          -8.6e-05,
+          0.199519
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/4520926406"
+      },
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/6903707635"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926405"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926406"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/8066816959"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/6952194838"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816960"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816962"
+      },
+      {
+        "a": "osm/node/4520926405",
+        "b": "osm/node/6851163691"
+      },
+      {
+        "a": "osm/node/5941737372",
+        "b": "osm/node/8066816962"
+      },
+      {
+        "a": "osm/node/5941737376",
+        "b": "osm/node/6952194838"
+      },
+      {
+        "a": "osm/node/5941750923",
+        "b": "osm/node/8066816960"
+      },
+      {
+        "a": "osm/node/6851151280",
+        "b": "osm/node/6851163691"
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/6903707642"
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/8066816959"
+      }
+    ],
+    "occupants": [
+      {
+        "id": "fixture/person-fixed",
+        "node_id": "osm/node/1603574189",
+        "boundary_straddler": false
+      },
+      {
+        "id": "fixture/person-west",
+        "node_id": "osm/node/2057042478",
+        "boundary_straddler": false
+      },
+      {
+        "id": "fixture/point-object-west",
+        "node_id": "osm/node/2057042478",
+        "boundary_straddler": false
+      }
+    ]
+  },
+  "witness": {
+    "rule": "boundary-edge-replace/v1",
+    "clause": "HD-063/064/065",
+    "operation": "forward",
+    "reachability_changed": true,
+    "embedding_changed": true,
+    "work_bound": 413,
+    "physical_validation": "NOT_RUN",
+    "transports": [
+      {
+        "entity_id": "fixture/person-west",
+        "origin_node": "osm/node/2057042478",
+        "destination_node": "osm/node/2057042478",
+        "authority_witness_id": "fixture-only/not-an-authority-grant",
+        "policy": "RigidCarriage",
+        "start_tick": 100,
+        "end_tick": 220,
+        "curve": {
+          "kind": "rigid_rotation_y",
+          "center_xyz_m": [
+            0,
+            0,
+            0
+          ],
+          "start_angle_degrees": 0,
+          "rotation_degrees": 90,
+          "local_xyz_m": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ],
+          "start_xyz_m": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ],
+          "end_xyz_m": [
+            -0.099748000000001,
+            -2.1e-05,
+            -16.353856
+          ]
+        },
+        "samples": [
+          {
+            "t": 0,
+            "xyz_m": [
+              -16.353856,
+              -2.1e-05,
+              0.099748
+            ]
+          },
+          {
+            "t": 0.25,
+            "xyz_m": [
+              -15.147164743048455,
+              -2.1e-05,
+              -6.166194610875483
+            ]
+          },
+          {
+            "t": 0.5,
+            "xyz_m": [
+              -11.634454963358104,
+              -2.1e-05,
+              -11.49338998893851
+            ]
+          },
+          {
+            "t": 0.75,
+            "xyz_m": [
+              -6.350504882093355,
+              -2.1e-05,
+              -15.07082092902535
+            ]
+          },
+          {
+            "t": 1,
+            "xyz_m": [
+              -0.099748000000001,
+              -2.1e-05,
+              -16.353856
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "fixture/point-object-west",
+        "origin_node": "osm/node/2057042478",
+        "destination_node": "osm/node/2057042478",
+        "authority_witness_id": "fixture-only/not-an-authority-grant",
+        "policy": "RigidCarriage",
+        "start_tick": 100,
+        "end_tick": 220,
+        "curve": {
+          "kind": "rigid_rotation_y",
+          "center_xyz_m": [
+            0,
+            0,
+            0
+          ],
+          "start_angle_degrees": 0,
+          "rotation_degrees": 90,
+          "local_xyz_m": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ],
+          "start_xyz_m": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ],
+          "end_xyz_m": [
+            -0.099748000000001,
+            -2.1e-05,
+            -16.353856
+          ]
+        },
+        "samples": [
+          {
+            "t": 0,
+            "xyz_m": [
+              -16.353856,
+              -2.1e-05,
+              0.099748
+            ]
+          },
+          {
+            "t": 0.25,
+            "xyz_m": [
+              -15.147164743048455,
+              -2.1e-05,
+              -6.166194610875483
+            ]
+          },
+          {
+            "t": 0.5,
+            "xyz_m": [
+              -11.634454963358104,
+              -2.1e-05,
+              -11.49338998893851
+            ]
+          },
+          {
+            "t": 0.75,
+            "xyz_m": [
+              -6.350504882093355,
+              -2.1e-05,
+              -15.07082092902535
+            ]
+          },
+          {
+            "t": 1,
+            "xyz_m": [
+              -0.099748000000001,
+              -2.1e-05,
+              -16.353856
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "source_projection": {
+    "fixture_sha256": "8abae87f2866dd3a43106c9c77f8f65613245c691d2111949b1b53339ec6bfef",
+    "source_sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a",
+    "source_coordinates_changed": false,
+    "coordinate_convention": "x=east,y=up,z=north; bounded WGS84 ENU anchored at osm/node/1603574189",
+    "source_height_validity": "UNKNOWN; projection assumes source ellipsoid h=0 and is not terrain",
+    "source_node_set_recognized": true,
+    "nodes": [
+      {
+        "id": "osm/node/10922060653",
+        "world_xyz_m": [
+          0.4431690000000031,
+          -0.000199,
+          50.419471
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594598,
+          "longitude_deg": -82.5049741,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959918772175655,
+          "longitude_deg": -82.50548199616941,
+          "ellipsoid_height_m": 1.2004747986793518e-06,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/1603574189",
+        "world_xyz_m": [
+          0,
+          0,
+          0
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594638,
+          "longitude_deg": -82.5054865,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959463799999998,
+          "longitude_deg": -82.50548650000002,
+          "ellipsoid_height_m": 9.313225746154785e-10,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/2057042478",
+        "world_xyz_m": [
+          -0.099748000000001,
+          -2.1e-05,
+          -16.353856
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594647,
+          "longitude_deg": -82.5056527,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959316227055975,
+          "longitude_deg": -82.50548751371173,
+          "ellipsoid_height_m": 6.239861249923706e-08,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/4520926405",
+        "world_xyz_m": [
+          0.373915,
+          -1.4e-05,
+          -13.342583
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9593434,
+          "longitude_deg": -82.5054827,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959343400000687,
+          "longitude_deg": -82.50548270000297,
+          "ellipsoid_height_m": 3.166496753692627e-08,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/4520926406",
+        "world_xyz_m": [
+          0.15513300000000108,
+          -2.5e-05,
+          17.790476
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594624,
+          "longitude_deg": -82.5053057,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959624336625737,
+          "longitude_deg": -82.50548492342119,
+          "ellipsoid_height_m": -7.450580596923828e-08,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/5941737372",
+        "world_xyz_m": [
+          -0.3325780000000033,
+          -0.000229,
+          -54.079897
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594668,
+          "longitude_deg": -82.5060361,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.958975797059825,
+          "longitude_deg": -82.50548987988884,
+          "ellipsoid_height_m": 1.3159587979316711e-06,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/5941737376",
+        "world_xyz_m": [
+          23.039216,
+          -6.4e-05,
+          -16.708123
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9592559,
+          "longitude_deg": -82.5056563,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959313030043486,
+          "longitude_deg": -82.50525235874306,
+          "ellipsoid_height_m": -4.367902874946594e-07,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/5941750923",
+        "world_xyz_m": [
+          -58.135554,
+          -0.000287,
+          -16.402975999999995
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9599884,
+          "longitude_deg": -82.5056532,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959315782541747,
+          "longitude_deg": -82.50607731576542,
+          "ellipsoid_height_m": -1.058913767337799e-06,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/6851151280",
+        "world_xyz_m": [
+          2.302544,
+          -0.000536,
+          -82.493508
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9587194,
+          "longitude_deg": -82.5054631,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.958719400000422,
+          "longitude_deg": -82.50546310000254,
+          "ellipsoid_height_m": 3.026798367500305e-07,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/6851163691",
+        "world_xyz_m": [
+          1.102069,
+          -0.000123,
+          -39.56231
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9591068,
+          "longitude_deg": -82.5054753,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959106799996114,
+          "longitude_deg": -82.50547529999517,
+          "ellipsoid_height_m": 3.4831464290618896e-07,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/6903707629",
+        "world_xyz_m": [
+          -0.01968,
+          -6.4e-05,
+          28.524759
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9597212,
+          "longitude_deg": -82.5054867,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959721200000306,
+          "longitude_deg": -82.50548670000325,
+          "ellipsoid_height_m": 7.450580596923828e-08,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/6903707635",
+        "world_xyz_m": [
+          0.6093030000000043,
+          -0.000378,
+          69.459612
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594583,
+          "longitude_deg": -82.5047806,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.96009058544159,
+          "longitude_deg": -82.50548030777577,
+          "ellipsoid_height_m": 1.9548460841178894e-06,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/6903707642",
+        "world_xyz_m": [
+          0.482151,
+          -0.00021,
+          51.619398
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9599296,
+          "longitude_deg": -82.5054816,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959929600004028,
+          "longitude_deg": -82.5054816000033,
+          "ellipsoid_height_m": -1.5459954738616943e-07,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/6952194838",
+        "world_xyz_m": [
+          13.486635999999999,
+          -3.6e-05,
+          -16.540832
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9593421,
+          "longitude_deg": -82.5056546,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959314539764915,
+          "longitude_deg": -82.50534943900152,
+          "ellipsoid_height_m": -2.0675361156463623e-07,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/8066816959",
+        "world_xyz_m": [
+          -0.00984,
+          -1.7e-05,
+          14.716736
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9595966,
+          "longitude_deg": -82.5054866,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959596599996143,
+          "longitude_deg": -82.50548660000152,
+          "ellipsoid_height_m": 5.587935447692871e-08,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/8066816960",
+        "world_xyz_m": [
+          -15.193268000000002,
+          -3.9e-05,
+          -16.363675
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9596009,
+          "longitude_deg": -82.5056528,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959316138365256,
+          "longitude_deg": -82.50564090503576,
+          "ellipsoid_height_m": 1.685693860054016e-07,
+          "synthetic_layer": true
+        }
+      },
+      {
+        "id": "osm/node/8066816962",
+        "world_xyz_m": [
+          -0.19951900000000203,
+          -8.6e-05,
+          -33.120986
+        ],
+        "source_coordinate": {
+          "latitude_deg": 27.9594656,
+          "longitude_deg": -82.5058231,
+          "ellipsoid_height_m": null
+        },
+        "synthetic_coordinate": {
+          "latitude_deg": 27.959164924831533,
+          "longitude_deg": -82.50548852765434,
+          "ellipsoid_height_m": 3.8929283618927e-07,
+          "synthetic_layer": true
+        }
+      }
+    ]
+  },
+  "activation_requires_revalidation": true,
+  "durable_commit_performed": false
+}

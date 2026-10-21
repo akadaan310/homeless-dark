@@ -1,0 +1,23 @@
+test_actual_source_counts_and_world_reconciliation (test_global_layers.GlobalLayersTests) ... ok
+test_allocations_reproduce_committed_bytes_and_no_aggregate_double_count (test_global_layers.GlobalLayersTests) ... ok
+test_antimeridian_and_polar_addresses_consistent (test_global_layers.GlobalLayersTests) ... ok
+test_failed_reproduction_preserves_existing_outputs (test_global_layers.GlobalLayersTests) ... ok
+test_global_environment_actual_land_ocean_lake_and_poles (test_global_layers.GlobalLayersTests) ... ok
+test_missing_estimate_stays_missing_not_zero_or_fabricated (test_global_layers.GlobalLayersTests) ... ok
+test_polygon_holes_boundary_and_geometry_validation (test_global_layers.GlobalLayersTests) ... ok
+test_resolver_rejects_nan_boolean_outside_earth (test_global_layers.GlobalLayersTests) ... ok
+test_source_hashes_and_index_integrity (test_global_layers.GlobalLayersTests) ... FAIL
+test_source_refuses_partial_mixed_epoch_duplicate_and_fractional_input (test_global_layers.GlobalLayersTests) ... ok
+
+======================================================================
+FAIL: test_source_hashes_and_index_integrity (test_global_layers.GlobalLayersTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/geography/test_global_layers.py", line 73, in test_source_hashes_and_index_integrity
+    self.assertGreater(con.execute('select count(*) from parts').fetchone()[0],20000)
+AssertionError: 19054 not greater than 20000
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.015s
+
+FAILED (failures=1)

@@ -1,0 +1,101 @@
+{
+  "request": {
+    "request_id": "sample",
+    "expected_revision": 0,
+    "entity_id": "cup:counter",
+    "ability": "nudge",
+    "arguments": {
+      "dx": 0.1,
+      "dz": 0
+    }
+  },
+  "result": {
+    "status": "PROPOSED",
+    "revision": 1,
+    "witness": {
+      "revision": 1,
+      "tick": 0,
+      "actor": "member",
+      "entity_id": "cup:counter",
+      "ability": "nudge",
+      "request_id": "sample",
+      "capability": "life:cup:counter:nudge",
+      "causal_observations": [],
+      "effect": {
+        "type": "synthetic_kinematic_offset",
+        "offset_xz_m": [
+          0.06999999999999999,
+          0.0
+        ],
+        "collision_validated": false
+      },
+      "cost": 1,
+      "previous": "9ab6947883a89b13517542fcc4750c47d6a6f270413c064b3e0c4ffee1fa4131",
+      "source_geometry_sha256": "de356f654a1c62471ca606b7310506ef31310c3a93ab14c018d47bafaf8e09eb",
+      "hash": "2af5ad6bea621b8332c3f26e79fd9afc1e84317878ae6f5ebc2cb4806fa19109"
+    },
+    "authority_granted": false,
+    "physical_validation": "NOT_RUN",
+    "durable_commit_performed": false
+  },
+  "inspect": {
+    "entity_id": "cup:counter",
+    "kind": "cup",
+    "state": {
+      "offset_xz_m": [
+        0.06999999999999999,
+        0.0
+      ]
+    },
+    "traits": {
+      "responsiveness": 0.7
+    },
+    "memory": [
+      {
+        "event": "2af5ad6bea621b8332c3f26e79fd9afc1e84317878ae6f5ebc2cb4806fa19109",
+        "revision": 1,
+        "ability": "nudge",
+        "causal_observations": []
+      }
+    ],
+    "observations": [],
+    "relations": {
+      "member_of": []
+    },
+    "affordances": [
+      "nudge",
+      "observe"
+    ],
+    "policy": "dark.life.cup/1",
+    "capabilities": [
+      "reactive"
+    ],
+    "dynamics": {
+      "next_allowed": {
+        "nudge": 1
+      },
+      "consumed_observations": []
+    },
+    "schedule": {
+      "phase": "coarse synthetic; no uncomputed detailed life"
+    },
+    "budget": {
+      "remaining": 99,
+      "window_start": 0,
+      "limit": 100,
+      "window_ticks": 60
+    },
+    "provenance": {
+      "source_id": "original-cup-fixture",
+      "source_geometry": {
+        "local_xyz_m": [
+          4,
+          1,
+          2
+        ]
+      },
+      "geometry_status": "authored fixture",
+      "source_geometry_sha256": "de356f654a1c62471ca606b7310506ef31310c3a93ab14c018d47bafaf8e09eb"
+    }
+  }
+}

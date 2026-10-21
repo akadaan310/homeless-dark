@@ -1,0 +1,32 @@
+test_actual_position_and_current_route_cannot_be_supplied_by_client (test_streaming_world.StreamingWorldTests) ... ERROR
+test_changed_asset_after_reservation_refuses_atomic_activation (test_streaming_world.StreamingWorldTests) ... ERROR
+test_prepare_and_activate_are_separate_durable_nonmovement_admissions (test_streaming_world.StreamingWorldTests) ... ERROR
+
+======================================================================
+ERROR: test_actual_position_and_current_route_cannot_be_supplied_by_client (test_streaming_world.StreamingWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_streaming_world.py", line 20, in setUp
+    self.path=self.root/'world.db';self.w=World.create(self.path,c,resource_root=self.root)
+TypeError: World.create() got an unexpected keyword argument 'resource_root'
+
+======================================================================
+ERROR: test_changed_asset_after_reservation_refuses_atomic_activation (test_streaming_world.StreamingWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_streaming_world.py", line 20, in setUp
+    self.path=self.root/'world.db';self.w=World.create(self.path,c,resource_root=self.root)
+TypeError: World.create() got an unexpected keyword argument 'resource_root'
+
+======================================================================
+ERROR: test_prepare_and_activate_are_separate_durable_nonmovement_admissions (test_streaming_world.StreamingWorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_streaming_world.py", line 20, in setUp
+    self.path=self.root/'world.db';self.w=World.create(self.path,c,resource_root=self.root)
+TypeError: World.create() got an unexpected keyword argument 'resource_root'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+FAILED (errors=3)

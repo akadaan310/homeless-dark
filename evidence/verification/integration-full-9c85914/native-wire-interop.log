@@ -1,0 +1,17 @@
+{
+  "schema": "dark.cross-language-wire-check/1",
+  "status": "PASS",
+  "opening_content_sha256": "da9f0b29a57ddac740164c943dfdda2bd4e2d43ffccab95fabec2e117246319e",
+  "actual_observation_revision": 2,
+  "parsed_speech_events": 1,
+  "csharp_proposal_committed_revision": 3,
+  "history": {
+    "events": 4,
+    "head": "44a6f48abf703de8389325f27f3ba0050bc9401c0e75fd2cb1444d5f43ff7760",
+    "state_hash": "0b0227a4780a19febb562b597df135d16c69450f6e2dc16bdc1092bbebae0c78",
+    "trust_boundary": "local SQLite operator"
+  },
+  "csharp_life_proposal_committed_revision": 4,
+  "unity_native_execution": "NOT_RUN",
+  "transport_scope": "in-process authoritative Python World; HTTP and UnityWebRequest require their own checks"
+}

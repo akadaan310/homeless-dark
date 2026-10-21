@@ -1,0 +1,16 @@
+test_actual_external_controller_uses_same_http_schema (test_protocol.ProtocolTests) ... ok
+test_actual_global_terrain_http_is_authenticated_bounded_and_pure (test_protocol.ProtocolTests) ... ok
+test_cli_script_worker_prepares_then_commits_through_real_http_outbox (test_protocol.ProtocolTests) ... ok
+test_client_invokes_manifest_path_with_exact_retry_after_new_state (test_protocol.ProtocolTests) ... ok
+test_event_interest_is_scoped_and_continuity_cursor_is_durable (test_protocol.ProtocolTests) ... ok
+test_http_shapes_and_operator_only_operations_refuse (test_protocol.ProtocolTests) ... ok
+test_network_parser_rejects_html_empty_truncated_and_oversized (test_protocol.ProtocolTests) ... ok
+test_plain_get_cannot_read_private_memories_or_forge_founder (test_protocol.ProtocolTests) ... ok
+test_purl_discovery_and_read_never_mutates (test_protocol.ProtocolTests) ... ok
+test_two_connections_race_stale_revision_only_one_commits (test_protocol.ProtocolTests) ... ok
+test_validate_uses_admission_without_committing (test_protocol.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 7.818s
+
+OK

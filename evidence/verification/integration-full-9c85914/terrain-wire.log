@@ -1,0 +1,50 @@
+{"schema": "dark.terrain-wire-check/1", "status": "PASS", "exit_code": 0, "actual_source_grids": 3, "samples_per_grid": 1089, "scope": "Actual Python source-backed geography -> exact C# Unity contract; no engine substitutes.", "native_mesh_rendering": "NOT_RUN", "native_terrain_collision": "NOT_IMPLEMENTED", "vertical_reference": "GEBCO approximate MSL rendered with explicitly assumed zero geoid offset; no ellipsoid conversion"}
+PASS UTF-8/mixed JSON round trip
+PASS deterministic serialized round trip
+PASS malformed input refused 2
+PASS malformed input refused 3
+PASS malformed input refused 4
+PASS malformed input refused 5
+PASS malformed input refused 6
+PASS malformed input refused 7
+PASS malformed input refused 8
+PASS malformed input refused 9
+PASS malformed input refused 10
+PASS malformed input refused 11
+PASS malformed input refused 12
+PASS malformed input refused 13
+PASS malformed input refused 14
+PASS nesting budget
+PASS string budget
+PASS nonfinite output
+PASS fractional revision
+PASS loopback private configuration
+PASS credential origin refused 20
+PASS credential origin refused 21
+PASS credential origin refused 22
+PASS credential origin refused 23
+PASS credential origin refused 24
+PASS server version and stable retry envelope
+PASS retry cannot pick up subsequently mutated input
+PASS actual observation contract
+PASS admitted Life presentation contract
+PASS out-of-domain Life offset refused before presentation
+PASS unknown schema
+PASS geographic bounds
+PASS actual Python geography source grid accepted 1
+PASS terrain source attribution and polar/dateline center 1
+PASS coarse terrain cannot claim collision authority 1
+PASS silent datum change refused 1
+PASS malformed source mesh refused 1
+PASS actual Python geography source grid accepted 2
+PASS terrain source attribution and polar/dateline center 2
+PASS coarse terrain cannot claim collision authority 2
+PASS silent datum change refused 2
+PASS malformed source mesh refused 2
+PASS actual Python geography source grid accepted 3
+PASS terrain source attribution and polar/dateline center 3
+PASS coarse terrain cannot claim collision authority 3
+PASS silent datum change refused 3
+PASS malformed source mesh refused 3
+47 portable wire checks passed; Unity native execution NOT_RUN
+

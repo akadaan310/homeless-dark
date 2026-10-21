@@ -1,0 +1,21 @@
+land 10157965
+coastline 10110735
+ocean 10151895
+lakes 5043554
+countries 13287234
+rivers 7307743
+population 53610
+economies 113954
+population_metadata 1099
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/geography/global_layers.py", line 304, in <module>
+    main()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/geography/global_layers.py", line 300, in main
+    value=acquire(args.dest) if args.command == 'acquire' else reproduce(args.dest)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/geography/global_layers.py", line 287, in acquire
+    return reproduce(dest)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/geography/global_layers.py", line 263, in reproduce
+    population = allocate_population(json.loads((dest/'raw/population.json').read_bytes()), json.loads((dest/'raw/economies.json').read_bytes()))
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/geography/global_layers.py", line 102, in allocate_population
+    raise ValueError('duplicate population')
+ValueError: duplicate population

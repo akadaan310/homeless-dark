@@ -1,0 +1,20 @@
+test_protocol (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_protocol (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_protocol
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 14, in <module>
+    from dark_server.protocol import create_server, Client, NetworkFailure
+ModuleNotFoundError: No module named 'dark_server.protocol'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

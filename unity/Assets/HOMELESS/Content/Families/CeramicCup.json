@@ -1,0 +1,41 @@
+{
+  "name": "CeramicCup",
+  "family": "interactive cup",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 4828,
+  "mesh_objects": 2,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -0.04050000011920929,
+      0.07400000095367432
+    ],
+    [
+      -0.04050000011920929,
+      0.04050000011920929
+    ],
+    [
+      0.0,
+      0.10199999809265137
+    ]
+  ],
+  "attachments": {
+    "grip": "GripPoint",
+    "rim": "RimCenter",
+    "hollow": true,
+    "source_pivot": "bottom-center",
+    "collision": "NOT_RUN"
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

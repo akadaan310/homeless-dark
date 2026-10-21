@@ -1,0 +1,15 @@
+{
+  "command": [
+    "qemu-x86_64",
+    "-L",
+    "/tmp/homeless-native/x64",
+    "-E",
+    "LD_LIBRARY_PATH=/tmp/homeless-native/sdk/emulator/lib64",
+    "/tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+    "-soundhw",
+    "help"
+  ],
+  "exit_code": 1,
+  "stdout": "Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)\n",
+  "stderr": "**\nERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)\n[424337:424337:20261021,103954.602187:WARNING spawn_subprocess.cc:247] intermediate process terminated by signal 5 (Trace/breakpoint trap) (core dumped)\nunknown option: -soundhw\nplease use -help for a list of valid options\n"
+}

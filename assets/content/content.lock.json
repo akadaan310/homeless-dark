@@ -1,0 +1,1424 @@
+{
+  "schema": "dark.content-library/1",
+  "files": [
+    {
+      "path": "assets/content/LICENSE-original-CC0.txt",
+      "bytes": 7198,
+      "sha256": "80309250e070f3aa7df328e36dcb954112ca1986e4da742bb38f36c659246ff9"
+    },
+    {
+      "path": "assets/content/asr/LICENSE.whisper-cpp.txt",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "assets/content/asr/MODEL_CARD.md",
+      "bytes": 3196,
+      "sha256": "21fd967098804f33fc84e803fb0e5ab7666d71801f4027cf28a65e7af09c1758"
+    },
+    {
+      "path": "assets/content/asr/base-selection.json",
+      "bytes": 367,
+      "sha256": "0ed6cd1c025062824f5479db6f58d40fc4abcdb943e0dc7b042f34b625ae99d0"
+    },
+    {
+      "path": "assets/content/asr/ggml-base-q5_1.bin",
+      "bytes": 59707625,
+      "sha256": "422f1ae452ade6f30a004d7e5c6a43195e4433bc370bf23fac9cc591f01a8898"
+    },
+    {
+      "path": "assets/content/asr/ggml-tiny.bin",
+      "bytes": 77691713,
+      "sha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21"
+    },
+    {
+      "path": "assets/content/asr/sources.lock.json",
+      "bytes": 1625,
+      "sha256": "452f5af061f316ab90a93d718269fbe42a515aa3deccb8ffb10c9d7fdacc39ae"
+    },
+    {
+      "path": "assets/content/asr-selection.json",
+      "bytes": 532,
+      "sha256": "d9ad5258fd434a39ca3eb8a431ecc1e1f36a5d8e4f9eebd528c7a68a8452222a"
+    },
+    {
+      "path": "assets/content/authored/AcousticGuitar.blend",
+      "bytes": 137897,
+      "sha256": "7aa85acda09811831bb2b6b9cff80158a4cbe4e533f430b2f7b08b7af030291f"
+    },
+    {
+      "path": "assets/content/authored/AudienceBalloon.blend",
+      "bytes": 280607,
+      "sha256": "42caeb8b599321ac3a14b7fc2497e62e375fc7ff7dd0e7b57d55df8c208c4db3"
+    },
+    {
+      "path": "assets/content/authored/Bicycle.blend",
+      "bytes": 280040,
+      "sha256": "cc574389b542892c499e0a49f4d73b3ae8844631686e0ba517bee432f192b137"
+    },
+    {
+      "path": "assets/content/authored/CeramicCup.blend",
+      "bytes": 175177,
+      "sha256": "c3f50c0b0df79813999883bf19e43c31b181d824af56d273294b6483a072d5a5"
+    },
+    {
+      "path": "assets/content/authored/CitizenSource.blend",
+      "bytes": 2185025,
+      "sha256": "74d3d837b3304cf22321df5dc587334c3f8acf2292cd55af805f07022074c044"
+    },
+    {
+      "path": "assets/content/authored/CivicSedanSource.blend",
+      "bytes": 310588,
+      "sha256": "f918a6ec8590e680c133b174170d5e1fc06af93b0fad14a3f0495c34ad9e82eb"
+    },
+    {
+      "path": "assets/content/authored/CoastalSixAircraft.blend",
+      "bytes": 450518,
+      "sha256": "8f4e015565f272aa84d659055a979d21be3c620194772aa8ac777c21d6d51c27"
+    },
+    {
+      "path": "assets/content/authored/DeliveryTruck.blend",
+      "bytes": 153304,
+      "sha256": "a86979df44b381798f45d512bec7237176d104e021ced2d515a603fdf669e925"
+    },
+    {
+      "path": "assets/content/authored/HarborLaunch.blend",
+      "bytes": 205564,
+      "sha256": "073d9a0ad8da525d78c68fa35d2b82aa96150df7be3de486426c43a3d0a7c852"
+    },
+    {
+      "path": "assets/content/authored/RotorShuttle.blend",
+      "bytes": 344799,
+      "sha256": "281c70eede343310226b55578a3770928da8687b32db4994721c738eedce3257"
+    },
+    {
+      "path": "assets/content/authored/SubtropicalPalm.blend",
+      "bytes": 550415,
+      "sha256": "5ed5be6774043a87e7fe1f69d74b4cc8b36a8a4e6a58ee4868a96a526116b085"
+    },
+    {
+      "path": "assets/content/authored/UrbanBus.blend",
+      "bytes": 168783,
+      "sha256": "6f40dd1748108a4d521a41e1844daef9e16c2547f0a3094af19d9e540ebc4552"
+    },
+    {
+      "path": "assets/content/espeak-ng-copyright.txt",
+      "bytes": 3877,
+      "sha256": "bf721eede49d50f84bd2c50f96888629ced572b66ad4087c7a224c4a5e1193bb"
+    },
+    {
+      "path": "assets/content/life/README.md",
+      "bytes": 4461,
+      "sha256": "6b0dd33315857259519682a7a8eda1c533b1bd2f7196eb40806741b975c069da"
+    },
+    {
+      "path": "assets/content/life/entities.json",
+      "bytes": 1508,
+      "sha256": "921520e1be0daba688cd369e31355b85b583bf0f16667a1d38d509278f5a579c"
+    },
+    {
+      "path": "assets/content/life/evidence/domain-tests-red.log",
+      "bytes": 4189,
+      "sha256": "609428aee9a1e229fc1ebec1dba0fd61d457bfdfaf0f82d08a46775116b5897a"
+    },
+    {
+      "path": "assets/content/life/evidence/review-tests-red.log",
+      "bytes": 3184,
+      "sha256": "aba0636570b07bb3716c6d4a0c826cddd5422ebcc84df29154ce2c67abf34085"
+    },
+    {
+      "path": "assets/content/life/evidence/sample.json",
+      "bytes": 2366,
+      "sha256": "04b0b7b083e97d6975749ff18d81571ef90ba9a5640e5b090abfac57449d225e"
+    },
+    {
+      "path": "assets/content/life/evidence/subject-contracts.json",
+      "bytes": 13154,
+      "sha256": "89f554719c771ee88240690cacefe5dfb19fd4b7039dae951d20a0d2426ce392"
+    },
+    {
+      "path": "assets/content/life/evidence/tests-red.log",
+      "bytes": 11383,
+      "sha256": "62af1d5eefa382c7d112983cdfd57b81326044d3738b9ee39cd1499132171707"
+    },
+    {
+      "path": "assets/content/life/evidence/tests.log",
+      "bytes": 1681,
+      "sha256": "9e6bb3c4a79a8c3ac1fbfcf791fa86f99bd2d37ca3b44410a3c76ab3e5f600ef"
+    },
+    {
+      "path": "assets/content/life/evidence/verification.json",
+      "bytes": 735,
+      "sha256": "b9f0bb9d135dee86fca03d99dad97c719aa7ce93be018892f4e4503c5359bd08"
+    },
+    {
+      "path": "assets/content/makehuman/LICENSE.ASSETS.md",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+    },
+    {
+      "path": "assets/content/makehuman/LICENSE.md",
+      "bytes": 3598,
+      "sha256": "edd99571ca62698f78c943fd4fffb159a413c315fa0d4819d3cec5cadaf8b4f1"
+    },
+    {
+      "path": "assets/content/makehuman/makehuman/data/3dobjs/base.obj",
+      "bytes": 1749303,
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+    },
+    {
+      "path": "assets/content/makehuman/makehuman/data/rigs/default.mhskel",
+      "bytes": 117790,
+      "sha256": "99f179bce0aa850b45d4191a1d0d234c5851f881c057439470ded3bddf729a24"
+    },
+    {
+      "path": "assets/content/makehuman/makehuman/data/rigs/default_weights.mhw",
+      "bytes": 897521,
+      "sha256": "0f3641d651ae3d00ad6b4ccee43142edb109d3bd909d27d9e4139ef1beed8625"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01.mhclo",
+      "bytes": 570419,
+      "sha256": "78503ed7f56c149843d85e06e1164bc6871ce7319b2ef689237046352cc90de4"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01.mhmat",
+      "bytes": 1345,
+      "sha256": "043b25cefd398261b893d3dae58c81fc3e9633a25a01eafe66963591f5ad6eb6"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01.obj",
+      "bytes": 699545,
+      "sha256": "001921d237e408c35103720d046aa37f9c5512db1a179a5ede6a065cd504ba89"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_ao.png",
+      "bytes": 785596,
+      "sha256": "9402d75d71318ef3ad90ee59f8b8688effefd13b3ec56423330e005bed5cd6c0"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_diffuse.png",
+      "bytes": 5531728,
+      "sha256": "3fd0bba5dcbdea0ac427f644a6c7c298938f7369b8f96626621ce1e88989394e"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/male_casualsuit01/male_casualsuit01_normal.png",
+      "bytes": 1738660,
+      "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.mhclo",
+      "bytes": 119049,
+      "sha256": "7994e38f7cdcee0bd5f55101660badcce0162fcdfc7f432218dd1eb301626252"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.mhmat",
+      "bytes": 1161,
+      "sha256": "db1711e2dfea4dd8c24459643603a190d9a9da603fd26da5542002a73d740be8"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.mhw",
+      "bytes": 324727,
+      "sha256": "b377d91e6d0264521f672c3990c366b2631103accba4921fc3965c2ed5ce395b"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01.obj",
+      "bytes": 136910,
+      "sha256": "eac355a842a8eb8ae2f09fac8dd18a877a24ef2521ed2d6bf38559b42ce4b49a"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01_diffuse.png",
+      "bytes": 1335772,
+      "sha256": "50c9a406a7f1cb6aa7b42912348e78f09d0252aa3963c8229cf18dfe8353cdbf"
+    },
+    {
+      "path": "assets/content/makehuman/system/clothes/shoes01/shoes01_normal.png",
+      "bytes": 875473,
+      "sha256": "a9bfd7223e98b8f93100e89596135e3a94e6044f9db11b4d23cec625c37a4599"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/high-poly/high-poly.mhclo",
+      "bytes": 72490,
+      "sha256": "b183cfe37120ab726f9b3f2ea6cd3a64c44ce7b4bd91a77c841cf70c04f83a0d"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/high-poly/high-poly.obj",
+      "bytes": 100882,
+      "sha256": "da2493215b708a344c33dc72f2a9a5b8fa985dcc5a70ad3b208995cf871da8e1"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/materials/brown.mhmat",
+      "bytes": 1247,
+      "sha256": "4abad93ce50541c08127721e77bce035640c9f16bed16cd0f5524b1cd5908465"
+    },
+    {
+      "path": "assets/content/makehuman/system/eyes/materials/brown_eye.png",
+      "bytes": 610817,
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01.mhclo",
+      "bytes": 201588,
+      "sha256": "ae1ffaa98da5753b803b3a173bede4895d2215e6bb94763f3765a71f0e984f35"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01.mhmat",
+      "bytes": 1314,
+      "sha256": "01e2e12ce3f3d3c859225456660acadcdd27d4f4b4d888bcbd6f11998cadd975"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01.obj",
+      "bytes": 194450,
+      "sha256": "d998d8416f9b5d5591f1d756f4d292288d000a6951bc0f4d2e8e72727bbc44fa"
+    },
+    {
+      "path": "assets/content/makehuman/system/hair/short01/short01_diffuse.png",
+      "bytes": 2354146,
+      "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/middleage_african_male/middleage_african_male.mhmat",
+      "bytes": 1465,
+      "sha256": "865b23cde5d2116107f9e8ce3a2ec2315440ed103c301ec8bc0e1d85e29830c9"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/middleage_african_male/middleage_darkskinned_male_diffuse.png",
+      "bytes": 3046762,
+      "sha256": "ced478cfdd2b86391f0f92a4408b287ad70adb0dd0e9271ba606d0b028b47c6b"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/young_caucasian_male/young_caucasian_male.mhmat",
+      "bytes": 1462,
+      "sha256": "6eda60b07ff2afbde078a2535ef3913593d84e9de92b2eb76c30f396a181fe2e"
+    },
+    {
+      "path": "assets/content/makehuman/system/skins/young_caucasian_male/young_lightskinned_male_diffuse.png",
+      "bytes": 3693828,
+      "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth.mhmat",
+      "bytes": 1086,
+      "sha256": "3baeff72d9eb06ca16c3cff7ca2ab304216717dee247e0d88f1dc33037c8320e"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth.png",
+      "bytes": 1799930,
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth_base.mhclo",
+      "bytes": 263220,
+      "sha256": "9edc3deff3bb97a95c791878064dd069a74a38f95ea6d9707a9ba68d888b3b5c"
+    },
+    {
+      "path": "assets/content/makehuman/system/teeth/teeth_base/teeth_base.obj",
+      "bytes": 313110,
+      "sha256": "f55198069e55d360c4b4cc7ecb1cc292b2c7665753ab8b65eabf46a8783f2875"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01.mhclo",
+      "bytes": 2113,
+      "sha256": "61d825899cd78ff3146fa1324118060cb44b095fae1427d408c199ade74e3c9e"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01.mhmat",
+      "bytes": 1261,
+      "sha256": "7769df66c69b8c09a0ec713d70d8381abbb08ac82207369f5413970495cd4340"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01.obj",
+      "bytes": 17155,
+      "sha256": "12f4a6a9f85abae2ce3b4aa42d8119e1f679a437e0e89cb928ec68b29a7a1587"
+    },
+    {
+      "path": "assets/content/makehuman/system/tongue/tongue01/tongue01_diffuse.png",
+      "bytes": 625419,
+      "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9"
+    },
+    {
+      "path": "assets/content/selection.json",
+      "bytes": 952,
+      "sha256": "be9d6ac953b703bac1113b3cbed11e80decc7d3dc24794a55857b6d40404ca18"
+    },
+    {
+      "path": "assets/content/silma/LICENSE.phoonnx.txt",
+      "bytes": 11346,
+      "sha256": "2413c03a4217b4a75c3d57f7d399497eaacd5584346de2f40de9e88ce191d042"
+    },
+    {
+      "path": "assets/content/silma/MODEL_CARD.export.md",
+      "bytes": 1150,
+      "sha256": "841babfeb7ef6fad2eacea9758cb44b0f31a23c6b685081ebad0ad19db5df305"
+    },
+    {
+      "path": "assets/content/silma/MODEL_CARD.upstream.md",
+      "bytes": 7453,
+      "sha256": "4006159d79944f43fa54f41a4160d0ceba42a353edc3bab56d342b2657e16f7a"
+    },
+    {
+      "path": "assets/content/silma/selection.json",
+      "bytes": 2138,
+      "sha256": "995c63cb525bb711d41b5bd49072cb5099042b18c026711dfd44a69957197432"
+    },
+    {
+      "path": "assets/content/sources.lock.json",
+      "bytes": 14660,
+      "sha256": "7a4faada283bd2aaec4309d887086106603067fbb8871426394b17693e37ab5e"
+    },
+    {
+      "path": "assets/content/world/cafe-apron-volume.json",
+      "bytes": 105,
+      "sha256": "e5556a5dc71e9013f0de0407ae55d227b0fbdf5a9763dc119d4f9410e7c5e545"
+    },
+    {
+      "path": "assets/content/world/cafe-clearance.json",
+      "bytes": 12229,
+      "sha256": "09f819dd29d58553b111e852f3d18610f2e92fb6ddfa0ec32a8eab7474b00a51"
+    },
+    {
+      "path": "assets/content/world/opening.json",
+      "bytes": 42784,
+      "sha256": "da9f0b29a57ddac740164c943dfdda2bd4e2d43ffccab95fabec2e117246319e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx",
+      "bytes": 28134764,
+      "sha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx.meta",
+      "bytes": 60,
+      "sha256": "8c88927885dcea38d3c94cd5bad531463a42ed4d4991c3828953119637da5171"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/CitizenAltSkin.fbx",
+      "bytes": 27488044,
+      "sha256": "ab55ac9d117e9873732fed56763c565e8355baec9a9a67e7ae1402a846fafd85"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/CitizenAltSkin.fbx.meta",
+      "bytes": 60,
+      "sha256": "dc68e8161a73fe1c1ac8fecf00905ed088de0b87b13901170f39391ae9203625"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/brown_eye.png",
+      "bytes": 610817,
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/brown_eye.png.meta",
+      "bytes": 60,
+      "sha256": "2d29735f48f0e6e026f0125df3f7977392ef564c2f936bb40471aa772ee6d2b3"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/male_casualsuit01_diffuse.png",
+      "bytes": 5531728,
+      "sha256": "3fd0bba5dcbdea0ac427f644a6c7c298938f7369b8f96626621ce1e88989394e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/male_casualsuit01_diffuse.png.meta",
+      "bytes": 60,
+      "sha256": "8f89539857c1f4c8634b732093283f1b248e974341c581a86fa962bf06debe6c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/male_casualsuit01_normal.png",
+      "bytes": 1738660,
+      "sha256": "ff029fc5a3350ebc72813cdf050afcffd23064c7701d99e664572713cfa98a5f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/male_casualsuit01_normal.png.meta",
+      "bytes": 60,
+      "sha256": "df2fd3476a7bb2ea054fc0785f66e7accec9b85890f4d62129fd07ac23ec0c9e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/middleage_darkskinned_male_diffuse.png",
+      "bytes": 3046762,
+      "sha256": "ced478cfdd2b86391f0f92a4408b287ad70adb0dd0e9271ba606d0b028b47c6b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/middleage_darkskinned_male_diffuse.png.meta",
+      "bytes": 60,
+      "sha256": "0314c85f9a7fc829a5a623b4acc7c5224c1e007ab7059868ec90852cb7172386"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/shoes01_diffuse.png",
+      "bytes": 1335772,
+      "sha256": "50c9a406a7f1cb6aa7b42912348e78f09d0252aa3963c8229cf18dfe8353cdbf"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/shoes01_diffuse.png.meta",
+      "bytes": 60,
+      "sha256": "1e5ef84539655b7f8837b332b2eeeee5d29221afe06e4dfef3ab4ca7f97fa8ae"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/shoes01_normal.png",
+      "bytes": 875473,
+      "sha256": "a9bfd7223e98b8f93100e89596135e3a94e6044f9db11b4d23cec625c37a4599"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/shoes01_normal.png.meta",
+      "bytes": 60,
+      "sha256": "cf2b13e0d3eccb3e5b98df1962b55ffe0195bf8bb6b59b41fcc6da011f93f30a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/short01_diffuse.png",
+      "bytes": 2354146,
+      "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/short01_diffuse.png.meta",
+      "bytes": 60,
+      "sha256": "86d448c320d3114610b16f9b5d366b1e3acc3c60999572dfad0bc4680881e004"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/teeth.png",
+      "bytes": 1799930,
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/teeth.png.meta",
+      "bytes": 60,
+      "sha256": "145108da475b7b834f0945a49088b0927591ee5aa060fb47a2e4ae616cbdfcd5"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/tongue01_diffuse.png",
+      "bytes": 625419,
+      "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/tongue01_diffuse.png.meta",
+      "bytes": 60,
+      "sha256": "a513bfbd1baec975edabc028155b19daa07125a175b57fbaa717184d19a6f879"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/young_lightskinned_male_diffuse.png",
+      "bytes": 3693828,
+      "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures/young_lightskinned_male_diffuse.png.meta",
+      "bytes": 60,
+      "sha256": "1ff4c366cacc193b7c3fe3d9de7a5f5d57fbd7ad36b00111463812e69c5f0895"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Textures.meta",
+      "bytes": 77,
+      "sha256": "575586aab9e139bd0927f4868c3c4371f1e72073017951faa7b7ffc383ab275c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/character.json",
+      "bytes": 4497,
+      "sha256": "0a527a8cc58a4cc509ac5d51023987460aac72a1965b81154845493379012aa6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/character.json.meta",
+      "bytes": 60,
+      "sha256": "2913e76101f1e38e9500fe218362950b88104f495dc2c0fc3775c803f9aa01c0"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/materials.json",
+      "bytes": 5519,
+      "sha256": "94d58c88175d3ee268603095e18309895254c16551d26808e3f32961bc1ea6d2"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/materials.json.meta",
+      "bytes": 60,
+      "sha256": "60f6128a9a3480f2662942fcccaae934b8a841303f25a784f497372f0f6cbb3f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters.meta",
+      "bytes": 77,
+      "sha256": "69ebda58e91a0ce9b35d857ee1f2d87c83eaebd056cc02ad32c042a2290ed084"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AcousticGuitar.fbx",
+      "bytes": 162348,
+      "sha256": "026ee7046c209b3a67fde4b460fa12a4e0283a71458208c741a925adb3f86200"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AcousticGuitar.fbx.meta",
+      "bytes": 60,
+      "sha256": "5bb1b221a46cf2f9de9fa2f8a76d43e3965f6f0361116f8b19a0ff085caabab0"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AcousticGuitar.json",
+      "bytes": 913,
+      "sha256": "1f0a93af66600fd25f24ed4152ae38fc64406e7d9f7c40a3bf7e1be17c814046"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AcousticGuitar.json.meta",
+      "bytes": 60,
+      "sha256": "8ed5afbf28ee8abace03f4ace8fa1ccbf43e59a8644e147d539bb3b66139c1d6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AudienceBalloon.fbx",
+      "bytes": 476396,
+      "sha256": "45eb64d7f44407bc87f046c7a98cd196e44a869bd05de4ba3ede66d661d6c3ad"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AudienceBalloon.fbx.meta",
+      "bytes": 60,
+      "sha256": "c4d9986d798e214a9f74dcdd2fc31ef6c5924a9aa55f61b119f8c5898359eedd"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AudienceBalloon.json",
+      "bytes": 896,
+      "sha256": "c0e13be3de36039806695dff374633556073be9c266190da2c077785a10b57c7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AudienceBalloon.json.meta",
+      "bytes": 60,
+      "sha256": "dbf0c654505a3d6c581113287f4e26d6eda4ec76af8ea2d69c598b656d93fdbd"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/Bicycle.fbx",
+      "bytes": 1249452,
+      "sha256": "9510b94bb605d66d934ab515b66e79d053a95f59d1c66b2245f44c7420adf4db"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/Bicycle.fbx.meta",
+      "bytes": 60,
+      "sha256": "bfaa8e1ba5519b20a0217b1b0df80517a1d51794699e095311444b679c6fff2b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/Bicycle.json",
+      "bytes": 1219,
+      "sha256": "da21c4a8d10ca6bc20097a05f1b59cb1804eff526fc0069663de7fc58e982210"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/Bicycle.json.meta",
+      "bytes": 60,
+      "sha256": "05efaa9b1d82c891a050c8ea0783e91de40973cdcef17d724cf661155250ebbe"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CeramicCup.fbx",
+      "bytes": 99500,
+      "sha256": "d9c09481aa3a56de8d5f1bf4eb97d8a54482cab51f67e1b31997e568669a591f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CeramicCup.fbx.meta",
+      "bytes": 60,
+      "sha256": "24ca1099b9b67bccdb1b729c35362e3030790f856cf57eef1b14b1c9062188b1"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CeramicCup.json",
+      "bytes": 941,
+      "sha256": "65f3139f21012481e013e15b5d45f0be22c72bfeda0f20d9dcd3fbfc3024c366"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CeramicCup.json.meta",
+      "bytes": 60,
+      "sha256": "6487290c55118e92633244278f1a09c2a320993ac6ddc3a3f623ce6e78827fd2"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CoastalSixAircraft.fbx",
+      "bytes": 580412,
+      "sha256": "845737e98a8752b5fc3375ea385b7ba96ba7aab8e3a89185245877953a297427"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CoastalSixAircraft.fbx.meta",
+      "bytes": 60,
+      "sha256": "98eb534bb67ca24b50e8fc2c849eab02711a90ed65b14a7444d4a738c640345a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CoastalSixAircraft.json",
+      "bytes": 962,
+      "sha256": "6a8c7e811c5a6bd1ba6f49cb756de79334a1c6ca328edd34505430074e9f2ae7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CoastalSixAircraft.json.meta",
+      "bytes": 60,
+      "sha256": "71e92cae353beea261341754b64af1e0c949c58fc969d6de82c46a33c4d57e65"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/DeliveryTruck.fbx",
+      "bytes": 932812,
+      "sha256": "3c4bd7e04ea609d4baeff728a11eab8c30ae4ecf951591cf0c545fae86a91e2c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/DeliveryTruck.fbx.meta",
+      "bytes": 60,
+      "sha256": "904c19b66b469bea56c0a9a8a071ebfefdd21aec3d380cd24e8ca5bbcf029abf"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/DeliveryTruck.json",
+      "bytes": 851,
+      "sha256": "ab167521ec14245ad161ff4fc47dfd3a5ee82ce045332a0cf560cc02c1ee26e5"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/DeliveryTruck.json.meta",
+      "bytes": 60,
+      "sha256": "4826f1160e51d67a89d2b0b89aa91d45905ed20d2c7200ea86cf44708c7703a2"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/HarborLaunch.fbx",
+      "bytes": 345196,
+      "sha256": "2b8e2362c74aabb06479fbb997f9ceb81876987a77257995907ae85e99df3ff6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/HarborLaunch.fbx.meta",
+      "bytes": 60,
+      "sha256": "c9aa9b67cda03f81f9819735fc2cb986527073520bc6eafd7c9415e1b6047d2e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/HarborLaunch.json",
+      "bytes": 936,
+      "sha256": "85473e7ccd282539b0da91c269132a90e3822c004675a38a3c1b21c2ec885475"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/HarborLaunch.json.meta",
+      "bytes": 60,
+      "sha256": "6a57143013d58a54a92a0b7de34f9318310a5146760bb9692499356128641d03"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/RotorShuttle.fbx",
+      "bytes": 1038108,
+      "sha256": "0b1e1b10438c90c6c33a235821da62a97da2d1ad2c7b763ba356621c4fd713ae"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/RotorShuttle.fbx.meta",
+      "bytes": 60,
+      "sha256": "3328cf1fce92cda2c06c05bda2da8926aefd86097e214807407f014220047ebf"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/RotorShuttle.json",
+      "bytes": 1432,
+      "sha256": "f6db09c37a8e3477d59724f413ae7eebfa797ac8af4c2b37827579872c1196ab"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/RotorShuttle.json.meta",
+      "bytes": 60,
+      "sha256": "c06974b14798a383414752c29b4ca6b5397b0c6bb7612a0e83ba5427028e02e0"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/SubtropicalPalm.fbx",
+      "bytes": 2616300,
+      "sha256": "3b3873f5f336a9be04ef9af9636fcd1e0b388237ccde5d6028f6bde4035bd817"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/SubtropicalPalm.fbx.meta",
+      "bytes": 60,
+      "sha256": "7f622dccf313fef9540a1f51ec7507119508cd975e5ed9fdd3e3d5f36f905e75"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/SubtropicalPalm.json",
+      "bytes": 949,
+      "sha256": "6d2b7a35e9c3c1839313bdc8a52da68b9cb695fce37e457bc1fcfdbbda5e4920"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/SubtropicalPalm.json.meta",
+      "bytes": 60,
+      "sha256": "25e4c14c6d0583cb1a6d910123a78ddecd91b958058a8d8b05614f8bcca7c674"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/UrbanBus.fbx",
+      "bytes": 803324,
+      "sha256": "f06972b90c90e735d7c197dd239a2759dd45311bda21783f1b9fe3b8fb035dd5"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/UrbanBus.fbx.meta",
+      "bytes": 60,
+      "sha256": "8a27b9e047560fe0981bbcfe9bca846a36368915852dd1d72cfa64f59fc3f1a7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/UrbanBus.json",
+      "bytes": 844,
+      "sha256": "11259cb3d6ca8bfb8672757d69ee676b4a836ce9a576991899eb5e25bc9a8eba"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/UrbanBus.json.meta",
+      "bytes": 60,
+      "sha256": "bdc06dea743070ddfa5ad5147afe1037f19903241f7c8bd38fa0d72f760e2309"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families.meta",
+      "bytes": 77,
+      "sha256": "4894450b430f303bae9dcbd5a7b31decf42864d8b7015f144de5569621a733ce"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0108d069a83910c2249b62fe5093a52d78bb9aeb75b6a05a28da977df8dfb303.json",
+      "bytes": 1770,
+      "sha256": "0b7ec22e9154da3fc183e8f12eabfa1737fb5f959f251e167e75b4c608c74e6f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0108d069a83910c2249b62fe5093a52d78bb9aeb75b6a05a28da977df8dfb303.json.meta",
+      "bytes": 60,
+      "sha256": "b1a388e08c4e4db122c03585c1e66a5897fcabbd8f6362d7dbe535e15d8d8d32"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0108d069a83910c2249b62fe5093a52d78bb9aeb75b6a05a28da977df8dfb303.wav",
+      "bytes": 144406,
+      "sha256": "ea5af382fc2af79f719b93aa61035e9bf10271616d24ee388e143aa308b25289"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0108d069a83910c2249b62fe5093a52d78bb9aeb75b6a05a28da977df8dfb303.wav.meta",
+      "bytes": 60,
+      "sha256": "5424178f29ac16b0ad423be6c6112465ae9f9573060260da58a84de3524a37cc"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/02c8d0836ba05ddaa1c22a56ee07f9b94651843d93bf59262371b5952b552b17.json",
+      "bytes": 1786,
+      "sha256": "e1aa0ac48c4559e9a02dcfd774aa9cd6e26ae5c250ed1dbe34083f1e7c064289"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/02c8d0836ba05ddaa1c22a56ee07f9b94651843d93bf59262371b5952b552b17.json.meta",
+      "bytes": 60,
+      "sha256": "eeee9fd8f2bb5c51befa288408b084d73a502c17bed5d9ffa5fac2207d38a5c1"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/02c8d0836ba05ddaa1c22a56ee07f9b94651843d93bf59262371b5952b552b17.wav",
+      "bytes": 227666,
+      "sha256": "02019cfe06c267cbab0712dade05608ee1996434f1e666d2f7f3ac959b701ed1"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/02c8d0836ba05ddaa1c22a56ee07f9b94651843d93bf59262371b5952b552b17.wav.meta",
+      "bytes": 60,
+      "sha256": "709a437770ba85d1ccb217232f7a7c5027c442aa0e00a62e148a2bab80b31648"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1.json",
+      "bytes": 1743,
+      "sha256": "eb030add67a1bad980b86736607927a272acbb7005e648b066bd6653323bf7e8"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1.json.meta",
+      "bytes": 60,
+      "sha256": "734db1ecf2923c9d85e7512b35a377cfa0927156ce18cf0f383a2dc2343cfd46"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1.wav",
+      "bytes": 127914,
+      "sha256": "30e6af3d2879e13370c4d3f63bb88caa302b784ba13c5dd488975742e15bda8b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1.wav.meta",
+      "bytes": 60,
+      "sha256": "e8f4099ed8890135a04540e8b8cefca6b4bbc5d4a2eba2d428492a5e886f3c12"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32.json",
+      "bytes": 1754,
+      "sha256": "c356ac1b69ba56ced3464347f1d980d89562b9ce9f890972b01c3a6331c84fb0"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32.json.meta",
+      "bytes": 60,
+      "sha256": "f8811c216584c88e196d4ea5961d5f0e37d3e37de49a90783823d2f6253486c4"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32.wav",
+      "bytes": 145688,
+      "sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32.wav.meta",
+      "bytes": 60,
+      "sha256": "61798f31bf3c11a3199d3f27ca118be1e893a6aaa0e1162f6f3265d0cbc0d5ff"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/14b3473dd1ae15fd1838a3a4cb8cc875b53d03a9240c7440004b7e6eb993fbde.json",
+      "bytes": 1713,
+      "sha256": "1b1780ae328748c4dcbc0a9171df7c9bd87d64d819b099060271e54194a90576"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/14b3473dd1ae15fd1838a3a4cb8cc875b53d03a9240c7440004b7e6eb993fbde.json.meta",
+      "bytes": 60,
+      "sha256": "8c49f12f777c15fd1681114d7d56deca6e69bfe648614911b849cbfa653ff490"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/14b3473dd1ae15fd1838a3a4cb8cc875b53d03a9240c7440004b7e6eb993fbde.wav",
+      "bytes": 88096,
+      "sha256": "ab4d2a5014c4968e76fab022c5fca433f1e40863eae3cc6754b6a4168555ae09"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/14b3473dd1ae15fd1838a3a4cb8cc875b53d03a9240c7440004b7e6eb993fbde.wav.meta",
+      "bytes": 60,
+      "sha256": "1e24d3587fd66ac1f034d26887dd80d9df58a6cc7d1e3f5832b07eeb32bf2d76"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/23b8dddf3cac53edaddaf3bf13354bdc77f2fec8dbd3690eb68c85df4be074a8.json",
+      "bytes": 1760,
+      "sha256": "3c39ae43bd81d6f97254ad6a4b264a9b1f189afcdef5a4ed2663765f8895a5cb"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/23b8dddf3cac53edaddaf3bf13354bdc77f2fec8dbd3690eb68c85df4be074a8.json.meta",
+      "bytes": 60,
+      "sha256": "788ede5baf60b93c0256860d1c8a1fe6f79243c6f471f7dc8f9379eb46306943"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/23b8dddf3cac53edaddaf3bf13354bdc77f2fec8dbd3690eb68c85df4be074a8.wav",
+      "bytes": 162840,
+      "sha256": "1555bea75ee0a49210a3f756846234026d702c8dbf796036d6a2bc78ae69b00e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/23b8dddf3cac53edaddaf3bf13354bdc77f2fec8dbd3690eb68c85df4be074a8.wav.meta",
+      "bytes": 60,
+      "sha256": "032a43a166db6f7501e57ea8726f3cd99bf7ebaf4a1e0112d512cf11af4a0b67"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279.json",
+      "bytes": 1797,
+      "sha256": "2314fa70ac96150c8821546491f83164ac4231f028309fb0e016cab57f514aa7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279.json.meta",
+      "bytes": 60,
+      "sha256": "3f2d1922bb9f37bd12328d5aed325fe8e40d34630d83b67bb7e853a3301fcfc8"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279.wav",
+      "bytes": 183948,
+      "sha256": "8d6ceb67351791a0e1e1e126af2fbe38f4b5111a092ad426ab906699913aa4a6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279.wav.meta",
+      "bytes": 60,
+      "sha256": "eaf89c31ba6a8590988fa2d2f9847e8d1c79c7957734d3e33ed43a41833b0447"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/3e0c70f4224fa90f3dc8a780c571389350e054c408eea9fab6e27c0ef133f0b3.json",
+      "bytes": 1719,
+      "sha256": "2923ccc7d3d93881be4fea08c08f79629e975d68d64af007621e6a2e090cd395"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/3e0c70f4224fa90f3dc8a780c571389350e054c408eea9fab6e27c0ef133f0b3.json.meta",
+      "bytes": 60,
+      "sha256": "ee43bcc3e526a94f94ff70f95e4fa0f6f78b7a63402893a52a536f799cec726e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/3e0c70f4224fa90f3dc8a780c571389350e054c408eea9fab6e27c0ef133f0b3.wav",
+      "bytes": 114522,
+      "sha256": "bc011099517deca0fd56ab0171433e5f8c90768da085878c9a4d90d983899b73"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/3e0c70f4224fa90f3dc8a780c571389350e054c408eea9fab6e27c0ef133f0b3.wav.meta",
+      "bytes": 60,
+      "sha256": "54343c333e4d1b5ef8c5f9ac93ed1b0f9bcc7b8c07bafae0ac6025f988164463"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/49ad516a2b0133b9247f9bfe453566cb04eaec6c148695ed5cd723132e4e04ce.json",
+      "bytes": 1743,
+      "sha256": "070e9ea685d983b7d74f7c757eeea13638676648c57c3ee561b764944e2705cc"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/49ad516a2b0133b9247f9bfe453566cb04eaec6c148695ed5cd723132e4e04ce.json.meta",
+      "bytes": 60,
+      "sha256": "dba93e22f3a259b04f6f388272ca8a20cb4f0610558d00bca41f0ce9ee7fe859"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/49ad516a2b0133b9247f9bfe453566cb04eaec6c148695ed5cd723132e4e04ce.wav",
+      "bytes": 134316,
+      "sha256": "d06ecf462454acab16aeb9e6b098d8f92a5de602fde47a317532803fd65c18a1"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/49ad516a2b0133b9247f9bfe453566cb04eaec6c148695ed5cd723132e4e04ce.wav.meta",
+      "bytes": 60,
+      "sha256": "952afcfc57fe9bf5c05c1ef04c4621bdd30758426f92ee20432376c3864c8a21"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/4e9c8e5783d5489e7d529c3e7a3f09b0cd0a5ddf45d0109cc0030b52a5f1b58f.json",
+      "bytes": 1835,
+      "sha256": "3a01e6e92be8aa027949d0604b22d3e8d1494c55264fd698ce105c14c600c049"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/4e9c8e5783d5489e7d529c3e7a3f09b0cd0a5ddf45d0109cc0030b52a5f1b58f.json.meta",
+      "bytes": 60,
+      "sha256": "35ad2aa4cfc1b30d8fc46a166fd8900985996555952f73fc24b836b28492f61c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/4e9c8e5783d5489e7d529c3e7a3f09b0cd0a5ddf45d0109cc0030b52a5f1b58f.wav",
+      "bytes": 99884,
+      "sha256": "6d4a698e9452eb89c46bc737c391c48783f36f12c271626e61c92c1c688af0b6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/4e9c8e5783d5489e7d529c3e7a3f09b0cd0a5ddf45d0109cc0030b52a5f1b58f.wav.meta",
+      "bytes": 60,
+      "sha256": "b3ff8b726770f05a20d87f23445660a410c467482a018d3ad348d1dc3bf64040"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/5c321f4bd1ef65b214c79358e0e7f7494ecd755b7f357d979f3562065cfbd572.json",
+      "bytes": 1746,
+      "sha256": "ebee34f37fb0674b9dceac23ecc9f20b8abfdd6118c35b6464b4843b18fa4f91"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/5c321f4bd1ef65b214c79358e0e7f7494ecd755b7f357d979f3562065cfbd572.json.meta",
+      "bytes": 60,
+      "sha256": "b57f8fa59cdcfba31915cf71fb68ef231e7ec1ea2108b68d3abb63bfefd325f6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/5c321f4bd1ef65b214c79358e0e7f7494ecd755b7f357d979f3562065cfbd572.wav",
+      "bytes": 148418,
+      "sha256": "46917c04ce900d4ef3dc21d856e3e9dca26d8b0c3bbc195790dbad43c4916034"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/5c321f4bd1ef65b214c79358e0e7f7494ecd755b7f357d979f3562065cfbd572.wav.meta",
+      "bytes": 60,
+      "sha256": "5e329fa58c1a4b118f3e047865a739b26cc93f103806d209758e03768b2af943"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/72749d895df86c78597149bb74f91c17a6ce9e4280569495c3c36f2e50a4ca73.json",
+      "bytes": 1756,
+      "sha256": "f02e8d4744e417147477344ccf3243e2c80c1c674bf33a03a152314f5412f85c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/72749d895df86c78597149bb74f91c17a6ce9e4280569495c3c36f2e50a4ca73.json.meta",
+      "bytes": 60,
+      "sha256": "8410da4b217aa1db6c48218697b13f8de8f831a35aa087ecb792c642a86f38f3"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/72749d895df86c78597149bb74f91c17a6ce9e4280569495c3c36f2e50a4ca73.wav",
+      "bytes": 101884,
+      "sha256": "9cdc2c57e836cdc6754737273e7522a07c4919dcda5bed699623c1bf9de20536"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/72749d895df86c78597149bb74f91c17a6ce9e4280569495c3c36f2e50a4ca73.wav.meta",
+      "bytes": 60,
+      "sha256": "c83840bc2b688587f43e4b8a9e5ca50b9d521c42add773511a3e8732296f7eeb"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078.json",
+      "bytes": 1722,
+      "sha256": "52319343ff7a5b86fb50d3736cd112d66d5f2d9c172ff9874599c0a0c254e057"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078.json.meta",
+      "bytes": 60,
+      "sha256": "7fa6b04c009a65c48688bbbd0a74c6aad5f77e18bca1e042322a225df02cb461"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078.wav",
+      "bytes": 90838,
+      "sha256": "1a39073e3c5d1ecc46eb5bb1e5443233ceef521557f06c289aa8d4bdbdabce30"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078.wav.meta",
+      "bytes": 60,
+      "sha256": "7d10e87c214e7e18b90e182e3b316fd5bfa306ad0eef7965145fd4506a39df5d"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/88a2416be9b7906b10ebf8bdd6b8a0ece0e925d6994175daffcc906f1af48b15.json",
+      "bytes": 1750,
+      "sha256": "13f93bdd94cc87faeb9ff6bc3f93b2bf4224b2d77789e8c97a102f10d764d9fe"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/88a2416be9b7906b10ebf8bdd6b8a0ece0e925d6994175daffcc906f1af48b15.json.meta",
+      "bytes": 60,
+      "sha256": "fd2bdcded26134dfb2b681b7d162134b8292c813bb04d12f16a1a219aedb4b40"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/88a2416be9b7906b10ebf8bdd6b8a0ece0e925d6994175daffcc906f1af48b15.wav",
+      "bytes": 69482,
+      "sha256": "890be6a6ee0b76b9637c9eb77bc0d4a6b900ab6acef3ca54099110d2bc561920"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/88a2416be9b7906b10ebf8bdd6b8a0ece0e925d6994175daffcc906f1af48b15.wav.meta",
+      "bytes": 60,
+      "sha256": "baaacb79207805aa9caf043877b8a60b2ff431553ca33f1da51d401cde85455e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/8f4a580febb7988538415548f43b66dca320665e3c18ea0b907af01421caa60e.json",
+      "bytes": 1724,
+      "sha256": "689ae5bb69c1a78644af6ec80f5a058ba5f6dc32abb7cac09f5cfdb0b628781b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/8f4a580febb7988538415548f43b66dca320665e3c18ea0b907af01421caa60e.json.meta",
+      "bytes": 60,
+      "sha256": "64d4454ff079586fb12673703dcd9f60a01756a9f41e300b06f3db6da7cad265"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/8f4a580febb7988538415548f43b66dca320665e3c18ea0b907af01421caa60e.wav",
+      "bytes": 126006,
+      "sha256": "1a7880051852b013dab3ca67caf44865a908461a219a8d16546ca0e55bb6cb96"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/8f4a580febb7988538415548f43b66dca320665e3c18ea0b907af01421caa60e.wav.meta",
+      "bytes": 60,
+      "sha256": "9e670f023bd2e1a930a0ee60b5fe6c65c7bfa1c622be42053238f46a19b875e6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/923ece296d39b007c1d17c95bb8633a54dffd72266cf31fa14f52f31017d4cb7.json",
+      "bytes": 1730,
+      "sha256": "fd3b761e752460745704221544ad9ccec9d0f72a679048aeb82b66e9d9883876"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/923ece296d39b007c1d17c95bb8633a54dffd72266cf31fa14f52f31017d4cb7.json.meta",
+      "bytes": 60,
+      "sha256": "2882639d7e07862918fa957720f66cade546a52aec2b0571030db24ba0422d0c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/923ece296d39b007c1d17c95bb8633a54dffd72266cf31fa14f52f31017d4cb7.wav",
+      "bytes": 128470,
+      "sha256": "73243d2544a7aff65d0d08038d5ea272f9656c156592add8b3932ef2912ea1d9"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/923ece296d39b007c1d17c95bb8633a54dffd72266cf31fa14f52f31017d4cb7.wav.meta",
+      "bytes": 60,
+      "sha256": "45cb9b7da75f094a8a519739bab5536b2613907302878346392dc76244e2629f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46.json",
+      "bytes": 1764,
+      "sha256": "b39d5b2a179f5814c906be027f66641c306e5b61839460e30eb46ce6aef49dc8"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46.json.meta",
+      "bytes": 60,
+      "sha256": "6954b0a3727959a4da08ac759ad5fe7405b3e59e1f0ace00cc3d4b5fac823b16"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46.wav",
+      "bytes": 160364,
+      "sha256": "49df8fd087e9213c5fde87a152b46f937f05bdf3b4ad6701e97f684f2605a7b4"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46.wav.meta",
+      "bytes": 60,
+      "sha256": "d67db58a4aa66617b2ae6f3b6116f2b7fabfec6a14ae97d3e0dd71339e9b40fb"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a79541f5d5e7a58fdaeb7c414d9be536a42416a4977ae42b75586cb3900793fa.json",
+      "bytes": 1765,
+      "sha256": "96140e9c6a525ba67831c03960f6cf034ede32087e2807a9ca457349229e94ee"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a79541f5d5e7a58fdaeb7c414d9be536a42416a4977ae42b75586cb3900793fa.json.meta",
+      "bytes": 60,
+      "sha256": "5ba881fb5e203bb5e6febd93b7c8ff54accd72e7bc49674d0b471ed0445e7129"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a79541f5d5e7a58fdaeb7c414d9be536a42416a4977ae42b75586cb3900793fa.wav",
+      "bytes": 106224,
+      "sha256": "d2b16e35a687e3a67d39c41e2bf0d51c935af9f7314780743232b3717ea8a8c8"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a79541f5d5e7a58fdaeb7c414d9be536a42416a4977ae42b75586cb3900793fa.wav.meta",
+      "bytes": 60,
+      "sha256": "3c2caad167a976d04cdfa6d9491ed16a44c0821caba4fc3c377128130d5d0ac4"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.json",
+      "bytes": 1732,
+      "sha256": "aebbbe577d6913ab0e371f364d457d2870a96740c958b0dd266a171f0f25499b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.json.meta",
+      "bytes": 60,
+      "sha256": "250837fe7233cf2f9106af37e7b9c0d3b17a93448787514330e03950f3aa3148"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav",
+      "bytes": 94882,
+      "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav.meta",
+      "bytes": 60,
+      "sha256": "050be9c9e4785ddcb9e6aca7de37b8a896fcf74758016c13d72db6df93e25e44"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb.json",
+      "bytes": 1823,
+      "sha256": "e2eb5b03f9dea264fb5e08d7f45845e91dc1645e644e330ecdac4624cbec943a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb.json.meta",
+      "bytes": 60,
+      "sha256": "1ee5c4d872aab03a3a805c70ae4d9f92cbb2802c50f56b63869a108937bb784a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb.wav",
+      "bytes": 255556,
+      "sha256": "ae2d1ceb4905cb29cb45857c32508586ebe1d879f242617462fcff2bc615a749"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/b5d25789611a382fb58f16258fd10cff7043ee4465f6b014c933e099702265fb.wav.meta",
+      "bytes": 60,
+      "sha256": "f296896a8b7aae85d3b8f2429a1b0009db06b0b56838719aed6dbc27cacb96f8"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c10a55c0889f1e44338c362039c1c4c0d0e6d2542ff09ed2477b3bc551d442d9.json",
+      "bytes": 1706,
+      "sha256": "735b0a60d3f273ad45bd62e7ba1bc8ba2219f48b304bd189528981af0e3f5225"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c10a55c0889f1e44338c362039c1c4c0d0e6d2542ff09ed2477b3bc551d442d9.json.meta",
+      "bytes": 60,
+      "sha256": "25bf2805a1cabcf6231e02de6d3498f7ade961a7efe7c61c91aa30c685fc6379"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c10a55c0889f1e44338c362039c1c4c0d0e6d2542ff09ed2477b3bc551d442d9.wav",
+      "bytes": 61168,
+      "sha256": "e3f2be76b67c88f0966af0f0079b611e4e852228673cfdcb4cf0190426fdf277"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c10a55c0889f1e44338c362039c1c4c0d0e6d2542ff09ed2477b3bc551d442d9.wav.meta",
+      "bytes": 60,
+      "sha256": "bf49831a48d8090c85d6688d540cc86a41e90194123fbb53beb235a0fb6f4353"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c494b379193841bfe8b9b42cff6f8cca373a0656780cad1f8f4ca58e3f45acb4.json",
+      "bytes": 1962,
+      "sha256": "0e0553c302c0626703a0e05396afcdcd563e69e131cd5de327ab107496436cd4"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c494b379193841bfe8b9b42cff6f8cca373a0656780cad1f8f4ca58e3f45acb4.json.meta",
+      "bytes": 60,
+      "sha256": "b45829773e446c34efcd6502c6647fa3cf081af30d300bf239f57418c8ece931"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c494b379193841bfe8b9b42cff6f8cca373a0656780cad1f8f4ca58e3f45acb4.wav",
+      "bytes": 196652,
+      "sha256": "9b71fdf36a31e6c0ad4a31355e3fcc6f0cb7389a86bae22b3b7dc99d7a3dc373"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/c494b379193841bfe8b9b42cff6f8cca373a0656780cad1f8f4ca58e3f45acb4.wav.meta",
+      "bytes": 60,
+      "sha256": "22fe80a9f04ecf102b779a3d73eda1f63b18a8b83c8d5c45cc14fc67f93236cd"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cb322dc667376e3971e93eaf1d7abf62365b5929423faf77529b5b61bb6b1da2.json",
+      "bytes": 1789,
+      "sha256": "e1b112f05dd034bc4d9629b9a53e32d83c09f34fd5ef487c447b2fe7e3536753"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cb322dc667376e3971e93eaf1d7abf62365b5929423faf77529b5b61bb6b1da2.json.meta",
+      "bytes": 60,
+      "sha256": "a4a08d891d8cd4033ae4e69d0cf40d7e4d286d3847f64cc11747f13580636486"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cb322dc667376e3971e93eaf1d7abf62365b5929423faf77529b5b61bb6b1da2.wav",
+      "bytes": 222176,
+      "sha256": "dc947963b6909233ce2fcf573893b457f65538473b79c876f28464bf24fe0613"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cb322dc667376e3971e93eaf1d7abf62365b5929423faf77529b5b61bb6b1da2.wav.meta",
+      "bytes": 60,
+      "sha256": "fc4190270699300aa25ce609b4dd97980dad000b0de0e1fcb63566fd4cb27a8c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cfc5eca47780784077278a6e813c216d4b8ccae1ddef7808cdebd9b9af037286.json",
+      "bytes": 1770,
+      "sha256": "53b452c6605871b3d14646f78e32048f8398dc93d45396bdb608d10f00a114f8"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cfc5eca47780784077278a6e813c216d4b8ccae1ddef7808cdebd9b9af037286.json.meta",
+      "bytes": 60,
+      "sha256": "bec4f0354f5cf2c85c06021d8efcdea2b7e10f9df1e392478ff062e39a844c3c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cfc5eca47780784077278a6e813c216d4b8ccae1ddef7808cdebd9b9af037286.wav",
+      "bytes": 112810,
+      "sha256": "26055401ebb6007ba0982248af9dbe17909ec5f5e5af83149b759cfe6455551c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/cfc5eca47780784077278a6e813c216d4b8ccae1ddef7808cdebd9b9af037286.wav.meta",
+      "bytes": 60,
+      "sha256": "556df2c16a24f8c4b14e76033f82fa04ec7032ddb11f5bae66969e22df30d13b"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/d6b17c22f9328e12fc733622acda2d9bc412fa1d390d1c0f50dbe1443f04631c.json",
+      "bytes": 1737,
+      "sha256": "d5b578f7b4f4a077d146c4c54724ed20f458868c1baf652bc2ae7465445d08aa"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/d6b17c22f9328e12fc733622acda2d9bc412fa1d390d1c0f50dbe1443f04631c.json.meta",
+      "bytes": 60,
+      "sha256": "f8183b4b10ed2f45aa368021ce4c933c9a2843c20cb6ec7da8c4f45e462c74a0"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/d6b17c22f9328e12fc733622acda2d9bc412fa1d390d1c0f50dbe1443f04631c.wav",
+      "bytes": 136226,
+      "sha256": "14996fb51752e1453407bb351f797e3e9c748b34e3da77099180b69dbe8a558a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/d6b17c22f9328e12fc733622acda2d9bc412fa1d390d1c0f50dbe1443f04631c.wav.meta",
+      "bytes": 60,
+      "sha256": "4705669138340c79ed904f6fa0ddd0a0e919d004164fe366c910dcaae015a34d"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/ee66dfb1930aa39939010a8457500be73daa64dc5cc73ebbd68b4203f1cb3823.json",
+      "bytes": 1757,
+      "sha256": "d0921bcc790188b6cd9e99df0b2dcc69be3b02f0b6b8fbc69596a67b02eb003f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/ee66dfb1930aa39939010a8457500be73daa64dc5cc73ebbd68b4203f1cb3823.json.meta",
+      "bytes": 60,
+      "sha256": "f2398affc4313f4f97de908b278c39a301a6381479576275779444e8afb5bffe"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/ee66dfb1930aa39939010a8457500be73daa64dc5cc73ebbd68b4203f1cb3823.wav",
+      "bytes": 163878,
+      "sha256": "bb693ac8b8cc59b89f638b4d3014546e62368629b5621ea76e9d309bf1e83eb2"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/ee66dfb1930aa39939010a8457500be73daa64dc5cc73ebbd68b4203f1cb3823.wav.meta",
+      "bytes": 60,
+      "sha256": "366356cd47a32917b175b917f0f813d00d0b7be486c884c1b558b2fde305b660"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f1dad70c13c2723497e14f102a62d03eb99aa4e6503d8fd85ebc85432c04a629.json",
+      "bytes": 1758,
+      "sha256": "34369159d560d87d7d2c4f37c99e2f0650ff1db8f2be10be945a9522db8f5d19"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f1dad70c13c2723497e14f102a62d03eb99aa4e6503d8fd85ebc85432c04a629.json.meta",
+      "bytes": 60,
+      "sha256": "7d930648367b63730cdd82c2b50e3d3e413dda151ba871752d233a24a016d989"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f1dad70c13c2723497e14f102a62d03eb99aa4e6503d8fd85ebc85432c04a629.wav",
+      "bytes": 143756,
+      "sha256": "ae4d953697b8c77a3ea1e91b08438524efe291c1133cf07334423483813407ea"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f1dad70c13c2723497e14f102a62d03eb99aa4e6503d8fd85ebc85432c04a629.wav.meta",
+      "bytes": 60,
+      "sha256": "72d795f3a6e033caffc06a45b7835c08ee3bbf591dd464a5ec8f1722d8ec561e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f313d3b9a8c97e9babe9c46deaa05f147937f54e2f9b4ee4aadab1deca4cbe63.json",
+      "bytes": 1731,
+      "sha256": "52460ab29427688673d53fd8bdd03e92c50d51f2d6677a05ffdb187d7e300a5f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f313d3b9a8c97e9babe9c46deaa05f147937f54e2f9b4ee4aadab1deca4cbe63.json.meta",
+      "bytes": 60,
+      "sha256": "7abf7c46840452a9da91e9b0da03587161762d0b03a304c10f38df1e857635bf"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f313d3b9a8c97e9babe9c46deaa05f147937f54e2f9b4ee4aadab1deca4cbe63.wav",
+      "bytes": 129244,
+      "sha256": "f3eba9e0c20a716bddb2e2c6e392153df1b039463d87715589d42e19b6a35831"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f313d3b9a8c97e9babe9c46deaa05f147937f54e2f9b4ee4aadab1deca4cbe63.wav.meta",
+      "bytes": 60,
+      "sha256": "db9b50f583bd7acab7898c6de9f4ac86d6ac22f7098973e45ef8981f22250143"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45.json",
+      "bytes": 1745,
+      "sha256": "77ee81c5cf969ff57fcc59ee748190ae8d46ab4e472df21470cced86d1aca44f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45.json.meta",
+      "bytes": 60,
+      "sha256": "307a3e3e741333c83ea1dd38d09572e56e6c4ed9f558e245e0235e0e4d2f9c2f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45.wav",
+      "bytes": 135346,
+      "sha256": "5c8f063439b1e35cc848db8bef8739cfb8b8b748b3fe39e9174dddda191c930f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45.wav.meta",
+      "bytes": 60,
+      "sha256": "4e7003b714633b411c2293df489e169ec2e88817047b015df8da735d4a656175"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f8d8efebd0bbd31b31660e3c6130b4d8db712fc08a04aa6171c94888b5c0d224.json",
+      "bytes": 1723,
+      "sha256": "ca618f32644b6bd064872ed3b13ecf97a2b05c5d52552168eec5f8549cc0a6d9"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f8d8efebd0bbd31b31660e3c6130b4d8db712fc08a04aa6171c94888b5c0d224.json.meta",
+      "bytes": 60,
+      "sha256": "5482c4c1d97bc1050296dde006f633231d74b28291444666c7ae1318beca8e5f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f8d8efebd0bbd31b31660e3c6130b4d8db712fc08a04aa6171c94888b5c0d224.wav",
+      "bytes": 106140,
+      "sha256": "145a3f2263cc27a506941f8632185551683925f204857a3ad02dcf62fb9b00db"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/f8d8efebd0bbd31b31660e3c6130b4d8db712fc08a04aa6171c94888b5c0d224.wav.meta",
+      "bytes": 60,
+      "sha256": "797b5964d42351f47dfa6971887e859bffdf74a02c0a4f6c2d4d11772169afa7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fd55c54a0407ddb408f8ee78be52d63ff94b2d34ae06f4daed04fdaca7279293.json",
+      "bytes": 1750,
+      "sha256": "53ae7a6137db08a47aa8a332581a7093391d1d076b039fd8073ebcb14b1e6d9f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fd55c54a0407ddb408f8ee78be52d63ff94b2d34ae06f4daed04fdaca7279293.json.meta",
+      "bytes": 60,
+      "sha256": "d5a91309e3ff6f90d2f0d834d15e877c458de02d9ea1ae105b495617a557d16e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fd55c54a0407ddb408f8ee78be52d63ff94b2d34ae06f4daed04fdaca7279293.wav",
+      "bytes": 147396,
+      "sha256": "8a32ec6408bd7d5e99c92809a33c5191fcd79c233d4503cc1f5be1945bf6bbc1"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fd55c54a0407ddb408f8ee78be52d63ff94b2d34ae06f4daed04fdaca7279293.wav.meta",
+      "bytes": 60,
+      "sha256": "5df381cd0dfbc594a63c1d9a72a17627c9943b15cfa327c1bd783eb7154286bd"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fec4c04198b8fc8ad51449612bad4f2c33b55921be7f1c0762719ed3dcfbbd2f.json",
+      "bytes": 1800,
+      "sha256": "de2cefd4926d06b377564436d12367248409c9ff651f74a959c0f6d9664c2e64"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fec4c04198b8fc8ad51449612bad4f2c33b55921be7f1c0762719ed3dcfbbd2f.json.meta",
+      "bytes": 60,
+      "sha256": "edc7443a0c97eb7c36c974bdd0af7a944e5cd30ab90c03c4ce370faa8a32b2fe"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fec4c04198b8fc8ad51449612bad4f2c33b55921be7f1c0762719ed3dcfbbd2f.wav",
+      "bytes": 212226,
+      "sha256": "7123860d9b6973bb539472e9036c134e3a6c35a91e5f5000370f3ffeb9b79a81"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/fec4c04198b8fc8ad51449612bad4f2c33b55921be7f1c0762719ed3dcfbbd2f.wav.meta",
+      "bytes": 60,
+      "sha256": "52dd5c45fd59ff503ccbde216720da6d5cb6a248056dc239a09d5e0cbcd91f7c"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/speech.json",
+      "bytes": 59858,
+      "sha256": "32ac6901dfde1359fcc2fb2a2c921d67b9873fdf71954f17b62646f86aab5432"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech/speech.json.meta",
+      "bytes": 60,
+      "sha256": "a23c51985c1900bc5d50f26507563a6160de1a7449dfb7dd881f6554effcdbce"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Speech.meta",
+      "bytes": 77,
+      "sha256": "e41dde8e5d4745fd3c3f9b6e12de88136daa5cd90582a5d7da34f9a598717a12"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Vehicles/CivicSedan.fbx",
+      "bytes": 1928684,
+      "sha256": "d02cea72e4ad2697613a1535297d899c850ed56a23313633487a7ff927dc2212"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Vehicles/CivicSedan.fbx.meta",
+      "bytes": 60,
+      "sha256": "1d9c7bb2bbba395808b8a790eabe300ad2910123db028a2168e3b63146664937"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Vehicles/vehicle.json",
+      "bytes": 1245,
+      "sha256": "6ae709976241fb26773e1afde5b798667e6114d3840321633bbbca7a4ad63e80"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Vehicles/vehicle.json.meta",
+      "bytes": 60,
+      "sha256": "86dec4fbedcfa2d0d2f09133d35b172673decfe048b393dd10904fe0db34f5b9"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Vehicles.meta",
+      "bytes": 77,
+      "sha256": "9e11170e9c7b87601eb7753b9b89cdd29420e2b2ffbe07966afa99c6ac9e0004"
+    }
+  ],
+  "file_count": 283,
+  "bytes": 263084874,
+  "scope": "exact source and client content inventory; NOT native quality acceptance",
+  "external_experiment": "SILMA749MB model cache remains outside repository; pinned evidence/content/silma/sources.lock.json"
+}

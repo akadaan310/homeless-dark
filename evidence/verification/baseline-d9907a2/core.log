@@ -1,0 +1,21 @@
+PASS bounded compiler accepts registered atomic predicates and emits obligations
+PASS compiler refuses unsupported predicates, duplicates, and oversized policies
+PASS founder name and PURL do not authenticate an actor
+PASS authority rejects expired revoked and foreign process sessions
+PASS world writes check scope revision and UTF8 budget and leave refusals unchanged
+PASS duplicate request is exactly once and altered duplicate is refused
+PASS canonical framing distinguishes delimiters and rejects unpaired Unicode
+PASS history validates replay and catches tamper truncation and order against trusted head
+PASS durable journal restores world and duplicate identity after reload
+PASS durability failure cannot commit in memory
+PASS NPC refusal and knowledge require causal local observations
+PASS PURL resource parsing is canonical pure discovery with no implied authority
+PASS R1 session issued at tick 100 refuses a proposed pre-issue effect
+PASS R1 expiry cannot be bypassed with a backdated request
+PASS R1 idle world rejects a session after authoritative expiry
+PASS R1 a future proposed event tick cannot advance authentication time
+PASS R1 clock rejects rewind and sessions record actual issue time
+PASS R1 retry uses current authentication and can resume with a renewed session
+PASS R2 invalid UTF8 sink bytes become JournalException without mutation
+PASS R2 malformed journal is typed storage refusal with existing memory and bytes intact
+CORE: 20 passed, 0 failed

@@ -1,0 +1,76 @@
+{
+  "schema": "homeless-unity-source-syntax/1",
+  "language": "CSharp9",
+  "compiler": "4.11.0.0",
+  "files": [
+    {
+      "path": "unity/Assets/HOMELESS/Editor/GameplaySceneBuilder.cs",
+      "sha256": "1b51a42e84a72d343b53eaa07a31ed62bf785013ac2982fc91568e44c6e06600"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Editor/SourceSceneBuilder.cs",
+      "sha256": "922efe7c13c59a91210d12993d71c37a33dfe9f64eb944f9da13f4dc46623125"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Editor/SurfaceImporter.cs",
+      "sha256": "bebee6f6c352a0dd811737dc03396890da0d8699b5845ed4e0514be3aa65c54e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/FrameTelemetry.cs",
+      "sha256": "c4cc5bfa8b4a9616634d97f164ae958ef10c27289f7a404b7e1dcedace9478c6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WireJson.cs",
+      "sha256": "d47245daa40ca36faa29f84de9b3739f1bfdbe610c1247ec18701bc329eaf38a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldClient.cs",
+      "sha256": "5046d1913ad8af8501e17154e8ba06b0ab029cd0ff2ee7f174834293fdf70670"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldContract.cs",
+      "sha256": "8c91e2dd5e7196f2d047692a9c44f54930aff283e2e4da220e85c2d198711b5f"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldLifeView.cs",
+      "sha256": "e6bfc7b130fbde04e3f5879bb22aa28d65e85822dd7447608cb8694afeeedf90"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldView.cs",
+      "sha256": "15fdd9f732a988282f4e5400d8969c7d4619172ea0a252a46e3da7100261ef25"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/ReviewSoundscape.cs",
+      "sha256": "2d9162fd59d106fad3078bc00e4b5ff9aae773e105b9d701fdd42be4147fea34"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/ReviewWalker.cs",
+      "sha256": "11e5b10488818cc402cef044e6face7906bf6b2546466b17ad84d6dcccb9b0f4"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Tests/Editor/SourcePreparationTests.cs",
+      "sha256": "78efeb0c08e150f0651d37364b5c525a38b93fecda4bb337383176eb99f571e6"
+    }
+  ],
+  "profiles": {
+    "android_player": [
+      "UNITY_ANDROID",
+      "UNITY_6000_1_OR_NEWER",
+      "ENABLE_IL2CPP"
+    ],
+    "editor_tests": [
+      "UNITY_EDITOR",
+      "UNITY_EDITOR_LINUX",
+      "UNITY_ANDROID",
+      "UNITY_6000_1_OR_NEWER",
+      "UNITY_INCLUDE_TESTS"
+    ]
+  },
+  "syntax_errors": [],
+  "syntax_status": "PASS",
+  "unity_semantic_compilation": "NOT_RUN",
+  "unity_asset_import": "NOT_RUN",
+  "unity_play_mode": "NOT_RUN",
+  "unity_android_build": "NOT_RUN",
+  "limitation": "Only grammar/preprocessor parsing; missing engine types and API incompatibilities are not detected."
+}

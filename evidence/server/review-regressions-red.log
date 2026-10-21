@@ -1,0 +1,337 @@
+test_actual_external_controller_uses_same_http_schema (test_protocol.ProtocolTests) ... ERROR
+test_client_invokes_manifest_path_with_exact_retry_after_new_state (test_protocol.ProtocolTests) ... ERROR
+test_event_interest_is_scoped_and_continuity_cursor_is_durable (test_protocol.ProtocolTests) ... ERROR
+test_http_shapes_and_operator_only_operations_refuse (test_protocol.ProtocolTests) ... ERROR
+test_network_parser_rejects_html_empty_truncated_and_oversized (test_protocol.ProtocolTests) ... ok
+test_plain_get_cannot_read_private_memories_or_forge_founder (test_protocol.ProtocolTests) ... FAIL
+test_purl_discovery_and_read_never_mutates (test_protocol.ProtocolTests) ... FAIL
+test_two_connections_race_stale_revision_only_one_commits (test_protocol.ProtocolTests) ... ERROR
+test_validate_uses_admission_without_committing (test_protocol.ProtocolTests) ... ERROR
+test_boat_trip_and_unready_destination_refuse_without_mutation (test_world.WorldTests) ... ok
+test_disconnect_during_trip_and_exact_retry_after_restart (test_world.WorldTests) ... ok
+test_identity_expiry_and_no_self_assigned_founder (test_world.WorldTests) ... ok
+test_identity_namespaces_cannot_move_an_unboarded_vehicle (test_world.WorldTests) ... FAIL
+test_invalid_commands_and_budget_refusals_leave_state_unchanged (test_world.WorldTests) ... ok
+test_malformed_types_and_validation_encoding_have_typed_atomic_refusals (test_world.WorldTests) ... ERROR
+test_npc_refusal_and_independent_clock_schedule (test_world.WorldTests) ... ok
+test_overlay_and_braid_are_not_visit_and_no_unlearned_portal (test_world.WorldTests) ... ok
+test_read_is_pure_and_distant_npc_does_not_know_local_conversation (test_world.WorldTests) ... ok
+test_revision_exact_retry_and_altered_duplicate (test_world.WorldTests) ... ok
+test_revocation_survives_restart (test_world.WorldTests) ... ok
+test_scoped_authoring_and_contribution_persists_across_reopen (test_world.WorldTests) ... ok
+test_tampered_state_refuses_and_existing_world_never_reseeded (test_world.WorldTests) ... ok
+test_taxi_consent_and_ground_air_ground_journey (test_world.WorldTests) ... ok
+test_token_is_not_valid_before_issuance_and_null_does_not_become_operator (test_world.WorldTests) ... FAIL
+test_two_riders_capacity_driver_control_and_attached_movement (test_world.WorldTests) ... ok
+test_walking_is_continuous_cancel_stops_without_teleport_and_resumes (test_world.WorldTests) ... ok
+
+======================================================================
+ERROR: test_actual_external_controller_uses_same_http_schema (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 278, in request
+    with self.opener.open(req, timeout=self.timeout) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 113, in test_actual_external_controller_uses_same_http_schema
+    obs=ai.observe()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 286, in observe
+    value = self.request("/r/world")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 281, in request
+    raise NetworkFailure(exc.code, "admission or transport refused; refresh observation") from exc
+dark_server.protocol.NetworkFailure: 400: admission or transport refused; refresh observation
+
+======================================================================
+ERROR: test_client_invokes_manifest_path_with_exact_retry_after_new_state (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 278, in request
+    with self.opener.open(req, timeout=self.timeout) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 63, in test_client_invokes_manifest_path_with_exact_retry_after_new_state
+    observed=self.client.observe()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 286, in observe
+    value = self.request("/r/world")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 281, in request
+    raise NetworkFailure(exc.code, "admission or transport refused; refresh observation") from exc
+dark_server.protocol.NetworkFailure: 400: admission or transport refused; refresh observation
+
+======================================================================
+ERROR: test_event_interest_is_scoped_and_continuity_cursor_is_durable (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 278, in request
+    with self.opener.open(req, timeout=self.timeout) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 102, in test_event_interest_is_scoped_and_continuity_cursor_is_durable
+    self.client.invoke(self.client.proposal('sit',{},'local',self.client.observe()['revision']))
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 286, in observe
+    value = self.request("/r/world")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 281, in request
+    raise NetworkFailure(exc.code, "admission or transport refused; refresh observation") from exc
+dark_server.protocol.NetworkFailure: 400: admission or transport refused; refresh observation
+
+======================================================================
+ERROR: test_http_shapes_and_operator_only_operations_refuse (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 278, in request
+    with self.opener.open(req, timeout=self.timeout) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 97, in test_http_shapes_and_operator_only_operations_refuse
+    request=self.client.proposal(op,{},'bad-'+op,self.client.observe()['revision'])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 286, in observe
+    value = self.request("/r/world")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 281, in request
+    raise NetworkFailure(exc.code, "admission or transport refused; refresh observation") from exc
+dark_server.protocol.NetworkFailure: 400: admission or transport refused; refresh observation
+
+======================================================================
+ERROR: test_two_connections_race_stale_revision_only_one_commits (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 278, in request
+    with self.opener.open(req, timeout=self.timeout) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 79, in test_two_connections_race_stale_revision_only_one_commits
+    rev=self.client.observe()['revision']
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 286, in observe
+    value = self.request("/r/world")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 281, in request
+    raise NetworkFailure(exc.code, "admission or transport refused; refresh observation") from exc
+dark_server.protocol.NetworkFailure: 400: admission or transport refused; refresh observation
+
+======================================================================
+ERROR: test_validate_uses_admission_without_committing (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 278, in request
+    with self.opener.open(req, timeout=self.timeout) as response:
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 72, in test_validate_uses_admission_without_committing
+    request=self.client.proposal('author',{'target':'cafe','text':'At the corner'},'author-one',self.client.observe()['revision'])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 286, in observe
+    value = self.request("/r/world")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/protocol.py", line 281, in request
+    raise NetworkFailure(exc.code, "admission or transport refused; refresh observation") from exc
+dark_server.protocol.NetworkFailure: 400: admission or transport refused; refresh observation
+
+======================================================================
+ERROR: test_malformed_types_and_validation_encoding_have_typed_atomic_refusals (test_world.WorldTests) (op='talk')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 214, in test_malformed_types_and_validation_encoding_have_typed_atomic_refusals
+    with self.assertRaises(Refused):self.action(op,args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 63, in action
+    return self.world.execute(token or self.token, request, now=102)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 281, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 324, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 427, in _act
+    target = state["actors"].get(args["target"])
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_types_and_validation_encoding_have_typed_atomic_refusals (test_world.WorldTests) (op='travel')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 214, in test_malformed_types_and_validation_encoding_have_typed_atomic_refusals
+    with self.assertRaises(Refused):self.action(op,args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 63, in action
+    return self.world.execute(token or self.token, request, now=102)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 281, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 324, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 481, in _act
+    route, length = self._route(state, mover["node"], args["destination"], mode)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 398, in _route
+    require(destination in nodes and nodes[destination]["ready"], "DESTINATION_UNREADY", str(destination), "HD-48")
+TypeError: unhashable type: 'dict'
+
+======================================================================
+ERROR: test_malformed_types_and_validation_encoding_have_typed_atomic_refusals (test_world.WorldTests) (op='board')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 214, in test_malformed_types_and_validation_encoding_have_typed_atomic_refusals
+    with self.assertRaises(Refused):self.action(op,args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 63, in action
+    return self.world.execute(token or self.token, request, now=102)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 281, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 324, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 438, in _act
+    vehicle = state["vehicles"].get(args["vehicle"])
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_types_and_validation_encoding_have_typed_atomic_refusals (test_world.WorldTests) (op='overlay')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 214, in test_malformed_types_and_validation_encoding_have_typed_atomic_refusals
+    with self.assertRaises(Refused):self.action(op,args)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 63, in action
+    return self.world.execute(token or self.token, request, now=102)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 281, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 324, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 496, in _act
+    require(args["destination"] in state["content"]["nodes"], "DESTINATION", "unknown place")
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_types_and_validation_encoding_have_typed_atomic_refusals (test_world.WorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 218, in test_malformed_types_and_validation_encoding_have_typed_atomic_refusals
+    with self.assertRaises(Refused):self.world.validate(self.token,request,now=102)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 293, in validate
+    require(len(canonical(request).encode()) <= 8192, "REQUEST_BUDGET", "8192 bytes")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 33, in canonical
+    return json.dumps(value, sort_keys=True, separators=(",", ":"),
+  File "/usr/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant
+
+======================================================================
+FAIL: test_plain_get_cannot_read_private_memories_or_forge_founder (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 56, in test_plain_get_cannot_read_private_memories_or_forge_founder
+    self.assertEqual(self.raw('/r/world')[0],401)
+AssertionError: 400 != 401
+
+======================================================================
+FAIL: test_purl_discovery_and_read_never_mutates (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_protocol.py", line 46, in test_purl_discovery_and_read_never_mutates
+    self.assertEqual(code,200);self.assertEqual(manifest['protocol'],'PURL/0.1')
+AssertionError: 400 != 200
+
+======================================================================
+FAIL: test_identity_namespaces_cannot_move_an_unboarded_vehicle (test_world.WorldTests) (name='car')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 205, in test_identity_namespaces_cannot_move_an_unboarded_vehicle
+    with self.assertRaises(Refused):self.world.register(name,now=100)
+AssertionError: Refused not raised
+
+======================================================================
+FAIL: test_identity_namespaces_cannot_move_an_unboarded_vehicle (test_world.WorldTests) (name='system')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 205, in test_identity_namespaces_cannot_move_an_unboarded_vehicle
+    with self.assertRaises(Refused):self.world.register(name,now=100)
+AssertionError: Refused not raised
+
+======================================================================
+FAIL: test_identity_namespaces_cannot_move_an_unboarded_vehicle (test_world.WorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 207, in test_identity_namespaces_cannot_move_an_unboarded_vehicle
+    with self.assertRaises(Refused):World.create(Path(self.temp.name)/'collision.db',fixture)
+AssertionError: Refused not raised
+
+======================================================================
+FAIL: test_token_is_not_valid_before_issuance_and_null_does_not_become_operator (test_world.WorldTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_world.py", line 222, in test_token_is_not_valid_before_issuance_and_null_does_not_become_operator
+    with self.assertRaises(Refused):self.world.observe(self.token,now=99)
+AssertionError: Refused not raised
+
+----------------------------------------------------------------------
+Ran 26 tests in 6.538s
+
+FAILED (failures=6, errors=11)

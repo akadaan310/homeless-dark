@@ -1,0 +1,6 @@
+**
+ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)
+[396788:396788:20261021,092003.504112:WARNING spawn_subprocess.cc:247] intermediate process terminated by signal 5 (Trace/breakpoint trap) (core dumped)
+ERROR        | can't find SDK installation directory
+DEBUG   | could not find virtual device named 'homeless_api26'

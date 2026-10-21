@@ -1,0 +1,44 @@
+{
+  "schema": "dark.speech-cache/1",
+  "cache_key": "f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45",
+  "filename": "f65bb8ff2b81b5197912f7a4e38a5dffbea55b5e150dfb74afe0caba3f1faa45.wav",
+  "event_id": "evt:arrival:ar:pair_reply",
+  "speaker": "npc:bo",
+  "canonical_act": {
+    "event_id": "evt:arrival:ar:pair_reply",
+    "speaker": "npc:bo",
+    "language": "ar",
+    "act": "pair_reply",
+    "slots": {}
+  },
+  "caption": "بعد قليل. أنا أنتظر قهوتي.",
+  "voice": {
+    "runtime": "eSpeak NG text-to-speech: 1.50",
+    "voice": "ar",
+    "speed_words_per_minute": 155,
+    "pitch": 48,
+    "amplitude": 80,
+    "voice_input_sha256": {
+      "phondata": "5c9bf10be3cc412fc6db0c58dee981ce8aedd1887c076b5f6dae9ee4ba71d106",
+      "phonindex": "3177639c9daa905245218378846ab0bcf3795a062201296653e7506dcc3de45b",
+      "phontab": "291ec169c6e430bbb456617dcadd37af770fc2804511615eb8deadb87d5a8cda",
+      "intonations": "8a2ef760a920cc279453ea76bcfafd65dd4a159e97747cd6e47d2a501151703f",
+      "ar_dict": "59bb2a9d521e53808927a44b3fe757893913c702837b25d9a96e3753374b5eab",
+      "lang/sem/ar": "43f418f8140e5a7bd7096963da20ccba9247f6be1fcdb08cb53dd7967dd72eee"
+    },
+    "pronunciation_dictionary": "bundled pinned dictionary; no custom entries",
+    "prosody": "fixed command parameters"
+  },
+  "sha256": "5c8f063439b1e35cc848db8bef8739cfb8b8b748b3fe39e9174dddda191c930f",
+  "synthesis_seconds": 0.019843947608023882,
+  "sample_rate": 22050,
+  "channels": 1,
+  "codec": "PCM16-WAV",
+  "frames": 67651,
+  "duration_seconds": 3.0680725623582767,
+  "peak_abs": 16092,
+  "pcm_rms": 0.056518553878948774,
+  "native_audition": "NOT_RUN",
+  "human_intelligibility_review": "NOT_RUN",
+  "real_person_voice": false
+}

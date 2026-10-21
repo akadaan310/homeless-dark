@@ -1,0 +1,15 @@
+{
+  "schema": "dark.staging-verification/1",
+  "status": "PASS",
+  "test_groups": 18,
+  "independent_review": "Three findings fixed and independently re-reviewed; evidence/content/staging-review.json",
+  "scope": "Bounded local candidate preparation, typed portable decoding, mathematical AABB readiness and actor precondition checking",
+  "world_integration": "CALLER_OWNED",
+  "native_physics": "NOT_RUN",
+  "gpu_memory": "NOT_MEASURED",
+  "files": {
+    "packages/dark_server/staging.py": "13d45e9f6bedfd9ed63481a04ecafaeb3b439646ae5c78d291b082f0b7cac4b7",
+    "tests/server/test_staging.py": "bb033e4bee6a70a7c11a30998075c28597576ed3af81748b5602d64561bcbb11",
+    "evidence/staging/probe.py": "45ad189ed42aa43e4e1686894b52470b95395a797fe9d7df690f7d0b62d5f9ab"
+  }
+}

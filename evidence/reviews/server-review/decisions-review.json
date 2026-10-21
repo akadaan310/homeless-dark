@@ -1,0 +1,9 @@
+{
+  "schema": "dark.decisions-independent-review/1",
+  "sampled_games": 1000,
+  "independent_deviation_check": "PASS",
+  "grid_sample_equilibria_checked_for_welfare": 2230,
+  "sampled_welfare_selection_check": "PASS",
+  "proof_scope": "Source review supports2x2 completeness: endpoints and exact indifference roots cover isolated/interior/boundary cases; continuum not fully enumerated. This independent grid probe is a bounded cross-check, not strategic realism validation.",
+  "finding": "No defect found in this scoped solver pass. Caller must supply truthful actual activity/node and authenticated nearby observations."
+}

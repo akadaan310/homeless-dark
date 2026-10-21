@@ -1,0 +1,25 @@
+{
+  "schema": "dark.population-runtime-review/1",
+  "scope": "read-only independent candidate adapter review; actual C# ledger bridge used",
+  "findings": [
+    {
+      "case": "active",
+      "result": "REFUSED",
+      "code": "LEDGER_CONTINUITY"
+    },
+    {
+      "case": "cache",
+      "result": "REFUSED",
+      "code": "FIELDS"
+    }
+  ],
+  "status": "Both original restore findings fixed; final scoped re-review found no additional defect",
+  "reviewed": [
+    "candidate copies before actual ledger call, commits wrapper only after validation",
+    "current exact capability and encounter ownership checked before replay",
+    "country-scoped stable IDs bind original owner/key and source allocation",
+    "restore uses one bounded population_inspect call and compares exact ledger person state",
+    "replay cache now validates request/response/witness/revision/conservation/identity",
+    "World must supply authenticated actor and actual source-country/spawn/arrival readiness; wrapper grants no authority"
+  ]
+}

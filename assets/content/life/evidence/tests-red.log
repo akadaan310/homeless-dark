@@ -1,0 +1,173 @@
+test_all_life_fields_shared_contracts_and_addressability (test_life.LifeTests) ... ERROR
+test_budget_clock_stale_revision_and_bad_shapes_refuse (test_life.LifeTests) ... ERROR
+test_building_light_and_cooldown_scope_refusals_are_atomic (test_life.LifeTests) ... ERROR
+test_building_uses_causal_entry_observation_and_can_decline (test_life.LifeTests) ... ERROR
+test_car_ride_policy_proposes_without_taking_control (test_life.LifeTests) ... ERROR
+test_cup_reactive_offset_is_synthetic_not_claimed_physics (test_life.LifeTests) ... ERROR
+test_deterministic_replay_and_source_geometry_immutable (test_life.LifeTests) ... ERROR
+test_exact_retry_after_current_authorization_and_conflict (test_life.LifeTests) ... ERROR
+test_snapshot_restores_identity_memories_relations_and_continuity (test_life.LifeTests) ... ERROR
+test_sparse_groups_enforce_opt_in_identity_and_exclusive_conflict (test_life.LifeTests) ... ERROR
+test_star_expression_never_changes_source_astrometry (test_life.LifeTests) ... ERROR
+test_tree_reacts_to_weather_and_expresses_bounded_glow (test_life.LifeTests) ... ERROR
+
+======================================================================
+ERROR: test_all_life_fields_shared_contracts_and_addressability (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_budget_clock_stale_revision_and_bad_shapes_refuse (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_building_light_and_cooldown_scope_refusals_are_atomic (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_building_uses_causal_entry_observation_and_can_decline (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_car_ride_policy_proposes_without_taking_control (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_cup_reactive_offset_is_synthetic_not_claimed_physics (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_deterministic_replay_and_source_geometry_immutable (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_exact_retry_after_current_authorization_and_conflict (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_snapshot_restores_identity_memories_relations_and_continuity (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_sparse_groups_enforce_opt_in_identity_and_exclusive_conflict (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_star_expression_never_changes_source_astrometry (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+======================================================================
+ERROR: test_tree_reacts_to_weather_and_expresses_bounded_glow (test_life.LifeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_life.py", line 13, in setUp
+    self.m=importlib.import_module('dark_server.life')
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'dark_server.life'
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+FAILED (errors=12)

@@ -1,0 +1,22 @@
+test_actual_source_counts_and_world_reconciliation (test_global_layers.GlobalLayersTests) ... ok
+test_allocations_reproduce_committed_bytes_and_no_aggregate_double_count (test_global_layers.GlobalLayersTests) ... ok
+test_antimeridian_and_polar_addresses_consistent (test_global_layers.GlobalLayersTests) ... ok
+test_failed_reproduction_preserves_existing_outputs (test_global_layers.GlobalLayersTests) ... ok
+test_global_environment_actual_land_ocean_lake_and_poles (test_global_layers.GlobalLayersTests) ... ok
+test_missing_estimate_stays_missing_not_zero_or_fabricated (test_global_layers.GlobalLayersTests) ... ok
+test_polygon_holes_boundary_and_geometry_validation (test_global_layers.GlobalLayersTests) ... ok
+test_resolver_rejects_nan_boolean_outside_earth (test_global_layers.GlobalLayersTests) ... ok
+test_source_hashes_and_index_integrity (test_global_layers.GlobalLayersTests) ... ok
+test_source_refuses_partial_mixed_epoch_duplicate_and_fractional_input (test_global_layers.GlobalLayersTests) ... ok
+test_invalid_addresses_and_corrupt_grid_refused (test_global_terrain.GlobalTerrainTests) ... ok
+test_node_sampling_matches_raw_source_array_and_bilinear_center (test_global_terrain.GlobalTerrainTests) ... ok
+test_runtime_metadata_rejects_wrong_shape_step_and_path (test_global_terrain.GlobalTerrainTests) ... ok
+test_scalar_attributes_reject_vectors_before_native_read (test_global_terrain.GlobalTerrainTests) ... ok
+test_seams_poles_and_global_finite_samples_seed_17026 (test_global_terrain.GlobalTerrainTests) ... ok
+test_source_grid_and_decoded_integrity (test_global_terrain.GlobalTerrainTests) ... ok
+test_source_terrain_ocean_mountain_polar_character (test_global_terrain.GlobalTerrainTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 8.349s
+
+OK

@@ -1,0 +1,88 @@
+{
+  "schema": "homeless-unity-source-syntax/1",
+  "language": "CSharp9",
+  "compiler": "4.11.0.0",
+  "files": [
+    {
+      "path": "unity/Assets/HOMELESS/Editor/GameplaySceneBuilder.cs",
+      "sha256": "2cfc2955e27a3c7190ac50c19448922f7e10ad28ea7f84752230fff7abf9d8eb"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Editor/SourceSceneBuilder.cs",
+      "sha256": "922efe7c13c59a91210d12993d71c37a33dfe9f64eb944f9da13f4dc46623125"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Editor/SurfaceImporter.cs",
+      "sha256": "bebee6f6c352a0dd811737dc03396890da0d8699b5845ed4e0514be3aa65c54e"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/FrameTelemetry.cs",
+      "sha256": "c4cc5bfa8b4a9616634d97f164ae958ef10c27289f7a404b7e1dcedace9478c6"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WireJson.cs",
+      "sha256": "d47245daa40ca36faa29f84de9b3739f1bfdbe610c1247ec18701bc329eaf38a"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldClient.cs",
+      "sha256": "e301a75d7f0e8e67bec21bc97a5acffc8db321f965adafa79a28ebaa3c517fc7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldContract.cs",
+      "sha256": "fc6184d2bb04ffe6bd79eab2363c6c82c045735f6fe19c3f3f265690b9ca0ed7"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldLifeView.cs",
+      "sha256": "6cb17e0ee2a8db46c1935edfd9ef538f341472927e38cf11e16cc636e8446d56"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldTerrainContract.cs",
+      "sha256": "edea25102887f80a1a0ce4cbfe62166b626e0ec367bca3285522d4368fa2ab76"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldTerrainView.cs",
+      "sha256": "b2976beaf80e4e951d7a7093c742c24f29db38626a3f594ba8ae0a7fc04fb712"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldVehicleMotion.cs",
+      "sha256": "5856ecb6ecc91cb8aaf3050941b36893227c4ce5cea4f48e018a5bef38d0bfdb"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/Gameplay/WorldView.cs",
+      "sha256": "ea085fb3166ff10060ed1afd440cb3372b2404cac0a070a53fd10cbc217c8cda"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/ReviewSoundscape.cs",
+      "sha256": "2d9162fd59d106fad3078bc00e4b5ff9aae773e105b9d701fdd42be4147fea34"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Runtime/ReviewWalker.cs",
+      "sha256": "11e5b10488818cc402cef044e6face7906bf6b2546466b17ad84d6dcccb9b0f4"
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Tests/Editor/SourcePreparationTests.cs",
+      "sha256": "78efeb0c08e150f0651d37364b5c525a38b93fecda4bb337383176eb99f571e6"
+    }
+  ],
+  "profiles": {
+    "android_player": [
+      "UNITY_ANDROID",
+      "UNITY_6000_1_OR_NEWER",
+      "ENABLE_IL2CPP"
+    ],
+    "editor_tests": [
+      "UNITY_EDITOR",
+      "UNITY_EDITOR_LINUX",
+      "UNITY_ANDROID",
+      "UNITY_6000_1_OR_NEWER",
+      "UNITY_INCLUDE_TESTS"
+    ]
+  },
+  "syntax_errors": [],
+  "syntax_status": "PASS",
+  "unity_semantic_compilation": "NOT_RUN",
+  "unity_asset_import": "NOT_RUN",
+  "unity_play_mode": "NOT_RUN",
+  "unity_android_build": "NOT_RUN",
+  "limitation": "Only grammar/preprocessor parsing; missing engine types and API incompatibilities are not detected."
+}

@@ -1,0 +1,265 @@
+{
+  "schema": "homeless-native-readiness/1",
+  "observed_at": "2026-10-21T10:28:05.069269+00:00",
+  "host": {
+    "architecture": "aarch64",
+    "kernel": "6.8.0-1060-oracle",
+    "cpu_count": 2,
+    "disk_free_bytes": 2334466048,
+    "kvm_device_present": false,
+    "binder_device_present": false
+  },
+  "probes": {
+    "jdk": {
+      "argv": [
+        "java",
+        "-version"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment (build 17.0.20.1+1-1-22.04-Ubuntu)\nOpenJDK 64-Bit Server VM (build 17.0.20.1+1-1-22.04-Ubuntu, mixed mode, sharing)\n",
+      "duration_seconds": 0.346
+    },
+    "adb": {
+      "argv": [
+        "adb",
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "Android Debug Bridge version 1.0.41\nVersion 28.0.2-debian\nInstalled as /usr/lib/android-sdk/platform-tools/adb\n",
+      "stderr": "",
+      "duration_seconds": 0.034
+    },
+    "qemu_user": {
+      "argv": [
+        "qemu-x86_64",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "qemu-x86_64 version 6.2.0 (Debian 1:6.2+dfsg-2ubuntu6.31)\nCopyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers\n",
+      "stderr": "",
+      "duration_seconds": 0.02
+    },
+    "qemu_system": {
+      "argv": [
+        "qemu-system-aarch64",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "QEMU emulator version 6.2.0 (Debian 1:6.2+dfsg-2ubuntu6.31)\nCopyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers\n",
+      "stderr": "",
+      "duration_seconds": 0.094
+    },
+    "software_gl": {
+      "argv": [
+        "xvfb-run",
+        "-a",
+        "glxinfo",
+        "-B"
+      ],
+      "exit_code": 0,
+      "stdout": "name of display: :100\ndisplay: :100  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0xffffffff)\n    Device: llvmpipe (LLVM 15.0.7, 128 bits) (0xffffffff)\n    Version: 23.2.1\n    Accelerated: no\n    Video memory: 11932MB\n    Unified memory: yes\n    Preferred profile: core (0x1)\n    Max core profile version: 4.5\n    Max compat profile version: 4.5\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.2\nMemory info (GL_ATI_meminfo):\n    VBO free memory - total: 63 MB, largest block: 63 MB\n    VBO free aux. memory - total: 4694 MB, largest block: 4694 MB\n    Texture free memory - total: 63 MB, largest block: 63 MB\n    Texture free aux. memory - total: 4694 MB, largest block: 4694 MB\n    Renderbuffer free memory - total: 63 MB, largest block: 63 MB\n    Renderbuffer free aux. memory - total: 4694 MB, largest block: 4694 MB\nMemory info (GL_NVX_gpu_memory_info):\n    Dedicated video memory: 4294157637 MB\n    Total available memory: 4294169569 MB\n    Currently available dedicated video memory: 63 MB\nOpenGL vendor string: Mesa\nOpenGL renderer string: llvmpipe (LLVM 15.0.7, 128 bits)\nOpenGL core profile version string: 4.5 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4\nOpenGL core profile shading language version string: 4.50\nOpenGL core profile context flags: (none)\nOpenGL core profile profile mask: core profile\n\nOpenGL version string: 4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.4\nOpenGL shading language version string: 4.50\nOpenGL context flags: (none)\nOpenGL profile mask: compatibility profile\n\nOpenGL ES profile version string: OpenGL ES 3.2 Mesa 23.2.1-1ubuntu3.1~22.04.4\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20\n\n",
+      "stderr": "",
+      "duration_seconds": 0.462
+    },
+    "blender": {
+      "argv": [
+        "blender",
+        "-b",
+        "--factory-startup",
+        "--python-expr",
+        "import bpy; print(\"OCIO_ENABLED\", bpy.app.build_options.opencolorio); print(\"BLENDER\", bpy.app.version_string)"
+      ],
+      "exit_code": 0,
+      "stdout": "OCIO_ENABLED False\nBLENDER 3.0.1\nColor management: Error could not find role data role.\nBlender 3.0.1\nColor management: scene view \"Filmic\" not found, setting default \"Standard\".\n/run/user/1001/gvfs/ non-existent directory\n\nBlender quit\n",
+      "stderr": "",
+      "duration_seconds": 2.35
+    },
+    "espeak": {
+      "argv": [
+        "espeak-ng",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "eSpeak NG text-to-speech: 1.50  Data at: /usr/lib/aarch64-linux-gnu/espeak-ng-data\n",
+      "stderr": "",
+      "duration_seconds": 0.018
+    },
+    "cmake": {
+      "argv": [
+        "cmake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cmake version 3.22.1\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+      "stderr": "",
+      "duration_seconds": 0.104
+    },
+    "sdkmanager": {
+      "argv": [
+        "/tmp/homeless-native/sdk/cmdline-tools/13.0/bin/sdkmanager",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "13.0\n\n",
+      "stderr": "",
+      "duration_seconds": 2.834
+    },
+    "android_engine": {
+      "argv": [
+        "qemu-x86_64",
+        "-L",
+        "/tmp/homeless-native/x64",
+        "-E",
+        "LD_LIBRARY_PATH=/tmp/homeless-native/sdk/emulator/lib64",
+        "/tmp/homeless-native/sdk/emulator/qemu/linux-x86_64/qemu-system-aarch64-headless",
+        "-version"
+      ],
+      "exit_code": 0,
+      "stdout": "Bail out! ERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)\nAndroid emulator version 37.2.12.0 (build_id 16428233) (CL:N/A)\nCopyright (C) 2006-2024 The Android Open Source Project and many others.\nThis program is a derivative of the QEMU CPU emulator (www.qemu.org).\n\n  This software is licensed under the terms of the GNU General Public\n  License version 2, as published by the Free Software Foundation, and\n  may be copied, distributed, and modified under those terms.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n",
+      "stderr": "**\nERROR:../../plugins/core.c:221:qemu_plugin_vcpu_init_hook: assertion failed: (success)\n[418434:418434:20261021,102803.278269:WARNING spawn_subprocess.cc:247] intermediate process terminated by signal 5 (Trace/breakpoint trap) (core dumped)\n",
+      "duration_seconds": 2.271
+    },
+    "android_acceleration": {
+      "argv": [
+        "qemu-x86_64",
+        "-L",
+        "/tmp/homeless-native/x64",
+        "-E",
+        "LD_LIBRARY_PATH=/tmp/homeless-native/sdk/emulator/lib64",
+        "/tmp/homeless-native/sdk/emulator/emulator-check",
+        "accel"
+      ],
+      "exit_code": 8,
+      "stdout": "accel:\n8\n/dev/kvm is not found: VT disabled in BIOS or KVM kernel module not loaded\naccel\n",
+      "stderr": "",
+      "duration_seconds": 0.43
+    },
+    "binder_module": {
+      "argv": [
+        "modprobe",
+        "--dry-run",
+        "binder_linux"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "modprobe: FATAL: Module binder_linux not found in directory /lib/modules/6.8.0-1060-oracle\n",
+      "duration_seconds": 0.005
+    },
+    "packages": {
+      "argv": [
+        "dpkg-query",
+        "-W",
+        "-f=${Package}\t${Version}\t${Architecture}\n",
+        "adb",
+        "openjdk-17-jdk-headless",
+        "qemu-user",
+        "qemu-system-arm",
+        "xvfb",
+        "mesa-utils",
+        "blender",
+        "blender-data",
+        "espeak-ng",
+        "cmake",
+        "squashfs-tools-ng",
+        "squashfuse"
+      ],
+      "exit_code": 0,
+      "stdout": "adb\t1:10.0.0+r36-9\tarm64\nblender\t3.0.1+dfsg-7\tarm64\nblender-data\t3.0.1+dfsg-7\tall\ncmake\t3.22.1-1ubuntu1.22.04.2\tarm64\nespeak-ng\t1.50+dfsg-10ubuntu0.1\tarm64\nmesa-utils\t8.4.0-1ubuntu1\tarm64\nopenjdk-17-jdk-headless\t17.0.20.1+1-1~22.04\tarm64\nqemu-system-arm\t1:6.2+dfsg-2ubuntu6.31\tarm64\nqemu-user\t1:6.2+dfsg-2ubuntu6.31\tarm64\nsquashfs-tools-ng\t1.1.3-2\tarm64\nsquashfuse\t0.1.103-3\tarm64\nxvfb\t2:21.1.4-2ubuntu1.7~22.04.16\tarm64\n",
+      "stderr": "",
+      "duration_seconds": 0.032
+    },
+    "x64_syscall_fixture": {
+      "argv": [
+        "qemu-x86_64",
+        "/tmp/homeless-isa-probe-n91m7fwj/exit42-x64"
+      ],
+      "exit_code": 42,
+      "stdout": "",
+      "stderr": "",
+      "duration_seconds": 0.024
+    },
+    "arm_machine_tcg": {
+      "argv": [
+        "qemu-system-aarch64",
+        "-machine",
+        "virt",
+        "-cpu",
+        "cortex-a57",
+        "-accel",
+        "tcg",
+        "-m",
+        "128",
+        "-S",
+        "-display",
+        "none",
+        "-nodefaults",
+        "-qmp",
+        "stdio"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"QMP\": {\"version\": {\"qemu\": {\"micro\": 0, \"minor\": 2, \"major\": 6}, \"package\": \"Debian 1:6.2+dfsg-2ubuntu6.31\"}, \"capabilities\": [\"oob\"]}}\n{\"return\": {}}\n{\"return\": {\"status\": \"prelaunch\", \"singlestep\": false, \"running\": false}}\n{\"timestamp\": {\"seconds\": 1792578483, \"microseconds\": 958954}, \"event\": \"SHUTDOWN\", \"data\": {\"guest\": false, \"reason\": \"host-qmp-quit\"}}\n{\"return\": {}}\n",
+      "stderr": "",
+      "duration_seconds": 0.08
+    },
+    "arm_machine_kvm": {
+      "argv": [
+        "qemu-system-aarch64",
+        "-machine",
+        "virt",
+        "-cpu",
+        "cortex-a57",
+        "-accel",
+        "kvm",
+        "-m",
+        "128",
+        "-S",
+        "-display",
+        "none",
+        "-nodefaults",
+        "-qmp",
+        "stdio"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Could not access KVM kernel module: No such file or directory\nqemu-system-aarch64: -accel kvm: failed to initialize kvm: No such file or directory\n",
+      "duration_seconds": 0.038
+    },
+    "unity_translated_version": {
+      "argv": [
+        "qemu-x86_64",
+        "-L",
+        "/tmp/homeless-native/x64",
+        "/tmp/homeless-native/unity-squashfs/Editor/Unity",
+        "-version"
+      ],
+      "exit_code": 0,
+      "stdout": "6000.1.0f1\n",
+      "stderr": "",
+      "duration_seconds": 1.065
+    }
+  },
+  "unity_editor_candidates_present": [
+    "/tmp/homeless-native/unity-squashfs/Editor/Unity"
+  ],
+  "unity_license_file_present": false,
+  "unity_activation_verified": false,
+  "pinned_editor": {
+    "version": "6000.1.0f1",
+    "revision": "9ea152932a88",
+    "archive_bytes": 4519451520,
+    "installed_bytes": 8481863680,
+    "android_support_installed_bytes": 1350645118
+  },
+  "mandatory_gates": {
+    "unity_import": "NOT_RUN",
+    "unity_android_build": "NOT_RUN",
+    "unity_native_render_capture": "NOT_RUN",
+    "galaxy_a16_20_minute_session": "NOT_RUN"
+  },
+  "network_observation": {
+    "cloud_environment_status_tool_available": false,
+    "policy_file_present": false
+  },
+  "interpretation": "QEMU/GL tool execution is diagnostic only. No device or game gate passes from these probes."
+}

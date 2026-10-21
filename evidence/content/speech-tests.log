@@ -1,0 +1,14 @@
+test_actual_synthesis_decodes_and_caches (test_speech.SpeechTests) ... ok
+test_cancel_before_commit_never_commits (test_speech.SpeechTests) ... ok
+test_canonical_key_ignores_dictionary_order (test_speech.SpeechTests) ... ok
+test_corrupt_cached_audio_is_refused (test_speech.SpeechTests) ... ok
+test_event_identity_and_language_change_key (test_speech.SpeechTests) ... ok
+test_grounded_slots_require_known_entities (test_speech.SpeechTests) ... ok
+test_predicted_does_not_mean_committed_or_heard (test_speech.SpeechTests) ... ok
+test_speaker_interrupts_only_own_audio (test_speech.SpeechTests) ... ok
+test_unknown_effect_cannot_be_realized (test_speech.SpeechTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.191s
+
+OK

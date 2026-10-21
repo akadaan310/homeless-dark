@@ -1,0 +1,26 @@
+test_manual_clearance_does_not_reintroduce_removed_graph_edges (test_navigation.NavigationTests) ... ok
+test_route_reentry_from_manual_position_is_continuous (test_navigation.NavigationTests) ... ok
+test_short_route_to_nearest_node_does_not_complete_before_approach (test_navigation.NavigationTests) ... ERROR
+
+======================================================================
+ERROR: test_short_route_to_nearest_node_does_not_complete_before_approach (test_navigation.NavigationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_navigation.py", line 39, in test_short_route_to_nearest_node_does_not_complete_before_approach
+    result=act('travel',{'destination':'cafe','mode':'walk'},'route')
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_navigation.py", line 37, in act
+    def act(op,args,rid):return w.execute(token,{'schema':'dark.action/1','request_id':rid,'expected_revision':w.snapshot()['revision'],'operation':op,'arguments':args})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 319, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 356, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 555, in _act
+    require(len(route) > 1, "ALREADY_THERE", "destination equals origin")
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 45, in require
+    raise Refused(code, witness, clause)
+dark_server.world.Refused: ALREADY_THERE: destination equals origin
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.333s
+
+FAILED (errors=1)

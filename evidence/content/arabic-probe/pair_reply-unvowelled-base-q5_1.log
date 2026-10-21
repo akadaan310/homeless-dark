@@ -1,0 +1,5 @@
+
+[00:00:00.000 --> 00:00:02.740]   بمسكالي أعطيك بأكودي
+read_audio_data: reading audio data from '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/arabic-probe/pair_reply-unvowelled-16k.wav' ...
+read_audio_data: trying to decode with miniaudio
+output_txt: saving output to '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/evidence/content/arabic-probe/pair_reply-unvowelled-base-q5_1.txt'

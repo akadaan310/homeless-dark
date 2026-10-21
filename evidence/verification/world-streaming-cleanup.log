@@ -1,0 +1,10 @@
+test_actual_position_and_current_route_cannot_be_supplied_by_client (test_streaming_world.StreamingWorldTests) ... ok
+test_changed_asset_after_reservation_refuses_atomic_activation (test_streaming_world.StreamingWorldTests) ... ok
+test_expired_reservation_releases_budget_without_proximity_or_player_input (test_streaming_world.StreamingWorldTests) ... ok
+test_prepare_and_activate_are_separate_durable_nonmovement_admissions (test_streaming_world.StreamingWorldTests) ... ok
+test_reservation_deadline_releases_budget_before_cell_ttl (test_streaming_world.StreamingWorldTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.159s
+
+OK

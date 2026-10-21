@@ -1,0 +1,19 @@
+............E..........................................................................................
+======================================================================
+ERROR: test_decisions (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_decisions
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_decisions.py", line 4, in <module>
+    from dark_server import decisions as d
+ImportError: cannot import name 'decisions' from 'dark_server' (/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/__init__.py)
+
+
+----------------------------------------------------------------------
+Ran 103 tests in 40.712s
+
+FAILED (errors=1)

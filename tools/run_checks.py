@@ -15,9 +15,9 @@ OUTPUT=ROOT/'evidence/verification'
 
 def source_digest():
     files=[]
-    for directory in ('packages','tools','tests','unity'):
+    for directory in ('packages','tools','tests','unity','assets','data'):
         for path in sorted((ROOT/directory).rglob('*')):
-            if not path.is_file() or any(part in {'bin','obj','__pycache__','Library','Logs','Temp','Builds'} for part in path.parts): continue
+            if not path.is_file() or any(part in {'bin','obj','__pycache__','Library','Logs','Temp','Builds','cache'} for part in path.parts): continue
             relative=path.relative_to(ROOT).as_posix()
             files.append({'path':relative,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
     canonical=json.dumps(sorted(files,key=lambda r:r['path']),sort_keys=True,separators=(',',':')).encode()
@@ -43,6 +43,17 @@ def main():
     if (ROOT/'tests/telemetry').is_dir():commands.append(('telemetry',[sys.executable,'-m','unittest','discover','-s','tests/telemetry','-p','test_*.py']))
     if (ROOT/'tests/Dark.Population.Tests').is_dir():commands.append(('population',[sdk,'run','--project','tests/Dark.Population.Tests']))
     if (ROOT/'tests/Dark.Geography.Tests').is_dir():commands.append(('tampa-kernel',[sdk,'run','--project','tests/Dark.Geography.Tests']))
+    if (ROOT/'tests/Dark.PopulationAllocation.Tests').is_dir():commands.append(('global-population',[sdk,'run','--project','tests/Dark.PopulationAllocation.Tests']))
+    if (ROOT/'tests/server').is_dir():commands.append(('world-server',[sys.executable,'-m','unittest','discover','-s','tests/server','-p','test_*.py']))
+    if (ROOT/'tests/content').is_dir():commands.append(('content',[sys.executable,'-m','unittest','discover','-s','tests/content','-p','test_*.py']))
+    if (ROOT/'tools/environment/WorldWireTests').is_dir():commands.append(('native-wire',[sdk,'run','--project','tools/environment/WorldWireTests']))
+    if (ROOT/'tools/environment/world_wire_check.py').is_file():commands.append(('native-wire-interop',[sys.executable,'tools/environment/world_wire_check.py']))
+    if (ROOT/'tools/environment/terrain_wire_check.py').is_file():commands.append(('terrain-wire',[sys.executable,'tools/environment/terrain_wire_check.py']))
+    managed=os.environ.get('DARK_UNITY_MANAGED')
+    editor=Path(os.environ.get('DARK_UNITY_EDITOR','/tmp/homeless-native/unity-squashfs/Editor'))
+    if (editor/'Data/Managed/UnityEngine/UnityEngine.CoreModule.dll').is_file():
+        commands.append(('unity-api-compile',[sys.executable,'tools/environment/unity_api_check.py','--editor',str(editor),'--dotnet',sdk]))
+    elif managed:commands.append(('unity-api-compile',[sdk,'build','tools/environment/UnityApiCompile','-p:UnityManagedDir='+managed]))
     initial,files=source_digest();results=[]
     for name,argv in commands:
         start=time.monotonic()
@@ -60,7 +71,7 @@ def main():
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     report={'schema':'homeless.portable-verification/1','recorded_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
             'base_commit':commit,'working_tree_source_sha256':initial,'source_unchanged_during_run':initial==final,
-            'results':results,'unity_import':'BLOCKED','unity_adapter_compile':'NOT_RUN','android_build':'BLOCKED',
+            'results':results,'unity_import':'NOT_RUN','unity_adapter_compile':next((r['status'] for r in results if r['name']=='unity-api-compile'),'NOT_RUN'),'android_build':'NOT_RUN',
             'device_tests':'NOT_RUN','native_visual_acceptance':'NOT_RUN','release_accepted':False}
     (OUTPUT/'source-files.json').write_text(json.dumps(files,indent=2)+'\n')
     (OUTPUT/'latest.json').write_text(json.dumps(report,indent=2)+'\n')

@@ -1,0 +1,5 @@
+{
+  "url": "https://android.googlesource.com/platform/external/qemu/+/emu-master-dev/android-qemu2-glue/main.cpp?format=TEXT",
+  "source_sha256": "9469dc908eb4d1b1866b94bdc87f7816a65dc18070986af4728cc3beb5131cb9",
+  "scope": "Official current emulator source inspection; runtime binary behavior still tested separately"
+}

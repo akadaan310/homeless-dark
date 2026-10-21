@@ -1,0 +1,138 @@
+{
+  "schema": "dark.population-runtime-probe/1",
+  "initial_metrics": {
+    "demographic_estimate": 8140897523,
+    "virtual_members": 8140897523,
+    "stored_individuals": 0,
+    "stored_individual_histories": 0,
+    "active_actors": 0,
+    "focused_actors": 0,
+    "visible_characters": 0,
+    "voiced_characters": 0
+  },
+  "encounter": {
+    "status": "PROPOSED",
+    "revision": 1,
+    "person": {
+      "id": "wb2024/USA/261651911",
+      "origin": "USA",
+      "ordinal": 261651911,
+      "residence": "USA",
+      "present": "USA",
+      "fidelity": "Active",
+      "policy_seed": "9be29e6a20cf41ad822609aed2f7422bbfd76678dafa0452e4b9596ed74de6a7",
+      "facts": [
+        "met:fixture-member:tick:0"
+      ],
+      "commitments": [],
+      "last_event_revision": 0
+    },
+    "metrics": {
+      "demographic_estimate": 8140897523,
+      "virtual_members": 8140897522,
+      "stored_individuals": 1,
+      "stored_individual_histories": 1,
+      "active_actors": 1,
+      "focused_actors": 0,
+      "visible_characters": 0,
+      "voiced_characters": 0
+    },
+    "counts": {
+      "USA": {
+        "residents": 340003797,
+        "present": 340003797,
+        "visitors": 0,
+        "absent_residents": 0
+      }
+    },
+    "spawn": {
+      "identity": "wb2024/USA/261651911",
+      "world_actor_id": "population:USA:261651911",
+      "position": {
+        "lat": 27.9594638,
+        "lon": -82.5054865,
+        "alt": 0
+      },
+      "present_country": "USA",
+      "policy_seed": "9be29e6a20cf41ad822609aed2f7422bbfd76678dafa0452e4b9596ed74de6a7",
+      "fictional_placement": true,
+      "source_person_position": null,
+      "role": "ordinary_synthetic_npc",
+      "controller": "npc",
+      "requires_world_admission": true,
+      "native_collision_validation": "NOT_RUN"
+    },
+    "retire": null,
+    "witness": {
+      "actor": "fixture-member",
+      "operation": "encounter",
+      "identity": "wb2024/USA/261651911",
+      "world_revision": 0,
+      "ledger_revision": 0,
+      "allocation_hash": "ea2957c447598037b3fe56796c0f31eec476b66f730adfdadf185c0002112ebd",
+      "population_source_sha256": "770cbf8e33263680074c1bc60a5af540ac2f55db991389bfeabebc762c528e11",
+      "fictional_placement": true,
+      "actual_source_country": "USA"
+    },
+    "authority_granted": false,
+    "durable_commit_performed": false,
+    "physical_validation": "NOT_RUN"
+  },
+  "demote": {
+    "status": "PROPOSED",
+    "revision": 2,
+    "person": {
+      "id": "wb2024/USA/261651911",
+      "origin": "USA",
+      "ordinal": 261651911,
+      "residence": "USA",
+      "present": "USA",
+      "fidelity": "Persistent",
+      "policy_seed": "9be29e6a20cf41ad822609aed2f7422bbfd76678dafa0452e4b9596ed74de6a7",
+      "facts": [
+        "met:fixture-member:tick:0"
+      ],
+      "commitments": [],
+      "last_event_revision": 0
+    },
+    "metrics": {
+      "demographic_estimate": 8140897523,
+      "virtual_members": 8140897522,
+      "stored_individuals": 1,
+      "stored_individual_histories": 1,
+      "active_actors": 0,
+      "focused_actors": 0,
+      "visible_characters": 0,
+      "voiced_characters": 0
+    },
+    "counts": {
+      "USA": {
+        "residents": 340003797,
+        "present": 340003797,
+        "visitors": 0,
+        "absent_residents": 0
+      }
+    },
+    "spawn": null,
+    "retire": {
+      "world_actor_id": "population:USA:261651911",
+      "identity": "wb2024/USA/261651911",
+      "preserve_ledger_history": true
+    },
+    "witness": {
+      "actor": "fixture-member",
+      "operation": "demote",
+      "identity": "wb2024/USA/261651911",
+      "world_revision": 1,
+      "ledger_revision": 0,
+      "allocation_hash": "ea2957c447598037b3fe56796c0f31eec476b66f730adfdadf185c0002112ebd",
+      "population_source_sha256": "770cbf8e33263680074c1bc60a5af540ac2f55db991389bfeabebc762c528e11",
+      "fictional_placement": true,
+      "actual_source_country": "USA"
+    },
+    "authority_granted": false,
+    "durable_commit_performed": false,
+    "physical_validation": "NOT_RUN"
+  },
+  "restored_exactly": true
+}

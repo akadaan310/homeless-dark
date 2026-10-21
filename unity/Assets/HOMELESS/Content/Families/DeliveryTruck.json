@@ -1,0 +1,39 @@
+{
+  "name": "DeliveryTruck",
+  "family": "truck",
+  "license": "CC0-1.0",
+  "source": "original mathematical surface and mechanical detail authoring",
+  "triangles": 34062,
+  "mesh_objects": 190,
+  "units": "meters",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "bounds_m": [
+    [
+      -1.25,
+      1.25
+    ],
+    [
+      -3.434999942779541,
+      3.2350001335144043
+    ],
+    [
+      0.019999980926513672,
+      2.859999895095825
+    ]
+  ],
+  "attachments": {
+    "driver": "CabSeatOccupant",
+    "wheels": 6,
+    "seats": 2
+  },
+  "native_import": "NOT_RUN",
+  "visual_acceptance": "NOT_RUN",
+  "gameplay_status": "source_only",
+  "limitations": [
+    "No native captures, mobile LOD/texture profile or measured collision fit yet.",
+    "Named control/boarding transforms require runtime binding and acceptance scenarios."
+  ]
+}

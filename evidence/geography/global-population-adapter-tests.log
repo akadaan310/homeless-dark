@@ -1,0 +1,15 @@
+test_active_bound_is_configurable_below_absolute256 (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_actual_arrival_trip_migration_and_exact_conservation (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_exact_country_authority_ready_spawn_and_no_arbitrary_identity (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_forged_destination_missing_arrival_and_stale_input_refuse (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_owned_promotion_demotion_and_memories_survive_restart (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_repeated_encounter_key_never_duplicates_or_teleports (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_restore_reconciles_each_encounter_with_real_ledger (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_restore_refuses_malformed_or_inconsistent_replay_records (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_snapshot_and_idempotency_preserve_exact_real_ledger (test_population_world_adapter.PopulationAdapterTests) ... ok
+test_source_total_zero_initial_realization_and_lazy_country_encounter (test_population_world_adapter.PopulationAdapterTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 13.463s
+
+OK

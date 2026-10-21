@@ -1,0 +1,32 @@
+{
+  "scope": [
+    "tools/geography/global_terrain.py",
+    "tools/geography/global_layers.py",
+    "packages/com.homeless.dark/Runtime/Population/PopulationLedger.cs"
+  ],
+  "reviewer": "hero_speech agent independent of implementation",
+  "method": "read-only source review",
+  "findings": [
+    {
+      "id": "TERRAIN-ATTR-001",
+      "severity": "P2",
+      "file": "tools/geography/global_terrain.py",
+      "symbol": "decode.number_attr",
+      "finding": "nc_get_att_double can write multiple attribute elements into a scalar c_double; malformed vector-valued attribute can overwrite native memory.",
+      "recommendation": "Query nc_inq_attlen, require exactly1, then validate finite scalar values before decode.",
+      "status": "fixed and independently re-reviewed",
+      "resolution": "scalar_attribute queries nc_inq_attlen and requires one element before native copy; rejects other errors and nonfinite data. Decoder checks positive scale and int16 fill; runtime checks exact fixed layout, finite scaling and pinned file hash."
+    }
+  ],
+  "other_observations": [
+    "Country count conservation, positive world residual separation and population fidelity counts are explicit. No observed count inflation through promotion/demotion.",
+    "Geography is explicitly overview-scale; terrain does not claim ellipsoid datum, street collision or maritime safety."
+  ],
+  "not_a_full_security_audit": true,
+  "verification": {
+    "command": "python3 -m unittest discover -s tests/geography -p test_global_terrain.py -v",
+    "tests": 7,
+    "result": "PASS",
+    "review_scope": "source and regression tests for reported issue, not complete security audit"
+  }
+}

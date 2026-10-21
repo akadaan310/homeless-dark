@@ -1,0 +1,81 @@
+test_learning_requires_actual_path_memory_and_grants_an_operative_skill (test_mechanics.MechanicsTests) ... ERROR
+test_occupied_rotation_disconnect_inverse_and_graph_change (test_mechanics.MechanicsTests) ... ERROR
+test_relocation_keeps_registered_vehicle_seats_attached (test_mechanics.MechanicsTests) ... ERROR
+test_unlearned_rewrite_and_occupied_refusal_leave_world_unchanged (test_mechanics.MechanicsTests) ... ERROR
+
+======================================================================
+ERROR: test_learning_requires_actual_path_memory_and_grants_an_operative_skill (test_mechanics.MechanicsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 42, in test_learning_requires_actual_path_memory_and_grants_an_operative_skill
+    result=self.learn()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 36, in learn
+    return self.action('learn_pattern',{'lesson':'spruce-quarter-turn','answer':'quarter-turn-left'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 29, in action
+    return self.world.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 302, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 339, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 546, in _act
+    raise Refused("UNKNOWN_OPERATION", op)
+dark_server.world.Refused: UNKNOWN_OPERATION: learn_pattern
+
+======================================================================
+ERROR: test_occupied_rotation_disconnect_inverse_and_graph_change (test_mechanics.MechanicsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 57, in test_occupied_rotation_disconnect_inverse_and_graph_change
+    self.learn()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 36, in learn
+    return self.action('learn_pattern',{'lesson':'spruce-quarter-turn','answer':'quarter-turn-left'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 29, in action
+    return self.world.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 302, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 339, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 546, in _act
+    raise Refused("UNKNOWN_OPERATION", op)
+dark_server.world.Refused: UNKNOWN_OPERATION: learn_pattern
+
+======================================================================
+ERROR: test_relocation_keeps_registered_vehicle_seats_attached (test_mechanics.MechanicsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 80, in test_relocation_keeps_registered_vehicle_seats_attached
+    self.learn()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 36, in learn
+    return self.action('learn_pattern',{'lesson':'spruce-quarter-turn','answer':'quarter-turn-left'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 29, in action
+    return self.world.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 302, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 339, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 546, in _act
+    raise Refused("UNKNOWN_OPERATION", op)
+dark_server.world.Refused: UNKNOWN_OPERATION: learn_pattern
+
+======================================================================
+ERROR: test_unlearned_rewrite_and_occupied_refusal_leave_world_unchanged (test_mechanics.MechanicsTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 52, in test_unlearned_rewrite_and_occupied_refusal_leave_world_unchanged
+    self.learn();before=self.world.head()
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 36, in learn
+    return self.action('learn_pattern',{'lesson':'spruce-quarter-turn','answer':'quarter-turn-left'})
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/server/test_mechanics.py", line 29, in action
+    return self.world.execute(self.token,{'schema':'dark.action/1','request_id':'r'+str(self.serial),
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 302, in execute
+    return self._transaction(token, request, now)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 339, in _transaction
+    data = self._act(state, principal, op, request["arguments"])
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/dark_server/world.py", line 546, in _act
+    raise Refused("UNKNOWN_OPERATION", op)
+dark_server.world.Refused: UNKNOWN_OPERATION: learn_pattern
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.890s
+
+FAILED (errors=4)

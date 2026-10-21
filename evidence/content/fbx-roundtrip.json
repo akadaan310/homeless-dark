@@ -1,0 +1,450 @@
+{
+  "schema": "dark.fbx-validation/1",
+  "files": [
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/Bicycle.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 330,
+      "sha256": "9510b94bb605d66d934ab515b66e79d053a95f59d1c66b2245f44c7420adf4db",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [
+        "Crank|Scene|Scene",
+        "FrontWheel|Scene|Scene",
+        "RearWheel|Scene|Scene"
+      ],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -0.30528342723846436,
+          0.30528342723846436
+        ],
+        [
+          -1.0011999607086182,
+          1.0211999416351318
+        ],
+        [
+          0.008799970149993896,
+          1.1160000562667847
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null,
+      "mechanical_motion": {
+        "FrontWheel": {
+          "frame1_to31_rotation_radians": 3.0368728637695312,
+          "pivot_translation_m": 0.0
+        },
+        "RearWheel": {
+          "frame1_to31_rotation_radians": 3.0368728637695312,
+          "pivot_translation_m": 0.0
+        },
+        "Crank": {
+          "frame1_to31_rotation_radians": 3.0368728637695312,
+          "pivot_translation_m": 0.0
+        }
+      }
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/RotorShuttle.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 234,
+      "sha256": "0b1e1b10438c90c6c33a235821da62a97da2d1ad2c7b763ba356621c4fd713ae",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [
+        "LeftCabinDoor|Scene|Scene",
+        "MainRotor|Scene|Scene",
+        "RightCabinDoor|Scene|Scene",
+        "TailRotor|Scene|Scene"
+      ],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -4.599999904632568,
+          4.599999904632568
+        ],
+        [
+          -4.549999713897705,
+          6.070000171661377
+        ],
+        [
+          0.06803644448518753,
+          3.049999713897705
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null,
+      "mechanical_motion": {
+        "MainRotor": {
+          "frame1_to31_rotation_radians": 3.0368728637695312,
+          "pivot_translation_m": 0.0
+        },
+        "TailRotor": {
+          "frame1_to31_rotation_radians": 3.0368728637695312,
+          "pivot_translation_m": 0.0
+        },
+        "LeftCabinDoor": {
+          "frame1_to31_rotation_radians": 0.5483242273330688,
+          "pivot_translation_m": 0.0
+        },
+        "RightCabinDoor": {
+          "frame1_to31_rotation_radians": 0.5483242273330688,
+          "pivot_translation_m": 0.0
+        }
+      }
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CeramicCup.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 2,
+      "sha256": "d9c09481aa3a56de8d5f1bf4eb97d8a54482cab51f67e1b31997e568669a591f",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -0.04050000011920929,
+          0.07400000095367432
+        ],
+        [
+          -0.04049999639391899,
+          0.04050000384449959
+        ],
+        [
+          -1.1364961194360035e-09,
+          0.10199999809265137
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": 0.01199999451637268
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 7,
+      "sha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 163,
+      "actions": [
+        "CitizenRig|CitizenRig|EnterVehicle|CitizenRig|EnterVehicle",
+        "CitizenRig|CitizenRig|Idle|CitizenRig|Idle",
+        "CitizenRig|CitizenRig|JogInPlace|CitizenRig|JogInPlace",
+        "CitizenRig|CitizenRig|Listen|CitizenRig|Listen",
+        "CitizenRig|CitizenRig|Seated|CitizenRig|Seated",
+        "CitizenRig|CitizenRig|Talk|CitizenRig|Talk",
+        "CitizenRig|CitizenRig|WalkInPlace|CitizenRig|WalkInPlace",
+        "CitizenRig|CitizenRig|Wave|CitizenRig|Wave"
+      ],
+      "images": 13,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -0.49627000093460083,
+          0.49627000093460083
+        ],
+        [
+          -0.3214699625968933,
+          0.10943252593278885
+        ],
+        [
+          -0.007122185081243515,
+          1.6819806098937988
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Characters/CitizenAltSkin.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 7,
+      "sha256": "ab55ac9d117e9873732fed56763c565e8355baec9a9a67e7ae1402a846fafd85",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 163,
+      "actions": [
+        "CitizenRig|CitizenRig|EnterVehicle|CitizenRig|EnterVehicle",
+        "CitizenRig|CitizenRig|Idle|CitizenRig|Idle",
+        "CitizenRig|CitizenRig|JogInPlace|CitizenRig|JogInPlace",
+        "CitizenRig|CitizenRig|Listen|CitizenRig|Listen",
+        "CitizenRig|CitizenRig|Seated|CitizenRig|Seated",
+        "CitizenRig|CitizenRig|Talk|CitizenRig|Talk",
+        "CitizenRig|CitizenRig|WalkInPlace|CitizenRig|WalkInPlace",
+        "CitizenRig|CitizenRig|Wave|CitizenRig|Wave"
+      ],
+      "images": 13,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -0.49627000093460083,
+          0.49627000093460083
+        ],
+        [
+          -0.3214699625968933,
+          0.10943252593278885
+        ],
+        [
+          -0.007122185081243515,
+          1.6819806098937988
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AcousticGuitar.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 40,
+      "sha256": "026ee7046c209b3a67fde4b460fa12a4e0283a71458208c741a925adb3f86200",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -0.18660342693328857,
+          0.18660342693328857
+        ],
+        [
+          -0.4339999854564667,
+          0.0650000274181366
+        ],
+        [
+          -0.1289999932050705,
+          1.284999966621399
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/AudienceBalloon.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 57,
+      "sha256": "45eb64d7f44407bc87f046c7a98cd196e44a869bd05de4ba3ede66d661d6c3ad",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -3.768200159072876,
+          3.768200159072876
+        ],
+        [
+          -3.766993999481201,
+          3.7669944763183594
+        ],
+        [
+          0.119999960064888,
+          10.007424354553223
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/CoastalSixAircraft.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 45,
+      "sha256": "845737e98a8752b5fc3375ea385b7ba96ba7aab8e3a89185245877953a297427",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -5.099999904632568,
+          5.099999904632568
+        ],
+        [
+          -3.695000171661377,
+          3.5999999046325684
+        ],
+        [
+          -2.272992105645244e-08,
+          2.9499998092651367
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/DeliveryTruck.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 190,
+      "sha256": "3c4bd7e04ea609d4baeff728a11eab8c30ae4ecf951591cf0c545fae86a91e2c",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -3.434999942779541,
+          3.2350001335144043
+        ],
+        [
+          0.01999989151954651,
+          2.859999895095825
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/HarborLaunch.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 50,
+      "sha256": "2b8e2362c74aabb06479fbb997f9ceb81876987a77257995907ae85e99df3ff6",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -1.1649999618530273,
+          1.1649999618530273
+        ],
+        [
+          -3.5308642387390137,
+          3.575000047683716
+        ],
+        [
+          0.049999844282865524,
+          2.244999885559082
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/SubtropicalPalm.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 918,
+      "sha256": "3b3873f5f336a9be04ef9af9636fcd1e0b388237ccde5d6028f6bde4035bd817",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -2.2566683292388916,
+          2.25249981880188
+        ],
+        [
+          -2.25675892829895,
+          2.2569000720977783
+        ],
+        [
+          -0.023618808016180992,
+          6.038647174835205
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Families/UrbanBus.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 193,
+      "sha256": "f06972b90c90e735d7c197dd239a2759dd45311bda21783f1b9fe3b8fb035dd5",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -4.434999942779541,
+          4.510000228881836
+        ],
+        [
+          0.019999831914901733,
+          2.7800002098083496
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Content/Vehicles/CivicSedan.fbx",
+      "importer": "Blender FBX 3.0.1",
+      "meshes": 476,
+      "sha256": "d02cea72e4ad2697613a1535297d899c850ed56a23313633487a7ff927dc2212",
+      "environment_shim": "Non-Color to Linear enum only; ARM build lacks OpenColorIO",
+      "bones": 0,
+      "actions": [
+        "LeftFrontDoor|Scene|Scene",
+        "LeftFrontWheel|Scene|Scene",
+        "LeftRearDoor|Scene|Scene",
+        "LeftRearWheel|Scene|Scene",
+        "RightFrontDoor|Scene|Scene",
+        "RightFrontWheel|Scene|Scene",
+        "RightRearDoor|Scene|Scene",
+        "RightRearWheel|Scene|Scene"
+      ],
+      "images": 0,
+      "unweighted_vertices": 0,
+      "non_normalized_weights": 0,
+      "bounds_m": [
+        [
+          -1.1200000047683716,
+          1.1200000047683716
+        ],
+        [
+          -2.321000099182129,
+          2.2899999618530273
+        ],
+        [
+          0.002999931573867798,
+          1.5266295671463013
+        ]
+      ],
+      "result": "PASS",
+      "native_unity_import": "NOT_RUN",
+      "cup_inner_base_hit_m": null
+    }
+  ]
+}
