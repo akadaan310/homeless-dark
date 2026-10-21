@@ -1,0 +1,23 @@
+PASS WGS84 literal equator and poles
+PASS Antimeridian seam and ENU axis orientation
+PASS Geodesy rejects nonfinite, invalid latitude and undefined center
+PASS 1000 stratified WGS84 and local frame round trips seed 65163
+FAIL Supported negative-height polar boundary round trips: System.ArgumentOutOfRangeException: Supported ellipsoid height: -100 km to 1 million km. (Parameter 'ellipsoidHeightMeters')
+   at Dark.Numerics.Geodetic..ctor(Double latitudeDegrees, Double longitudeDegrees, Double ellipsoidHeightMeters) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 41
+   at Dark.Numerics.Geodesy.FromEcef(Vector3d v) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 83
+   at Program.<>c.<Main>b__2_4() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 53
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 177
+PASS Exact population shares and ordinal tie breaking
+PASS Allocation refuses duplicate, empty and zero denominator
+PASS Population conservation, permutation and quota property seed 25025
+PASS Five cells keep zero, missing, forbidden and foreign distinct
+PASS Inverse keeps image failure, kernel failure and unique zero separate
+PASS Tashkil preserves skeleton, context locality and complementary observations
+PASS Plate reconnect changes reachability with revision and inverse witness
+PASS Occupied refusal, stale match, budget and invalid destination are atomic
+PASS Graph carriage retains local occupants with continuous mathematical path
+PASS Witnessed relocation records origin and destination; incomplete/straddler refused
+PASS Connectivity flag distinguishes reconnection from actual reachability change
+PASS Snapshot isolation, foreign inverse and explicit invalid policy refusal
+PASS 200 sequential plate revisions preserve unaffected state and exact inverses
+TOTAL 17 PASS, 1 FAIL

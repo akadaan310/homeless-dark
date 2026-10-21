@@ -1,0 +1,40 @@
+{
+  "schema": "homeless.reference-inspection/1",
+  "sources": [
+    {
+      "repository": "https://github.com/akadaan310/purl",
+      "commit": "3df4452a3624b3f5492bf23c2dacc49d8d2b33c7",
+      "license_file_found": false,
+      "code_copied": false,
+      "README_sha256": "849cba5599368f77efe95b8775e7b992e69eabe20ccc34954da7fc435be6cc67",
+      "reference_tests": {
+        "command": "npm test",
+        "exit_code": 0,
+        "passed": 58,
+        "failed": 0,
+        "log": "evidence/references/purl-tests.log"
+      },
+      "integration": "ResourceAddress is an explicitly proposed entity syntax only; HTTP PURL runtime has NOT been ported or bound."
+    },
+    {
+      "repository": "https://github.com/akadaan310/seurl",
+      "commit": "620ff955b87857c3eb7a7700a81b6a4d0217400a",
+      "license_file_found": false,
+      "code_copied": false,
+      "README_sha256": "99858d559bbbd1abb2e002f6f69045b656866a1a1b877b341d74e22736a8bb62",
+      "integration": "Inspected real finite verbs START SWITCH WRITE COMMIT BUILD TALK PERTURB. No validated HOMELESS SEURL adapter implemented; no invented endpoints."
+    },
+    {
+      "repository": "https://github.com/akadaan310/substrateIO",
+      "commit": "7ace119a544fc736f0d4ec1d72cded9dad0a83e3",
+      "license_file_found": false,
+      "code_copied": false,
+      "README_sha256": "6f83950cf309bef2b0e8e3480b9945b4ef5b9c66e6d19f6aee7a1824c429fe39",
+      "integration": "Inspected substrate/acsp.py acsp-transition-history/1 export reader. No complete ACSP service present here. Local sign journal is a HOMELESS construction, not protocol conformance.",
+      "reference_tests": {
+        "status": "NOT_RUN",
+        "reason": "Repository requires Python >=3.11; current default is3.10.12; this run inspected sources only."
+      }
+    }
+  ]
+}

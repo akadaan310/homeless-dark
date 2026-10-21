@@ -1,0 +1,25 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-21T08:10:13Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 26426223,
+  "lat": 33.9776848,
+  "lon": -118.4486470,
+  "tags": {
+    "name": "Marina del Rey",
+    "name:en": "Marina del Rey",
+    "place": "quarter",
+    "wikidata": "Q988140",
+    "wikipedia": "en:Marina del Rey, California"
+  }
+}
+
+  ]
+}

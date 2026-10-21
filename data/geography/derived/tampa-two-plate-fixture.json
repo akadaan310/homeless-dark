@@ -1,0 +1,1143 @@
+{
+  "embedding": {
+    "anchor_node_id": "osm/node/1603574189",
+    "assumed_ellipsoid_height_m": 0,
+    "axis_order": [
+      "east",
+      "up",
+      "north"
+    ],
+    "coordinate_reference": "WGS84 latitude/longitude",
+    "ground_height_validity": "UNKNOWN",
+    "inverse_flattening": 298.257223563,
+    "local_radius_limit_m": 10000,
+    "method": "WGS84 ECEF at assumed h=0 -> local ENU -> XYZ(E,U,N), 6 decimal places in meters",
+    "rotation_convention": "Dark.World: x'=x*cos-z*sin; z'=x*sin+z*cos; y unchanged.",
+    "semimajor_axis_m": 6378137,
+    "source_geographic_coordinates_change": false
+  },
+  "fictional_model": {
+    "authority": "The witness ID is only a fixture provenance label; no authenticated effect authority is supplied.",
+    "factuality": "authored_fiction",
+    "initial_authored_closure": {
+      "a": "osm/node/1603574189",
+      "b": "osm/node/4520926406"
+    },
+    "moving_plate_source_component_count": 2,
+    "partition": "Remove anchor from selected source graph. Put west and east Spruce components on moving plate; all other nodes on fixed plate.",
+    "partition_is_physical_land_plate": false,
+    "physical_plate_boundary_geometry": "MISSING",
+    "point_occupants": "Synthetic fixture entities only; no identity, population, attachment, body extent or safe occupancy inference.",
+    "real_road_closure_claim": false,
+    "rewrite": "Replace west boundary by east boundary while rotating moving plate +90 degrees around common chart origin.",
+    "rule": "boundary-edge-replace/v1"
+  },
+  "geographic_anchors": [
+    {
+      "latitude_deg": 27.9594638,
+      "longitude_deg": -82.5054865,
+      "node_id": "osm/node/1603574189",
+      "osm_node_id": 1603574189,
+      "role": "shared named-road centerline junction",
+      "safe_spawn_validated": false
+    },
+    {
+      "latitude_deg": 27.9594647,
+      "longitude_deg": -82.5056527,
+      "node_id": "osm/node/2057042478",
+      "osm_node_id": 2057042478,
+      "role": "shared named-road centerline junction",
+      "safe_spawn_validated": false
+    }
+  ],
+  "observation_cases": {
+    "authored_divergence": {
+      "deliberately_retained_view": "West branch remains believed reachable.",
+      "factuality": "authored_fiction",
+      "observer_view_revision": 0,
+      "runtime_observer_implementation": "NOT_RUN",
+      "technical_staleness_is_authored_divergence": false,
+      "world_revision": 1
+    },
+    "stale_observation": {
+      "current_path_valid": false,
+      "current_revision": 1,
+      "observed_revision": 0,
+      "remembered_path": [
+        "osm/node/1603574189",
+        "osm/node/2057042478"
+      ],
+      "required_behavior": "Reject stale rewrite revision; retain observation provenance."
+    }
+  },
+  "physical_semantics": {
+    "body_extents": "MISSING",
+    "boundary_straddler_support": "UNSUPPORTED_BY_MATH_KERNEL",
+    "collision": "NOT_RUN",
+    "collision_meshes": "MISSING",
+    "effect_authority_authentication": "NOT_PROVIDED",
+    "ground_surface": "MISSING",
+    "hd_091_acceptance": "NOT_ACCEPTED",
+    "inverse_and_rollback": "NOT_EXECUTED_BY_THIS_EXPORTER",
+    "native_unity": "NOT_RUN",
+    "occupied_physical_transport": "NOT_RUN",
+    "spawn_safety": "NOT_RUN",
+    "vehicle_clearance": "NOT_RUN",
+    "walkability": "NOT_RUN"
+  },
+  "plate_world": {
+    "edges": [
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/4520926406"
+      },
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/6903707635"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/2057042478"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926405"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/8066816959"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/6952194838"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816960"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816962"
+      },
+      {
+        "a": "osm/node/4520926405",
+        "b": "osm/node/6851163691"
+      },
+      {
+        "a": "osm/node/5941737372",
+        "b": "osm/node/8066816962"
+      },
+      {
+        "a": "osm/node/5941737376",
+        "b": "osm/node/6952194838"
+      },
+      {
+        "a": "osm/node/5941750923",
+        "b": "osm/node/8066816960"
+      },
+      {
+        "a": "osm/node/6851151280",
+        "b": "osm/node/6851163691"
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/6903707642"
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/8066816959"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "osm/node/10922060653",
+        "local_xyz_m": [
+          50.419471,
+          -0.000199,
+          -0.443169
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/1603574189",
+        "local_xyz_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/2057042478",
+        "local_xyz_m": [
+          -16.353856,
+          -2.1e-05,
+          0.099748
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/4520926405",
+        "local_xyz_m": [
+          0.373915,
+          -1.4e-05,
+          -13.342583
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/4520926406",
+        "local_xyz_m": [
+          17.790476,
+          -2.5e-05,
+          -0.155133
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/5941737372",
+        "local_xyz_m": [
+          -54.079897,
+          -0.000229,
+          0.332578
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/5941737376",
+        "local_xyz_m": [
+          -16.708123,
+          -6.4e-05,
+          -23.039216
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/5941750923",
+        "local_xyz_m": [
+          -16.402976,
+          -0.000287,
+          58.135554
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/6851151280",
+        "local_xyz_m": [
+          2.302544,
+          -0.000536,
+          -82.493508
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/6851163691",
+        "local_xyz_m": [
+          1.102069,
+          -0.000123,
+          -39.56231
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/6903707629",
+        "local_xyz_m": [
+          -0.01968,
+          -6.4e-05,
+          28.524759
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/6903707635",
+        "local_xyz_m": [
+          69.459612,
+          -0.000378,
+          -0.609303
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/6903707642",
+        "local_xyz_m": [
+          0.482151,
+          -0.00021,
+          51.619398
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/6952194838",
+        "local_xyz_m": [
+          -16.540832,
+          -3.6e-05,
+          -13.486636
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/8066816959",
+        "local_xyz_m": [
+          -0.00984,
+          -1.7e-05,
+          14.716736
+        ],
+        "plate_id": "fictional/tampa/fixed"
+      },
+      {
+        "id": "osm/node/8066816960",
+        "local_xyz_m": [
+          -16.363675,
+          -3.9e-05,
+          15.193268
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      },
+      {
+        "id": "osm/node/8066816962",
+        "local_xyz_m": [
+          -33.120986,
+          -8.6e-05,
+          0.199519
+        ],
+        "plate_id": "fictional/tampa/spruce-branches"
+      }
+    ],
+    "occupants": [
+      {
+        "boundary_straddler": false,
+        "id": "fixture/person-fixed",
+        "node_id": "osm/node/1603574189"
+      },
+      {
+        "boundary_straddler": false,
+        "id": "fixture/person-west",
+        "node_id": "osm/node/2057042478"
+      },
+      {
+        "boundary_straddler": false,
+        "id": "fixture/point-object-west",
+        "node_id": "osm/node/2057042478"
+      }
+    ],
+    "plates": [
+      {
+        "angle_degrees": 0,
+        "center_xyz_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "id": "fictional/tampa/fixed"
+      },
+      {
+        "angle_degrees": 0,
+        "center_xyz_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "id": "fictional/tampa/spruce-branches"
+      }
+    ],
+    "revision": 0
+  },
+  "policy_case_execution": "EXPECTED_ONLY; consumer must execute Dark.World kernel independently",
+  "policy_cases": [
+    {
+      "destinations": {},
+      "expected_mathematical_admission": true,
+      "expected_occupant_nodes": {
+        "fixture/person-fixed": "osm/node/1603574189",
+        "fixture/person-west": "osm/node/2057042478",
+        "fixture/point-object-west": "osm/node/2057042478"
+      },
+      "policy": "RigidCarriage"
+    },
+    {
+      "destinations": {
+        "fixture/person-west": "osm/node/1603574189",
+        "fixture/point-object-west": "osm/node/1603574189"
+      },
+      "expected_mathematical_admission": true,
+      "expected_occupant_nodes": {
+        "fixture/person-fixed": "osm/node/1603574189",
+        "fixture/person-west": "osm/node/1603574189",
+        "fixture/point-object-west": "osm/node/1603574189"
+      },
+      "policy": "WitnessedRelocation"
+    },
+    {
+      "destinations": {},
+      "expected_mathematical_admission": false,
+      "expected_refusal": "HD-065:occupied",
+      "policy": "RefuseWhileOccupied"
+    }
+  ],
+  "probe_nodes": {
+    "east": "osm/node/4520926406",
+    "intersection": "osm/node/1603574189",
+    "west": "osm/node/2057042478"
+  },
+  "provenance": {
+    "attribution": "© OpenStreetMap contributors",
+    "copyright_url": "https://www.openstreetmap.org/copyright",
+    "license_scope": "OSM-derived coordinates, topology and way tags remain ODbL-derived; no CC0 reclassification.",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "recipe": "Select exact named highway ways, shared junction with smallest numeric OSM ID, undirected BFS <=3 hops; retain every consecutive selected source pair; sort IDs ordinally. No downloads.",
+    "retrieved_at": "2026-10-21T08:08:53.236556+00:00",
+    "source_bbox_south_west_north_east": [
+      27.955,
+      -82.509,
+      27.964,
+      -82.502
+    ],
+    "source_bytes": 467198,
+    "source_database_timestamp": "2026-10-21T08:07:13Z",
+    "source_id": "tampa-dale-mabry-spruce",
+    "source_license": "ODbL-1.0",
+    "source_path": "data/geography/sources/tampa-dale-mabry-spruce.osm.json",
+    "source_query": "[out:json][timeout:20][maxsize:16777216][date:\"2026-10-20T00:00:00Z\"];(way[\"highway\"](27.955,-82.509,27.964,-82.502);way[\"building\"](27.955,-82.509,27.964,-82.502);way[\"waterway\"](27.955,-82.509,27.964,-82.502);way[\"natural\"=\"coastline\"](27.955,-82.509,27.964,-82.502);node[\"place\"](27.955,-82.509,27.964,-82.502););(._;>;);out body;",
+    "source_sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a",
+    "source_snapshot_requested": "2026-10-20T00:00:00Z",
+    "source_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A16777216%5D%5Bdate%3A%222026-10-20T00%3A00%3A00Z%22%5D%3B%28way%5B%22highway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22building%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22waterway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22natural%22%3D%22coastline%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bnode%5B%22place%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3B%29%3B%28._%3B%3E%3B%29%3Bout+body%3B"
+  },
+  "purpose": "Source-anchored mathematical fixture for Dark.World; HD-091 native acceptance remains outstanding.",
+  "rewrite_request": {
+    "add": {
+      "a": "osm/node/1603574189",
+      "b": "osm/node/4520926406"
+    },
+    "authority_witness_id": "fixture-only/not-an-authority-grant",
+    "duration_ticks": 120,
+    "expected_revision": 0,
+    "operation_budget": 413,
+    "plate_id": "fictional/tampa/spruce-branches",
+    "remove": {
+      "a": "osm/node/1603574189",
+      "b": "osm/node/2057042478"
+    },
+    "rotation_degrees": 90,
+    "start_tick": 100
+  },
+  "schema_version": "homeless.tampa-two-plate/v1",
+  "source_graph": {
+    "coverage": "Local named-road centerline subset; other roads and all beyond-hop connections omitted. No citywide connectivity claim.",
+    "edges": [
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/4520926406",
+        "source_segments": [
+          {
+            "from_osm_node_id": 4520926406,
+            "osm_way_id": 645693894,
+            "tags": {
+              "highway": "tertiary",
+              "lanes": "2",
+              "name": "West Spruce Street",
+              "tiger:cfcc": "A41",
+              "tiger:county": "Hillsborough, FL",
+              "tiger:name_base": "Spruce",
+              "tiger:name_direction_prefix": "W",
+              "tiger:name_type": "St",
+              "tiger:reviewed": "no",
+              "tiger:zip_left": "33607",
+              "tiger:zip_right": "33607"
+            },
+            "to_osm_node_id": 10922060653
+          }
+        ]
+      },
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/6903707635",
+        "source_segments": [
+          {
+            "from_osm_node_id": 10922060653,
+            "osm_way_id": 645693894,
+            "tags": {
+              "highway": "tertiary",
+              "lanes": "2",
+              "name": "West Spruce Street",
+              "tiger:cfcc": "A41",
+              "tiger:county": "Hillsborough, FL",
+              "tiger:name_base": "Spruce",
+              "tiger:name_direction_prefix": "W",
+              "tiger:name_type": "St",
+              "tiger:reviewed": "no",
+              "tiger:zip_left": "33607",
+              "tiger:zip_right": "33607"
+            },
+            "to_osm_node_id": 6903707635
+          }
+        ]
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/2057042478",
+        "source_segments": [
+          {
+            "from_osm_node_id": 2057042478,
+            "osm_way_id": 645693895,
+            "tags": {
+              "highway": "tertiary",
+              "lanes": "2",
+              "name": "West Spruce Street",
+              "tiger:cfcc": "A41",
+              "tiger:county": "Hillsborough, FL",
+              "tiger:name_base": "Spruce",
+              "tiger:name_direction_prefix": "W",
+              "tiger:name_type": "St",
+              "tiger:reviewed": "no",
+              "tiger:zip_left": "33607",
+              "tiger:zip_right": "33607"
+            },
+            "to_osm_node_id": 1603574189
+          }
+        ]
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926405",
+        "source_segments": [
+          {
+            "from_osm_node_id": 4520926405,
+            "osm_way_id": 645693892,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "3",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 1603574189
+          }
+        ]
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926406",
+        "source_segments": [
+          {
+            "from_osm_node_id": 1603574189,
+            "osm_way_id": 645693894,
+            "tags": {
+              "highway": "tertiary",
+              "lanes": "2",
+              "name": "West Spruce Street",
+              "tiger:cfcc": "A41",
+              "tiger:county": "Hillsborough, FL",
+              "tiger:name_base": "Spruce",
+              "tiger:name_direction_prefix": "W",
+              "tiger:name_type": "St",
+              "tiger:reviewed": "no",
+              "tiger:zip_left": "33607",
+              "tiger:zip_right": "33607"
+            },
+            "to_osm_node_id": 4520926406
+          }
+        ]
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/8066816959",
+        "source_segments": [
+          {
+            "from_osm_node_id": 1603574189,
+            "osm_way_id": 1123830283,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "4",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "turn:lanes": "|||right",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 8066816959
+          }
+        ]
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/6952194838",
+        "source_segments": [
+          {
+            "from_osm_node_id": 2057042478,
+            "osm_way_id": 645693893,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "3",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 6952194838
+          }
+        ]
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816960",
+        "source_segments": [
+          {
+            "from_osm_node_id": 8066816960,
+            "osm_way_id": 195234343,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "5",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "turn:lanes": "left|none|none|none|right",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 2057042478
+          }
+        ]
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816962",
+        "source_segments": [
+          {
+            "from_osm_node_id": 8066816962,
+            "osm_way_id": 1368008889,
+            "tags": {
+              "highway": "tertiary",
+              "lanes": "2",
+              "name": "West Spruce Street",
+              "tiger:cfcc": "A41",
+              "tiger:county": "Hillsborough, FL",
+              "tiger:name_base": "Spruce",
+              "tiger:name_direction_prefix": "W",
+              "tiger:name_type": "St",
+              "tiger:reviewed": "no",
+              "tiger:zip_left": "33607",
+              "tiger:zip_right": "33607"
+            },
+            "to_osm_node_id": 2057042478
+          }
+        ]
+      },
+      {
+        "a": "osm/node/4520926405",
+        "b": "osm/node/6851163691",
+        "source_segments": [
+          {
+            "from_osm_node_id": 6851163691,
+            "osm_way_id": 645693892,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "3",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 4520926405
+          }
+        ]
+      },
+      {
+        "a": "osm/node/5941737372",
+        "b": "osm/node/8066816962",
+        "source_segments": [
+          {
+            "from_osm_node_id": 5941737372,
+            "osm_way_id": 1368008889,
+            "tags": {
+              "highway": "tertiary",
+              "lanes": "2",
+              "name": "West Spruce Street",
+              "tiger:cfcc": "A41",
+              "tiger:county": "Hillsborough, FL",
+              "tiger:name_base": "Spruce",
+              "tiger:name_direction_prefix": "W",
+              "tiger:name_type": "St",
+              "tiger:reviewed": "no",
+              "tiger:zip_left": "33607",
+              "tiger:zip_right": "33607"
+            },
+            "to_osm_node_id": 8066816962
+          }
+        ]
+      },
+      {
+        "a": "osm/node/5941737376",
+        "b": "osm/node/6952194838",
+        "source_segments": [
+          {
+            "from_osm_node_id": 6952194838,
+            "osm_way_id": 645693893,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "3",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 5941737376
+          }
+        ]
+      },
+      {
+        "a": "osm/node/5941750923",
+        "b": "osm/node/8066816960",
+        "source_segments": [
+          {
+            "from_osm_node_id": 5941750923,
+            "osm_way_id": 195234343,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "5",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "turn:lanes": "left|none|none|none|right",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 8066816960
+          }
+        ]
+      },
+      {
+        "a": "osm/node/6851151280",
+        "b": "osm/node/6851163691",
+        "source_segments": [
+          {
+            "from_osm_node_id": 6851151280,
+            "osm_way_id": 645693892,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "3",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 6851163691
+          }
+        ]
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/6903707642",
+        "source_segments": [
+          {
+            "from_osm_node_id": 6903707629,
+            "osm_way_id": 1123830283,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "4",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "turn:lanes": "|||right",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 6903707642
+          }
+        ]
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/8066816959",
+        "source_segments": [
+          {
+            "from_osm_node_id": 8066816959,
+            "osm_way_id": 1123830283,
+            "tags": {
+              "HFCS": "Urban Principal Arterial - Other",
+              "cycleway:right": "lane",
+              "cycleway:right:buffer": "no",
+              "hgv": "designated",
+              "highway": "primary",
+              "lanes": "4",
+              "maxspeed": "40 mph",
+              "name": "North Dale Mabry Highway",
+              "old_ref:1945": "600",
+              "oneway": "yes",
+              "ref": "US 92",
+              "sidewalk": "right",
+              "source:hgv": "https://library.municode.com/fl/tampa/codes/code_of_ordinances?nodeId=COOR_CH25TR_ARTIIITEPR_DIV3SPTERE_S25-182DETRROESOBREHAMAROES",
+              "source:maxspeed": "FDOT \"Maximum Speed Limits\" GIS data, updated August 27, 2011: http://www.dot.state.fl.us/planning/statistics/gis/roaddata.shtm",
+              "surface": "concrete",
+              "turn:lanes": "|||right",
+              "unsigned_ref": "SR 600"
+            },
+            "to_osm_node_id": 6903707629
+          }
+        ]
+      }
+    ],
+    "factuality": "sourced_geometry",
+    "maximum_hops": 3,
+    "nodes": [
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/10922060653",
+        "latitude_deg": 27.9594598,
+        "longitude_deg": -82.5049741,
+        "osm_node_id": 10922060653,
+        "source_hops_from_anchor": 2
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/1603574189",
+        "latitude_deg": 27.9594638,
+        "longitude_deg": -82.5054865,
+        "osm_node_id": 1603574189,
+        "source_hops_from_anchor": 0
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/2057042478",
+        "latitude_deg": 27.9594647,
+        "longitude_deg": -82.5056527,
+        "osm_node_id": 2057042478,
+        "source_hops_from_anchor": 1
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/4520926405",
+        "latitude_deg": 27.9593434,
+        "longitude_deg": -82.5054827,
+        "osm_node_id": 4520926405,
+        "source_hops_from_anchor": 1
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/4520926406",
+        "latitude_deg": 27.9594624,
+        "longitude_deg": -82.5053057,
+        "osm_node_id": 4520926406,
+        "source_hops_from_anchor": 1
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/5941737372",
+        "latitude_deg": 27.9594668,
+        "longitude_deg": -82.5060361,
+        "osm_node_id": 5941737372,
+        "source_hops_from_anchor": 3
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/5941737376",
+        "latitude_deg": 27.9592559,
+        "longitude_deg": -82.5056563,
+        "osm_node_id": 5941737376,
+        "source_hops_from_anchor": 3
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/5941750923",
+        "latitude_deg": 27.9599884,
+        "longitude_deg": -82.5056532,
+        "osm_node_id": 5941750923,
+        "source_hops_from_anchor": 3
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/6851151280",
+        "latitude_deg": 27.9587194,
+        "longitude_deg": -82.5054631,
+        "osm_node_id": 6851151280,
+        "source_hops_from_anchor": 3
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/6851163691",
+        "latitude_deg": 27.9591068,
+        "longitude_deg": -82.5054753,
+        "osm_node_id": 6851163691,
+        "source_hops_from_anchor": 2
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/6903707629",
+        "latitude_deg": 27.9597212,
+        "longitude_deg": -82.5054867,
+        "osm_node_id": 6903707629,
+        "source_hops_from_anchor": 2
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/6903707635",
+        "latitude_deg": 27.9594583,
+        "longitude_deg": -82.5047806,
+        "osm_node_id": 6903707635,
+        "source_hops_from_anchor": 3
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/6903707642",
+        "latitude_deg": 27.9599296,
+        "longitude_deg": -82.5054816,
+        "osm_node_id": 6903707642,
+        "source_hops_from_anchor": 3
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/6952194838",
+        "latitude_deg": 27.9593421,
+        "longitude_deg": -82.5056546,
+        "osm_node_id": 6952194838,
+        "source_hops_from_anchor": 2
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/8066816959",
+        "latitude_deg": 27.9595966,
+        "longitude_deg": -82.5054866,
+        "osm_node_id": 8066816959,
+        "source_hops_from_anchor": 1
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/8066816960",
+        "latitude_deg": 27.9596009,
+        "longitude_deg": -82.5056528,
+        "osm_node_id": 8066816960,
+        "source_hops_from_anchor": 2
+      },
+      {
+        "ellipsoid_height_m": null,
+        "id": "osm/node/8066816962",
+        "latitude_deg": 27.9594656,
+        "longitude_deg": -82.5058231,
+        "osm_node_id": 8066816962,
+        "source_hops_from_anchor": 2
+      }
+    ],
+    "omitted_named_road_boundary_connections": [
+      {
+        "from_node_id": "osm/node/5941737372",
+        "to_source_node_id": "osm/node/5941737359"
+      },
+      {
+        "from_node_id": "osm/node/5941737376",
+        "to_source_node_id": "osm/node/5941737361"
+      },
+      {
+        "from_node_id": "osm/node/5941750923",
+        "to_source_node_id": "osm/node/10824210454"
+      },
+      {
+        "from_node_id": "osm/node/6851151280",
+        "to_source_node_id": "osm/node/97884252"
+      },
+      {
+        "from_node_id": "osm/node/6903707635",
+        "to_source_node_id": "osm/node/5968467211"
+      },
+      {
+        "from_node_id": "osm/node/6903707642",
+        "to_source_node_id": "osm/node/6333348872"
+      }
+    ],
+    "road_name_filter": [
+      "North Dale Mabry Highway",
+      "West Spruce Street"
+    ]
+  },
+  "topology_reference": {
+    "after_edges": [
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/4520926406"
+      },
+      {
+        "a": "osm/node/10922060653",
+        "b": "osm/node/6903707635"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926405"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/4520926406"
+      },
+      {
+        "a": "osm/node/1603574189",
+        "b": "osm/node/8066816959"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/6952194838"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816960"
+      },
+      {
+        "a": "osm/node/2057042478",
+        "b": "osm/node/8066816962"
+      },
+      {
+        "a": "osm/node/4520926405",
+        "b": "osm/node/6851163691"
+      },
+      {
+        "a": "osm/node/5941737372",
+        "b": "osm/node/8066816962"
+      },
+      {
+        "a": "osm/node/5941737376",
+        "b": "osm/node/6952194838"
+      },
+      {
+        "a": "osm/node/5941750923",
+        "b": "osm/node/8066816960"
+      },
+      {
+        "a": "osm/node/6851151280",
+        "b": "osm/node/6851163691"
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/6903707642"
+      },
+      {
+        "a": "osm/node/6903707629",
+        "b": "osm/node/8066816959"
+      }
+    ],
+    "after_revision": 1,
+    "expected_after_moving_angle_degrees": 90,
+    "probes": [
+      {
+        "after": false,
+        "before": true,
+        "from": "osm/node/1603574189",
+        "to": "osm/node/2057042478"
+      },
+      {
+        "after": true,
+        "before": false,
+        "from": "osm/node/1603574189",
+        "to": "osm/node/4520926406"
+      }
+    ],
+    "same_request_replay_expected_refusal": "stale topology revision",
+    "scope": "Python edge-set projection only; not policy, geometry or authority admission"
+  },
+  "travel_modes": {
+    "limits": [
+      "Raw highway/oneway/access/foot/bicycle/vehicle and other way tags retained verbatim, when present.",
+      "Missing tags are unknown here, not permission grants.",
+      "Turn restrictions, crossings, sidewalk links, lane geometry and live conditions are not imported."
+    ],
+    "mathematical_graph": "undirected_adjacency_only",
+    "modes": [
+      {
+        "id": "walk",
+        "route_validity": "NOT_VALIDATED"
+      },
+      {
+        "id": "bicycle",
+        "route_validity": "NOT_VALIDATED"
+      },
+      {
+        "id": "motor_vehicle",
+        "route_validity": "NOT_VALIDATED"
+      }
+    ],
+    "source_direction_convention": "source_segments from/to preserve OSM way order; oneway=yes follows that order, -1 opposes it. No restrictions or permissions are resolved."
+  }
+}

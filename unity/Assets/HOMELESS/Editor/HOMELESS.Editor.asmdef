@@ -1,0 +1,7 @@
+{
+  "name": "HOMELESS.Editor",
+  "rootNamespace": "Homeless.Editor",
+  "references": ["HOMELESS.Unity", "Dark.Core", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

@@ -1,0 +1,29 @@
+{
+  "all_passed": true,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/geography",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "evidence/geography/tests.log",
+      "started_at": "2026-10-21T08:16:11.206640+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/geography/reproduce.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/geography/reproduction.log",
+      "started_at": "2026-10-21T08:16:11.859120+00:00"
+    }
+  ],
+  "scope": "Portable acquisition/import/hash/index tests only; not native Unity or worldwide acceptance"
+}

@@ -1,0 +1,52 @@
+test_against_python (test_circuits_bigint.TestBigint) ... ok
+test_division_by_zero (test_circuits_bigint.TestBigint) ... ok
+test_schoolbook_counts (test_circuits_bigint.TestBigint) ... ok
+test_adders_exhaustive (test_circuits_bigint.TestCircuits) ... ok
+test_carry_monoid (test_circuits_bigint.TestCircuits) ... ok
+test_full_adders (test_circuits_bigint.TestCircuits) ... ok
+test_inadmissible_connection (test_circuits_bigint.TestCircuits) ... ok
+test_mul_sub_div_exhaustive (test_circuits_bigint.TestCircuits) ... ok
+test_prefix_depth_logarithmic (test_circuits_bigint.TestCircuits) ... ok
+test_ripple_formulas (test_circuits_bigint.TestCircuits) ... ok
+test_against_host_binary64 (test_ieee_machine.TestIEEE) ... ok
+test_overflow_underflow_flags (test_ieee_machine.TestIEEE) ... ok
+test_representation_boundary (test_ieee_machine.TestIEEE) ... ok
+test_roundtrip_bits (test_ieee_machine.TestIEEE) ... ok
+test_specials (test_ieee_machine.TestIEEE) ... ok
+test_division_models (test_ieee_machine.TestMachine) ... ok
+test_wrap (test_ieee_machine.TestMachine) ... ok
+test_canonical_examples (test_numbertheory_expr.TestExpr) ... ok
+test_every_failure_has_a_reason (test_numbertheory_expr.TestExpr) ... ok
+test_parse_tree (test_numbertheory_expr.TestExpr) ... ok
+test_arith_functions (test_numbertheory_expr.TestNumberTheory) ... ok
+test_bezout (test_numbertheory_expr.TestNumberTheory) ... ok
+test_binary_gcd (test_numbertheory_expr.TestNumberTheory) ... ok
+test_crt (test_numbertheory_expr.TestNumberTheory) ... ok
+test_euclid_and_lame (test_numbertheory_expr.TestNumberTheory) ... ok
+test_powmod_program (test_numbertheory_expr.TestNumberTheory) ... ok
+test_primes (test_numbertheory_expr.TestNumberTheory) ... ok
+test_balanced_ternary_covers_Z (test_numerals.TestNumerals) ... ok
+test_bijective_is_a_bijection (test_numerals.TestNumerals) ... ok
+test_compile_and_concatenation (test_numerals.TestNumerals) ... ok
+test_heap_conjugacy (test_numerals.TestNumerals) ... ok
+test_leading_zeros_are_exactly_the_non_injectivity (test_numerals.TestNumerals) ... ok
+test_negative_in_base2_is_periodic_2adic (test_numerals.TestNumerals) ... ok
+test_parallel_value (test_numerals.TestNumerals) ... ok
+test_periodic_expansion (test_numerals.TestNumerals) ... ok
+test_standard_addresses_roundtrip (test_numerals.TestNumerals) ... ok
+test_unary_is_successor (test_numerals.TestNumerals) ... ok
+test_division_trichotomy (test_peano_converse.TestConverse) ... ok
+test_pairs_projective_line (test_peano_converse.TestConverse) ... ok
+test_ring_theorem_exhaustive (test_peano_converse.TestConverse) ... ok
+test_roots_and_logs (test_peano_converse.TestConverse) ... ok
+test_zero_inverse_collapses (test_peano_converse.TestConverse) ... ok
+test_church (test_peano_converse.TestPeano) ... ok
+test_monus_is_not_converse (test_peano_converse.TestPeano) ... ok
+test_rule_counts (test_peano_converse.TestPeano) ... ok
+test_segments (test_peano_converse.TestPeano) ... ok
+test_terms (test_peano_converse.TestPeano) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 12.054s
+
+OK

@@ -1,0 +1,52 @@
+FAIL snapshot persists exact identity, personality, task and ordered causal memory: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_0(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 19
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL reloaded actor rejects duplicate, remote and backdated observations before later save: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_1(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 31
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL separate writer and reader processes retain actual NPC decision and causal identity: System.Exception: child 1: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.Child(String[] args) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 115
+
+   at Program.RunChild(String[] args) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 125
+   at Program.<>c.<Main>b__2_2(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 42
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL caller identity is bound before save and restore, even with a valid alien checksum: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_3(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 46
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL stale save and untrusted replay cannot replace the latest checkpoint: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_4(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 53
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL truncation and corrupt bytes refuse without replacing memory or modifying damaged file: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_5(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 60
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL valid checksums cannot admit unsupported schema or invalid snapshot semantics: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Restore(Inhabitant current, String trustedDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_6(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 76
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL oversized files and excessive memory counts are bounded before restore: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Restore(Inhabitant current, String trustedDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_7(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 82
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL maximum existing 256-memory contract persists without loss: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_8(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 89
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL missing state and invalid receipts do not invent or mutate an inhabitant: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Restore(Inhabitant current, String trustedDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_9(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 94
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL writer lock refusal preserves live actor and original bytes: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_10(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 98
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+FAIL snapshot receipts are deterministic for identical payload and generation: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Population.FileInhabitantStore.Save(Inhabitant current, String expectedPreviousDigest) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs:line 4
+   at Program.<>c.<Main>b__2_11(String directory) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 105
+   at Program.Test(String name, Action`1 test) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Population.Tests/Program.cs:line 140
+POPULATION: 0 passed, 12 failed

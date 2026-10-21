@@ -1,0 +1,12 @@
+test_actual_pcm_is_nonzero_bounded_mono_and_correct_duration (test_synthesis.SynthesisTests) ... ok
+test_invalid_event_and_negative_time_refused (test_synthesis.SynthesisTests) ... ok
+test_one_shots_start_and_end_at_zero (test_synthesis.SynthesisTests) ... ok
+test_promised_loop_has_zero_boundary_jump_and_near_zero_slope_jump (test_synthesis.SynthesisTests) ... ok
+test_region_change_is_counterexample_to_unchanged_music (test_synthesis.SynthesisTests) ... ok
+test_seeded_regeneration_is_byte_identical_and_foot_variants_differ (test_synthesis.SynthesisTests) ... ok
+test_time_translation_commutes_under_explicit_note_schedule_observable (test_synthesis.SynthesisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.612s
+
+OK

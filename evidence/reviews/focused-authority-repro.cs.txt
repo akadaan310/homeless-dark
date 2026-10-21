@@ -1,0 +1,22 @@
+using System;
+using System.IO;
+using System.Linq;
+using Dark.Core;
+using Dark.History;
+var key=new byte[32];
+var clock=new SimulationClock(100);
+var authority=new LocalAuthority(clock);authority.RegisterMember("member",key,"sign/cafe");
+var session=authority.Authenticate("member",key,110);
+var policy=AdmissionPolicy.Compile("constitution dark 1 { clause HD_073 subject sign when authenticated may set_sign requires scoped_write preserves same_revision budget 256 witness sign_change verifies sign_test ; }");
+var world=new SignWorld(authority,policy);
+void Require(bool test,string name){if(!test)throw new Exception(name);Console.WriteLine("PASS "+name);}
+Require(!world.SetSign(session,"preissue",0,0,"sign/cafe","early").Admitted,"pre-issue write refused");
+Require(world.SetSign(session,"valid",0,100,"sign/cafe","valid").Admitted,"current write admitted");
+clock.AdvanceTo(110);
+Require(!authority.IsValid(session),"session expires");
+Require(!world.SetSign(session,"expired",1,101,"sign/cafe","late").Admitted,"backdated expired write refused");
+var renewed=authority.Authenticate("member",key,120);
+Require(world.SetSign(renewed,"valid",0,100,"sign/cafe","valid").Admitted && world.Revision==1,"renewed session retry keeps exactly once");
+var path="/tmp/homeless-rereview-probe/corrupt.darklog";var bytes=new byte[]{0xff,0x0a};File.WriteAllBytes(path,bytes);
+var diskWorld=new SignWorld(authority,policy,new FileEventSink(path));
+Require(diskWorld.SetSign(renewed,"corrupt",0,110,"sign/cafe","value").Code=="storage_failed" && diskWorld.Revision==0 && File.ReadAllBytes(path).SequenceEqual(bytes),"corrupt UTF8 refused with unchanged file and state");

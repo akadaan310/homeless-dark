@@ -1,0 +1,7 @@
+{
+  "name": "HOMELESS.Editor.Tests",
+  "references": ["HOMELESS.Editor", "HOMELESS.Unity", "Dark.Core"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

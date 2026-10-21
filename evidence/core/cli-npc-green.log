@@ -1,0 +1,9 @@
+test_demo_persists_once_replays_and_refuses_overwrite (test_cli.CliTests) ... ok
+test_describe_is_pure_and_identifies_adapter_limits (test_cli.CliTests) ... ok
+test_npc_snapshot_reloads_in_a_separate_cli_process (test_cli.CliTests) ... ok
+test_replay_requires_trusted_head (test_cli.CliTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.509s
+
+OK

@@ -1,0 +1,44 @@
+{
+  "data_bytes": 27535946,
+  "global_coverage_complete": false,
+  "outputs": [
+    {
+      "bytes": 1470,
+      "matches_existing": true,
+      "path": "anchors.json",
+      "sha256": "02a9e672b654793535e682567a33465cae597e18cca478ecbe155ebe16fb2345"
+    },
+    {
+      "bytes": 1177,
+      "matches_existing": true,
+      "path": "marina-del-rey.geojson",
+      "sha256": "b48aeee8c56f9836a73273095aa7ddd7171c1df0e2e505a632c770d2dcfd2f2c"
+    },
+    {
+      "bytes": 4474,
+      "matches_existing": true,
+      "path": "ourairports-coverage.json",
+      "sha256": "23a752127c8cdd5c8fd00d16eec9c8458e2f8e59a9cf6ebf5ca4a6db627e8372"
+    },
+    {
+      "bytes": 13549568,
+      "matches_existing": true,
+      "path": "ourairports.sqlite3",
+      "sha256": "b7b3a925f9a7591fb247f7acc5c55b5f0af8846a9a8c75f90385078aed73a3a6"
+    },
+    {
+      "bytes": 1324,
+      "matches_existing": true,
+      "path": "regional-coverage.json",
+      "sha256": "28e4d2dab4b7c0ad37e41f835148710ffbf4944226fb04baf1029a690de66bd2"
+    },
+    {
+      "bytes": 729295,
+      "matches_existing": true,
+      "path": "tampa-dale-mabry-spruce.geojson",
+      "sha256": "4464953016bc8325728f01135fd35420ff86052ba9821652a7146b3f3c3b3c45"
+    }
+  ],
+  "status": "PASS",
+  "verified_sources": 3
+}

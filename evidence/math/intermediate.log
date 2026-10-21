@@ -1,0 +1,27 @@
+PASS WGS84 literal equator and poles
+PASS Antimeridian seam and ENU axis orientation
+PASS Geodesy rejects nonfinite, invalid latitude and undefined center
+PASS 1000 stratified WGS84 and local frame round trips seed 65163
+PASS Exact population shares and ordinal tie breaking
+PASS Allocation refuses duplicate, empty and zero denominator
+PASS Population conservation, permutation and quota property seed 25025
+PASS Five cells keep zero, missing, forbidden and foreign distinct
+PASS Inverse keeps image failure, kernel failure and unique zero separate
+PASS Tashkil preserves skeleton, context locality and complementary observations
+FAIL Plate reconnect changes reachability with revision and inverse witness: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Reachable(String a, String b) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_10() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 105
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Occupied refusal, stale match, budget and invalid destination are atomic: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Rewrite(RewriteRequest r) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_11() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 112
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Graph carriage retains local occupants with continuous mathematical path: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Rewrite(RewriteRequest r) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_12() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 120
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Witnessed relocation records origin and destination; incomplete/straddler refused: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Rewrite(RewriteRequest r) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_13() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 128
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+TOTAL 10 PASS, 4 FAIL

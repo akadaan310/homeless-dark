@@ -1,0 +1,52 @@
+{
+  "anchors": [
+    {
+      "id": "tampa-dale-mabry-spruce",
+      "kind": "sourced_road_intersection_nodes",
+      "note": "Divided carriageways produce multiple shared nodes; no pedestrian spawn, altitude or collision readiness inferred",
+      "points": [
+        {
+          "latitude_deg": 27.9594638,
+          "longitude_deg": -82.5054865,
+          "osm_node_id": 1603574189
+        },
+        {
+          "latitude_deg": 27.9594647,
+          "longitude_deg": -82.5056527,
+          "osm_node_id": 2057042478
+        }
+      ]
+    },
+    {
+      "id": "marina-del-rey",
+      "kind": "sourced_named_place_point",
+      "note": "Place label reference only; harbor geometry, navigability and safe spawn are unverified",
+      "points": [
+        {
+          "geometry": {
+            "coordinates": [
+              -118.448647,
+              33.9776848
+            ],
+            "type": "Point"
+          },
+          "id": "osm/node/26426223",
+          "properties": {
+            "layer": "place",
+            "osm_node_id": 26426223,
+            "tags": {
+              "name": "Marina del Rey",
+              "name:en": "Marina del Rey",
+              "place": "quarter",
+              "wikidata": "Q988140",
+              "wikipedia": "en:Marina del Rey, California"
+            }
+          },
+          "type": "Feature"
+        }
+      ]
+    }
+  ],
+  "factuality": "sourced_geometry",
+  "fictional_world_state": "Stored separately; none encoded here"
+}

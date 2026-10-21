@@ -1,0 +1,29 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tools/audio/synthesize.py",
+        "--check"
+      ],
+      "started_at": "2026-10-21T08:23:39.824854+00:00",
+      "exit_code": 0,
+      "log": "evidence/audio/regeneration.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/audio",
+        "-v"
+      ],
+      "started_at": "2026-10-21T08:23:41.174055+00:00",
+      "exit_code": 0,
+      "log": "evidence/audio/tests.log"
+    }
+  ],
+  "scope": "WAV regeneration and decoded signal tests only; native playback NOT_RUN"
+}

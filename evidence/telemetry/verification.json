@@ -1,0 +1,25 @@
+{
+  "schema": "dark.telemetry-verification/1",
+  "recorded_utc": "2026-10-21T08:32:37.267698+00:00",
+  "command": "python3 -m unittest discover -s tests/telemetry -p test_*.py -v",
+  "exit_code": 0,
+  "passed_tests": 9,
+  "evidence_kind": "synthetic",
+  "native_device_tests": "NOT_RUN",
+  "native_recorder": "NOT_IMPLEMENTED",
+  "release_accepted": false,
+  "files": [
+    {
+      "path": "tools/telemetry/frames.py",
+      "sha256": "16767b8e8a560ed7fd4298cd105a2465a46d44920b198234e7f64652402edbea"
+    },
+    {
+      "path": "tests/telemetry/test_frames.py",
+      "sha256": "74bfc6d1192fae52ae7bec324260f9ced559639261b001b2a33821f2c497e7de"
+    },
+    {
+      "path": "evidence/telemetry/tests.log",
+      "sha256": "ee466e9001ab3662ba1ecf6db611bea9a2acee3ec33f810d132f7608ad0cde84"
+    }
+  ]
+}

@@ -1,0 +1,3052 @@
+{
+  "commit": "07652ee74a1f322c2c3e607020f07be720175680",
+  "candidate_count": 434,
+  "pointer_count": 434,
+  "errors": [],
+  "pointers": [
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_Noise 1.png",
+      "pointer": true,
+      "oid": "sha256:9465e8520126c2d6c40df0acec40923810a1b0b4c31fbc1e64e2da7caeb7fac8",
+      "lfs_size_bytes": 514015,
+      "pointer_sha256": "0b0ee13eb7f7a6856f220ef065c5cabaead4c41cbc9ad36131949f1ad4d89870"
+    },
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_Noise.png",
+      "pointer": true,
+      "oid": "sha256:9465e8520126c2d6c40df0acec40923810a1b0b4c31fbc1e64e2da7caeb7fac8",
+      "lfs_size_bytes": 514015,
+      "pointer_sha256": "0b0ee13eb7f7a6856f220ef065c5cabaead4c41cbc9ad36131949f1ad4d89870"
+    },
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_sample.png",
+      "pointer": true,
+      "oid": "sha256:5a06647dd470610123f9c7f209a39cbebc1dc0e220abef04c3ea3926dd22b943",
+      "lfs_size_bytes": 82567,
+      "pointer_sha256": "4b3c60f1a31cb442524b34cd3c572ed8caabc73017d8232a0a53e087d6787181"
+    },
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_sample2.png",
+      "pointer": true,
+      "oid": "sha256:1f118e1578de0738d197487981c8885691f3722466be3cd5e05e048950e4aea8",
+      "lfs_size_bytes": 160168,
+      "pointer_sha256": "5612a939e33dd2d5a30bd21cb37c0ece9768d49cf5c032d5c6c9a4659436a626"
+    },
+    {
+      "path": "Assets/Art/LensFlares/Sun_Flare.asset",
+      "pointer": true,
+      "oid": "sha256:ec1a5efc09de10eba23a9826775370c4f0baccf36685ab7ab6075e07e18d6177",
+      "lfs_size_bytes": 11362,
+      "pointer_sha256": "87bcec327c0abd692c234df1e5f15e99733395ad87645659bf4e9b0dd1aba5d2"
+    },
+    {
+      "path": "Assets/Art/Materials/Effects/Textures/BaseParticle.png",
+      "pointer": true,
+      "oid": "sha256:9c33ee4a3b0ba5e80ce5211352da3435531719d9c69d3de7b1c36cdb5a3842b3",
+      "lfs_size_bytes": 45226,
+      "pointer_sha256": "0302a8e7e0e27a221ee39a85759eb48b7e0df291ba09d381568eb2709b0e50dc"
+    },
+    {
+      "path": "Assets/Art/Materials/Effects/Textures/Line.png",
+      "pointer": true,
+      "oid": "sha256:0d9badf7a74db4bc3a92b4bde0ed19ad5f423890cebadfb96b669d444314e033",
+      "lfs_size_bytes": 138052,
+      "pointer_sha256": "20d0a09f379ab946d17958343f0bac38aeda4c03536fe0c30af3294387f868f4"
+    },
+    {
+      "path": "Assets/Art/Materials/Effects/Textures/Mask.png",
+      "pointer": true,
+      "oid": "sha256:fdfc754f777f29465d668b23432f19a9a4d16be490acf546a8ed7de435872562",
+      "lfs_size_bytes": 8136,
+      "pointer_sha256": "6c3ca7df86e57458137957b5337a7a65b636b53dfd801b324323e7f450475983"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_001.fbx",
+      "pointer": true,
+      "oid": "sha256:8df2afd11f7c34dc6654e0624a99cfaec3be1efae9e039d441f5b992f076edd4",
+      "lfs_size_bytes": 558144,
+      "pointer_sha256": "444cc302c3b30a3308ba070fe642b9f487a56e7ab09a272fec29b19ab74e0298"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_002.fbx",
+      "pointer": true,
+      "oid": "sha256:39418b9ec9f5f8dc0798390541aa8e876edd17fd07dfb25c8c89550e69e241f3",
+      "lfs_size_bytes": 156240,
+      "pointer_sha256": "85aed660105cbe657a614166369b1c57c6d49ad80ebc8cee874af543a226f9a5"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_003.fbx",
+      "pointer": true,
+      "oid": "sha256:67fd0f4ad50cdbe69949681073ff639fae5fdb06b98c78b55b8719bf0412738b",
+      "lfs_size_bytes": 122608,
+      "pointer_sha256": "770f078072cea3ac2a66a89e0ed49e51ab9fe64f8515a83b97f3dc1ce601e53c"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_004.fbx",
+      "pointer": true,
+      "oid": "sha256:388d61d9197bd17f00c54a6daa26f92024f1c3bbb4d692396fc857f74de3f4de",
+      "lfs_size_bytes": 139872,
+      "pointer_sha256": "6ab135ebe0dd05d4408dd0d0c0f50c0d1426800e8584a2e671c1e4bdd3638bd3"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_01.fbx",
+      "pointer": true,
+      "oid": "sha256:105ecca1fba639a2dfa1576ee9d634d149644f047b7740a61119b58d824a1770",
+      "lfs_size_bytes": 125664,
+      "pointer_sha256": "eb38c3049e3f599e97044e111d61cd76b7acac4e95e04f148a7d5f309423f625"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_02.fbx",
+      "pointer": true,
+      "oid": "sha256:084d8303dead56f51bf537e983671cee8aeb6ba7f8ab46c1a75269ffa3ea8cee",
+      "lfs_size_bytes": 116336,
+      "pointer_sha256": "17eb76fef2e5da2dabcdd2d99f08c63aa2be9ef60619d75044a470f5ddb0cccb"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_03.fbx",
+      "pointer": true,
+      "oid": "sha256:4bf8ebac0e40b9f4ee3ac26d5f1790e56f7167b207f6c3fd06e08e4369797ebf",
+      "lfs_size_bytes": 82928,
+      "pointer_sha256": "c3826de4bd64b503c9e2f27e79bea5542228ea0adf6a6dfcffa152ea09e778c4"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_04.fbx",
+      "pointer": true,
+      "oid": "sha256:9a80e4485174afb93081b56c69345ee9ef7d1b2a136ff1a635da040acc02031d",
+      "lfs_size_bytes": 96496,
+      "pointer_sha256": "8890e6f1c3e16caf43f087801b2cbddc05fadc837ff76e9926c81f4001a2213f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/Platform_01.fbx",
+      "pointer": true,
+      "oid": "sha256:99c97dddddca495bc4ede39ab66e41866835b55a468ee12c11dc723ffd425255",
+      "lfs_size_bytes": 51232,
+      "pointer_sha256": "c22f4a7b45f3a196ef9780749b603d5b6e53aab5c6944117cde535bb73f73777"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/Platform_02.fbx",
+      "pointer": true,
+      "oid": "sha256:75f5dbe3fb5dc8f7cb2ce483a88f3232d9643cde65c06579f22e95df7f81f13f",
+      "lfs_size_bytes": 47296,
+      "pointer_sha256": "9bc88e8af1f5d6ff9a5e1cd6624f8723499fb13574e7718060fd32b94d1b1651"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Floodlight_A/Floodlight_A_Base.FBX",
+      "pointer": true,
+      "oid": "sha256:d76bacc413947a47ccff74e36bf1ae871db52e9caf91b3dd60e146c5e551ddcf",
+      "lfs_size_bytes": 145043,
+      "pointer_sha256": "500bf39c4dc103a3d70e8a4265a1132ef55be975aec63ddf14768ac2d5c9684a"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Floodlight_A/Floodlight_A_Top_A.FBX",
+      "pointer": true,
+      "oid": "sha256:00bf96da341051946bd9c9a33fba02e47bbbce1c84e12d89d671bffce5fa877f",
+      "lfs_size_bytes": 122012,
+      "pointer_sha256": "eaa43b27f3c05863605842ad236e2614f64b6d49dffdc68287a1716679cdec87"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Floodlight_A/Floodlight_A_Top_B.FBX",
+      "pointer": true,
+      "oid": "sha256:eb640a079462b31ae312a704932b2bf62cdbb4d9b182ece21c5836b84e9c55bf",
+      "lfs_size_bytes": 696314,
+      "pointer_sha256": "32b05a233ece8fc3b555bac48b6199d634b1a923f30be49bb70162ffad074bed"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/Perisphere/Perisphere.fbx",
+      "pointer": true,
+      "oid": "sha256:9ff2ca53743650d40e046723a232992bd49cf32a20a38c0796b1fc202aefd027",
+      "lfs_size_bytes": 4105776,
+      "pointer_sha256": "8360f3e1cc5d7ac8e94970fff379de15ed470aa484e82ccf8b8b25052619a0ee"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/Perisphere/PerisphereHoudini.fbx",
+      "pointer": true,
+      "oid": "sha256:3669d8639204fb4ffe9b3e671b41f8308143402235f4efe4ce852b4c8f75376b",
+      "lfs_size_bytes": 1254162,
+      "pointer_sha256": "9e7d72dd5f18fd9e29ca779d0822c0e8f06e3ce6b196019715006fb28aaf75a8"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/Perisphere/thin_film_gradient.png",
+      "pointer": true,
+      "oid": "sha256:bd19e6c03f25813e0a46af2e7315c30f980015d5542befba35cb1521d1a64eca",
+      "lfs_size_bytes": 3640,
+      "pointer_sha256": "995d52399a29b38d6e430f1abd4fac2aecbdfdff1a46238c006d931ac1359048"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/Trylon/Trylon.fbx",
+      "pointer": true,
+      "oid": "sha256:20c08b5e21ebfeae923a8e4f28d3633a720b7154d44d72a8d61d41c1dfebf507",
+      "lfs_size_bytes": 1693121,
+      "pointer_sha256": "9f143abf5a2d01c5f765e58759a58128fe05d10a60482886b8ca03781e0acfa7"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/Trylon/TrylonHoudini.fbx",
+      "pointer": true,
+      "oid": "sha256:f16cd940804fe868cf1bb09e7dc92445d1e902ce900e24c8e97d8f183e2e3e7b",
+      "lfs_size_bytes": 1188149,
+      "pointer_sha256": "0917722b8492d503e1dbee0e805a22384d49e0a3a36329e34804dc986deafa1e"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/bigsun_hq_001.fbx",
+      "pointer": true,
+      "oid": "sha256:fc1eff0b547984a44909547916696f14d9ddcd31e747fbfda9e823f48ed10d60",
+      "lfs_size_bytes": 264640,
+      "pointer_sha256": "a1e9ac3bc743ef8dbb53ddf52b2a4dc6ab9749f6a4f9fa95353141109fc20f0c"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/bion_hq_001.fbx",
+      "pointer": true,
+      "oid": "sha256:ceaccf058e4b3187b460f842de1158be8e846e0eb470258662f1d5260bfe3262",
+      "lfs_size_bytes": 376528,
+      "pointer_sha256": "74a4191a9863f22fd3430da7dc0df397f983f4ecf6020367249e577cb52b4af5"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/bion_windmill.fbx",
+      "pointer": true,
+      "oid": "sha256:f4b08b9d302b7b0809ee364362008cc8c5faa6f9f9e6a21f26d47fbd883f81ed",
+      "lfs_size_bytes": 33696,
+      "pointer_sha256": "6761841a94e4909964e9c511213e23aafc24358aaa9d63317d120663fce4354e"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Landmarks/xencor_hq_001.fbx",
+      "pointer": true,
+      "oid": "sha256:fd99c4be33fcf6c7311991eac60ec62429a7f54b0fc811f407325d886c3ec50f",
+      "lfs_size_bytes": 258288,
+      "pointer_sha256": "247479837bc4aa5f70adb1f22171c9e72737b5edcb2825d13f996e923f884cc5"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Placeholder/WFC/Blocks Old.asset",
+      "pointer": true,
+      "oid": "sha256:caa8ca563b1f016c9eaeefd2c49a4a7d017fcbdd197242c003da6a15d682a9da",
+      "lfs_size_bytes": 4108,
+      "pointer_sha256": "d9ec4c510bd6e4f92e1d1db7e892d4bfd9f8d2eeac9c49d332cc8a0f9a42cd3f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Placeholder/WFC/Blocks.asset",
+      "pointer": true,
+      "oid": "sha256:a06e6328cdbd7716ba9a04a4d837d20c099fe8a70e8d6b4051af5aa1a54e2f33",
+      "lfs_size_bytes": 5093,
+      "pointer_sha256": "2419aa0bf3c6acab98e6cc6eac28da406ee980a48f0223f0bd102a52b91173d9"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Placeholder/WFC/MapLayout.asset",
+      "pointer": true,
+      "oid": "sha256:67ccdbb465f98af5c3bb1d6a5dfa2f2efa7f276eefa7a3ab63f53dabd3af804d",
+      "lfs_size_bytes": 668,
+      "pointer_sha256": "18190317e43150cb62c698bace3ab0b54702db1db0270dbcbd7710a616258ef2"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_1x1_short_54.fbx",
+      "pointer": true,
+      "oid": "sha256:a8759338db1fc579c68c9e9f07c6f3b8009a0e57b8db6ef88e8f3092343f983a",
+      "lfs_size_bytes": 278208,
+      "pointer_sha256": "af08857caa56b070522e2cf351ace7791a0965e5dd96bc7ef6b1daa695a117d8"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_1x1_tall_37.fbx",
+      "pointer": true,
+      "oid": "sha256:e868e46ac64ebef8a55c329bddc25fa899eb552964e6a13c66360d9acf656c7a",
+      "lfs_size_bytes": 339952,
+      "pointer_sha256": "3d015239a4b73b5a76a66698fc310215e45b894b229689d3e660ff0a573209fb"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_2x1_medium_45.fbx",
+      "pointer": true,
+      "oid": "sha256:00f08ee983c5ec87b5965c0af96af9cf36ea379cfbbb7129564676acbceb4a55",
+      "lfs_size_bytes": 443296,
+      "pointer_sha256": "5e64490b8bdbb154004a03aadbf8cea4c72d9f9a3010a055b4caa233bf4c8ae1"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_2x1_medium_61.fbx",
+      "pointer": true,
+      "oid": "sha256:0ba74a944ab4f8ac48f89429fdaca567f68006d710b30c66c13fcaa6c0e5e06b",
+      "lfs_size_bytes": 417472,
+      "pointer_sha256": "145157cee10990c2a1e665de506289106ecc9c1af9eafe75a64320310e103de8"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_2x3_medium_16.fbx",
+      "pointer": true,
+      "oid": "sha256:b437d8a1426f971045206d064dadec29cf40d86bef19d887c5e6a13f01ec143b",
+      "lfs_size_bytes": 599888,
+      "pointer_sha256": "6b58787d9ae77639cb32a467a3e71f5c1446ef18f5b77b951ddde3a90efcff1f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_2x3_medium_23.fbx",
+      "pointer": true,
+      "oid": "sha256:8d4b76910b26f5bf54c927dd374312068c9749f3d77dbeebee6c0be97ec75ebd",
+      "lfs_size_bytes": 656032,
+      "pointer_sha256": "d1bb57ac704bc6ee183c732be45c7c5760275e06998215e489c5dfd9c13b3b36"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_2x3_short_1.fbx",
+      "pointer": true,
+      "oid": "sha256:cd2973d57d48a5f8248203a9ab3dbf4d1dd53a2210718c0702e555fda7e487cd",
+      "lfs_size_bytes": 542224,
+      "pointer_sha256": "6c7d94d48cf7848174bc1cac2e8959c54ffd766a1e3b8090c6e3dc0597cdd77d"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_3x2_extra_tall_8.fbx",
+      "pointer": true,
+      "oid": "sha256:54d1d5edcdf531a38778897c0dec2eb11d0d36ddf3347cd3dd2c1c4a8f13d613",
+      "lfs_size_bytes": 780880,
+      "pointer_sha256": "3f11f07c4a48501b408f0d8e2daa8b33c4f83a7b561dec67fd822d637da86ac8"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_3x3_medium_5.fbx",
+      "pointer": true,
+      "oid": "sha256:f6715afcb3357128dcfc0083a040bfdf4f98822d327f32adc1b4feb848aea95a",
+      "lfs_size_bytes": 756800,
+      "pointer_sha256": "c4066d992fc0667062f8e1a5dea6ce17b56cb0b4f2990462058fd45f6420569f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_3x4_tall_40.fbx",
+      "pointer": true,
+      "oid": "sha256:8e6e0453622a4dc87defffac57c523a6b7dbe3589420caadec2d3a8810d1b5f0",
+      "lfs_size_bytes": 697936,
+      "pointer_sha256": "580dbc31962fd0299341b70a3bbdf0ac45c6637794cf6d20a98e7fad727d158c"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_4x3_extra_tall_35.fbx",
+      "pointer": true,
+      "oid": "sha256:a351de6d3f33ecdccc4dec4aeeb5a8acb341642e04ca18a9e106593949ca4ab7",
+      "lfs_size_bytes": 1008416,
+      "pointer_sha256": "dcc7cbeeb5cc705fc06c2344b858cf722ec86d57b1e15941d2afec76770be22f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_4x3_tall_CustomA.fbx",
+      "pointer": true,
+      "oid": "sha256:ee4a70bcc35826d29f4d1ed95a542b6b41d86a4133bcc0e785520ebad876a054",
+      "lfs_size_bytes": 857120,
+      "pointer_sha256": "9eccc02044ba576ad6532eb73d6ce7b5d814fc4006e81a2e1f2b1a54b1b03d7a"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgA_5x5_extra_tall_CustomA.fbx",
+      "pointer": true,
+      "oid": "sha256:3a0e7270410395969a554b3dd738ae377243b990235241c8b9d6ca41843a8923",
+      "lfs_size_bytes": 1781696,
+      "pointer_sha256": "fe434638abab4daa0ea2ea8b47dd2000768f8feecb4ebcc68dc0c48a1b2689f5"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_extra_tall_10.fbx",
+      "pointer": true,
+      "oid": "sha256:8b1660269f8426c867cbcff1fe89d1ee11d95bbb814d377958077679cbbb1730",
+      "lfs_size_bytes": 378768,
+      "pointer_sha256": "358b47d69ecbb964030fc69df4fa12babae5d91fb8c65aac7982ea69e66a1f2d"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_extra_tall_22.fbx",
+      "pointer": true,
+      "oid": "sha256:a31fd2e337849ecb691b49a4fe40b716dcd088418bc211daf2370914beffbd7b",
+      "lfs_size_bytes": 414688,
+      "pointer_sha256": "4651a9e88a504324a13d1111595013ea0769aa6dd142cfd70841bc1702798228"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_extra_tall_26.fbx",
+      "pointer": true,
+      "oid": "sha256:e34389b02590e826704658cfdde0fc0bab90ed39dd3e6dec4376b2f9ee5fdb41",
+      "lfs_size_bytes": 365408,
+      "pointer_sha256": "9d26a2a80a4400f65432321d390d4bfdc8b796e51406279c9b061e8cabd6175f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_medium_4.fbx",
+      "pointer": true,
+      "oid": "sha256:99180e8476c96fbf122f3523a5eb9a76d73448ae6676befb3bab5cc4e47b2a96",
+      "lfs_size_bytes": 398400,
+      "pointer_sha256": "27d80e45cc970215cf8d16ac831c1e56fd46e8076f8b9d196565c5f77c40009f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_short_16.fbx",
+      "pointer": true,
+      "oid": "sha256:5123d417ac6691b1c38547e06d663ffdb4076d5b5eac8c34ddb1ef254573f165",
+      "lfs_size_bytes": 318240,
+      "pointer_sha256": "6b1e8acbbd9ed39d86a69cb89422bb6ec0faa9ce794e98a89cf30b255617f7dc"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_1x1_tall_58.fbx",
+      "pointer": true,
+      "oid": "sha256:410dbed14ad4a087081bc8c535e6d1f978d194697ce769f6c2ea0f274f608cca",
+      "lfs_size_bytes": 395760,
+      "pointer_sha256": "02efc26e4f8731e819b06588002d6956b700bdbd44d62aed8910e32ce1892ed4"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x1_extra_tall_32.fbx",
+      "pointer": true,
+      "oid": "sha256:aea66ce2ae39ac70726f8dc1be943adae06e42f35744487c493461e5dcd91e2c",
+      "lfs_size_bytes": 497216,
+      "pointer_sha256": "b2d20fef369d48d74c602d6254709273ce0748f054afb5309f06c5f99a0e346d"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x1_medium_0.fbx",
+      "pointer": true,
+      "oid": "sha256:0e31a391777bf805359662b315a92a070a21fbcea7feb83063c7f1172c2459b4",
+      "lfs_size_bytes": 588864,
+      "pointer_sha256": "c36594b5df2c73e9519d04831f6d99305d9313b194f1e6b911f7a4e7b4652460"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x1_medium_9.fbx",
+      "pointer": true,
+      "oid": "sha256:2f3fb1c51b993fb013ebf4d1af573e31703ce3b7c9f4000f4fe9417c60fc585d",
+      "lfs_size_bytes": 519024,
+      "pointer_sha256": "eef488ac4eacf788a7de20dd506e449e11208a4496ce97c7f0037482abff2f19"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x1_tall_20.fbx",
+      "pointer": true,
+      "oid": "sha256:17976badd3ca6e8a96124cd90b873748ceb2547cf0b14643eb392e2b2b035a51",
+      "lfs_size_bytes": 510544,
+      "pointer_sha256": "1d497309c3940a4a89ec6de38382bf6dea27d694908b5b02fdb4a0443ea62cab"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x2_short_6.fbx",
+      "pointer": true,
+      "oid": "sha256:d528058d9f137b1702a2be4fe2db79c544eb0df71489c2680e16118fbfe60ab2",
+      "lfs_size_bytes": 707968,
+      "pointer_sha256": "0d6cd1c18128e8452089db72343c49136b2327582e7196270525cd581f34883f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x3_medium_0.fbx",
+      "pointer": true,
+      "oid": "sha256:2e11ff68557496e4d8a42f0c950c9d3900bc572d88e5f3e94c4846d8a96d37a9",
+      "lfs_size_bytes": 953680,
+      "pointer_sha256": "c2277c4a80c733aa0dd5fd193472ab5b2c7f824c563845717d9eac3b2ab6f550"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x3_medium_20.fbx",
+      "pointer": true,
+      "oid": "sha256:437e20f632c7b0da0231457a3b665187a7356fb5415fa1c4da0a414c95301eba",
+      "lfs_size_bytes": 1010496,
+      "pointer_sha256": "5327a71260cf0d22ce5ba484744cfa31bc8bc7ebea628ed9f0bbe736e3fa2f16"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_2x3_tall_1.fbx",
+      "pointer": true,
+      "oid": "sha256:6249a7b2f0b5b38c200c1bd04067ef029ad7e3a17496e231e44d9d59ea3f12a5",
+      "lfs_size_bytes": 861664,
+      "pointer_sha256": "9c58e74e7aa9430da940ab6f3acfd942e2da578ab168a1fca35579da22470d79"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_3x2_medium_11.fbx",
+      "pointer": true,
+      "oid": "sha256:1126b3e2aeff3c80b55e5775a7d617f51379fa0d58e4e73adcba7880ed8f2d14",
+      "lfs_size_bytes": 1253568,
+      "pointer_sha256": "6a1a6d00bdaab9ce235d3df38a7f1ac0cb4e323f7fd17fd5111a24eeb11ee22e"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_3x2_tall_50.fbx",
+      "pointer": true,
+      "oid": "sha256:2832af8b65f21eeb8e8acfdf63461d9b71274efaa7c2b1c8315a13be8595e87d",
+      "lfs_size_bytes": 625296,
+      "pointer_sha256": "fb6b705439a5134644f3ddefe975c3e4eac673020b9e614eb0f572a3b760a01c"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_3x3_tall_49.fbx",
+      "pointer": true,
+      "oid": "sha256:ca2a9acd2556d6bdba32ad7a47399c4157fd22847a0cb1f57aa1f99d35136939",
+      "lfs_size_bytes": 1229440,
+      "pointer_sha256": "d8b59beffbc6cb9b221f0e1c3aaca011ba63dd859155bc946aee43711143cf40"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_4x3_medium_22.fbx",
+      "pointer": true,
+      "oid": "sha256:c3f5dc1cf022d8a0be8ae8a9edf22cb2d5c85c057b20439fb1e00207be1a89d3",
+      "lfs_size_bytes": 1558448,
+      "pointer_sha256": "1d0f931577a10ef78773c242aa16c8998eeaf766158c84c1414437f35539145b"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgB_5x5_extra_tall_CustomB.fbx",
+      "pointer": true,
+      "oid": "sha256:decc85549a913698e5f8e661326343e9190cd8b12775f66742029225bb40e188",
+      "lfs_size_bytes": 2659792,
+      "pointer_sha256": "56185613d6929752ceace25c246c137a38e420021f94e3805fe22e32ca61bc71"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgC_1x1_tall_18.fbx",
+      "pointer": true,
+      "oid": "sha256:4097ccb60f922190ebac18d9dc9476fb537e16291106b218884fa0d8fa5975eb",
+      "lfs_size_bytes": 1623419,
+      "pointer_sha256": "970c649b3887d57530dffa6fc40556c872fe2f3f42b9a61360a795265e16d36f"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgC_2x1_tall_5.fbx",
+      "pointer": true,
+      "oid": "sha256:bb1f39bcea57f39562d76fb7518678858259e3119c61e83f581cb36358ccfa88",
+      "lfs_size_bytes": 2071709,
+      "pointer_sha256": "46f316de9141527cac3dbb6f5dba8b8f8a850a50846e30531c646c44c18a2a47"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgC_2x3_medium_19.fbx",
+      "pointer": true,
+      "oid": "sha256:e116577fedf70f14afb8ba11293eb0f40811355218abe7e211f56380c414520e",
+      "lfs_size_bytes": 4411421,
+      "pointer_sha256": "6b527c2c5026884566ca6bbbe0c82402291a9b556fe3e20294238c62e0e1a959"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgC_3x3_extra_tall_27.fbx",
+      "pointer": true,
+      "oid": "sha256:973e55f0081f4917522f8ddebc37f2e22bf757facfb93e309229f000f903ae92",
+      "lfs_size_bytes": 5948670,
+      "pointer_sha256": "ea49823ae09cac3f9248c71bbecfcaa054596d5315f3b1f11f9a0e41002e8664"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/FBXs/FinalModels/BldgC_3x4_extra_tall_42.fbx",
+      "pointer": true,
+      "oid": "sha256:03f0b5d582b053b9ddc2471f63032d8e9003613c35e598e8e8d10f997bf02234",
+      "lfs_size_bytes": 5771989,
+      "pointer_sha256": "ab422e69f97921f506a0705878fd04eda4d0ff4a72d9977dae230d64a0412711"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/Rooftops/Chrysler_1.fbx",
+      "pointer": true,
+      "oid": "sha256:f6036ce90e59ea59e21f1bea5775a0bb5b057ce8f2aa20ad74be3cc395823eed",
+      "lfs_size_bytes": 489073,
+      "pointer_sha256": "d887f95a7e42290b9819df1fd5a0581097f939e320bc7db6e90eb4feda025ea8"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/Rooftops/Chrysler_3.fbx",
+      "pointer": true,
+      "oid": "sha256:2158fbd3900693efe01f3033dbef414a32d603a6b1063c7137b270c8a4a817f9",
+      "lfs_size_bytes": 476487,
+      "pointer_sha256": "8a08ebef7e3c48daca29f79b135c52c5f6b22a3bce216ecc55aea4db4e96461a"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/Rooftops/Greenhouse_40x80.fbx",
+      "pointer": true,
+      "oid": "sha256:fddda7d79430d57493f54249ff303d738a46e7348d6d002c4cf0439d47917495",
+      "lfs_size_bytes": 296729,
+      "pointer_sha256": "aeb20799f338effe2687c17f9f4f24252897ec60a6623516679a70685a06dfb7"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/Rooftops/Greenhouse_80x80.fbx",
+      "pointer": true,
+      "oid": "sha256:0c72bb5111d89710983d335ca355460ac65dca4c240b4f8d583a808e52668b28",
+      "lfs_size_bytes": 463454,
+      "pointer_sha256": "c7afb4983a57128ae638c1d2598a5100be7696f5bd24552bafd647475adc7ad1"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/ProcBuildings/Rooftops/Octagon.fbx",
+      "pointer": true,
+      "oid": "sha256:32d97c8e6f257dd2a86e6e98784d4b2a477a2d9c677d10b46571179c53b20199",
+      "lfs_size_bytes": 263758,
+      "pointer_sha256": "b2ac39e9714e221d1912558e01e5af168b699294e70e9c0be60303211bf5ccea"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Airducts/Airduct_straight_lod0.fbx",
+      "pointer": true,
+      "oid": "sha256:3829f33c24631b4cf57ae56a54e2c2da2da455d5eafa530fb2a0fdae73a760ce",
+      "lfs_size_bytes": 13100,
+      "pointer_sha256": "75f550346b52f329bd4609f31392c0a275a896d1f0d382726be62f165d094374"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Airducts/Airduct_straight_lod1.fbx",
+      "pointer": true,
+      "oid": "sha256:44f1f0259a719c2255c106d655a5a9ca3407719c418ae509354c0b3b022fa84b",
+      "lfs_size_bytes": 12636,
+      "pointer_sha256": "9c360351096b88c114d57d959bc39ab41aeee2fe8ce5dcf765926e802aa3dabd"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Airducts/Airduct_straight_lod2.fbx",
+      "pointer": true,
+      "oid": "sha256:0ceb642c365afda96fd167f75683c4e6212ec3b4e77762baf48fba57ba1ead98",
+      "lfs_size_bytes": 11980,
+      "pointer_sha256": "aef16568c4f4546ad08c3354cad0cb1934bb7e976ce1af437b67bccbba535864"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Airducts/Airduct_turn_lod0.fbx",
+      "pointer": true,
+      "oid": "sha256:ef4949add229089d30f767750273ccb46dfc6bc32d3eebe6577c295ff56134a7",
+      "lfs_size_bytes": 15916,
+      "pointer_sha256": "48660ef01e6e3682c491f1dd193da2f2b840fd72f11e6959059b28593abf83a7"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Airducts/Airduct_turn_lod1.fbx",
+      "pointer": true,
+      "oid": "sha256:59a36846b8b1fd0d3fac17a5d316eb73fd539abcb6332a128ae2cd15180d91d1",
+      "lfs_size_bytes": 14668,
+      "pointer_sha256": "87baf1f10af6bd44eb2d8bc549cfbd7c013c43b49919406169a7fba649c2e6f7"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Airducts/Airduct_turn_lod2.fbx",
+      "pointer": true,
+      "oid": "sha256:94d6d84e6c5c29b7a3d1cfb6320aa3c1f1c40e923e585d796b5b3daf41c506fe",
+      "lfs_size_bytes": 12780,
+      "pointer_sha256": "bf81788c3829ba637d869714aed01af13c23a7a6bceccd1600e1a93a8fb83ca7"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Blinkie_LOD0.fbx",
+      "pointer": true,
+      "oid": "sha256:2afe88b4b2d76c2f1fdaba762fe8090926f0a0c55e9b98ec63e53a055bf452a1",
+      "lfs_size_bytes": 19132,
+      "pointer_sha256": "7550a8efbc27153e65625cee629c10d0c8a03c99e2f9b58b7ebe3889884b5f2b"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Rooftops/Blinkie_LOD1.fbx",
+      "pointer": true,
+      "oid": "sha256:682270cf17247d23647b961f3691d6d6e5069b4ff41d9b713e85db62a1b54dc7",
+      "lfs_size_bytes": 17356,
+      "pointer_sha256": "45f6586542a69187feabd443fad4292530df91e36614e35de8a7596468a99cde"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Satellite_Dishes_A/Satellite_Dish_A.FBX",
+      "pointer": true,
+      "oid": "sha256:ac3ae573b4a093b2608b4247c4ab84822d5bec3cc6a8afd6a2dcfcce40047c0b",
+      "lfs_size_bytes": 139392,
+      "pointer_sha256": "dad12141349fbc029d4178c9f9f0fe603db88af8da5af101eb18aa614065901e"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Satellite_Dishes_A/Satellite_Dish_B.FBX",
+      "pointer": true,
+      "oid": "sha256:c6978fdfd95c6fe15dbe4f7bafa62e52575f4aa390280897b147d97f15bf9be7",
+      "lfs_size_bytes": 149648,
+      "pointer_sha256": "0d60dcf0eafe72af3acd369860721ffbd316fea9ba2d5542582cdf8d42cf548e"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Satellite_Dishes_A/Satellite_Dish_C.FBX",
+      "pointer": true,
+      "oid": "sha256:43b415842c0273580e287cecb7324237b327ecb6ebba16cc217ce1fcf2dc8bca",
+      "lfs_size_bytes": 121264,
+      "pointer_sha256": "1a31360fa08a7d29497c7a5582288af0554b1e7b7ef54540186d64241a652582"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Skybridge_Heavy/Skybridge_Heavy.fbx",
+      "pointer": true,
+      "oid": "sha256:224d0485574b5c8680551c1c6865985c07a16caff69600f25ba6dba0d04100ca",
+      "lfs_size_bytes": 195043,
+      "pointer_sha256": "0033b69b6bc1b6f4b0b1868c07943545805c6e1fdc1db424a3b0f6272e986834"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Skybridge_arch/Skybridge_arch.fbx",
+      "pointer": true,
+      "oid": "sha256:2f89682050d2b5266e07957f866904debdc362f9eb1cc4022e2f528e249e16ab",
+      "lfs_size_bytes": 130436,
+      "pointer_sha256": "4a42df0ac7ce50e45f678113ecc5ed46145c3f2ef13e92c6295ed26fe9c5f894"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Skybridges/Skybridge_Beam_Curve.fbx",
+      "pointer": true,
+      "oid": "sha256:d9fc6ba6618c80c8559331b7153c6305b032ea6c0b395854c0efcd1b4cc883bc",
+      "lfs_size_bytes": 55516,
+      "pointer_sha256": "4d2c04da4165559a7ad322783a4385d05375b85a5b83470f2f52b83ab8186002"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Skybridges/Skybridge_Box.fbx",
+      "pointer": true,
+      "oid": "sha256:f332c5630ae80f1c088349ed2e1d50e90439f9547a0d6da8821a299526c0c349",
+      "lfs_size_bytes": 28108,
+      "pointer_sha256": "2ef1e8d06cd79092040b9c3cb6ac7ec70c0ccb7811544ec895a27a3a13c800e2"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Skybridges/Skybridge_Open.fbx",
+      "pointer": true,
+      "oid": "sha256:acc2024f1272029e86f62b1f486edea3977fe2c8037e3311805991f45fe6d432",
+      "lfs_size_bytes": 62908,
+      "pointer_sha256": "b2b234400920ce263ddcfba9acdd6eedc0ff109ae0a471ccd67747cef6a676d3"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Spotlights/searchlight cone.fbx",
+      "pointer": true,
+      "oid": "sha256:e840f28dffeaaca8d27a1134beb571dea0db6d5ef6a16c531d5997ab8813d2eb",
+      "lfs_size_bytes": 21520,
+      "pointer_sha256": "1c16a3a133e7d9e9aed205447e6a0ebd926cf43e225525d5c758217ac96a6204"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Storefronts/Storefronts_Light.obj",
+      "pointer": true,
+      "oid": "sha256:993ef3463fcf8efd8e3868dbf77ae8db8a925908dd83b433d3c1cc370118b194",
+      "lfs_size_bytes": 459,
+      "pointer_sha256": "1676025be592990c6a95e6860a8f7d5eadbefb4a0376c7fb70d2fec0b5c74336"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Storefronts/Storefronts_Window.asset",
+      "pointer": true,
+      "oid": "sha256:6b145aff6e60e344f366495196d6b36654e2c3f0bf1527b82d2f4c0fe0db9da9",
+      "lfs_size_bytes": 3661,
+      "pointer_sha256": "75cfcdca595f39afc40dcd0d142e193b11c1f9e02014bfdda3a3db7474c12068"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Storefronts/storefront_glow.fbx",
+      "pointer": true,
+      "oid": "sha256:0b6a745b210ffa3610acf6b9b7443fbece118415a9ee369f62a1e62d8aef3be3",
+      "lfs_size_bytes": 20528,
+      "pointer_sha256": "b0fa0ade9aaa986e0cb78ee5622181c88a34cb84a85609d7f1ea81dc7fec3d22"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/Streets/sidewalk_section.fbx",
+      "pointer": true,
+      "oid": "sha256:8875c9c0a59b43a18930ddde4c42124cfd88d3528379b959e22f6cf9040d1764",
+      "lfs_size_bytes": 19360,
+      "pointer_sha256": "bb3254846c8abf981a8bbd8d0b36f3b029e6d0b2a15ddf3b922d86f68ecd1508"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/blockers.fbx",
+      "pointer": true,
+      "oid": "sha256:ff64f2e3710514336f2e9ceedda28e6d9a04df1e89ba40f8fa246f9924a5b2b0",
+      "lfs_size_bytes": 23280,
+      "pointer_sha256": "da2fb0ab47b5f67bd5f1479c12ef3ba6aa9f40628e7fc2bf41cedf02cb7f954b"
+    },
+    {
+      "path": "Assets/Art/Models/Misc/Shield.fbx",
+      "pointer": true,
+      "oid": "sha256:3ab390b2221d05388ced3d728e4485c89d689188d2e29ff3a0456ef911e3db7d",
+      "lfs_size_bytes": 27836,
+      "pointer_sha256": "9d6cbc9733c75e0e04a9733502585cd7a29fdb64c31aaecb57f2e7a159ea260e"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_1.fbx",
+      "pointer": true,
+      "oid": "sha256:22b26e9e5f66e1f28adf1c571698e8c16ff55bc6533bfcdaecaff618e6d9c81a",
+      "lfs_size_bytes": 43520,
+      "pointer_sha256": "e11d0e734781dacc808da36c70a4b12cb191de2d088d65b6f0e9e83f009e0256"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_10.fbx",
+      "pointer": true,
+      "oid": "sha256:e1593a5a018aabe92fd1429a3d697f1e67c6380edbc79ca2f86f5eb5adf0d86b",
+      "lfs_size_bytes": 43808,
+      "pointer_sha256": "51e94bba933475d7c3035461f68552f470df80d259f85124642b067f7564e2b3"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_11.fbx",
+      "pointer": true,
+      "oid": "sha256:dd4bcc5e45653774129c192613fc9b9dd9526a7f7e0580c31ccd9c19ff07140a",
+      "lfs_size_bytes": 50496,
+      "pointer_sha256": "291423060dedbc3ec61cfd0c8b1c3d1f0e4f0d242fa1599a722d867b51b1e4a3"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_12.fbx",
+      "pointer": true,
+      "oid": "sha256:651c35dc8c90f3c0706a7cf4ed0ae0ecdf962a490130bd4dd0a6691d45bd75ad",
+      "lfs_size_bytes": 405760,
+      "pointer_sha256": "0dcbee42616aff3cbc9bc96d1fa568a10ccfcaea151427f643b9a087bfc849fe"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_13.fbx",
+      "pointer": true,
+      "oid": "sha256:7b2adbaae97e573cc8579e9ee139af3d320ac4cb29c2d5aea59ed9b05e2ab5d1",
+      "lfs_size_bytes": 108224,
+      "pointer_sha256": "b0287c0db7a75e9623d58b15ae0a22d0df08911639b2e9e9854b5e8266f99ee3"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_14.fbx",
+      "pointer": true,
+      "oid": "sha256:ba244986e29c0c573f3add6a5e2c7811b7359ac3487cfd46421a8e84113589ad",
+      "lfs_size_bytes": 112480,
+      "pointer_sha256": "94e2d761626d71ae68578cd4ef1976f560db4a135f1ee42e787d43732928a1db"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_15.fbx",
+      "pointer": true,
+      "oid": "sha256:39df8156e7deb8a2e01b20b7a5ba02f7faf7fca0512126e19e7288dbb9c8eb7c",
+      "lfs_size_bytes": 145840,
+      "pointer_sha256": "868f4bd6dfb284b99de25762fc5b9fc2aef3aa235facb92da96df8ba47fa9089"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_16.fbx",
+      "pointer": true,
+      "oid": "sha256:9c28ecb91c74db08b372c8b6f3c828a60794da83bcdec0046adde9b766ce46f5",
+      "lfs_size_bytes": 107024,
+      "pointer_sha256": "bfd04e2000b7a7dd88fd25b3d4540bc8a1cf073f51969846aec66304b1eca9e2"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_17.fbx",
+      "pointer": true,
+      "oid": "sha256:825d48ebbbf148b6d0bd93fc645a6366560207ccd8f824297a7ef1e4e44c99bf",
+      "lfs_size_bytes": 139584,
+      "pointer_sha256": "937e0d5b43dbc581aecb7f87d1b060da011bb1dc309c8ed40cffbc41eb7a92be"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_18.fbx",
+      "pointer": true,
+      "oid": "sha256:206e16e8cc5025f2ab5c549a803245fcaa9da63e70590d52c8b3453b827f8759",
+      "lfs_size_bytes": 109456,
+      "pointer_sha256": "90d657e32c68f9553aac783db30aef190d1341b2d06743002a7b2eaa147354d6"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_19.fbx",
+      "pointer": true,
+      "oid": "sha256:fee62696d67ddfa8175fc0e0bc6912cf5b567836fe79ad909598699b4728a0ac",
+      "lfs_size_bytes": 166384,
+      "pointer_sha256": "5234cd4e4da1fc867597f097cc8755106a733af8c2f4eda2962b1742b5f3a437"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_2.fbx",
+      "pointer": true,
+      "oid": "sha256:76f3ed4c9f378f6e40149a31a83752ff4e60effb6d3eea09ebd07ee3035110fc",
+      "lfs_size_bytes": 47424,
+      "pointer_sha256": "c2e4c121309cb389a61c2fc1d5df1f36e44d25e54f671d46dca2b057103b8786"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_20.fbx",
+      "pointer": true,
+      "oid": "sha256:c862b1542dcfb1c9d0141e8a173b872f16eb46c4917d1d94873c02361800a125",
+      "lfs_size_bytes": 119552,
+      "pointer_sha256": "0b2cd67723e85d4d1ab9a4631ba18de49552f9f2cf09d22d145f2abf6959038b"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_21.fbx",
+      "pointer": true,
+      "oid": "sha256:af894acb8d2265bf55455d35fa0435fc260c66fa809aa7c8465bc5eb85cc39a5",
+      "lfs_size_bytes": 211504,
+      "pointer_sha256": "52cc7ad5068ea9e2fe3b80ba4e1fa91f8aeb29a692e4914efb00996aa1f89a9f"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_22.fbx",
+      "pointer": true,
+      "oid": "sha256:76edf1c4eab0aef9918c3e64e4892a611a61699ce77ba5ea0afe212a4e06e2aa",
+      "lfs_size_bytes": 181184,
+      "pointer_sha256": "00df52d290b83737c0f9b8344038e91e457511be21d0d328da271947021af251"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_3.fbx",
+      "pointer": true,
+      "oid": "sha256:b72308e47446b5537cf261047bf493b2312f5e8939bb6c2b6a7b9f14abd3c796",
+      "lfs_size_bytes": 49760,
+      "pointer_sha256": "1c03044dc3b2598c60d965518aefefd8422496d567b3425d6c0897c876cf10c7"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_4.fbx",
+      "pointer": true,
+      "oid": "sha256:7027c2ee816b8902d4d10e394669525cff4ee043de62a95adad448018e9403a1",
+      "lfs_size_bytes": 51264,
+      "pointer_sha256": "df2b1381ccee7dffca8622d5bf0181e34e05f069e3e6a24e79c04d5e004a2499"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_5.fbx",
+      "pointer": true,
+      "oid": "sha256:c0726833f05e1ec4584acbe1cfb0a8a61e8f88d9ac89938176181885e4f5ac02",
+      "lfs_size_bytes": 48448,
+      "pointer_sha256": "72b1f7907327b678423e9991361a44a90a018042add277ddbc7f03625a227a6c"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_6.fbx",
+      "pointer": true,
+      "oid": "sha256:0ecc98d1cdb635ef179e0913fcb82d38cae4cf0a09e9ba1fb7157cdaf1b01154",
+      "lfs_size_bytes": 62352,
+      "pointer_sha256": "e0b7d651113ac8af483f2f5f1edb026b1d29ce964bfea219f27e2441ed5be0ff"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_7.fbx",
+      "pointer": true,
+      "oid": "sha256:6a3a53962b31ecc36706fde7e893e1a2e4aee9cd7ba1b7621fd5952b1a5cf397",
+      "lfs_size_bytes": 42384,
+      "pointer_sha256": "2bedc7ed0222b452468b8a9ffadcef62e7829a4af7f0e8804b01991946f119dd"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_8.fbx",
+      "pointer": true,
+      "oid": "sha256:46e47a4511807be743dc567a3799cfcbef1ea0ef4428092426cf915d5423a9b7",
+      "lfs_size_bytes": 55440,
+      "pointer_sha256": "09edc4c2586d436465d5ce9c86ace4d5796f16d3be431d7e14ca120be8dca85e"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/Text_sign_9.fbx",
+      "pointer": true,
+      "oid": "sha256:5edd89cb8128177df7b3a4f1d45c55f340dd5f83afed4e2e1333b9f75e4a2c03",
+      "lfs_size_bytes": 43376,
+      "pointer_sha256": "1c720841991e7e43a9c9a594e3ec5fc3b966fd91aae442c9a933d96ebefde610"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/sign_LCD_20x10.fbx",
+      "pointer": true,
+      "oid": "sha256:b1bd9c7597febbb1a3c9f783969d456096f3cd45b1e44ea1397da462bfa00040",
+      "lfs_size_bytes": 23479,
+      "pointer_sha256": "ef99e7d8ebad37214e0741af39ee3943d8e5dde7375805dac9730bfdf114645d"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/sign_LCD_20x10_curved.fbx",
+      "pointer": true,
+      "oid": "sha256:40dd3633fa75f338d4a33207bb819991165f2a3f0dd2a2e347abbb259dfbf8de",
+      "lfs_size_bytes": 25236,
+      "pointer_sha256": "ef7460d092c78c6f4a1c6fcbf2587d2726f92b48eeaae35e6bd7fce05afdb48b"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/sign_LCD_40x10.fbx",
+      "pointer": true,
+      "oid": "sha256:ffb11a223606a4bed3c156482c6f9054d2320cae08ed59538aedddc26b1d591b",
+      "lfs_size_bytes": 23668,
+      "pointer_sha256": "ab9fd01b94b8ca8e13541c5e467f0abd38d519f090914006c21a8e18a4bad123"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/sign_LCD_40x10_Rounded.fbx",
+      "pointer": true,
+      "oid": "sha256:23f7b2c58fc6c5ac30b2b066513e427db283711727266b4349f0ab490b96de4f",
+      "lfs_size_bytes": 23955,
+      "pointer_sha256": "d3d698dc455b6060b426383bae7258bad4533a9a1430d5762e9128f699372feb"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/sign_LCD_40x10_curved.fbx",
+      "pointer": true,
+      "oid": "sha256:c0769bebd203ad5cada395cb4a55a2a18777ec616410c9a85c4a2c4668400e68",
+      "lfs_size_bytes": 25411,
+      "pointer_sha256": "fad09e24cc8736c9071eebb0a217cf42c893724c9605273a152183d3f11631a0"
+    },
+    {
+      "path": "Assets/Art/Models/Signage/sign_LCD_50x25.fbx",
+      "pointer": true,
+      "oid": "sha256:cfea30b7a8be35a975cfd60b89b3f8d6c28475cd4bd1efe41c2efe169d299b70",
+      "lfs_size_bytes": 12735,
+      "pointer_sha256": "d79d41938f58095e95788070ec336618035e9eb616c64ebd41ab9eb9869f7761"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Airships/Airship_blimp/AnimatedLogo8x4.png",
+      "pointer": true,
+      "oid": "sha256:060fe5150fd48bb53597911543df915ea324df66e4faf6842b8d5d8fc912964a",
+      "lfs_size_bytes": 240839,
+      "pointer_sha256": "b7006e71acda0c1b1c761c97b6043cec2fb0cb92521bce070267336b387269ea"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Airships/Airship_blimp/blimp.fbx",
+      "pointer": true,
+      "oid": "sha256:25302c55726979330d0c3942de64d89747e1e6749a9d8bfae4f5e6c23dc68382",
+      "lfs_size_bytes": 300096,
+      "pointer_sha256": "9b4b1df8a197ba1719f73ed653c1e07531618d70bb17d58c9e2f97ef79578e91"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Airships/Airship_zeppelin/zeppelin.fbx",
+      "pointer": true,
+      "oid": "sha256:0c60eac8f72244dae724175923ba95651b7fac4706651ab464818b2e5510d0dd",
+      "lfs_size_bytes": 374816,
+      "pointer_sha256": "76573dda58abbc6714117cf973b590144ae76351d8980fdea8a61acfa7512023"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Airships/Airship_zeppelin/zeppelin_tail.png",
+      "pointer": true,
+      "oid": "sha256:a4e942db70e1d798e54161663bf7019c9a26f7351ae5047e5ffd656c672a77de",
+      "lfs_size_bytes": 6855,
+      "pointer_sha256": "bdd0456b4fa2299ae2fba3f8c22e10062c650fc3974ff997f28d360809f692bf"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A.FBX",
+      "pointer": true,
+      "oid": "sha256:4894a80b4934ab5cfd1d66d70c743bacf537e95adc1caff355e3ee97a59c6a68",
+      "lfs_size_bytes": 3148272,
+      "pointer_sha256": "bc815a1e53e8b55d0671383213d1dcbd16fcbbe246a6f9016777818470b30d6f"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverCar_A/Vehicle_HoverCar_A.FBX",
+      "pointer": true,
+      "oid": "sha256:09ef2cf0a6727b14742528adde114abe1019e7ccdc243c37308a39986aafe573",
+      "lfs_size_bytes": 885328,
+      "pointer_sha256": "f6190118255a88d69983a7e4ead908aad9d1f5ca0c0d5da92c638df2fc3d8298"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B.FBX",
+      "pointer": true,
+      "oid": "sha256:12aa0aaef3bcfb988a035662eb0ee909e192cb45c870ee6fa2bf70862a85ef7c",
+      "lfs_size_bytes": 1344144,
+      "pointer_sha256": "b9fa9fab42800d2901f8b0df77e4aadc94a6dc0efb89b122a09773a38c6bfe03"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C.FBX",
+      "pointer": true,
+      "oid": "sha256:fb8e4f7ffbefd5f99212e46d0cf93a07e9bdae7fa3d1fe4a6159324aa4305482",
+      "lfs_size_bytes": 1397072,
+      "pointer_sha256": "ece65dee2e159266829140a728c2e972da613fabd5336ad11e9d575148670455"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A.FBX",
+      "pointer": true,
+      "oid": "sha256:885aa1fe32c2540c668310dfc1e993ed1c82b732e84b11d04c3332ae65933197",
+      "lfs_size_bytes": 3693136,
+      "pointer_sha256": "5afe069695d6bacd508a1b92bbdbc8070350500b43b964c845e89c03f98645ee"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverTruck_A/Vehicle_HoverTruck_A.FBX",
+      "pointer": true,
+      "oid": "sha256:8c43c6a32f25ce0cbaf1bbd815808d52e50b69180ab1792d6297279971e57576",
+      "lfs_size_bytes": 1973648,
+      "pointer_sha256": "c5050698f269420660cfb5e82ac380fb2280d5007561bdb28ddf4d9e3da287f4"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A.fbx",
+      "pointer": true,
+      "oid": "sha256:ce33395df3fc1824e12a5562c33966859db166bf033ce14863dfad298ed73013",
+      "lfs_size_bytes": 1721456,
+      "pointer_sha256": "2e8672652716d0695a5dc6b57decf72710e80c43dd63d4e9f76e7e16ec5c9094"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/bigsun_ship_001.fbx",
+      "pointer": true,
+      "oid": "sha256:bbdb41866508f6ef5ce8b3ad2160f604f44bf8ce21ba4e424af1bf28d37e3669",
+      "lfs_size_bytes": 265552,
+      "pointer_sha256": "5ff32768d68018726bb6ded0fbd0b7b57dc2e0b4c641cc9d3047bf8331e0a71a"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/bigsun_ship_01.fbx",
+      "pointer": true,
+      "oid": "sha256:b3415c81b2e9b08dcf9918105a8acefdf93acb3ba7b1f63fbaaf5aeea323dbd1",
+      "lfs_size_bytes": 251568,
+      "pointer_sha256": "f3178101aee9240c3cb847556fbf090b86bd10e3297f530789ed749fd880241e"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/bion_ship_001.fbx",
+      "pointer": true,
+      "oid": "sha256:5f815be51fd374b53f04dd3ff39db2b56ec1e0d56f108b1a0205b9beb32f7c4a",
+      "lfs_size_bytes": 188880,
+      "pointer_sha256": "40d7fbc52e7a28501904cc770568a9a865fbc59d12142d26f6a24c406c28a04c"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/bion_ship_01.fbx",
+      "pointer": true,
+      "oid": "sha256:b514765a6f7b900282e18ef10abf004e08b7e851a1adcc38a77b97122aeac8e1",
+      "lfs_size_bytes": 368592,
+      "pointer_sha256": "e99750e89b33435fed458aae215fb5c9a1d9ee6bb8853c0003083e2e3998076e"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/xencor_ship_001.fbx",
+      "pointer": true,
+      "oid": "sha256:8626356cf07d59d0a55eacbdc91b414bb6cab7401833da0aa7f07c84a66f975f",
+      "lfs_size_bytes": 104336,
+      "pointer_sha256": "88a6e82b44d4c0fd9586af7a118288189d2a67a5e9b50907051ed9b662cff6cf"
+    },
+    {
+      "path": "Assets/Art/Models/Vehicles/xencor_ship_01.fbx",
+      "pointer": true,
+      "oid": "sha256:105790ebbc55a8e1d65b72b8d1a40e8ac4ff4772dadb877e4f0a91e05e0043f0",
+      "lfs_size_bytes": 137648,
+      "pointer_sha256": "6df68d493b04aff933a97249a38c94ef14fa3672d9b0251aaca4deb40d00d5d2"
+    },
+    {
+      "path": "Assets/Art/Shaders/Volumetrics/DensityNoise.png",
+      "pointer": true,
+      "oid": "sha256:2eb9cd04cff18a53a0396421ed7575cb5483efb18908ec977ae1f14a473581ab",
+      "lfs_size_bytes": 9312,
+      "pointer_sha256": "970810ee48ee0e7d0d8224d9e125a04df30c231f9533eae42ee0852953b2cb3e"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bigsun_holo01.png",
+      "pointer": true,
+      "oid": "sha256:61205e51a9975cb0ec3f5572a948347a1abac654f76289e5a2b7c8277c24d731",
+      "lfs_size_bytes": 99187,
+      "pointer_sha256": "8bcc4b473579140392b958e6a793cedc26cf7ec3cd82ed95ce1f442e6dc6bd49"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bigsun_holo02.png",
+      "pointer": true,
+      "oid": "sha256:45b01bdec9784924e1bde489629459f79e5bc6d67415f0576e7a64dc297700a0",
+      "lfs_size_bytes": 166201,
+      "pointer_sha256": "d2dac96b7d3f1d17dda316e37eba0eea21f88b8f103a69f2a15690b71a3320e8"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bigsun_poster02.png",
+      "pointer": true,
+      "oid": "sha256:52832d973fdd587a7ab6a563a3cb6ac33abd4df231ccad4c9476562585c7d8ae",
+      "lfs_size_bytes": 228650,
+      "pointer_sha256": "b8f99cdd37c542b25fdf26cb953e757bce3377773627e57760072866a286baa3"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bigsun_poster03.png",
+      "pointer": true,
+      "oid": "sha256:6340d5642a15d918360b3f6ed45c2d75516db00fc4da46059c9653fb3aafd2f4",
+      "lfs_size_bytes": 205488,
+      "pointer_sha256": "f345f0df28a23c8a337ffa67ac784ed53ac395568ad2c0372ce46c7ed920ec51"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bion_holo01.png",
+      "pointer": true,
+      "oid": "sha256:7246f0478c8ae479105f09a23f81e73318ed0e997b177861168b6d23e1915db0",
+      "lfs_size_bytes": 100344,
+      "pointer_sha256": "df9ae35a234f7feb8d2cddef4e605348475e876ee326d30563908a3a384dd682"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bion_holo02.png",
+      "pointer": true,
+      "oid": "sha256:b182251da9de5af2f27a4daf37572329cbdcd49d98c7ec5598de4d91cc4a8450",
+      "lfs_size_bytes": 80108,
+      "pointer_sha256": "68f590ab995f8028b2aa9a86dff3286b6c0c9aa8a8902cac0ad9c66fdf6a8fdf"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bion_holo03.png",
+      "pointer": true,
+      "oid": "sha256:9c0087716264e9058ae36cb102e7a928b653ab29305f3aa60af39ef124d45c94",
+      "lfs_size_bytes": 81813,
+      "pointer_sha256": "d2b03fe0ac74136657e467b8c3b0a7b4befd3d8bf3fd8f9ce748f9f2cf1a2eb0"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bion_holo04.png",
+      "pointer": true,
+      "oid": "sha256:d1e801b04a79ad2e93539e23746aab9fa996f7566dc2a3ab64d5b843050da2e4",
+      "lfs_size_bytes": 80392,
+      "pointer_sha256": "59e25a3c03783a56ed67fdd6369de9c12051845c34df78b660f22dc43495776c"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bion_poster02.png",
+      "pointer": true,
+      "oid": "sha256:82e6f6c1afb03486613de796aa773e3674a18f3d53e8a04d62372ddaf9e91768",
+      "lfs_size_bytes": 828312,
+      "pointer_sha256": "a0894ef0d8e294d16b460b64abbfa67e6facfe0f7ba954a4013d1fccf8a49a81"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/bion_poster03.png",
+      "pointer": true,
+      "oid": "sha256:c17811e22e3eea0d8bd076d93824fd25f462e41a3b75c39e582a16722011b2bd",
+      "lfs_size_bytes": 591825,
+      "pointer_sha256": "d7cfe49236d24cf7fef57b8010d9870bee094efbfb4c55e47273fce2adbda3db"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/signs_tall2_array.png",
+      "pointer": true,
+      "oid": "sha256:aba60bb88324c332f9b36f32fa0996b9c24e9600c8e0908b52b69e1a25c87b80",
+      "lfs_size_bytes": 766127,
+      "pointer_sha256": "381c137e09f6caa617b706f68456ee2537d6a0d7829674b4d0684c65e8a6af69"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/signs_tall_array.png",
+      "pointer": true,
+      "oid": "sha256:9c4abf07d0eb3bd23ec8061c22db7a387d6ed25e74549edc7ecadb8988f11c8f",
+      "lfs_size_bytes": 2597486,
+      "pointer_sha256": "d6c7ca215f5bb20e9952781e055eb38f917856f62e7cb579041d45f14ecf6b87"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/signs_wide_array.png",
+      "pointer": true,
+      "oid": "sha256:f726d17518fa65d9194ce9783a7e37638a9149fa3911e9870ca43abe0a52a516",
+      "lfs_size_bytes": 792896,
+      "pointer_sha256": "66d74430953baecfb04745b08dfb6f28d9e53f4dac39d46bc5a4f7f1a215131a"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/xencor_holo01.png",
+      "pointer": true,
+      "oid": "sha256:3de2415f104712f49a4236f4a2c84ef41a6e86866ad54596919620c28e109405",
+      "lfs_size_bytes": 109573,
+      "pointer_sha256": "95cd1931f95a6f5b4bcdc0779b4432422d2d41f5f6929a86e1bd8eb8a39166c7"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/xencor_holo02.png",
+      "pointer": true,
+      "oid": "sha256:45c162e8569b1805a1870efdf4a459ca90b66ccf68e33668af070b51bd9f2b47",
+      "lfs_size_bytes": 109899,
+      "pointer_sha256": "2ae50fad9e6561f69bc81c71d34c919c45484c3e027fe03f52bc1aa1c9c4d0b5"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/xencor_poster01.png",
+      "pointer": true,
+      "oid": "sha256:62982b1b822f0c8daf4f09e64e1fef68cdba899a46a152bec27693311d6073ca",
+      "lfs_size_bytes": 492436,
+      "pointer_sha256": "75c1e485768f417c3e01e0dd7b05a8705d7e43e442d00d244c39096caae8d1a8"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/xencor_poster02.png",
+      "pointer": true,
+      "oid": "sha256:23bc37c16189c2c8bd38d8c1261be7491eef3ef7a5d1b0aa5d9727be41d8d0d5",
+      "lfs_size_bytes": 325927,
+      "pointer_sha256": "b33f620fe41922ed71cf29f3e1cd5884c8330498cd7b42f830030cd8ebd6cbd6"
+    },
+    {
+      "path": "Assets/Art/Textures/AdGraphics/xencor_poster03.png",
+      "pointer": true,
+      "oid": "sha256:8c7a045b7ab86c6c725d0fa08520228217b83da959bba0215f43f6546c4b95ca",
+      "lfs_size_bytes": 388019,
+      "pointer_sha256": "6d27e3c2d7d542dfe6a356bcb2fb91de1d3e13bd44f84eeb0933b5d9d6d2061c"
+    },
+    {
+      "path": "Assets/Art/Textures/Cookies/Cookie_Screen01.png",
+      "pointer": true,
+      "oid": "sha256:16517f49f4204d542f266b12c6f1afb10e52d79f3d14c6cdc2f5206eafcd0dac",
+      "lfs_size_bytes": 161869,
+      "pointer_sha256": "51bfd487b5d638a12ecbaeba69e44e7b7991887162c489aceeb5dfb7a6e79d5e"
+    },
+    {
+      "path": "Assets/Art/Textures/Cookies/Cookie_Screen02.png",
+      "pointer": true,
+      "oid": "sha256:1aa602052bd7bca7511a4bc5ce262a8f08b3f940530535b79f16a58ee052cc50",
+      "lfs_size_bytes": 143528,
+      "pointer_sha256": "61c6526a7c1a324b05e623cfb08c2c90d74b288fb26140ebfe83831533886c79"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Floodlight_A/Floodlight_A_Color_A_Albedo.png",
+      "pointer": true,
+      "oid": "sha256:93d63cb6d45579c9990ffd4c14bf0010e330c836d6a701c2ac49217a422d7dbb",
+      "lfs_size_bytes": 1217516,
+      "pointer_sha256": "77abe4e74014e59a7304a4286771e72db27ab43cd1bfbb7eabc7198a8c6eeb69"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Floodlight_A/Floodlight_A_Color_A_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:4b5fd116d9f7a02cf051ddfc84378cdc661ed091f37d7a2bc64578ffd85fa20e",
+      "lfs_size_bytes": 8525,
+      "pointer_sha256": "a80127f6d4c1dbc00b49ebde0085d9a62de74c8cb3a8a77a3377d6b11fb12efc"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Floodlight_A/Floodlight_A_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:fed3d62f71a7db6d902825243300694dc1b3e17bc53b92172a276a4d75c0d05f",
+      "lfs_size_bytes": 1770880,
+      "pointer_sha256": "551e44155bc3aa8aec2158dde21b4695d15c83759ec03c59cbd0a0de8fe713b5"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Floodlight_A/Floodlight_A_Normal.png",
+      "pointer": true,
+      "oid": "sha256:dc85d0d3ec0315e162d00b202ea5a30b0c33763ece22131b7f0215895f172440",
+      "lfs_size_bytes": 1112097,
+      "pointer_sha256": "983086fe2d15fae5c5b5614f7f664ee72e50ab3f4f69fd8e08fbbc1e0ca1b15d"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/Perisphere_hexagons.png",
+      "pointer": true,
+      "oid": "sha256:6e097217eed6b6c6be8824fc689fde99462be3da3f1515e6e188dd3c98254ee1",
+      "lfs_size_bytes": 767125,
+      "pointer_sha256": "4282a11e0f4a37ff0c36a7c2be747d73c1886d75919463e8518f414eb4be15b5"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/Trylon_MetalSheetsNormal.png",
+      "pointer": true,
+      "oid": "sha256:64730454e5df672cec84334e2724168d77ee34514b80ab69b5757eeb547cce89",
+      "lfs_size_bytes": 4300999,
+      "pointer_sha256": "3e2be0b59e991768ea2fec05f34777eb0afb46e698f7577a9766702bd1e3071e"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bigsun_trim_001_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:ff55db098d891eaede238903a57f2b86bc116c3bc4a87a2d3ecb555585a4a569",
+      "lfs_size_bytes": 363130,
+      "pointer_sha256": "3d47c9ec0cd59bf93fe61192df61a0b4a7d46dcccc999f5aa3f013fde507a33e"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bigsun_trim_001_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:18179d2ed9901742f1e25a924af2d27f76dde7fb6bc912218525bd2bf1456c0b",
+      "lfs_size_bytes": 268492,
+      "pointer_sha256": "6486c432c2a0dbf3b362eb693928ce6918e9587ee36f9babd7693cdcf285cab3"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bigsun_trim_001_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:e6bcfaaa981660eb3404727b5f06c9183e13c759cc466e3d43e92cd2e41fb1d3",
+      "lfs_size_bytes": 10916348,
+      "pointer_sha256": "f2e77025a77b357022103ec680192fc8b9506201c65c0943b47c1a02f174993a"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bigsun_trim_001_Normal.png",
+      "pointer": true,
+      "oid": "sha256:85772664eee4d417191943512d2dd8dc631f9a0d53975e1416570dc2c162086a",
+      "lfs_size_bytes": 12339120,
+      "pointer_sha256": "2d7a9629604c51700d595d7c7b574d3d815724afbebc5a3b0f41ffadf1f9c6f9"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bion_trim_001_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:01448aad8bcd9208e70c0ffb32ec4ccb715a3137df4e20e25641759bd33b984a",
+      "lfs_size_bytes": 3419292,
+      "pointer_sha256": "f78aac62ebae94dc5b8b0e314b166e519773f385596bc4b3a7c78ce479770589"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bion_trim_001_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:9e3d975f12bcfddafd81d0ca91f19a87ae89b3d91a29e6b7353dfed1f72a3997",
+      "lfs_size_bytes": 327606,
+      "pointer_sha256": "1704cbc67700afe17a9b098985ad6c882f21f884c70cbf5f725195aeb62560ff"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bion_trim_001_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:d112a459871f122bec8588320b9a423c54a5b8d5f3d06b508af6552c22082d60",
+      "lfs_size_bytes": 9273057,
+      "pointer_sha256": "b99abbd2bc7485645a48a4ca39ed8f61f2b959521eb0d2edebf3b5197d2fb1b8"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bion_trim_001_Normal.png",
+      "pointer": true,
+      "oid": "sha256:d48fd638f8b6be78b0f4fe0723b9ba7e0e0c97c37bb1123eb73b7fd2958e4c05",
+      "lfs_size_bytes": 9590862,
+      "pointer_sha256": "c02a0b47ff752dc937be45f7e3097e796fc668789f0c9bf101477a80569c9cc0"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/bion_trim_002_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:35bd5e6cb4cbbe161b7d131bfa105ac40af9d1f2ca3671c44d8fef6839e165ba",
+      "lfs_size_bytes": 2847070,
+      "pointer_sha256": "033d127adad249d754d94d6a046cd3fdf514602dc0c2269d4d2b504be6920acd"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/xencor_trim_001_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:8b3334d99d749a931e7f21ea5748f7f3fd0a9532b08736dd98653ff916b313a7",
+      "lfs_size_bytes": 12329070,
+      "pointer_sha256": "48b5274501d9fd3bc25b58bf4df35df2898668d45529e2d318b47ae48c270cea"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/xencor_trim_001_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:ad8f168dd9c14574f58a7408d8626e2ddd35976fbe27a0a6631f87eb1282381a",
+      "lfs_size_bytes": 138001,
+      "pointer_sha256": "0962f475cb7765c5c086e0817c5f3ee953d8166e710536d104d7344347c58a7b"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/xencor_trim_001_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:ea232c90dd7421e88385453099b647bbb4d6a5df3f63f5c61c5c0653beeca79c",
+      "lfs_size_bytes": 13828598,
+      "pointer_sha256": "a2e8f936a45c3b331ab7413e94fc5257255f2dade72917db2ca5577bd8159d1b"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Landmarks/xencor_trim_001_Normal.png",
+      "pointer": true,
+      "oid": "sha256:fae85971e457a020f49756f8802ddd48217ac832bbcbbea3312755bb9972cb3a",
+      "lfs_size_bytes": 11129507,
+      "pointer_sha256": "848b90453ea2ede6e82b75c4b1d9d4d547103df60c75ac3235ff0ab7a93e33a8"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/Albedo_01.png",
+      "pointer": true,
+      "oid": "sha256:fe5cefa38d6c48020ca6aef692a11c00de78e9617ba9ce641c911321ab4f2eec",
+      "lfs_size_bytes": 4233751,
+      "pointer_sha256": "cd6ca0f0f296b166590a499d0fb2322b94628cdf7c1595f19e3d833d499c245c"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/Blank_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:b2d332d3bc29e9470233fd284486e6f7cb30420d47bb8bcd9494113747eca6f6",
+      "lfs_size_bytes": 77,
+      "pointer_sha256": "fc262e6d21443578e05bc0654fa3210622b9e634d2403039ae1173898ff070e1"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgA1_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:623c9e578ced8dc8b476be806f2a79881cbee863e747e846ce4150ecb5edd3ff",
+      "lfs_size_bytes": 66939,
+      "pointer_sha256": "3fe244a1cd340dd257779b8828147c032427cf3d37e26747672ec50f42b93d09"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgA_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:290bbb75eca0283ab83f10dcfb83804c37d8d01c842c93d052271ccc632dfaa0",
+      "lfs_size_bytes": 50644,
+      "pointer_sha256": "bb34af762d82139d262d64bb25fffcb820f59fda5957eb52d3a6ade63a40bfd2"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgB1_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:9d69e869ce65be7ded8d883c19db887ae8a6f54c18a642ae9620730d3e80c55e",
+      "lfs_size_bytes": 35512,
+      "pointer_sha256": "696d23d2c624161585d4aa04e3f94d22ce9c49e2d1f40a1aac3e07ac5c5df675"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgB_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:7f001edd7d706e683bc6f73e966c5b4f06a680a3b300d88afd0b46991e81c55f",
+      "lfs_size_bytes": 39150,
+      "pointer_sha256": "3d69b7f14051c8800fd03062b50c32c01c8df609f51905fc00232ed94add0cc2"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgC_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:e412f8ee78793da6d2dca158a051e8cb2c8bb8a51e761e01370413beb1e08640",
+      "lfs_size_bytes": 1706,
+      "pointer_sha256": "6f69d6983feeded9675c7b98663eb60726a852197557088c71bb61e767a141a9"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgTopA1_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:a45d2ea8ead285dc2fd93d1b84defdafe494f140b020bba342028e7d3e735eef",
+      "lfs_size_bytes": 2178301,
+      "pointer_sha256": "4ab726a82a7ec7233604967829317e06a51b8d23ef9b5d28a567dafcfda071c1"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgTopA_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:1edbd937a13599bff34611b0f4afd2bdbda562a22f674c59b69879052ea9e92d",
+      "lfs_size_bytes": 1001821,
+      "pointer_sha256": "d5df8ddecd9320827429e86ce4a2690b1672d8c8b436cf8fbda1e06c76b1212b"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgTopB1_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:fe8da74a075c1392039f73a4ab7d81641b5a1e7c7563dfde6242aa895f40a289",
+      "lfs_size_bytes": 1040262,
+      "pointer_sha256": "cbe0f89bc752f31d27de37e660a7a9d1fbb4d83422d01ab245b31031d719072e"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgTopB_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:b5f9e36a19d2082bca48a19ae8667d539de3dbb88333cdc54f50556a8632959f",
+      "lfs_size_bytes": 2489180,
+      "pointer_sha256": "46b7cc1891e6f31265d52a845b1b9f3ae0d395d371f9a7010233638c355dca63"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgTopC1_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:192017a0f06fca0925228a54e8e0d5234f1eaa7beb068b92e961ef15dd1beacb",
+      "lfs_size_bytes": 3355807,
+      "pointer_sha256": "29faa467b2ffc484bf6bb3dada86bf489724febf1d951e8362c315b07f5db184"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgTopC_NormAO.png",
+      "pointer": true,
+      "oid": "sha256:759e2db7b38b1c40ffc3e4d76b89f6f47312db97121d019490c981faf9b288db",
+      "lfs_size_bytes": 96314,
+      "pointer_sha256": "9bc7e5d2a1e4718fbef28750da0f6bcbab30809793e66a124a9f41a364823170"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgWindowMask_A1_LOD.png",
+      "pointer": true,
+      "oid": "sha256:6fecca80d25bccb84c090a6f061ba5a6719ad9ba4de2da8852316e5ecaa95471",
+      "lfs_size_bytes": 1717,
+      "pointer_sha256": "6e3f52cf7e1dccfa9645e281de196a884d24016a2afeda53b9c0599dc15cd5bf"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgWindowMask_A_LOD.png",
+      "pointer": true,
+      "oid": "sha256:d22ca01cf6671631cfb1ec6e1d3b2dfcaa51d1d41bc20ce4dbb574d1498298db",
+      "lfs_size_bytes": 1304,
+      "pointer_sha256": "c966ae3dab36431d13c44f77a2127cea008d076521ac6fd082af1195fa318ada"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgWindowMask_B1_LOD.png",
+      "pointer": true,
+      "oid": "sha256:337c8cc44deab183cac2fe73b7fb34881216657c31938ec1f12f1cf7b1e1d838",
+      "lfs_size_bytes": 1274,
+      "pointer_sha256": "a7c69ce11795fa4de2ce25af16f1975a92add90f4c3ca2693b96fa96c92b7ffa"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/BldgWindowMask_B_LOD.png",
+      "pointer": true,
+      "oid": "sha256:fc0364212687dbd9d1050c77a7c9c47481754f9b1374d25b76fce5b74a4900ad",
+      "lfs_size_bytes": 1283,
+      "pointer_sha256": "1d9b1bc22aabe59522115d173f67199018484a368867dde640637beec92db6c7"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/Gloss_01.png",
+      "pointer": true,
+      "oid": "sha256:ab45c159fa4f0905ea89bcbd35f98d420e867778e66b75636b8a0d2c02ef7f5b",
+      "lfs_size_bytes": 13351016,
+      "pointer_sha256": "ccf9a181fa0ac2c613c2b5168220bcd06861f04cbe05edce76d1c1de26d9b69a"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/Glow_01.png",
+      "pointer": true,
+      "oid": "sha256:d368cf3ef25093e0461be92ca056e720eb1c0d34098b293a26d8a4afbb2bdbe6",
+      "lfs_size_bytes": 3932678,
+      "pointer_sha256": "c57633b807c774c0663ef4a071c9788f56d05b7714ff633f253399c38c131267"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/Normal_01.png",
+      "pointer": true,
+      "oid": "sha256:145e66e74c9ee6347a00370288b3217ee8d3ca116c16d547c573e650685bf0b2",
+      "lfs_size_bytes": 17818716,
+      "pointer_sha256": "c1cc641f3199f78845e9e40f00b89628717a41f69e3b4a00da17fe2623cf6069"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/ProcBuildings/cells.png",
+      "pointer": true,
+      "oid": "sha256:79f82c495181c71a23552a71b4c360cab121093449318dbef668e4df1a2831a9",
+      "lfs_size_bytes": 11122,
+      "pointer_sha256": "c0f9957aeaba899c28ec56180f17d4566b2e1ced3560a98243bd3fab2d62d0bc"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Rooftops/Airducts/Airduct_AlbedoTransparency.png",
+      "pointer": true,
+      "oid": "sha256:745c89e446fac9025d841da7908e6dcbc3ff7a3275c55cac79ccf5bf64e69798",
+      "lfs_size_bytes": 138183,
+      "pointer_sha256": "58fabde1bf44dc50e4aacc276c99cd09067408b997116710ace905708022f099"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Rooftops/Airducts/Airduct_MetallicSmoothness.png",
+      "pointer": true,
+      "oid": "sha256:7bcc8341494fffd8f48cbb3642cd78fc6fb2e79cfe5fd2d420692ae14752b0a7",
+      "lfs_size_bytes": 323726,
+      "pointer_sha256": "a092e14f1df441f826c4b936b4af06d4d6b810eaeb08c11b0e6716fb037f7fb5"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Rooftops/Airducts/Airduct_Normal.png",
+      "pointer": true,
+      "oid": "sha256:da7ec195de35bd294f481033ef138dc6deeb0d4177b826e53b26a5dc206a3239",
+      "lfs_size_bytes": 120755,
+      "pointer_sha256": "a24effd4abd9d616d5261ac6e815750c026eb53a3a281deb9bf697f7ce98632f"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Silhouette.png",
+      "pointer": true,
+      "oid": "sha256:4027089c3a6b0c400b8d7794297616a5b7589ee2647033616c2a4ca8dbf85ebd",
+      "lfs_size_bytes": 12991,
+      "pointer_sha256": "6a0f5b2140fc7c0be9feae63364fa52aa4bda861a939606d743be79db64c7cb9"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Beam/Skybridge_Beam_Curve_Concrete_AlbedoTransparency.png",
+      "pointer": true,
+      "oid": "sha256:dc4900ec927c37e5007c16c44109cff67c037363f0dc7a98ebe98182cd05b8cc",
+      "lfs_size_bytes": 489081,
+      "pointer_sha256": "6e72464a59a7c1b54ab586a05903f46731df8f2ff9735a2db7ee56e02db7ba54"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Beam/Skybridge_Beam_Curve_Concrete_MetallicSmoothness.png",
+      "pointer": true,
+      "oid": "sha256:53474e43e9fe390444e6efe1a286af899d98da49f9f9ec1fb937906ee4c58e77",
+      "lfs_size_bytes": 3159792,
+      "pointer_sha256": "d5bba8a03c66335d5d17b1ec75d0127d9b6d93c409d0c57cc4566951310d78d6"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Beam/Skybridge_Beam_Curve_Concrete_Normal.png",
+      "pointer": true,
+      "oid": "sha256:f2932763fd274793e36f39eb29cc9e32ed2b43d1b707024416208b27ea67ca55",
+      "lfs_size_bytes": 3328687,
+      "pointer_sha256": "a30b9188d1d91fdbb4355dcaf4892819daa375cd1103693b79526f8080546ef7"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Box/Skybridge_Box_Concrete_AlbedoTransparency.png",
+      "pointer": true,
+      "oid": "sha256:bcca8229bdfbcd45f1aab206b5580e75ab6a8f0bd8f886ae64c42c828a51e06b",
+      "lfs_size_bytes": 470447,
+      "pointer_sha256": "002b5420c6199cb83a15434f678a662888fbcc7808a3a04c69524f104da2d492"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Box/Skybridge_Box_Concrete_MetallicSmoothness.png",
+      "pointer": true,
+      "oid": "sha256:39e8f95fb88af91934d197f03c618ec1ea27e8ef5fe90441fbf5f7e74231319c",
+      "lfs_size_bytes": 1046189,
+      "pointer_sha256": "4292c7ec21616ea9f1176eb954fa10fbc9b986c9686bc735bd8388b4a197558e"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Box/Skybridge_Box_Concrete_Normal.png",
+      "pointer": true,
+      "oid": "sha256:50d50bf43f8ce5a0bd7706fcf60e9f717a44ef17d6e8b3d2b4bd3991dfce6ef0",
+      "lfs_size_bytes": 3340063,
+      "pointer_sha256": "0cb39855ea81cfedf513aad2dba14df2fd3a0774f0ad40122dbdc25f9fadd2ea"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Open/Skybridge_Open_Concrete_AlbedoTransparency.png",
+      "pointer": true,
+      "oid": "sha256:7642f737b29f53d3e7117ab67c077962acd73d1bbed1deebe78f956d0270e66b",
+      "lfs_size_bytes": 627702,
+      "pointer_sha256": "e7735bf8acf103cdd1fbf0003db5c5da61f37efec7738373f73eb1e3ab1785b3"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Open/Skybridge_Open_Concrete_MetallicSmoothness.png",
+      "pointer": true,
+      "oid": "sha256:24283f0d66dc7cc005f92ad5113450104a5c4266316deb643f392c481ac82817",
+      "lfs_size_bytes": 448798,
+      "pointer_sha256": "9bdcf71af324f063f083de75d5994acb1e66bccd47ff5eed37b5a1bbdba033a2"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Skybridges/Skybridge_Open/Skybridge_Open_Concrete_Normal.png",
+      "pointer": true,
+      "oid": "sha256:351d1850d783c4dd49800df6c388f20b0770eeb5da899770512e31ddecc2558b",
+      "lfs_size_bytes": 659795,
+      "pointer_sha256": "a216d021a639740515f9ef2fe51a898c0745fe58e015e84ed0ddef76b8661bb4"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Storefronts/Storefronts_Atlas.tif",
+      "pointer": true,
+      "oid": "sha256:1fa7fa552b3f6da9fa10ce3a1fe04a633228e188f48ea01ab45ecad90ea6676b",
+      "lfs_size_bytes": 1975516,
+      "pointer_sha256": "076b5798b8668fdda12b416538b6fcb1a6407f7fb0594dc7cf03034a38787967"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Storefronts/Storefronts_Light_Atlas.tif",
+      "pointer": true,
+      "oid": "sha256:731b65783c019c03b1c5a4e3cfdfdeac4c23f4df9f080f35068ac55954e34bbd",
+      "lfs_size_bytes": 129516,
+      "pointer_sha256": "558d9849be2f5d368b9d20f774dfb736e359fc52edd03727af27626b1b6222e3"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Storefronts/megacity_shop_interiors.png",
+      "pointer": true,
+      "oid": "sha256:9885986efc2b7dd2a49cba7083e7c55e2a7466c53e9fe1ebc011f5256e4b233f",
+      "lfs_size_bytes": 654643,
+      "pointer_sha256": "02408fb9eb4b362695a9ed6e734d649bc6f34c886fbc9e38217a7d9e7a53150d"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/Storefronts/painted_metal_shutter_diff.png",
+      "pointer": true,
+      "oid": "sha256:3c300db2b1dc731d360ab0b8891d3af6e3f72dfbe5ff059befc9859ba3422ea8",
+      "lfs_size_bytes": 382299,
+      "pointer_sha256": "03c652c9e1b0cc9e2db8e9eb333743f6c449e292ff012cf07a95f7f87b08c861"
+    },
+    {
+      "path": "Assets/Art/Textures/Environment/TrafficSigns.tga",
+      "pointer": true,
+      "oid": "sha256:2ab5d788b0fface50d549a4948abfb2335102e21971d0b4e6cb0571e8ff94aeb",
+      "lfs_size_bytes": 3145772,
+      "pointer_sha256": "194d40ae48919a07f17f8fbc480e8b93973a35d703b7097e89b7d5a249f8dae8"
+    },
+    {
+      "path": "Assets/Art/Textures/FloatingSigns/PosterArray4x2.png",
+      "pointer": true,
+      "oid": "sha256:08e9d4a1985314ad8c712fac00383815c863c7917f00f42ae6af8cf6876bf65e",
+      "lfs_size_bytes": 879202,
+      "pointer_sha256": "b854847e6f1cb8a58d50ebbd4e1815bd3dbfc1c8408a6340b4ce553aa4e0a0fa"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/3d.png",
+      "pointer": true,
+      "oid": "sha256:0bfc541a03226ca52444e7e6ec1debafd03c3f2cad0482ec5a985316c9dcfe64",
+      "lfs_size_bytes": 2198,
+      "pointer_sha256": "ce5243be93f0fdff8aeab772bb970a93d6a25e26b187f7e6573ed76c5dfcf7b3"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/arrow_drop_up.png",
+      "pointer": true,
+      "oid": "sha256:f327b37058f99a29373e440d02eb35f0e03ea8895005c8e796a76b3b79e47ad1",
+      "lfs_size_bytes": 2008,
+      "pointer_sha256": "3f5896cdae772e95846b7cf3d643e4f203c3cafa6ad6dd9b373a4e960f107f2a"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/clients.png",
+      "pointer": true,
+      "oid": "sha256:197aced2cdf46c2f5cd6714d984b9f58d29b45dbc636abdaa726eee11fd675d8",
+      "lfs_size_bytes": 1997,
+      "pointer_sha256": "38a2c9efdaece1d7b11ffefa28253609de380ba1ca74df61cb8183e232a6cdd3"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/entities.png",
+      "pointer": true,
+      "oid": "sha256:9842e92e24b990923d97252c660716fbc81f5a8f6329c66eb8cd7cb018cb50b0",
+      "lfs_size_bytes": 2132,
+      "pointer_sha256": "68fd694fb0d23422997ca464f2bb873202c6edbe0aa9ad7ddbb0df3a1bc3a943"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/fps.png",
+      "pointer": true,
+      "oid": "sha256:101a460a5869a4782006be9ceb386cb4bcd4440f20fd6e2dc2ce21afbbe1972c",
+      "lfs_size_bytes": 2029,
+      "pointer_sha256": "93f1ce7363aff9cd0394d16922aaec98c04bf0e8e25bc92e401fd8fafc78afd2"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/ghost.png",
+      "pointer": true,
+      "oid": "sha256:8f7807ef2c9fc8381096dd441255b8f468f79aa349d39bceb0fc0fa6a853a39d",
+      "lfs_size_bytes": 2415,
+      "pointer_sha256": "5b0c3f88c5fe80d183d28097aa3a24fd52191daff00a3e0ca343b4623967ec08"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/ping.png",
+      "pointer": true,
+      "oid": "sha256:aaa94a5167146ce23ef705e92ea831354554aa07ad3725f1d36745c340a36523",
+      "lfs_size_bytes": 1983,
+      "pointer_sha256": "b21af5c7a0605daca46ba7ea7614a3598f159207e2d00f8637da8791e92df6a3"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/systems.png",
+      "pointer": true,
+      "oid": "sha256:10af8970f9fba0333a4eeb70e8c3af224ab493747e553c3c7065b55ebe34e6a3",
+      "lfs_size_bytes": 1822,
+      "pointer_sha256": "eeb421473a466a6f81e85270cb0727cbf757b0799d37faef929db42e3449e820"
+    },
+    {
+      "path": "Assets/Art/Textures/NetcodePanelStats/user.png",
+      "pointer": true,
+      "oid": "sha256:abea7535287d1a1ca1a51b31649954ab8602d4742d76560bda3d76eef8a0a00b",
+      "lfs_size_bytes": 1860,
+      "pointer_sha256": "9aaff09e63d1734106dd4b1777a01f67925e0a44d56ac73c3d8c46eeab699544"
+    },
+    {
+      "path": "Assets/Art/Textures/Shield/Shield_UV.png",
+      "pointer": true,
+      "oid": "sha256:c1af6531626c9e2f4f08c6bc9b3316ba3c8058f477d11985ba18f92beeb603cf",
+      "lfs_size_bytes": 999479,
+      "pointer_sha256": "b6beff2d321041b3f9932ab45f52b7f1006154a82669297f13b51a0d934eac2f"
+    },
+    {
+      "path": "Assets/Art/Textures/Skies/Sky03_exposureFixed.exr",
+      "pointer": true,
+      "oid": "sha256:47235723cf8ec5d34c4e9eef3ea3868a3d955415bf5bb87bea648b7f4c339b9a",
+      "lfs_size_bytes": 6819129,
+      "pointer_sha256": "19427cbc398a81c78551b311bbfc89b3b80cdf241848d2d3c718bd7ee3975c19"
+    },
+    {
+      "path": "Assets/Art/Textures/VFXGraphs/smokeysteam.tif",
+      "pointer": true,
+      "oid": "sha256:b29351cfa8ea4828c9141cea78d02c7bf401ebe0db872e8d6ae7849ab0697e91",
+      "lfs_size_bytes": 2480252,
+      "pointer_sha256": "8baa7d7f0897b6b1056b31799bbb86e1eae32f80e4f968fea4ae2d6fc30690b9"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:88c4f20f61edfa35d2e7b54407e00bf5f100da9702140fe4aeb6e52bf0703f71",
+      "lfs_size_bytes": 316875,
+      "pointer_sha256": "7bfa01c37d676db39715a71d58b47de73f2182bddd736f33073b0e77305a9fe4"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:c60cfc29456d72ff6271870bfeb1fed4dffdf31e48e5f88e1ede88702dc98d7b",
+      "lfs_size_bytes": 218136,
+      "pointer_sha256": "1239f562315ebdfdf3aa28e16462d816f08fec04cd4ac2027d04100a79b6ede0"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_Decal_Albedo.png",
+      "pointer": true,
+      "oid": "sha256:6c840ffd0a1d81b6669d14ad0f7114d1bd82ceacd61b396c8233c9fc349da12c",
+      "lfs_size_bytes": 242370,
+      "pointer_sha256": "fdd0cc79a0727c487fda07390c19d2a05d3221471d03022937efe47c32390092"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_Decal_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:9aaf8f274f0a3b7f70e537852b61d466c243510855ae6e7434caa78467fb4827",
+      "lfs_size_bytes": 53066,
+      "pointer_sha256": "d59acc4336239f835bb808ae5bfee74c45e6d843be3a4fd0be99c4561762d84a"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:4f4bec1e88ff19b8f1778fa9116093cdfcac3150a5f42eb25af40e8826dd015d",
+      "lfs_size_bytes": 1390,
+      "pointer_sha256": "c524fe35808cecfcb2f5d372b409fc2a3d0b111fbba007fa04b3b50dbedd940b"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_ID.png",
+      "pointer": true,
+      "oid": "sha256:1884f11b9ad3323e969e8272bb9e996ac74a2760c966493d7a4d477864e313b0",
+      "lfs_size_bytes": 26116,
+      "pointer_sha256": "87b97db4603a09cd0b2814267a9fff6f42a9468719741ec9a35b81d518527389"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:9c0775f428a7ebc0943ece7b04b2392a2daa38757fc96d630f48ef69ebe824ae",
+      "lfs_size_bytes": 304308,
+      "pointer_sha256": "7dbbb7489a05c0866bfe795b09e0bebb35cfefac7dc16921ed3f89e53719de4f"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverBus_A/Vehicle_HoverBus_A_Nomal.png",
+      "pointer": true,
+      "oid": "sha256:57d3a67bb5fb4ebba49f2899db803eb4f468217e68f5f680465cea7db805bd97",
+      "lfs_size_bytes": 579103,
+      "pointer_sha256": "86c25dbad98060970a09fb98c68089b60d2f98199b4438e2382b6dbc177331d3"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_A/Vehicle_HoverCar_A_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:7abb666296eb9b9a50bf4c66c79731d55df5e3adcf781f589cd92914f478f239",
+      "lfs_size_bytes": 216165,
+      "pointer_sha256": "c944355a3be4ff49ba8299494abd55a0261d03ebb3469735d1ff1ee7074a470a"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_A/Vehicle_HoverCar_A_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:22437cc812b8985722bebc76b6aed9f26091942ee5821a80b38314d337919d08",
+      "lfs_size_bytes": 2594,
+      "pointer_sha256": "e098f1f464a83ddc11b7c32f81830da5a138511e4fea3651c7625b2f7f82f29a"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_A/Vehicle_HoverCar_A_ID.png",
+      "pointer": true,
+      "oid": "sha256:d2397f4fdce95d39d9eca3ddee074a9647424abf70eb51011e708bbb2167d4ad",
+      "lfs_size_bytes": 14858,
+      "pointer_sha256": "9e288e6229f45b5232852c9ed4d2ac654311e35a25fd0bb3f6d65b553e85644f"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_A/Vehicle_HoverCar_A_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:429c9115e52d682b440dfd70c0d7a30770ac07fa3ffbb02388585dfcec6b5971",
+      "lfs_size_bytes": 223048,
+      "pointer_sha256": "44b07e0cc88a963ba4b493d25f1234dba3a09ad11fa1ddb525ff5f51cbe87dd8"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_A/Vehicle_HoverCar_A_Normal.png",
+      "pointer": true,
+      "oid": "sha256:7c875b722a2f06cc9b477bdf6b88a507cc53e6053f51819b4eb3a7f7e8a02b6c",
+      "lfs_size_bytes": 532226,
+      "pointer_sha256": "3e04c51f78f0a2f150d446da5dc71d072aab8584b1adfd96305e9055baac8070"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:f194a2e52f2880badd771f9417b4a5b31fe29130f6314fb4be11d5177b006967",
+      "lfs_size_bytes": 224304,
+      "pointer_sha256": "c97a0625a2df28895a6662b0adafc6d994cd0e5405ca5fe25964a54f40d19cb9"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_Decal_Albedo.png",
+      "pointer": true,
+      "oid": "sha256:17e1cbc278ac859926e260615c8b84ad8afdf39723edcc43e64e3b29a011375d",
+      "lfs_size_bytes": 171541,
+      "pointer_sha256": "3412ab0885d6ea3751d7f9982ceda0ac823c4bffbab5fc7dc15d282e0626d436"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_Decal_Normal.png",
+      "pointer": true,
+      "oid": "sha256:92ec438d2220bab6f48cbb7efaff63c8a66f46c239c8046da3eff9baeca7d9c0",
+      "lfs_size_bytes": 99723,
+      "pointer_sha256": "f473cbd19f581882f9490416911240ee45a48d38d7a35a773a6e98be8a729418"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:8313eaaf63d7acbfed76e77fb7213c8b210cf2d69a0770d07f186120db8118be",
+      "lfs_size_bytes": 20604,
+      "pointer_sha256": "ccd79132913556061258e82dd88e9727a68a9588826750a5486dbe9ee14d8e8d"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_ID.png",
+      "pointer": true,
+      "oid": "sha256:938f08b63391bd5b924088b4e3cb64cb21969bc31c9d3fbc2380e05cacd13373",
+      "lfs_size_bytes": 7086,
+      "pointer_sha256": "0891cf32075d9523fdfafbea554928e9026755aa73a9899e4b423c3d3f068568"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:96d82c921bfb6048b7c3e9ba879a335169846b93b9292758110b40cdc0a2ca4d",
+      "lfs_size_bytes": 317222,
+      "pointer_sha256": "5d3eb7b77c70890a441a442085e983267eb70e639fb65eaeb22d95ea0655de8c"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_B/Vehicle_HoverCar_B_Normal.png",
+      "pointer": true,
+      "oid": "sha256:7569f639e5747c58943294f3fff07064f0ff90b1515aa6650e5653e4ef9be000",
+      "lfs_size_bytes": 581430,
+      "pointer_sha256": "601caa6437ece05c3d47f7ea56aea4b3c960c628f4d2cce7a4614ae407dc2e62"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:15107f5452353b8042593a1bf9065ddc1b6afecc4a33e7187077576eb0a2e491",
+      "lfs_size_bytes": 231141,
+      "pointer_sha256": "7387e98ce43f397fdf298942f4c10a0fe82f6112540dbfee746c6d5332d214d6"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_Decal_Albedo.png",
+      "pointer": true,
+      "oid": "sha256:bf00e4cfc8b5a0c9998ec9bd7b5b079746c1d485ff46d2d91964569bb7acabc6",
+      "lfs_size_bytes": 46006,
+      "pointer_sha256": "2627cdd1055bbe39dd6b7f5c71d935a134e8c14f64b1f2a4247ed645de71175e"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_Decal_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:117a62ef7de43e578131e8fa1475edfddf76f844a8c28741de86a8fac41867a9",
+      "lfs_size_bytes": 7674,
+      "pointer_sha256": "a5b3c422b023fe0ff4c702a287980885d039c123f2e557db702fbca3b9cee96d"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:fd1c2a5f8947a2719d4f2a7a581e8d487519f5723bc270a1d7eb918c2328c578",
+      "lfs_size_bytes": 1026,
+      "pointer_sha256": "33b3892a79f9e4e887534263bd9c5e116c0f0381061e2393f30c40759185fbe9"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_ID.png",
+      "pointer": true,
+      "oid": "sha256:32a34f46a97134385fe9547b9d130bdc673354a6b89ff9d175e4aec9aeaeeed0",
+      "lfs_size_bytes": 10641,
+      "pointer_sha256": "1fa118593ca4534d036ac4db1e01a7a521714ed44c89b12347ea9c60734e89c6"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:c774bd1063a79495d26714320ee527cfbaf681f0953069dca680fb22bb1b394b",
+      "lfs_size_bytes": 255909,
+      "pointer_sha256": "c98cc1635b4f17b03101626c0eecc2dffcd90b967b2519ba07cc504b89b8c0e7"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverCar_C/Vehicle_HoverCar_C_Normal.png",
+      "pointer": true,
+      "oid": "sha256:b650f0c6dea531031ca726ac0a231290b55fc36bf0d4f1bcbadb6a5921d5188b",
+      "lfs_size_bytes": 477410,
+      "pointer_sha256": "2215f60d1fc82fe577cb8daec5fab390e7601252e2c661dbb0f3ec3561354ca7"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Container_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:d9c1b940aeb786ded314f3f3d9ae63ea48c85da1ed0c6b169d1bcbc1638dd0c2",
+      "lfs_size_bytes": 325640,
+      "pointer_sha256": "7d34f71214a3a5b696d5b6b5224ba9dbf9d2d50c08649f91c30fd509666978a3"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Container_ID.png",
+      "pointer": true,
+      "oid": "sha256:9e7e7332e02c0c2a40eed175836ad1546a1cb12658486943a4009759e8278350",
+      "lfs_size_bytes": 8078,
+      "pointer_sha256": "7a8ecc6ecb0d7d9daaa88ea309705a6e06db6476fba05973ff2e621f9f583348"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Container_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:e9d9198a7e0060e2bc37dafc6a7b846442fc4a822394eb9d4ae3713f012cf46a",
+      "lfs_size_bytes": 264295,
+      "pointer_sha256": "d0846943a873359020287c67a2fad6acf62505484a9381c783d7a6c384a86f15"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Container_Normal.png",
+      "pointer": true,
+      "oid": "sha256:dea68ff2fd05209901cf90fb1389a63d2df1980d053717cd23830c2d81aa1e05",
+      "lfs_size_bytes": 507866,
+      "pointer_sha256": "75673985339355a5dda063b4bc51897d5f124c4b271633dd371b5f5c1f2949d0"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:411b6b469d51a24b6a6977427784b81fb3c1577eb2d61d5a16c375288657f9ca",
+      "lfs_size_bytes": 451930,
+      "pointer_sha256": "9c94250332739db0cbad98d7e8aaaf2b5ed878a0324889ee31f874b59f418bfa"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:07a3ae11a2c79446006cb86b1020f2ded3de7ae7ff0a76133c25bfce7e83b1d1",
+      "lfs_size_bytes": 2683,
+      "pointer_sha256": "b024af9016f91c8ab218051ebba61bff9f364e613d9d59f7ae121867ce8b54c1"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_ID.png",
+      "pointer": true,
+      "oid": "sha256:02472d7f80b80b6b36f8ac5dbb3d86a57333733780680ab4ff9904f809e3322a",
+      "lfs_size_bytes": 20322,
+      "pointer_sha256": "09b64f56ef989cbf76df263ac550acc31ac3ae6a85dd3194e5549f7cd0662190"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:4820422df918668024ff894b21917dffc398d04ad75e017d854a54cf9f672288",
+      "lfs_size_bytes": 544367,
+      "pointer_sha256": "25444d4728a08de32bbb7293021613f429f6d1c63e4f0bc142064d75dd82934d"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTransporter_A/Vehicle_HoverTransporter_A_Normal.png",
+      "pointer": true,
+      "oid": "sha256:6e33234b9cf50e8e7c153605c7274355af9ac8de1219bc5390eff70c8155a58b",
+      "lfs_size_bytes": 899542,
+      "pointer_sha256": "c58c3c8e6236ffe35fbb2a303f26785486600ada56f83465433e5cf83f7dfaba"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTruck_A/Vehicle_HoverTruck_A_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:17cb88a30d0b9e874a5520358921d277fa2365e2ebbc7aa3c9f20937e03caa00",
+      "lfs_size_bytes": 287746,
+      "pointer_sha256": "a3d36ff80784cefbb85d5c3f5834bbd6b07ea827f180b5a3877c00e698dbb28c"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTruck_A/Vehicle_HoverTruck_A_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:8323340ba1be140e32f093441bd3068e0a10807050f5341e9357ad2daf7cd541",
+      "lfs_size_bytes": 1124,
+      "pointer_sha256": "f66fb95241cd5b2b5e842049d12549bada45143347eb65ddcd48e6cb01959441"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTruck_A/Vehicle_HoverTruck_A_ID.png",
+      "pointer": true,
+      "oid": "sha256:233df9235c7e8a2c69a4ccc65ce9d7944836b23d7b7a54e490328b72a68a3ae4",
+      "lfs_size_bytes": 11501,
+      "pointer_sha256": "70a1313994fec09ed079d52a0a50ed1d9c63005eda6c1ce5744a4b1f331851b6"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTruck_A/Vehicle_HoverTruck_A_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:35ed6524791a26947ccb28caba682f7abcad5419e0df8d41fbfe7a6f98267423",
+      "lfs_size_bytes": 314169,
+      "pointer_sha256": "30fecc663f185edb369edd527a4a2e060a3ab84a666a820a8b9d86d5ccbc100f"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTruck_A/Vehicle_HoverTruck_A_Normal.png",
+      "pointer": true,
+      "oid": "sha256:c9dc26e656215dc4d10be8df0277302c56364be9cd8bc825f88589c8dd09e8db",
+      "lfs_size_bytes": 570453,
+      "pointer_sha256": "05f1ac936747ee486e587cf8f7c7a45884b650eb31355b793b0f9b9fe80a92e7"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_Container_ID.png",
+      "pointer": true,
+      "oid": "sha256:2aa949fb8688bcf2a8cd6a786cba932ddf7cd27c01634ada65fda249607ea5c6",
+      "lfs_size_bytes": 5447,
+      "pointer_sha256": "bf9c49901f693d5fbbadf6ea4bda7ea6fc2d730ea23b7847150a656fd8fd9474"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_Container_MsakMap.png",
+      "pointer": true,
+      "oid": "sha256:6a773e759db2d0724b2dddc64ebd341d724a63baa56aee01607264c9cd8c6c81",
+      "lfs_size_bytes": 1577089,
+      "pointer_sha256": "229d2d0b416cd6d363e1dc0b6ff692f4a6c60a3f14f02e734621a114e89e9b4e"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_Container_Normal.png",
+      "pointer": true,
+      "oid": "sha256:8367196b3029170ac88fbf78f6775d87ce67c19934ae95a84e761b1b1b797c60",
+      "lfs_size_bytes": 1537721,
+      "pointer_sha256": "a9e915227337f29df5f06ea1efde5b239ca0906421bfc4e5bc1584c1a17239c6"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_Curvature.png",
+      "pointer": true,
+      "oid": "sha256:b01be44139df5e933230d18e9f0fe6038faead935ea643618bfe8ac2b84f3750",
+      "lfs_size_bytes": 218510,
+      "pointer_sha256": "eb8152fdaf4c8be0841787b8aac649a49435f11fa85bb3c2246ad58a7bbebb48"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:69853e97f24a34f75051aa2c0019f156dcac842eec4942727b30b5de573d2755",
+      "lfs_size_bytes": 5432,
+      "pointer_sha256": "5bdba839990669d269a2ef78d318ce31b24334c2b6f5ce095c0f1af0dff180a0"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_ID.png",
+      "pointer": true,
+      "oid": "sha256:26e269d1643fc3d0ef2178536ede4b50768ffe1f7554dc1cbdf03a8db08448fe",
+      "lfs_size_bytes": 8209,
+      "pointer_sha256": "ad48a887131ea4e6142f390a8d6d84fda2c73127bc4c43ce034d2b383c40a302"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:5708cfac3462c5e82404ed008013e9d4c3f7a145ef8b6b4fa8b788e44a42ff13",
+      "lfs_size_bytes": 213478,
+      "pointer_sha256": "aede533a880b56622284fcf4c4bb389de459370eadd5fe5f84b6689315c30f48"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/Vehicle_HoverTukTuk_A/Vehicle_HoverTukTuk_A_Normal.png",
+      "pointer": true,
+      "oid": "sha256:2ef44e9a9118cd5af6023b624435f852a154ed506275fdc605d260e741766ba3",
+      "lfs_size_bytes": 568054,
+      "pointer_sha256": "45b665677d4e5f7d954e6fc31dd00e98d124a1b492b2f07e4774d2c3cd3f9c52"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bigsun_ship_001_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:5ba7eacf883bbebdb01144a90960410b5cd6a958d96893fce34cd54cb1d378fb",
+      "lfs_size_bytes": 2043617,
+      "pointer_sha256": "a8169c341fd1d4b08ebd89206fd01450e9599004779afb2d6821667f17911d43"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bigsun_ship_001_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:ca0d8f5793ae472419762c446c870bb4000cb1ed4ff39ac6f3b6b4382172a8a0",
+      "lfs_size_bytes": 114111,
+      "pointer_sha256": "423cff3906aa39e27127e6b8fc8548fb3060aa9a39cd6c2d6ced52bf415dd9d3"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bigsun_ship_001_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:41535011830df43834c032f771f22820672569c54bf2a148a01fb3b043315a0d",
+      "lfs_size_bytes": 4126181,
+      "pointer_sha256": "0e1cc150ff26b6b490f2eb8ceae63f5bf1dd5448865b6c40e3fdb1895270efe9"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bigsun_ship_001_Normal.png",
+      "pointer": true,
+      "oid": "sha256:3b3f90be05b9e2623ecfb35e1c65674def21c4f26cb01eb4d0d2dfdc207a3f09",
+      "lfs_size_bytes": 3963433,
+      "pointer_sha256": "68d0463e01bcc02a9f8df70cde80bbd330edbfb6da50e3c17ed2b3affc4b580e"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bion_ship_001_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:0a3def73967be70440164c8f0864f3d51d3140defd9e6c370988771e4f540e51",
+      "lfs_size_bytes": 4194044,
+      "pointer_sha256": "587cfecc2f562085782950109c505cf7dc745d1fb518447da08e01cd5b566892"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bion_ship_001_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:7ae27aac392dd88fd59bd3ebceb4f5fd2748f0e1edf34559176ff9967cff1b57",
+      "lfs_size_bytes": 43921,
+      "pointer_sha256": "898c7cf5d976a0a2bb0516e4a5f039089c4062c87f71da5c58dbdaa960420a10"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bion_ship_001_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:3e14a4e4a030f4a7b5864d07a21b066f5c8e7cd21abc7621f55cf11b404cf067",
+      "lfs_size_bytes": 4676938,
+      "pointer_sha256": "6d77f95b62e4a78764be7faf28d46b9ed7f3c6689896f6a1918bb85f7eb4b885"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/bion_ship_001_Normal.png",
+      "pointer": true,
+      "oid": "sha256:5e11e239da201b5f71db86b42ca7d193c10ec7ee0dee07dfaf787500adbf4233",
+      "lfs_size_bytes": 3229418,
+      "pointer_sha256": "eb9d50c1db7aa6841ed0f235fae309c05250dbfa188e6df2af2cf708527ed34f"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/xencor_ship_001_BaseMap.png",
+      "pointer": true,
+      "oid": "sha256:0ec0251d1ddeb6023fe154e16ccdd8d849bacd4a6220b2c1e91bb9e0c9c2ab1e",
+      "lfs_size_bytes": 3420014,
+      "pointer_sha256": "a7353e1490cf377f12d6642ee047392885e07f40118a1a771eb7478ac7d894ac"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/xencor_ship_001_Emissive.png",
+      "pointer": true,
+      "oid": "sha256:2abd906a8d682d089f81af8458041a33345676d8c0b58e8b2ea7bdc820e4bbcf",
+      "lfs_size_bytes": 67115,
+      "pointer_sha256": "5033b0f2fda0c63a77938600e812661e0575e1435fc8a6bca040cb403d1f2d94"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/xencor_ship_001_MaskMap.png",
+      "pointer": true,
+      "oid": "sha256:e597ea54e36f758c6a6beaeafdb0cb5ea8de7234d34c8471c4baa139ca723689",
+      "lfs_size_bytes": 3682248,
+      "pointer_sha256": "53becefc3b080ae50c9af44a1b6979cfd6c23119af9cda08fd830e6ededa35cb"
+    },
+    {
+      "path": "Assets/Art/Textures/Vehicles/xencor_ship_001_Normal.png",
+      "pointer": true,
+      "oid": "sha256:a3deab91c5667798440f1450bf5f14a9e919fcc29c11b9b7fb04b1687fe1f9a6",
+      "lfs_size_bytes": 3030841,
+      "pointer_sha256": "aa022fd4535faaab7a2b84b41c285c3cfc29b7700176d2ea7cfffb8d7e6fd188"
+    },
+    {
+      "path": "Assets/Art/Textures/black.png",
+      "pointer": true,
+      "oid": "sha256:bc1bd16f5d1e7f83ee38468e7254c9a55e536a0bcb9bb8018ba7432baf4a975c",
+      "lfs_size_bytes": 69,
+      "pointer_sha256": "5d373fe81da7a8f66eefd286a7505a418e38dfffd8c27ff713f720569c925e98"
+    },
+    {
+      "path": "Assets/Art/Textures/distortion.png",
+      "pointer": true,
+      "oid": "sha256:080865d6b32581f9751571fd26d7dadcd770b5b828fbf4b88a13e14cca72b01d",
+      "lfs_size_bytes": 20715,
+      "pointer_sha256": "d5aa48ad5ad377f393da612e2b008a36d2ac198480ad68a3818be10ef0777f24"
+    },
+    {
+      "path": "Assets/Art/Textures/fog.png",
+      "pointer": true,
+      "oid": "sha256:dd770234ef39ea200009acd56656050ab7e373cb4d85c03bf4ffb5d432e58196",
+      "lfs_size_bytes": 943483,
+      "pointer_sha256": "627565b8cfd2b11fbefb98953aa2d757f672913516059f49af15a63b8900994b"
+    },
+    {
+      "path": "Assets/Art/Textures/topdown_view.png",
+      "pointer": true,
+      "oid": "sha256:895520470a325c9421076572da219690c9ff1d8669f3aba79debd32617db4334",
+      "lfs_size_bytes": 772798,
+      "pointer_sha256": "007f90ee0fa002073a018385ad956163e0d255c3baa5281af0ed7002d0777f19"
+    },
+    {
+      "path": "Assets/Art/UI/MegacityMetro_Atlas.psd",
+      "pointer": true,
+      "oid": "sha256:d762a062ae3eb3cf933087818824e22e476db32faca163e8a6700d366f99c513",
+      "lfs_size_bytes": 20854735,
+      "pointer_sha256": "12cb9962bdfaaa20e83d2faa4e735d4250b4932e80cc37805c2685de1df20f3f"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Cone.fbx",
+      "pointer": true,
+      "oid": "sha256:61a079c21074bd375f2b5621a96c7886b63f574b69ae1adbc8f9ae889362a954",
+      "lfs_size_bytes": 56605,
+      "pointer_sha256": "76c1b6dc7b2ab21d9b69e071bd0d8762d7047b0bdfb6b1c7d28e758dbcee6f40"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/ReactorCone.fbx",
+      "pointer": true,
+      "oid": "sha256:a1aec26e6bb5850f02a411f9ab9d342ffebff212201f4bf399c974b04976fde2",
+      "lfs_size_bytes": 26224,
+      "pointer_sha256": "688b39bf72bb593cbe6cdcf517e48f684c0e560ef188f97ba611b8fb8f3b3093"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/ReactorCone_beforeOptim.fbx",
+      "pointer": true,
+      "oid": "sha256:c058afffd3acc63e186e41e2ddd97473d60afffb42cd7393294d53d04d99ee5b",
+      "lfs_size_bytes": 27328,
+      "pointer_sha256": "d227783e381dd8bc9c0ee204c964bf2a96f0edd22e2a94c81c4d70bd64d18653"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Ship_01.fbx",
+      "pointer": true,
+      "oid": "sha256:36f916c070a851571600767ff1b2550030b2f89140238e2211f779a58b2d25f1",
+      "lfs_size_bytes": 172736,
+      "pointer_sha256": "ab74194c32862fe0f50bced00b610bba85b44db2ca6ee57c5661c9c80119ba0d"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/FireExplosion_T_A.tif",
+      "pointer": true,
+      "oid": "sha256:7cd54ae9d4e635758b445f00789839ae451e2c73b0dc68bfe7b9098c0eaaa0e2",
+      "lfs_size_bytes": 440256,
+      "pointer_sha256": "1112a000565380b4352f21c3bee4caf75b2d721cf62b55c4204e4f4a597a34ba"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Fireball_T_A.tif",
+      "pointer": true,
+      "oid": "sha256:659e6bd152f85b7525a8951f9878342452a34d54ff7cd3226be0b2f3fe3fb90e",
+      "lfs_size_bytes": 283112,
+      "pointer_sha256": "d9e6a7e83876abce47df8a607e6e928fe5c0d94f60f109fa2365052e55c8a39a"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Fireball_T_A_BW.png",
+      "pointer": true,
+      "oid": "sha256:77b29f65404791bbb0e2fa0ec92e4332f62bfabef9c7dab8a03eeb2b592f2a5e",
+      "lfs_size_bytes": 206719,
+      "pointer_sha256": "9906455ab7cf634f8559107db487bae1370ec66372065234a39aa55113872f5e"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Fireball_T_A_BW_png.tif",
+      "pointer": true,
+      "oid": "sha256:083f267981f97703977cc409877b01d89be3fcfdf292f0ce31b9fa3784bc067a",
+      "lfs_size_bytes": 1662580,
+      "pointer_sha256": "dd3cf229ad0059512e7ee1e4726fe6c72793433830ffc8f8051ef5bea1051d86"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Fireball_T_A_N.png",
+      "pointer": true,
+      "oid": "sha256:e3f2bd8fe1cb33fe66badd224921e929e8214ec4abde63c4ee9b06de081b1e7c",
+      "lfs_size_bytes": 332868,
+      "pointer_sha256": "99b2fe77e849363e923393447f1e6236c35a1e67ccb0b020d3423c3b46d2596b"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Flash_T_A.png",
+      "pointer": true,
+      "oid": "sha256:47ed61338e9ca874d151300cf6fc628f5e1f325bcf3257d9aa0c2e8d90b38bd9",
+      "lfs_size_bytes": 47742,
+      "pointer_sha256": "e6a82e69ce6f3db500546c64b7e13b35fc59f409a6be586a0ad35ebd287f3147"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Gradrient5.png",
+      "pointer": true,
+      "oid": "sha256:89fd4f9db02ddce9ed8f55d44bfbfa41237f7c0f089665a54db0f552c230d120",
+      "lfs_size_bytes": 1519,
+      "pointer_sha256": "36c5805cdffb14e29abd154d7b44e785cc1ccb049b0fb92f489422e11793306b"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Texture_01.png",
+      "pointer": true,
+      "oid": "sha256:a3c92df13a00edf7969358952a5e270d6fe3c4012ac16bfd40e8ac027108adfd",
+      "lfs_size_bytes": 54672,
+      "pointer_sha256": "faa6e5117db8b2309a42e6adcb11b331263dc4235028e7470341dae9cb847023"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Texture_LineGlow 1.png",
+      "pointer": true,
+      "oid": "sha256:ef4aba05c9733008dd4a2a8bcb1996529efcad4ad939bad2cfc1ae09bafbe96c",
+      "lfs_size_bytes": 1010,
+      "pointer_sha256": "9273d23835dd45faa4d58b745c65ca2ed2a46302c45d36f5986b4bbaa952348a"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Texture_LineGlow.png",
+      "pointer": true,
+      "oid": "sha256:869223b5d7789a1114e5342e9b237f2850c0d12b2a0808506c01a6bc0b919892",
+      "lfs_size_bytes": 970,
+      "pointer_sha256": "ff274a720337d982fd396666e1d94095b587111a1f92cb162f2ec903209e3f1a"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Texture_LineGlow3.png",
+      "pointer": true,
+      "oid": "sha256:4327c35ac511f2cbd191bb214e88363fb2afc9da1613bd1c1bc69a71b450fec7",
+      "lfs_size_bytes": 22242,
+      "pointer_sha256": "4bba4ca9d6002451e83a46c283bf4760c6d3b0a778be245220d82c7686de2dd1"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Texture_LineGlow4.png",
+      "pointer": true,
+      "oid": "sha256:f6d575475a7a44699e6dc9ec213f7d7aec711d54bed179d0528dd4ec05f9e0d6",
+      "lfs_size_bytes": 22619,
+      "pointer_sha256": "539dd9fd5a00cf720fa97de6ab448651090f0347abbc73f062657396fd78a341"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Texture_LineGlow6.png",
+      "pointer": true,
+      "oid": "sha256:ce4a2fd376c61e044f9a85d446ebe900198e7e925f31f2d7ed91fd7039790203",
+      "lfs_size_bytes": 26710,
+      "pointer_sha256": "6552f0ea24f36cfaed376b5ea80507b22d9a0c1d23b8c34794ad0f79845c1835"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Txt_Hit3-2.png",
+      "pointer": true,
+      "oid": "sha256:876344c4142541adbe5f978312f88ac9428443378539e94dac7f442bb4c77d73",
+      "lfs_size_bytes": 25912,
+      "pointer_sha256": "7da742351f6b111afaf8ea50ad1b5bee8277ae4bef387051ecbd611f2531b4ee"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Txt_Lines.png",
+      "pointer": true,
+      "oid": "sha256:290f124c325b651edb302def9df354d5c1ecef959fd2b59c10380458d5b4d72a",
+      "lfs_size_bytes": 211490,
+      "pointer_sha256": "3cdaee0a76146f66e46bfb320fe09fa3c0a6e5f8151ac6a0e2b994ef170f103b"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Txt_ReactorFlames.png",
+      "pointer": true,
+      "oid": "sha256:4dce65e6da34eb95c3bb07cbfaa0bbdd5308ee52be86ecc9a872b7d06700925a",
+      "lfs_size_bytes": 37205,
+      "pointer_sha256": "64705f7a052543032a609753c7cb749915acc31ba60b90da4c8ece92739c284b"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Txt_Spark_1.png",
+      "pointer": true,
+      "oid": "sha256:8b5018dbb5dc6f185d3e39f0f719ffe9270a797187bf8a2467f869a55a48909a",
+      "lfs_size_bytes": 94231,
+      "pointer_sha256": "e004ba5e9264292747373e6cba295eac27a12308329668949e6e8d7978500153"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Txt_Spark_2.png",
+      "pointer": true,
+      "oid": "sha256:1ddc44829beba41051fa2a48d046632a8b4edd7050bc5e41bb359e1fc1a72d72",
+      "lfs_size_bytes": 111246,
+      "pointer_sha256": "d3084df9a52a6b1d3355164342d0a1a2df48d433222b55ce4f559cbd9e626e2a"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Textures/Txt_Spark_3.png",
+      "pointer": true,
+      "oid": "sha256:87b8f40d7574bf9b0c5d208f5bc98b54f0b1071dd90048df410289198b808b5d",
+      "lfs_size_bytes": 132779,
+      "pointer_sha256": "abfd4633e563ca007add0b0739c8dfaa040b47d1c3540d2e99c3d4ec7d9934af"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/Vehicle_Bion_A 1.fbx",
+      "pointer": true,
+      "oid": "sha256:4081d4fc8acf1d54aa1a1f335aa343d730ce831ef0737eb6ea8f62c932dee426",
+      "lfs_size_bytes": 146176,
+      "pointer_sha256": "37508a706f28f300baf9447c9d8f984958ac1efb97ed3129f093161f86b400bf"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/WidePlanetRing_Mesh.fbx",
+      "pointer": true,
+      "oid": "sha256:b453c4e489f397effcc4e083de0fe72bf73c2731412f3b749b7bb6441e9a2dda",
+      "lfs_size_bytes": 32544,
+      "pointer_sha256": "8b3bc46b7c55ae181ffdf5f8646a8d2d71d049e222870d52655420f3e1e38efb"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/bigsun_ship_01_merge.fbx",
+      "pointer": true,
+      "oid": "sha256:015631097dcae55759464d5ddb2c58f2971b0f941a6c8eb580fcde45ef448873",
+      "lfs_size_bytes": 1284719,
+      "pointer_sha256": "2446eab82352c11eddda8de082596d9b537f242280045106a86c973c8ae4f8b6"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/bion_ship_01_merge.fbx",
+      "pointer": true,
+      "oid": "sha256:873b7a07bd06caab4744f58b4524824755df6e8d277940406a4ce4efccd25b2d",
+      "lfs_size_bytes": 2148583,
+      "pointer_sha256": "0ffaef905c3c803daefa439fbd7ce4fc5a6cb6a05e3b49faee8f1d4e0a3bd61e"
+    },
+    {
+      "path": "Assets/Art/VFX_Files/xencor_ship_01_merge.fbx",
+      "pointer": true,
+      "oid": "sha256:3a2f01b2c517d8e48f65236882fc89b2c4f56673d2b3b78b6f43f25efa0c0293",
+      "lfs_size_bytes": 544646,
+      "pointer_sha256": "dbd2ccb5cb5fd761eec67d863bfdd5e26330fb57b0eef95887dd097e67c46480"
+    },
+    {
+      "path": "Assets/DefaultVolumeProfile.asset",
+      "pointer": true,
+      "oid": "sha256:92af7c4953ecaa1aa5cbcc127516fa88bbd8aa6e07e174f13b530cd3ea5b743d",
+      "lfs_size_bytes": 19727,
+      "pointer_sha256": "3572000919ef3501a5644e0780a7a5c6b09b57b40e74f63bde26b4f8e9ae0182"
+    },
+    {
+      "path": "Assets/InputSystem.inputsettings.asset",
+      "pointer": true,
+      "oid": "sha256:9a8a372b8c07d1ba6a74ac422d57f984e66df22c5f99c7855905cd0fafc68143",
+      "lfs_size_bytes": 1024,
+      "pointer_sha256": "af40c41c720a90c147c40c3afbfcedfd35387b2209f04a3c4018b9c78307efcb"
+    },
+    {
+      "path": "Assets/OrthoShadow.asset",
+      "pointer": true,
+      "oid": "sha256:dfe55eb310777b2a8b1c9ba94e58a83ec3103d3b7912cff0b3d9c91147c47bdb",
+      "lfs_size_bytes": 33555471,
+      "pointer_sha256": "2eaa71737a11ce9edff701c83bcf44e37c72e63623add85a9174d45d2edf2bf9"
+    },
+    {
+      "path": "Assets/Resources/GameServiceData.asset",
+      "pointer": true,
+      "oid": "sha256:9a2ee384a1cb02b203f8a3ab87b4f6a2b34deb53de58c4d3d17f18c212594575",
+      "lfs_size_bytes": 578,
+      "pointer_sha256": "55242d515cd1f577c0c6889e8bfbd2e42aede447061c11d2fecce22712609a5a"
+    },
+    {
+      "path": "Assets/Resources/MultiplayerServerSettings.asset",
+      "pointer": true,
+      "oid": "sha256:dd8839aa5f757bd4a3412d06f7df481924c9eb9d066a4738b71512cc2b9411fa",
+      "lfs_size_bytes": 598,
+      "pointer_sha256": "031a2a3be7e0aefa19ea58d32fc00d1ab1de2f2e0103fdcad60f14ee2e1ff61f"
+    },
+    {
+      "path": "Assets/Resources/Shader Globals.asset",
+      "pointer": true,
+      "oid": "sha256:7e0f056780a356b5f4b70ca5f137dc962ab02f6b8bc56e8b679eb668a994d5e6",
+      "lfs_size_bytes": 4119,
+      "pointer_sha256": "221e452edd5b7fbd194687419d6c083714395fb96511ba47cbd40277b67c913d"
+    },
+    {
+      "path": "Assets/Resources/UnityPlayerAccountSettings.asset",
+      "pointer": true,
+      "oid": "sha256:cfe82ddde6a2002c2926b310f360c209c5794d1c8cdfd7c368fc439d5161c7e5",
+      "lfs_size_bytes": 537,
+      "pointer_sha256": "ee377c6d619d9010568a5e0a9024d9206028504af474764bde0a14e4f5b1035f"
+    },
+    {
+      "path": "Assets/Resources/UserPreferences.asset",
+      "pointer": true,
+      "oid": "sha256:bdba875afacd4ada72711d9731c22f894411a631b42f468b2403f60470780130",
+      "lfs_size_bytes": 941,
+      "pointer_sha256": "f549bd285f9caa080eb28a2b66f05aa7286cf15bf366b4da0e52dbb549ad96d0"
+    },
+    {
+      "path": "Assets/Scenes/Main.unity",
+      "pointer": true,
+      "oid": "sha256:93e53dc3097b24b22b87f9e88e43f79541b9f3f82ea625ddd7f3c7d7c32c7b16",
+      "lfs_size_bytes": 312619,
+      "pointer_sha256": "67630bfa3035a238126a22f702ecbc1c15cb4818f9884a49ca6a1ed76b82f600"
+    },
+    {
+      "path": "Assets/Scenes/Main/AdditiveLaserPoolScene.unity",
+      "pointer": true,
+      "oid": "sha256:d6a9d6682e84501689d8da49bbbbbe9f09d9e45d8a0534281ac4ea27dc583d6e",
+      "lfs_size_bytes": 3095,
+      "pointer_sha256": "397f5aa2150748c9ebee1badd8308e711fc87ceabf6e0b1a7989886ed3467523"
+    },
+    {
+      "path": "Assets/Scenes/Main/AdditiveLightPoolScene.unity",
+      "pointer": true,
+      "oid": "sha256:d6a9d6682e84501689d8da49bbbbbe9f09d9e45d8a0534281ac4ea27dc583d6e",
+      "lfs_size_bytes": 3095,
+      "pointer_sha256": "397f5aa2150748c9ebee1badd8308e711fc87ceabf6e0b1a7989886ed3467523"
+    },
+    {
+      "path": "Assets/Scenes/Main/Audio_Subscene.unity",
+      "pointer": true,
+      "oid": "sha256:f179ae0c9b74f4db48db3bf1f93e260e416755324611f00bef13f3f4c081cdda",
+      "lfs_size_bytes": 5553,
+      "pointer_sha256": "7ba53d252f2319295d62c39ba074afec34ef189b8a6eff6be92210d5e515f4f4"
+    },
+    {
+      "path": "Assets/Scenes/Main/Blimps.unity",
+      "pointer": true,
+      "oid": "sha256:2404b8b25ddc0ad765de282b6d00749aa95c479dc5e91bbba58b243d5109ff41",
+      "lfs_size_bytes": 27698,
+      "pointer_sha256": "d526fd721dbb257aa95a521bd8eda9400bf00af881c2a0e3e7f46c9c13a7d433"
+    },
+    {
+      "path": "Assets/Scenes/Main/Common.unity",
+      "pointer": true,
+      "oid": "sha256:7cec367baca36454a716927eb0924c16a69269ed4be28ff97cd9ca0e0d04b150",
+      "lfs_size_bytes": 8791,
+      "pointer_sha256": "345abcedb829dd0f9c0fef4e0e22f2f008753f34cea03d49e176d5bab51d4278"
+    },
+    {
+      "path": "Assets/Scenes/Main/Directional Light Lens Flare (SRP).asset",
+      "pointer": true,
+      "oid": "sha256:1f6c80066c8f61842568eed9b8308085c92248de63d4c26cba88cac5dd13ca72",
+      "lfs_size_bytes": 438,
+      "pointer_sha256": "f8dd7ea9e694c31b2bc215e08c7d19447b84bacfb5703e597e2a9c3b58b58b97"
+    },
+    {
+      "path": "Assets/Scenes/Main/Holograms.unity",
+      "pointer": true,
+      "oid": "sha256:ab375ce4cffc6439d77a713565d22adf35234e05647c3154e12b66e66538a447",
+      "lfs_size_bytes": 3618,
+      "pointer_sha256": "142813e2682bd54e4cd126df2dc4c658a222beda04e283ed37aaffe613d5b1a7"
+    },
+    {
+      "path": "Assets/Scenes/Main/Level.unity",
+      "pointer": true,
+      "oid": "sha256:8aedebe11a5e5445905d266e1e17bee2c542f3537301609e7fa55ea154b395fe",
+      "lfs_size_bytes": 1451111,
+      "pointer_sha256": "bca8814f1b7e0756e55186d3208d6f565c1a449d3c6efb540ecfbc05759a309c"
+    },
+    {
+      "path": "Assets/Scenes/Main/LightingData.asset",
+      "pointer": true,
+      "oid": "sha256:6d83df5f3e5240388c15e9aa81063c8b59a52cfa1be2e3e35bf70662da23148a",
+      "lfs_size_bytes": 28376,
+      "pointer_sha256": "45617850e2285e43ccf8d53985dea16fde349802fd62449f77434db232def1cb"
+    },
+    {
+      "path": "Assets/Scenes/Main/MegacityMetroLevelBounds.unity",
+      "pointer": true,
+      "oid": "sha256:bf9ba002675181e47886a2e510c03eb1200635c03203edb559107a8001383c52",
+      "lfs_size_bytes": 99086,
+      "pointer_sha256": "e2b3a6899bcdd0a329df1b21bd37d8f08d8832826e406415b2de53777e5906df"
+    },
+    {
+      "path": "Assets/Scenes/Main/Player_Subscene.unity",
+      "pointer": true,
+      "oid": "sha256:2466de5276a2ad1e1282f60a41f65d97bf7ca6e457b2d21ef7fb94d4a24d5e33",
+      "lfs_size_bytes": 5065,
+      "pointer_sha256": "a8a2489ba1361f6bf2b1e0a6b8dc2837984937abbd0611cf4b450d9bd660ab5e"
+    },
+    {
+      "path": "Assets/Scenes/Main/ReflectionProbe-0.exr",
+      "pointer": true,
+      "oid": "sha256:a351b38f53a0642759c512544420dbc058fe84f37dc36105fc653b507717258f",
+      "lfs_size_bytes": 2300323,
+      "pointer_sha256": "948e683c8a60e89017f6a3adf68d1f8c543dfeca047528ee84c032ee11ffae44"
+    },
+    {
+      "path": "Assets/Scenes/Main/ReflectionProbe-1.exr",
+      "pointer": true,
+      "oid": "sha256:a1c7cdd5d4f8ac92573e3d82433a8a647aecb148b14f56d2c552fcd79ca1d6cb",
+      "lfs_size_bytes": 65778,
+      "pointer_sha256": "0bc70ddbdefb6d5be9dba70e6bd33ecb1d246040027f12fda8502bd87f8b2904"
+    },
+    {
+      "path": "Assets/Scenes/Main/ReflectionProbe-2.exr",
+      "pointer": true,
+      "oid": "sha256:7a8b995131820946a8b4bfb039c9c14cfe5b856846e7ae3302d00f54ecb63a30",
+      "lfs_size_bytes": 306222,
+      "pointer_sha256": "9347538e04bcfd4ae8578de5a126925b4a4fc5cacebe69de56ac8ef657815413"
+    },
+    {
+      "path": "Assets/Scenes/Main/ReflectionProbe-3.exr",
+      "pointer": true,
+      "oid": "sha256:77a322c7338f022d61aad1b6577c097dd335e4bd5611b9036a45dedaeb8dd45c",
+      "lfs_size_bytes": 86047,
+      "pointer_sha256": "0ecf816855a2bc1b3cdb37946dcce2c77200f7ed29af5f5cc46e78b57d035222"
+    },
+    {
+      "path": "Assets/Scenes/Main/Traffic.unity",
+      "pointer": true,
+      "oid": "sha256:c1e0d7885a4306b89b318629ecee97cbd9cd0970372c107d129a58df92f65009",
+      "lfs_size_bytes": 110507,
+      "pointer_sha256": "03d049c6d905920a11b2a646218fa48985e279c0d61b87b61988ead915269ead"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/Density_Volume_1_Maze_A Profile.asset",
+      "pointer": true,
+      "oid": "sha256:ff678d5bac250cac3a6b8014accfc30a56b434bef3e2cdea9b2f890a8bbd183f",
+      "lfs_size_bytes": 1478,
+      "pointer_sha256": "7051613ddcc337a815eac9ad405b267b7106239773740c9d6700614f362162a5"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/Density_Volume_GLOBAL Profile.asset",
+      "pointer": true,
+      "oid": "sha256:8d617a3d58587f3000c4791318420e71143eb72e37a60bfdc250d64d74c4d2dd",
+      "lfs_size_bytes": 1446,
+      "pointer_sha256": "761bf7bbd08a62a360d892efa982d07c593719ffe8dbea874c18a87b29b40052"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/ECS_Tileset_A_Test_A_Volume_00.asset",
+      "pointer": true,
+      "oid": "sha256:6116184fd3b112d1446ba66cc3d0b705ddc5efb67e5136ecf19845018d0200d2",
+      "lfs_size_bytes": 31450,
+      "pointer_sha256": "6ea03f8fe6475f971e6ca7ca740a2d9131b0829c07710f470244fab6e8f9a871"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/ECS_Tileset_A_Test_A_Volume_00_Baking-vess.asset",
+      "pointer": true,
+      "oid": "sha256:2f1ac80cd7381db88520f57d6b09770a3b5e3c2a629d257869b63ff68517db4a",
+      "lfs_size_bytes": 4534,
+      "pointer_sha256": "c2699ea8bf47dd653677ffa4d80ddce1c5bedb274f1d8ab75b96ae65aebd21dd"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/ECS_Tileset_A_Test_A_Volume_00_Baking.asset",
+      "pointer": true,
+      "oid": "sha256:d01684dc02d455c543dbe0845fb58f1bb72b0f432b28d447a8e185a659b29b2e",
+      "lfs_size_bytes": 3023,
+      "pointer_sha256": "b2f25321e3ecc7ed99a07645523ad7240de74df605dc6c8d0871506642f80aea"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/ECS_Tileset_A_Test_A_Volume_01-vess.asset",
+      "pointer": true,
+      "oid": "sha256:243bdd3fabe26163358dfb2ec0e34b14fa8f63779e7fe3e94c71e3e032fed435",
+      "lfs_size_bytes": 14934,
+      "pointer_sha256": "2b65b3799fdf991bfbf247d26cdc7b28aa04ea9aec9f15d0d0399af082bcae9b"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/EmptyVolumeProfile.asset",
+      "pointer": true,
+      "oid": "sha256:a82bed20118707a89f4b86664439645e8f7172db32ef3367a46cc13b6ff5ad4d",
+      "lfs_size_bytes": 424,
+      "pointer_sha256": "fe4716e9a55d16eb41621bc6433de508e9e9e648c8b5d50379ddac2001dfeb92"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/GlobalVolume Profile.asset",
+      "pointer": true,
+      "oid": "sha256:3172ba46ce18d3f636e30fbf5c55b84419e5e76e3978fda6017759ba005cbbe0",
+      "lfs_size_bytes": 1519,
+      "pointer_sha256": "5a10e4e63bd27c2fead4559d6e67b1895b398522f1c68aeec4b564f70d32b290"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/MazeVolume_01 Profile.asset",
+      "pointer": true,
+      "oid": "sha256:d97b7f7430bc55cfba0eb8e2d7bd793d5f4b3cea358cbd8321eff8461058bd8b",
+      "lfs_size_bytes": 6335,
+      "pointer_sha256": "f681e979d69d557a2a1a0d379eba94771910752ece8789838d5d0b0ab52f7df8"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/PostProcess-Pagoda Profile.asset",
+      "pointer": true,
+      "oid": "sha256:3fdc670726ccc495a6713fda3202dcd0ee54792844edaec73e4e363b0afe9971",
+      "lfs_size_bytes": 6554,
+      "pointer_sha256": "0c88e95f1d36785628757ee054f65cf2ef77936bf6c12cce2b79615df9c4663d"
+    },
+    {
+      "path": "Assets/Scenes/Main/Volumes/TrenchVolume_01 Profile.asset",
+      "pointer": true,
+      "oid": "sha256:aba8799767fd7fc94fe3c9f45b95d3c530f9427cce8d62d46e422d9eadec90b3",
+      "lfs_size_bytes": 11810,
+      "pointer_sha256": "5a244b0c514ca2ab1a7104f51fd9e001d3fd4673d68d36614e778e44f58aa6bd"
+    },
+    {
+      "path": "Assets/Scenes/Menu.unity",
+      "pointer": true,
+      "oid": "sha256:e3c9350f57eb87ee3b564a4d5f3b1e4687627406dd356e8355b7ed3ae4a023f5",
+      "lfs_size_bytes": 54575,
+      "pointer_sha256": "09112000ed381671b30457633dee563e180e97610a73de309b0b690ef2cd02a4"
+    },
+    {
+      "path": "Assets/ScriptableObjects/MaterialAssignments.asset",
+      "pointer": true,
+      "oid": "sha256:cf066d8252e269d2a29b1ec3ad118a63f100a8d36b79029b1b441424a170d83e",
+      "lfs_size_bytes": 753,
+      "pointer_sha256": "f0e41fdeeb2fbdb1aa1beec6e8aa0099ef55444c6dece1116623b59562bec562"
+    },
+    {
+      "path": "Assets/ScriptableObjects/SignLayout.asset",
+      "pointer": true,
+      "oid": "sha256:17e7a05603610698f7fc761e90034c02564af24b11c655e6e3f911a596115024",
+      "lfs_size_bytes": 4285,
+      "pointer_sha256": "a3ed6121fdb0f18226a4506cc80832cb2c4ea159132637384c016194280b594c"
+    },
+    {
+      "path": "Assets/Scripts/OrthographicShadows/Editor/DepthCapturePipeline.asset",
+      "pointer": true,
+      "oid": "sha256:c51c9bf45c3f5a08aeaef781ac61cf10270807e18f1f711716f0c734f92b1478",
+      "lfs_size_bytes": 4398,
+      "pointer_sha256": "cfead764fc6b32bb36a97addc3c6202e5272bbfe93e8edf6fe6555b0a64dfb01"
+    },
+    {
+      "path": "Assets/Scripts/OrthographicShadows/Editor/DepthCapturePipeline_Renderer.asset",
+      "pointer": true,
+      "oid": "sha256:4a038fc682db1ba81acce9fdfc0fdb59b8ae17ff617a47bf623d8b0e85ac8db8",
+      "lfs_size_bytes": 2955,
+      "pointer_sha256": "5b05f0fd30ca24cef92734c71936ac113122dc3fc740a97a3088bd100151127a"
+    },
+    {
+      "path": "Assets/Settings/Build Profiles/Android Profile.asset",
+      "pointer": true,
+      "oid": "sha256:2bfa3d47ad775e514c78e148d6cd7dfba7107429cb7350c900e073bcdefbbabc",
+      "lfs_size_bytes": 1628,
+      "pointer_sha256": "4b8cf736191fbd4c3b844084c034482974895278971c3e887038b0ef3d3e3346"
+    },
+    {
+      "path": "Assets/Settings/Build Profiles/Windows Client.asset",
+      "pointer": true,
+      "oid": "sha256:0aea15bd1675b496a1bff26e70e097d7352401fa8d876adecd5c6336d651986d",
+      "lfs_size_bytes": 45014,
+      "pointer_sha256": "1846e6a8f185ba89a7a31fbd99167499f2aecf0b3dac3ba02a346ab566a676e2"
+    },
+    {
+      "path": "Assets/Settings/Build Profiles/Windows Server.asset",
+      "pointer": true,
+      "oid": "sha256:2a27c00b2f4c908dd9c0ba78ef4d9adac3f60f8c89535c6250ceb3f9f1afd066",
+      "lfs_size_bytes": 45014,
+      "pointer_sha256": "312addd9f7a3ea3b968e698f50d6c11a7fb49e4b1493e1954044215f8bb480f3"
+    },
+    {
+      "path": "Assets/Settings/Gameplay/PlayerInfoItemSettings.asset",
+      "pointer": true,
+      "oid": "sha256:1d9b584af48c488a8f8ed6d4a2b910f7f9448a8e25bb884a915f04a7a12d29d1",
+      "lfs_size_bytes": 811,
+      "pointer_sha256": "540293fb98ccea0c09a224a2709d6129c55c9133533d934d15e5ff6fa8c06208"
+    },
+    {
+      "path": "Assets/Settings/Graphics/URP/0_Low_Universal Render Pipeline Asset.asset",
+      "pointer": true,
+      "oid": "sha256:64b844080a90562984ec311597d2487d9c5ef8f313882fc876c7ad30f3db5ab8",
+      "lfs_size_bytes": 4426,
+      "pointer_sha256": "8cebd92206ecc50402ad9e6f2d14811524ef7e8b9cc839fa7c8fc1de01297ecb"
+    },
+    {
+      "path": "Assets/Settings/Graphics/URP/0_Low_Universal Render Pipeline Asset_Renderer.asset",
+      "pointer": true,
+      "oid": "sha256:94d2b0b0ecfdcb0ec6f49ba18cd2e36180c20f50f7de9bc96b24612f7ef498a1",
+      "lfs_size_bytes": 3094,
+      "pointer_sha256": "1f5998c99bd18b92b6f7cf6f21fc4db0e507cbe2ae3d7b360a76cd0cd97459db"
+    },
+    {
+      "path": "Assets/Settings/Graphics/URP/1_Medium_Universal Render Pipeline Asset.asset",
+      "pointer": true,
+      "oid": "sha256:0b3927558f04682167f094c3077fc4f7242b157b2ab1711d16656efed0d5c1ee",
+      "lfs_size_bytes": 4429,
+      "pointer_sha256": "b593aa30d67cac5577180712a57c5a570659b7577780725fd4c2c313f3c15cab"
+    },
+    {
+      "path": "Assets/Settings/Graphics/URP/1_Medium_Universal Render Pipeline Asset_Renderer.asset",
+      "pointer": true,
+      "oid": "sha256:171e22518b9fa1d402ac332eefc1dcf57e2aab004ac0afec4537006bd58fabef",
+      "lfs_size_bytes": 3176,
+      "pointer_sha256": "412809cf9944683d22dbfbeb12ea09bf56c39784f50d4cf2cd5245c24073f527"
+    },
+    {
+      "path": "Assets/Settings/Graphics/URP/2_High_Universal Render Pipeline Asset.asset",
+      "pointer": true,
+      "oid": "sha256:549a498e04506ee45e3d12b2f9edaa3ffe2258d1829eff14c3bb88e988bfb7eb",
+      "lfs_size_bytes": 4449,
+      "pointer_sha256": "e8018f619e7d4207e7b205d499276eb6662f9ec4877c83aff727d4d93e4560f7"
+    },
+    {
+      "path": "Assets/Settings/Graphics/URP/2_High_Universal Render Pipeline Asset_Renderer.asset",
+      "pointer": true,
+      "oid": "sha256:e776e358198666b81eda4c5be8b93ff99319f7234e23ac52f84721da020c1f6f",
+      "lfs_size_bytes": 3701,
+      "pointer_sha256": "f5a2d30e731c644a13b4c5eab37f2007f3bc6809e1ad92a9f51b9d04c9b4704f"
+    },
+    {
+      "path": "Assets/Settings/Graphics/Volumes/PostProcessingProfile.asset",
+      "pointer": true,
+      "oid": "sha256:0862e85204ce3aafe078830d4938ad414107157023dad0afa243217e53620685",
+      "lfs_size_bytes": 14360,
+      "pointer_sha256": "6c6a92c3d91915bd029b245bfda496b5df321cf0d90d5ac54502e8fe0c531fcd"
+    },
+    {
+      "path": "Assets/Settings/Physics/CustomPhysicsBodyTagNames.asset",
+      "pointer": true,
+      "oid": "sha256:fb226086e72716d7454c75a6dafa7a34d473e1fb6b1c38931abfda6f5d142f6c",
+      "lfs_size_bytes": 481,
+      "pointer_sha256": "64b5a604b3a338aad11eaeaee63b9cda67e295bbba8403d6bd37687685eede4d"
+    },
+    {
+      "path": "Assets/Settings/PlayMode/Two Players.asset",
+      "pointer": true,
+      "oid": "sha256:7c542ab81829b6cba2b94489ddf667a4196fb23e64c0b2ce6b58d285f922e51d",
+      "lfs_size_bytes": 1310,
+      "pointer_sha256": "f554d6dc7a13a08f6bec13c7c62dd6617b4aa7be70fa206b064dc8bdbf72b16e"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+      "pointer": true,
+      "oid": "sha256:e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+      "lfs_size_bytes": 350200,
+      "pointer_sha256": "e4f152e61b7440d834be901128bb90daf967c0242083f31482fbaaca6d081257"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/EmptyFallback.asset",
+      "pointer": true,
+      "oid": "sha256:850970a82992ce96ce2a9c2790c15b0efee4a7165297e465fd5587a47d4d8fc4",
+      "lfs_size_bytes": 5305233,
+      "pointer_sha256": "56c89109c5e23c71b7dea739515588392589f16f2a63e2e12c3be6c049019b88"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/EmptyFallback.asset",
+      "pointer": true,
+      "oid": "sha256:7e7f6b7e756004b3d9be4b47f8ce3c10609d04a7a069ff590991136c0abd681d",
+      "lfs_size_bytes": 4356380,
+      "pointer_sha256": "8c223fa49c0c2a35eb4340d394260896ebdf860d0b5cbc902fbb6d9fc8f82c8e"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+      "pointer": true,
+      "oid": "sha256:70d6b7f58bc1426aa214db4f543d46873e2cbe8949e5d9761e29072b9d44711b",
+      "lfs_size_bytes": 14838,
+      "pointer_sha256": "a8d7fee64fecf8aa793f128885f0a86ca43cbb2f7740976b9b721581cdffb173"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+      "pointer": true,
+      "oid": "sha256:f3c54c234df0c22c11960a8c91b939d15fe355d54da81afc3095e9367a211496",
+      "lfs_size_bytes": 2265699,
+      "pointer_sha256": "68ebaf8a3c89d6644a7f69e5ab059d449cff4217653e0e9863e155109c67576f"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansAnatolianHieroglyphs-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:230b808e2454763564c186400ef75ea828a98dcefb8ec1a1629ea32987deccd2",
+      "lfs_size_bytes": 8704917,
+      "pointer_sha256": "9eba70b70fbc965aa3de4739ca20a02b2ff2d5c5719e040b22b899332b86f8fc"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansAnatolianHieroglyphs-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:cff0689edfdfff09f8f98bc916b979ee1760936729263e982c04134d5e96f726",
+      "lfs_size_bytes": 374184,
+      "pointer_sha256": "9ca6eb407d249d5918b9647668e1d11b62ca9a8229377f874fcc0e8d64567df1"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansGlagolitic-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:0890e2cb4b92a3bfd6a1bcab2c2f4103cfd35f95dc951bfce90618d173390ccf",
+      "lfs_size_bytes": 5356715,
+      "pointer_sha256": "9ba25b80aac04fad0835d1125da96d375a3eaf6c4290330d152b3f09c8836b7a"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansGlagolitic-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:9259ea11a047b6f2b967921575eada49cf772bb0356c8c45e22c227599980078",
+      "lfs_size_bytes": 83044,
+      "pointer_sha256": "bda0439f5c7f389e07ca4e58db410b8a2a90bcd064e4f022ea4b15ecfeb062d1"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansKharoshthi-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:3f8b6d67ce202f33ed994afa982f04599853a5f628f2e33e2860808dcdea711c",
+      "lfs_size_bytes": 5407580,
+      "pointer_sha256": "aba99f93240c8fef5ce0f3700782f59c3b0b399cb5418a4618b0db853ec787ed"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansKharoshthi-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:1c1f810f2ef79d66ff44782b7ea7b44b8ee427ec2f553f9a8d09ceedecf808a4",
+      "lfs_size_bytes": 91088,
+      "pointer_sha256": "f7b60494b27d5db8e85b2d9a0e7e13f4b2d4ea2c3b2ec2a86d3c1a9955a34a2a"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansLinearA-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:f346746db990bffbf329d127555db5583249acebb3c237c0f896d8ac89ebe9ea",
+      "lfs_size_bytes": 703966,
+      "pointer_sha256": "866f845b7991c812406c58b8b3c4adc41a890ef2c1773c6aea347d102f6f3aa3"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansLinearA-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:9ee4e04e297d7a2e871034bc72da4b8ebcd20c176607370d27c16b11296461b3",
+      "lfs_size_bytes": 161160,
+      "pointer_sha256": "6c90f83b7f0936d3596a1930d239ddcfcca0d1b3228fd95a75895f6208275fe8"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansOldNorthArabian-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:8bf295c5018430a2c07193750bcef0e004bf18309671ef25b9df36d60c83fce7",
+      "lfs_size_bytes": 155295,
+      "pointer_sha256": "8f3fef842cea32c319a06bf56c4f2af2591645a3f3754332cc250d32f6ccf95c"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansOldNorthArabian-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:e7d18df52cb3920ad820631c3e52149920e8eb29ff35d326a83fd3c4db37eecb",
+      "lfs_size_bytes": 53440,
+      "pointer_sha256": "19b6e8622e2a9cfcf27e5d9cc8df31e03eb2648ebf6cbdb6e757a67cbedfc600"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansOldPermic-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:a07a08df204aa7e2a6ffce14212ebe031d5dc06cde873b65125a461547243a46",
+      "lfs_size_bytes": 5388256,
+      "pointer_sha256": "d527c3283565d55a1f9aa67ee4dc65a323666abb2f195d1719fd19269c535fc0"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansOldPermic-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:f2eb57a47f62d490cb8a5efab95124f15b8941968cb03af780b939bae3b73006",
+      "lfs_size_bytes": 51912,
+      "pointer_sha256": "be93ebd37441e797ca8227fc29c02f37c7d577540f9187822b7beca42f5e251a"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansPhagsPa-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:3e62a8fdee730052aa80519051c43e9fee41e9b2c17298ffdc96dda3e4109e2b",
+      "lfs_size_bytes": 164849,
+      "pointer_sha256": "27612ab69e78c741782f6c22c0458efd9baa6f192d0149d4ec75a1802377de37"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansPhagsPa-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:9055e7ed31da8718e9127486852d0dc50a77ae179e02760383634ba17d69991e",
+      "lfs_size_bytes": 39264,
+      "pointer_sha256": "512d9fd82f55042ba63a9b54c97177b7d9159776482ea49f8dfa67f8d0c4358e"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansPhoenician-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:a549878f147cb237b5485053118a00224fa76457ce3963e2a7009171d8d28e80",
+      "lfs_size_bytes": 152005,
+      "pointer_sha256": "37eff29e783407621c668b4b085c1b275065e08f202c805df295d804f1486f7e"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansPhoenician-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:6efebe0eb3fe0cecbf04fb873b5395d2913f5e14a3ef3b3f15679d2f49dcc22f",
+      "lfs_size_bytes": 51784,
+      "pointer_sha256": "524167d6c5e3fba115fda0bfb215598894cbbd27b8f6177b49fe5df797838c70"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansSoyombo-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:8fbd4624a5cb44b237884250fbc320da83068c5369d4acc8f4bd434d78e030ee",
+      "lfs_size_bytes": 5414477,
+      "pointer_sha256": "dae5acb1d6abd968bd4eaab2f59726c80197181c79a0470492c78a2b66ba2de0"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/NotoSansSoyombo-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:6b0d6064bc982f0f2a496c5c5d71107d156b202fd0af26c217622e544e01e958",
+      "lfs_size_bytes": 131972,
+      "pointer_sha256": "4786dd635a2b555fd0a72c7bdddb01a3d939c7e21ebe48a897d76466749dee6b"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset",
+      "pointer": true,
+      "oid": "sha256:155fff99f467baa93dd2d0886df466bd242cd5e3c8c60c9d43e9cdad269f7f54",
+      "lfs_size_bytes": 13441,
+      "pointer_sha256": "6eedce8d32e8354f6f3a7868de61b2760217b933bcd0c850984600798f75131b"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset",
+      "pointer": true,
+      "oid": "sha256:93e073cdb91b7e3d2fa31e2dd13626d7b9d2f327904ba8c3c2b97a3eecfbabac",
+      "lfs_size_bytes": 5539,
+      "pointer_sha256": "1ab462a8f99f898883241ec136dc29e97c63eed62b8eae7fa05cdeecdd8c2a21"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+      "pointer": true,
+      "oid": "sha256:f9bff90350c0ad64dba3f4a9f77f72ba655ef8954b33768233ab5e6b00e9c339",
+      "lfs_size_bytes": 1852,
+      "pointer_sha256": "e6d98a5b5198fb5e1f73f8d074078d1d6cb950121005e12c74c4e41765690175"
+    },
+    {
+      "path": "Assets/Tutorials/GithubIcon.png",
+      "pointer": true,
+      "oid": "sha256:4bb3bef19cb8c588b21d999d670a4ce488c57004ce8634ae2576fa0f938d1b59",
+      "lfs_size_bytes": 2781,
+      "pointer_sha256": "d2083d7bbc7c97a0201daae14589c77ce56afa1b4828d29278f4d7d45563df67"
+    },
+    {
+      "path": "Assets/Tutorials/Tutorial Project Settings.asset",
+      "pointer": true,
+      "oid": "sha256:ea7af0c4fe6b0dd696d5815631278771baef6586384590a62debb920e23f6ff9",
+      "lfs_size_bytes": 1056,
+      "pointer_sha256": "390cbede0e487687cda0ac6d790994c710705846ade26f3c6c66eb1112cd7dcf"
+    },
+    {
+      "path": "Assets/Tutorials/Tutorial Welcome Page.asset",
+      "pointer": true,
+      "oid": "sha256:5c72240b7f773d3814b0c95bb5577ca02f4493f54b97ffe5d7603b93cb86eb1a",
+      "lfs_size_bytes": 1961,
+      "pointer_sha256": "90ccaf134d4a52a6827d8e46e3ef15bdd9ce6bf22228f281dc542e8dd68fde19"
+    },
+    {
+      "path": "Assets/Tutorials/Tutorials.asset",
+      "pointer": true,
+      "oid": "sha256:c9e091c492e7758379738af0fb00eda6dc307be85909c300572d6818ea07ba59",
+      "lfs_size_bytes": 1037,
+      "pointer_sha256": "df3d9db4a0a19a0b6999bbabba3d03e0520839eb1bb980ef84f30f3703f2d6f6"
+    },
+    {
+      "path": "Assets/Tutorials/UGS Tutorials.asset",
+      "pointer": true,
+      "oid": "sha256:2fb53497c0d925634713a0f27b0b3c7668bb08da991b071e1a9ca24b8dcd62d0",
+      "lfs_size_bytes": 1229,
+      "pointer_sha256": "0e4c93b6daf9797480cbfa70f68ee41a568f6a14fb12d44cc4ecf97cf5e886a9"
+    },
+    {
+      "path": "Assets/Tutorials/UgsBanner.png",
+      "pointer": true,
+      "oid": "sha256:f168db7a95496025707c1124cdfe5f65b06b2a4e2ac3dcd4674405c06660c5a2",
+      "lfs_size_bytes": 588853,
+      "pointer_sha256": "d3ff94f8d16ed626b648a36abc1e514b8e3d9701a0badfc64cf612eaf0631f0a"
+    },
+    {
+      "path": "Assets/Tutorials/UgsIcon.png",
+      "pointer": true,
+      "oid": "sha256:dfd68b0fb6618f7ea96a12a4721ad971efcf852ef30ba9bdf780e714c386ff02",
+      "lfs_size_bytes": 55684,
+      "pointer_sha256": "1d53af00fded4d4d80bb86236576fb4347e0070dd79b87f7a347136dc1d47744"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/10-Select Linux.asset",
+      "pointer": true,
+      "oid": "sha256:8f31132aa0675f192c6ef678e18bb028bc3345fc39badf6cb65823dc0826ba68",
+      "lfs_size_bytes": 6812,
+      "pointer_sha256": "9fa83027c61b4bac1ec07917f4885a3fe900cca7f2c22a3f2549bd91d49f74c7"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/11-DeploymentWindow.asset",
+      "pointer": true,
+      "oid": "sha256:f0801a57e1d307d3686bfa099a373bf8a3c4f904c084ad248ca699a1003e2dff",
+      "lfs_size_bytes": 8976,
+      "pointer_sha256": "395c101a8632426bb2a72cf51f1e47d5df633e49627028f41a432332b7c5d0b8"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/14-Done.asset",
+      "pointer": true,
+      "oid": "sha256:e47c6f180a3836011a3047334de67f4ae975c9d995e93dd70fa9f3994eae635b",
+      "lfs_size_bytes": 2725,
+      "pointer_sha256": "ccdbddd06b7a9a21f204ed7c17a9547deb2bbcd22ce4084ec0c296c8f38a38c8"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/5-Intro.asset",
+      "pointer": true,
+      "oid": "sha256:dc818e467b5ba8a6a368510be1fcc99535c9e5adcd021d3cedecc842aec9ea0f",
+      "lfs_size_bytes": 2855,
+      "pointer_sha256": "e830ba547b88d863ed479c2fceb953b6ae8db1c1be4cb1c06cbcd831ea9bf092"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/8-LinkProject.asset",
+      "pointer": true,
+      "oid": "sha256:1dda7a04d7c8a45ffe57fde7d07f8018ea6071d49c0a59a0a3e1b05b56726877",
+      "lfs_size_bytes": 4969,
+      "pointer_sha256": "2a965596fd049b4f7baf7e152a89d9b507353bebc3c54a5cc1dc2ed0610d1c2e"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/9-Environments.asset",
+      "pointer": true,
+      "oid": "sha256:0bdab4cf73460942872336d004433730ad59ba1de630a54b379d683ba944b094",
+      "lfs_size_bytes": 5573,
+      "pointer_sha256": "6cb57c05df0b1bf8b5bcb3103dbaac40edf5589add64b50368dd0ed891466e64"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/TutorialCallbacks.asset",
+      "pointer": true,
+      "oid": "sha256:dcc88c4c50697c2b3c76f2cd08703e67b930b818bbccf7b48cd46375bf2a2d11",
+      "lfs_size_bytes": 406,
+      "pointer_sha256": "1740b00475971fc751fb260894abfd193432b307847050ac99e1bd02ed8ed1e1"
+    },
+    {
+      "path": "Assets/Tutorials/UgsSetup/UgsSetup.asset",
+      "pointer": true,
+      "oid": "sha256:86164474bcf71d9446c9f48c27bde24d5b208151be57da74dfc3129257fe2b80",
+      "lfs_size_bytes": 1900,
+      "pointer_sha256": "5e3f3dab079c9512ba84c180304f75551ae1203845a9c1c1487cababff4b9eed"
+    },
+    {
+      "path": "Assets/Tutorials/UnityIcon.png",
+      "pointer": true,
+      "oid": "sha256:e77075e5f49411a22d1efd630cbc3ba6e4b3175a07baedd159367bf0b1a60a89",
+      "lfs_size_bytes": 28134,
+      "pointer_sha256": "24e34e0023b13d704e8f3dcff22db60703f810596bbb12fc6db6cd14023ec5d3"
+    },
+    {
+      "path": "Assets/UI/Fonts/Alatsi/Alatsi-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:86c272c4ec515a5f3326de740355e449d24b03c4286bf09b36dda67dacaddeb0",
+      "lfs_size_bytes": 2147531,
+      "pointer_sha256": "c9b7b42b6eb1340fa8da5a432b139bb8e2ef1482cf1653853aa9bcc07ba355a6"
+    },
+    {
+      "path": "Assets/UI/Fonts/Alatsi/Alatsi-Regular SDF_TMP.asset",
+      "pointer": true,
+      "oid": "sha256:a584a49f881c879f34bf6d59b8888d540391d78abab4bafe67a0a05f7d65ae52",
+      "lfs_size_bytes": 2117659,
+      "pointer_sha256": "8a76b59d7622bd5cb9b8206992b0aa00ebb0e63accc3c2a8d2a1619f48574d4d"
+    },
+    {
+      "path": "Assets/UI/Fonts/Alatsi/Alatsi-Regular-Capitals SDF.asset",
+      "pointer": true,
+      "oid": "sha256:22515db315b360b689625491e2d7027650a0e4ec0aebfaa15e753b6a2ac685cd",
+      "lfs_size_bytes": 2145248,
+      "pointer_sha256": "31078f734b0fb9edcc2f89c075f9d20f38edc08feb5c12397f932660add6a129"
+    },
+    {
+      "path": "Assets/UI/Fonts/Alatsi/Alatsi-Regular-Capitals.ttf",
+      "pointer": true,
+      "oid": "sha256:b0af34d014e8c429a57627ed7935f41f5690533cbd92343b89017a99dc9d9612",
+      "lfs_size_bytes": 145360,
+      "pointer_sha256": "002366784ea175cfaca927e527b157f034467f36833140109a6ccad8890e6a2a"
+    },
+    {
+      "path": "Assets/UI/Fonts/Alatsi/Alatsi-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:a3b5a7f9a61a7ed41f20e50774c6d0eb436934c53608d9d6ca41750dc7fb5caa",
+      "lfs_size_bytes": 136032,
+      "pointer_sha256": "02f84331567ffde4e9690f706e04652e03d96adf2a774cd8c71f919ccda7cdef"
+    },
+    {
+      "path": "Assets/UI/NetcodePanelStats/FiraCode-Regular SDF.asset",
+      "pointer": true,
+      "oid": "sha256:075b00bdb9215baea3a55ade6f0e9978ea158bbf2721a572be62a85aeea5a3e1",
+      "lfs_size_bytes": 2134465,
+      "pointer_sha256": "9615fac9119a10d9571f098768ae89794ee0d09e4d4243b62edb1fda75be4abc"
+    },
+    {
+      "path": "Assets/UI/NetcodePanelStats/FiraCode-Regular.ttf",
+      "pointer": true,
+      "oid": "sha256:28c3ae21a853f1d74673384c7a0d620abb0e877b8c6cd8b64173a95512476824",
+      "lfs_size_bytes": 299152,
+      "pointer_sha256": "c634ea041de827485ae2917519f12f20e9b519d3da8fac0bcd712c5679f1c849"
+    },
+    {
+      "path": "Assets/UI/PanelSettings.asset",
+      "pointer": true,
+      "oid": "sha256:0b8dfc233058feb43cc827ec317eb68a681184e7ba2a088afb80d7ba1c5ea87e",
+      "lfs_size_bytes": 1448,
+      "pointer_sha256": "31c6ae8887fb9016a1c89ab9abe8021bb21429caf2edc270d8778e0499418fdf"
+    },
+    {
+      "path": "Assets/UniversalRenderPipelineGlobalSettings.asset",
+      "pointer": true,
+      "oid": "sha256:eeb7e6791374c1426930eef9f9deb2bd61a5382f0cc265f35e783b04c2023afd",
+      "lfs_size_bytes": 24490,
+      "pointer_sha256": "7e964a39615e0eb7da9a433ef2b27cf7f82cc15e499fb53d966c649762823115"
+    }
+  ],
+  "full_tree_truncated": false,
+  "inventory_method": "All Assets files matching pinned .gitattributes LFS extensions and 120..180 byte pointer sizes; payloads never fetched. Extended or nonstandard pointers outside this range are not counted.",
+  "payload_bytes_per_path": 435222684,
+  "unique_payload_bytes": 434705574,
+  "unique_object_count": 432,
+  "lfs_checkout_confirmed": false
+}

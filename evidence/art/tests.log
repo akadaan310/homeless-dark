@@ -1,0 +1,14 @@
+test_bad_resumed_range_refused (test_art_pipeline.FetchSafety) ... ok
+test_corrupted_existing_archive_is_rejected (test_art_pipeline.FetchSafety) ... ok
+test_downloaded_wrong_hash_is_not_promoted (test_art_pipeline.FetchSafety) ... ok
+test_interrupted_download_resumes_with_range_and_hash (test_art_pipeline.FetchSafety) ... ok
+test_network_oversize_never_promotes_archive (test_art_pipeline.FetchSafety) ... ok
+test_obj_geometry_indices_normals_bounds_and_material_paths (test_art_pipeline.FetchSafety) ... ok
+test_server_ignoring_range_restarts_without_duplicate_bytes (test_art_pipeline.FetchSafety) ... ok
+test_unapproved_and_non_https_urls_refused (test_art_pipeline.FetchSafety) ... ok
+test_zip_traversal_and_symlink_refused (test_art_pipeline.FetchSafety) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.106s
+
+OK

@@ -1,0 +1,2 @@
+Original generated HOMELESS art produced by tools/art/author_cafe.py is dedicated to the public domain under CC0 1.0 Universal. This grant covers only original generated geometry and material descriptions. ambientCG texture rights are recorded separately. No third-party shapes, brands, photographs, private media, or recordings were used. Future unbuilt recipes do not establish rights in nonexistent assets.
+https://creativecommons.org/publicdomain/zero/1.0/

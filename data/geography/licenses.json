@@ -1,0 +1,43 @@
+{
+  "openstreetmap": {
+    "api_policy": "https://dev.overpass-api.de/overpass-doc/en/preface/commons.html",
+    "attribution": "© OpenStreetMap contributors",
+    "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "endpoint_listing": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    "fiction_separation": "Source-derived geographic data stays in data/geography; fictional names, events, actors and transformations belong in a distinct world layer.",
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "redistribution": "Raw OSM response and OSM-derived GeoJSON remain under ODbL 1.0. Preserve attribution and share-alike database obligations.",
+    "terms_url": "https://www.openstreetmap.org/copyright",
+    "use": "Few bounded offline acquisition requests; not a production backend, tile scraper or planet-ingestion route."
+  },
+  "ourairports": {
+    "attribution": "Data from OurAirports (https://ourairports.com/)",
+    "evidence": "Primary publisher search result was retrieved; direct page attempts later returned HTTP 500 Too many connections. Data download was successful from publisher-linked repository.",
+    "license": "Public Domain",
+    "publisher_repository": "https://github.com/davidmegginson/ourairports-data",
+    "redistribution": "Raw CSV and derived index permitted by publisher public-domain statement; no accuracy or fitness guarantee.",
+    "short_terms_excerpt": "All data is released to the Public Domain",
+    "terms_url": "https://ourairports.com/data/",
+    "update_frequency": "Nightly publisher snapshots"
+  },
+  "verified_on": "2026-10-21",
+  "worldpop_candidate": {
+    "available_epochs": "2015–2030",
+    "candidate_epoch": 2025,
+    "crs": "WGS84 geographic",
+    "doi": "10.5258/SOTON/WP00803",
+    "downloaded_raster_partitions": 0,
+    "known_limitations": [
+      "Beta product may change",
+      "Constrained modeled population estimates, not identified persons",
+      "No raster sums, allocation or worldwide population counts computed"
+    ],
+    "license": "CC-BY-4.0 per primary catalog footer",
+    "release": "R2024B version v1",
+    "resolution": "3 arc seconds, approximately 100 m at equator",
+    "status": "METADATA_INSPECTED_ONLY",
+    "terms_url": "https://hub.worldpop.org/geodata/listing?id=100",
+    "units": "Estimated people per pixel"
+  }
+}

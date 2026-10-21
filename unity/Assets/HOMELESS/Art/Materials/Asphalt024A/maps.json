@@ -1,0 +1,105 @@
+{
+  "id": "Asphalt024A",
+  "family": "street/road materials",
+  "selection": "FREE_SELECTED",
+  "kind": "ambientCG_PBR_source",
+  "url": "https://ambientcg.com/view?id=Asphalt024A",
+  "download_url": "https://ambientcg.com/get?file=Asphalt024A_2K-JPG.zip",
+  "archive_filename": "Asphalt024A_2K-JPG.zip",
+  "expected_archive_bytes": 34783694,
+  "archive_sha256": "11ab36c4ed41bcbe835e4afb235a5da323647cc3c5bd806d29fbb86a41ecb784",
+  "license": "CC0-1.0",
+  "license_evidence": "assets/licenses/ambientCG-license.html",
+  "raw_redistribution": true,
+  "bundled_game_redistribution": true,
+  "sdk_redistribution": true,
+  "source_resolution": "2K-JPG",
+  "physical_tile_m": null,
+  "physical_tile_note": "Publisher unspecified; authored lookdev tiling required",
+  "source_creation": "PBRProcedural",
+  "import_spec": "tools/art/UNITY_IMPORT_SPEC.md",
+  "states": {
+    "source_seen": true,
+    "price_verified": true,
+    "license_verified": true,
+    "downloaded": true,
+    "integrity_verified": true,
+    "unity_imported": false,
+    "android_rendered": false,
+    "world_integrated": false
+  },
+  "files": [
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_AmbientOcclusion.jpg",
+      "sha256": "540bc5888cd57a78144a158f6dd1c9eba8481e2ec9f79ffdb3c46dfad41c84cb",
+      "bytes": 3100546,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "AmbientOcclusion",
+      "color_space": "linear",
+      "source_archive_member": "Asphalt024A_2K-JPG_AmbientOcclusion.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Color.jpg",
+      "sha256": "380c7b0d46cc6252a653aa9cffeae20527209d901499ad3c458bd8f4cc91c58c",
+      "bytes": 4728468,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "Color",
+      "color_space": "sRGB",
+      "source_archive_member": "Asphalt024A_2K-JPG_Color.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Displacement.jpg",
+      "sha256": "9e386329caefadfcbb0f310ee45f337b0281dbc81ef76f973a1bcfc7c3a1c9fb",
+      "bytes": 2924605,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "Displacement",
+      "color_space": "linear",
+      "source_archive_member": "Asphalt024A_2K-JPG_Displacement.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_NormalGL.jpg",
+      "sha256": "4cfabded525f988da507bfe4375e16f7403eb3f56aef0168a25184bfe0f91d0d",
+      "bytes": 9844692,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "NormalGL",
+      "color_space": "linear",
+      "source_archive_member": "Asphalt024A_2K-JPG_NormalGL.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Roughness.jpg",
+      "sha256": "d5c794b29f4bf44540dbbb0ed4290958ad4f5fff0b7c4ac25f1a9aae2ea6646e",
+      "bytes": 2848312,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "Roughness",
+      "color_space": "linear",
+      "source_archive_member": "Asphalt024A_2K-JPG_Roughness.jpg",
+      "modified": false
+    }
+  ],
+  "native_closeup_screenshot": null,
+  "quality": "UNVERIFIED; no native Editor or device run",
+  "archive_path": "assets/cache/Asphalt024A_2K-JPG.zip",
+  "acquired_at_utc": "2026-10-21T08:01:23Z",
+  "import_path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A",
+  "triangles": 0,
+  "lods": "Texture importer max size profiles; no mesh"
+}

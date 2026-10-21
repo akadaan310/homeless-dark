@@ -1,0 +1,610 @@
+[
+  {
+    "path": "packages/com.homeless.dark/Dark.Core.csproj",
+    "sha256": "257f1a40e2e1c63495e385218232c6269d4369b6afb73a7f529bc864748c669a"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/AdmissionPolicy.cs",
+    "sha256": "1a0fc116d11dc84c20e99cf2807f1570cc0f8c6d055a23d524821efe28d12646"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/AdmissionPolicy.cs.meta",
+    "sha256": "12281bf2d94666cfa118e2e82051ac0ee50a795b7a10b1f348a87384c42bf469"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/Canonical.cs",
+    "sha256": "a376da52595313d7b6aa238774b67ef6ec0d9797ed368e02aeca8a2646740366"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/Canonical.cs.meta",
+    "sha256": "6f32fc107eb8247623b4d6ed174027c6881413cddaa8bcde44f8f1848eebaf1c"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/LocalAuthority.cs",
+    "sha256": "86b340fe43e36458101989a0d22ea27ed2651dac0329f5cfb44837e26096c463"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/LocalAuthority.cs.meta",
+    "sha256": "f7aee6a7b33119401584b8a68e54055b510c555def85ef106f01d604ae453280"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/SignWorld.cs",
+    "sha256": "d900693c56055a6e01283db20a0115604dd821e9a6d0b80d8fafda74a2791ebe"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core/SignWorld.cs.meta",
+    "sha256": "ab0de413cc62e223ef6c9218a5944a9e63eebde9b6bae863f83568ff16245229"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Core.meta",
+    "sha256": "d5c3c8896a85fd07c20ad1072bc75580827be1e8930e9272af33d9c323ea2078"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Dark.Core.asmdef",
+    "sha256": "6d48fa3661ecd84fa1442f1be76f71069db4e261a1677c098c441c04de05e6cd"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Dark.Core.asmdef.meta",
+    "sha256": "955fc2fb4950b488d110688b02e0b0e4bb918c10b8a958f4c438593d5c0220f0"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Grammar/Kernel.cs",
+    "sha256": "f2e851a44a304505c18710b559b5b6e3cd7bfcb454878883c489a4563248c1e4"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Grammar/Kernel.cs.meta",
+    "sha256": "488ebf92399e990b59cefb9b49ed910fe4ae996b45fb629194f130f56a1b6bb6"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Grammar.meta",
+    "sha256": "8fe6ff026504b44d328e25255439f67a617f952286c66d8317779eea0c276a0f"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/History/EventJournal.cs",
+    "sha256": "4c7722e95c6376fe7482a0b11b5d2d101e94c404c62716d9786ffcb6f3c176ea"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/History/EventJournal.cs.meta",
+    "sha256": "8f89b523858e9150b1461ea7419d929f2ecede7fe296e4aec430528ef45caf74"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/History.meta",
+    "sha256": "be1c5cf369e474d7cbc66cd142ce549b243796d53bf2990ebdd2727634d0c361"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Numerics/Kernel.cs",
+    "sha256": "6fc5c9bb6496c6803d17cfdbecc9c3ae557c36ef90dad4e865455539a83d6690"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Numerics/Kernel.cs.meta",
+    "sha256": "25e247a515cedf9ea80c50d2e39a93e972bcc9d5cb69445a057e583c7cd35283"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Numerics.meta",
+    "sha256": "3ad016e98dcc8f708935e4aa4a568694321b61e2c8527300c7f94316e2d01ac8"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs",
+    "sha256": "cf856e0e5a4ca668d96e09aa4ead8137111ca278ec41c2c3ee51de6c3ff50f2a"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs.meta",
+    "sha256": "20c3c7568a87c88dc31af1c7c205db4f0554e624d40f7e5ec9ad5e46ac5a8257"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population/Inhabitant.cs",
+    "sha256": "7950bc8e69ade46edd69a45387237e2a178504adc0ba58276a81a6e34d7f5ac5"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population/Inhabitant.cs.meta",
+    "sha256": "9b878ac891ed9abef4faf8cb1b889b7bf83c43493ee1460f281b97a0114e8fe5"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population/InhabitantSnapshotCodec.cs",
+    "sha256": "b0082dfbcfd939a6bb39eb4117850ef08ee28391c97c2b479b654e6cf59ccb0d"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population/InhabitantSnapshotCodec.cs.meta",
+    "sha256": "1e4f21db0dd6c036be72d08c913add74747dba0e4b3fec718eb5fe8aca7a8604"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Population.meta",
+    "sha256": "f870201ab1bc8b500382833cb9fd37b78f25be6f809b1592509b3c53742f12dc"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Protocols/ResourceAddress.cs",
+    "sha256": "a9882f9088c49fe6c37286067d01f0e1d3f50567ba0a4f1f97758c82b23f3f64"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Protocols/ResourceAddress.cs.meta",
+    "sha256": "377b01669c3fd1e8cb49a8db4bb04ff758015f17b11ccfa6ff0be79850f39f37"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/Protocols.meta",
+    "sha256": "5a72d16a223925f7e60995123bc75a1e0d8efe2f26101db7a6a75ebca82b953f"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/World/Kernel.cs",
+    "sha256": "6e7a0dabed33024a991417d96ee4f80a8834989187d702bbac18d4c9746b3ce7"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/World/Kernel.cs.meta",
+    "sha256": "aeb29c4ff7580820ee382e9c57b5f9b5b4768e63822064eca22b504f43cdb10a"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime/World.meta",
+    "sha256": "4f96ed52840fd653a9cf8152658c4be1d1b55e1f85239eda0cf9480c751d5b09"
+  },
+  {
+    "path": "packages/com.homeless.dark/Runtime.meta",
+    "sha256": "5ae21a3cfcee5c0f24f07d9fd07bc17739da700ea211a7eb5389658994c1f874"
+  },
+  {
+    "path": "packages/com.homeless.dark/package.json",
+    "sha256": "af00eb74ea40a5df7e26571dcfbde3824582839c4f04100371655fc5d0ed317f"
+  },
+  {
+    "path": "tools/Dark.Cli/Dark.Cli.csproj",
+    "sha256": "4d460ea328a713779648e7662bf27ce719bd832ad11a31990e343306e412ead0"
+  },
+  {
+    "path": "tools/Dark.Cli/Program.cs",
+    "sha256": "944417ca5e4e86aa7117f4372db53aa69cbb6c0f9e7622226facd3a8b3ffde6c"
+  },
+  {
+    "path": "tools/art/UNITY_IMPORT_SPEC.md",
+    "sha256": "09f8b8bd0b89f9c2a1e23a5c2977cc7aaca3f70cf0c9d9d1132721439739d3cc"
+  },
+  {
+    "path": "tools/art/author_cafe.py",
+    "sha256": "b3fda50c1642ca2626c29dabd99829f34c28c658e84a839cd7c2a06c0ab8cfbd"
+  },
+  {
+    "path": "tools/art/fetch_materials.py",
+    "sha256": "d6006a14c1797f0c5b998919eaf397ae6b309a53f2f661fa00c85af9c743efbb"
+  },
+  {
+    "path": "tools/art/hero-recipes.json",
+    "sha256": "8da42eef1c901afc417a1984fa6296a134f191e3dd302e3e1197b109c285d15a"
+  },
+  {
+    "path": "tools/art/inspect_megacity.py",
+    "sha256": "77212b65f0334c4ea4807c183fc24837a0a423055f28cb69325db949e879c6ed"
+  },
+  {
+    "path": "tools/art/test_art_pipeline.py",
+    "sha256": "d2397ce83afb5a7312da591e804b95c6cd43ac8380b5cb86ff29b49c242cadd8"
+  },
+  {
+    "path": "tools/audio/README.md",
+    "sha256": "56d0e465742ed9d780ddbfcf348b3d1c5c576fddce736d95f68991defb8ebc24"
+  },
+  {
+    "path": "tools/audio/synthesize.py",
+    "sha256": "8fef90a92fc38e6f9d021151c858b594bf6005cd232e7d8fa938f01d42f99388"
+  },
+  {
+    "path": "tools/commission.py",
+    "sha256": "792d5c817554ee268dbe88f34acf325f6b7996f6295f850b4f14a712429a1514"
+  },
+  {
+    "path": "tools/geography/pipeline.py",
+    "sha256": "6b3ce62749efcb5b8ea9976dbfdf39a7e816ed11dbeec4396addb3ddd68e5679"
+  },
+  {
+    "path": "tools/geography/reproduce.py",
+    "sha256": "ac36445a7c281c55438816686ce17f0f47688f43cc35bc9f086dba5efb313c19"
+  },
+  {
+    "path": "tools/geography/tampa_fixture.py",
+    "sha256": "fc134d627f2fc0eaf70101332db2f859b619aef204e219ea25e3cb476605c0b6"
+  },
+  {
+    "path": "tools/run_checks.py",
+    "sha256": "b2d54afb02e9e4d0793799804e03003cc36836f965e06ea139e83ce794c0d5b7"
+  },
+  {
+    "path": "tools/telemetry/README.md",
+    "sha256": "27cc0301f39091eca1cd7348beadae26f233614c77178937638b9e4b434ee46b"
+  },
+  {
+    "path": "tools/telemetry/frames.py",
+    "sha256": "16767b8e8a560ed7fd4298cd105a2465a46d44920b198234e7f64652402edbea"
+  },
+  {
+    "path": "tests/Dark.Core.Tests/Dark.Core.Tests.csproj",
+    "sha256": "533d7f5a40e3f0012d192dc33ab69fb3cf9ca8b49eaf03d37a5c3cce742ea08a"
+  },
+  {
+    "path": "tests/Dark.Core.Tests/Program.cs",
+    "sha256": "3758c3589060ec4ea325dba859c1261919d0d515d229f5f9cde212a53ac9f9e3"
+  },
+  {
+    "path": "tests/Dark.Geography.Tests/Dark.Geography.Tests.csproj",
+    "sha256": "701cdf7fbbe7206f804e732b31176e8a36c66c232cc7524ee6eece24ce4e3565"
+  },
+  {
+    "path": "tests/Dark.Geography.Tests/Program.cs",
+    "sha256": "b3789d8ce989d56813bceb4ca552590e8707b1d9c4e6544f48cf5ac2d270b9c0"
+  },
+  {
+    "path": "tests/Dark.Math.Tests/Dark.Math.Tests.csproj",
+    "sha256": "ad83510720cb75c74e0d9848d320d0c99010025e6757c3617b3be1f61c12c1d4"
+  },
+  {
+    "path": "tests/Dark.Math.Tests/Fixtures/converse.json",
+    "sha256": "d25037de9a1dfc33258e99041281c0a365eb0b486795da85d2cbd0cb09eb3141"
+  },
+  {
+    "path": "tests/Dark.Math.Tests/Program.cs",
+    "sha256": "d3bb628592096664ff148e837ecba504ad061bc8fe9c2481d497f23b96bd7f54"
+  },
+  {
+    "path": "tests/Dark.Population.Tests/Dark.Population.Tests.csproj",
+    "sha256": "4b5b4bf29918828fa45efe47c95dac0cba5f38bcf9d2c7aea7259703d99f58a2"
+  },
+  {
+    "path": "tests/Dark.Population.Tests/Program.cs",
+    "sha256": "89b9215197eae7f1bed7f3b095240f0122df2147f1d1f221951c8e0945055a19"
+  },
+  {
+    "path": "tests/audio/test_synthesis.py",
+    "sha256": "edf162614ab130a37c327af11f85fdbc4257517e6695149b29a3a19d7953cc2c"
+  },
+  {
+    "path": "tests/geography/test_pipeline.py",
+    "sha256": "a20d06acf2ec1928e64fd89d49939973ae8278410be2f77ad41c6c140a3d9074"
+  },
+  {
+    "path": "tests/geography/test_reproduce.py",
+    "sha256": "437f7c72d3e94281f24dc6470f9fc9f1c520ef751b14dc20c53755e19057282d"
+  },
+  {
+    "path": "tests/geography/test_tampa_fixture.py",
+    "sha256": "3677372d8e81d720cbfef65079a51353d709605fb618fab97a6c3f9bd80a0b53"
+  },
+  {
+    "path": "tests/telemetry/test_frames.py",
+    "sha256": "74bfc6d1192fae52ae7bec324260f9ced559639261b001b2a33821f2c497e7de"
+  },
+  {
+    "path": "tests/test_cli.py",
+    "sha256": "157c12fb1c10c7ed0d4e8149273ef93fefb7e06d417fb3376e893da126636c99"
+  },
+  {
+    "path": "tests/test_commission.py",
+    "sha256": "17a622a595b63229278b30bb78558e74c92e57d389024c0b6da416af0ff4a827"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/FictionalCafe.mtl",
+    "sha256": "89c6bda82af98cebe7eba33bb64d968ffdf37e7ae4cb494f747206f85f3c4d56"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/FictionalCafe.mtl.meta",
+    "sha256": "16025df5ed1cc52816c001030cb055d983522537f2f7b50468be0b6c6869c0e4"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/FictionalCafe.obj",
+    "sha256": "d11773e8fd64a69048e67f96d0f8aefc7cee031ebfea2ce75983aa00010bcb73"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/FictionalCafe.obj.meta",
+    "sha256": "531ba2ea028d0e8a3b8585fec0bc0341080443bc9fb69b38ca3b9da01968bc90"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/geometry.json",
+    "sha256": "5aa0948ae24a599f5511be0c5293f9062e7334809d484cbe6c5e28dcd54bae28"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/geometry.json.meta",
+    "sha256": "9546179de4b4c5de16a5172ff854267c5685902f610c2e66d3f05d877ef4c7fd"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe.meta",
+    "sha256": "298ad6e5d4f2ea4a966f7f4eb149188c7fe84c1b590be41b1207ae8b6b86784c"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Architecture.meta",
+    "sha256": "db8f657c9253dd4b09d69ea17d43ee122ccaede107fdae5d751b274e670d43d2"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_AmbientOcclusion.jpg",
+    "sha256": "540bc5888cd57a78144a158f6dd1c9eba8481e2ec9f79ffdb3c46dfad41c84cb"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_AmbientOcclusion.jpg.meta",
+    "sha256": "5a24c18ae6c8f5c2bea82f95a83c8dbf627693255b44a482255d5f496cc2cc6f"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Color.jpg",
+    "sha256": "380c7b0d46cc6252a653aa9cffeae20527209d901499ad3c458bd8f4cc91c58c"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Color.jpg.meta",
+    "sha256": "ca51d07e25500f9a8b0f574978ff14bd4a68b8d37c46ed30868473f3d17c9d0e"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Displacement.jpg",
+    "sha256": "9e386329caefadfcbb0f310ee45f337b0281dbc81ef76f973a1bcfc7c3a1c9fb"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Displacement.jpg.meta",
+    "sha256": "398625d8e92969c6b4043d942d0b23e8b4d55844f8bc0b6b3d8bcc8f1ef5d81b"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_NormalGL.jpg",
+    "sha256": "4cfabded525f988da507bfe4375e16f7403eb3f56aef0168a25184bfe0f91d0d"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_NormalGL.jpg.meta",
+    "sha256": "68d491e49df4236f6443d49bb263baf3576d964a1c70b7ac2d31f0d6994f636f"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Roughness.jpg",
+    "sha256": "d5c794b29f4bf44540dbbb0ed4290958ad4f5fff0b7c4ac25f1a9aae2ea6646e"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Roughness.jpg.meta",
+    "sha256": "4e3ab2cb5ec29d2109d691b57c91295db2cf7dc2aa8faea2b78cc64158a5bd0d"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/maps.json",
+    "sha256": "7fbde7cfd20f5636868618512ec6540821db274060c9f5ebd3b7d3df64639faf"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/maps.json.meta",
+    "sha256": "124cba06a48e8626fe81b9d6b11c7a9e9abe65ca0d41439fb7b24966419a9b55"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A.meta",
+    "sha256": "cd5cad757f661a1582f6c3d18d802901c8571e13ab60b37a751e0d8577e1e310"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_AmbientOcclusion.jpg",
+    "sha256": "fa8a06afa1a1d625131378453f1b9d83ebe4ec6dd382131f0ad79129c677729d"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_AmbientOcclusion.jpg.meta",
+    "sha256": "ec3c0fcaa94dc2a9ff7f59a6a7b30307ae1ecfd982f119ab7383760e4923b04b"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Color.jpg",
+    "sha256": "c64488acb565874c7a9bc5e958d9b2da683f5ddd744dcf1e99c40319df55f8c0"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Color.jpg.meta",
+    "sha256": "d0a30e04e4f63d06c06a9c657988a206af7e84176f5eb0a57125b7b2d7440177"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Displacement.jpg",
+    "sha256": "952af5e1d01e749613d40f9ecc7f1553525f9b32ad5eb4d03c1cdfec1fbf8d90"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Displacement.jpg.meta",
+    "sha256": "0919035c33446675d843cfcbb4b0d6cd30788ef18d3176dd2a805b5e7ceac969"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_NormalGL.jpg",
+    "sha256": "f2175fed2bbf9db77507d8c1b74b0bd74acc4bac24a181fc3926c0587ff8a4ad"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_NormalGL.jpg.meta",
+    "sha256": "1534c640102f472b5fe82dd064f30233ff1fede6d355bd34ddefa46dca7e5289"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Roughness.jpg",
+    "sha256": "9f5d3c99dc24397965f0927b785fae5401dde66fe22b9a67ec5e3484ddff53b4"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Roughness.jpg.meta",
+    "sha256": "92322ce7a50586eb171a9e306fb39618541c0ddb82948be3c2de286fe5c4c07b"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/maps.json",
+    "sha256": "9b402f67c89544cd249dee2daebafb4a24e9487bb424e8452c9fce15ed1f38b9"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/maps.json.meta",
+    "sha256": "aa5a6d068bd92b5d0cd03fd21cf6ee28242418bce374f95919a51e13b2f1df5c"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059.meta",
+    "sha256": "f9acd6e39a5607d2c30569f82af71907bae764edd4ab025c467625828400c130"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Color.jpg",
+    "sha256": "fa27982687596d7aa080db1e9b88c30f48a3c32eb3e50b27a2ea27c431e4cde9"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Color.jpg.meta",
+    "sha256": "8df485e4ce45256fded52b6c01403c6bbfe5c8c750cb7ca64ed73977d4ef768e"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Displacement.jpg",
+    "sha256": "b962954034be53c994877c4ef91b9083ca91196e098cf279111449e138090405"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Displacement.jpg.meta",
+    "sha256": "c041b4aea94f8755db09479ae654ea9d08251458703b0afafc0d05c372357d97"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_NormalGL.jpg",
+    "sha256": "b077dfe6b3b8fbe794d82b9014d030fa01984a25ab67d2e21310995e6ea5b881"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_NormalGL.jpg.meta",
+    "sha256": "4b0947d520d16de9f6443b833f65656593d02fdbcf59bbbd52a9c96640e39dbf"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Roughness.jpg",
+    "sha256": "fd39973b8ef8212d1c99d18b6665595db3ab96f1c124e062fea52b9bda4ffa63"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Roughness.jpg.meta",
+    "sha256": "6ea64dfc2051860c4b95381b7a19eabe0745be3035b1304cf1da4fd0c3fe499f"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/maps.json",
+    "sha256": "fbe482660b897ba1a965699cbc69eda90038053092f7d8f079d835aecd4c9fc0"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034/maps.json.meta",
+    "sha256": "eeb158d520c76261150a8086168082022e501988b528a118f6c1bc82d8fb682c"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials/Concrete034.meta",
+    "sha256": "1b9ec69156a56a1f18f2fd50392a32b3a6f86b7114e1b59bfb52e1d4a380af85"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art/Materials.meta",
+    "sha256": "f5c2f9b36331c7f2495ccd16d574cc6377aa6c2a733b978d0b185c6bbde17f1f"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Art.meta",
+    "sha256": "79d89d3799b9adb2359a8edfc2b03bb541cb189a199875137e46b09a9976f1c1"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/ORIGINAL_AUDIO_LICENSE.txt",
+    "sha256": "8ca6ce4c770163987a9b99140bbc68f07719a59584d57b1ed65dbe6bbed31bce"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/ORIGINAL_AUDIO_LICENSE.txt.meta",
+    "sha256": "19ed49829e12bdc2916195f88969340b982d1c4926c1ed63a2675d8fc7966e61"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/original_arrival_motif.wav",
+    "sha256": "386e4ca404d00690c15069a810970bf9ca1cd7ebc0e32618f91b5f4032634ad5"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/original_arrival_motif.wav.meta",
+    "sha256": "f3cf72516214301ae8494b1abadf3b163d65f6ebe5d05a4d36529246af357fae"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/synthetic_footstep_left.wav",
+    "sha256": "1cc21a7635448e30bad6f79b26a53a66babf8a0110198200c2a4e737996441de"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/synthetic_footstep_left.wav.meta",
+    "sha256": "ddbca8fd49f0a95615f9697e035b3627e69b28230dd454ce0a6d68f7db3a043f"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/synthetic_footstep_right.wav",
+    "sha256": "bd2d3fe237c38650012c6ee85405fe1d6e8d06a8b7c256bba7bc20b6ab2fecc3"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/synthetic_footstep_right.wav.meta",
+    "sha256": "6c2f4c4d59feb5a8357d70e2400026a77c8cbb3d44ddb0bad0788c57a6fb4367"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/synthetic_rain_wind_loop.wav",
+    "sha256": "1553e9ca833297fc674b161547365418555bf43c2716c89a81dd65333201d826"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio/synthetic_rain_wind_loop.wav.meta",
+    "sha256": "6848d5640675996ad62781c7210b359d68687d6b4382bea8f37b82cfa70429d2"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Audio.meta",
+    "sha256": "21cf1fecd075c3bc4c3b5fe45c9980c737c38b1868087ba1dea947195a8b1217"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor/HOMELESS.Editor.asmdef",
+    "sha256": "44bd70c194679bd028559ed437a97ad8c02e386e9c352e9adcd5d341d9869eee"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor/HOMELESS.Editor.asmdef.meta",
+    "sha256": "608d20497918adb376ade41cca4ab1660285d0942f828b74eea3e9d839505347"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor/SourceSceneBuilder.cs",
+    "sha256": "922efe7c13c59a91210d12993d71c37a33dfe9f64eb944f9da13f4dc46623125"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor/SourceSceneBuilder.cs.meta",
+    "sha256": "5795812f5d960a3bf79487f8521acee3374b0ad63e41d07e8c60c02af53e57af"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor/SurfaceImporter.cs",
+    "sha256": "bebee6f6c352a0dd811737dc03396890da0d8699b5845ed4e0514be3aa65c54e"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor/SurfaceImporter.cs.meta",
+    "sha256": "ca00fae72e3e34231f6f28216cb56a5d3f4937373362f07241411a310929bc71"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Editor.meta",
+    "sha256": "b74ea70faa684714f12730f7fa080f48545ba6189955b5ba65d53ecebfb5f81d"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime/HOMELESS.Unity.asmdef",
+    "sha256": "0a10c9be41aa7f56620c55991568884ba6cde234168d70ebb2f529ce8d3d8096"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime/HOMELESS.Unity.asmdef.meta",
+    "sha256": "086104cf0a89f609fb043e11f34ea5d9918be6b44dad49737765d653b54da315"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime/ReviewSoundscape.cs",
+    "sha256": "2d9162fd59d106fad3078bc00e4b5ff9aae773e105b9d701fdd42be4147fea34"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime/ReviewSoundscape.cs.meta",
+    "sha256": "1e03dfac8b50d3cef269a36cacd2ef62f2691b35dc1a4b77dbc8d46f765fbde3"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime/ReviewWalker.cs",
+    "sha256": "11e5b10488818cc402cef044e6face7906bf6b2546466b17ad84d6dcccb9b0f4"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime/ReviewWalker.cs.meta",
+    "sha256": "7e584e57ecc70f635a5a754d153eddfaf18aff6ea26a527b0c093dbf8ff11391"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Runtime.meta",
+    "sha256": "efbf071485d4b0de92cc8421aeb336b65a4579e2e63b5b209f48de092e1fc18a"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Tests/Editor/HOMELESS.Editor.Tests.asmdef",
+    "sha256": "3004e47f4d455e242e72ecc946f713c897c72d1dc93d9f5c5f5fa10f12ba07b0"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Tests/Editor/HOMELESS.Editor.Tests.asmdef.meta",
+    "sha256": "550e62781077801ca057f99a6df7ffdd494359ceb4bb8ab0278915459abdd7bf"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Tests/Editor/SourcePreparationTests.cs",
+    "sha256": "78efeb0c08e150f0651d37364b5c525a38b93fecda4bb337383176eb99f571e6"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Tests/Editor/SourcePreparationTests.cs.meta",
+    "sha256": "ebaa9d9dde8371a0e6074a807bd8ed941db29780f4ee6c32fb61701f802cc928"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Tests/Editor.meta",
+    "sha256": "f5115068779423a3b2f1b92a667d1572cfe70b0a2ec6412984aad26bd0374b8f"
+  },
+  {
+    "path": "unity/Assets/HOMELESS/Tests.meta",
+    "sha256": "d20d9d00f29c83cce8dbfb7ff2925b8fe09c957c60c920ee0aa7ce21f7aa2ebf"
+  },
+  {
+    "path": "unity/Assets/HOMELESS.meta",
+    "sha256": "c5c9baa448867cb44fe356091c3e9f834deb9b3aa4d2e19677085b7aed6bc924"
+  },
+  {
+    "path": "unity/Assets.meta",
+    "sha256": "74c7dc83a662ac6d091b52ad9f0f03e508d69eab2b08971e7ce0bd00f1a39931"
+  },
+  {
+    "path": "unity/Packages/manifest.json",
+    "sha256": "f08f56a3246fb8f154271739d7d0771febe5286d223e66ed35afc660b15da457"
+  },
+  {
+    "path": "unity/ProjectSettings/ProjectSettings.asset",
+    "sha256": "ba4cc2188bbf223b7498f5fa02c3be4ff9d578d50b2ec0227742152d8dd41098"
+  },
+  {
+    "path": "unity/ProjectSettings/ProjectVersion.txt",
+    "sha256": "1a47686c7a9ac92eae6b23cf3358d1329fbbe8237051ed631faf6e15a945402a"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "attribution": "© OpenStreetMap contributors",
+  "bbox_south_west_north_east": [
+    33.94,
+    -118.48,
+    34.01,
+    -118.41
+  ],
+  "bytes": 548,
+  "content_type": "application/json",
+  "etag": null,
+  "id": "marina-del-rey",
+  "last_modified": null,
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "path": "sources/marina-del-rey.osm.json",
+  "query": "[out:json][timeout:10][maxsize:8388608];node[\"place\"][\"name\"=\"Marina del Rey\"](33.94,-118.48,34.01,-118.41);out body;",
+  "resolved_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A10%5D%5Bmaxsize%3A8388608%5D%3Bnode%5B%22place%22%5D%5B%22name%22%3D%22Marina+del+Rey%22%5D%2833.94%2C-118.48%2C34.01%2C-118.41%29%3Bout+body%3B",
+  "retrieved_at": "2026-10-21T08:11:28.976783+00:00",
+  "reused": false,
+  "scope": "Named-place reference point only; harbor geometry not acquired",
+  "sha256": "fcfa1f78e58eec955c609303bc90c7d7f8c09233ea3cc7e746930dae731c290b",
+  "snapshot_requested": null,
+  "source_release": "live OSM query; exact bytes pinned below",
+  "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A10%5D%5Bmaxsize%3A8388608%5D%3Bnode%5B%22place%22%5D%5B%22name%22%3D%22Marina+del+Rey%22%5D%2833.94%2C-118.48%2C34.01%2C-118.41%29%3Bout+body%3B"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "operation": "Asphalt024 candidate API exact query",
+    "result": "No such exact ID; corrected to Asphalt024A before source download",
+    "recovered": true
+  },
+  {
+    "operation": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "result": "HTTP 403; ambientCG publisher license HTML preserved and legalcode.en fallback attempted",
+    "recovered": "see assets/licenses"
+  }
+]

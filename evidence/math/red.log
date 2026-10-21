@@ -1,0 +1,59 @@
+FAIL WGS84 literal equator and poles: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Numerics.Geodesy.ToEcef(Geodetic g) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 6
+   at Program.<>c.<Main>b__2_0() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 17
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Antimeridian seam and ENU axis orientation: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Numerics.Geodesy.ToEcef(Geodetic g) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 6
+   at Program.<>c.<Main>b__2_1() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 23
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Geodesy rejects nonfinite, invalid latitude and undefined center: System.Exception: expected ArgumentOutOfRangeException
+   at Program.Throws[T](Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 143
+   at Program.<>c.<Main>b__2_2() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 30
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL 1000 stratified WGS84 and local frame round trips seed 65163: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Numerics.Geodesy.ToEcef(Geodetic g) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 6
+   at Program.<>c.<Main>b__2_3() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 41
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Exact population shares and ordinal tie breaking: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Numerics.IntegerApportionment.Allocate(UInt64 n, IReadOnlyList`1 weights) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 9
+   at Program.<>c.<Main>b__2_4() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 52
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Allocation refuses duplicate, empty and zero denominator: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Numerics.IntegerApportionment.Allocate(UInt64 n, IReadOnlyList`1 weights) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 9
+   at Program.<>c.<Main>b__2_21() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 59
+   at Program.Throws[T](Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 143
+   at Program.<>c.<Main>b__2_5() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 59
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Population conservation, permutation and quota property seed 25025: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Numerics.IntegerApportionment.Allocate(UInt64 n, IReadOnlyList`1 weights) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Numerics/Kernel.cs:line 9
+   at Program.<>c.<Main>b__2_6() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 67
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Five cells keep zero, missing, forbidden and foreign distinct: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Grammar.NumberCell.Value(Decimal n) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Grammar/Kernel.cs:line 6
+   at Program.<>c.<Main>b__2_7() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 74
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Inverse keeps image failure, kernel failure and unique zero separate: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Grammar.IntegerConverse.Divide(BigInteger a, BigInteger b) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Grammar/Kernel.cs:line 9
+   at Program.<>c.<Main>b__2_8() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 82
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Tashkil preserves skeleton, context locality and complementary observations: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.Grammar.TashkilResolver.Resolve(IReadOnlyDictionary`2 context) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Grammar/Kernel.cs:line 13
+   at Program.<>c.<Main>b__2_9() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 97
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Plate reconnect changes reachability with revision and inverse witness: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Reachable(String a, String b) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_10() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 105
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Occupied refusal, stale match, budget and invalid destination are atomic: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Rewrite(RewriteRequest r) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_11() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 112
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Graph carriage retains local occupants with continuous mathematical path: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Rewrite(RewriteRequest r) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_12() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 120
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+FAIL Witnessed relocation records origin and destination; incomplete/straddler refused: System.NotImplementedException: The method or operation is not implemented.
+   at Dark.World.PlateWorld.Rewrite(RewriteRequest r) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/World/Kernel.cs:line 14
+   at Program.<>c.<Main>b__2_13() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 128
+   at Program.Run(String name, Action a) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Math.Tests/Program.cs:line 138
+TOTAL 0 PASS, 14 FAIL

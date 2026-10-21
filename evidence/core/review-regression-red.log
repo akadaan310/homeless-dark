@@ -1,0 +1,54 @@
+PASS bounded compiler accepts registered atomic predicates and emits obligations
+PASS compiler refuses unsupported predicates, duplicates, and oversized policies
+PASS founder name and PURL do not authenticate an actor
+PASS authority rejects expired revoked and foreign process sessions
+PASS world writes check scope revision and UTF8 budget and leave refusals unchanged
+PASS duplicate request is exactly once and altered duplicate is refused
+PASS canonical framing distinguishes delimiters and rejects unpaired Unicode
+PASS history validates replay and catches tamper truncation and order against trusted head
+PASS durable journal restores world and duplicate identity after reload
+PASS durability failure cannot commit in memory
+PASS NPC refusal and knowledge require causal local observations
+PASS PURL resource parsing is canonical pure discovery with no implied authority
+FAIL R1 session issued at tick 100 refuses a proposed pre-issue effect: System.Exception: Assertion failed
+   at Program.Assert(Boolean value) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 167
+   at Program.<>c.<Main>b__5_12() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 123
+   at Program.Test(String name, Action f) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 166
+FAIL R1 expiry cannot be bypassed with a backdated request: System.Exception: Assertion failed
+   at Program.Assert(Boolean value) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 167
+   at Program.<>c.<Main>b__5_13() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 131
+   at Program.Test(String name, Action f) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 166
+FAIL R1 idle world rejects a session after authoritative expiry: System.Exception: Assertion failed
+   at Program.Assert(Boolean value) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 167
+   at Program.<>c.<Main>b__5_14() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 138
+   at Program.Test(String name, Action f) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 166
+FAIL R2 invalid UTF8 sink bytes become JournalException without mutation: System.Text.DecoderFallbackException: Unable to translate bytes [FF] at index 0 from specified code page to Unicode.
+   at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, Int32 index)
+   at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, Int32 index)
+   at System.Text.Encoding.GetCharsWithFallback(ReadOnlySpan`1 bytes, Int32 originalBytesLength, Span`1 chars, Int32 originalCharsLength, DecoderNLS decoder, Boolean throwForDestinationOverflow)
+   at System.Text.UTF8Encoding.GetCharsWithFallback(ReadOnlySpan`1 bytes, Int32 originalBytesLength, Span`1 chars, Int32 originalCharsLength, DecoderNLS decoder, Boolean throwForDestinationOverflow)
+   at System.Text.Encoding.GetCharsWithFallback(Byte* pOriginalBytes, Int32 originalByteCount, Char* pOriginalChars, Int32 originalCharCount, Int32 bytesConsumedSoFar, Int32 charsWrittenSoFar, DecoderNLS decoder)
+   at System.Text.Encoding.GetChars(Byte* pBytes, Int32 byteCount, Char* pChars, Int32 charCount, DecoderNLS decoder)
+   at System.Text.DecoderNLS.GetChars(Byte[] bytes, Int32 byteIndex, Int32 byteCount, Char[] chars, Int32 charIndex, Boolean flush)
+   at System.IO.StreamReader.ReadBuffer()
+   at System.IO.StreamReader.get_EndOfStream()
+   at Dark.History.FileEventSink.Append(JournalEvent item) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/History/EventJournal.cs:line 88
+   at Program.<>c__DisplayClass5_4.<Main>b__31() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 146
+   at Program.Throws[T](Action f) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 169
+   at Program.<>c.<Main>b__5_15() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 146
+   at Program.Test(String name, Action f) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 166
+FAIL R2 malformed journal is typed storage refusal with existing memory and bytes intact: System.Text.DecoderFallbackException: Unable to translate bytes [FF] at index 345 from specified code page to Unicode.
+   at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, Int32 index)
+   at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, Int32 index)
+   at System.Text.Encoding.GetCharsWithFallback(ReadOnlySpan`1 bytes, Int32 originalBytesLength, Span`1 chars, Int32 originalCharsLength, DecoderNLS decoder, Boolean throwForDestinationOverflow)
+   at System.Text.UTF8Encoding.GetCharsWithFallback(ReadOnlySpan`1 bytes, Int32 originalBytesLength, Span`1 chars, Int32 originalCharsLength, DecoderNLS decoder, Boolean throwForDestinationOverflow)
+   at System.Text.Encoding.GetCharsWithFallback(Byte* pOriginalBytes, Int32 originalByteCount, Char* pOriginalChars, Int32 originalCharCount, Int32 bytesConsumedSoFar, Int32 charsWrittenSoFar, DecoderNLS decoder)
+   at System.Text.Encoding.GetChars(Byte* pBytes, Int32 byteCount, Char* pChars, Int32 charCount, DecoderNLS decoder)
+   at System.Text.DecoderNLS.GetChars(Byte[] bytes, Int32 byteIndex, Int32 byteCount, Char[] chars, Int32 charIndex, Boolean flush)
+   at System.IO.StreamReader.ReadBuffer()
+   at System.IO.StreamReader.get_EndOfStream()
+   at Dark.History.FileEventSink.Append(JournalEvent item) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/History/EventJournal.cs:line 88
+   at Dark.Core.SignWorld.SetSign(ActorSession session, String requestId, Int64 expectedRevision, Int64 tick, String target, String value) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/packages/com.homeless.dark/Runtime/Core/SignWorld.cs:line 49
+   at Program.<>c.<Main>b__5_16() in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 157
+   at Program.Test(String name, Action f) in /home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs:line 166
+CORE: 12 passed, 5 failed

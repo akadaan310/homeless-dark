@@ -1,0 +1,79 @@
+
+> nidaa-engine@0.1.0 check
+> node tools/check.mjs
+
+
+core
+  ok   rng is deterministic for a seed
+  ok   rng stays in [0,1)
+  ok   fbm returns a finite value in range
+  ok   curl returns a finite vector
+  ok   vec2 length
+  ok   vec2 perp is orthogonal
+  ok   spatial hash finds near items
+  ok   spatial hash excludes far items
+  ok   emitter unsubscribes
+  ok   pool resets released items
+
+springs
+  ok   spring reaches its target
+  ok   spring reports settled
+  ok   critically damped spring does not overshoot
+  ok   under-damped spring overshoots
+  ok   spring survives a 900ms frame
+  ok   spring2 settles on both axes
+  ok   tween completes and is culled
+
+physics
+  ok   uniform force accelerates by mass-independent a
+  ok   body integrates position
+  ok   orbital velocity yields a stable orbit
+  ok   orbit does not decay into the star
+  ok   distance constraint converges to rest length
+  ok   static body is not moved by a constraint
+  ok   ring constraint holds the radius
+  ok   collision separates overlapping bodies
+  ok   elastic collision reverses approach
+  ok   damping is frame-rate independent
+  ok   lifetimes reap bodies and emit
+  ok   pick finds the nearest pickable
+  ok   pick misses when out of range
+  ok   homing force returns a body to its home
+  ok   shockwave pushes bodies outward
+
+camera + interaction
+  ok   screen centre maps to camera position
+  ok   world→screen is the inverse of screen→world
+  ok   round trip is stable
+  ok   zoomAt keeps the anchor fixed
+  ok   shake produces an offset then decays
+  ok   shake fully decays
+  ok   viewBounds is ordered
+  ok   inertia snaps to a detent
+
+layouts
+  ok   field generates points
+  ok   field respects minimum spacing
+  ok   field assigns visuals
+  ok   hubSpokes builds hub + spokes
+  ok   hubSpokes marks the hub
+  ok   hubSpokes links children to parents
+  ok   necklace has the requested count
+  ok   orbitalShells populates rings
+  ok   satelliteClusters builds a hub and clusters
+  ok   cross builds four arms
+  ok   arcChain chains its nodes
+  ok   parentLinks derives edges from a tree
+
+constellation graph
+  ok   tuple edges use the default link length
+  ok   tuple and object edges agree
+  ok   radialLayout spreads siblings apart
+
+clock
+  ok   clock runs the expected number of fixed steps
+  ok   clock renders once per advance
+  ok   clock tracks simulated time
+  ok   timeScale 0 freezes the simulation
+
+59 passed, 0 failed

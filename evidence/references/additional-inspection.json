@@ -1,0 +1,69 @@
+{
+  "schema": "homeless.reference-inspection/1",
+  "sources": [
+    {
+      "repository": "https://github.com/akadaan310/snad",
+      "clone_exit": 0,
+      "code_copied": false,
+      "tests": "NOT_RUN",
+      "commit": "790f09605d376be08e240f67b99f53fbc53d7b1b",
+      "license_paths": [
+        "LICENSE",
+        "packages/snad-core/LICENSE"
+      ],
+      "readme_sha256": "a1c4010ed89f3b4f4236b53df3b3705bf4ab1953561ea142a2c739b9486c4b15",
+      "inspected_utc": "2026-10-21T08:34:04.458244+00:00",
+      "native_unity_adapter": "NOT_IMPLEMENTED",
+      "reference_only": true,
+      "data_or_corpus_copied": false,
+      "license": "MIT for original code; third-party corpus terms separate",
+      "reference_tests": {
+        "status": "NOT_RUN",
+        "reason": "TypeScript/Vite dependency set not installed in this inspection; no SNAD port or HOMELESS binding has been made."
+      },
+      "scope": "Attribution/discourse SDK; supplied annotations are not inferred speaker identity. No corpus, recordings, source code or mission instructions copied."
+    },
+    {
+      "repository": "https://github.com/akadaan310/anwaa",
+      "clone_exit": 0,
+      "code_copied": false,
+      "tests": "NOT_RUN",
+      "commit": "b90afafe009855c49ea7ffa32061f51a606eb597",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_sha256": "529e37d44307583244c106087338f4ca873b57c124a4feded591a4470f6b5a61",
+      "inspected_utc": "2026-10-21T08:34:04.458280+00:00",
+      "native_unity_adapter": "NOT_IMPLEMENTED",
+      "reference_only": true,
+      "data_or_corpus_copied": false,
+      "license": "MIT",
+      "reference_tests": {
+        "command": "npm run check",
+        "exit_code": 0,
+        "log": "evidence/references/anwaa-tests.log",
+        "log_sha256": "f166032c0f5a54fc78718dbb13a461e67d3796fdadfafc55eb70e590036bdb2d"
+      },
+      "scope": "nidaa-engine browser canvas interaction source; headless numerical tests only. Browser renderer not adopted in Unity-only HOMELESS."
+    },
+    {
+      "repository": "https://github.com/akadaan310/MUSA",
+      "clone_exit": 0,
+      "code_copied": false,
+      "tests": "NOT_RUN",
+      "commit": "d797135727787124d18193f04af26d6c3fed03a5",
+      "license_paths": [],
+      "readme_sha256": "b73cd91097692eedb7cc674023c2ea3b0eb8c9a5ba81d3ceb89406f3d03bafe3",
+      "inspected_utc": "2026-10-21T08:34:04.458353+00:00",
+      "native_unity_adapter": "NOT_IMPLEMENTED",
+      "reference_only": true,
+      "data_or_corpus_copied": false,
+      "license": "No license file found; no source reused",
+      "reference_tests": {
+        "status": "NOT_RUN",
+        "reason": "No automated SDK test command found; documented shell/control program not executed."
+      },
+      "scope": "Luna Agent research documents plus local command shell, not an already-integrated HOMELESS mathematics or ACSP service; external instructions are reference material only."
+    }
+  ]
+}

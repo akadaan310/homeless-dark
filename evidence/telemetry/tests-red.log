@@ -1,0 +1,23 @@
+test_frames (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_frames (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_frames
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/telemetry/test_frames.py", line 13, in <module>
+    SPEC.loader.exec_module(frames)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/telemetry/frames.py'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

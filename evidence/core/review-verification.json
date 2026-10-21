@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "scope": [
+    "R1",
+    "R2"
+  ],
+  "core": {
+    "passed": 20,
+    "failed": 0
+  },
+  "math": {
+    "passed": 21,
+    "failed": 0
+  },
+  "cli": {
+    "passed": 3,
+    "failed": 0
+  },
+  "files": {
+    "packages/com.homeless.dark/Runtime/Core/LocalAuthority.cs": "86b340fe43e36458101989a0d22ea27ed2651dac0329f5cfb44837e26096c463",
+    "packages/com.homeless.dark/Runtime/Core/SignWorld.cs": "d900693c56055a6e01283db20a0115604dd821e9a6d0b80d8fafda74a2791ebe",
+    "packages/com.homeless.dark/Runtime/History/EventJournal.cs": "4c7722e95c6376fe7482a0b11b5d2d101e94c404c62716d9786ffcb6f3c176ea",
+    "tests/Dark.Core.Tests/Program.cs": "3758c3589060ec4ea325dba859c1261919d0d515d229f5f9cde212a53ac9f9e3",
+    "tools/Dark.Cli/Program.cs": "75e4a68d3a9936d7732ac6589d17082bb1e58518c49f0443082d60e196ed60d7"
+  },
+  "logs": {
+    "evidence/core/review-cli-build.log": "6ed88d9c1a3e6d47f8df4fea6c45ba836c907b6da4999d5149a7e7e5b8251d9e",
+    "evidence/core/review-cli-final.log": "de9144180bd7446514d85554ab7e43b9b564efee2a074238d9a4fcbb83958fac",
+    "evidence/core/review-clock-red.log": "6308ec73770b690bc278951d21f04bb7ecc389955665683e2b2d222b78e46942",
+    "evidence/core/review-core-final.log": "3e17158da851e3998af49283ac5bc843764c05f97554bfdd131602dbb80ff5cb",
+    "evidence/core/review-fixed-repro.log": "e044ac05163e3d759593ecdfae447fa34d88b4cffc46310d3eb1a103b1ad6233",
+    "evidence/core/review-math-final.log": "95822c67e251da40c5f74283b0a24d631206a0d523eab7f9002110d884a39cd5",
+    "evidence/core/review-original-repro.log": "b2308b3a8fa011c9da7902a8a08b44a1df1fd67db5d62035190617149431dedc",
+    "evidence/core/review-r1-green.log": "8b779ca0b48e1388fd33ba7b1b367ae713da4ecdd00f5ca914cf1a420b7c56e3",
+    "evidence/core/review-regression-green.log": "ef115a43d4ed07ad4c71d18e8e1f698d0f892dc0cf511ba49d4d338d542fa792",
+    "evidence/core/review-regression-red.log": "217505f0aa3fc4255da6fd21412eb7b61a296d17dc75b04c24f74fca54d0e2b4"
+  }
+}

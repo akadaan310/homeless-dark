@@ -1,0 +1,22 @@
+PASS WGS84 literal equator and poles
+PASS Antimeridian seam and ENU axis orientation
+PASS Geodesy rejects nonfinite, invalid latitude and undefined center
+PASS 1000 stratified WGS84 and local frame round trips seed 65163
+PASS Supported negative-height polar boundary round trips
+PASS Exact population shares and ordinal tie breaking
+PASS Allocation refuses duplicate, empty and zero denominator
+PASS Population conservation, permutation and quota property seed 25025
+PASS Five cells keep zero, missing, forbidden and foreign distinct
+PASS Inverse keeps image failure, kernel failure and unique zero separate
+PASS Tashkil preserves skeleton, context locality and complementary observations
+PASS Plate reconnect changes reachability with revision and inverse witness
+PASS Occupied refusal, stale match, budget and invalid destination are atomic
+PASS Graph carriage retains local occupants with continuous mathematical path
+PASS Witnessed relocation records origin and destination; incomplete/straddler refused
+PASS Connectivity flag distinguishes reconnection from actual reachability change
+PASS Snapshot isolation, foreign inverse and explicit invalid policy refusal
+PASS Straddlers on either boundary side and omitted attached objects refuse atomically
+PASS Plate coordinates reject nonlocal or overflow-prone centers
+PASS Port matches 650 pinned GiN modular converse outputs
+PASS 200 sequential plate revisions preserve unaffected state and exact inverses
+TOTAL 21 PASS, 0 FAIL

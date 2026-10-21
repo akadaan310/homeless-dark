@@ -1,0 +1,7 @@
+{
+  "name": "Dark.Core",
+  "rootNamespace": "Dark",
+  "references": [],
+  "autoReferenced": true,
+  "noEngineReferences": true
+}

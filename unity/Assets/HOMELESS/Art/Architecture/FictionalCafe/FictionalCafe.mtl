@@ -1,0 +1,53 @@
+# Original material descriptions; ambientCG texture links retain CC0 rights
+newmtl Bricks059
+Kd 0.55 0.23 0.14
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+map_Kd ../../Materials/Bricks059/Bricks059_2K-JPG_Color.jpg
+newmtl Concrete034
+Kd 0.7 0.7 0.65
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+map_Kd ../../Materials/Concrete034/Concrete034_2K-JPG_Color.jpg
+newmtl Frame
+Kd 0.055 0.075 0.07
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+newmtl Glass
+Kd 0.65 0.82 0.86
+Ks 0.04 0.04 0.04
+Ns 32
+d 0.22
+newmtl Roof
+Kd 0.16 0.18 0.17
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+newmtl Metal
+Kd 0.18 0.2 0.19
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+newmtl Wood
+Kd 0.28 0.14 0.065
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+newmtl AwningLight
+Kd 0.88 0.82 0.66
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+newmtl AwningDark
+Kd 0.1 0.24 0.2
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0
+newmtl Lamp
+Kd 0.95 0.8 0.5
+Ks 0.04 0.04 0.04
+Ns 32
+d 1.0

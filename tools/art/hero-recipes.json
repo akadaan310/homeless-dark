@@ -1,0 +1,260 @@
+{
+  "FictionalCafe": {
+    "family": "buildings/storefronts/interiors",
+    "recipe": "Original 12 m \u00d7 8 m caf\u00e9; brick plinth, stucco fascia, framed glazing and opening doorway, curved awning, interior floor/counter/tables, segmented curb. Geometry prepared; shading/collision/native appearance unverified.",
+    "construction_status": "source_geometry_authored",
+    "visual_acceptance": "NOT_RUN",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "output": "unity/Assets/HOMELESS/Art/Architecture/FictionalCafe/FictionalCafe.obj",
+    "parameters": {
+      "width_m": 12,
+      "depth_m": 8,
+      "height_m": 4.04,
+      "awning_stripes": 24,
+      "canopy_curve_segments": 8,
+      "interior_tables": 3,
+      "curb_segments": 14
+    }
+  },
+  "OriginalHumans": {
+    "family": "fully rigged humans/hair/wardrobe",
+    "recipe": "Author two realistic adults from original sculpt; high/low topology, UV skin maps, hair cards, clothes, facial blendshapes and compatible humanoid skeleton. Unbuilt; no primitive stand-in satisfies quality.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "adults": 2,
+      "stature_m": [
+        1.68,
+        1.82
+      ],
+      "source_sculpt_target_faces": 2000000,
+      "lod_triangle_targets": [
+        45000,
+        22000,
+        9000
+      ],
+      "head_skin_source_px": 4096,
+      "body_skin_source_px": 4096,
+      "hair_cards_lod0_max": 3500,
+      "humanoid_bones_min": 55
+    },
+    "steps": [
+      "Construct original proportioned anatomical sculpt; no protected scans or celebrity likeness.",
+      "Retopologize face loops, shoulders, hands, hips and knees; UV islands with matched seam texel density.",
+      "Paint original skin albedo, tangent normals, roughness, thickness, eye wetness and hair transparency.",
+      "Create original regional everyday clothing meshes with separated sleeves/hem and plausible thickness.",
+      "Rig compatible humanoid armature; weight-paint joint bends; author face blendshapes for visemes/blinks.",
+      "Bake maps and test 120-degree shoulder/knee deformation; generate lower LODs and card shadow tests."
+    ],
+    "blocker": "No original sculpt, skin/hair maps, weighted rig or facial deformation bytes exist. Photoreal human gate BLOCKED."
+  },
+  "OriginalMotion": {
+    "family": "everyday animations",
+    "recipe": "Original authored humanoid keyframes for walk/idle/talk/turn/sit with contact markers; retarget and foot-lock QA. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "frame_rate": 30,
+      "clip_seconds": {
+        "idle": 4,
+        "walk": 1.1,
+        "talk_gesture": 3,
+        "turn_90": 1.2,
+        "sit": 2.5
+      },
+      "walk_stride_m": 1.35
+    },
+    "steps": [
+      "Keyframe pelvis/root with explicit heel strike and toe-off markers on the finished OriginalHumans rig.",
+      "Add counter-rotation, planted-foot IK, arm swing, gaze and distinct conversational gestures.",
+      "Export root-motion and in-place variants without ground drift; record feet/contact and clip bounds.",
+      "Retarget both proportions and test slopes, sitting contact and interrupted blends."
+    ],
+    "blocker": "Finished humanoid rig unavailable; original clips unbuilt. No claim that numeric gait data is acquired animation."
+  },
+  "OriginalSedan": {
+    "family": "close cars+interiors",
+    "recipe": "Original unbranded sedan exterior and cabin from parameterized splines, wheels, seams, separate doors, seats, steering and glass. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "length_m": 4.65,
+      "width_m": 1.82,
+      "height_m": 1.48,
+      "wheelbase_m": 2.7,
+      "wheel_radius_m": 0.32,
+      "cross_sections": 48,
+      "lod_triangle_targets": [
+        65000,
+        26000,
+        8500
+      ]
+    },
+    "steps": [
+      "Loft original unbranded body surface from explicit wheelbase/cabin spline cross-sections; quad topology around fenders.",
+      "Model separate door panels, seals, handles, wheel spokes, tread, suspension and brake geometry.",
+      "Author cabin floor, seats/headrests, belts, dashboard, steering wheel, console and rearview mirror.",
+      "Unwrap and paint original PBR paint/rubber/fabric/glass maps; bake normal bevels from source.",
+      "Place pivots and seat anchors; test articulated door/wheel clearance before physics integration."
+    ],
+    "blocker": "No exterior/cabin meshes or PBR textures exist; hero car and drivable interaction BLOCKED."
+  },
+  "OriginalCivilAircraft": {
+    "family": "aircraft",
+    "recipe": "Original unbranded civil aircraft with airfoil-wing topology, articulated gear and cabin. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "fuselage_length_m": 8.1,
+      "wingspan_m": 10.4,
+      "fuselage_sections": 64,
+      "airfoil_samples": 48,
+      "lod_triangle_targets": [
+        70000,
+        28000,
+        9000
+      ]
+    },
+    "steps": [
+      "Loft original civil fuselage and generic airfoil sections; derive wings/tail as closed geometry.",
+      "Build gear, flaps, ailerons, propeller, navigation-light housings, seats and cockpit controls separately.",
+      "Create original paint/glass/rubber/cabin materials; bake panel detail and generate silhouette-preserving LODs.",
+      "Validate scale, articulated control pivots, boarding clearance and collision before a flight adapter."
+    ],
+    "blocker": "No aircraft source mesh, cockpit, rig or native flight exists."
+  },
+  "OriginalLaunchHarbor": {
+    "family": "ships/harbors",
+    "recipe": "Original launch hull from lofted sections plus deck, seats, docking hardware and harbor modules. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "launch_length_m": 8,
+      "beam_m": 2.7,
+      "hull_sections": 48,
+      "section_points": 32,
+      "dock_module_m": [
+        6,
+        2
+      ]
+    },
+    "steps": [
+      "Loft original closed chine hull sections with continuous bow/stern; model deck and cabin shell.",
+      "Build rails, cleats, fenders, seats, steering, propeller and docking bollards.",
+      "Author original worn fiberglass/wood/metal/rubber maps and stable LOD silhouette.",
+      "Provide boarding surface and waterline anchors for a separately validated buoyancy/harbor adapter."
+    ],
+    "blocker": "No launch, harbor, boarding rig or material source exists."
+  },
+  "OriginalRegionalFoliageWater": {
+    "family": "vegetation/water",
+    "recipe": "Original subtropical tree branching/leaf-card atlases, trunk normals, LODs, and URP water shader. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "tree_height_m": [
+        4,
+        12
+      ],
+      "branch_levels": 4,
+      "leaf_atlas_px": 2048,
+      "lod_triangle_targets": [
+        18000,
+        7000,
+        1800
+      ]
+    },
+    "steps": [
+      "Author region-plausible subtropical branching profiles and original leaf silhouettes/vein maps.",
+      "Generate bark cylinders with root flare and branching joins; place authored leaf cards with bounded clumping.",
+      "Bake alpha/normal/roughness atlases and wind vertex masks; compare silhouette, overdraw and shadows by LOD.",
+      "Build original URP water normal layers, shoreline blend, restrained Fresnel and bounded depth-color shader."
+    ],
+    "blocker": "No source foliage atlases/meshes or water shader; native overdraw, climate fit and temporal quality unverified."
+  },
+  "OriginalSkyWeather": {
+    "family": "sky/weather",
+    "recipe": "Original URP procedural atmosphere, rain particles, wetness layers; factual celestial input remains separate. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "rain_particle_budget_proposal": 1500,
+      "wetness_range": [
+        0,
+        1
+      ],
+      "sky_lut_px": [
+        256,
+        128
+      ]
+    },
+    "steps": [
+      "Implement original daylight/dusk atmosphere approximation with source-based sun direction and independent fictional effects.",
+      "Author original rain streak alpha sprites and splash atlas; bound particle lifetime/velocity/visible count.",
+      "Drive wetness-normal/smoothness blending through bounded world weather fields.",
+      "Measure temporal stability, GPU time and camera-readable sky/billboard projection on target."
+    ],
+    "blocker": "No source weather shaders/textures; budgets are proposals, not device measurements."
+  },
+  "OriginalSpatialAudio": {
+    "family": "audio",
+    "recipe": "Original licensed field recordings/performances and loop editing for caf\u00e9, traffic, footsteps, weather; no recordings obtained. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "source_pcm_hz": 48000,
+      "source_bit_depth": 24,
+      "channels": "mono point sources / stereo ambience",
+      "loop_min_seconds": 30
+    },
+    "steps": [
+      "Record original traffic/cafe/footsteps/weather sounds with explicit performer/property/voice permissions where needed.",
+      "Retain source recording log and rights; edit noise, clicks and seamless loops without removing plausible dynamics.",
+      "Export lossless WAV source and compare bounded Vorbis import profiles in Unity spatial mixer.",
+      "Audition off-axis speech, occlusion, masking, interior transitions and moving vehicles on target."
+    ],
+    "blocker": "No source recordings or performer permissions obtained; procedural tones are not substituted for real ambience."
+  },
+  "OriginalPerformance": {
+    "family": "instruments/performance/balloons",
+    "recipe": "Original instrument meshes, balloon gores/basket/rigging and safe boarding; original performance recordings. Unbuilt.",
+    "construction_status": "unbuilt",
+    "visual_acceptance": "BLOCKED",
+    "tool_route": "Original authoring in no-cost Blender; source .blend + exports and license/hash required before acquisition claims",
+    "acceptance": "Rig/material/LOD/collision/native moving-camera quality review required; no proxy mesh passes",
+    "parameters": {
+      "balloon_diameter_m": 18,
+      "gore_count": 24,
+      "gore_vertical_samples": 48,
+      "basket_m": [
+        2.4,
+        1.8,
+        1.3
+      ]
+    },
+    "steps": [
+      "Generate original balloon gores from radius-height spline; model seams, suspension lines, burner and woven basket geometry.",
+      "Model original generic instrument bodies/strings/keys without protected branding.",
+      "Author boarding envelope, rigged performance motion and permitted original recordings separately.",
+      "Review scale, cloth shading, sound separation and safe native camera before integration."
+    ],
+    "blocker": "No source balloon/instrument geometry, performer motions or audio exist."
+  }
+}

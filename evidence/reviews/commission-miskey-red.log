@@ -1,0 +1,13 @@
+....F
+======================================================================
+FAIL: test_real_spending_covenant_has_its_explicit_id (test_commission.CommissionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/test_commission.py", line 41, in test_real_spending_covenant_has_its_explicit_id
+    self.assertIn('Zero new expenditure', rows['HD-000']['text'])
+AssertionError: 'Zero new expenditure' not found in "## 00. Commissioner's binding requirements — release and asset covenant\n\n"
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.010s
+
+FAILED (failures=1)

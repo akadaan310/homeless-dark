@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "scope": [
+    "HD-028",
+    "HD-029",
+    "HD-030",
+    "HD-031",
+    "HD-032",
+    "HD-069",
+    "HD-078",
+    "HD-089",
+    "HD-095"
+  ],
+  "environment": {
+    "dotnet": "8.0.426",
+    "machine": "aarch64"
+  },
+  "results": {
+    "population": {
+      "passed": 15,
+      "failed": 0
+    },
+    "core": {
+      "passed": 20,
+      "failed": 0
+    },
+    "math": {
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "process_reload": "normal writer child exits, distinct reader child restores; forced-kill/power-loss/native recovery NOT_RUN",
+  "files": {
+    "packages/com.homeless.dark/Runtime/Population/Inhabitant.cs": "7950bc8e69ade46edd69a45387237e2a178504adc0ba58276a81a6e34d7f5ac5",
+    "packages/com.homeless.dark/Runtime/Population/FileInhabitantStore.cs": "cf856e0e5a4ca668d96e09aa4ead8137111ca278ec41c2c3ee51de6c3ff50f2a",
+    "packages/com.homeless.dark/Runtime/Population/InhabitantSnapshotCodec.cs": "b0082dfbcfd939a6bb39eb4117850ef08ee28391c97c2b479b654e6cf59ccb0d",
+    "tests/Dark.Population.Tests/Dark.Population.Tests.csproj": "4b5b4bf29918828fa45efe47c95dac0cba5f38bcf9d2c7aea7259703d99f58a2",
+    "tests/Dark.Population.Tests/Program.cs": "89b9215197eae7f1bed7f3b095240f0122df2147f1d1f221951c8e0945055a19",
+    "docs/population.md": "4c6a87ea150027ed31d6a49160031fb2b50d77a55b07e6087d732618907d7eab"
+  },
+  "logs": {
+    "evidence/population/final-tests.log": "fb3dc0062d50af7671609c11fe8ae1a9f2b6f5c7a23d2ed848105f306f085d75",
+    "evidence/population/green.log": "f58179164db2ad7443105c95776a0e6d79c47d7c1a727f7322ce36d1efd89c73",
+    "evidence/population/integration-core.log": "3e17158da851e3998af49283ac5bc843764c05f97554bfdd131602dbb80ff5cb",
+    "evidence/population/integration-math.log": "95822c67e251da40c5f74283b0a24d631206a0d523eab7f9002110d884a39cd5",
+    "evidence/population/red.log": "5634b8128f5765957be77537eb36a2c5e49db2c14eb167230db6098da1ec5318"
+  }
+}

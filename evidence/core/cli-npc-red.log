@@ -1,0 +1,17 @@
+test_demo_persists_once_replays_and_refuses_overwrite (test_cli.CliTests) ... ok
+test_describe_is_pure_and_identifies_adapter_limits (test_cli.CliTests) ... ok
+test_npc_snapshot_reloads_in_a_separate_cli_process (test_cli.CliTests) ... ERROR
+test_replay_requires_trusted_head (test_cli.CliTests) ... ok
+
+======================================================================
+ERROR: test_npc_snapshot_reloads_in_a_separate_cli_process (test_cli.CliTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/test_cli.py", line 52, in test_npc_snapshot_reloads_in_a_separate_cli_process
+    self.assertEqual(saved['npc_observations_restored'], 1)
+KeyError: 'npc_observations_restored'
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.058s
+
+FAILED (errors=1)

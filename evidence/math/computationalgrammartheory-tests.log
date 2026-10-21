@@ -1,0 +1,66 @@
+test_exhaustive (test_addressing.TestHeapWord)
+All words of length ≤ 7 over {L,R,U}, all n ≤ 40, all start nodes. ... ok
+test_long_random_words (test_addressing.TestHeapWord) ... ok
+test_debruijn (test_addressing.TestOtherClasses) ... ok
+test_grid_with_boundaries (test_addressing.TestOtherClasses) ... ok
+test_hypercube (test_addressing.TestOtherClasses) ... ok
+test_bfs_scc_closure_topo (test_algorithms.TestGraphs) ... ok
+test_mst (test_algorithms.TestGraphs) ... ok
+test_negative_cycle (test_algorithms.TestGraphs) ... ok
+test_path_grammar_formula (test_algorithms.TestGraphs)
+THM-004(a) exactly, for the SDK implementation. ... ok
+test_product_reach_vs_walk_enumeration (test_algorithms.TestGraphs) ... ok
+test_shortest_paths (test_algorithms.TestGraphs) ... ok
+test_fenwick_log_cost (test_algorithms.TestRanges) ... ok
+test_fenwick_segment_sparse (test_algorithms.TestRanges) ... ok
+test_lca_three_ways (test_algorithms.TestRanges) ... ok
+test_against_python_re (test_algorithms.TestRegex) ... ok
+test_minimal_sizes (test_algorithms.TestRegex) ... ok
+test_binary_search_compare_bound (test_algorithms.TestSearchSort) ... ok
+test_counting_sort (test_algorithms.TestSearchSort) ... ok
+test_search (test_algorithms.TestSearchSort) ... ok
+test_sort_compare_counts (test_algorithms.TestSearchSort) ... ok
+test_sorts (test_algorithms.TestSearchSort) ... ok
+test_kmp (test_algorithms.TestStrings) ... ok
+test_kmp_linear_compares (test_algorithms.TestStrings) ... ok
+test_dp_vs_bruteforce (test_algorithms.TestUnionFindDP) ... ok
+test_edit_distance_known (test_algorithms.TestUnionFindDP) ... ok
+test_union_find (test_algorithms.TestUnionFindDP) ... ok
+test_hash_adversarial_collisions (test_grammar_structures.TestAdequacy)
+All keys collide: still correct, but probes grow linearly. ... ok
+test_random_workloads (test_grammar_structures.TestAdequacy) ... ok
+test_automaton_structure (test_grammar_structures.TestGraphAndAutomaton) ... ok
+test_relational_semantics (test_grammar_structures.TestGraphAndAutomaton) ... ok
+test_admissibility_projection (test_grammar_structures.TestParsing) ... ok
+test_parse (test_grammar_structures.TestParsing) ... ok
+test_parse_errors (test_grammar_structures.TestParsing) ... ok
+test_resolve_raises (test_grammar_structures.TestParsing) ... ok
+test_three_layers_are_distinct (test_grammar_structures.TestParsing) ... ok
+test_density (test_grammar_structures.TestTreeRepresentations) ... ok
+test_goto_cost_shapes (test_grammar_structures.TestTreeRepresentations)
+THM-003: pointer goto costs |addr|; heap goto costs ⌈bits/64⌉+1. ... ok
+test_pointer_and_heap_agree (test_grammar_structures.TestTreeRepresentations) ... ok
+test_constrained_bounded_states (test_pagerank.TestPageRank) ... ok
+test_constrained_universal_equals_pagerank (test_pagerank.TestPageRank) ... ok
+test_contraction_each_step (test_pagerank.TestPageRank)
+‖x_k − π‖₁ ≤ α‖x_{k−1} − π‖₁ for every k (CGT-THM-008). ... ok
+test_personalization_and_dangling (test_pagerank.TestPageRank) ... ok
+test_solvers_agree (test_pagerank.TestPageRank) ... ok
+test_warm_start_saves_iterations (test_pagerank.TestPageRank) ... ok
+test_solution_automaton_counts_models (test_sat.TestSat) ... ok
+test_two_sat_vs_brute_force (test_sat.TestSat) ... ok
+test_algorithms (test_service.TestContract) ... ok
+test_capabilities (test_service.TestContract) ... ok
+test_layers (test_service.TestContract) ... ok
+test_ok_and_provenance (test_service.TestContract) ... ok
+test_quotas (test_service.TestContract) ... ok
+test_roundtrip (test_service.TestHTTP) ... ok
+test_degenerate_insertions_do_not_recurse (test_trees_sharing.TestBST) ... ok
+test_random_against_set (test_trees_sharing.TestBST) ... ok
+test_rank_access_and_no_compression_of_paths (test_trees_sharing.TestSharing) ... ok
+test_thm005a (test_trees_sharing.TestSharing) ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 44.744s
+
+OK

@@ -1,0 +1,390 @@
+{
+  "recorded_at_utc": "2026-10-21T07:57:45.576858+00:00",
+  "scope": "Read-only host inspection. Only this JSON inventory was written. No package installation, provisioning, license activation, private key/credential contents, remote login, code edit or git mutation.",
+  "host": {
+    "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+    "kernel": "6.8.0-1060-oracle",
+    "architecture": "aarch64",
+    "cpu_model": "ARM Neoverse-N1",
+    "logical_cpus": 2,
+    "memory": {
+      "MemTotal": "12219248 kB",
+      "MemAvailable": "11070020 kB",
+      "SwapTotal": "0 kB"
+    },
+    "disk": {
+      "total_bytes": 48277495808,
+      "used_bytes": 41456668672,
+      "free_bytes": 6804049920
+    },
+    "gpu": "Red Hat Virtio GPU [1af4:1050], Oracle/SUN subsystem; virtio-pci driver",
+    "gpu_nodes": [
+      "/dev/dri/by-path",
+      "/dev/dri/card0",
+      "/dev/dri/renderD128"
+    ],
+    "display_present": {
+      "DISPLAY": false,
+      "WAYLAND_DISPLAY": false
+    }
+  },
+  "tools": {
+    "Unity": null,
+    "unity": null,
+    "unity-editor": null,
+    "unityhub": null,
+    "java": null,
+    "javac": null,
+    "adb": null,
+    "sdkmanager": null,
+    "avdmanager": null,
+    "gradle": null,
+    "dotnet": null,
+    "mono": null,
+    "mcs": null,
+    "csc": null,
+    "blender": null,
+    "python3": "/usr/bin/python3",
+    "pip": "/usr/bin/pip",
+    "pip3": "/usr/bin/pip3",
+    "uv": null,
+    "tmux": "/usr/bin/tmux",
+    "ssh": "/usr/bin/ssh",
+    "docker": null,
+    "nvidia-smi": null,
+    "node": "/usr/bin/node",
+    "npm": "/usr/bin/npm",
+    "git": "/usr/bin/git",
+    "curl": "/usr/bin/curl",
+    "wget": "/usr/bin/wget",
+    "gh": null,
+    "git-lfs": null,
+    "gcc": "/usr/bin/gcc",
+    "g++": "/usr/bin/g++",
+    "cmake": null,
+    "make": "/usr/bin/make",
+    "zip": "/usr/bin/zip",
+    "unzip": "/usr/bin/unzip",
+    "tar": "/usr/bin/tar",
+    "rsync": "/usr/bin/rsync",
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "Xvfb": null,
+    "qemu-x86_64": null,
+    "box64": null,
+    "tailscale": null
+  },
+  "python_packages": {
+    "pytest": null,
+    "numpy": null,
+    "pillow": null,
+    "trimesh": null,
+    "pygltflib": null,
+    "requests": "2.25.1",
+    "pyyaml": "5.4.1",
+    "tree-sitter": null,
+    "tree-sitter-languages": null
+  },
+  "standard_install_directories_present": {
+    "/home/ubuntu/Unity": false,
+    "/home/ubuntu/Unity/Hub/Editor": false,
+    "/home/ubuntu/Android": false,
+    "/home/ubuntu/.android": false,
+    "/home/ubuntu/.local/share/unity3d": false,
+    "/home/ubuntu/.config/unity3d": false,
+    "/home/ubuntu/.local/share/UnityHub": false,
+    "/home/ubuntu/.config/UnityHub": false,
+    "/opt/android-sdk": false,
+    "/usr/lib/jvm": false,
+    "/home/ubuntu/.dotnet": false
+  },
+  "unity_license_paths_present": {
+    "/home/ubuntu/.local/share/unity3d/Unity/Unity_lic.ulf": false,
+    "/home/ubuntu/.config/unity3d/Unity/Unity_lic.ulf": false,
+    "/var/lib/unity/Unity_lic.ulf": false
+  },
+  "sdk_environment_path_presence": {
+    "ANDROID_HOME": {
+      "set": false,
+      "exists": null
+    },
+    "ANDROID_SDK_ROOT": {
+      "set": false,
+      "exists": null
+    },
+    "ANDROID_NDK_ROOT": {
+      "set": false,
+      "exists": null
+    },
+    "JAVA_HOME": {
+      "set": false,
+      "exists": null
+    },
+    "UNITY_HOME": {
+      "set": false,
+      "exists": null
+    },
+    "UNITY_PATH": {
+      "set": false,
+      "exists": null
+    }
+  },
+  "ssh": {
+    "user_config_present": false,
+    "system_config_present": true,
+    "system_noncomment_lines": [
+      "Include /etc/ssh/ssh_config.d/*.conf",
+      "Host *",
+      "    SendEnv LANG LC_*",
+      "    HashKnownHosts yes",
+      "    GSSAPIAuthentication yes"
+    ],
+    "system_config_include_files": [],
+    "directory_entry_names_only": [
+      "authorized_keys",
+      "github_homeless",
+      "github_homeless.pub",
+      "known_hosts",
+      "known_hosts.old"
+    ],
+    "remote_build_host_found": false,
+    "private_keys_read": false
+  },
+  "network": {
+    "interfaces": [
+      "enp0s6",
+      "lo"
+    ],
+    "network_policy_snapshot_present": false,
+    "managed_environment_status_tool_available": false,
+    "OIC_MANIFEST_PATH_set": false,
+    "proxy_variable_presence": {
+      "HTTP_PROXY": false,
+      "HTTPS_PROXY": false,
+      "ALL_PROXY": false,
+      "http_proxy": false,
+      "https_proxy": false
+    },
+    "official_docs_https_head": {
+      "argv": [
+        "curl",
+        "--head",
+        "--silent",
+        "--show-error",
+        "--location",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "20",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code} %{remote_ip} %{time_total}\n",
+        "https://docs.unity3d.com/2022.3/Documentation/Manual/system-requirements.html"
+      ],
+      "exit_code": 0,
+      "stdout": "200 35.244.254.232 0.142145\n",
+      "stderr": ""
+    },
+    "gateway_servers": "Parent reported list_servers returned empty; not independently repeated."
+  },
+  "sources": [
+    {
+      "url": "https://docs.unity3d.com/2022.3/Documentation/Manual/system-requirements.html",
+      "finding": "Unity 2022.3 Linux Editor requires x64 CPU with SSE2. This aarch64 Linux host does not meet it."
+    },
+    {
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/system-requirements.html",
+      "finding": "Unity 6 Linux Editor also requires x64 CPU with SSE2."
+    },
+    {
+      "url": "https://docs.unity3d.com/2022.3/Documentation/Manual/android-sdksetup.html",
+      "finding": "Android development requires Android Build Support, SDK, NDK and JDK."
+    },
+    {
+      "url": "https://unity.com/pages/license-compliance",
+      "finding": "Unity Personal financial threshold is $200,000 for preceding 12 months; service providers must account for client finances. Eligibility and valid activation were not established."
+    }
+  ],
+  "conclusions": {
+    "native_unity_editor_supported": false,
+    "unity_editor_installed_found": false,
+    "android_build_toolchain_installed_found": false,
+    "unity_license_presence_found": false,
+    "existing_remote_build_host_found": false,
+    "can_build_unity_android_apk_now": false,
+    "no_new_cost_work_possible": [
+      "Source and asset metadata inspection using Python stdlib, Node and Git.",
+      "Static consistency checks, text/JSON/YAML analysis, packaging with zip/tar and synchronization with rsync.",
+      "Procedural asset/source generation that needs only installed tools, and media conversion with ffmpeg.",
+      "Build instructions and scripts can be prepared for a separately identified existing compatible host."
+    ],
+    "no_new_cost_build_conditions": [
+      "An already available compatible x64 Linux/Windows or supported macOS machine with project-matching Unity Editor, Android dependencies and valid eligible license would be needed. No such machine was identified in the inspected configuration.",
+      "Eligibility for Unity Personal is unknown; free eligibility must not be assumed for commissioned work.",
+      "No paid or nominal-free cloud resource, external CI build, trial, account, license activation or emulation was attempted."
+    ]
+  },
+  "command_records": [
+    {
+      "argv": [
+        "uname",
+        "-a"
+      ],
+      "exit_code": 0,
+      "stdout": "Linux ollama-a1 6.8.0-1060-oracle #63~22.04.1-Ubuntu SMP Mon Aug 10 14:47:57 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lscpu"
+      ],
+      "exit_code": 0,
+      "stdout": "Architecture:                            aarch64\nCPU op-mode(s):                          32-bit, 64-bit\nByte Order:                              Little Endian\nCPU(s):                                  2\nOn-line CPU(s) list:                     0,1\nVendor ID:                               ARM\nModel name:                              Neoverse-N1\nModel:                                   1\nThread(s) per core:                      1\nCore(s) per socket:                      2\nSocket(s):                               1\nStepping:                                r3p1\nBogoMIPS:                                50.00\nFlags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp ssbs\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0,1\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; CSV2, BHB\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lspci",
+        "-nnk"
+      ],
+      "exit_code": 0,
+      "stdout": "00:00.0 Host bridge [0600]: Red Hat, Inc. QEMU PCIe Host bridge [1b36:0008]\n\tSubsystem: Red Hat, Inc. QEMU PCIe Host bridge [1af4:1100]\n00:01.0 Display controller [0380]: Red Hat, Inc. Virtio GPU [1af4:1050] (rev 01)\n\tSubsystem: Oracle/SUN Virtio GPU [108e:1100]\n\tKernel driver in use: virtio-pci\n00:02.0 USB controller [0c03]: Red Hat, Inc. QEMU XHCI Host Controller [1b36:000d] (rev 01)\n\tSubsystem: Red Hat, Inc. QEMU XHCI Host Controller [1af4:1100]\n\tKernel driver in use: xhci_hcd\n\tKernel modules: xhci_pci\n00:03.0 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.1 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.2 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.3 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.4 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.5 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.6 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:03.7 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.0 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.1 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.2 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.3 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.4 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.5 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.6 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:04.7 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.0 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.1 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.2 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.3 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.4 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.5 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.6 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:05.7 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n\tKernel driver in use: pcieport\n00:06.0 Ethernet controller [0200]: Red Hat, Inc. Virtio network device [1af4:1041] (rev 01)\n\tSubsystem: Oracle/SUN Virtio network device [108e:1100]\n\tKernel driver in use: virtio-pci\n18:00.0 SCSI storage controller [0100]: Red Hat, Inc. Virtio SCSI [1af4:1048] (rev 01)\n\tSubsystem: Oracle/SUN Virtio SCSI [108e:1100]\n\tKernel driver in use: virtio-pci\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.10.12\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "pip3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "tmux",
+        "-V"
+      ],
+      "exit_code": 0,
+      "stdout": "tmux 3.2a\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "ssh",
+        "-V"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "OpenSSH_8.9p1 Ubuntu-3ubuntu0.18, OpenSSL 3.0.2 15 Mar 2022\n"
+    },
+    {
+      "argv": [
+        "ip",
+        "-brief",
+        "address"
+      ],
+      "exit_code": 0,
+      "stdout": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nenp0s6           UP             10.0.1.194/24 metric 100 fe80::17ff:fe12:c74a/64 \n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "ip",
+        "route",
+        "show"
+      ],
+      "exit_code": 0,
+      "stdout": "default via 10.0.1.1 dev enp0s6 \ndefault via 10.0.1.1 dev enp0s6 proto dhcp src 10.0.1.194 metric 100 \n10.0.1.0/24 dev enp0s6 proto kernel scope link src 10.0.1.194 metric 100 \n10.0.1.1 dev enp0s6 proto dhcp scope link src 10.0.1.194 metric 100 \n169.254.0.0/16 dev enp0s6 scope link \n169.254.0.0/16 dev enp0s6 proto dhcp scope link src 10.0.1.194 metric 100 \n169.254.169.254 via 10.0.1.1 dev enp0s6 proto dhcp src 10.0.1.194 metric 100 \n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "dpkg-query",
+        "-W",
+        "-f=${binary:Package}\t${db:Status-Abbrev}\t${Version}\n",
+        "*unity*",
+        "*android*",
+        "*openjdk*",
+        "*jdk*",
+        "*mono*",
+        "*dotnet*",
+        "*blender*"
+      ],
+      "exit_code": 1,
+      "stdout": "libmono-corlib4.5-cil\tun \t\nmono-gac\tun \t\n",
+      "stderr": "dpkg-query: no packages found matching *unity*\ndpkg-query: no packages found matching *android*\ndpkg-query: no packages found matching *openjdk*\ndpkg-query: no packages found matching *jdk*\ndpkg-query: no packages found matching *dotnet*\ndpkg-query: no packages found matching *blender*\n"
+    },
+    {
+      "argv": [
+        "rg",
+        "--files",
+        "--hidden",
+        "--no-ignore",
+        "-g",
+        "Unity",
+        "-g",
+        "UnityHub",
+        "-g",
+        "unityhub",
+        "-g",
+        "sdkmanager",
+        "-g",
+        "adb",
+        "-g",
+        "javac",
+        "-g",
+        "dotnet",
+        "-g",
+        "mono",
+        "-g",
+        "blender",
+        "-g",
+        "Unity_lic.ulf",
+        "-g",
+        "!**/.git/**",
+        "-g",
+        "!**/.codex/**",
+        "-g",
+        "!**/.cache/**",
+        "/opt",
+        "/usr/local",
+        "/usr/lib",
+        "/home/ubuntu"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "curl",
+        "--head",
+        "--silent",
+        "--show-error",
+        "--location",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "20",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{http_code} %{remote_ip} %{time_total}\n",
+        "https://docs.unity3d.com/2022.3/Documentation/Manual/system-requirements.html"
+      ],
+      "exit_code": 0,
+      "stdout": "200 35.244.254.232 0.142145\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "HOMELESS.Unity",
+  "rootNamespace": "Homeless.Unity",
+  "references": ["Dark.Core"],
+  "autoReferenced": true
+}

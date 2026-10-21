@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "com.homeless.dark": "file:../../packages/com.homeless.dark",
+    "com.unity.render-pipelines.universal": "17.1.0",
+    "com.unity.test-framework": "1.5.1",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.ui": "1.0.0"
+  },
+  "testables": ["com.homeless.dark"]
+}

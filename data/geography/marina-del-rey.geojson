@@ -1,0 +1,40 @@
+{
+  "attribution": "© OpenStreetMap contributors",
+  "coordinate_reference": "WGS84 longitude,latitude; altitude unknown",
+  "factuality": "sourced_geometry",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -118.448647,
+          33.9776848
+        ],
+        "type": "Point"
+      },
+      "id": "osm/node/26426223",
+      "properties": {
+        "layer": "place",
+        "osm_node_id": 26426223,
+        "tags": {
+          "name": "Marina del Rey",
+          "name:en": "Marina del Rey",
+          "place": "quarter",
+          "wikidata": "Q988140",
+          "wikipedia": "en:Marina del Rey, California"
+        }
+      },
+      "type": "Feature"
+    }
+  ],
+  "ignored_relations": 0,
+  "input_sha256": "fcfa1f78e58eec955c609303bc90c7d7f8c09233ea3cc7e746930dae731c290b",
+  "limitations": [
+    "Way footprints only; multipolygon relations are not assembled",
+    "Road centerlines are not validated routes, lanes, sidewalks or collision meshes",
+    "No altitude or terrain was inferred"
+  ],
+  "snapshot_requested": null,
+  "source_database_timestamp": "2026-10-21T08:10:13Z",
+  "source_license": "ODbL-1.0",
+  "type": "FeatureCollection"
+}

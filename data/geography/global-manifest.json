@@ -1,0 +1,385 @@
+{
+  "anchors": "anchors.json",
+  "aviation_coverage_report": "ourairports-coverage.json",
+  "fictional_world_state": "Separate model; no claims of measured building interiors, synthetic residents, fictional routes or authored geography from these imports.",
+  "geographic_acceptance": "BLOCKED",
+  "geographic_index": "WGS84, one-degree airport cells indexed south-to-north/west-to-east; +90/+180 in final cells; antimeridian query splits longitude spans. OSM feature coordinates preserve source longitude/latitude and unknown altitude.",
+  "global_coverage_complete": false,
+  "layers": [
+    {
+      "acquired_development_inputs": [],
+      "download_index_status": "No terrain source release selected or raster/mesh partition acquired.",
+      "id": "terrain",
+      "known_omissions": [
+        "No terrain source release selected or raster/mesh partition acquired."
+      ],
+      "license": null,
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "terrain/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": null,
+      "scope": "global Earth target",
+      "source_candidate_url": "https://registry.opendata.aws/copernicus-dem/",
+      "source_release": null,
+      "status": "MISSING",
+      "update_frequency": null
+    },
+    {
+      "acquired_development_inputs": [],
+      "download_index_status": "No coherent coastline or water partition ingested; no water geometry was imported by this fixture.",
+      "id": "coastline_water",
+      "known_omissions": [
+        "No coherent coastline or water partition ingested; no water geometry was imported by this fixture."
+      ],
+      "license": null,
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "coastline_water/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": null,
+      "scope": "global Earth target",
+      "source_candidate_url": "https://planet.openstreetmap.org/",
+      "source_release": null,
+      "status": "MISSING",
+      "update_frequency": null
+    },
+    {
+      "acquired_development_inputs": [
+        "tampa-dale-mabry-spruce"
+      ],
+      "download_index_status": "Bounded Tampa highway-tagged ways only; no validated multimodal topology, access graph or global rail partitions.",
+      "id": "roads_paths_rail",
+      "known_omissions": [
+        "Bounded Tampa highway-tagged ways only; no validated multimodal topology, access graph or global rail partitions."
+      ],
+      "license": "ODbL-1.0",
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "roads_paths_rail/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": "Source vector ways, no uniform resolution",
+      "scope": "global Earth target",
+      "source_candidate_url": "https://planet.openstreetmap.org/",
+      "source_release": "OSM snapshot requested 2026-10-20T00:00:00Z (regional fixture only)",
+      "status": "PARTIAL",
+      "update_frequency": "OSM community edits; fixture fixed by query and SHA-256"
+    },
+    {
+      "acquired_development_inputs": [
+        "tampa-dale-mabry-spruce"
+      ],
+      "download_index_status": "Bounded Tampa closed building ways only; no multipolygon assembly, global buildings or land-use partitions.",
+      "id": "buildings_land_use",
+      "known_omissions": [
+        "Bounded Tampa closed building ways only; no multipolygon assembly, global buildings or land-use partitions."
+      ],
+      "license": "ODbL-1.0",
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "buildings_land_use/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": "Source vector ways, no uniform resolution",
+      "scope": "global Earth target",
+      "source_candidate_url": "https://planet.openstreetmap.org/",
+      "source_release": "OSM snapshot requested 2026-10-20T00:00:00Z (regional fixture only)",
+      "status": "PARTIAL",
+      "update_frequency": "OSM community edits; fixture fixed by query and SHA-256"
+    },
+    {
+      "acquired_development_inputs": [],
+      "candidate_epoch": 2025,
+      "download_index_status": "WorldPop R2024B v1 inspected, candidate epoch 2025; no raster bytes, partition totals or identity allocations.",
+      "id": "population",
+      "known_omissions": [
+        "WorldPop R2024B v1 inspected, candidate epoch 2025; no raster bytes, partition totals or identity allocations."
+      ],
+      "license": "CC-BY-4.0 per catalog",
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "population/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": "3 arc seconds",
+      "scope": "global Earth target",
+      "source_candidate_url": "https://hub.worldpop.org/geodata/listing?id=100",
+      "source_release": "R2024B version v1 (metadata only)",
+      "status": "MISSING",
+      "update_frequency": "Versioned beta product; updates possible"
+    },
+    {
+      "acquired_development_inputs": [
+        "ourairports-airports"
+      ],
+      "download_index_status": "All airports.csv rows in pinned publisher snapshot indexed; runway, frequencies, navaids, airspace and route partitions unacquired.",
+      "id": "aviation_nodes",
+      "known_omissions": [
+        "All airports.csv rows in pinned publisher snapshot indexed; runway, frequencies, navaids, airspace and route partitions unacquired."
+      ],
+      "license": "Public Domain",
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "ourairports/airports.csv@b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+          "records": 86258,
+          "source_sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75",
+          "status": "VERIFIED"
+        },
+        {
+          "id": "aviation_nodes/other-required-datasets-unenumerated",
+          "reason": "All airports.csv rows in pinned publisher snapshot indexed; runway, frequencies, navaids, airspace and route partitions unacquired.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": "Airport reference points",
+      "scope": "global Earth target",
+      "source_candidate_url": "https://ourairports.com/data/",
+      "source_country_codes": 247,
+      "source_records": 86258,
+      "source_release": "b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+      "source_snapshot_complete": true,
+      "status": "PARTIAL",
+      "update_frequency": "Nightly publisher snapshot"
+    },
+    {
+      "acquired_development_inputs": [
+        "marina-del-rey named-place node only"
+      ],
+      "download_index_status": "Marina del Rey place-label node acquired; harbor networks, water geometry, boarding and safe navigation unverified.",
+      "id": "maritime_networks",
+      "known_omissions": [
+        "Marina del Rey place-label node acquired; harbor networks, water geometry, boarding and safe navigation unverified."
+      ],
+      "license": null,
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "maritime_networks/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": null,
+      "scope": "global Earth target",
+      "source_candidate_url": "https://hub.marinecadastre.gov/pages/vesseltraffic",
+      "source_release": null,
+      "status": "MISSING",
+      "update_frequency": null
+    },
+    {
+      "acquired_development_inputs": [],
+      "download_index_status": "No weather model/release/license route selected or weather partitions ingested.",
+      "id": "weather",
+      "known_omissions": [
+        "No weather model/release/license route selected or weather partitions ingested."
+      ],
+      "license": null,
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "weather/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": null,
+      "scope": "global Earth target",
+      "source_candidate_url": null,
+      "source_release": null,
+      "status": "MISSING",
+      "update_frequency": null
+    },
+    {
+      "acquired_development_inputs": [],
+      "download_index_status": "No timezone database version or geographic boundary release ingested.",
+      "id": "time_zones",
+      "known_omissions": [
+        "No timezone database version or geographic boundary release ingested."
+      ],
+      "license": null,
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "time_zones/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": null,
+      "scope": "global Earth target",
+      "source_candidate_url": null,
+      "source_release": null,
+      "status": "MISSING",
+      "update_frequency": null
+    },
+    {
+      "acquired_development_inputs": [],
+      "download_index_status": "No epoch-aware star partitions or solar-system ephemerides ingested.",
+      "id": "astronomy",
+      "known_omissions": [
+        "No epoch-aware star partitions or solar-system ephemerides ingested."
+      ],
+      "license": null,
+      "partition_inventory_complete": false,
+      "required_partitions": [
+        {
+          "id": "astronomy/global-baseline-unenumerated",
+          "reason": "Global source release and complete partition enumeration are not yet established.",
+          "status": "MISSING"
+        }
+      ],
+      "resolution": null,
+      "scope": "global Earth target",
+      "source_candidate_url": "https://www.cosmos.esa.int/web/gaia/dr3",
+      "source_release": null,
+      "status": "MISSING",
+      "update_frequency": null
+    }
+  ],
+  "missing_partition_list_is_exhaustive": false,
+  "missing_partitions": [
+    {
+      "id": "terrain/global-baseline-unenumerated",
+      "layer": "terrain",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "coastline_water/global-baseline-unenumerated",
+      "layer": "coastline_water",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "roads_paths_rail/global-baseline-unenumerated",
+      "layer": "roads_paths_rail",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "buildings_land_use/global-baseline-unenumerated",
+      "layer": "buildings_land_use",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "population/global-baseline-unenumerated",
+      "layer": "population",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "aviation_nodes/other-required-datasets-unenumerated",
+      "layer": "aviation_nodes",
+      "reason": "All airports.csv rows in pinned publisher snapshot indexed; runway, frequencies, navaids, airspace and route partitions unacquired.",
+      "status": "MISSING"
+    },
+    {
+      "id": "maritime_networks/global-baseline-unenumerated",
+      "layer": "maritime_networks",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "weather/global-baseline-unenumerated",
+      "layer": "weather",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "time_zones/global-baseline-unenumerated",
+      "layer": "time_zones",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    },
+    {
+      "id": "astronomy/global-baseline-unenumerated",
+      "layer": "astronomy",
+      "reason": "Global source release and complete partition enumeration are not yet established.",
+      "status": "MISSING"
+    }
+  ],
+  "native_integration": {
+    "cross_region_routes": "NOT_RUN",
+    "device_rendering": "BLOCKED",
+    "ground_collision": "NOT_RUN",
+    "unity_import": "NOT_RUN"
+  },
+  "partition_inventory_limit": "These explicit missing layer placeholders are not a fabricated complete filename-level inventory. Full partition enumeration is itself unfinished, so closure cannot pass.",
+  "population_measures": {
+    "actively_simulated_actors": 0,
+    "demographic_estimate_people": null,
+    "globally_allocated_synthetic_identities": 0,
+    "persisted_individual_histories": 0,
+    "scope": "This geographic ingest only; excludes synthetic unit-test fixtures in other packages",
+    "visible_characters": 0,
+    "voiced_characters": 0
+  },
+  "regional_coverage": [
+    {
+      "feature_counts": {
+        "building": 263,
+        "place": 2,
+        "road": 472
+      },
+      "geometry_extent_note": "Ways are complete source ways intersecting the box; referenced nodes may lie outside it",
+      "id": "tampa-dale-mabry-spruce",
+      "requested_bbox_south_west_north_east": [
+        27.955,
+        -82.509,
+        27.964,
+        -82.502
+      ],
+      "scope": "Bounded development fixture, not global coverage",
+      "snapshot_requested": "2026-10-20T00:00:00Z",
+      "source_database_timestamp": "2026-10-21T08:07:13Z",
+      "source_sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a"
+    },
+    {
+      "feature_counts": {
+        "place": 1
+      },
+      "geometry_extent_note": "Ways are complete source ways intersecting the box; referenced nodes may lie outside it",
+      "id": "marina-del-rey",
+      "requested_bbox_south_west_north_east": [
+        33.94,
+        -118.48,
+        34.01,
+        -118.41
+      ],
+      "scope": "Named-place reference point only; harbor geometry not acquired",
+      "snapshot_requested": null,
+      "source_database_timestamp": "2026-10-21T08:10:13Z",
+      "source_sha256": "fcfa1f78e58eec955c609303bc90c7d7f8c09233ea3cc7e746930dae731c290b"
+    }
+  ],
+  "schema_version": 1,
+  "source_lock": "sources.lock.json",
+  "source_lock_sha256": "a2507c987981ab1f8a31fef0be183110edb71a30359d9e28ae718948431c684e",
+  "status": "PARTIAL",
+  "storage_evidence": "../../evidence/geography/storage-budget.json",
+  "truth_labels": {
+    "global_capacity_estimates": "C: planning assumptions explicitly separate from observed raw size",
+    "source_acquisition_and_counts": "M: reproduced byte/hash/count observations"
+  },
+  "worldwide_operational": false
+}

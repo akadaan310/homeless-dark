@@ -1,0 +1,82 @@
+{
+  "acquisition_policy": "Public, zero-new-cost downloads only; bounded source fixtures are not a runtime API dependency or a worldwide bulk-ingestion substitute.",
+  "max_lane_bytes": 157286400,
+  "schema_version": 1,
+  "sources": [
+    {
+      "bytes": 12748669,
+      "content_type": "text/plain",
+      "etag": "\"d544f2783a498bff4b0b6fe9fe44bf90b0fa0435f869f9b6c7d6ed90c4b3bf6a\"",
+      "id": "ourairports-airports",
+      "kind": "airports",
+      "last_modified": null,
+      "license": "Public Domain",
+      "license_url": "https://ourairports.com/data/",
+      "max_bytes": 20971520,
+      "path": "sources/ourairports-airports.csv",
+      "resolved_url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv",
+      "retrieved_at": "2026-10-21T08:04:19.781164+00:00",
+      "reused": false,
+      "scope": "Complete airports.csv only; other source tables not acquired",
+      "sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75",
+      "source_release": "b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+      "source_release_date": "2026-10-16T01:53:13Z",
+      "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv"
+    },
+    {
+      "attribution": "© OpenStreetMap contributors",
+      "bbox_south_west_north_east": [
+        27.955,
+        -82.509,
+        27.964,
+        -82.502
+      ],
+      "bytes": 467198,
+      "content_type": "application/json",
+      "etag": null,
+      "id": "tampa-dale-mabry-spruce",
+      "kind": "osm",
+      "last_modified": null,
+      "license": "ODbL-1.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "max_bytes": 12582912,
+      "path": "sources/tampa-dale-mabry-spruce.osm.json",
+      "query": "[out:json][timeout:20][maxsize:16777216][date:\"2026-10-20T00:00:00Z\"];(way[\"highway\"](27.955,-82.509,27.964,-82.502);way[\"building\"](27.955,-82.509,27.964,-82.502);way[\"waterway\"](27.955,-82.509,27.964,-82.502);way[\"natural\"=\"coastline\"](27.955,-82.509,27.964,-82.502);node[\"place\"](27.955,-82.509,27.964,-82.502););(._;>;);out body;",
+      "resolved_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A16777216%5D%5Bdate%3A%222026-10-20T00%3A00%3A00Z%22%5D%3B%28way%5B%22highway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22building%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22waterway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22natural%22%3D%22coastline%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bnode%5B%22place%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3B%29%3B%28._%3B%3E%3B%29%3Bout+body%3B",
+      "retrieved_at": "2026-10-21T08:08:53.236556+00:00",
+      "reused": false,
+      "sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a",
+      "snapshot_requested": "2026-10-20T00:00:00Z",
+      "source_release": "OSM historical snapshot requested 2026-10-20T00:00:00Z",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A16777216%5D%5Bdate%3A%222026-10-20T00%3A00%3A00Z%22%5D%3B%28way%5B%22highway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22building%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22waterway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22natural%22%3D%22coastline%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bnode%5B%22place%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3B%29%3B%28._%3B%3E%3B%29%3Bout+body%3B"
+    },
+    {
+      "attribution": "© OpenStreetMap contributors",
+      "bbox_south_west_north_east": [
+        33.94,
+        -118.48,
+        34.01,
+        -118.41
+      ],
+      "bytes": 548,
+      "content_type": "application/json",
+      "etag": null,
+      "id": "marina-del-rey",
+      "kind": "osm",
+      "last_modified": null,
+      "license": "ODbL-1.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "max_bytes": 1048576,
+      "path": "sources/marina-del-rey.osm.json",
+      "query": "[out:json][timeout:10][maxsize:8388608];node[\"place\"][\"name\"=\"Marina del Rey\"](33.94,-118.48,34.01,-118.41);out body;",
+      "resolved_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A10%5D%5Bmaxsize%3A8388608%5D%3Bnode%5B%22place%22%5D%5B%22name%22%3D%22Marina+del+Rey%22%5D%2833.94%2C-118.48%2C34.01%2C-118.41%29%3Bout+body%3B",
+      "retrieved_at": "2026-10-21T08:11:28.976783+00:00",
+      "reused": false,
+      "scope": "Named-place reference point only; harbor geometry not acquired",
+      "sha256": "fcfa1f78e58eec955c609303bc90c7d7f8c09233ea3cc7e746930dae731c290b",
+      "snapshot_requested": null,
+      "source_release": "live OSM query; exact bytes pinned below",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A10%5D%5Bmaxsize%3A8388608%5D%3Bnode%5B%22place%22%5D%5B%22name%22%3D%22Marina+del+Rey%22%5D%2833.94%2C-118.48%2C34.01%2C-118.41%29%3Bout+body%3B"
+    }
+  ]
+}

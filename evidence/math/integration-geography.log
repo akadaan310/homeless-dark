@@ -1,0 +1,31 @@
+test_bad_csv_is_refused_without_replacing_existing_database (test_pipeline.AirportTests) ... ok
+test_index_is_order_independent_and_antimeridian_query_finds_both_sides (test_pipeline.AirportTests) ... ok
+test_record_bound_and_query_coordinate_validation (test_pipeline.AirportTests) ... ok
+test_failure_keeps_previous_bytes_and_cleans_partial_files (test_pipeline.DownloadTests) ... ok
+test_non_https_remote_and_nonpositive_limit_refused_before_mutation (test_pipeline.DownloadTests) ... ok
+test_verified_download_replaces_existing_file_and_pinned_cache_needs_no_network (test_pipeline.DownloadTests) ... ok
+test_import_stable_under_element_order_and_no_invented_intersections (test_pipeline.OsmTests) ... ok
+test_missing_references_nonfinite_coordinates_duplicates_and_server_remark_refused (test_pipeline.OsmTests) ... test_real_node_topology_drives_source_anchor_and_polygon (test_pipeline.OsmTests) ... ok
+
+======================================================================
+ERROR: test_missing_references_nonfinite_coordinates_duplicates_and_server_remark_refused (test_pipeline.OsmTests) (payload=b'{"osm3s":[],"elements":[]}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/geography/test_pipeline.py", line 176, in test_missing_references_nonfinite_coordinates_duplicates_and_server_remark_refused
+    pipeline.import_osm(payload)
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tools/geography/pipeline.py", line 315, in import_osm
+    "source_timestamp": data.get("osm3s", {}).get("timestamp_osm_base"),
+AttributeError: 'list' object has no attribute 'get'
+
+======================================================================
+FAIL: test_missing_references_nonfinite_coordinates_duplicates_and_server_remark_refused (test_pipeline.OsmTests) (payload=b'{"elements":[{"type":"node","id":1,"lat":true,"lon":1}]}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/geography/test_pipeline.py", line 175, in test_missing_references_nonfinite_coordinates_duplicates_and_server_remark_refused
+    with self.subTest(payload=payload), self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.563s
+
+FAILED (failures=1, errors=1)

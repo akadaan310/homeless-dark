@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 28
+  productGUID: 8e5161625dde4e10931215e5bf093ad2
+  companyName: Obex Den
+  productName: HOMELESS
+  defaultScreenWidth: 1280
+  defaultScreenHeight: 720
+  defaultIsNativeResolution: 1
+  colorSpace: 1
+  m_ActiveColorSpace: 1
+  runInBackground: 0
+  applicationIdentifier:
+    Android: com.obexden.homeless
+    Standalone: com.obexden.homeless
+  bundleVersion: 0.1.0
+  AndroidBundleVersionCode: 1
+  AndroidMinSdkVersion: 26
+  AndroidTargetArchitectures: 2
+  scriptingBackend:
+    Android: 1
+  apiCompatibilityLevelPerPlatform:
+    Android: 6
+  activeInputHandler: 0
+  usePlayerLog: 1

@@ -1,0 +1,38 @@
+{
+  "CSharp_policy_cases": "EXPECTED_ONLY",
+  "all_passed": true,
+  "fixture_bytes": 37169,
+  "fixture_sha256": "8abae87f2866dd3a43106c9c77f8f65613245c691d2111949b1b53339ec6bfef",
+  "hd_091_acceptance": "NOT_ACCEPTED",
+  "native_unity": "NOT_RUN",
+  "network_requests": 0,
+  "new_fixture_test_methods": 8,
+  "physical_admission": "NOT_RUN",
+  "results": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/geography",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "evidence/geography/tampa-fixture-tests.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "tools/geography/tampa_fixture.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "evidence/geography/tampa-fixture-reproduction.log"
+    }
+  ],
+  "schema_version": 1
+}

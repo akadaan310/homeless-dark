@@ -1,0 +1,25 @@
+
+Welcome to .NET 8.0!
+---------------------
+SDK Version: 8.0.426
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, view the instructions: https://aka.ms/dotnet-https-linux
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(6,7): error CS0246: The type or namespace name 'Dark' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(7,7): error CS0246: The type or namespace name 'Dark' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(8,7): error CS0246: The type or namespace name 'Dark' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(9,7): error CS0246: The type or namespace name 'Dark' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(123,12): error CS0246: The type or namespace name 'LocalAuthority' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(122,30): error CS0246: The type or namespace name 'IEventSink' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Program.cs(122,62): error CS0246: The type or namespace name 'JournalEvent' could not be found (are you missing a using directive or an assembly reference?) [/home/ubuntu/Documents/Codex/2026-10-21-new-chat/homeless-dark/tests/Dark.Core.Tests/Dark.Core.Tests.csproj]
+
+The build failed. Fix the build errors and run again.

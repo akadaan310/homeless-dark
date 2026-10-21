@@ -1,0 +1,362 @@
+
+> purl@0.1.0 test
+> node --test "test/**/*.test.js"
+
+TAP version 13
+# Subtest: layer import rule
+ok 1 - layer import rule
+  ---
+  duration_ms: 5.154756
+  type: 'test'
+  ...
+# Subtest: reader cannot mutate; observer cannot read content (I3)
+ok 2 - reader cannot mutate; observer cannot read content (I3)
+  ---
+  duration_ms: 8.142913
+  type: 'test'
+  ...
+# Subtest: no observe right → not found (existence is not leaked)
+ok 3 - no observe right → not found (existence is not leaked)
+  ---
+  duration_ms: 3.023117
+  type: 'test'
+  ...
+# Subtest: the §10 scenario: owner A, observer B, delegated operator C
+ok 4 - the §10 scenario: owner A, observer B, delegated operator C
+  ---
+  duration_ms: 3.799637
+  type: 'test'
+  ...
+# Subtest: delegation chain is recorded, attenuated, and revocation cascades (I8)
+ok 5 - delegation chain is recorded, attenuated, and revocation cascades (I8)
+  ---
+  duration_ms: 3.911477
+  type: 'test'
+  ...
+# Subtest: grant holders may revoke only grants descending from their own
+ok 6 - grant holders may revoke only grants descending from their own
+  ---
+  duration_ms: 3.243717
+  type: 'test'
+  ...
+# Subtest: grants expire
+ok 7 - grants expire
+  ---
+  duration_ms: 1.322239
+  type: 'test'
+  ...
+# Subtest: public grants are limited to observe/read and apply to anonymous requesters
+ok 8 - public grants are limited to observe/read and apply to anonymous requesters
+  ---
+  duration_ms: 1.598239
+  type: 'test'
+  ...
+# Subtest: ownership transfer is owner-only and not delegable
+ok 9 - ownership transfer is owner-only and not delegable
+  ---
+  duration_ms: 1.234439
+  type: 'test'
+  ...
+# Subtest: administrators can archive and revoke but cannot read or edit content
+ok 10 - administrators can archive and revoke but cannot read or edit content
+  ---
+  duration_ms: 2.895878
+  type: 'test'
+  ...
+# Subtest: forward is available only to the current assignee
+ok 11 - forward is available only to the current assignee
+  ---
+  duration_ms: 4.101437
+  type: 'test'
+  ...
+# Subtest: replay reconstructs every version and matches recorded state hashes
+ok 12 - replay reconstructs every version and matches recorded state hashes
+  ---
+  duration_ms: 9.797992
+  type: 'test'
+  ...
+# Subtest: every event and resource state validates against the published schemas
+ok 13 - every event and resource state validates against the published schemas
+  ---
+  duration_ms: 6.260235
+  type: 'test'
+  ...
+# Subtest: tampering with an event is detected by verify
+ok 14 - tampering with an event is detected by verify
+  ---
+  duration_ms: 1.982238
+  type: 'test'
+  ...
+# Subtest: handoff does not change identity or ownership (I1, I5)
+ok 15 - handoff does not change identity or ownership (I1, I5)
+  ---
+  duration_ms: 2.613078
+  type: 'test'
+  ...
+# Subtest: handoff is atomic: a failing component aborts every event
+ok 16 - handoff is atomic: a failing component aborts every event
+  ---
+  duration_ms: 1.722398
+  type: 'test'
+  ...
+# Subtest: expected_version is required and enforced (optimistic concurrency, replay defence)
+ok 17 - expected_version is required and enforced (optimistic concurrency, replay defence)
+  ---
+  duration_ms: 1.969719
+  type: 'test'
+  ...
+# Subtest: Idempotency-Key returns the original result and rejects a different body
+ok 18 - Idempotency-Key returns the original result and rejects a different body
+  ---
+  duration_ms: 1.364559
+  type: 'test'
+  ...
+# Subtest: lifecycle state machine gates operations; revoke is always available
+ok 19 - lifecycle state machine gates operations; revoke is always available
+  ---
+  duration_ms: 5.912515
+  type: 'test'
+  ...
+# Subtest: checkpoint packages are validated; server-verified facts are kept apart from claims
+ok 20 - checkpoint packages are validated; server-verified facts are kept apart from claims
+  ---
+  duration_ms: 4.225716
+  type: 'test'
+  ...
+# Subtest: communication profile: declared vs measured is explicit and the disclaimer is mandatory
+ok 21 - communication profile: declared vs measured is explicit and the disclaimer is mandatory
+  ---
+  duration_ms: 1.283279
+  type: 'test'
+  ...
+# Subtest: JSON Merge Patch follows RFC 7396 examples
+ok 22 - JSON Merge Patch follows RFC 7396 examples
+  ---
+  duration_ms: 0.41052
+  type: 'test'
+  ...
+# Subtest: reducer rejects non-genesis first events and out-of-order versions
+ok 23 - reducer rejects non-genesis first events and out-of-order versions
+  ---
+  duration_ms: 0.997319
+  type: 'test'
+  ...
+# Subtest: persistence: a reloaded store replays and verifies the log
+ok 24 - persistence: a reloaded store replays and verifies the log
+  ---
+  duration_ms: 3.444517
+  type: 'test'
+  ...
+# Subtest: the §23 end-to-end demonstration runs over HTTP and every invariant holds
+ok 25 - the §23 end-to-end demonstration runs over HTTP and every invariant holds
+  ---
+  duration_ms: 276.653938
+  type: 'test'
+  ...
+# Subtest: an experiment rerun from its definition reproduces the output hash
+ok 26 - an experiment rerun from its definition reproduces the output hash
+  ---
+  duration_ms: 316.740786
+  type: 'test'
+  ...
+# Subtest: the committed exp-0001 record validates and its hypotheses were not edited after registration
+ok 27 - the committed exp-0001 record validates and its hypotheses were not edited after registration
+  ---
+  duration_ms: 6.575394
+  type: 'test'
+  ...
+# Subtest: instance manifest validates and describes the protocol
+ok 28 - instance manifest validates and describes the protocol
+  ---
+  duration_ms: 41.008047
+  type: 'test'
+  ...
+# Subtest: the protocol describes itself as a public PURL resource
+ok 29 - the protocol describes itself as a public PURL resource
+  ---
+  duration_ms: 17.974706
+  type: 'test'
+  ...
+# Subtest: GET is safe: ?action=<mutation> and GET on an operation URL never mutate (I4)
+ok 30 - GET is safe: ?action=<mutation> and GET on an operation URL never mutate (I4)
+  ---
+  duration_ms: 28.436057
+  type: 'test'
+  ...
+# Subtest: credentials in the URL are rejected; mutations need JSON and a token
+ok 31 - credentials in the URL are rejected; mutations need JSON and a token
+  ---
+  duration_ms: 11.443311
+  type: 'test'
+  ...
+# Subtest: content negotiation: HTML embeds the machine document and links to the manifest
+ok 32 - content negotiation: HTML embeds the machine document and links to the manifest
+  ---
+  duration_ms: 15.262108
+  type: 'test'
+  ...
+# Subtest: resource manifest validates, is evaluated for the requester, and hides private resources
+ok 33 - resource manifest validates, is evaluated for the requester, and hides private resources
+  ---
+  duration_ms: 19.531864
+  type: 'test'
+  ...
+# Subtest: invoke over HTTP: expected_version, If-Match, idempotency, problem details
+ok 34 - invoke over HTTP: expected_version, If-Match, idempotency, problem details
+  ---
+  duration_ms: 24.6725
+  type: 'test'
+  ...
+# Subtest: projections: events (observer sees headers only), state?at, diff, verify, lineage, transitions
+ok 35 - projections: events (observer sees headers only), state?at, diff, verify, lineage, transitions
+  ---
+  duration_ms: 31.650495
+  type: 'test'
+  ...
+# Subtest: subscribe: SSE stream delivers new events
+ok 36 - subscribe: SSE stream delivers new events
+  ---
+  duration_ms: 23.418421
+  type: 'test'
+  ...
+# Subtest: unknown routes and schemas are problems; schemas are served
+ok 37 - unknown routes and schemas are problems; schemas are served
+  ---
+  duration_ms: 8.892752
+  type: 'test'
+  ...
+# Subtest: entropy of known distributions
+ok 38 - entropy of known distributions
+  ---
+  duration_ms: 1.472238
+  type: 'test'
+  ...
+# Subtest: LZ76 reproduces the Lempel–Ziv (1976) textbook example (0·001·10·100·1000·101 → 6)
+ok 39 - LZ76 reproduces the Lempel–Ziv (1976) textbook example (0·001·10·100·1000·101 → 6)
+  ---
+  duration_ms: 14.616988
+  type: 'test'
+  ...
+# Subtest: transition matrix, changes and runs on a hand-checked sequence
+ok 40 - transition matrix, changes and runs on a hand-checked sequence
+  ---
+  duration_ms: 1.303399
+  type: 'test'
+  ...
+# Subtest: entropy profile: periodic sequence has zero conditional entropy once the period is covered
+ok 41 - entropy profile: periodic sequence has zero conditional entropy once the period is covered
+  ---
+  duration_ms: 0.995319
+  type: 'test'
+  ...
+# Subtest: lag2copy: invisible to the first-order transition matrix, visible to h_3
+ok 42 - lag2copy: invisible to the first-order transition matrix, visible to h_3
+  ---
+  duration_ms: 13.08479
+  type: 'test'
+  ...
+# Subtest: autocorrelation finds the period of a noiseless periodic sequence
+ok 43 - autocorrelation finds the period of a noiseless periodic sequence
+  ---
+  duration_ms: 2.869038
+  type: 'test'
+  ...
+# Subtest: temporal measures: burstiness −1 for a regular clock, ≈0 for Poisson; Fano, differences
+ok 44 - temporal measures: burstiness −1 for a regular clock, ≈0 for Poisson; Fano, differences
+  ---
+  duration_ms: 20.056223
+  type: 'test'
+  ...
+# Subtest: transition graph: SCCs, closed classes, periods and boundary artefacts
+ok 45 - transition graph: SCCs, closed classes, periods and boundary artefacts
+  ---
+  duration_ms: 2.337519
+  type: 'test'
+  ...
+# Subtest: Re-Pair compresses repetition, is deterministic, and never interprets
+ok 46 - Re-Pair compresses repetition, is deterministic, and never interprets
+  ---
+  duration_ms: 4.782357
+  type: 'test'
+  ...
+# Subtest: motifs report expectations under stated null models
+ok 47 - motifs report expectations under stated null models
+  ---
+  duration_ms: 1.105959
+  type: 'test'
+  ...
+# Subtest: surrogates: shuffle preserves counts; Markov surrogate preserves transition structure; p-values in (0,1]
+ok 48 - surrogates: shuffle preserves counts; Markov surrogate preserves transition structure; p-values in (0,1]
+  ---
+  duration_ms: 47.415482
+  type: 'test'
+  ...
+# Subtest: seeded generators are reproducible
+ok 49 - seeded generators are reproducible
+  ---
+  duration_ms: 0.4446
+  type: 'test'
+  ...
+# Subtest: projection alphabet matches the Layer 1 primitive list; boundaries come from invocations
+ok 50 - projection alphabet matches the Layer 1 primitive list; boundaries come from invocations
+  ---
+  duration_ms: 0.5772
+  type: 'test'
+  ...
+# Subtest: hypothesis criteria evaluate to supported / not_supported / indeterminate
+ok 51 - hypothesis criteria evaluate to supported / not_supported / indeterminate
+  ---
+  duration_ms: 0.741279
+  type: 'test'
+  ...
+# Subtest: fork preserves lineage, copies no authority, and leaves the source untouched (I9)
+ok 52 - fork preserves lineage, copies no authority, and leaves the source untouched (I9)
+  ---
+  duration_ms: 10.119391
+  type: 'test'
+  ...
+# Subtest: supersede keeps the original (I10)
+ok 53 - supersede keeps the original (I10)
+  ---
+  duration_ms: 3.065638
+  type: 'test'
+  ...
+# Subtest: linking to a resource grants nothing and does not mutate the target (I2)
+ok 54 - linking to a resource grants nothing and does not mutate the target (I2)
+  ---
+  duration_ms: 3.321677
+  type: 'test'
+  ...
+# Subtest: merge: three-way over state, union over entries, provenance kept, conflicts explicit
+ok 55 - merge: three-way over state, union over entries, provenance kept, conflicts explicit
+  ---
+  duration_ms: 5.117836
+  type: 'test'
+  ...
+# Subtest: merge requires a recorded fork relationship
+ok 56 - merge requires a recorded fork relationship
+  ---
+  duration_ms: 1.693638
+  type: 'test'
+  ...
+# Subtest: threeWayMerge and diff unit cases
+ok 57 - threeWayMerge and diff unit cases
+  ---
+  duration_ms: 0.43112
+  type: 'test'
+  ...
+# Subtest: append with a client-chosen entry id is idempotent; entries are immutable
+ok 58 - append with a client-chosen entry id is idempotent; entries are immutable
+  ---
+  duration_ms: 1.712039
+  type: 'test'
+  ...
+1..58
+# tests 58
+# suites 0
+# pass 58
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1770.084302

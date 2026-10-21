@@ -1,0 +1,4 @@
+Session issued at 100 accepts write at 0: False
+Session validity at 110: False
+Expired session accepts write at old tick 1: False
+Corrupt journal result: storage_failed; revision=0; original bytes preserved=True

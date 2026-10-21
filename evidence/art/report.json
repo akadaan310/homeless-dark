@@ -1,0 +1,292 @@
+{
+  "schema": "homeless.art-preparation-evidence/1.0",
+  "recorded_utc": "2026-10-21T08:10:12.994156+00:00",
+  "clauses": [
+    "HD-000",
+    "HD-040",
+    "HD-047",
+    "HD-048",
+    "HD-049",
+    "HD-085.1",
+    "HD-100.A"
+  ],
+  "outcome": "Three exact CC0 PBR archives acquired; fourteen source maps prepared; original fictional cafe OBJ/MTL generated. Native visual acceptance BLOCKED.",
+  "commands": [
+    {
+      "command": "python3 tools/art/fetch_materials.py",
+      "result": "Acquired 3 locked 2K-JPG archives; hashes saved"
+    },
+    {
+      "command": "python3 tools/art/fetch_materials.py --verify",
+      "exit_code": 0,
+      "evidence": "evidence/art/source-hash-verification.log"
+    },
+    {
+      "command": "python3 -m unittest discover -s tools/art -p 'test_*.py' -v",
+      "exit_code": 0,
+      "tests_passed": 9,
+      "evidence": "evidence/art/tests.log"
+    },
+    {
+      "command": "python3 tools/art/author_cafe.py",
+      "exit_code": 0,
+      "evidence": "evidence/art/geometry-regeneration.log"
+    },
+    {
+      "command": "python3 tools/art/inspect_megacity.py",
+      "exit_code": 0,
+      "result": "434 pointers, 432 unique LFS objects, 434705574 unique payload bytes; no payload checkout"
+    }
+  ],
+  "assets": [
+    {
+      "id": "Asphalt024A",
+      "family": "street/road materials",
+      "status": "source_acquired_and_integrity_checked",
+      "states": {
+        "source_seen": true,
+        "price_verified": true,
+        "license_verified": true,
+        "downloaded": true,
+        "integrity_verified": true,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED; no native Editor or device run"
+    },
+    {
+      "id": "Concrete034",
+      "family": "street/road materials",
+      "status": "source_acquired_and_integrity_checked",
+      "states": {
+        "source_seen": true,
+        "price_verified": true,
+        "license_verified": true,
+        "downloaded": true,
+        "integrity_verified": true,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED; no native Editor or device run"
+    },
+    {
+      "id": "Bricks059",
+      "family": "street/road materials",
+      "status": "source_acquired_and_integrity_checked",
+      "states": {
+        "source_seen": true,
+        "price_verified": true,
+        "license_verified": true,
+        "downloaded": true,
+        "integrity_verified": true,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED; no native Editor or device run"
+    },
+    {
+      "id": "FictionalCafe",
+      "family": "buildings/storefronts/interiors",
+      "status": "source_geometry_authored",
+      "states": {
+        "source_seen": true,
+        "price_verified": true,
+        "license_verified": true,
+        "downloaded": false,
+        "integrity_verified": true,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED; no Unity import, materials/collision/device review"
+    },
+    {
+      "id": "OriginalHumans",
+      "family": "fully rigged humans/hair/wardrobe",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalMotion",
+      "family": "everyday animations",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalSedan",
+      "family": "close cars+interiors",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalCivilAircraft",
+      "family": "aircraft",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalLaunchHarbor",
+      "family": "ships/harbors",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalRegionalFoliageWater",
+      "family": "vegetation/water",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalSkyWeather",
+      "family": "sky/weather",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalSpatialAudio",
+      "family": "audio",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    },
+    {
+      "id": "OriginalPerformance",
+      "family": "instruments/performance/balloons",
+      "status": "unbuilt",
+      "states": {
+        "source_seen": false,
+        "price_verified": false,
+        "license_verified": false,
+        "downloaded": false,
+        "integrity_verified": false,
+        "unity_imported": false,
+        "android_rendered": false,
+        "world_integrated": false
+      },
+      "blocker": "UNVERIFIED"
+    }
+  ],
+  "art_budget_bytes": 367001600,
+  "actual_owned_bytes": 126213642,
+  "directory_bytes": {
+    "assets/cache": 73503554,
+    "assets/evidence": 1644400,
+    "assets/licenses": 700177,
+    "assets/selection.lock.json": 28478,
+    "unity/Assets/HOMELESS/Art": 50277239,
+    "tools/art": 58534,
+    "evidence/art": 1260
+  },
+  "unity_imported": false,
+  "android_rendered": false,
+  "world_integrated": false,
+  "native_blocker": "aarch64 host has no supported Unity Editor/build worker or connected Android device; Unity import/build/device evidence not run.",
+  "hero_visual_gaps": [
+    "Fully rigged realistic humans, skin/hair/wardrobe sources unbuilt",
+    "Original everyday humanoid animation unbuilt",
+    "Detailed articulated cars/cabins unbuilt",
+    "Civil aircraft unbuilt",
+    "Ships and harbors unbuilt",
+    "Regionally appropriate foliage and water unbuilt",
+    "Sky/weather source shaders unbuilt",
+    "Original permitted real spatial audio recordings absent",
+    "Instrument/performance/balloon sources unbuilt",
+    "Cafe source exists but URP shading/collision/LOD/native closeup quality unverified; one facade does not establish architectural breadth"
+  ],
+  "original_authoring_license": "assets/licenses/ORIGINAL_ART_LICENSE.txt",
+  "import_contract": "tools/art/UNITY_IMPORT_SPEC.md",
+  "source_license_snapshots": "assets/evidence/license-snapshot-hashes.json",
+  "selection_before_download": "assets/evidence/selection-before-download.json",
+  "spend_usd": 0,
+  "failures": "assets/evidence/acquisition-failures.json",
+  "not_claimed": [
+    "Cinematic visual gate",
+    "Unity compile/import",
+    "Playable native street",
+    "Android performance",
+    "Full Megacity LFS checkout",
+    "Global art coverage"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "available_disk_bytes": 5702545408,
+  "estimated_total_high_bytes": 2098380742238,
+  "estimated_total_low_bytes": 858428485461,
+  "evidence_kind": "Raw size and local disk are observations; expansion/index/temporary/backup/serving multipliers are explicit unmeasured planning assumptions.",
+  "lane_max_bytes": 157286400,
+  "limits": "OSM alone; terrain, imagery, population, astronomy and content storage excluded. Raw PBF exceeds total local filesystem size. No global job authorized within this lane budget.",
+  "method": "HTTP HEAD only; no planet body downloaded",
+  "observed_at": "2026-10-21T08:13:53.144037+00:00",
+  "observed_content_length_bytes": 95380942829,
+  "observed_last_modified": "Thu, 15 Oct 2026 19:22:44 GMT",
+  "pinned_object": "https://planet.openstreetmap.org/pbf/planet-261012.osm.pbf",
+  "planning_multipliers_relative_to_raw": {
+    "expanded_normalized": [
+      4,
+      12
+    ],
+    "indexes": [
+      1,
+      3
+    ],
+    "one_raw_backup": [
+      1,
+      1
+    ],
+    "raw_pbf": [
+      1,
+      1
+    ],
+    "serving_copies": [
+      1,
+      2
+    ],
+    "temporary_work": [
+      1,
+      3
+    ]
+  },
+  "publisher_url": "https://planet.openstreetmap.org/pbf/",
+  "total_filesystem_bytes": 48277495808
+}

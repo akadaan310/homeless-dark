@@ -1,0 +1,108 @@
+{
+  "id": "Bricks059",
+  "family": "street/road materials",
+  "selection": "FREE_SELECTED",
+  "kind": "ambientCG_PBR_source",
+  "url": "https://ambientcg.com/view?id=Bricks059",
+  "download_url": "https://ambientcg.com/get?file=Bricks059_2K-JPG.zip",
+  "archive_filename": "Bricks059_2K-JPG.zip",
+  "expected_archive_bytes": 28121140,
+  "archive_sha256": "de708a2a4519b1fa6041bfbbc4cecee38a9e90d43650c5933da1b4136147d334",
+  "license": "CC0-1.0",
+  "license_evidence": "assets/licenses/ambientCG-license.html",
+  "raw_redistribution": true,
+  "bundled_game_redistribution": true,
+  "sdk_redistribution": true,
+  "source_resolution": "2K-JPG",
+  "physical_tile_m": [
+    1.05,
+    1.05
+  ],
+  "physical_tile_note": "Publisher approximate dimensions",
+  "source_creation": "PBRProcedural",
+  "import_spec": "tools/art/UNITY_IMPORT_SPEC.md",
+  "states": {
+    "source_seen": true,
+    "price_verified": true,
+    "license_verified": true,
+    "downloaded": true,
+    "integrity_verified": true,
+    "unity_imported": false,
+    "android_rendered": false,
+    "world_integrated": false
+  },
+  "files": [
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_AmbientOcclusion.jpg",
+      "sha256": "fa8a06afa1a1d625131378453f1b9d83ebe4ec6dd382131f0ad79129c677729d",
+      "bytes": 2122632,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "AmbientOcclusion",
+      "color_space": "linear",
+      "source_archive_member": "Bricks059_2K-JPG_AmbientOcclusion.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Color.jpg",
+      "sha256": "c64488acb565874c7a9bc5e958d9b2da683f5ddd744dcf1e99c40319df55f8c0",
+      "bytes": 6208642,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "Color",
+      "color_space": "sRGB",
+      "source_archive_member": "Bricks059_2K-JPG_Color.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Displacement.jpg",
+      "sha256": "952af5e1d01e749613d40f9ecc7f1553525f9b32ad5eb4d03c1cdfec1fbf8d90",
+      "bytes": 1154642,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "Displacement",
+      "color_space": "linear",
+      "source_archive_member": "Bricks059_2K-JPG_Displacement.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_NormalGL.jpg",
+      "sha256": "f2175fed2bbf9db77507d8c1b74b0bd74acc4bac24a181fc3926c0587ff8a4ad",
+      "bytes": 7390319,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "NormalGL",
+      "color_space": "linear",
+      "source_archive_member": "Bricks059_2K-JPG_NormalGL.jpg",
+      "modified": false
+    },
+    {
+      "path": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Roughness.jpg",
+      "sha256": "9f5d3c99dc24397965f0927b785fae5401dde66fe22b9a67ec5e3484ddff53b4",
+      "bytes": 2344441,
+      "dimensions_px": [
+        2048,
+        2048
+      ],
+      "semantic": "Roughness",
+      "color_space": "linear",
+      "source_archive_member": "Bricks059_2K-JPG_Roughness.jpg",
+      "modified": false
+    }
+  ],
+  "native_closeup_screenshot": null,
+  "quality": "UNVERIFIED; no native Editor or device run",
+  "archive_path": "assets/cache/Bricks059_2K-JPG.zip",
+  "acquired_at_utc": "2026-10-21T08:01:24Z",
+  "import_path": "unity/Assets/HOMELESS/Art/Materials/Bricks059",
+  "triangles": 0,
+  "lods": "Texture importer max size profiles; no mesh"
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "environment": {
+    "dotnet": "8.0.426",
+    "python": "3.10.12",
+    "machine": "aarch64"
+  },
+  "math_groups_passed": 21,
+  "math_groups_failed": 0,
+  "files": {
+    "packages/com.homeless.dark/Runtime/Grammar/Kernel.cs": "f2e851a44a304505c18710b559b5b6e3cd7bfcb454878883c489a4563248c1e4",
+    "packages/com.homeless.dark/Runtime/Numerics/Kernel.cs": "6fc5c9bb6496c6803d17cfdbecc9c3ae557c36ef90dad4e865455539a83d6690",
+    "packages/com.homeless.dark/Runtime/World/Kernel.cs": "6e7a0dabed33024a991417d96ee4f80a8834989187d702bbac18d4c9746b3ce7",
+    "tests/Dark.Math.Tests/Fixtures/converse.json": "d25037de9a1dfc33258e99041281c0a365eb0b486795da85d2cbd0cb09eb3141",
+    "tests/Dark.Math.Tests/Program.cs": "d3bb628592096664ff148e837ecba504ad061bc8fe9c2481d497f23b96bd7f54"
+  },
+  "logs": {
+    "evidence/math/computationalgrammartheory-tests.log": "9125128e2eebe0b70e27be2acba3e0eb7305debce3f082aac322764679f27086",
+    "evidence/math/extent-red.log": "ef5c13f04b1b14de195df2afd15c8c8ab5d6454719338ae367f918103208a637",
+    "evidence/math/final-tests.log": "95822c67e251da40c5f74283b0a24d631206a0d523eab7f9002110d884a39cd5",
+    "evidence/math/grammarinnumbers-tests.log": "a72b97653d26a0a5629e39ef68dbf80b2e10edf8cd7d51381febdd5bd64ac9bf",
+    "evidence/math/green.log": "af766da91f0ac461d02732e59dd7f507284dbe2f633926183648fe229492409f",
+    "evidence/math/integration-core.log": "b8ef7c0373100b78c88b2c61cff6e577f63fcbdcdf31742896a978da956d8b9e",
+    "evidence/math/integration-geography.log": "56c19f46d88ad700253e25728fbafbdcabfdb6bf7a48c27a2e8c0d8b06ca899c",
+    "evidence/math/intermediate.log": "a8c141dc7dacfb82d5d0884cc0d2fc975d8ff5823b60a6d41562828b6c54200c",
+    "evidence/math/polar-boundary-green.log": "e53044ae9396379009eee9fdfd95da478094a5d01007fc92fafb5d610190b166",
+    "evidence/math/polar-boundary-iteration.log": "4a401d5ab9cc22e4eec647c21de7b09952cf134b945a197ac69d3191857ebab9",
+    "evidence/math/polar-boundary-red.log": "bbbe2c25c624ac693f1b16cb56cb19cc31f64736cfffd72312d99fe485ef4395",
+    "evidence/math/red.log": "b61747269e52f567c1fac64aad8ae5d0bcc7c8a289f39292833a10185908ea56",
+    "evidence/math/straddler-red.log": "3b9b09f549a3f91daaeafdabca540f9aacdefcddd05bf19a3896b673eee1d8a1"
+  }
+}

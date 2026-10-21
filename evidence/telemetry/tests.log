@@ -1,0 +1,14 @@
+test_claimed_native_trace_still_requires_origin_and_scenario_review (test_frames.FrameTests) ... ok
+test_exact_33_3_threshold_is_not_rounded_into_a_pass (test_frames.FrameTests) ... ok
+test_full_synthetic_trace_can_pass_arithmetic_but_never_device_gate (test_frames.FrameTests) ... ok
+test_gaps_duplicates_nonfinite_zero_and_filtered_hitches_refuse (test_frames.FrameTests) ... ok
+test_hash_mismatch_refuses_before_statistics (test_frames.FrameTests) ... ok
+test_metadata_exclusions_missing_profile_and_duplicate_keys_refuse (test_frames.FrameTests) ... ok
+test_nearest_rank_quantiles_and_hitches_use_all_frames (test_frames.FrameTests) ... ok
+test_nonfinite_metadata_is_not_a_json_measurement (test_frames.FrameTests) ... ok
+test_resource_limits_are_refusals (test_frames.FrameTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.588s
+
+OK

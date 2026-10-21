@@ -1,0 +1,250 @@
+{
+  "attempt_count": 1,
+  "build_target": "net8.0 Release",
+  "cases": [
+    {
+      "name": "Pinned OSM node, ordered-way-segment and shared-junction provenance",
+      "status": "PASS"
+    },
+    {
+      "name": "Python local chart agrees with C# WGS84 ENU under explicit zero-height assumption",
+      "status": "PASS"
+    },
+    {
+      "name": "C# source graph connected; fictional before graph has literal 14/3 components",
+      "status": "PASS"
+    },
+    {
+      "name": "RigidCarriage actual kernel result and transport witnesses",
+      "status": "PASS"
+    },
+    {
+      "name": "WitnessedRelocation actual kernel result and transport witnesses",
+      "status": "PASS"
+    },
+    {
+      "name": "RefuseWhileOccupied is atomic with no witness",
+      "status": "PASS"
+    },
+    {
+      "name": "Both admitted policies invert exact state at new revision, with no physical rewind",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic independent replay and stale repeated request refusal",
+      "status": "PASS"
+    },
+    {
+      "name": "Incomplete relocation, fixed-side straddler and insufficient budget refuse atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "Physical/native acceptance stays NOT_RUN and pinned files remain unchanged",
+      "status": "PASS"
+    }
+  ],
+  "command": [
+    "/tmp/homeless-dotnet/dotnet",
+    "run",
+    "--project",
+    "tests/Dark.Geography.Tests/Dark.Geography.Tests.csproj",
+    "--configuration",
+    "Release"
+  ],
+  "exit_code": 0,
+  "failed": 0,
+  "failed_attempts": [],
+  "files": [
+    {
+      "bytes": 736,
+      "path": "tests/Dark.Geography.Tests/Dark.Geography.Tests.csproj",
+      "sha256": "701cdf7fbbe7206f804e732b31176e8a36c66c232cc7524ee6eece24ce4e3565"
+    },
+    {
+      "bytes": 23913,
+      "path": "tests/Dark.Geography.Tests/Program.cs",
+      "sha256": "b3789d8ce989d56813bceb4ca552590e8707b1d9c4e6544f48cf5ac2d270b9c0"
+    },
+    {
+      "bytes": 19043,
+      "path": "packages/com.homeless.dark/Runtime/World/Kernel.cs",
+      "sha256": "6e7a0dabed33024a991417d96ee4f80a8834989187d702bbac18d4c9746b3ce7"
+    },
+    {
+      "bytes": 8404,
+      "path": "packages/com.homeless.dark/Runtime/Numerics/Kernel.cs",
+      "sha256": "6fc5c9bb6496c6803d17cfdbecc9c3ae557c36ef90dad4e865455539a83d6690"
+    },
+    {
+      "bytes": 37169,
+      "path": "data/geography/derived/tampa-two-plate-fixture.json",
+      "sha256": "8abae87f2866dd3a43106c9c77f8f65613245c691d2111949b1b53339ec6bfef"
+    },
+    {
+      "bytes": 467198,
+      "path": "data/geography/sources/tampa-dale-mabry-spruce.osm.json",
+      "sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a"
+    },
+    {
+      "bytes": 57344,
+      "path": "tests/Dark.Geography.Tests/bin/Release/net8.0/Dark.Geography.Tests.dll",
+      "sha256": "ba7e79ecd434dac0023afbf5ad387d3d05179b31fe285af62e806ea374f5c2f5"
+    }
+  ],
+  "fixture_policy_execution": "EXECUTED_IN_CSHARP_MATHEMATICAL_KERNEL; static fixture retains its pre-execution expectations",
+  "fixture_sha256": "8abae87f2866dd3a43106c9c77f8f65613245c691d2111949b1b53339ec6bfef",
+  "hd_091_acceptance": "NOT_ACCEPTED",
+  "log": "evidence/geography/tampa-kernel-attempt-01.log",
+  "log_sha256": "c4af67ca87b81a99a945cdbe0037ab331a1bd39a07743d1d64e6b8d189e54ea7",
+  "native_unity": "NOT_RUN",
+  "network_downloads": 0,
+  "observations": [
+    {
+      "source_edges": 16,
+      "source_hash_verified": true,
+      "source_nodes": 17,
+      "source_segments_checked": 16
+    },
+    {
+      "Admitted": true,
+      "Reason": "mathematical-snapshot-admitted; physical-validation-NOT_RUN",
+      "graph_edges": 15,
+      "physical_validation": "NOT_RUN",
+      "policy": "RigidCarriage",
+      "reachable_from_anchor": 10,
+      "revision": 1,
+      "state_sha256": "4b2e7a1ed83ae67743be2a99034739811fa9a61a9b30fe975aea1ef90656a790",
+      "transports": [
+        {
+          "DestinationNode": "osm/node/2057042478",
+          "EndTick": 220,
+          "EntityId": "fixture/person-west",
+          "OriginNode": "osm/node/2057042478",
+          "StartTick": 100,
+          "end_xyz": [
+            -0.099748000000001,
+            -2.1e-05,
+            -16.353856
+          ],
+          "midpoint_xyz": [
+            -11.634454963358104,
+            -2.1e-05,
+            -11.49338998893851
+          ],
+          "start_xyz": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ]
+        },
+        {
+          "DestinationNode": "osm/node/2057042478",
+          "EndTick": 220,
+          "EntityId": "fixture/point-object-west",
+          "OriginNode": "osm/node/2057042478",
+          "StartTick": 100,
+          "end_xyz": [
+            -0.099748000000001,
+            -2.1e-05,
+            -16.353856
+          ],
+          "midpoint_xyz": [
+            -11.634454963358104,
+            -2.1e-05,
+            -11.49338998893851
+          ],
+          "start_xyz": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ]
+        }
+      ]
+    },
+    {
+      "Admitted": true,
+      "Reason": "mathematical-snapshot-admitted; physical-validation-NOT_RUN",
+      "graph_edges": 15,
+      "physical_validation": "NOT_RUN",
+      "policy": "WitnessedRelocation",
+      "reachable_from_anchor": 10,
+      "revision": 1,
+      "state_sha256": "107d456bc1613dc7f9e93a3ccfbb29af32e06f5daaf750911ddea1518865cc5c",
+      "transports": [
+        {
+          "DestinationNode": "osm/node/1603574189",
+          "EndTick": 220,
+          "EntityId": "fixture/person-west",
+          "OriginNode": "osm/node/2057042478",
+          "StartTick": 100,
+          "end_xyz": [
+            0,
+            0,
+            0
+          ],
+          "midpoint_xyz": [
+            -8.176928,
+            -1.05e-05,
+            0.049874
+          ],
+          "start_xyz": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ]
+        },
+        {
+          "DestinationNode": "osm/node/1603574189",
+          "EndTick": 220,
+          "EntityId": "fixture/point-object-west",
+          "OriginNode": "osm/node/2057042478",
+          "StartTick": 100,
+          "end_xyz": [
+            0,
+            0,
+            0
+          ],
+          "midpoint_xyz": [
+            -8.176928,
+            -1.05e-05,
+            0.049874
+          ],
+          "start_xyz": [
+            -16.353856,
+            -2.1e-05,
+            0.099748
+          ]
+        }
+      ]
+    },
+    {
+      "Admitted": false,
+      "Reason": "HD-065:occupied",
+      "policy": "RefuseWhileOccupied",
+      "revision": 0,
+      "state_unchanged_by_reference": true
+    },
+    {
+      "before_content_sha256": "f1acda24b7008dd4606685b570af7b5d63b039082a1b40ba491968051ff28ebf",
+      "inverse_of_policy": "RigidCarriage",
+      "inverse_operation": "retained-state-inverse; new-physical-transport-required",
+      "inverse_revision": 2,
+      "physical_validation": "NOT_RUN",
+      "restored_content_sha256": "f1acda24b7008dd4606685b570af7b5d63b039082a1b40ba491968051ff28ebf"
+    },
+    {
+      "before_content_sha256": "f1acda24b7008dd4606685b570af7b5d63b039082a1b40ba491968051ff28ebf",
+      "inverse_of_policy": "WitnessedRelocation",
+      "inverse_operation": "retained-state-inverse; new-physical-transport-required",
+      "inverse_revision": 2,
+      "physical_validation": "NOT_RUN",
+      "restored_content_sha256": "f1acda24b7008dd4606685b570af7b5d63b039082a1b40ba491968051ff28ebf"
+    }
+  ],
+  "passed": 10,
+  "physical_validation": "NOT_RUN",
+  "schema_version": 1,
+  "scope": "Actual Dark.World mathematical kernel execution only",
+  "source_sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a",
+  "test_dependencies": "ProjectReference to Dark.Core; no NuGet packages"
+}

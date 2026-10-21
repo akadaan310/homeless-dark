@@ -1,0 +1,14 @@
+{
+  "codex_cli_version": "0.163.0",
+  "tmux_existing_sessions": [
+    "dark"
+  ],
+  "current_agent_started_in_this_run": false,
+  "current_agent_tmux_attachment": "unverified; existing session was not modified or captured",
+  "new_background_agent_launched": false,
+  "continuous_execution_claimed": false,
+  "delivery": "source commits and evidence checkpoint; no relaunch loop",
+  "dotnet_now_installed": "/tmp/homeless-dotnet/dotnet",
+  "dotnet_version": "8.0.426",
+  "initial_inventory": "host-inventory.json describes pre-install state"
+}

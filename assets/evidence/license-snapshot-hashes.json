@@ -1,0 +1,30 @@
+{
+  "retrieved_utc": "2026-10-21T08:06:41.211103+00:00",
+  "files": [
+    {
+      "path": "assets/licenses/Unity-Companion-License.html",
+      "bytes": 633387,
+      "sha256": "b0f9ab32ed93bf569204fecf46f371962719447b0e46c43e83cc8b9acf31975b"
+    },
+    {
+      "path": "assets/licenses/ambientCG-license.html",
+      "bytes": 34106,
+      "sha256": "60138e09b277c89977841462634b36e99d7bae5b77174777813502069c59461c"
+    },
+    {
+      "path": "assets/licenses/CC0-1.0.html",
+      "bytes": 32223,
+      "sha256": "b43732f4c1463b087cf10d4daf8d8766514b2bf8f21bc5ef50905f95be227726"
+    },
+    {
+      "path": "assets/licenses/ORIGINAL_ART_LICENSE.txt",
+      "bytes": 461,
+      "sha256": "5a249708a78cde6fb3b9ae0d056d429acc5d973128f6c2046c38f5ba29602817"
+    }
+  ],
+  "sources": {
+    "ambientCG-license.html": "https://docs.ambientcg.com/license/",
+    "CC0-1.0.html": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+    "Unity-Companion-License.html": "https://unity.com/legal/licenses/unity-companion-license"
+  }
+}

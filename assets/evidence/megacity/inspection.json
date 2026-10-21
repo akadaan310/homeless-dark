@@ -1,0 +1,136 @@
+{
+  "repository": "https://github.com/Unity-Technologies/megacity-metro",
+  "commit": "07652ee74a1f322c2c3e607020f07be720175680",
+  "license": "Unity Companion License; independent third-party terms must be reviewed before art reuse",
+  "metadata_files": [
+    {
+      "upstream_path": "LICENCE.md",
+      "sha256": "2499d43cab119c48ab2ae670a43a20260d6eb6df695a091c1ec72f77d00bd33d",
+      "bytes": 475
+    },
+    {
+      "upstream_path": "ProjectSettings/ProjectVersion.txt",
+      "sha256": "1a47686c7a9ac92eae6b23cf3358d1329fbbe8237051ed631faf6e15a945402a",
+      "bytes": 83
+    },
+    {
+      "upstream_path": "Packages/manifest.json",
+      "sha256": "db14e2ef12e7884fc94e965b8bc0d14cafbf46428e9b84b4a764f7873d98a920",
+      "bytes": 3122
+    },
+    {
+      "upstream_path": ".gitattributes",
+      "sha256": "cc74a81e5a5fb6165f4e0dcc7dd3e7a618b8413889e2614fad09abdbef2c16d4",
+      "bytes": 1971
+    },
+    {
+      "upstream_path": "README.md",
+      "sha256": "eed195e1cf96ac9f307c016aed0ff86102c5c29d332169cb5e74fa8572ad1bcf",
+      "bytes": 4448
+    }
+  ],
+  "tree_truncated": false,
+  "scene_paths": [
+    "Assets/Scenes/Main.unity",
+    "Assets/Scenes/Main/AdditiveLaserPoolScene.unity",
+    "Assets/Scenes/Main/AdditiveLightPoolScene.unity",
+    "Assets/Scenes/Main/Audio_Subscene.unity",
+    "Assets/Scenes/Main/Blimps.unity",
+    "Assets/Scenes/Main/Common.unity",
+    "Assets/Scenes/Main/Holograms.unity",
+    "Assets/Scenes/Main/Level.unity",
+    "Assets/Scenes/Main/MegacityMetroLevelBounds.unity",
+    "Assets/Scenes/Main/Player_Subscene.unity",
+    "Assets/Scenes/Main/Traffic.unity",
+    "Assets/Scenes/Menu.unity"
+  ],
+  "git_blob_size_bytes": 81667281,
+  "lfs_candidate_pointer_count": 331,
+  "lfs_sample": [
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_Noise 1.png",
+      "oid": "sha256:9465e8520126c2d6c40df0acec40923810a1b0b4c31fbc1e64e2da7caeb7fac8",
+      "lfs_size_bytes": 514015,
+      "pointer_sha256": "0b0ee13eb7f7a6856f220ef065c5cabaead4c41cbc9ad36131949f1ad4d89870"
+    },
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_Noise.png",
+      "oid": "sha256:9465e8520126c2d6c40df0acec40923810a1b0b4c31fbc1e64e2da7caeb7fac8",
+      "lfs_size_bytes": 514015,
+      "pointer_sha256": "0b0ee13eb7f7a6856f220ef065c5cabaead4c41cbc9ad36131949f1ad4d89870"
+    },
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_sample.png",
+      "oid": "sha256:5a06647dd470610123f9c7f209a39cbebc1dc0e220abef04c3ea3926dd22b943",
+      "lfs_size_bytes": 82567,
+      "pointer_sha256": "4b3c60f1a31cb442524b34cd3c572ed8caabc73017d8232a0a53e087d6787181"
+    },
+    {
+      "path": "Assets/Art/CustomLighting/interior_cube_sample2.png",
+      "oid": "sha256:1f118e1578de0738d197487981c8885691f3722466be3cd5e05e048950e4aea8",
+      "lfs_size_bytes": 160168,
+      "pointer_sha256": "5612a939e33dd2d5a30bd21cb37c0ece9768d49cf5c032d5c6c9a4659436a626"
+    },
+    {
+      "path": "Assets/Art/Materials/Effects/Textures/BaseParticle.png",
+      "oid": "sha256:9c33ee4a3b0ba5e80ce5211352da3435531719d9c69d3de7b1c36cdb5a3842b3",
+      "lfs_size_bytes": 45226,
+      "pointer_sha256": "0302a8e7e0e27a221ee39a85759eb48b7e0df291ba09d381568eb2709b0e50dc"
+    },
+    {
+      "path": "Assets/Art/Materials/Effects/Textures/Line.png",
+      "oid": "sha256:0d9badf7a74db4bc3a92b4bde0ed19ad5f423890cebadfb96b669d444314e033",
+      "lfs_size_bytes": 138052,
+      "pointer_sha256": "20d0a09f379ab946d17958343f0bac38aeda4c03536fe0c30af3294387f868f4"
+    },
+    {
+      "path": "Assets/Art/Materials/Effects/Textures/Mask.png",
+      "oid": "sha256:fdfc754f777f29465d668b23432f19a9a4d16be490acf546a8ed7de435872562",
+      "lfs_size_bytes": 8136,
+      "pointer_sha256": "6c3ca7df86e57458137957b5337a7a65b636b53dfd801b324323e7f450475983"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_001.fbx",
+      "oid": "sha256:8df2afd11f7c34dc6654e0624a99cfaec3be1efae9e039d441f5b992f076edd4",
+      "lfs_size_bytes": 558144,
+      "pointer_sha256": "444cc302c3b30a3308ba070fe642b9f487a56e7ab09a272fec29b19ab74e0298"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_002.fbx",
+      "oid": "sha256:39418b9ec9f5f8dc0798390541aa8e876edd17fd07dfb25c8c89550e69e241f3",
+      "lfs_size_bytes": 156240,
+      "pointer_sha256": "85aed660105cbe657a614166369b1c57c6d49ad80ebc8cee874af543a226f9a5"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_003.fbx",
+      "oid": "sha256:67fd0f4ad50cdbe69949681073ff639fae5fdb06b98c78b55b8719bf0412738b",
+      "lfs_size_bytes": 122608,
+      "pointer_sha256": "770f078072cea3ac2a66a89e0ed49e51ab9fe64f8515a83b97f3dc1ce601e53c"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_004.fbx",
+      "oid": "sha256:388d61d9197bd17f00c54a6daa26f92024f1c3bbb4d692396fc857f74de3f4de",
+      "lfs_size_bytes": 139872,
+      "pointer_sha256": "6ab135ebe0dd05d4408dd0d0c0f50c0d1426800e8584a2e671c1e4bdd3638bd3"
+    },
+    {
+      "path": "Assets/Art/Models/Environment/FloatingSigns/BIllboard_01.fbx",
+      "oid": "sha256:105ecca1fba639a2dfa1576ee9d634d149644f047b7740a61119b58d824a1770",
+      "lfs_size_bytes": 125664,
+      "pointer_sha256": "eb38c3049e3f599e97044e111d61cd76b7acac4e95e04f148a7d5f309423f625"
+    }
+  ],
+  "lfs_sample_payload_bytes": 2564707,
+  "full_lfs_size_bytes": null,
+  "lfs_checkout_confirmed": false,
+  "downloaded": false,
+  "unity_imported": false,
+  "android_rendered": false,
+  "world_integrated": false,
+  "scope": "Pinned source metadata and sample pointer bytes only; no full checkout, import, assets or native captures. Git blob sum excludes LFS payloads and is not disk requirement.",
+  "suitability": "Architecture/URP streaming reference only; sci-fi art not selected as Tampa hero art; UGS services not activated.",
+  "lfs_pointer_inventory": "assets/evidence/megacity/lfs-inventory.json",
+  "lfs_inspected_pointer_count": 434,
+  "lfs_inspected_unique_payload_bytes": 434705574,
+  "lfs_inventory_errors": 0
+}

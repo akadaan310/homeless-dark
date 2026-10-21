@@ -1,0 +1,461 @@
+{
+  "schema": "homeless.task-queue/1",
+  "recorded_utc": "2026-10-21T08:36:26.465848+00:00",
+  "release_accepted": false,
+  "note": "Actionable portable and source work remains READY. This checkpoint does not assert that the entire commission is complete or that every remaining task is externally blocked. Dependencies describe later integrated outputs; READY tasks may have immediately actionable preparation. No unattended relaunch/continuous execution is operating.",
+  "items": [
+    {
+      "id": "portable-regression",
+      "owner": "integration",
+      "status": "COMPLETE_SUBSET",
+      "dependencies": [],
+      "scope": "Existing portable increment and adversarial review fixes",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "DARK_DOTNET=/tmp/homeless-dotnet/dotnet python3 tools/run_checks.py",
+      "affected_clauses": [
+        "HD-005.1",
+        "HD-087",
+        "HD-095"
+      ],
+      "measurable_output": "All registered portable suites execute; logs and per-file source digest retained. This does not close whole clauses."
+    },
+    {
+      "id": "inhabitant-disk-continuity",
+      "owner": "living-world",
+      "status": "COMPLETE_SUBSET",
+      "dependencies": [
+        "portable-regression"
+      ],
+      "scope": "Versioned bounded single-inhabitant snapshot/recovery",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Population.Tests",
+      "affected_clauses": [
+        "HD-028",
+        "HD-029",
+        "HD-030",
+        "HD-078",
+        "HD-089",
+        "HD-095"
+      ],
+      "measurable_output": "Save/reload actual identity, personality, goals and causal memories; typed malformed/stale refusals and process-style reload evidence."
+    },
+    {
+      "id": "tampa-source-plate",
+      "owner": "geography-population",
+      "status": "COMPLETE_SUBSET",
+      "dependencies": [
+        "portable-regression"
+      ],
+      "scope": "Export actual OSM node graph into an explicitly fictional two-plate fixture",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Geography.Tests",
+      "affected_clauses": [
+        "HD-018",
+        "HD-063",
+        "HD-064",
+        "HD-065",
+        "HD-091"
+      ],
+      "measurable_output": "17 sourced nodes and16 source edges; Python export tests and10 executed C# kernel groups cover all3policies, witnesses, changed reachability, inverses and stale refusal. Physical/native validation remains NOT_RUN."
+    },
+    {
+      "id": "frame-trace-calculator",
+      "owner": "runtime-delivery",
+      "status": "COMPLETE_SUBSET",
+      "dependencies": [],
+      "scope": "Bounded continuous-frame statistics and dishonest/filtered trace rejection",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "python3 -m unittest discover -s tests/telemetry -p 'test_*.py' -v",
+      "affected_clauses": [
+        "HD-081",
+        "HD-082",
+        "HD-082.1"
+      ],
+      "measurable_output": "Nine synthetic tests pass; device-origin review still required; no native measurements."
+    },
+    {
+      "id": "compatible-unity-worker",
+      "owner": "runtime-delivery",
+      "status": "BLOCKED",
+      "dependencies": [],
+      "scope": "Connect an already available eligible licensed supported Unity worker",
+      "available_host": "No compatible worker connected; local ARM64 Linux cannot run supported Unity Editor",
+      "blocker": "Gateway lists zero servers; no Editor/license/Android SDK/NDK/JDK on local ARM64 machine. User access-details question pending.",
+      "next_command": "Read docs/unity-build.md; on supplied worker inspect Unity6000.1.0f1, activated eligible license and Android modules before running its batch commands.",
+      "affected_clauses": [
+        "HD-000",
+        "HD-008",
+        "HD-079",
+        "HD-080"
+      ],
+      "measurable_output": "Actual worker inventory and successful clean Editor import/compile log with commit and exit status."
+    },
+    {
+      "id": "native-source-art-review",
+      "owner": "visual-audio",
+      "status": "BLOCKED",
+      "dependencies": [
+        "compatible-unity-worker"
+      ],
+      "scope": "Import source masters, generate URP art-review scene, inspect materials/collision/audio",
+      "available_host": "No compatible worker connected; local ARM64 Linux cannot run supported Unity Editor",
+      "blocker": "Requires compatible Editor; source scripts are not Unity-compiled.",
+      "next_command": "Run documented Homeless.Editor.SourceSceneBuilder.PrepareArtReview and EditMode tests on the compatible worker; see docs/unity-build.md for exact argv.",
+      "affected_clauses": [
+        "HD-000.A",
+        "HD-000.B",
+        "HD-036",
+        "HD-037",
+        "HD-038",
+        "HD-039",
+        "HD-040",
+        "HD-048",
+        "HD-092"
+      ],
+      "measurable_output": "Native moving-camera capture and actual test results; restore after stepping off all scene edges; document source art defects."
+    },
+    {
+      "id": "hero-art-production",
+      "owner": "visual-audio",
+      "status": "READY",
+      "dependencies": [],
+      "scope": "Acquire or author realistic humans/hair/clothing/motion, vehicles/interiors, aircraft/boats, region foliage and performance assets",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "python3 tools/art/fetch_materials.py --help",
+      "affected_clauses": [
+        "HD-000.A",
+        "HD-000.B",
+        "HD-047",
+        "HD-048",
+        "HD-049",
+        "HD-085.1",
+        "HD-100.A"
+      ],
+      "measurable_output": "Exact lawful zero-cost files, source hashes, articulated rigs, LODs and motions for each missing family. Inspect tools/art/hero-recipes.json and selection lock before additional authoring. Recipes alone do not count."
+    },
+    {
+      "id": "bounded-geography-layers",
+      "owner": "geography-population",
+      "status": "READY",
+      "dependencies": [],
+      "scope": "Budgeted actual terrain/population/maritime/timezone/weather/celestial acquisition and parsers",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "python3 tools/geography/reproduce.py",
+      "affected_clauses": [
+        "HD-017",
+        "HD-018",
+        "HD-019",
+        "HD-021",
+        "HD-022",
+        "HD-023",
+        "HD-024",
+        "HD-025",
+        "HD-026",
+        "HD-027"
+      ],
+      "measurable_output": "Select exact epochs/releases/licenses and affordable partitions, implement missing parsers and commit truthful source manifests. Existing reproduction command checks the starting data only."
+    },
+    {
+      "id": "planet-release-ingest",
+      "owner": "geography-population",
+      "status": "BLOCKED",
+      "dependencies": [
+        "bounded-geography-layers"
+      ],
+      "scope": "Close declared full-planet partition manifest and serving/index budget",
+      "available_host": "Existing disk is much smaller than one full OSM planet PBF",
+      "blocker": "Observed planet PBF alone95,380,942,829bytes exceeds current free and total filesystem; no sufficient already available storage/serving host discovered.",
+      "next_command": "Read evidence/geography/storage-budget.json and data/geography/global-manifest.json; inspect any already available storage before selecting a partition plan.",
+      "affected_clauses": [
+        "HD-017",
+        "HD-018",
+        "HD-088"
+      ],
+      "measurable_output": "Verified complete declared release partitions, hashes/counts and spatial indexes without treating airport/regional coverage as planet completion."
+    },
+    {
+      "id": "population-realization",
+      "owner": "geography-population",
+      "status": "READY",
+      "dependencies": [
+        "bounded-geography-layers"
+      ],
+      "scope": "Actual selected-epoch allocation, virtual/cohort/individual scheduling, migration and sparse identity/history",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Math.Tests",
+      "affected_clauses": [
+        "HD-025",
+        "HD-028",
+        "HD-029",
+        "HD-030",
+        "HD-031",
+        "HD-032",
+        "HD-089"
+      ],
+      "measurable_output": "Reconcile actual source totals and benchmark tractable schedule against individual baseline; no duplicate migration. Existing exact allocation tests are only starting kernels; globally allocated population remains0."
+    },
+    {
+      "id": "protocol-binding",
+      "owner": "integration",
+      "status": "READY",
+      "dependencies": [
+        "portable-regression"
+      ],
+      "scope": "Implement compatible actual PURL/SEURL/ACSP adapters after pinned source inspection",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "cat evidence/references/protocols.json",
+      "affected_clauses": [
+        "HD-012",
+        "HD-013",
+        "HD-069",
+        "HD-070",
+        "HD-076"
+      ],
+      "measurable_output": "Describe/validate/invoke/witness/replay over inspected protocol contracts, authenticated effects with typed failure/body limits and interop tests. Proposed URI parser is not the adapter."
+    },
+    {
+      "id": "bounded-script-worker",
+      "owner": "runtime-delivery",
+      "status": "READY",
+      "dependencies": [
+        "protocol-binding"
+      ],
+      "scope": "Select and integrate zero-cost bounded computation worker with typed effect imports",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "rg -n '70\\. Shells|memory/fuel|Kill/restart' HOMELESS_DARK_STANDALONE_CONSTITUTION.md",
+      "affected_clauses": [
+        "HD-070",
+        "HD-095"
+      ],
+      "measurable_output": "Actual fuel/time/memory/output limits, malformed/trap/time-out cases and restart idempotency. Host shell access never becomes player authority."
+    },
+    {
+      "id": "remaining-mathematics",
+      "owner": "mathematics",
+      "status": "READY",
+      "dependencies": [
+        "portable-regression"
+      ],
+      "scope": "Implement unregistered model contracts, fold/identity/BORNE/solvers and reference comparisons",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Math.Tests",
+      "affected_clauses": [
+        "HD-014",
+        "HD-055",
+        "HD-056",
+        "HD-057",
+        "HD-058",
+        "HD-059",
+        "HD-060",
+        "HD-061",
+        "HD-062",
+        "HD-063",
+        "HD-064",
+        "HD-065",
+        "HD-066",
+        "HD-067",
+        "HD-068",
+        "HD-087"
+      ],
+      "measurable_output": "Each admitted model has positive/negative fixtures, bounded semantics, witnesses and exact reference limits. Current21 groups do not certify every mathematical clause."
+    },
+    {
+      "id": "live-world-effects",
+      "owner": "living-world",
+      "status": "READY",
+      "dependencies": [
+        "portable-regression",
+        "inhabitant-disk-continuity"
+      ],
+      "scope": "Shared event/world transactions, model families, sparse communication, NPC schedules and fictional contributions",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Core.Tests",
+      "affected_clauses": [
+        "HD-012",
+        "HD-012.1",
+        "HD-012.2",
+        "HD-013",
+        "HD-014",
+        "HD-028",
+        "HD-029",
+        "HD-030",
+        "HD-031",
+        "HD-032",
+        "HD-071",
+        "HD-072",
+        "HD-073",
+        "HD-074",
+        "HD-093.1"
+      ],
+      "measurable_output": "Actual bounded causally scoped choices, refusal/cancel/retry paths and durable relationships. Extend beyond local sign and one NPC fixture."
+    },
+    {
+      "id": "cross-store-recovery",
+      "owner": "runtime-delivery",
+      "status": "READY",
+      "dependencies": [
+        "inhabitant-disk-continuity",
+        "live-world-effects"
+      ],
+      "scope": "Transactional trusted heads, world snapshots, migrations, crash and backup restoration",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "/tmp/homeless-dotnet/dotnet run --project tests/Dark.Core.Tests",
+      "affected_clauses": [
+        "HD-015",
+        "HD-069",
+        "HD-078",
+        "HD-095"
+      ],
+      "measurable_output": "Kill/restart, torn-tail, low-disk, concurrent writer and independently trusted-head recovery without fabricated writes. Current journal refuses corrupt tails instead of repairing them."
+    },
+    {
+      "id": "speech-and-sound",
+      "owner": "visual-audio",
+      "status": "READY",
+      "dependencies": [],
+      "scope": "Original/cleared environmental sound, captions and an offline speech baseline",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "python3 tools/audio/synthesize.py --check",
+      "affected_clauses": [
+        "HD-043",
+        "HD-044",
+        "HD-045",
+        "HD-046",
+        "HD-050",
+        "HD-051",
+        "HD-052",
+        "HD-053",
+        "HD-054",
+        "HD-092"
+      ],
+      "measurable_output": "Real licensed speech/model bytes and bounded disconnect/cache/latency experiments, local decoded audio and event-caption alignment. Four synthetic WAVs are source experiments only."
+    },
+    {
+      "id": "native-living-gameplay",
+      "owner": "living-world",
+      "status": "BLOCKED",
+      "dependencies": [
+        "compatible-unity-worker",
+        "hero-art-production",
+        "live-world-effects",
+        "population-realization",
+        "tampa-source-plate"
+      ],
+      "scope": "Third-person founder/member arrival, animation, transport, grammar mechanics, region travel and saves",
+      "available_host": "No compatible worker connected; local ARM64 Linux cannot run supported Unity Editor",
+      "blocker": "No runnable native project import yet; high-fidelity hero families and substantial gameplay not implemented. Portable subwork remains separately READY.",
+      "next_command": "Read docs/unity-build.md; implement missing game content before invoking SourceSceneBuilder.BuildAndroid, which intentionally refuses incomplete content.",
+      "affected_clauses": [
+        "HD-002",
+        "HD-003",
+        "HD-033",
+        "HD-034",
+        "HD-035",
+        "HD-036",
+        "HD-037",
+        "HD-038",
+        "HD-039",
+        "HD-040",
+        "HD-041",
+        "HD-042",
+        "HD-067",
+        "HD-068",
+        "HD-075",
+        "HD-090",
+        "HD-091",
+        "HD-093"
+      ],
+      "measurable_output": "Actual native controls/NPCs/transport/plate semantics with continuous play capture; art-review walker is not the commissioned game."
+    },
+    {
+      "id": "device-performance-and-experience",
+      "owner": "independent-qa",
+      "status": "BLOCKED",
+      "dependencies": [
+        "native-living-gameplay",
+        "native-source-art-review"
+      ],
+      "scope": "Actual Galaxy A16 install,20-minute representative trace, thermal/memory/audio and playthrough",
+      "available_host": "No connected inspected Galaxy A16",
+      "blocker": "Requires real native build and supplied device connection; exact model/OS/GPU/RAM currently unknown.",
+      "next_command": "Read tools/telemetry/README.md; acquire continuous native trace and exact metadata before invoking frames.py.",
+      "affected_clauses": [
+        "HD-081",
+        "HD-082",
+        "HD-082.1",
+        "HD-082.2",
+        "HD-087",
+        "HD-088",
+        "HD-089",
+        "HD-090",
+        "HD-091",
+        "HD-092",
+        "HD-093",
+        "HD-094"
+      ],
+      "measurable_output": "Device/hash-specific measurements, real footage and listening evidence; all eight visual rubric categories scored and commissioner look acceptance."
+    },
+    {
+      "id": "network-participants",
+      "owner": "runtime-delivery",
+      "status": "READY",
+      "dependencies": [
+        "protocol-binding",
+        "live-world-effects"
+      ],
+      "scope": "Authoritative local multi-participant faults/interest filtering then actual external-controller session",
+      "available_host": "Existing Ubuntu ARM64 host; .NET8.0.426 and Python3.10; no new expenditure",
+      "blocker": null,
+      "next_command": "cat evidence/references/protocols.json",
+      "affected_clauses": [
+        "HD-076",
+        "HD-077",
+        "HD-095"
+      ],
+      "measurable_output": "Two-human/external-controller/native participation remains unrun; local tests may establish strict scoped schemas and duplicate/reconnect behavior only."
+    },
+    {
+      "id": "release-evidence",
+      "owner": "integration",
+      "status": "BLOCKED",
+      "dependencies": [
+        "planet-release-ingest",
+        "population-realization",
+        "device-performance-and-experience",
+        "network-participants",
+        "remaining-mathematics",
+        "cross-store-recovery"
+      ],
+      "scope": "All mandatory gates and exact distributable Android artifacts",
+      "available_host": "Source preparation available; required runtime/device evidence absent",
+      "blocker": "Full game, world coverage, population, native footage and commissioner visual acceptance absent.",
+      "next_command": "python3 tools/commission.py verify",
+      "affected_clauses": [
+        "HD-010",
+        "HD-083",
+        "HD-084",
+        "HD-085",
+        "HD-086",
+        "HD-086.1",
+        "HD-096",
+        "HD-097",
+        "HD-098",
+        "HD-099"
+      ],
+      "measurable_output": "All mandatory clauses accepted with actual evidence and distributable hashes. Ledger integrity alone never grants release acceptance."
+    }
+  ]
+}

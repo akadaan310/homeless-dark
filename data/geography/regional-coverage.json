@@ -1,0 +1,41 @@
+{
+  "global_coverage_complete": false,
+  "regions": [
+    {
+      "feature_counts": {
+        "building": 263,
+        "place": 2,
+        "road": 472
+      },
+      "geometry_extent_note": "Ways are complete source ways intersecting the box; referenced nodes may lie outside it",
+      "id": "tampa-dale-mabry-spruce",
+      "requested_bbox_south_west_north_east": [
+        27.955,
+        -82.509,
+        27.964,
+        -82.502
+      ],
+      "scope": "Bounded development fixture, not global coverage",
+      "snapshot_requested": "2026-10-20T00:00:00Z",
+      "source_database_timestamp": "2026-10-21T08:07:13Z",
+      "source_sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a"
+    },
+    {
+      "feature_counts": {
+        "place": 1
+      },
+      "geometry_extent_note": "Ways are complete source ways intersecting the box; referenced nodes may lie outside it",
+      "id": "marina-del-rey",
+      "requested_bbox_south_west_north_east": [
+        33.94,
+        -118.48,
+        34.01,
+        -118.41
+      ],
+      "scope": "Named-place reference point only; harbor geometry not acquired",
+      "snapshot_requested": null,
+      "source_database_timestamp": "2026-10-21T08:10:13Z",
+      "source_sha256": "fcfa1f78e58eec955c609303bc90c7d7f8c09233ea3cc7e746930dae731c290b"
+    }
+  ]
+}

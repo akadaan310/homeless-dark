@@ -1,0 +1,26 @@
+$ /usr/bin/python3 -m unittest discover -s tests/geography -p test_*.py -v
+test_bad_csv_is_refused_without_replacing_existing_database (test_pipeline.AirportTests) ... ok
+test_index_is_order_independent_and_antimeridian_query_finds_both_sides (test_pipeline.AirportTests) ... ok
+test_record_bound_and_query_coordinate_validation (test_pipeline.AirportTests) ... ok
+test_failure_keeps_previous_bytes_and_cleans_partial_files (test_pipeline.DownloadTests) ... ok
+test_non_https_remote_and_nonpositive_limit_refused_before_mutation (test_pipeline.DownloadTests) ... ok
+test_verified_download_replaces_existing_file_and_pinned_cache_needs_no_network (test_pipeline.DownloadTests) ... ok
+test_import_stable_under_element_order_and_no_invented_intersections (test_pipeline.OsmTests) ... ok
+test_missing_references_nonfinite_coordinates_duplicates_and_server_remark_refused (test_pipeline.OsmTests) ... ok
+test_real_node_topology_drives_source_anchor_and_polygon (test_pipeline.OsmTests) ... ok
+test_source_escape_and_tamper_refused_without_touching_published_output (test_reproduce.ReproductionTests) ... ok
+test_anchor_is_actual_shared_named_road_node (test_tampa_fixture.TampaFixtureTests) ... ok
+test_bad_source_or_missing_edge_refused_without_output_replacement (test_tampa_fixture.TampaFixtureTests) ... ok
+test_deterministic_export_and_topology_replay_reject_stale_revision (test_tampa_fixture.TampaFixtureTests) ... ok
+test_every_node_and_edge_has_real_source_membership (test_tampa_fixture.TampaFixtureTests) ... ok
+test_local_chart_axes_scale_and_synthetic_height_are_explicit (test_tampa_fixture.TampaFixtureTests) ... ok
+test_plate_partition_and_request_match_bounded_kernel_contract (test_tampa_fixture.TampaFixtureTests) ... ok
+test_real_connectivity_and_fictional_reachability_swap (test_tampa_fixture.TampaFixtureTests) ... ok
+test_source_travel_tags_and_physical_limits_survive_export (test_tampa_fixture.TampaFixtureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.633s
+
+OK
+
+exit_code=0

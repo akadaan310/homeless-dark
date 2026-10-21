@@ -1,0 +1,29 @@
+{
+  "clauses": [
+    "HD-017",
+    "HD-018",
+    "HD-021",
+    "HD-024",
+    "HD-025",
+    "HD-036",
+    "HD-043",
+    "HD-088",
+    "HD-089",
+    "HD-095"
+  ],
+  "implemented_subset": [
+    "Strict bounded downloader with atomic replacement and pinned cache verification",
+    "OSM node/way import preserving source tags, shared-node anchor verification and explicit geometry provenance",
+    "Complete pinned airport CSV ingest with deterministic SQLite indexes and antimeridian query",
+    "Global missing-layer/partition inventory with no closure claim"
+  ],
+  "no_completion_claim": "Aviation source-file completeness, geographic anchors, counts, hashes and portable tests do not meet worldwide or native acceptance.",
+  "remaining_gates": {
+    "Marina_scene": "BLOCKED: place anchor only; bounded regional geometry requests returned HTTP 504",
+    "Tampa_scene": "NOT_RUN: geometry imported as data, no Unity collision/navigation or ground-truth survey",
+    "native_gameplay": "BLOCKED: compatible Unity build worker unavailable at inspected checkpoint",
+    "population": "NOT_RUN: metadata only; no raster sums or worldwide allocations",
+    "spatial_heatmap": "NOT_RUN: coverage counts and occupied airport cells only; no worldwide environmental scene heatmap",
+    "worldwide_data": "BLOCKED: global releases/partitions not enumerated or acquired; local disk cannot hold even raw OSM planet"
+  }
+}

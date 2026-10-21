@@ -1,0 +1,18 @@
+{
+  "bytes": 12748669,
+  "content_type": "text/plain",
+  "etag": "\"d544f2783a498bff4b0b6fe9fe44bf90b0fa0435f869f9b6c7d6ed90c4b3bf6a\"",
+  "id": "ourairports-airports",
+  "last_modified": null,
+  "license": "Public Domain",
+  "license_url": "https://ourairports.com/data/",
+  "path": "sources/ourairports-airports.csv",
+  "resolved_url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv",
+  "retrieved_at": "2026-10-21T08:04:19.781164+00:00",
+  "reused": false,
+  "scope": "Complete airports.csv only; other source tables not acquired",
+  "sha256": "0499dbd88de2fc735ac5c09f59796ccc3af544e17ffda807f793c0c6fe6c3d75",
+  "source_release": "b529623d2a0b09a9be78d37fc7a7a5e1e16e3451",
+  "source_release_date": "2026-10-16T01:53:13Z",
+  "url": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/b529623d2a0b09a9be78d37fc7a7a5e1e16e3451/airports.csv"
+}

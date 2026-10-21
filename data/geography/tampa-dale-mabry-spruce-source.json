@@ -1,0 +1,25 @@
+{
+  "attribution": "© OpenStreetMap contributors",
+  "bbox_south_west_north_east": [
+    27.955,
+    -82.509,
+    27.964,
+    -82.502
+  ],
+  "bytes": 467198,
+  "content_type": "application/json",
+  "etag": null,
+  "id": "tampa-dale-mabry-spruce",
+  "last_modified": null,
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "path": "sources/tampa-dale-mabry-spruce.osm.json",
+  "query": "[out:json][timeout:20][maxsize:16777216][date:\"2026-10-20T00:00:00Z\"];(way[\"highway\"](27.955,-82.509,27.964,-82.502);way[\"building\"](27.955,-82.509,27.964,-82.502);way[\"waterway\"](27.955,-82.509,27.964,-82.502);way[\"natural\"=\"coastline\"](27.955,-82.509,27.964,-82.502);node[\"place\"](27.955,-82.509,27.964,-82.502););(._;>;);out body;",
+  "resolved_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A16777216%5D%5Bdate%3A%222026-10-20T00%3A00%3A00Z%22%5D%3B%28way%5B%22highway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22building%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22waterway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22natural%22%3D%22coastline%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bnode%5B%22place%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3B%29%3B%28._%3B%3E%3B%29%3Bout+body%3B",
+  "retrieved_at": "2026-10-21T08:08:53.236556+00:00",
+  "reused": false,
+  "sha256": "55bd28406a5cf22063eba5d456e46f4cd7f1b590c9288bc4808ad9ff1a27e86a",
+  "snapshot_requested": "2026-10-20T00:00:00Z",
+  "source_release": "OSM historical snapshot requested 2026-10-20T00:00:00Z",
+  "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A16777216%5D%5Bdate%3A%222026-10-20T00%3A00%3A00Z%22%5D%3B%28way%5B%22highway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22building%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22waterway%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bway%5B%22natural%22%3D%22coastline%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3Bnode%5B%22place%22%5D%2827.955%2C-82.509%2C27.964%2C-82.502%29%3B%29%3B%28._%3B%3E%3B%29%3Bout+body%3B"
+}

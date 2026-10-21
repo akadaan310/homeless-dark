@@ -1,0 +1,7 @@
+{
+  "name": "com.homeless.dark",
+  "version": "0.1.0",
+  "displayName": "Dark portable engine",
+  "description": "Bounded portable mechanics for HOMELESS. See the governing constitution and evidence for supported contracts.",
+  "unity": "6000.0"
+}
