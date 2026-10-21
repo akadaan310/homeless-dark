@@ -1,65 +1,58 @@
 {
-  "schema": "homeless.delivery-checkpoint/1",
-  "recorded_utc": "2026-10-21T08:49:02.169390+00:00",
+  "schema": "homeless.delivery-checkpoint/2",
+  "recorded_utc": "2026-10-21T11:00:16.462020+00:00",
   "repository": "https://github.com/akadaan310/homeless-dark",
   "branch": "main",
-  "tested_implementation_commit": "6e72da81efb716cbc47d25687d6958af572c2ca7",
+  "tested_implementation_commit": "1fa17a08a519c525a688f4a1c7ec692156286ccb",
   "implementation_commit_pushed": true,
-  "source_sha256": "dbbb3f37a9d0fe87a0cfd6508686b56125ff69512ef2b58640659e8290abff1e",
+  "source_sha256": "6d3925d12f85fef42d9f12ccb3a25d49456755d48d9ceb4ef779ed15daade101",
   "source_manifest": "evidence/verification/source-files.json",
   "verification_report": "evidence/verification/latest.json",
   "constitution_sha256": "426adac678bbb014949c5e645844d61893009109db6a37cca254fdef58b3365d",
-  "portable_commands_passed": 12,
-  "portable_commands_failed": 0,
-  "portable_test_groups": {
-    "core": 20,
-    "mathematics": 21,
-    "cli_and_projection": 9,
-    "art": 9,
-    "geography_python": 18,
-    "audio": 7,
-    "telemetry": 9,
-    "population": 15,
-    "tampa_kernel": 10
+  "verification_scope": "full baseline plus isolated cleanup change and affected regressions",
+  "full_baseline_commands_passed": 19,
+  "affected_incremental_commands_passed": 2,
+  "commands_failed": 0,
+  "tests": {
+    "full_baseline_world_server": 152,
+    "final_staging_cleanup": 22,
+    "final_world_streaming": 5,
+    "content": 19,
+    "global_geography_python": 35,
+    "core_groups": 20,
+    "mathematics_groups": 21,
+    "population_allocation_groups": 14,
+    "native_wire_checks": 32,
+    "terrain_wire_checks": 47
   },
-  "total_portable_test_groups_passed": 118,
-  "total_portable_test_groups_failed": 0,
-  "reference_suite_counts_separate": {
-    "PURL": 58,
-    "CGT": 56,
-    "GiN": 47,
-    "ANWAA": 59
-  },
+  "test_count_note": "Incremental staging/streaming checks overlap the full baseline; these counts are not additive. The final byte-reserve change affects only staging.py and test_staging.py; all other source hashes match the full baseline.",
   "full_clause_status_counts": {
     "NOT_RUN": 117,
     "BLOCKED": 7
   },
   "release_accepted": false,
   "apk": null,
-  "native_editor_import": "BLOCKED",
-  "native_adapter_compile": "NOT_RUN",
+  "native_editor_import": "BLOCKED_LICENSE",
+  "native_adapter_compile": "PASS_REAL_UNITY_ASSEMBLIES",
   "native_device_profile": null,
   "native_footage": null,
-  "globally_allocated_population": 0,
-  "independent_reviews": [
-    "evidence/reviews/independent-review.md",
-    "evidence/reviews/independent-rereview.md",
-    "evidence/reviews/pipeline-review.md",
-    "evidence/reviews/pipeline-rereview.md",
-    "evidence/reviews/extension-review.md"
-  ],
-  "usable_artifact": "Local CLI sign journal and NPC save/replay fixture; Unity source/art/data are preparation, not a native playable game.",
-  "unfinished_work": "Full mandatory native/worldwide/population/transport/speech/experience gates and substantial READY portable tasks remain in evidence/task-queue.json.",
+  "globally_allocated_population": 8140897523,
+  "nonspatial_population_residual": 23412899,
+  "population_scope": "Conserved source-cohort ranges and bounded lazy realization; no8b detailed active actors or real-person position claim.",
+  "usable_artifact": "Persistent authenticated HTTP/CLI World and Unity client source; actual gameplay session commits60 events with NPCs, source-cohort resident, staging, entities, learned plate transforms and multimodal Tampa-to-London travel.",
+  "gameplay_evidence": "evidence/server/gameplay-session-final-increment.json",
+  "unfinished_work": "Active continuation. Native license/import/render, Android/device acceptance, detailed worldwide source coverage, density integration, richer transport/speech/experience and remaining mathematical/creative contracts stay open in evidence/task-queue.json.",
   "new_paid_assets_or_chargeable_workers_activated": false,
   "unattended_agent_or_relaunch_loop_started": false,
   "patch_checks": {
-    "authored_cs_py_csproj_asmdef_docs_config": "PASS",
-    "unrestricted_git_diff_check": "Whitespace present in preserved publisher/license HTML, original failed log and standard empty Unity folder metadata fields; no source bytes altered to silence it.",
-    "credential_pattern_scan": "No configured credential patterns found in278 examined text deliverable files; limited pattern scan, not security certification."
+    "source_index_integrity": "608 tested source files tracked/staged; no unstaged source differences at implementation commit.",
+    "authored_source_whitespace": "PASS except one cosmetic final blank line in tools/content/mesh_library.py; preserved upstream license/model-card formatting is separate.",
+    "credential_pattern_scan": "No configured private-key or GitHub-token patterns in704 staged text files; limited scan, not security certification."
   },
   "notes": [
-    "The implementation commit contains the exact tested source. This evidence-only checkpoint commit may follow it without changing source files.",
-    "Initial uncommitted-source logs are retained under evidence/verification/initial and remain separately identified.",
-    "No percent-complete or native quality/performance claim is made."
+    "The implementation commit is preserved and pushed; this evidence checkpoint does not claim all commission gates are closed.",
+    "Original baseline delivery and logs are archived in evidence/verification/baseline-d9907a2.",
+    "The actual Unity Editor version and normal licensing IPC execute; no installed valid license or matching entitlement was found.",
+    "Android kernel/init/SELinux probes are live independent work and do not establish Android game execution."
   ]
 }
