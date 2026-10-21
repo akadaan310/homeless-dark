@@ -1,0 +1,10 @@
+import { chromium } from '@playwright/test';
+const [model, out, extra = ''] = process.argv.slice(2);
+const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 800, height: 500 } });
+page.on('pageerror', (e) => console.log('pageerror', e.message));
+await page.goto(`http://127.0.0.1:5173/viewer.html?model=${model}${extra}`);
+await page.waitForFunction(() => window.__viewerReady, null, { timeout: 60000 });
+await page.waitForTimeout(500);
+await page.screenshot({ path: out });
+await browser.close();

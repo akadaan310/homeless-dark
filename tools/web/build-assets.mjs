@@ -71,6 +71,20 @@ for (const [id, src, family, origin] of MODELS) {
   console.log('model', id, fs.statSync(out).size);
 }
 
+// mobile/instancing derivatives: meshoptimizer simplification (error-bounded), then meshopt compression
+const LODS = [['palm', 0.12, 0.01], ['sedan', 0.08, 0.02], ['citizen', 0.35, 0.002], ['citizen-alt', 0.35, 0.002]];
+for (const [id, ratio, error] of LODS) {
+  const src = path.join(OUT, 'models', `${id}.glb`), out = path.join(OUT, 'models', `${id}-lod.glb`), tmp = path.join(TMP, `${id}-lod.glb`);
+  if (!fs.existsSync(out) || process.argv.includes('--force')) {
+    execFileSync(GLTF_TRANSFORM, ['simplify', src, tmp, '--ratio', String(ratio), '--error', String(error)], { stdio: 'pipe' });
+    execFileSync(GLTF_TRANSFORM, ['meshopt', tmp, out], { stdio: 'pipe' });
+  }
+  entries.push({ id: `model/${id}-lod`, kind: 'glb', family: 'lod', path: `models/${id}-lod.glb`, source: `models/${id}.glb`, sha256: sha(out), bytes: fs.statSync(out).size,
+    license: 'CC0-1.0', origin: `simplified derivative of ${id}`, conversion: `gltf-transform simplify --ratio ${ratio} --error ${error}; meshopt`, status: ['imported', 'render-tested'] });
+}
+// FBX2glTF unpacks embedded textures next to the source (.fbm); they are not repository content.
+for (const d of ['Characters/Citizen.fbm', 'Characters/CitizenAltSkin.fbm']) fs.rmSync(path.join(CONTENT, d), { recursive: true, force: true });
+
 // ---------------------------------------------------------------- textures
 const AMBIENT = [
   ['asphalt', 'Asphalt024A', { color: 'Color', normal: 'NormalGL', rough: 'Roughness', ao: 'AmbientOcclusion' }],

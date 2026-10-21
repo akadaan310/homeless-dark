@@ -20,10 +20,10 @@ export interface LightProfile {
 }
 
 export const PROFILES: Record<LightProfileId, LightProfile> = {
-  day: { id: 'day', exposureEV: 0, sunIntensityLux: 3.2, hemiIntensity: 0.9, skyTurbidity: 6, rayleigh: 1.4, mieCoefficient: 0.004, mieDirectionalG: 0.8, fogDensity: 0.0012, streetLightsOn: false, colorTempK: 5600, source: 'authored' },
-  golden_hour: { id: 'golden_hour', exposureEV: 0.4, sunIntensityLux: 2.2, hemiIntensity: 0.6, skyTurbidity: 8, rayleigh: 2.2, mieCoefficient: 0.006, mieDirectionalG: 0.86, fogDensity: 0.0016, streetLightsOn: false, colorTempK: 3400, source: 'authored' },
-  twilight: { id: 'twilight', exposureEV: 1.2, sunIntensityLux: 0.35, hemiIntensity: 0.35, skyTurbidity: 9, rayleigh: 3, mieCoefficient: 0.008, mieDirectionalG: 0.9, fogDensity: 0.002, streetLightsOn: true, colorTempK: 7500, source: 'authored' },
-  night: { id: 'night', exposureEV: 1.9, sunIntensityLux: 0.06, hemiIntensity: 0.12, skyTurbidity: 2, rayleigh: 0.3, mieCoefficient: 0.002, mieDirectionalG: 0.7, fogDensity: 0.0025, streetLightsOn: true, colorTempK: 4100, source: 'authored' },
+  day: { id: 'day', exposureEV: 0, sunIntensityLux: 5.2, hemiIntensity: 0.3, skyTurbidity: 6, rayleigh: 1.4, mieCoefficient: 0.004, mieDirectionalG: 0.8, fogDensity: 0.0012, streetLightsOn: false, colorTempK: 5600, source: 'authored' },
+  golden_hour: { id: 'golden_hour', exposureEV: 0.4, sunIntensityLux: 3.8, hemiIntensity: 0.25, skyTurbidity: 8, rayleigh: 2.2, mieCoefficient: 0.006, mieDirectionalG: 0.86, fogDensity: 0.0016, streetLightsOn: false, colorTempK: 3400, source: 'authored' },
+  twilight: { id: 'twilight', exposureEV: 1.2, sunIntensityLux: 0.35, hemiIntensity: 0.18, skyTurbidity: 9, rayleigh: 3, mieCoefficient: 0.008, mieDirectionalG: 0.9, fogDensity: 0.002, streetLightsOn: true, colorTempK: 7500, source: 'authored' },
+  night: { id: 'night', exposureEV: 1.9, sunIntensityLux: 0.06, hemiIntensity: 0.05, skyTurbidity: 2, rayleigh: 0.3, mieCoefficient: 0.002, mieDirectionalG: 0.7, fogDensity: 0.0025, streetLightsOn: true, colorTempK: 4100, source: 'authored' },
   indoor: { id: 'indoor', exposureEV: 1.1, sunIntensityLux: 0.4, hemiIntensity: 0.45, skyTurbidity: 6, rayleigh: 1.4, mieCoefficient: 0.004, mieDirectionalG: 0.8, fogDensity: 0, streetLightsOn: true, colorTempK: 3000, source: 'authored' },
   tunnel: { id: 'tunnel', exposureEV: 1.6, sunIntensityLux: 0.1, hemiIntensity: 0.2, skyTurbidity: 6, rayleigh: 1, mieCoefficient: 0.004, mieDirectionalG: 0.8, fogDensity: 0.004, streetLightsOn: true, colorTempK: 4000, source: 'authored' },
   underwater: { id: 'underwater', exposureEV: 1, sunIntensityLux: 0.5, hemiIntensity: 0.5, skyTurbidity: 6, rayleigh: 1, mieCoefficient: 0.01, mieDirectionalG: 0.8, fogDensity: 0.05, streetLightsOn: false, colorTempK: 9000, source: 'authored' },

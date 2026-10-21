@@ -65,6 +65,9 @@ describe('MotionAndEventGrammar [M]', () => {
     const noSeat = { edgeOpen: () => ({ ok: true }), targetReady: (t: string) => ({ ok: !t.startsWith('seat'), reason: 'occupied' }) };
     expect(checkPlan('interior', plan, noSeat)).toMatchObject({ realizable: false, failedAt: 6 });
   });
+  it('car boarding: walk → open car door → enter → sit is admissible', () => {
+    expect(checkPlan('street', [{ action: 'WALK' }, { action: 'OPEN_DOOR' }, { action: 'ENTER_VEHICLE' }, { action: 'SIT' }], open).accepted).toBe(true);
+  });
   it('rejects inadmissible words (ride before sitting)', () => {
     const v = checkPlan('street', [{ action: 'RIDE' }], open);
     expect(v).toMatchObject({ admissible: false, failedAt: 0 });

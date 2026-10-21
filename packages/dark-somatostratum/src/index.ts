@@ -77,6 +77,7 @@ export class HapticScheduler {
   constructor(private driver: HapticDriver | null, private totalPerMinute = 40) {}
 
   setDriver(d: HapticDriver | null) { this.driver = d; }
+  get driverName(): string { return this.driver?.name ?? 'none'; }
 
   request(letter: HapticLetter, now: number, eventId?: string): HapticFireRecord {
     const spec = HAPTIC_ALPHABET[letter];

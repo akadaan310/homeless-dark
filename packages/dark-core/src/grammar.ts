@@ -18,7 +18,7 @@ export type MotionState = 'street' | 'at_door' | 'door_open' | 'interior' | 'at_
 export const MOTION_DFA: Record<Exclude<MotionState, 'dead'>, Partial<Record<MotionAction, MotionState>>> = {
   street: { WALK: 'street', TALK: 'street', WAIT: 'street', OPEN_DOOR: 'door_open', ENTER_VEHICLE: 'in_vehicle', CHECK_IN: 'terminal' },
   at_door: { OPEN_DOOR: 'door_open', WALK: 'street' },
-  door_open: { PASS_DOOR: 'interior', CLOSE_DOOR: 'street', WALK: 'street' },
+  door_open: { PASS_DOOR: 'interior', CLOSE_DOOR: 'street', WALK: 'street', ENTER_VEHICLE: 'in_vehicle' },
   interior: { WALK: 'interior', TALK: 'interior', SIT: 'seated', OPEN_DOOR: 'door_open', WAIT: 'interior' },
   at_vehicle: { ENTER_VEHICLE: 'in_vehicle' },
   in_vehicle: { SIT: 'seated', EXIT_VEHICLE: 'street', CLOSE_DOOR: 'in_vehicle' },

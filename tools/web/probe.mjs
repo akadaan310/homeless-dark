@@ -1,0 +1,16 @@
+import { chromium } from '@playwright/test';
+const [url, wait = '15000'] = process.argv.slice(2);
+const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+const logs = [];
+page.on('console', (m) => logs.push(`[${m.type()}] ${m.text()}`));
+page.on('pageerror', (e) => logs.push(`[pageerror] ${e.message}`));
+const t0 = Date.now();
+await page.goto(url);
+await page.waitForFunction(() => window.__dark?.hud?.ready || window.__dark?.hud?.error, null, { timeout: 120000 }).catch(() => logs.push('timeout waiting ready'));
+console.log('ready after', Date.now() - t0, 'ms');
+await page.waitForTimeout(Number(wait));
+const hud = await page.evaluate(() => { const h = window.__dark?.hud; return h && { fps: h.fps, p50: h.p50, p95: h.p95, draws: h.drawCalls, tris: h.triangles, err: h.error, loading: h.loading, stats: h.extra?.stats }; }).catch(e=>'eval failed '+e.message);
+console.log(JSON.stringify(hud));
+console.log(logs.slice(0, 30).join('\n'));
+await browser.close();
