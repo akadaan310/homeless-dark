@@ -33,9 +33,11 @@ code { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--t
 .place { font-weight: 700; }
 .meta { color: var(--muted); font-size: 12px; margin: 2px 0; }
 .meta.strong, .strong { color: var(--ink); }
-.hud-tr { position: absolute; right: 12px; top: 12px; display: flex; gap: 10px; font: 11px ui-monospace, monospace; color: var(--muted); background: var(--panel); border-radius: 8px; padding: 6px 10px; pointer-events: none; }
+.hud-corner { position: absolute; right: 12px; top: 12px; display: flex; gap: 6px; z-index: 5; }
+.hud-corner button { background: var(--panel); min-width: 40px; padding: 6px 10px; }
+.hud-tr { position: absolute; right: 108px; top: 14px; display: flex; gap: 10px; font: 11px ui-monospace, monospace; color: var(--muted); background: var(--panel); border-radius: 8px; padding: 6px 10px; pointer-events: none; }
 .hud-tr .ok { color: var(--ok); } .hud-tr .warn { color: var(--warn); }
-.hud-menu { position: absolute; right: 12px; top: 48px; display: flex; flex-direction: column; gap: 6px; }
+.hud-menu { position: absolute; right: 12px; top: 60px; display: flex; flex-direction: column; gap: 6px; }
 .hud-menu button { background: var(--panel); min-width: 92px; }
 .prompt { position: absolute; left: 50%; bottom: 120px; transform: translateX(-50%); background: var(--panel); border: 1px solid var(--accent); color: var(--ink); padding: 8px 14px; border-radius: 999px; font-weight: 600; pointer-events: none; }
 .captions { position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%); width: min(720px, calc(100vw - 24px)); display: grid; gap: 4px; pointer-events: none; }

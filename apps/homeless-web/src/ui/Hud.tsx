@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import type { Engine, HudState } from '../engine/engine';
 
 type Panel = 'none' | 'travel' | 'sign' | 'research' | 'settings';
@@ -17,6 +17,9 @@ export function Hud({ e, hud, panel, onPanel }: { e: Engine; hud: HudState; pane
     return () => window.removeEventListener('keydown', k);
   }, [e, hud.dialog, panel, onPanel]);
 
+  const [devOpen, setDevOpen] = useState(() => { try { return localStorage.getItem('dark.dev') !== '0'; } catch { return true; } });
+  const toggleDev = () => { const v = !devOpen; setDevOpen(v); try { localStorage.setItem('dark.dev', v ? '1' : '0'); } catch { /* storage unavailable */ } };
+  const fullscreen = () => { if (document.fullscreenElement) void document.exitFullscreen(); else void document.documentElement.requestFullscreen?.().catch(() => {}); };
   const extra = hud.extra as { carKmh?: number; inCar?: boolean; signal?: string; npcs?: { name: string; activity: string; reason: string; trust: number; state: string }[]; tiers?: Record<string, number>; signText?: string; travel?: Record<string, unknown> };
   return (
     <>
@@ -26,7 +29,11 @@ export function Hud({ e, hud, panel, onPanel }: { e: Engine; hud: HudState; pane
         <div className="meta">{hud.profile} · EV {hud.exposureEV >= 0 ? '+' : ''}{hud.exposureEV} · {hud.rain > 0 ? `rain ${Math.round(hud.rain * 100)}%` : 'dry'} · wet {Math.round(hud.wetness * 100)}%</div>
         {extra.inCar && <div className="meta strong">{extra.carKmh} km/h · signal {extra.signal}</div>}
       </div>
-      <div className="hud-tr" data-testid="hud-perf">
+      <div className="hud-corner">
+        <button onClick={fullscreen} aria-label="Full screen" data-testid="btn-fullscreen">⛶</button>
+        <button onClick={toggleDev} aria-label="Toggle menus" data-testid="btn-dev">{devOpen ? '✕' : '☰'}</button>
+      </div>
+      {devOpen && <><div className="hud-tr" data-testid="hud-perf">
         <span>{hud.fps} fps</span><span>p95 {hud.p95} ms</span><span>{hud.drawCalls} draws</span>
         <span className={hud.audio ? 'ok' : 'warn'}>{hud.audio ? (hud.hrtf ? 'HRTF audio' : 'audio') : 'audio locked'}</span>
       </div>
@@ -37,7 +44,7 @@ export function Hud({ e, hud, panel, onPanel }: { e: Engine; hud: HudState; pane
         <button onClick={() => onPanel(panel === 'settings' ? 'none' : 'settings')}>Settings</button>
         <button onClick={() => onPanel(panel === 'research' ? 'none' : 'research')} data-testid="btn-research">Research</button>
         <button onClick={() => e.pause(!hud.paused)} data-testid="btn-pause">{hud.paused ? 'Resume' : 'Pause'}</button>
-      </div>
+      </div></>}
       {hud.prompt && !hud.dialog && <div className="prompt" data-testid="prompt">{hud.prompt}</div>}
       <div className="captions" aria-live="polite" data-testid="captions">
         {hud.captions.slice(-3).map((c, i) => <div key={i} className="caption"><b>{c.speaker.replace('npc:', '').replace(/^./, (x) => x.toUpperCase())}</b> {c.text}</div>)}

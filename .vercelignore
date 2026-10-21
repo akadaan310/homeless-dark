@@ -1,0 +1,8 @@
+unity/
+evidence/
+assets/content/
+data/geography/global/raw/
+data/geography/global/terrain/
+data/geography/sources/
+packages/dark_server/
+tests/
