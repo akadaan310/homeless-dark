@@ -1,0 +1,501 @@
+{
+ "commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+ "subjects": [
+  {
+   "id": "transition-systems",
+   "division": "foundations",
+   "title": "States, moves and transitions",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/grammar MotionAndEventGrammar",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "finite-automata",
+   "division": "foundations",
+   "title": "Finite-state machines and regular languages",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/grammar MOTION_DFA",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "operational-grammar",
+   "division": "foundations",
+   "title": "Operational grammars: syntax, semantics, execution",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/grammar checkPlan (admissible × realizable)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "admissibility",
+   "division": "foundations",
+   "title": "Admissibility languages and the product construction",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/grammar + WorldAuthority.admit",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "substrate-theory",
+   "division": "foundations",
+   "title": "Substrate Theory: computation as transformation of state",
+   "epistemic": "house",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "perturbation",
+   "division": "foundations",
+   "title": "Perturbation: a small change and where it goes",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/grammar realizer perturbation",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "equivalence-classes",
+   "division": "foundations",
+   "title": "Equivalence classes and quotients",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/folds encodeRoute (turn/length classes)",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "numerical-grammars",
+   "division": "foundations",
+   "title": "Numerical grammars: numerals are programs",
+   "epistemic": "house",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "graph-theory",
+   "division": "foundations",
+   "title": "Graphs, walks and paths",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/grammar planProduct (nav × DFA)",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "complexity",
+   "division": "foundations",
+   "title": "The cost of resolution and complexity classes",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/grammar planProduct expansion budget",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "alphabets-words",
+   "division": "relational",
+   "title": "Alphabets, words and the free monoid",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/folds token words",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "generative-grammars",
+   "division": "relational",
+   "title": "Generative grammars and the Chomsky hierarchy",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/facade FacadeGrammar",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "plicastratum",
+   "division": "relational",
+   "title": "Plicastratum: folding a path into one glyph",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/folds Re-Pair SLP + ScenePlicaRegistry",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "alphabet-towers",
+   "division": "relational",
+   "title": "Structured alphabets and alphabet towers",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/folds strata (rule levels)",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "ingrammatica",
+   "division": "relational",
+   "title": "Ingrammatica: the study of what a grammar refuses",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/folds ScenePlicaRegistry gates",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "constructive-admission",
+   "division": "relational",
+   "title": "Constructive Substrate Admission",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/folds promote() held-out test",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "relational-generativity",
+   "division": "relational",
+   "title": "Relational Generativity: structure from a seed and its relations",
+   "epistemic": "house",
+   "darkAdapter": "dark-subjects/facade DistrictPaletteGrammar (interval orbit hues)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "modal-cyclic",
+   "division": "relational",
+   "title": "Cyclic mathematics: rotations, necklaces and modes",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/music interval orbit ⟨k⟩ ⊆ ℤ/12",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "recursive-folds",
+   "division": "relational",
+   "title": "Recursion: folds and unfolds as structure-preserving maps",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/folds expand() with finite budget",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "compositional-forms",
+   "division": "relational",
+   "title": "Compositional forms: parallel rewriting and graph grammars",
+   "epistemic": "established",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "uri-grammar",
+   "division": "languages",
+   "title": "Addresses as words: the grammar of a URI",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/program WorldProgramCompiler tokenizer",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "purl",
+   "division": "languages",
+   "title": "PURL: an address for a resource and its operations",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/program PURL-like path programs (no scheme registered)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "seurl",
+   "division": "languages",
+   "title": "SEURL: typed operation channels",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/program START…COMMIT protocol + effect declaration",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "typed-machines",
+   "division": "languages",
+   "title": "Typed machines and statecharts",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/program FSM idle→open→committed",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "types-as-admissibility",
+   "division": "languages",
+   "title": "Types as admissibility",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/program typed args",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "compilation",
+   "division": "languages",
+   "title": "Compilation: when a word becomes one operation",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/program compile/format/unfold",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "matrix-loom",
+   "division": "languages",
+   "title": "Matrix Loom: weaving operations into matrices",
+   "epistemic": "house",
+   "darkAdapter": "dark-subjects/matrixLoom (port of loom:// compiler)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "addressable-forms",
+   "division": "languages",
+   "title": "Addressable forms: when an address is arithmetic",
+   "epistemic": "house",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "grammars-as-programs",
+   "division": "languages",
+   "title": "Grammars as programs: parsing",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/program + CLOCK9 proposals",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "symbolic-composition",
+   "division": "languages",
+   "title": "Symbolic composition and the transition monoid",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/program op composition",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "image-kernel",
+   "division": "geometry",
+   "title": "Image, kernel and preimage",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/lod projection-loss declarations",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "imagistratum",
+   "division": "geometry",
+   "title": "Imagistratum: what each layer of representation keeps",
+   "epistemic": "house",
+   "darkAdapter": "dark-subjects/lod PerceptualLOD strata",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "rank-nullity",
+   "division": "geometry",
+   "title": "Rank, nullity and projection loss",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/lod (rank of projection)",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "projective-camera",
+   "division": "geometry",
+   "title": "The pinhole camera as a projective map",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/lod screen-space error + frustum salience",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "topology",
+   "division": "geometry",
+   "title": "Topology: what deformation cannot change",
+   "epistemic": "established",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "curvature",
+   "division": "geometry",
+   "title": "Curvature and turning",
+   "epistemic": "established",
+   "darkAdapter": "dark-geo geodesicDistance (Vincenty on ellipsoid)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "spatial-tensors",
+   "division": "geometry",
+   "title": "Vectors, frames and tensors",
+   "epistemic": "established",
+   "darkAdapter": "dark-geo ENU basis",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "computational-photography",
+   "division": "geometry",
+   "title": "Computational photography: an image is a measurement",
+   "epistemic": "established",
+   "darkAdapter": "visual-grammar adaptExposure + tone mapping",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "celestial-geometry",
+   "division": "geometry",
+   "title": "Celestial coordinates and the observer",
+   "epistemic": "established",
+   "darkAdapter": "dark-geo solar/moon position",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "chart-correspondences",
+   "division": "geometry",
+   "title": "Charts, map projections and their distortions",
+   "epistemic": "established",
+   "darkAdapter": "dark-geo WGS84↔ECEF↔ENU, floating origin",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "rendering-mathematics",
+   "division": "geometry",
+   "title": "Rendering: the equation behind every frame",
+   "epistemic": "established",
+   "darkAdapter": "visual-grammar color (sRGB, OKLCH, ΔE2000)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "invisible-sensing",
+   "division": "geometry",
+   "title": "Invisible sensing: inferring what is not in view",
+   "epistemic": "application",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "sound-signals",
+   "division": "acoustic",
+   "title": "Sound as a signal, and how it is sampled",
+   "epistemic": "established",
+   "darkAdapter": "apps/homeless-web audio synth (Web Audio)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "pitch-frequency",
+   "division": "acoustic",
+   "title": "Pitch, frequency and the logarithm",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/music frequency()",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "interval-geometry",
+   "division": "acoustic",
+   "title": "Interval geometry: walking the circle of twelve",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/music orbit()",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "tuning",
+   "division": "acoustic",
+   "title": "Tuning: pure ratios against equal steps",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/music cents()",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "fourier",
+   "division": "acoustic",
+   "title": "Spectra: the discrete Fourier transform",
+   "epistemic": "established",
+   "darkAdapter": "apps/homeless-web AnalyserNode spectral witness",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "time-frequency",
+   "division": "acoustic",
+   "title": "Time–frequency: the spectrogram and its limit",
+   "epistemic": "established",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "synthesis",
+   "division": "acoustic",
+   "title": "Sound synthesis: additive, subtractive and FM",
+   "epistemic": "established",
+   "darkAdapter": "dark-somatostratum footstepFor/engineTone",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "phase",
+   "division": "acoustic",
+   "title": "Phase: where in the cycle",
+   "epistemic": "established",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "phonogrammatica",
+   "division": "acoustic",
+   "title": "Phonogrammatica: a grammar of acoustic forms",
+   "epistemic": "house",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "generative-composition",
+   "division": "acoustic",
+   "title": "Generative composition: music from rules",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/music MusicClock",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "cellular-automata",
+   "division": "worlds",
+   "title": "Cellular automata: a world from a local rule",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/loom weave() (port)",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "world-loom",
+   "division": "worlds",
+   "title": "World Loom: weaving a world row by row",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/npc assignTiers + dark-subjects/loom",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "agent-grammars",
+   "division": "worlds",
+   "title": "Agent grammars: inhabitants from rules",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/npc decide/respondToRide",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "procedural-environments",
+   "division": "worlds",
+   "title": "Procedural environments: building from rules",
+   "epistemic": "established",
+   "darkAdapter": "dark-subjects/facade",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "world-models",
+   "division": "worlds",
+   "title": "Generative world models",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/world WorldAuthority",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "glm-lgm",
+   "division": "worlds",
+   "title": "Gaming Language Models and Language Gaming Models",
+   "epistemic": "house",
+   "darkAdapter": null,
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "borne",
+   "division": "worlds",
+   "title": "BORNE: what must be born before what",
+   "epistemic": "house",
+   "darkAdapter": "dark-core/borne BorneGraph",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "maps-navigation",
+   "division": "worlds",
+   "title": "World maps and navigation",
+   "epistemic": "established",
+   "darkAdapter": "dark-geo + dark-travel",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "simulated-populations",
+   "division": "worlds",
+   "title": "Simulated populations and emergence",
+   "epistemic": "established",
+   "darkAdapter": "dark-core/npc tiers (identity capacity ≠ active minds)",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "homeless-dark",
+   "division": "worlds",
+   "title": "HOMELESS / Dark: an application in development",
+   "epistemic": "application",
+   "darkAdapter": "apps/homeless-web",
+   "darkStatus": "witnessed"
+  }
+ ]
+}

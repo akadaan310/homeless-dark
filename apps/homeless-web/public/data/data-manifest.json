@@ -1,0 +1,54 @@
+{
+ "schema": "dark.web-data-manifest/1",
+ "entries": [
+  {
+   "path": "tampa-cell.json",
+   "bytes": 158170,
+   "sha256": "9a465e908449e4eca99559eef76438ed7197619a471b4f7c6333092b6304a8d2",
+   "source": "data/geography/tampa-dale-mabry-spruce.geojson",
+   "note": "472 roads, 263 buildings projected to ENU"
+  },
+  {
+   "path": "terrain/index.json",
+   "bytes": 115932,
+   "sha256": "2dd518fe5866def7ed8b47782152252bca32ba2fb25c3c5a4ed8f8a1ae53c56e",
+   "source": "data/geography/global/terrain/heights.i16",
+   "note": "648 lossless 10-degree tiles of GEBCO 2025 6-arcminute grid"
+  },
+  {
+   "path": "terrain/coarse.i16",
+   "bytes": 130682,
+   "sha256": "5272e3e0e7e8bb22636a24070d9c2f7292171e75f1bd85049af01491579e1bc6",
+   "source": "data/geography/global/terrain/heights.i16",
+   "note": "1-degree decimation for globe view"
+  },
+  {
+   "path": "landmask.png",
+   "bytes": 60406,
+   "sha256": "73b997b952cdbd4d9429906fd11e8b7e53a52b7ae0e867f8ff3a5a2051d238aa",
+   "source": "Natural Earth 10m land minus lakes (ca96624a)",
+   "note": "0.1-degree equirectangular raster, row 0 = 90N, 1 = land"
+  },
+  {
+   "path": "countries.png",
+   "bytes": 125538,
+   "sha256": "54198b74413cc32f9a1b193934209fcb46eb3f1b59b01318c53cd310a5be3bb1",
+   "source": "Natural Earth 10m admin-0 countries (ca96624a)",
+   "note": "index raster R*256+G; a label, not a political determination"
+  },
+  {
+   "path": "countries.json",
+   "bytes": 10411,
+   "sha256": "5f3c92c92a41cec825ab206f24065d8a651162596507542364b719f05e920850",
+   "source": "Natural Earth 10m admin-0 countries (ca96624a)",
+   "note": "index to name/ISO"
+  },
+  {
+   "path": "airports.json",
+   "bytes": 291876,
+   "sha256": "9e0296f4dd0001038cdf3d1138282a09e9f24471d9c9579274d0db749c8dec39",
+   "source": "data/geography/sources/ourairports-airports.csv",
+   "note": "3269 large/medium scheduled airports"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "homeless-dark",
+  "private": true,
+  "version": "0.3.0",
+  "description": "HOMELESS on the web-native DARK engine (Three.js + Rapier + Web Audio + Capacitor).",
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "npm run dev -w apps/homeless-web",
+    "build": "npm run build -w apps/homeless-web",
+    "preview": "npm run preview -w apps/homeless-web",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "assets": "node tools/web/build-assets.mjs",
+    "data": "python3 tools/web/build_data.py",
+    "university": "node tools/web/university-lock.mjs",
+    "android:prepare": "bash tools/web/android-prepare.sh",
+    "android:build": "bash tools/web/android-build.sh"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.2.1",
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.15.3",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@types/three": "0.181.0",
+    "fbx2gltf": "0.9.7-p1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  }
+}

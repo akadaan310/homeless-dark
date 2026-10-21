@@ -1,0 +1,122 @@
+[
+ {
+  "id": "arrival-en-continue_task",
+  "speaker": "npc:ana",
+  "act": "continue_task",
+  "caption": "I need to finish this delivery. We can talk later.",
+  "path": "audio/speech/arrival-en-continue_task.wav",
+  "duration": 3.635374149659864
+ },
+ {
+  "id": "arrival-en-decline_ride",
+  "speaker": "npc:ana",
+  "act": "decline_ride",
+  "caption": "I need to get to work. I cannot offer a ride now.",
+  "path": "audio/speech/arrival-en-decline_ride.wav",
+  "duration": 3.691519274376417
+ },
+ {
+  "id": "arrival-en-describe_work_talk",
+  "speaker": "npc:bo",
+  "act": "describe_work_talk",
+  "caption": "I am taking some time to talk.",
+  "path": "audio/speech/arrival-en-describe_work_talk.wav",
+  "duration": 2.309297052154195
+ },
+ {
+  "id": "arrival-en-describe_work_work",
+  "speaker": "npc:ana",
+  "act": "describe_work_work",
+  "caption": "I am heading to work.",
+  "path": "audio/speech/arrival-en-describe_work_work.wav",
+  "duration": 1.5745578231292516
+ },
+ {
+  "id": "arrival-en-farewell",
+  "speaker": "npc:bo",
+  "act": "farewell",
+  "caption": "Take care. See you around.",
+  "path": "audio/speech/arrival-en-farewell.wav",
+  "duration": 2.4058049886621315
+ },
+ {
+  "id": "arrival-en-greeting",
+  "speaker": "npc:ana",
+  "act": "greeting",
+  "caption": "Hello. Good to see you.",
+  "path": "audio/speech/arrival-en-greeting.wav",
+  "duration": 2.0588208616780044
+ },
+ {
+  "id": "arrival-en-offer_ride",
+  "speaker": "npc:bo",
+  "act": "offer_ride",
+  "caption": "Would you like a ride to the cafe? You can cancel at any time.",
+  "path": "audio/speech/arrival-en-offer_ride.wav",
+  "duration": 4.17015873015873
+ },
+ {
+  "id": "arrival-en-pair_coffee",
+  "speaker": "npc:ana",
+  "act": "pair_coffee",
+  "caption": "The rain has stopped. Shall we sit outside?",
+  "path": "audio/speech/arrival-en-pair_coffee.wav",
+  "duration": 3.3413151927437643
+ },
+ {
+  "id": "arrival-en-pair_reply",
+  "speaker": "npc:bo",
+  "act": "pair_reply",
+  "caption": "In a moment. I am waiting for my coffee.",
+  "path": "audio/speech/arrival-en-pair_reply.wav",
+  "duration": 2.899546485260771
+ },
+ {
+  "id": "arrival-en-refuse_ride",
+  "speaker": "npc:ana",
+  "act": "refuse_ride",
+  "caption": "No, thank you. I would rather walk.",
+  "path": "audio/speech/arrival-en-refuse_ride.wav",
+  "duration": 3.044716553287982
+ },
+ {
+  "id": "arrival-en-rest",
+  "speaker": "npc:ana",
+  "act": "rest",
+  "caption": "I could use a rest.",
+  "path": "audio/speech/arrival-en-rest.wav",
+  "duration": 1.386031746031746
+ },
+ {
+  "id": "arrival-en-server_offer_ride",
+  "speaker": "npc:bo",
+  "act": "server_offer_ride",
+  "caption": "I can help arrange a ride. Where are you going?",
+  "path": "audio/speech/arrival-en-server_offer_ride.wav",
+  "duration": 3.273514739229025
+ },
+ {
+  "id": "arrival-en-socialize",
+  "speaker": "npc:bo",
+  "act": "socialize",
+  "caption": "It is good to have some company.",
+  "path": "audio/speech/arrival-en-socialize.wav",
+  "duration": 2.1505215419501136
+ },
+ {
+  "id": "arrival-en-welcome_member",
+  "speaker": "npc:bo",
+  "act": "welcome_member",
+  "caption": "Welcome. Take your time and look around.",
+  "path": "audio/speech/arrival-en-welcome_member.wav",
+  "duration": 3.3025850340136054
+ },
+ {
+  "id": "arrival-en-work",
+  "speaker": "npc:ana",
+  "act": "work",
+  "caption": "Time to get back to work.",
+  "path": "audio/speech/arrival-en-work.wav",
+  "duration": 1.9966439909297051
+ }
+]

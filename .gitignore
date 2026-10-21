@@ -20,3 +20,14 @@ data/cache/
 *.alf
 # Local bearer credentials for the native client
 connection.json
+# Web-native lane
+node_modules/
+apps/homeless-web/dist/
+apps/homeless-web/android/app/build/
+apps/homeless-web/android/build/
+apps/homeless-web/android/.gradle/
+apps/homeless-web/android/local.properties
+test-results/
+playwright-report/
+.android-sdk/
+unity/**/*.fbm/

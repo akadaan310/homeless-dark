@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": false,
+    "types": ["vite/client", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@dark/core": ["packages/dark-core/src/index.ts"],
+      "@dark/geo": ["packages/dark-geo/src/index.ts"],
+      "@dark/visual-grammar": ["packages/dark-visual-grammar/src/index.ts"],
+      "@dark/somatostratum": ["packages/dark-somatostratum/src/index.ts"],
+      "@dark/subjects": ["packages/dark-subjects/src/index.ts"],
+      "@dark/travel": ["packages/dark-travel/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "packages/*/test", "apps/homeless-web/src", "apps/homeless-web/vite.config.ts", "e2e", "vitest.config.ts", "playwright.config.ts"]
+}

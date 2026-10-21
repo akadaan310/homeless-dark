@@ -1,0 +1,1096 @@
+{
+ "schema": "dark.web-asset-manifest/1",
+ "note": "Every runtime asset of apps/homeless-web with source, license, conversion and hash. Status words follow constitution v3 §II-D5; \"render-tested\" means loaded in the real Three.js canvas by the e2e suite.",
+ "generated": "2026-10-21",
+ "entries": [
+  {
+   "id": "model/citizen",
+   "kind": "glb",
+   "family": "human",
+   "path": "models/citizen.glb",
+   "source": "unity/Assets/HOMELESS/Content/Characters/Citizen.fbx",
+   "sourceSha256": "5f6168f78ae2468313dd5368aeb1577b11996ec45b9c040bd2d008d588cce5ef",
+   "sha256": "222ae8d85d53bff0b06350c016240e8f72bcfa25f196ed566b7d790e751d34d8",
+   "bytes": 1305884,
+   "license": "CC0-1.0",
+   "origin": "MakeHuman 1.x CC0 base mesh, skin and casual suit; rig and clips (Seated, Talk, WalkInPlace, Wave) authored in this repository",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/citizen-alt",
+   "kind": "glb",
+   "family": "human",
+   "path": "models/citizen-alt.glb",
+   "source": "unity/Assets/HOMELESS/Content/Characters/CitizenAltSkin.fbx",
+   "sourceSha256": "ab55ac9d117e9873732fed56763c565e8355baec9a9a67e7ae1402a846fafd85",
+   "sha256": "c893965037fd511f4ed6f5b733018443f3019e580e0602ccd0c85f45811ac854",
+   "bytes": 1292216,
+   "license": "CC0-1.0",
+   "origin": "MakeHuman CC0 base mesh with alternate CC0 skin; same rig and clips",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/sedan",
+   "kind": "glb",
+   "family": "car",
+   "path": "models/sedan.glb",
+   "source": "unity/Assets/HOMELESS/Content/Vehicles/CivicSedan.fbx",
+   "sourceSha256": "d02cea72e4ad2697613a1535297d899c850ed56a23313633487a7ff927dc2212",
+   "sha256": "b9962911cf1d31f9b81ffd5bd727bad0a0b477a4ace51b9d95be210b9ddc2df1",
+   "bytes": 626596,
+   "license": "CC0-1.0",
+   "origin": "original authored sedan (Blender source assets/content/authored/CivicSedanSource.blend)",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/bus",
+   "kind": "glb",
+   "family": "bus",
+   "path": "models/bus.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/UrbanBus.fbx",
+   "sourceSha256": "f06972b90c90e735d7c197dd239a2759dd45311bda21783f1b9fe3b8fb035dd5",
+   "sha256": "10ac6a71063460dc40535d9eec41d8973eb461f9d633b39a9429de189f222d4d",
+   "bytes": 283512,
+   "license": "CC0-1.0",
+   "origin": "original authored bus",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/truck",
+   "kind": "glb",
+   "family": "truck",
+   "path": "models/truck.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/DeliveryTruck.fbx",
+   "sourceSha256": "3c4bd7e04ea609d4baeff728a11eab8c30ae4ecf951591cf0c545fae86a91e2c",
+   "sha256": "453ece592824290d5067325e77ba8d6ebbb3a8104bb1e0f183e1c489817eafb8",
+   "bytes": 282384,
+   "license": "CC0-1.0",
+   "origin": "original authored delivery truck",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/aircraft",
+   "kind": "glb",
+   "family": "aircraft",
+   "path": "models/aircraft.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/CoastalSixAircraft.fbx",
+   "sourceSha256": "845737e98a8752b5fc3375ea385b7ba96ba7aab8e3a89185245877953a297427",
+   "sha256": "58a4f8886cff3c1d52909f4fe8e85d5cbeadaf048a4e1e5d9ca5665363f58de4",
+   "bytes": 152952,
+   "license": "CC0-1.0",
+   "origin": "original authored six-seat aircraft",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/helicopter",
+   "kind": "glb",
+   "family": "helicopter",
+   "path": "models/helicopter.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/RotorShuttle.fbx",
+   "sourceSha256": "0b1e1b10438c90c6c33a235821da62a97da2d1ad2c7b763ba356621c4fd713ae",
+   "sha256": "25ed64b8915598b25603517384ce5ade7ae1564f22ee956a9f184e6f253f1c91",
+   "bytes": 436732,
+   "license": "CC0-1.0",
+   "origin": "original authored rotor shuttle",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/boat",
+   "kind": "glb",
+   "family": "boat",
+   "path": "models/boat.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/HarborLaunch.fbx",
+   "sourceSha256": "2b8e2362c74aabb06479fbb997f9ceb81876987a77257995907ae85e99df3ff6",
+   "sha256": "74aec05a583b5d1f0b16efee48bdd1b73e15df2cbc4395155c90c2bad8e177d6",
+   "bytes": 104204,
+   "license": "CC0-1.0",
+   "origin": "original authored harbor launch",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/palm",
+   "kind": "glb",
+   "family": "vegetation",
+   "path": "models/palm.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/SubtropicalPalm.fbx",
+   "sourceSha256": "3b3873f5f336a9be04ef9af9636fcd1e0b388237ccde5d6028f6bde4035bd817",
+   "sha256": "55a048cdea2cc92ecfd1a9eca7881706b2355902ceb59edaba334b265a217688",
+   "bytes": 1216412,
+   "license": "CC0-1.0",
+   "origin": "original authored subtropical palm",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/bicycle",
+   "kind": "glb",
+   "family": "bicycle",
+   "path": "models/bicycle.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/Bicycle.fbx",
+   "sourceSha256": "9510b94bb605d66d934ab515b66e79d053a95f59d1c66b2245f44c7420adf4db",
+   "sha256": "a8ba221854f334f2193b839c06f9674cf51af36cb3ec5cb0c0b6dec0320ae929",
+   "bytes": 480500,
+   "license": "CC0-1.0",
+   "origin": "original authored bicycle",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/cup",
+   "kind": "glb",
+   "family": "prop",
+   "path": "models/cup.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/CeramicCup.fbx",
+   "sourceSha256": "d9c09481aa3a56de8d5f1bf4eb97d8a54482cab51f67e1b31997e568669a591f",
+   "sha256": "71854b8b8e719622139c4f30327aceb126692f2cd94f9df8be911e7a32ced74e",
+   "bytes": 25288,
+   "license": "CC0-1.0",
+   "origin": "original authored ceramic cup",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/guitar",
+   "kind": "glb",
+   "family": "prop",
+   "path": "models/guitar.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/AcousticGuitar.fbx",
+   "sourceSha256": "026ee7046c209b3a67fde4b460fa12a4e0283a71458208c741a925adb3f86200",
+   "sha256": "2a11d47d38385f686678db1649faee77d26ffebd052725fc8aaa3e3b590d4041",
+   "bytes": 53516,
+   "license": "CC0-1.0",
+   "origin": "original authored acoustic guitar",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "model/balloon",
+   "kind": "glb",
+   "family": "balloon",
+   "path": "models/balloon.glb",
+   "source": "unity/Assets/HOMELESS/Content/Families/AudienceBalloon.fbx",
+   "sourceSha256": "45eb64d7f44407bc87f046c7a98cd196e44a869bd05de4ba3ede66d661d6c3ad",
+   "sha256": "2ac45f2cd7dd6e38a26caf6e18f29b86d404e780cc6bbf0fca1e37fe7b470f22",
+   "bytes": 158540,
+   "license": "CC0-1.0",
+   "origin": "original authored balloon",
+   "conversion": "FBX2glTF 0.9.7 --binary; gltf-transform 4.2.1 optimize (meshopt, WebP ≤1024px, names preserved, no simplification)",
+   "status": [
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/asphalt/color",
+   "kind": "texture",
+   "path": "textures/asphalt/color.jpg",
+   "colorSpace": "srgb",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Color.jpg",
+   "sourceSha256": "380c7b0d46cc6252a653aa9cffeae20527209d901499ad3c458bd8f4cc91c58c",
+   "sha256": "3b64e5d077a2b19f80d7c70769b5b67f427fc064f2c1b9f1c45f2d4a10c18d2c",
+   "bytes": 250788,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Asphalt024A (https://ambientcg.com/view?id=Asphalt024A)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/asphalt/normal",
+   "kind": "texture",
+   "path": "textures/asphalt/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_NormalGL.jpg",
+   "sourceSha256": "4cfabded525f988da507bfe4375e16f7403eb3f56aef0168a25184bfe0f91d0d",
+   "sha256": "7fe76a9ab3f81ea9020cca45a1fdb51ed904a84e29fb692164efe2eefee75efb",
+   "bytes": 418013,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Asphalt024A (https://ambientcg.com/view?id=Asphalt024A)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/asphalt/rough",
+   "kind": "texture",
+   "path": "textures/asphalt/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_Roughness.jpg",
+   "sourceSha256": "d5c794b29f4bf44540dbbb0ed4290958ad4f5fff0b7c4ac25f1a9aae2ea6646e",
+   "sha256": "6762022519d03f4d41a53eb32e013a6877e1dea5dd7901d6168c22449af47a0a",
+   "bytes": 316925,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Asphalt024A (https://ambientcg.com/view?id=Asphalt024A)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/asphalt/ao",
+   "kind": "texture",
+   "path": "textures/asphalt/ao.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Asphalt024A/Asphalt024A_2K-JPG_AmbientOcclusion.jpg",
+   "sourceSha256": "540bc5888cd57a78144a158f6dd1c9eba8481e2ec9f79ffdb3c46dfad41c84cb",
+   "sha256": "28a6ec23e0d1a01187cb159efcf0109bb53d751e715514d70d32000072a4c946",
+   "bytes": 307776,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Asphalt024A (https://ambientcg.com/view?id=Asphalt024A)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/concrete/color",
+   "kind": "texture",
+   "path": "textures/concrete/color.jpg",
+   "colorSpace": "srgb",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Color.jpg",
+   "sourceSha256": "fa27982687596d7aa080db1e9b88c30f48a3c32eb3e50b27a2ea27c431e4cde9",
+   "sha256": "697e986d97c30bc846d7e8912156aaa62f0aa2c872a4ac189c158ab8e19e5fbb",
+   "bytes": 172033,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Concrete034 (https://ambientcg.com/view?id=Concrete034)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/concrete/normal",
+   "kind": "texture",
+   "path": "textures/concrete/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_NormalGL.jpg",
+   "sourceSha256": "b077dfe6b3b8fbe794d82b9014d030fa01984a25ab67d2e21310995e6ea5b881",
+   "sha256": "c6295204ac81a36a35913638ddc716048e3d22eeb37d1fce8e61a8789d641da9",
+   "bytes": 219240,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Concrete034 (https://ambientcg.com/view?id=Concrete034)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/concrete/rough",
+   "kind": "texture",
+   "path": "textures/concrete/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Concrete034/Concrete034_2K-JPG_Roughness.jpg",
+   "sourceSha256": "fd39973b8ef8212d1c99d18b6665595db3ab96f1c124e062fea52b9bda4ffa63",
+   "sha256": "c6857026e360af58b3a4d6d1cdd31b1bfce315786eebd070e95892d1cd7ee0e6",
+   "bytes": 111528,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Concrete034 (https://ambientcg.com/view?id=Concrete034)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/bricks/color",
+   "kind": "texture",
+   "path": "textures/bricks/color.jpg",
+   "colorSpace": "srgb",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Color.jpg",
+   "sourceSha256": "c64488acb565874c7a9bc5e958d9b2da683f5ddd744dcf1e99c40319df55f8c0",
+   "sha256": "60421c9e46c8b3095176184a3d8fb7511414f0c0d198cd97db46354172047f1a",
+   "bytes": 294274,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Bricks059 (https://ambientcg.com/view?id=Bricks059)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/bricks/normal",
+   "kind": "texture",
+   "path": "textures/bricks/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_NormalGL.jpg",
+   "sourceSha256": "f2175fed2bbf9db77507d8c1b74b0bd74acc4bac24a181fc3926c0587ff8a4ad",
+   "sha256": "106fa635d6c2731bbcc894c5e614038a39937140f41bbce8674afbb3c55f9102",
+   "bytes": 278628,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Bricks059 (https://ambientcg.com/view?id=Bricks059)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/bricks/rough",
+   "kind": "texture",
+   "path": "textures/bricks/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_Roughness.jpg",
+   "sourceSha256": "9f5d3c99dc24397965f0927b785fae5401dde66fe22b9a67ec5e3484ddff53b4",
+   "sha256": "83d9865689f464ef5656f4d550b8921efaaa0756e447de11092690d6729f01b0",
+   "bytes": 256005,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Bricks059 (https://ambientcg.com/view?id=Bricks059)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/bricks/ao",
+   "kind": "texture",
+   "path": "textures/bricks/ao.jpg",
+   "colorSpace": "linear-data",
+   "source": "unity/Assets/HOMELESS/Art/Materials/Bricks059/Bricks059_2K-JPG_AmbientOcclusion.jpg",
+   "sourceSha256": "fa8a06afa1a1d625131378453f1b9d83ebe4ec6dd382131f0ad79129c677729d",
+   "sha256": "741813068708ad709d09e35e5166e19a4081dcb26d6638d3b157f2e325a19165",
+   "bytes": 195811,
+   "license": "CC0-1.0",
+   "origin": "ambientCG Bricks059 (https://ambientcg.com/view?id=Bricks059)",
+   "conversion": "sharp resize 2048→1024, JPEG q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/stucco/color",
+   "kind": "texture",
+   "path": "textures/stucco/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_stucco/white_stucco_diff_1k.jpg",
+   "sha256": "73273490d25ca86a12b38479c63ec656ab6cfbfc0dec7c2ded83ca5db8d7d00d",
+   "bytes": 142047,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven white_stucco (https://polyhaven.com/a/white_stucco); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/stucco/normal",
+   "kind": "texture",
+   "path": "textures/stucco/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_stucco/white_stucco_nor_gl_1k.jpg",
+   "sha256": "8fb05805541d38ba7bcc53c76944647b649308c538f41c0a042b9b5debb51168",
+   "bytes": 251065,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven white_stucco (https://polyhaven.com/a/white_stucco); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/stucco/rough",
+   "kind": "texture",
+   "path": "textures/stucco/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_stucco/white_stucco_rough_1k.jpg",
+   "sha256": "309717366cf9596c058501350887591e893935779ce97be763713d59342ab543",
+   "bytes": 73904,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven white_stucco (https://polyhaven.com/a/white_stucco); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/plaster/color",
+   "kind": "texture",
+   "path": "textures/plaster/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_diff_1k.jpg",
+   "sha256": "859d2f305ef971f27f1ffd5ddf9b82216c5f2a02ab2a2ab6dee49b253652692c",
+   "bytes": 219687,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven painted_plaster_wall (https://polyhaven.com/a/painted_plaster_wall); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/plaster/normal",
+   "kind": "texture",
+   "path": "textures/plaster/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_nor_gl_1k.jpg",
+   "sha256": "b657d01b6db667518338f5acffcc849420ce37f1c5cde230c4d60d59fc615742",
+   "bytes": 238714,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven painted_plaster_wall (https://polyhaven.com/a/painted_plaster_wall); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/plaster/rough",
+   "kind": "texture",
+   "path": "textures/plaster/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_rough_1k.jpg",
+   "sha256": "47dc9ab38f8b955b614c0e433c7cc2d7e79679caf5d588f7baf640450c7bd075",
+   "bytes": 51510,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven painted_plaster_wall (https://polyhaven.com/a/painted_plaster_wall); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/paving/color",
+   "kind": "texture",
+   "path": "textures/paving/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rectangular_paving/rectangular_paving_diff_1k.jpg",
+   "sha256": "39c29bc1ae028a4899e50bebd3110c6002e35e9b813567d41d99b774fc9a8721",
+   "bytes": 164923,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven rectangular_paving (https://polyhaven.com/a/rectangular_paving); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/paving/normal",
+   "kind": "texture",
+   "path": "textures/paving/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rectangular_paving/rectangular_paving_nor_gl_1k.jpg",
+   "sha256": "6f3ad7e39c4608be35208db9bb576838838a9f2ffaee4dd3d4d6b6b5f7fc7b16",
+   "bytes": 124581,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven rectangular_paving (https://polyhaven.com/a/rectangular_paving); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/paving/rough",
+   "kind": "texture",
+   "path": "textures/paving/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rectangular_paving/rectangular_paving_rough_1k.jpg",
+   "sha256": "08b7777708a9f02df76ae89f020c7a6d8ce02ebf4fd911557a44bb30a2c462ed",
+   "bytes": 98484,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven rectangular_paving (https://polyhaven.com/a/rectangular_paving); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/wood/color",
+   "kind": "texture",
+   "path": "textures/wood/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_diff_1k.jpg",
+   "sha256": "d70d1916948d38fb80fd0739b80e1eacd8ddb107dc5f9f6fad3e4cd9970bb2a5",
+   "bytes": 223769,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven wood_floor (https://polyhaven.com/a/wood_floor); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/wood/normal",
+   "kind": "texture",
+   "path": "textures/wood/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg",
+   "sha256": "d6810eb76abcb290693dd8535e8c238735377f4b1a716e4df3f1d3a61b0d8672",
+   "bytes": 56168,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven wood_floor (https://polyhaven.com/a/wood_floor); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/wood/rough",
+   "kind": "texture",
+   "path": "textures/wood/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_rough_1k.jpg",
+   "sha256": "68c6e84bd35b07eb85bfa5b44384947d40005e426bb600d0cead93ae99592aed",
+   "bytes": 168711,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven wood_floor (https://polyhaven.com/a/wood_floor); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/sand/color",
+   "kind": "texture",
+   "path": "textures/sand/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_diff_1k.jpg",
+   "sha256": "5609cf15c705409b6588c734030fd450dc819087b59f333feaf55baba54b46b8",
+   "bytes": 356338,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven coast_sand_01 (https://polyhaven.com/a/coast_sand_01); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/sand/normal",
+   "kind": "texture",
+   "path": "textures/sand/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_nor_gl_1k.jpg",
+   "sha256": "400fa4a3f6245c8d31bd299618c4cc48c4d5ec32121b45688d05fc5a0e2efc3b",
+   "bytes": 375189,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven coast_sand_01 (https://polyhaven.com/a/coast_sand_01); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/sand/rough",
+   "kind": "texture",
+   "path": "textures/sand/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_rough_1k.jpg",
+   "sha256": "825209341eea3db0ee524f8b9459926855842d60597b369c3cb292a956b81e92",
+   "bytes": 86712,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven coast_sand_01 (https://polyhaven.com/a/coast_sand_01); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/grass/color",
+   "kind": "texture",
+   "path": "textures/grass/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_diff_1k.jpg",
+   "sha256": "201ec52e5c0f0e77137d189bd16d97447fa91aec4b8c446f190fb1e1d5e2c375",
+   "bytes": 282600,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven grass_ground (https://polyhaven.com/a/grass_ground); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/grass/normal",
+   "kind": "texture",
+   "path": "textures/grass/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_nor_gl_1k.jpg",
+   "sha256": "e71d0acf3857d206bd5e29289675be9e9ea46b135597471386db6eee2ba915c7",
+   "bytes": 467028,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven grass_ground (https://polyhaven.com/a/grass_ground); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/grass/rough",
+   "kind": "texture",
+   "path": "textures/grass/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_rough_1k.jpg",
+   "sha256": "84075ca9ff50f5e62ceab885c9dd5ef0c7e5a6c5c38f7597d3a9d7fd16930e34",
+   "bytes": 53101,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven grass_ground (https://polyhaven.com/a/grass_ground); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/shutter/color",
+   "kind": "texture",
+   "path": "textures/shutter/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_metal_shutter/painted_metal_shutter_diff_1k.jpg",
+   "sha256": "e78713c69c8522797baa1041f75f8e871ee95e07b60da3b8e283ff08effa1cdc",
+   "bytes": 189774,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven painted_metal_shutter (https://polyhaven.com/a/painted_metal_shutter); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/shutter/normal",
+   "kind": "texture",
+   "path": "textures/shutter/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_metal_shutter/painted_metal_shutter_nor_gl_1k.jpg",
+   "sha256": "b78e6732316070ffc2a71ff82bcd1fa2e70da6bfcab23feb404f4af10f96da86",
+   "bytes": 201003,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven painted_metal_shutter (https://polyhaven.com/a/painted_metal_shutter); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/shutter/rough",
+   "kind": "texture",
+   "path": "textures/shutter/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_metal_shutter/painted_metal_shutter_rough_1k.jpg",
+   "sha256": "eefd2bceb6b1c9bc99398e8897f7aaabeca60c9b091f1785b86a380392c0da37",
+   "bytes": 176539,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven painted_metal_shutter (https://polyhaven.com/a/painted_metal_shutter); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/carpet/color",
+   "kind": "texture",
+   "path": "textures/carpet/color.jpg",
+   "colorSpace": "srgb",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dirty_carpet/dirty_carpet_diff_1k.jpg",
+   "sha256": "6af5bb9798cbb0bcb8d6257a424872fb084f5e5c21f81523600978607ea50db4",
+   "bytes": 385482,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven dirty_carpet (https://polyhaven.com/a/dirty_carpet); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/carpet/normal",
+   "kind": "texture",
+   "path": "textures/carpet/normal.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dirty_carpet/dirty_carpet_nor_gl_1k.jpg",
+   "sha256": "293a70832bf69628123299d6d56219232bb46886f0ddde0bbacb82c78aba5d88",
+   "bytes": 355560,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven dirty_carpet (https://polyhaven.com/a/dirty_carpet); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "texture/carpet/rough",
+   "kind": "texture",
+   "path": "textures/carpet/rough.jpg",
+   "colorSpace": "linear-data",
+   "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dirty_carpet/dirty_carpet_rough_1k.jpg",
+   "sha256": "ea56d31c76adcd4ebe33730d65ea958901176e76b55ad6fab30b148b87cb0a5f",
+   "bytes": 94898,
+   "license": "CC0-1.0",
+   "origin": "Poly Haven dirty_carpet (https://polyhaven.com/a/dirty_carpet); license https://polyhaven.com/license",
+   "conversion": "JPEG 1K re-encoded q88",
+   "status": [
+    "downloaded",
+    "imported",
+    "render-tested"
+   ]
+  },
+  {
+   "id": "audio/original_arrival_motif",
+   "kind": "audio",
+   "path": "audio/original_arrival_motif.wav",
+   "source": "unity/Assets/HOMELESS/Audio/original_arrival_motif.wav",
+   "sha256": "386e4ca404d00690c15069a810970bf9ca1cd7ebc0e32618f91b5f4032634ad5",
+   "bytes": 307244,
+   "license": "CC0-1.0 (original synthesis, unity/Assets/HOMELESS/Audio/ORIGINAL_AUDIO_LICENSE.txt)",
+   "origin": "tools/audio/synthesize.py",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "audio/synthetic_footstep_left",
+   "kind": "audio",
+   "path": "audio/synthetic_footstep_left.wav",
+   "source": "unity/Assets/HOMELESS/Audio/synthetic_footstep_left.wav",
+   "sha256": "1cc21a7635448e30bad6f79b26a53a66babf8a0110198200c2a4e737996441de",
+   "bytes": 23084,
+   "license": "CC0-1.0 (original synthesis, unity/Assets/HOMELESS/Audio/ORIGINAL_AUDIO_LICENSE.txt)",
+   "origin": "tools/audio/synthesize.py",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "audio/synthetic_footstep_right",
+   "kind": "audio",
+   "path": "audio/synthetic_footstep_right.wav",
+   "source": "unity/Assets/HOMELESS/Audio/synthetic_footstep_right.wav",
+   "sha256": "bd2d3fe237c38650012c6ee85405fe1d6e8d06a8b7c256bba7bc20b6ab2fecc3",
+   "bytes": 25964,
+   "license": "CC0-1.0 (original synthesis, unity/Assets/HOMELESS/Audio/ORIGINAL_AUDIO_LICENSE.txt)",
+   "origin": "tools/audio/synthesize.py",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "audio/synthetic_rain_wind_loop",
+   "kind": "audio",
+   "path": "audio/synthetic_rain_wind_loop.wav",
+   "source": "unity/Assets/HOMELESS/Audio/synthetic_rain_wind_loop.wav",
+   "sha256": "1553e9ca833297fc674b161547365418555bf43c2716c89a81dd65333201d826",
+   "bytes": 768044,
+   "license": "CC0-1.0 (original synthesis, unity/Assets/HOMELESS/Audio/ORIGINAL_AUDIO_LICENSE.txt)",
+   "origin": "tools/audio/synthesize.py",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-server_offer_ride",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-server_offer_ride.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/0108d069a83910c2249b62fe5093a52d78bb9aeb75b6a05a28da977df8dfb303.wav",
+   "sha256": "ea5af382fc2af79f719b93aa61035e9bf10271616d24ee388e143aa308b25289",
+   "bytes": 144406,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "I can help arrange a ride. Where are you going?",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-pair_reply",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-pair_reply.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/053773db291560ff1129b87cb3aa9f0b6f4123c8a925244baa8b65285cf6c7a1.wav",
+   "sha256": "30e6af3d2879e13370c4d3f63bb88caa302b784ba13c5dd488975742e15bda8b",
+   "bytes": 127914,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "In a moment. I am waiting for my coffee.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-welcome_member",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-welcome_member.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/0c33ff6983e1d2e52526e1c36d1944e45b98b44f69b90a20a695891c8993ca32.wav",
+   "sha256": "d97646be58f3ad4321c4cfc0b4239bbde15dfc9eb58e9a13a22c4fe30276f36f",
+   "bytes": 145688,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "Welcome. Take your time and look around.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-work",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-work.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/14b3473dd1ae15fd1838a3a4cb8cc875b53d03a9240c7440004b7e6eb993fbde.wav",
+   "sha256": "ab4d2a5014c4968e76fab022c5fca433f1e40863eae3cc6754b6a4168555ae09",
+   "bytes": 88096,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "Time to get back to work.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-decline_ride",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-decline_ride.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/23b8dddf3cac53edaddaf3bf13354bdc77f2fec8dbd3690eb68c85df4be074a8.wav",
+   "sha256": "1555bea75ee0a49210a3f756846234026d702c8dbf796036d6a2bc78ae69b00e",
+   "bytes": 162840,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "I need to get to work. I cannot offer a ride now.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-offer_ride",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-offer_ride.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/2edbab9b3ea60e41357a465fdd4fe55505fc64779651da0ee21a6a591b074279.wav",
+   "sha256": "8d6ceb67351791a0e1e1e126af2fbe38f4b5111a092ad426ab906699913aa4a6",
+   "bytes": 183948,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "Would you like a ride to the cafe? You can cancel at any time.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-refuse_ride",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-refuse_ride.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/49ad516a2b0133b9247f9bfe453566cb04eaec6c148695ed5cd723132e4e04ce.wav",
+   "sha256": "d06ecf462454acab16aeb9e6b098d8f92a5de602fde47a317532803fd65c18a1",
+   "bytes": 134316,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "No, thank you. I would rather walk.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-describe_work_talk",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-describe_work_talk.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/72749d895df86c78597149bb74f91c17a6ce9e4280569495c3c36f2e50a4ca73.wav",
+   "sha256": "9cdc2c57e836cdc6754737273e7522a07c4919dcda5bed699623c1bf9de20536",
+   "bytes": 101884,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "I am taking some time to talk.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-greeting",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-greeting.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/867895aed791b793a2027d0163026834b4a673ae265d5cf7033193bb0e3d0078.wav",
+   "sha256": "1a39073e3c5d1ecc46eb5bb1e5443233ceef521557f06c289aa8d4bdbdabce30",
+   "bytes": 90838,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "Hello. Good to see you.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-describe_work_work",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-describe_work_work.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/88a2416be9b7906b10ebf8bdd6b8a0ece0e925d6994175daffcc906f1af48b15.wav",
+   "sha256": "890be6a6ee0b76b9637c9eb77bc0d4a6b900ab6acef3ca54099110d2bc561920",
+   "bytes": 69482,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "I am heading to work.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-continue_task",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-continue_task.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/9a0ed00ba5164a16585fa7dd87c9f367dbc941bee8b94685466b73385a0adb46.wav",
+   "sha256": "49df8fd087e9213c5fde87a152b46f937f05bdf3b4ad6701e97f684f2605a7b4",
+   "bytes": 160364,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "I need to finish this delivery. We can talk later.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-socialize",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-socialize.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/a9263fd7099a3fa59e458fdf5d33ac88c395cc40ec3fe7e267aa20d3faca2a44.wav",
+   "sha256": "c7a0dd936c956773794c2e370a7591854273ffdceeab4657e4ed7f3ee952529d",
+   "bytes": 94882,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "It is good to have some company.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-rest",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-rest.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/c10a55c0889f1e44338c362039c1c4c0d0e6d2542ff09ed2477b3bc551d442d9.wav",
+   "sha256": "e3f2be76b67c88f0966af0f0079b611e4e852228673cfdcb4cf0190426fdf277",
+   "bytes": 61168,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "I could use a rest.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-farewell",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-farewell.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/f8d8efebd0bbd31b31660e3c6130b4d8db712fc08a04aa6171c94888b5c0d224.wav",
+   "sha256": "145a3f2263cc27a506941f8632185551683925f204857a3ad02dcf62fb9b00db",
+   "bytes": 106140,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "Take care. See you around.",
+   "status": [
+    "imported"
+   ]
+  },
+  {
+   "id": "speech/arrival-en-pair_coffee",
+   "kind": "speech",
+   "path": "audio/speech/arrival-en-pair_coffee.wav",
+   "source": "unity/Assets/HOMELESS/Content/Speech/fd55c54a0407ddb408f8ee78be52d63ff94b2d34ae06f4daed04fdaca7279293.wav",
+   "sha256": "8a32ec6408bd7d5e99c92809a33c5191fcd79c233d4503cc1f5be1945bf6bbc1",
+   "bytes": 147396,
+   "license": "eSpeak NG output (GPL-3.0 engine; generated audio carries no engine license obligation per espeak-ng-copyright.txt review)",
+   "origin": "eSpeak NG text-to-speech: 1.50 en-us",
+   "caption": "The rain has stopped. Shall we sit outside?",
+   "status": [
+    "imported"
+   ]
+  }
+ ]
+}

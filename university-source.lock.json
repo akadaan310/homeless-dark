@@ -1,0 +1,587 @@
+{
+ "schema": "dark.university-source-lock/1",
+ "repository": "https://github.com/akadaan310/abedkadaancom",
+ "branch": "ccr-b3bb984f-7etq1r",
+ "defaultBranchObserved": "claude/new-session-xd8auu",
+ "commit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+ "defaultBranchCommit": "6a0f5eaa8dd39b58bdd99889721ecea5f54e62bb",
+ "inspected": "2026-10-21T19:53:27.059Z",
+ "note": "Read-only pin. Topic statuses are the university's own labels; DARK statuses describe only this repository's adapters.",
+ "divisions": [
+  {
+   "id": "foundations",
+   "numeral": "I",
+   "name": "Foundations of Computation",
+   "curriculum": [
+    "transition-systems",
+    "graph-theory",
+    "finite-automata",
+    "equivalence-classes",
+    "operational-grammar",
+    "admissibility",
+    "numerical-grammars",
+    "perturbation",
+    "substrate-theory",
+    "complexity"
+   ]
+  },
+  {
+   "id": "relational",
+   "numeral": "II",
+   "name": "Relational and Generative Mathematics",
+   "curriculum": [
+    "alphabets-words",
+    "generative-grammars",
+    "recursive-folds",
+    "plicastratum",
+    "alphabet-towers",
+    "modal-cyclic",
+    "relational-generativity",
+    "constructive-admission",
+    "ingrammatica",
+    "compositional-forms"
+   ]
+  },
+  {
+   "id": "languages",
+   "numeral": "III",
+   "name": "Programmable Computational Languages",
+   "curriculum": [
+    "uri-grammar",
+    "typed-machines",
+    "symbolic-composition",
+    "types-as-admissibility",
+    "grammars-as-programs",
+    "compilation",
+    "matrix-loom",
+    "purl",
+    "seurl",
+    "addressable-forms"
+   ]
+  },
+  {
+   "id": "geometry",
+   "numeral": "IV",
+   "name": "Geometry, Physics, and Representation",
+   "curriculum": [
+    "image-kernel",
+    "rank-nullity",
+    "imagistratum",
+    "projective-camera",
+    "spatial-tensors",
+    "topology",
+    "curvature",
+    "chart-correspondences",
+    "celestial-geometry",
+    "computational-photography",
+    "rendering-mathematics",
+    "invisible-sensing"
+   ]
+  },
+  {
+   "id": "acoustic",
+   "numeral": "V",
+   "name": "Acoustic and Generative Sciences",
+   "curriculum": [
+    "sound-signals",
+    "pitch-frequency",
+    "interval-geometry",
+    "tuning",
+    "fourier",
+    "phase",
+    "synthesis",
+    "time-frequency",
+    "generative-composition",
+    "phonogrammatica"
+   ]
+  },
+  {
+   "id": "worlds",
+   "numeral": "VI",
+   "name": "Computational Worlds and Emergence",
+   "curriculum": [
+    "cellular-automata",
+    "world-loom",
+    "procedural-environments",
+    "agent-grammars",
+    "maps-navigation",
+    "borne",
+    "simulated-populations",
+    "world-models",
+    "glm-lgm",
+    "homeless-dark"
+   ]
+  }
+ ],
+ "topicCount": 62,
+ "files": {
+  "src/content/registry.ts": "e270e33107bc4962df48df9de4cec2522bdfd8a0d452a8d9e299c0a11764cf8c",
+  "src/content/types.ts": "6a02eef35ccfd9da524ca8c27dc8a097554a3dc67429a0a3b9fde62856d1c013",
+  "src/content/glossary.ts": "e7ad128f352135ce82891199b083ac30ef062cfe59ea41de0dfb7a3910d6c4f8",
+  "src/content/sources.ts": "7cade171335c7d1afb847bcc4ea5c0e3cbc416cc29dc15fd7244e515db155451",
+  "src/content/cgt.ts": "dde04b0e94805b21fa8406831bd25fc38692183cdf9fe604adf6f36fd371902e",
+  "src/content/topics/foundations.ts": "60517881c6291557ef6eb34bf131749c91395f744dc028f0c1c52411c0cf52d1",
+  "src/content/topics/relational.ts": "6f56006a561582523af036cf6967964dd783ce8bc629d39e81dc21cc0844a98f",
+  "src/content/topics/languages.ts": "9ad33b2397000131f5dd54d986a0938156f39bb11d399c0792dcf3b1084f8f96",
+  "src/content/topics/geometry.ts": "c546d17d603d65259bba0f5a567086113baff5cb1fd2908b7b294af077ed8558",
+  "src/content/topics/acoustic.ts": "a715ac5272663c9968eeb36160b39ab2f01928fd5a6055d369900199a1d67cc4",
+  "src/content/topics/worlds.ts": "7fd64b34d38f64591153a32808d35ebf8e75ab0fb3931e6a6d9e165a5a470342",
+  "src/math/matrix.ts": "79d352f6260eac4cf01d30cfb297e0be8742f7bd0f4ca5be8351cf7f55927e53",
+  "src/math/rational.ts": "089077fee48a67f491501961844ad1c19f373930e1d123557c1b7fe65063808b",
+  "src/math/bridgeGrammar.ts": "2e35e66a504e8e492c5512956ce543407632589482bf3f77cbfacf6d803c3f01",
+  "src/math/fold.ts": "428a540c5fb13bfed444d3681374cd6cd5cc9dc649cd47bc9ef8a107305f0c0c",
+  "src/math/addressCompiler.ts": "4cd8d059db83b866892f5bb7a949942cb35a46e7e0b39b37f25e7ad900245578",
+  "src/math/music.ts": "b38330c1c59b8bb30b2b93bd5bca6a63408076c42aeec1dfd56ed01e23ac5675",
+  "src/math/paths.ts": "10c40394afe6027000903566fb49da5e8da5a9948724f30505cef54e5ccbb036",
+  "src/math/sky.ts": "0a291997d94d16143dfbeb5c4df520fbbe186e5a8b0148272151cc0e1b7316c8",
+  "src/math/world.ts": "8a0841c16cde1e7967dffffbe05718a3f9bdaa73d7427a4a1fd42f23eec05a93",
+  "src/math/numberSystems.ts": "b062ca47e46ae3121ef56cdecd6b491f158cfa1a3fa7dd9a6724902e26ab0055",
+  "src/exhibits/compute.ts": "9c2baeafcd97474451610c311b2d41301e0c9924be0f2f3be55fbeac7537b0e0",
+  "src/exhibits/records.ts": "baa66f9f341072b3596e768a715dad354cf3d43e162a3e9fed3404ff90fd85a2",
+  "src/books/compose.ts": "b85451c6f32796d896daf57fcb3e0b57102ce391279f4a85457d863957dec767",
+  "src/pages/Library.tsx": "6a711b20e4fe4415762ac524f961057953865bf7674bdc9d56bf6b84bcf7990f",
+  "src/pages/Scriptorium.tsx": "17edd033f0e9570d7dae09a89827fb3135c334c206ac3557167f803d08ffa3f7",
+  "src/pages/Harness.tsx": "afc979e85374b9f174ff30c5ae0cc69a43d02fcea1991efe59697167024f7a7f",
+  "src/scene/CampusCanvas.tsx": "ace1c1a5da0436a19136696aabf61fb9e55f29ba83f2745aa73f48b74c2f04af",
+  "src/scene/Architecture.tsx": "9b4444f521edb29aac2fa26ad7afdfbba36d4e829471697a05f219c1af7fc3ae",
+  "src/scene/Realms.tsx": "894c3565fa804fe331611279c93ab6b2e59fffd7a58b46eaf45d1aeef7b7e5b8",
+  "tests/math.test.ts": "4a0a46e2d912d9b68fd2d8dc46fc4f966b62f2fec6022a14d14ba42dcbc0a88c",
+  "tests/registry.test.ts": "2ca9ec4ae6312c82f065e7df0e09b807a716490d0c024dfbccf3301a380496e1"
+ },
+ "subjects": [
+  {
+   "id": "transition-systems",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "finite-automata",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "operational-grammar",
+   "division": "foundations",
+   "epistemic": "house",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "admissibility",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "substrate-theory",
+   "division": "foundations",
+   "epistemic": "house",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "perturbation",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "equivalence-classes",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "numerical-grammars",
+   "division": "foundations",
+   "epistemic": "house",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "graph-theory",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "complexity",
+   "division": "foundations",
+   "epistemic": "established",
+   "location": "src/content/topics/foundations.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "alphabets-words",
+   "division": "relational",
+   "epistemic": "established",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "generative-grammars",
+   "division": "relational",
+   "epistemic": "established",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "plicastratum",
+   "division": "relational",
+   "epistemic": "house",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "alphabet-towers",
+   "division": "relational",
+   "epistemic": "house",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "ingrammatica",
+   "division": "relational",
+   "epistemic": "house",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "constructive-admission",
+   "division": "relational",
+   "epistemic": "house",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "relational-generativity",
+   "division": "relational",
+   "epistemic": "house",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "modal-cyclic",
+   "division": "relational",
+   "epistemic": "established",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "recursive-folds",
+   "division": "relational",
+   "epistemic": "established",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "compositional-forms",
+   "division": "relational",
+   "epistemic": "established",
+   "location": "src/content/topics/relational.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "uri-grammar",
+   "division": "languages",
+   "epistemic": "established",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "purl",
+   "division": "languages",
+   "epistemic": "house",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "seurl",
+   "division": "languages",
+   "epistemic": "house",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "typed-machines",
+   "division": "languages",
+   "epistemic": "established",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "types-as-admissibility",
+   "division": "languages",
+   "epistemic": "established",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "compilation",
+   "division": "languages",
+   "epistemic": "house",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "matrix-loom",
+   "division": "languages",
+   "epistemic": "house",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "addressable-forms",
+   "division": "languages",
+   "epistemic": "house",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "grammars-as-programs",
+   "division": "languages",
+   "epistemic": "established",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "symbolic-composition",
+   "division": "languages",
+   "epistemic": "established",
+   "location": "src/content/topics/languages.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "image-kernel",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "imagistratum",
+   "division": "geometry",
+   "epistemic": "house",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "rank-nullity",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "projective-camera",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "topology",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "curvature",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "spatial-tensors",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "computational-photography",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "celestial-geometry",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "chart-correspondences",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "rendering-mathematics",
+   "division": "geometry",
+   "epistemic": "established",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "invisible-sensing",
+   "division": "geometry",
+   "epistemic": "application",
+   "location": "src/content/topics/geometry.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "sound-signals",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "pitch-frequency",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "interval-geometry",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "tuning",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "fourier",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "time-frequency",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "synthesis",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "phase",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "phonogrammatica",
+   "division": "acoustic",
+   "epistemic": "house",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "generative-composition",
+   "division": "acoustic",
+   "epistemic": "established",
+   "location": "src/content/topics/acoustic.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "cellular-automata",
+   "division": "worlds",
+   "epistemic": "established",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "world-loom",
+   "division": "worlds",
+   "epistemic": "house",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "agent-grammars",
+   "division": "worlds",
+   "epistemic": "established",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "procedural-environments",
+   "division": "worlds",
+   "epistemic": "established",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "world-models",
+   "division": "worlds",
+   "epistemic": "established",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "glm-lgm",
+   "division": "worlds",
+   "epistemic": "house",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "proposed"
+  },
+  {
+   "id": "borne",
+   "division": "worlds",
+   "epistemic": "house",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "maps-navigation",
+   "division": "worlds",
+   "epistemic": "established",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  },
+  {
+   "id": "simulated-populations",
+   "division": "worlds",
+   "epistemic": "established",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "tested"
+  },
+  {
+   "id": "homeless-dark",
+   "division": "worlds",
+   "epistemic": "application",
+   "location": "src/content/topics/worlds.ts",
+   "darkStatus": "witnessed"
+  }
+ ]
+}
