@@ -183,6 +183,9 @@ export class Vehicle {
     this.ctrl.updateVehicle(h, this.p.R.QueryFilterFlags.EXCLUDE_SENSORS, groups(0xffff, GROUP.STATIC));
   }
 
+  /** Tyre–road friction from the material law (μ / μ_dry_asphalt scales the wheel friction slip). */
+  frictionScale = 1;
+  setFrictionScale(k: number) { if (Math.abs(k - this.frictionScale) < 0.01) return; this.frictionScale = k; for (let i = 0; i < 4; i++) this.ctrl.setWheelFrictionSlip(i, 2.6 * k); }
   speed(): number { return this.ctrl.currentVehicleSpeed(); }
   wheelRotation(i: number): number { return this.ctrl.wheelRotation(i) ?? 0; }
   wheelSuspension(i: number): number { return this.ctrl.wheelSuspensionLength(i) ?? 0.3; }

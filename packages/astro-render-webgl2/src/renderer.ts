@@ -27,7 +27,7 @@ interface TexRes { t: WebGLTexture; version: number; lastUsed: number }
 interface Target { fbo: WebGLFramebuffer; tex: WebGLTexture | null; depth: WebGLRenderbuffer | null; w: number; h: number; msaaFbo?: WebGLFramebuffer; msaaColor?: WebGLRenderbuffer; msaaDepth?: WebGLRenderbuffer }
 interface DrawItem { mesh: Mesh; mat: Material; depth: number; key: string }
 
-const FEATURE_DEFINE: Record<string, string | null> = { standard: null, wet: 'FEATURE_WET', facade: 'FEATURE_FACADE', water: 'FEATURE_WATER', terrain: 'FEATURE_TERRAIN', unlit: 'FEATURE_UNLIT', rain: 'FEATURE_UNLIT', stars: 'FEATURE_UNLIT', skyDome: 'FEATURE_UNLIT', text: 'FEATURE_TEXT', windows: 'FEATURE_WINDOWS' };
+const FEATURE_DEFINE: Record<string, string | null> = { grass: 'FEATURE_GRASS', standard: null, wet: 'FEATURE_WET', facade: 'FEATURE_FACADE', water: 'FEATURE_WATER', terrain: 'FEATURE_TERRAIN', unlit: 'FEATURE_UNLIT', rain: 'FEATURE_UNLIT', stars: 'FEATURE_UNLIT', skyDome: 'FEATURE_UNLIT', text: 'FEATURE_TEXT', windows: 'FEATURE_WINDOWS' };
 
 export class Renderer {
   readonly gl: WebGL2RenderingContext;
@@ -41,6 +41,8 @@ export class Renderer {
   bloomThreshold = 1.0;
   lensMode: LensMode = 'normal';
   field: { texture: WebGLTexture; gain: number } | null = null;
+  /** Simulation fields sampled by material features (blade state, puddle ripples). */
+  readonly fieldTextures: { grassState: WebGLTexture | null; ripple: WebGLTexture | null } = { grassState: null, ripple: null };
   shadowsEnabled = true;
   /** Feature uniforms shared by all programs (wetness field, night factor, time). */
   readonly globals: Record<string, number> = { uWetness: 0, uPuddle: 0, uNight: 0, uTime: 0 };
@@ -692,6 +694,7 @@ export class Renderer {
     this.u3f(p, 'fogColor', f.fogColor.x, f.fogColor.y, f.fogColor.z); this.u1f(p, 'fogDensity', f.fogDensity);
     this.u1f(p, 'exposure', this.exposure); this.u1i(p, 'toneOp', this.toneOp === 'aces' ? 1 : this.toneOp === 'clip' ? 2 : 0);
     for (const [k, v] of Object.entries(this.globals)) this.u1f(p, k, v);
+    this.u1i(p, 'grassState', UNIT.grassState); this.u1i(p, 'rippleField', UNIT.ripple);
     this.u1i(p, 'map', UNIT.map); this.u1i(p, 'normalMap', UNIT.normalMap); this.u1i(p, 'roughnessMap', UNIT.roughnessMap); this.u1i(p, 'emissiveMap', UNIT.emissiveMap); this.u1i(p, 'detailMap', UNIT.detailMap);
   }
 
@@ -727,6 +730,9 @@ export class Renderer {
     if (!this.shadowsEnabled || f.shadowOn === 0) f.shadowOn = 0;
     this.bind(UNIT.shadowMap, this.targets.shadow && f.shadowOn ? this.targets.shadow.tex! : this.fallback.depth);
     this.bind(UNIT.envMap, this.targets.env?.tex ?? this.fallback.env);
+    this.bind(UNIT.grassState, this.fieldTextures.grassState ?? this.fallback.black);
+    this.bind(UNIT.ripple, this.fieldTextures.ripple ?? this.fallback.black);
+    if (!this.fieldTextures.ripple) this.globals.uRippleOn = 0;
     const sliceW = Math.floor(W / cams.length);
     cams.forEach((cam, vi) => {
       gl.viewport(vi * sliceW, 0, sliceW, H);

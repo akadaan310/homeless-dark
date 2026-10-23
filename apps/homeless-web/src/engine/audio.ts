@@ -149,6 +149,43 @@ export class AudioEngine {
     this.log(`footstep:${f.surface}`, eventId);
   }
 
+  /** Standing-water contact: depth-scaled noise burst + droplet chirps (the SPLASH event's projection). */
+  splash(pos: Vec3, depth: number, eventId?: string): void {
+    if (!this.unlocked) return;
+    const ctx = this.ctx!, t = ctx.currentTime;
+    const pan = this.panner(pos, 1, 1.5, 50); pan.connect(this.buses.get('footsteps')!);
+    const src = ctx.createBufferSource(); src.buffer = this.noise;
+    const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 1400 + 1800 * depth; bp.Q.value = 0.9;
+    const g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(0.5 * Math.min(1, depth * 1.6), t + 0.01); g.gain.exponentialRampToValueAtTime(0.001, t + 0.18 + depth * 0.2);
+    src.connect(bp).connect(g).connect(pan); src.start(t, Math.random() * 1.5, 0.5);
+    for (let i = 0; i < 3; i++) {
+      const o = ctx.createOscillator(), og = ctx.createGain(), t0 = t + 0.04 + Math.random() * 0.12;
+      o.frequency.setValueAtTime(900 + Math.random() * 900, t0); o.frequency.exponentialRampToValueAtTime(2600 + Math.random() * 1500, t0 + 0.03);
+      og.gain.setValueAtTime(0.05 * depth, t0); og.gain.exponentialRampToValueAtTime(0.0005, t0 + 0.04);
+      o.connect(og).connect(pan); o.start(t0); o.stop(t0 + 0.05);
+    }
+    this.log('splash', eventId);
+  }
+
+  /** Glass contact projection: knock (resonant tick), crack (sharp click), shatter (noise + tinkles). */
+  glass(pos: Vec3, kind: 'knock' | 'crack' | 'shatter' | 'scratch', eventId?: string): void {
+    if (!this.unlocked) return;
+    const ctx = this.ctx!, t = ctx.currentTime;
+    const pan = this.panner(pos, 1.5, 1.2, 80); pan.connect(this.buses.get('world')!);
+    const ping = (f: number, a: number, d: number, at = 0) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.type = 'sine'; o.frequency.value = f; g.gain.setValueAtTime(a, t + at); g.gain.exponentialRampToValueAtTime(0.0005, t + at + d); o.connect(g).connect(pan); o.start(t + at); o.stop(t + at + d + 0.02); };
+    if (kind === 'knock') { ping(620, 0.25, 0.08); ping(1730, 0.08, 0.05); }
+    else if (kind === 'scratch') { const s2 = ctx.createBufferSource(); s2.buffer = this.noise; const hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 5000; const g = ctx.createGain(); g.gain.setValueAtTime(0.12, t); g.gain.linearRampToValueAtTime(0.0, t + 0.3); s2.connect(hp).connect(g).connect(pan); s2.start(t, Math.random(), 0.35); }
+    else if (kind === 'crack') { ping(2900, 0.35, 0.05); ping(4700, 0.2, 0.04, 0.01); ping(820, 0.2, 0.12); }
+    else {
+      const s2 = ctx.createBufferSource(); s2.buffer = this.noise;
+      const hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 1800;
+      const g = ctx.createGain(); g.gain.setValueAtTime(0.9, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.9);
+      s2.connect(hp).connect(g).connect(pan); s2.start(t, Math.random(), 1);
+      for (let i = 0; i < 14; i++) ping(2500 + Math.random() * 4500, 0.06 + Math.random() * 0.08, 0.05 + Math.random() * 0.12, 0.15 + Math.random() * 0.9);
+    }
+    this.log(`glass:${kind}`, eventId);
+  }
+
   doorSlam(pos: Vec3, eventId?: string): void {
     if (!this.unlocked) return;
     const ctx = this.ctx!, t = ctx.currentTime;

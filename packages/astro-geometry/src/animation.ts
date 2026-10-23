@@ -70,7 +70,14 @@ export class Mixer {
   constructor(root: Node) {
     root.traverse((n) => { if (n.name && !this.nodes.has(n.name)) this.nodes.set(n.name, n); this.rest.set(n, { p: n.position.clone(), q: n.quaternion.clone(), s: n.scale.clone() }); });
   }
-  clipAction(c: Clip) { const a = new Action(c); this.actions.push(a); return a; }
+  /** Node/path pairs bound by any registered action (restored toward rest when unweighted, like a property mixer). */
+  private bindings = new Map<Node, Set<Track['path']>>();
+  clipAction(c: Clip) {
+    const a = new Action(c); this.actions.push(a);
+    for (const t of c.tracks) { const n = this.nodes.get(t.nodeName); if (n) (this.bindings.get(n) ?? this.bindings.set(n, new Set()).get(n)!).add(t.path); }
+    return a;
+  }
+  isBound(n: Node) { return this.bindings.has(n); }
   update(dt: number) {
     const acc = new Map<Node, { p: number[]; pw: number; q: number[]; qw: number; s: number[]; sw: number }>();
     const tmp = [0, 0, 0, 0];
@@ -92,6 +99,15 @@ export class Mixer {
           for (let k = 0; k < 4; k++) e.q[k]! += tmp[k]! * w * sign; e.qw += w;
         }
       }
+    }
+    // bound but unweighted this frame: restore the rest pose (prevents post-mixer corrections from accumulating)
+    for (const [node, paths] of this.bindings) {
+      if (acc.has(node)) continue;
+      const r = this.rest.get(node);
+      if (!r) continue;
+      if (paths.has('translation')) node.position.copy(r.p);
+      if (paths.has('rotation')) node.quaternion.copy(r.q);
+      if (paths.has('scale')) node.scale.copy(r.s);
     }
     for (const [node, e] of acc) {
       const r = this.rest.get(node)!;

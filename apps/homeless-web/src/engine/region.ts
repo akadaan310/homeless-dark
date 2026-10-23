@@ -36,5 +36,8 @@ export interface Region {
   obstacles?(): Vec3[];
   focus?(): { pos: Vec3; heading?: number; eye?: Vec3; quat?: Quat; mode: 'vehicle' | 'cabin' | 'cockpit' | 'follow' } | null;
   hudExtra?(): Record<string, unknown>;
+  /** v4.1 fields: non-grass blockers for the grass mask and the humans whose soles touch the ground. */
+  grass?: { blockers: import('@astro/core').Geometry[]; origin: [number, number]; size: number };
+  contactHumans?(): import('./characters').Human[];
   dispose(): void;
 }

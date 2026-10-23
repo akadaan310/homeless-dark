@@ -1,0 +1,11 @@
+import { chromium } from '@playwright/test';
+const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+page.on('console', (m) => { if (m.type() !== 'info') console.log(`[${m.type()}] ${m.text().slice(0, 1500)}`); });
+page.on('pageerror', (e) => console.log(`[pageerror] ${e.message}\n${e.stack?.slice(0, 800)}`));
+await page.goto(process.argv[2]);
+await page.waitForFunction(() => window.__dark?.hud?.ready || window.__dark?.hud?.error, null, { timeout: 120000 }).catch(() => console.log('timeout'));
+await page.click('[data-testid=enter]').catch(() => {});
+await page.waitForTimeout(5000);
+console.log(await page.evaluate(() => { const d = window.__dark; return JSON.stringify({ err: d.hud.error, frames: d.frames, lastMs: d.lastRealMs, renderMs: d.renderMs, info: d.renderer.info, fields: d.fields?.tel, mask: !!d.fields?.blades }); }));
+await browser.close();

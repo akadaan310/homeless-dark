@@ -11,6 +11,8 @@ import { buildTampa, CAFE, type TampaWorld } from './tampa';
 import { PlayerCar, Traffic } from './vehicles';
 import { NpcSystem, PLACES, type Agent } from './npcs';
 import { GROUP } from './physics';
+import { tyreFriction } from '@astro/physics';
+import { puddleCover } from './fields';
 import type { SignView } from './signs';
 
 export async function makeTampaRegion(e: Engine): Promise<Region> {
@@ -225,6 +227,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
     a.human.setPose('seated');
   };
 
+  let tyreTimer = 0;
   // ---------------------------------------------------------------- region object
   const region: Region = {
     id: 'tampa', kind: 'street', name: 'Tampa — N Dale Mabry Hwy & W Spruce St', lat: 27.9594638, lon: -82.5054865,
@@ -232,6 +235,8 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
     sourceLabels: w.sourceLabels as Region['sourceLabels'], interiors: [w.cafe.interior],
     controlsPlayer: () => inCar,
     obstacles: () => [e.playerPos(), car.position()],
+    grass: { blockers: w.grassBlockers, origin: [-394, -384], size: 768 },
+    contactHumans: () => npcs.agents.filter((a) => !a.hiddenInVehicle && a.human.root.visible && (a.tier === 'focused' || a.tier === 'active')).map((a) => a.human),
     fixed(h) {
       const inp = e.lastInput;
       if (inCar && inp && entering <= 0) {
@@ -241,6 +246,11 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
         const brake = (inp.move.y < 0 && fwd > 0.8) || (inp.move.y > 0 && fwd < -0.8) || inp.brake ? 1 : 0;
         car.throttle = reverse ? -0.5 : throttle;
         car.braking = brake > 0;
+        // tyre–road friction law: surface under the car + wetness + standing water at speed
+        const cp = car.position(), st = e.atmo.state;
+        const surf = e.surfaceAt(cp);
+        const mu = tyreFriction(surf === 'wet_asphalt' ? 'asphalt' : (surf as 'asphalt'), st.wet.wetness, puddleCover(cp.x, cp.z, st.wet.puddle), Math.abs(car.speed()));
+        car.vehicle.setFrictionScale(mu / 0.9);
         car.vehicle.drive(reverse ? -0.45 : throttle, brake, -inp.move.x, h);
       } else car.vehicle.drive(0, 0.3, 0, h);
       traffic.update(h, e.atmo.state.streetLights > 0.3 || e.atmo.state.rain > 0.2 ? 1 : 0, region.obstacles!());
@@ -275,11 +285,18 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
       car.update(dt, lights);
       if (entering > 0) { entering -= dt; if (entering <= 0) { car.rig.doors.LF.target = 0; closeDoor('LF'); } }
       if (inCar) e.audio.setEngine(true, car.position(), car.speed(), Math.abs(car.throttle));
+      // tyres through standing water: ripple impulses at each wheel contact (rate-limited)
+      tyreTimer -= dt;
+      if (tyreTimer <= 0 && Math.abs(car.speed()) > 1.5 && e.atmo.state.wet.puddle > 0.05) {
+        tyreTimer = 0.07;
+        for (const wpv of car.rig.wheels) { const wp = wpv.getWorldPosition(new Vec3()); e.contactWater('player', new Vec3(wp.x, 0, wp.z), 'asphalt', Math.min(2, Math.abs(car.speed()) / 6), false); }
+      }
       npcs.render(dt, (a, pos) => {
         if (a.tier === 'focused' || a.tier === 'active') {
           const s = e.surfaceAt(pos);
           const ev = e.world.commit({ type: 'FOOTSTEP', actor: a.mind.id.startsWith('npc:walker') ? 'npc:bo' : a.mind.id, payload: { surface: s } });
           e.audio.footstep(s, pos, 1.3, e.atmo.state.wet.wetness, 0, 'id' in ev ? ev.id : undefined);
+          e.contactWater(a.mind.id.startsWith('npc:walker') ? 'npc:bo' : a.mind.id, pos, s, 0.8);
         }
       });
       // traffic signal heads

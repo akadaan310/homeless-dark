@@ -95,3 +95,4 @@ export function tileStats(cur: ArrayLike<number>, prev: ArrayLike<number> | null
   let energy = 0; for (const m of mean) energy += m * m;
   return { tilesX: tx, tilesY: ty, mean, variance, changed, changedTiles: changed.reduce((a, b) => a + b, 0), energy: energy / mean.length };
 }
+export * from './kernels';

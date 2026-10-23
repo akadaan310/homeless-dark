@@ -43,6 +43,8 @@ export interface TampaWorld {
   stats: { roads: number; buildings: number; sidewalkM: number; triangles: number; drawGroups: number };
   sourceLabels: { id: string; status: string; note: string }[];
   stores: { name: string; pos: Vec3 }[];
+  /** Non-grass ground (roads, walks, kerbs, footprints) for the near-field grass mask. */
+  grassBlockers: Geometry[];
 }
 
 export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low' | 'high'): Promise<TampaWorld> {
@@ -155,6 +157,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
     group.add(m);
     if (surface) surfaces.set(phys.fixedTrimesh(g).handle, surface);
   };
+  const grassBlockers: Geometry[] = [...roadGeoms, ...walkGeoms];
   addMerged(roadGeoms, asphalt, 'asphalt');
   addMerged(walkGeoms, concrete, 'concrete');
   addMerged(curbGeoms, curbMat, 'concrete');
@@ -184,6 +187,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
     slot.walls.push(ex.walls); slot.roofs.push(ex.roof);
     byMat.set(prog.material, slot);
     allBuilding.push(ex.walls, ex.roof);
+    grassBlockers.push(ex.roof);
     nBuild++;
     if (commercial && ex.longestEdge.len > 8) shopfrontCandidates.push({ b, edge: ex.longestEdge, dist: Math.hypot(c[0], c[1]), prog });
   }
@@ -287,7 +291,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
   group.traverse((m) => { if (m instanceof Mesh) triangles += m.geometry.triangleCount * (m instanceof InstancedMesh ? 1 : 1); });
 
   return {
-    group, surfaces, streetlights,
+    group, surfaces, streetlights, grassBlockers: [...grassBlockers, boxGeometry(CAFE.x1 - CAFE.x0 + 1.2, 0.1, CAFE.n1 - CAFE.n0 + 1.2).translate((CAFE.x0 + CAFE.x1) / 2, 0, -(CAFE.n0 + CAFE.n1) / 2)],
     spawn: new Vec3(-22.6, 0.2, -12),
     carSpawn: { pos: new Vec3(-42, 0.05, 2.2), yaw: -Math.PI / 2 },
     cafe, trafficLanes, signalHeads, stores,

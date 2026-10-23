@@ -34,6 +34,13 @@ export class Atmosphere {
     exposureEV: 0, targetEV: 0, night: 0, rain: 0, cloud: 0.15, wet: { wetness: 0, puddle: 0 }, streetLights: 0,
   };
   maxEVPerSecond = 0.75;
+  /**
+   * Output calibration (declared, measured): the light profiles were authored against an AgX
+   * view transform; under PBR Neutral the same scene reads ≈1.5 EV brighter at the median
+   * (oracle comparison, evidence/astro/compare). The camera applies this bias; scene-linear
+   * light values are unchanged.
+   */
+  exposureBiasEV = -1.2;
 
   constructor(private renderer: Renderer, private scene: Scene, private quality: 'low' | 'high') {
     const s = this.sun;
@@ -133,7 +140,7 @@ export class Atmosphere {
     // exposure: bounded adaptation; indoor raises exposure toward the indoor profile
     st.targetEV = p.exposureEV * (1 - this.interiorFactor) + PROFILES.indoor.exposureEV * this.interiorFactor + cloud * 0.4;
     st.exposureEV = adaptExposure(st.exposureEV, st.targetEV, dt, this.maxEVPerSecond);
-    this.renderer.exposure = 2 ** st.exposureEV;
+    this.renderer.exposure = 2 ** (st.exposureEV + this.exposureBiasEV);
     // wetness dynamics → material uniforms
     st.wet = stepWetness(st.wet, st.rain, worldDt); // wetting/drying follow world time
     weather.uWetness.value = st.wet.wetness;
@@ -175,7 +182,7 @@ export class Atmosphere {
   settle(worldSeconds: number) {
     for (let t = 0; t < worldSeconds; t++) this.state.wet = stepWetness(this.state.wet, this.state.rain, 1);
     this.state.exposureEV = this.state.targetEV;
-    this.renderer.exposure = 2 ** this.state.exposureEV;
+    this.renderer.exposure = 2 ** (this.state.exposureEV + this.exposureBiasEV);
     weather.uWetness.value = this.state.wet.wetness;
     weather.uPuddle.value = this.state.wet.puddle;
   }

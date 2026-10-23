@@ -74,3 +74,16 @@ describe('clusters, culling, glyph meshes', () => {
     expect(g.vertexCount).toBeGreaterThan(6 * 9 * 7);
   });
 });
+
+describe('mixer parity: unweighted bindings restore rest (no accumulation of post-mixer corrections)', () => {
+  it('a bound bone returns to rest when its action weight is zero', () => {
+    const root = new Group(), bone = new Node(); bone.name = 'arm'; root.add(bone);
+    const q1 = new Quat().setFromAxisAngle(new Vec3(0, 0, 1), 1);
+    const m = new Mixer(root);
+    m.clipAction(new Clip('wave', [{ nodeName: 'arm', path: 'rotation', times: new Float32Array([0, 1]), values: new Float32Array([q1.x, q1.y, q1.z, q1.w, q1.x, q1.y, q1.z, q1.w]), interpolation: 'LINEAR' }])).setEffectiveWeight(0).play();
+    for (let i = 0; i < 10; i++) { m.update(0.016); bone.quaternion.premultiply(new Quat().setFromAxisAngle(new Vec3(1, 0, 0), 0.3)); }
+    m.update(0.016);
+    expect(bone.quaternion.w).toBeCloseTo(1, 9);
+    expect(m.isBound(bone)).toBe(true);
+  });
+});

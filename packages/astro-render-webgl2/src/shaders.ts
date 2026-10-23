@@ -4,7 +4,7 @@
 // Written for this repository; no engine shader source is copied.
 
 export const ATTR = { position: 0, normal: 1, uv: 2, color: 3, custom: 4, skinIndex: 5, skinWeight: 6, instance: 8 } as const;
-export const UNIT = { map: 0, normalMap: 1, roughnessMap: 2, emissiveMap: 3, detailMap: 4, shadowMap: 5, envMap: 6, boneTex: 7 } as const;
+export const UNIT = { map: 0, normalMap: 1, roughnessMap: 2, emissiveMap: 3, detailMap: 4, shadowMap: 5, envMap: 6, boneTex: 7, grassState: 8, ripple: 9 } as const;
 export const MAX_POINT = 8, MAX_SPOT = 12;
 
 const VERT_COMMON = /* glsl */ `
@@ -66,11 +66,50 @@ out vec4 vCustom;
 out vec3 vLocal;
 out vec4 vShadow;
 out float vViewDepth;
+#ifdef FEATURE_GRASS
+// Near-field grass (v4.1 §06): each blade's root samples the GPU blade-state field; the blade
+// is bent along a circular arc of total angle |b| in direction b/|b|. aCustom = (rootX, rootZ,
+// seed, height). Blades off grass ground (mask) or outside the field collapse to nothing.
+uniform highp sampler2D grassState;
+uniform float uGrassOx; uniform float uGrassOz; uniform float uGrassCell; uniform float uGrassRes; uniform float uGrassY;
+uniform float uMaskOx; uniform float uMaskOz; uniform float uMaskSize;
+uniform sampler2D detailMap;
+#endif
 void main() {
   vec4 p; vec3 n;
   localFrame(p, n);
+#ifdef FEATURE_GRASS
+  // roots are world-periodic over the window (toroidal): recentring never slides a blade
+  float T = uGrassRes * uGrassCell;
+  vec2 org = vec2(uGrassOx, uGrassOz);
+  vec2 root = org + mod(aCustom.xy - org, vec2(T));
+  vec2 cellF = (root - vec2(uGrassOx, uGrassOz)) / uGrassCell;
+  ivec2 cell = ivec2(floor(cellF));
+  float inField = step(0.0, cellF.x) * step(cellF.x, uGrassRes - 1.0) * step(0.0, cellF.y) * step(cellF.y, uGrassRes - 1.0);
+  vec4 st = texelFetch(grassState, clamp(cell, ivec2(0), ivec2(int(uGrassRes) - 1)), 0);
+  vec2 b = st.xy * inField;
+  float th = length(b);
+  vec2 dir = th > 1e-4 ? b / th : vec2(0.0, 1.0);
+  float s = position.y, L = aCustom.w;
+  float a = th * s;
+  float along = th > 1e-3 ? (L / th) * (1.0 - cos(a)) : 0.5 * L * th * s * s;
+  float up = th > 1e-3 ? (L / th) * sin(a) : L * s;
+  vec2 mUv = (root - vec2(uMaskOx, uMaskOz)) / uMaskSize;
+  float onGrass = step(0.5, texture(detailMap, mUv).r) * step(0.0, mUv.x) * step(mUv.x, 1.0) * step(0.0, mUv.y) * step(mUv.y, 1.0);
+  // field edge fade: blades shrink smoothly to zero over the last 15% of the window (no popping)
+  vec2 e = min(cellF, vec2(uGrassRes) - cellF) / (uGrassRes * 0.15);
+  float fade = clamp(min(e.x, e.y), 0.0, 1.0) * onGrass;
+  float ang = aCustom.z * 6.2831853;
+  vec2 side = vec2(cos(ang), sin(ang));
+  vec3 wpos = vec3(root.x + side.x * position.x * fade + dir.x * along * fade, uGrassY + up * fade, root.y + side.y * position.x * fade + dir.y * along * fade);
+  p = vec4(wpos, 1.0);
+  n = normalize(vec3(-side.y, 0.35 + 0.65 * s, side.x));
+  vec4 wp = p;
+  vec3 wn = n;
+#else
   vec4 wp = worldOf(p);
   vec3 wn = worldNormalOf(n);
+#endif
   vWorld = wp.xyz; vNormal = wn; vLocal = position;
   vRawUv = uv;
   vUv = uv * uvScale * uvRepeat + uvOffset;
@@ -169,6 +208,8 @@ uniform float exposure;
 uniform int toneOp;
 uniform float uWetness; uniform float uPuddle; uniform float uNight; uniform float uTime;
 uniform float uPuddles;
+uniform highp sampler2D rippleField;
+uniform float uRippleOx; uniform float uRippleOz; uniform float uRippleSize; uniform float uRippleOn; uniform float uRippleRes;
 uniform float uFuselageHalf; uniform float uFuselageWin;
 
 float darkHash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
@@ -302,6 +343,17 @@ void main() {
   albedo *= (1.0 - 0.35 * darkFilm) * (1.0 - 0.25 * darkCover);
   rough = max(0.04, rough * (1.0 - 0.75 * darkFilm) * (1.0 - darkCover) + 0.04 * darkCover);
   N = normalize(mix(N, Ng, clamp(darkCover * 1.2 + darkFilm * 0.3, 0.0, 1.0)));
+  if (uRippleOn > 0.5) {
+    // ripple height field (damped wave solver) → surface slope on standing water only
+    vec2 ru = (vWorld.xz - vec2(uRippleOx, uRippleOz)) / uRippleSize;
+    if (ru.x > 0.0 && ru.x < 1.0 && ru.y > 0.0 && ru.y < 1.0) {
+      ivec2 rc = ivec2(ru * uRippleRes);
+      float hx = texelFetch(rippleField, rc + ivec2(1, 0), 0).r - texelFetch(rippleField, rc - ivec2(1, 0), 0).r;
+      float hz = texelFetch(rippleField, rc + ivec2(0, 1), 0).r - texelFetch(rippleField, rc - ivec2(0, 1), 0).r;
+      float water = clamp(darkCover + darkFilm * 0.35, 0.0, 1.0);
+      N = normalize(N + vec3(-hx, 0.0, -hz) * 6.0 * water);
+    }
+  }
 #endif
 #ifdef FEATURE_FACADE
   {
@@ -320,6 +372,11 @@ void main() {
     rough = mix(rough * (1.0 - 0.5 * uWetness), 0.06, glass);
     emission += glass * lit * vec3(1.0, 0.6, 0.28) * (ground ? 0.5 : 0.22) * (0.6 + 0.4 * facHash(cell * 1.7 + vCustom.z));
   }
+#endif
+#ifdef FEATURE_GRASS
+  // blade colour: dark, occluded root → lighter tip; per-blade hue jitter from the seed
+  albedo *= mix(0.35, 1.05, clamp(vRawUv.y, 0.0, 1.0)) * (0.85 + 0.3 * fract(vCustom.z * 13.7));
+  rough = 0.75;
 #endif
 #ifdef FEATURE_TERRAIN
   {

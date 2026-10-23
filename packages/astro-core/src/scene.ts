@@ -82,7 +82,7 @@ export class Node {
 export class Group extends Node {}
 
 export type Side = 'front' | 'back' | 'double';
-export type MaterialFeature = 'standard' | 'wet' | 'facade' | 'water' | 'terrain' | 'unlit' | 'text' | 'skyDome' | 'rain' | 'stars' | 'windows';
+export type MaterialFeature = 'standard' | 'wet' | 'facade' | 'water' | 'terrain' | 'unlit' | 'text' | 'skyDome' | 'rain' | 'stars' | 'windows' | 'grass';
 
 export interface TextureSource { kind: 'image' | 'canvas' | 'data'; image?: TexImageSource; data?: Uint8Array | Float32Array; width: number; height: number; url?: string; channels?: 1 | 4 }
 

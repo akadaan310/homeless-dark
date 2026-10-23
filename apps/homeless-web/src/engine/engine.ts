@@ -7,6 +7,7 @@ import { probeWebGPU, type WebGPUProbe } from '@astro/render-webgpu';
 import { stereoRig, DEFAULT_STEREO } from '@astro/optics';
 import { formatView, observe, type LensId } from '@astro/world-adapter';
 import { GlobeView, SkyView, GlyphView, PixelLens } from './lenses';
+import { FieldSystem, rasterMask, puddleCover } from './fields';
 import { applyWeather, weather } from './materials';
 import { BorneGraph, type CommittedEvent } from '@dark/core';
 import { SubjectRegistry } from '@dark/subjects';
@@ -54,6 +55,8 @@ export class Engine {
   lens: LensId = 'player';
   private lenses: { globe?: GlobeView; sky?: SkyView; glyph?: GlyphView; pixel?: PixelLens } = {};
   webgpu: WebGPUProbe | null = null;
+  /** v4.1 material fields (grass blades, puddle ripples) for the active region. */
+  fields: FieldSystem | null = null;
   phys = new Physics();
   atmo!: Atmosphere;
   audio = new AudioEngine();
@@ -197,9 +200,17 @@ export class Engine {
       await this.phys.init();
       this.rig = new CameraRig(this.camera, this.phys);
     }
+    this.fields?.dispose();
+    if (this.fields?.blades) this.fields.blades.parent?.remove(this.fields.blades);
+    this.fields = null;
     const region = await make();
     this.region = region;
     this.scene.add(region.group);
+    // material fields: grass only where the region declares real grass ground; ripples everywhere
+    const mask = region.grass ? rasterMask(region.grass.size, this.quality === 'low' ? 1536 : 3072, region.grass.origin, region.grass.blockers) : null;
+    this.fields = new FieldSystem(this.renderer, mask ? { tex: mask.tex, origin: region.grass!.origin, size: region.grass!.size } : null, this.quality === 'low' ? 4500 : 15000);
+    if (this.fields.blades) this.scene.add(this.fields.blades);
+    if (this.fields.blocked) this.trace('IV Imagistratum', `material fields BLOCKED: ${this.fields.blocked}`);
     this.scene.add(this.avatar.root);
     this.player = new Character(this.phys, region.spawn, { member: GROUP.PLAYER });
     this.rig.yaw = region.spawnYaw;
@@ -347,6 +358,14 @@ export class Engine {
     this.audio.updateListener(this.camera);
 
     this.atmo.update(new Date(this.gameUtc), region.lat, region.lon, dt, feet, this.camera, dt * Math.min(this.timeScale, 60));
+    // material fields: contacts are the actual soles of embodied actors near the player
+    if (this.fields) {
+      const contacts: { x: number; z: number; r: number; p: number }[] = [];
+      const add = (h: Human, p: number) => { for (const s of h.soles()) if (s.planted) contacts.push({ x: s.x, z: s.z, r: 0.13, p }); };
+      if (this.onFoot && this.avatar.root.visible) add(this.avatar, 1);
+      for (const h of region.contactHumans?.() ?? []) if (h.root.position.distanceTo(feet) < 8) add(h, 0.9);
+      this.fields.update(dt, focus ? focus.pos : feet, contacts, this.atmo.state.wet.puddle, this.atmo.state.rain);
+    }
     this.signs.update(now / 1000, this.atmo.state.night, this.atmo.state.wet.wetness, hour);
     weather.uTime.value = (this.gameUtc - START_UTC) / 1000;
     const r0 = performance.now();
@@ -422,6 +441,17 @@ export class Engine {
     const s = this.screenOf(pos);
     if (s) this.lenses.pixel.impulse(s[0], s[1], amp, id ?? null);
   }
+  /** A sole or tyre contact: when it lands in standing water it is a SPLASH (event → ripple field → light + sound). */
+  contactWater(actor: string, pos: Vec3, surface: string, strength: number, sound = true): boolean {
+    if (!this.fields || (surface !== 'asphalt' && surface !== 'wet_asphalt')) return false;
+    const cover = puddleCover(pos.x, pos.z, this.atmo.state.wet.puddle);
+    if (cover < 0.12) return false;
+    const ev = this.world.commit({ type: 'SPLASH', actor: actor.startsWith('npc:walker') ? 'npc:bo' : actor, payload: { depth: Math.round(cover * 100) / 100, x: Math.round(pos.x * 10) / 10, z: Math.round(pos.z * 10) / 10 } });
+    if (!('id' in ev)) return false;
+    this.fields.splash(pos.x, pos.z, cover, strength);
+    if (sound) this.audio.splash(pos, cover, ev.id);
+    return true;
+  }
   pixelWitness() { return this.lenses.pixel?.witness() ?? null; }
   projection() { return observe(this.world as never, performance.now()); }
 
@@ -457,6 +487,7 @@ export class Engine {
     const id = 'id' in ev ? ev.id : undefined;
     this.audio.footstep(surface, pos, speed, this.atmo.state.wet.wetness, 0, id);
     this.fieldEvent(pos, 0.6, id);
+    this.contactWater(actor, pos, surface, Math.min(1.5, 0.6 + speed / 4));
     if (id) { const t = performance.now() / 1000; this.telemetry.log(id, 'animation', t, 'foot contact'); this.telemetry.log(id, 'audio', t, `footstep:${surface}`); }
     this.stepTimer++;
   }
@@ -516,7 +547,7 @@ export class Engine {
       captions: [...this.captions], dialog: this.dialog,
       audio: this.audio.unlocked, hrtf: this.audio.hrtf, haptics: this.haptics.preference, hapticDriver: this.haptics.driverName,
       refusals: this.world.refusals.slice(-6).reverse().map((r) => ({ type: r.ev.type, reason: r.reason })),
-      extra: { ...(this.region?.hudExtra?.() ?? {}), inside, colorAuditOk: colorAudit.every((c) => c.ok), colorAuditCount: colorAudit.length, physicsStepMs: +this.phys.stepMs.toFixed(2), journal: this.world.journal.length, renderer: ri, view: this.viewAddress() },
+      extra: { ...(this.region?.hudExtra?.() ?? {}), fields: this.fields ? { ...this.fields.tel, blocked: this.fields.blocked } : null, inside, colorAuditOk: colorAudit.every((c) => c.ok), colorAuditCount: colorAudit.length, physicsStepMs: +this.phys.stepMs.toFixed(2), journal: this.world.journal.length, renderer: ri, view: this.viewAddress() },
     });
     this.publish();
   }

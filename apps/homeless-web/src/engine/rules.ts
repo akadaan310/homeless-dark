@@ -1,6 +1,13 @@
 // HOMELESS world rules: every mutation is a typed event with roles, schema validation
 // and (where relevant) budgets. Projections (render/audio/haptics) subscribe; they never write.
 import { WorldAuthority, compileProgram, type EventRule } from '@dark/core';
+import { applyImpact, newGlass, GLASS_DENSITY, type GlassSpec, type GlassState } from '@astro/physics';
+
+/** Admitted, safely fictional glass (v4.1 §07): the café storefront panes. Not every window on Earth. */
+export const GLASS: Record<string, GlassSpec> = {
+  'glass/cafe-south': { id: 'glass/cafe-south', width: 7.1, height: 2.6, thickness: 0.006, density: GLASS_DENSITY, seed: 11 },
+  'glass/cafe-north': { id: 'glass/cafe-north', width: 6.1, height: 2.6, thickness: 0.006, density: GLASS_DENSITY, seed: 23 },
+};
 
 const obj = (p: unknown): p is Record<string, unknown> => typeof p === 'object' && p !== null;
 const num = (p: Record<string, unknown>, k: string, lo: number, hi: number) => typeof p[k] === 'number' && (p[k] as number) >= lo && (p[k] as number) <= hi;
@@ -60,6 +67,23 @@ const rules: EventRule[] = [
   { type: 'ARRIVED', roles: ['system'], validate: () => null, apply: (m) => m.patch('player', { ticket: null, travelState: 'ARRIVED', seat: null }) },
   { type: 'AIRCRAFT_TAKEOFF', roles: ['system', 'player'], validate: () => null, apply: () => {} },
   { type: 'WAVE_HULL', roles: ['system'], validate: () => null, apply: () => {} },
+  // material interactions (v4.1): the material law runs inside the authority; renderers project the result
+  { type: 'GLASS_IMPACT', roles: ['player', 'npc'], budgetPerMinute: 40,
+    validate: (p) => (obj(p) && str(p, 'pane') && num(p, 'u', 0, 1) && num(p, 'v', 0, 1) && num(p, 'energy', 0, 20) ? null : 'pane/u/v/energy ∈ [0,20] J'),
+    admit: (w, ev) => {
+      const p = ev.payload as { pane: string; nearbyPeople?: number };
+      if (!GLASS[p.pane]) return `${p.pane} is not admitted glass (only the café panes are breakable)`;
+      if ((w.inspect(p.pane)?.data as unknown as GlassState | undefined)?.broken) return 'pane already broken';
+      if ((p.nearbyPeople ?? 0) > 0) return 'someone is standing at the glass: impact refused (risk rule)';
+      return null;
+    },
+    apply: (m, ev) => {
+      const p = ev.payload as { pane: string; u: number; v: number; energy: number; tangential?: boolean };
+      const cur = (m.get(p.pane)?.data as unknown as GlassState | undefined) ?? newGlass();
+      const r = applyImpact(GLASS[p.pane]!, cur, { u: p.u, v: p.v, energy: p.energy, t: ev.worldTime, actor: ev.actor, eventId: ev.id }, !!p.tangential);
+      m.patch(p.pane, { ...r.state, lastOutcome: r.outcome, lastReason: r.reason } as unknown as Record<string, unknown>);
+    } },
+  { type: 'SPLASH', roles: ['player', 'npc', 'system'], budgetPerMinute: 240, validate: (p) => (obj(p) && num(p, 'depth', 0, 1) ? null : 'depth ∈ [0,1]'), apply: () => {} },
 ];
 
 export function createWorld(): WorldAuthority {
@@ -78,6 +102,7 @@ export function createWorld(): WorldAuthority {
   w.seed({ id: 'sign/cafe-sign', kind: 'sign', rev: 1, data: { owner: 'npc:bo', text: 'SPRUCE CORNER CAFÉ', consentPolicy: 'owner or invited' }, source: 'authored' });
   w.seed({ id: 'cafe', kind: 'place', rev: 1, data: { open: [6, 24], fictional: true }, source: 'authored' });
   w.seed({ id: 'door/cafe', kind: 'door', rev: 1, data: { open: false }, source: 'authored' });
+  for (const id of Object.keys(GLASS)) w.seed({ id, kind: 'glass', rev: 1, data: { ...newGlass(), fictional: true } as unknown as Record<string, unknown>, source: 'authored' });
   for (const n of ['npc:ana', 'npc:bo']) w.seed({ id: n, kind: 'npc', rev: 1, data: { fictional: true }, source: 'authored' });
   return w;
 }
