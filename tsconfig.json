@@ -20,7 +20,17 @@
       "@dark/visual-grammar": ["packages/dark-visual-grammar/src/index.ts"],
       "@dark/somatostratum": ["packages/dark-somatostratum/src/index.ts"],
       "@dark/subjects": ["packages/dark-subjects/src/index.ts"],
-      "@dark/travel": ["packages/dark-travel/src/index.ts"]
+      "@dark/travel": ["packages/dark-travel/src/index.ts"],
+      "@astro/core": ["packages/astro-core/src/index.ts"],
+      "@astro/glyphs": ["packages/astro-glyphs/src/index.ts"],
+      "@astro/geometry": ["packages/astro-geometry/src/index.ts"],
+      "@astro/optics": ["packages/astro-optics/src/index.ts"],
+      "@astro/pixels": ["packages/astro-pixels/src/index.ts"],
+      "@astro/physics": ["packages/astro-physics/src/index.ts"],
+      "@astro/render-webgl2": ["packages/astro-render-webgl2/src/index.ts"],
+      "@astro/render-webgpu": ["packages/astro-render-webgpu/src/index.ts"],
+      "@astro/sky": ["packages/astro-sky/src/index.ts"],
+      "@astro/world-adapter": ["packages/astro-world-adapter/src/index.ts"]
     }
   },
   "include": ["packages/*/src", "packages/*/test", "apps/homeless-web/src", "apps/homeless-web/vite.config.ts", "e2e", "vitest.config.ts", "playwright.config.ts"]
