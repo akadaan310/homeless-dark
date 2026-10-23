@@ -1,0 +1,44 @@
+{
+ "schema": "astro.baseline/1",
+ "label": "before",
+ "at": "2026-10-23T02:46:56.698Z",
+ "repo": {
+  "head": "622e868cf3a49dabfba3c20fa7f9b55018fa158b",
+  "branch": "ccr-b3bb984f-7etq1r",
+  "status": "?? data/sky/\n?? tools/astro/",
+  "refs": [
+   "refs/heads/ccr-b3bb984f-7etq1r 622e868cf3a49dabfba3c20fa7f9b55018fa158b",
+   "refs/heads/main f596f0260d58cb47d19c221889e56b7a40764969",
+   "refs/remotes/origin/ccr-b3bb984f-7etq1r 622e868cf3a49dabfba3c20fa7f9b55018fa158b",
+   "refs/remotes/origin/main 622e868cf3a49dabfba3c20fa7f9b55018fa158b"
+  ],
+  "worktrees": [
+   "/home/user/homeless-dark  622e868 [ccr-b3bb984f-7etq1r]"
+  ]
+ },
+ "crossRepo": {
+  "repo": "akadaan310/HOMELESS (read-only blobless clone)",
+  "refs": [
+   "refs/heads/codex/ollama-a1-homeless-2026-10-20 fdd5776b0cf3fdca7b70e99d5943263492abe534 Initialize HOMELESS masterpack handoff repository",
+   "refs/heads/codex/one-shot-implementation d9f6b54caec5396878bc897ceaf8e17d94fe7379 docs: record published release and remote artifact verification",
+   "refs/heads/main 371491980b534b6cf77c7b10b867217dde68bfcd Source recovery integrated — Codex CLI relay run 2026-10-20 #2 (via Muse)",
+   "refs/tags/masterpack-v1 fdd5776b0cf3fdca7b70e99d5943263492abe534 Initialize HOMELESS masterpack handoff repository",
+   "refs/tags/rendezvous-engineering-2026-10-20 7c4bfb1c91d6fdcb8764d8e03db2fdb93934bcb9 docs: publish deployment evidence release archives and final acceptance ledger"
+  ],
+  "oneShotVsMain": "4\t6"
+ },
+ "files": {
+  "HOMELESS_DARK_WEB_CONSTITUTION.md": "843e1f6922a2e674a3c58e11dd71c40b33dd251b762681ceed590e290985f8c2",
+  "HOMELESS_DARK_ASTRO_UI_CONSTITUTION_V4.md": null,
+  "HOMELESS_DARK_STANDALONE_CONSTITUTION.md": "426adac678bbb014949c5e645844d61893009109db6a37cca254fdef58b3365d",
+  "CURRENT_STATE_AND_CONTINUATION.md": "8588c4b657c1860b29c8d1a9bfd6a70510e82fc512bb24508e1283b2bf259081",
+  "docs/checkpoint.md": "1887b8edd0ef60ba5010a1a732578f5f498d2067680ee232d8488170e0523c2a",
+  "docs/renderer-migration.md": "ac647ba6c044814c7fdada2a8fc8c39f8c25a51a9fddbb7b0f460aea4297de5d",
+  "university-source.lock.json": "4fe4cfb3d6f3f0724bbfec0513716fe99b08d812728660b6f836e732b737fc79",
+  "assets/web-selection.lock.json": "6909092738a5df5bc3af41286c4211ca34c3dd0061fdcc047cd741c5600214ee",
+  "package-lock.json": "c33b397ce172eaa86ce68cdbf49157c33c47111fed7640f992a7b893cbfec023"
+ },
+ "tests": {
+  "vitest": "Test Files  6 passed (6)\n      Tests  100 passed (100)"
+ }
+}

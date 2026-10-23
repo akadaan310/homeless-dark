@@ -22,7 +22,10 @@
     "data": "python3 tools/web/build_data.py",
     "university": "node tools/web/university-lock.mjs",
     "android:prepare": "bash tools/web/android-prepare.sh",
-    "android:build": "bash tools/web/android-build.sh"
+    "android:build": "bash tools/web/android-build.sh",
+    "dev:legacy": "npm run dev -w apps/homeless-legacy",
+    "build:legacy": "npm run build -w apps/homeless-legacy",
+    "typecheck:legacy": "tsc -p apps/homeless-legacy/tsconfig.json --noEmit"
   },
   "devDependencies": {
     "@gltf-transform/cli": "4.2.1",
