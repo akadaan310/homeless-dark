@@ -182,6 +182,7 @@ export class Mat4 {
     for (let i = 0; i < 16; i++) m[i] = inv[i]! / det;
     return this;
   }
+  setPosition(v: Vec3) { this.elements[12] = v.x; this.elements[13] = v.y; this.elements[14] = v.z; return this; }
   makeTranslation(x: number, y: number, z: number) { this.identity(); this.elements[12] = x; this.elements[13] = y; this.elements[14] = z; return this; }
   makeScale(x: number, y: number, z: number) { this.identity(); this.elements[0] = x; this.elements[5] = y; this.elements[10] = z; return this; }
   makeRotationFromQuaternion(q: Quat) { return this.compose(new Vec3(), q, new Vec3(1, 1, 1)); }

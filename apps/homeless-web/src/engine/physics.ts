@@ -3,7 +3,7 @@
 // controller and a raycast vehicle. Physics never decides admissibility: the
 // MotionAndEventGrammar admits actions; Rapier realizes them.
 import RAPIER from '@dimforge/rapier3d-compat';
-import * as THREE from 'three';
+import { Vec3, Quat, Mat4, type Geometry } from '@astro/core';
 
 export type R = typeof RAPIER;
 
@@ -45,11 +45,10 @@ export class Physics {
     return this.acc / this.step;
   }
 
-  fixedTrimesh(geometry: THREE.BufferGeometry, matrix?: THREE.Matrix4, member: number = GROUP.STATIC | GROUP.CAMERA_BLOCK): RAPIER.Collider {
-    const g = geometry.index ? geometry : geometry; // non-indexed handled below
-    const pos = g.getAttribute('position') as THREE.BufferAttribute;
+  fixedTrimesh(g: Geometry, matrix?: Mat4, member: number = GROUP.STATIC | GROUP.CAMERA_BLOCK): RAPIER.Collider {
+    const pos = g.getAttribute('position');
     const v = new Float32Array(pos.count * 3);
-    const tmp = new THREE.Vector3();
+    const tmp = new Vec3();
     for (let i = 0; i < pos.count; i++) {
       tmp.fromBufferAttribute(pos, i);
       if (matrix) tmp.applyMatrix4(matrix);
@@ -60,14 +59,14 @@ export class Physics {
     return this.world.createCollider(desc);
   }
 
-  fixedBox(center: THREE.Vector3, half: THREE.Vector3, rotY = 0, member: number = GROUP.STATIC | GROUP.CAMERA_BLOCK): RAPIER.Collider {
-    const q = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rotY);
+  fixedBox(center: Vec3, half: Vec3, rotY = 0, member: number = GROUP.STATIC | GROUP.CAMERA_BLOCK): RAPIER.Collider {
+    const q = new Quat().setFromAxisAngle(new Vec3(0, 1, 0), rotY);
     const desc = this.R.ColliderDesc.cuboid(half.x, half.y, half.z).setTranslation(center.x, center.y, center.z).setRotation(q).setCollisionGroups(groups(member, 0xffff));
     return this.world.createCollider(desc);
   }
 
   /** Cast a ray; returns hit distance or null. Excludes a collider (e.g. the player's own). */
-  ray(origin: THREE.Vector3, dir: THREE.Vector3, maxToi: number, mask = 0xffff, exclude?: RAPIER.Collider): { toi: number; collider: RAPIER.Collider } | null {
+  ray(origin: Vec3, dir: Vec3, maxToi: number, mask = 0xffff, exclude?: RAPIER.Collider): { toi: number; collider: RAPIER.Collider } | null {
     const ray = new this.R.Ray({ x: origin.x, y: origin.y, z: origin.z }, { x: dir.x, y: dir.y, z: dir.z });
     const hit = this.world.castRay(ray, maxToi, true, undefined, groups(0xffff, mask), exclude, undefined);
     return hit ? { toi: hit.timeOfImpact, collider: hit.collider } : null;
@@ -85,7 +84,7 @@ export class Character {
   grounded = false;
   readonly opts: CharacterOpts;
 
-  constructor(private p: Physics, pos: THREE.Vector3, opts: Partial<CharacterOpts> = {}) {
+  constructor(private p: Physics, pos: Vec3, opts: Partial<CharacterOpts> = {}) {
     this.opts = { radius: 0.3, halfHeight: 0.55, member: GROUP.PLAYER, ...opts };
     const R = p.R;
     this.body = p.world.createRigidBody(R.RigidBodyDesc.kinematicPositionBased().setTranslation(pos.x, pos.y + this.opts.halfHeight + this.opts.radius, pos.z));
@@ -112,15 +111,15 @@ export class Character {
     this.body.setNextKinematicTranslation({ x: t.x + m.x, y: t.y + m.y, z: t.z + m.z });
     this.grounded = this.ctrl.computedGrounded();
     if (this.grounded && this.vy < 0) this.vy = 0;
-    if (t.y < -60) this.teleport(new THREE.Vector3(t.x, 5, t.z)); // safety: never fall forever
+    if (t.y < -60) this.teleport(new Vec3(t.x, 5, t.z)); // safety: never fall forever
   }
 
-  feet(out = new THREE.Vector3()): THREE.Vector3 {
+  feet(out = new Vec3()): Vec3 {
     const t = this.body.translation();
     return out.set(t.x, t.y - this.opts.halfHeight - this.opts.radius, t.z);
   }
 
-  teleport(p: THREE.Vector3): void {
+  teleport(p: Vec3): void {
     this.body.setTranslation({ x: p.x, y: p.y + this.opts.halfHeight + this.opts.radius, z: p.z }, true);
     this.body.setNextKinematicTranslation({ x: p.x, y: p.y + this.opts.halfHeight + this.opts.radius, z: p.z });
     this.vy = 0;
@@ -134,7 +133,7 @@ export class Character {
   }
 }
 
-export interface VehicleSpec { mass: number; halfExtents: THREE.Vector3; wheelRadius: number; wheelbase: number; track: number; comY: number; maxEngine: number; maxBrake: number; maxSteer: number }
+export interface VehicleSpec { mass: number; halfExtents: Vec3; wheelRadius: number; wheelbase: number; track: number; comY: number; maxEngine: number; maxBrake: number; maxSteer: number }
 
 /** Raycast vehicle on a dynamic chassis (Rapier DynamicRayCastVehicleController). */
 export class Vehicle {
@@ -143,9 +142,9 @@ export class Vehicle {
   ctrl: RAPIER.DynamicRayCastVehicleController;
   steer = 0;
 
-  constructor(private p: Physics, pos: THREE.Vector3, yaw: number, readonly spec: VehicleSpec) {
+  constructor(private p: Physics, pos: Vec3, yaw: number, readonly spec: VehicleSpec) {
     const R = p.R;
-    const q = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), yaw);
+    const q = new Quat().setFromAxisAngle(new Vec3(0, 1, 0), yaw);
     this.body = p.world.createRigidBody(R.RigidBodyDesc.dynamic().setTranslation(pos.x, pos.y + spec.halfExtents.y + 0.45, pos.z).setRotation(q).setLinearDamping(0.08).setAngularDamping(0.8).setCanSleep(true));
     this.collider = p.world.createCollider(
       R.ColliderDesc.cuboid(spec.halfExtents.x, spec.halfExtents.y, spec.halfExtents.z).setTranslation(0, spec.comY, 0).setMass(spec.mass)
@@ -190,14 +189,14 @@ export class Vehicle {
 
   park(): void { for (let i = 0; i < 4; i++) { this.ctrl.setWheelEngineForce(i, 0); this.ctrl.setWheelBrake(i, this.spec.maxBrake * 0.4); } }
 
-  transform(pos: THREE.Vector3, quat: THREE.Quaternion): void {
+  transform(pos: Vec3, quat: Quat): void {
     const t = this.body.translation(), r = this.body.rotation();
     pos.set(t.x, t.y, t.z);
     quat.set(r.x, r.y, r.z, r.w);
   }
 
-  reset(pos: THREE.Vector3, yaw: number): void {
-    const q = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), yaw);
+  reset(pos: Vec3, yaw: number): void {
+    const q = new Quat().setFromAxisAngle(new Vec3(0, 1, 0), yaw);
     this.body.setTranslation({ x: pos.x, y: pos.y + 1.2, z: pos.z }, true);
     this.body.setRotation(q, true);
     this.body.setLinvel({ x: 0, y: 0, z: 0 }, true);

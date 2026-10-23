@@ -1,61 +1,67 @@
 // Asset loading with explicit colour-space annotation (Chromastratum linear gate):
-// albedo/emissive maps → SRGBColorSpace; normal/roughness/AO → NoColorSpace.
-import * as THREE from 'three';
-import { GLTFLoader, type GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+// albedo/emissive maps → sRGB (decoded by the GPU); normal/roughness/AO → linear.
+// GLBs are read by the ASTRO GLB reader (meshopt decoder, no Three).
+import { Texture, Mesh, type Material } from '@astro/core';
+import { parseGLB, browserImageDecoder, type GLTFResult } from '@astro/geometry';
 
 export const BASE = import.meta.env.BASE_URL;
 export const url = (p: string) => `${BASE}${p}`;
 
-const gltfLoader = new GLTFLoader();
-gltfLoader.setMeshoptDecoder(MeshoptDecoder);
-const texLoader = new THREE.TextureLoader();
-
-const gltfCache = new Map<string, Promise<GLTF>>();
-export function loadGLB(id: string): Promise<GLTF> {
-  let p = gltfCache.get(id);
+const glbCache = new Map<string, Promise<GLTFResult>>();
+export function loadGLB(id: string): Promise<GLTFResult> {
+  let p = glbCache.get(id);
   if (!p) {
-    p = gltfLoader.loadAsync(url(`assets/models/${id}.glb`)).then((g) => {
+    p = (async () => {
+      const r = await fetch(url(`assets/models/${id}.glb`));
+      if (!r.ok) throw new Error(`model ${id}: HTTP ${r.status}`);
+      const g = await parseGLB(await r.arrayBuffer(), browserImageDecoder, id);
       g.scene.traverse((o) => {
-        const m = o as THREE.Mesh;
-        if (m.isMesh) {
-          m.castShadow = true;
-          m.receiveShadow = true;
-          for (const mat of (Array.isArray(m.material) ? m.material : [m.material]) as THREE.MeshStandardMaterial[]) auditMaterial(mat, id);
-        }
+        if (o instanceof Mesh) { o.castShadow = true; o.receiveShadow = true; auditMaterial(o.material, id); }
       });
       return g;
-    });
-    gltfCache.set(id, p);
+    })();
+    glbCache.set(id, p);
   }
   return p;
 }
 
 export const colorAudit: { asset: string; map: string; colorSpace: string; ok: boolean }[] = [];
-function auditMaterial(mat: THREE.MeshStandardMaterial, asset: string) {
-  const check = (slot: string, tex: THREE.Texture | null, expected: string) => {
+function auditMaterial(mat: Material, asset: string) {
+  const check = (slot: string, tex: Texture | null, expected: 'srgb' | 'linear') => {
     if (!tex) return;
     colorAudit.push({ asset, map: slot, colorSpace: tex.colorSpace, ok: tex.colorSpace === expected });
   };
-  check('map', mat.map, THREE.SRGBColorSpace);
-  check('emissiveMap', mat.emissiveMap, THREE.SRGBColorSpace);
-  check('normalMap', mat.normalMap, THREE.NoColorSpace);
-  check('roughnessMap', mat.roughnessMap, THREE.NoColorSpace);
+  check('map', mat.map, 'srgb');
+  check('emissiveMap', mat.emissiveMap, 'srgb');
+  check('normalMap', mat.normalMap, 'linear');
+  check('roughnessMap', mat.roughnessMap, 'linear');
 }
 
-export interface PBRSet { map: THREE.Texture; normalMap?: THREE.Texture; roughnessMap?: THREE.Texture; aoMap?: THREE.Texture }
+export interface PBRSet { map: Texture; normalMap?: Texture; roughnessMap?: Texture; aoMap?: Texture }
 
-const texCache = new Map<string, THREE.Texture>();
-function tex(path: string, color: boolean, repeat: number, anisotropy: number): THREE.Texture {
-  const key = `${path}|${repeat}`;
+const texCache = new Map<string, Texture>();
+export const pendingTextures = new Set<Promise<void>>();
+/** Texture handle returned immediately; pixels stream in (the renderer binds a neutral texel until then). */
+export function loadTexture(path: string, color: boolean, repeat = 1, anisotropy = 4): Texture {
+  const key = `${path}|${repeat}|${color}`;
   let t = texCache.get(key);
   if (!t) {
-    t = texLoader.load(url(path));
-    t.colorSpace = color ? THREE.SRGBColorSpace : THREE.NoColorSpace;
-    t.wrapS = t.wrapT = THREE.RepeatWrapping;
-    t.repeat.set(repeat, repeat);
-    t.anisotropy = anisotropy;
-    texCache.set(key, t);
+    const tex = new Texture(null, color ? 'srgb' : 'linear', path);
+    tex.wrap = 'repeat';
+    tex.repeat = { x: repeat, y: repeat };
+    tex.anisotropy = anisotropy;
+    const job = (async () => {
+      const r = await fetch(url(path));
+      if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+      // procedural UVs put the image top at v = 1: decode bottom-up
+      const bmp = await createImageBitmap(await r.blob(), { colorSpaceConversion: 'none', premultiplyAlpha: 'none', imageOrientation: 'flipY' });
+      tex.source = { kind: 'image', image: bmp, width: bmp.width, height: bmp.height, url: path };
+      tex.version++;
+    })().catch((e) => { console.warn('[assets]', (e as Error).message); });
+    pendingTextures.add(job);
+    void job.finally(() => pendingTextures.delete(job));
+    texCache.set(key, tex);
+    t = tex;
   }
   return t;
 }
@@ -63,11 +69,18 @@ function tex(path: string, color: boolean, repeat: number, anisotropy: number): 
 export function pbrSet(id: string, opts: { repeat?: number; ao?: boolean; anisotropy?: number } = {}): PBRSet {
   const r = opts.repeat ?? 1, a = opts.anisotropy ?? 4;
   return {
-    map: tex(`assets/textures/${id}/color.jpg`, true, r, a),
-    normalMap: tex(`assets/textures/${id}/normal.jpg`, false, r, a),
-    roughnessMap: tex(`assets/textures/${id}/rough.jpg`, false, r, a),
-    aoMap: opts.ao ? tex(`assets/textures/${id}/ao.jpg`, false, r, a) : undefined,
+    map: loadTexture(`assets/textures/${id}/color.jpg`, true, r, a),
+    normalMap: loadTexture(`assets/textures/${id}/normal.jpg`, false, r, a),
+    roughnessMap: loadTexture(`assets/textures/${id}/rough.jpg`, false, r, a),
+    aoMap: opts.ao ? loadTexture(`assets/textures/${id}/ao.jpg`, false, r, a) : undefined,
   };
+}
+
+/** Canvas → sRGB texture (procedural murals, generated normal maps use colorSpace 'linear'). */
+export function canvasTexture(c: HTMLCanvasElement | OffscreenCanvas, color = true): Texture {
+  const t = new Texture({ kind: 'canvas', image: c as TexImageSource, width: c.width, height: c.height }, color ? 'srgb' : 'linear', 'canvas');
+  t.flipY = true;
+  return t;
 }
 
 export async function loadJSON<T>(path: string): Promise<T> {

@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Engine, HudState } from '../engine/engine';
+import { LENSES } from '@astro/world-adapter';
+import { LENS_LABEL } from '../engine/lenses';
 
 type Panel = 'none' | 'travel' | 'sign' | 'research' | 'settings';
 
@@ -10,6 +12,7 @@ export function Hud({ e, hud, panel, onPanel }: { e: Engine; hud: HudState; pane
       if (ev.code === 'Escape') { if (panel !== 'none') onPanel('none'); else if (hud.dialog) e.closeDialog(); else e.pause(!e.paused); }
       if (ev.code === 'KeyM') onPanel(panel === 'travel' ? 'none' : 'travel');
       if (ev.code === 'KeyR' && ev.shiftKey) e.resetToSpawn();
+      if (ev.code === 'KeyL') e.setLens(LENSES[(LENSES.indexOf(e.lens) + 1) % LENSES.length]!);
       if (ev.code === 'Backquote') onPanel(panel === 'research' ? 'none' : 'research');
       if (hud.dialog && /^Digit[1-9]$/.test(ev.code)) { const o = hud.dialog.options[Number(ev.code.slice(5)) - 1]; if (o) e.choose(hud.dialog.npc, o.id); }
     };
@@ -44,6 +47,9 @@ export function Hud({ e, hud, panel, onPanel }: { e: Engine; hud: HudState; pane
         <button onClick={() => onPanel(panel === 'settings' ? 'none' : 'settings')}>Settings</button>
         <button onClick={() => onPanel(panel === 'research' ? 'none' : 'research')} data-testid="btn-research">Research</button>
         <button onClick={() => e.pause(!hud.paused)} data-testid="btn-pause">{hud.paused ? 'Resume' : 'Pause'}</button>
+        <select value={e.lens} onChange={(ev) => e.setLens(ev.target.value as never)} data-testid="lens" aria-label="ASTRO lens">
+          {LENSES.map((l) => <option key={l} value={l}>{LENS_LABEL[l]}</option>)}
+        </select>
       </div></>}
       {hud.prompt && !hud.dialog && <div className="prompt" data-testid="prompt">{hud.prompt}</div>}
       <div className="captions" aria-live="polite" data-testid="captions">

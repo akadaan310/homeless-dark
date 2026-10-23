@@ -84,7 +84,7 @@ export class Group extends Node {}
 export type Side = 'front' | 'back' | 'double';
 export type MaterialFeature = 'standard' | 'wet' | 'facade' | 'water' | 'terrain' | 'unlit' | 'text' | 'skyDome' | 'rain' | 'stars' | 'windows';
 
-export interface TextureSource { kind: 'image' | 'canvas' | 'data'; image?: TexImageSource; data?: Uint8Array | Float32Array; width: number; height: number; url?: string }
+export interface TextureSource { kind: 'image' | 'canvas' | 'data'; image?: TexImageSource; data?: Uint8Array | Float32Array; width: number; height: number; url?: string; channels?: 1 | 4 }
 
 let texId = 0;
 export class Texture {
@@ -96,6 +96,8 @@ export class Texture {
   anisotropy = 4;
   mipmaps = true;
   filter: 'linear' | 'nearest' = 'linear';
+  /** Upload rows bottom-up (image top at v = 1) — procedural/canvas UV convention; glTF textures keep false. */
+  flipY = false;
   /** Colour textures are sRGB-encoded and decoded by the GPU; data maps are linear (normal/roughness/AO). */
   constructor(public source: TextureSource | null, public colorSpace: 'srgb' | 'linear' = 'srgb', public label = '') {}
   set needsUpdate(_v: boolean) { this.version++; }
@@ -107,7 +109,7 @@ export interface MaterialParams {
   color?: ColorLike; roughness?: number; metalness?: number; map?: Texture | null; normalMap?: Texture | null; roughnessMap?: Texture | null;
   emissive?: ColorLike; emissiveIntensity?: number; emissiveMap?: Texture | null; opacity?: number; transparent?: boolean; side?: Side; vertexColors?: boolean;
   clearcoat?: number; clearcoatRoughness?: number; depthWrite?: boolean; feature?: MaterialFeature; normalScale?: number; fog?: boolean; name?: string; toneMapped?: boolean;
-  uvScale?: number; envIntensity?: number;
+  uvScale?: number; envIntensity?: number; alphaTest?: number; polygonOffset?: number; blending?: 'normal' | 'additive'; pointSize?: number; detailMap?: Texture | null;
 }
 export class Material {
   readonly id = ++matId;
@@ -132,6 +134,13 @@ export class Material {
   normalScale = 1;
   uvScale = 1;
   envIntensity = 1;
+  alphaTest = 0;
+  /** Depth offset factor/units (negative pulls toward the camera: decals, lane paint). */
+  polygonOffset = 0;
+  blending: 'normal' | 'additive' = 'normal';
+  pointSize = 1;
+  /** Second colour map for features that blend two surfaces (terrain sand). */
+  detailMap: Texture | null = null;
   feature: MaterialFeature = 'standard';
   /** Extra per-material uniforms consumed by the feature's shader (bounded, typed numbers only). */
   uniforms: Record<string, number | [number, number, number]> = {};
@@ -147,12 +156,13 @@ export class Material {
   clone() { const m = new Material(); Object.assign(m, this, { id: ++matId, color: this.color.clone(), emissive: this.emissive.clone(), uniforms: { ...this.uniforms } }); return m; }
   /** Shader permutation key (finite, §109). */
   variantKey(): string {
-    return [this.feature, this.map ? 'M' : '', this.normalMap ? 'N' : '', this.roughnessMap ? 'R' : '', this.emissiveMap ? 'E' : '', this.vertexColors ? 'V' : '', this.clearcoat > 0 ? 'C' : ''].join('');
+    return [this.feature, this.map ? 'M' : '', this.normalMap ? 'N' : '', this.roughnessMap ? 'R' : '', this.emissiveMap ? 'E' : '', this.vertexColors ? 'V' : '', this.clearcoat > 0 ? 'C' : '', this.alphaTest > 0 ? 'A' : '', this.detailMap ? 'D' : ''].join('');
   }
 }
 
 export class Mesh extends Node {
   skin: Skin | null = null;
+  mode: 'triangles' | 'points' | 'lines' = 'triangles';
   constructor(public geometry: Geometry, public material: Material) { super(); }
 }
 

@@ -1,7 +1,7 @@
 // The opening region: source-anchored Tampa street with the fictional café, a drivable
 // car, signal-aware traffic, Ana and Bo, ambient pedestrians, and the six-division
 // wet-night integration wired through one world authority.
-import * as THREE from 'three';
+import { Vec3, SpotLight, InstancedMesh } from '@astro/core';
 import { remember, type MotionAction, type MotionState, type PlanStep } from '@dark/core';
 import { motionAdapter, facadeAdapter, signProgramAdapter, lodAdapter, acousticAdapter, clock9SignProposer, motif, schedule, chooseLod, composeFacade } from '@dark/subjects';
 import { occlusionCutoff } from '@dark/somatostratum';
@@ -22,10 +22,10 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
   e.setLoading('Waking the neighbourhood', 0.7);
   const npcs = new NpcSystem(e.phys, w.group);
   const loops = [
-    [new THREE.Vector3(-22.8, 0.15, -15), new THREE.Vector3(-22.8, 0.15, -85)],
-    [new THREE.Vector3(6.6, 0.15, -15), new THREE.Vector3(6.6, 0.15, -120)],
-    [new THREE.Vector3(-30, 0.15, 5.4), new THREE.Vector3(-85, 0.15, 5.4)],
-    [new THREE.Vector3(12, 0.15, -5.4), new THREE.Vector3(60, 0.15, -5.4)],
+    [new Vec3(-22.8, 0.15, -15), new Vec3(-22.8, 0.15, -85)],
+    [new Vec3(6.6, 0.15, -15), new Vec3(6.6, 0.15, -120)],
+    [new Vec3(-30, 0.15, 5.4), new Vec3(-85, 0.15, 5.4)],
+    [new Vec3(12, 0.15, -5.4), new Vec3(60, 0.15, -5.4)],
   ].slice(0, e.quality === 'low' ? 3 : 4);
   await npcs.init(e.speech, loops);
 
@@ -60,7 +60,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
       if (edge === 'door:car-driver' || edge === 'door:car-passenger') {
         const side = edge.endsWith('driver') ? car.rig.doorPoints.driver : car.rig.doorPoints.passenger;
         const p = car.worldPoint(side);
-        const hit = e.phys.ray(new THREE.Vector3(p.x, 1, p.z), new THREE.Vector3(0, -1, 0), 0.2, GROUP.STATIC);
+        const hit = e.phys.ray(new Vec3(p.x, 1, p.z), new Vec3(0, -1, 0), 0.2, GROUP.STATIC);
         return Math.abs(car.speed()) < 1.5 && !hit ? { ok: true } : { ok: false, reason: Math.abs(car.speed()) >= 1.5 ? 'vehicle moving' : 'door obstructed' };
       }
       return { ok: true };
@@ -86,7 +86,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
       else if (o.op === 'LIGHTNESS') v.entity.emission.lightness = Number(o.arg);
       else if (o.op === 'BRIGHTNESS') v.entity.emission.brightness = Number(o.arg);
       else if (o.op === 'PULSE') v.entity.pulseHz = Number(o.arg);
-      else if (o.op === 'CHIME') e.audio.chime(v.group.getWorldPosition(new THREE.Vector3()), Number(o.arg));
+      else if (o.op === 'CHIME') e.audio.chime(v.group.getWorldPosition(new Vec3()), Number(o.arg));
     }
     v.entity.revision++;
     e.signs.apply(v);
@@ -182,7 +182,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
     setTimeout(() => { car.rig.doors.LF.target = 0; closeDoor('LF'); }, 700);
     const p = car.worldPoint(side);
     e.player.setEnabled(true);
-    e.player.teleport(new THREE.Vector3(p.x, Math.max(0.2, p.y + 0.2), p.z));
+    e.player.teleport(new Vec3(p.x, Math.max(0.2, p.y + 0.2), p.z));
     e.avatar.root.visible = true;
     e.onFoot = true; inCar = false; car.engineOn = false;
     car.vehicle.park();
@@ -193,7 +193,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
         e.world.commit({ type: 'EXIT_VEHICLE', actor: pa.mind.id, payload: { vehicle: 'veh:sedan' } });
         car.rig.doors.RF.target = 1; setTimeout(() => { car.rig.doors.RF.target = 0; closeDoor('RF'); }, 800);
         const q = car.worldPoint(car.rig.doorPoints.passenger);
-        pa.body.setEnabled(true); pa.body.teleport(new THREE.Vector3(q.x, 0.25, q.z));
+        pa.body.setEnabled(true); pa.body.teleport(new Vec3(q.x, 0.25, q.z));
         pa.hiddenInVehicle = false; pa.human.root.visible = true; pa.state = 'idle';
         car.rig.root.remove(pa.human.root); w.group.add(pa.human.root);
         pa.mind = remember(pa.mind, e.world.tick, 'rode with the player', 'player', 0.15);
@@ -220,7 +220,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
     setTimeout(() => { car.rig.doors.RF.target = 0; closeDoor('RF'); }, 1000);
     a.state = 'riding'; a.hiddenInVehicle = true; a.body.setEnabled(false); a.path = [];
     w.group.remove(a.human.root); car.rig.root.add(a.human.root);
-    a.human.root.position.copy(car.rig.seats.passenger).add(new THREE.Vector3(0, -0.15, 0.1));
+    a.human.root.position.copy(car.rig.seats.passenger).add(new Vec3(0, -0.15, 0.1));
     a.human.root.rotation.set(0, Math.PI, 0);
     a.human.setPose('seated');
   };
@@ -289,13 +289,13 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
         w.signalHeads.forEach((hd, i) => {
           const ns = i < 2;
           const col = ns ? (sig === 'green' ? 0x30ff60 : sig === 'yellow' ? 0xffc020 : 0xff2a20) : (sig === 'red' ? 0x30ff60 : 0xff2a20);
-          (hd.material as THREE.MeshStandardMaterial).emissive.setHex(col);
-          (hd.material as THREE.MeshStandardMaterial).emissiveIntensity = 2.2;
+          hd.material.emissive.setHex(col);
+          hd.material.emissiveIntensity = 2.2;
         });
       }
       // streetlight heads (emissive) follow the BORNE streetlights node, blended by atmosphere
-      const heads = w.group.getObjectByName('streetlight-heads') as THREE.InstancedMesh | undefined;
-      if (heads) (heads.material as THREE.MeshStandardMaterial).emissiveIntensity = e.atmo.state.streetLights * 5;
+      const heads = w.group.getObjectByName('streetlight-heads');
+      if (heads instanceof InstancedMesh) heads.material.emissiveIntensity = e.atmo.state.streetLights * 5;
       poolStreetLights();
       // the rain makes Bo change his sign (wet-night step 7), once per rain
       if (e.atmo.state.rain > 0.2 && !rainSignDone) { rainSignDone = true; boChangesSign('rain started: inviting people inside'); }
@@ -320,16 +320,16 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
       lodTimer += dt;
       if (lodTimer > 1) {
         lodTimer = 0;
-        const vp = e.renderer.domElement.height;
+        const vp = e.renderer.drawingBufferHeight;
         const levels: number[] = [];
         for (const v of e.signs.signs.values()) {
-          const d = v.group.getWorldPosition(new THREE.Vector3()).distanceTo(e.camera.position);
+          const d = v.group.getWorldPosition(new Vec3()).distanceTo(e.camera.position);
           const lvl = chooseLod(d, e.camera.fov, vp, 2, 2).level;
           v.text.visible = lvl < 2;
           levels.push(lvl);
         }
         const key = levels.join('');
-        if (key !== lastLod) { lastLod = key; reg.run('imagistratum', { distances: [...e.signs.signs.values()].map((v) => v.group.getWorldPosition(new THREE.Vector3()).distanceTo(e.camera.position)), fov: e.camera.fov, viewport: vp }); }
+        if (key !== lastLod) { lastLod = key; reg.run('imagistratum', { distances: [...e.signs.signs.values()].map((v) => v.group.getWorldPosition(new Vec3()).distanceTo(e.camera.position)), fov: e.camera.fov, viewport: vp }); }
       }
     },
     interactables() {
@@ -337,14 +337,14 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
       if (!inCar) {
         list.push({ id: 'car', label: 'Get in the car (driver)', pos: car.worldPoint(car.rig.doorPoints.driver), radius: 2.0, key: 'vehicle', action: enterCar });
         for (const a of npcs.agents) if (!a.pedestrian && !a.hiddenInVehicle) list.push({ id: a.mind.id, label: `Talk to ${a.mind.name}`, pos: a.body.feet(), radius: 2.6, action: () => talkTo(a) });
-        list.push({ id: 'sign-console', label: 'Café sign programme (owner: Bo)', pos: new THREE.Vector3(CAFE.x1 + 1.2, 0.15, -(CAFE.n0 + 3)), radius: 1.8, action: (en) => en.openSignConsole?.() });
+        list.push({ id: 'sign-console', label: 'Café sign programme (owner: Bo)', pos: new Vec3(CAFE.x1 + 1.2, 0.15, -(CAFE.n0 + 3)), radius: 1.8, action: (en) => en.openSignConsole?.() });
       } else list.push({ id: 'car-exit', label: 'Get out', pos: e.playerPos(), radius: 99, key: 'vehicle', action: exitCar });
       return list;
     },
     focus() {
       if (!inCar) return null;
       const p = car.position();
-      return { pos: new THREE.Vector3(p.x, p.y + 1.1, p.z), heading: car.heading(), mode: 'vehicle' };
+      return { pos: new Vec3(p.x, p.y + 1.1, p.z), heading: car.heading(), mode: 'vehicle' };
     },
     hudExtra: () => ({
       signal: traffic.signalNS, carKmh: Math.round(Math.abs(car.speed()) * 3.6), inCar,
@@ -352,7 +352,7 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
       tiers: npcs.agents.reduce((acc, a) => { acc[a.tier] = (acc[a.tier] ?? 0) + 1; return acc; }, {} as Record<string, number>),
       signText: cafeSign.entity.text, stats: w.stats,
     }),
-    dispose() { e.audio.setEngine(false, new THREE.Vector3(), 0, 0); },
+    dispose() { e.audio.setEngine(false, new Vec3(), 0, 0); },
   };
 
   // player position follows the car while driving (for interactions/streaming)
@@ -362,9 +362,9 @@ export async function makeTampaRegion(e: Engine): Promise<Region> {
   e.restoreNpcs = (m) => { for (const r of m) { const a = npcs.get(r.id); if (a) { a.mind.memory = r.memory as never; a.mind.relationship = r.relationship; } } };
 
   // pool of real lights for the nearest streetlights (emissive heads alone do not light the street)
-  const pool: THREE.SpotLight[] = [];
+  const pool: SpotLight[] = [];
   for (let i = 0; i < (e.quality === 'low' ? 4 : 8); i++) {
-    const s = new THREE.SpotLight(0xffc98f, 0, 32, 0.95, 0.55, 1.4);
+    const s = new SpotLight(0xffc98f, 0, 32, 0.95, 0.55, 1.4);
     s.castShadow = false;
     w.group.add(s, s.target);
     pool.push(s);

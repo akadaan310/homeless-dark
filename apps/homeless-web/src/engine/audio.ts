@@ -3,7 +3,7 @@
 // (AudioContext.currentTime), occlusion low-pass, interior muffling, analyser witness.
 // Synthesis parameters come from @dark/somatostratum; recordings are the repository's
 // original CC0 clips and English eSpeak NG speech lines (hash-pinned).
-import * as THREE from 'three';
+import { Vec3, type Camera } from '@astro/core';
 import { footstepFor, distanceGain, engineTone, occlusionCutoff, type SurfaceKind } from '@dark/somatostratum';
 import { url } from './assets';
 
@@ -79,7 +79,7 @@ export class AudioEngine {
     return buf;
   }
 
-  panner(pos: THREE.Vector3, refDistance = 1.5, rolloff = 1.2, maxDistance = 250): PannerNode {
+  panner(pos: Vec3, refDistance = 1.5, rolloff = 1.2, maxDistance = 250): PannerNode {
     const p = this.ctx!.createPanner();
     p.panningModel = this.hrtf ? 'HRTF' : 'equalpower';
     p.distanceModel = 'inverse';
@@ -88,10 +88,10 @@ export class AudioEngine {
     return p;
   }
 
-  updateListener(cam: THREE.Camera): void {
+  updateListener(cam: Camera): void {
     if (!this.ctx) return;
     const l = this.ctx.listener;
-    const f = new THREE.Vector3(0, 0, -1).applyQuaternion(cam.quaternion), u = new THREE.Vector3(0, 1, 0).applyQuaternion(cam.quaternion);
+    const f = new Vec3(0, 0, -1).applyQuaternion(cam.quaternion), u = new Vec3(0, 1, 0).applyQuaternion(cam.quaternion);
     const t = this.ctx.currentTime;
     if (l.positionX) {
       l.positionX.setTargetAtTime(cam.position.x, t, 0.02); l.positionY.setTargetAtTime(cam.position.y, t, 0.02); l.positionZ.setTargetAtTime(cam.position.z, t, 0.02);
@@ -115,7 +115,7 @@ export class AudioEngine {
   }
 
   // ---------------------------------------------------------------- events
-  footstep(surface: SurfaceKind, pos: THREE.Vector3, speed: number, wetness: number, when = 0, eventId?: string): void {
+  footstep(surface: SurfaceKind, pos: Vec3, speed: number, wetness: number, when = 0, eventId?: string): void {
     if (!this.unlocked) return;
     const ctx = this.ctx!;
     const f = footstepFor(surface, speed, wetness);
@@ -149,7 +149,7 @@ export class AudioEngine {
     this.log(`footstep:${f.surface}`, eventId);
   }
 
-  doorSlam(pos: THREE.Vector3, eventId?: string): void {
+  doorSlam(pos: Vec3, eventId?: string): void {
     if (!this.unlocked) return;
     const ctx = this.ctx!, t = ctx.currentTime;
     const pan = this.panner(pos, 2, 1, 80); pan.connect(this.buses.get('vehicles')!);
@@ -163,7 +163,7 @@ export class AudioEngine {
     this.log('door', eventId);
   }
 
-  chime(pos: THREE.Vector3, semitone: number, eventId?: string): void {
+  chime(pos: Vec3, semitone: number, eventId?: string): void {
     if (!this.unlocked) return;
     const ctx = this.ctx!, t = ctx.currentTime;
     const pan = this.panner(pos, 2, 1, 60); pan.connect(this.buses.get('world')!);
@@ -186,7 +186,7 @@ export class AudioEngine {
   }
 
   /** Musical note (MusicClock), positional and occludable. */
-  pluck(pos: THREE.Vector3, hz: number, when: number, velocity: number, cutoff: number): void {
+  pluck(pos: Vec3, hz: number, when: number, velocity: number, cutoff: number): void {
     if (!this.unlocked) return;
     const ctx = this.ctx!;
     const pan = this.panner(pos, 2.5, 1.4, 70); pan.connect(this.buses.get('music')!);
@@ -198,7 +198,7 @@ export class AudioEngine {
     o.start(when); o2.start(when); o.stop(when + 1.7); o2.stop(when + 1.7);
   }
 
-  async speech(line: SpeechLine, pos: THREE.Vector3, occlusion = 0, eventId?: string): Promise<number> {
+  async speech(line: SpeechLine, pos: Vec3, occlusion = 0, eventId?: string): Promise<number> {
     if (!this.unlocked) { this.onCaption?.(line.speaker, line.caption, line.duration + 1); return line.duration; }
     const ctx = this.ctx!;
     const buf = await this.buffer(line.path);
@@ -285,7 +285,7 @@ export class AudioEngine {
   }
 
   /** Player vehicle engine (car, aircraft, helicopter, boat) as a two-oscillator synth. */
-  setEngine(on: boolean, pos: THREE.Vector3, speedMps: number, throttle: number, kind: 'car' | 'jet' | 'prop' | 'rotor' | 'boat' = 'car'): void {
+  setEngine(on: boolean, pos: Vec3, speedMps: number, throttle: number, kind: 'car' | 'jet' | 'prop' | 'rotor' | 'boat' = 'car'): void {
     if (!this.unlocked) return;
     const ctx = this.ctx!;
     if (!on) { if (this.engine) { this.engine.gain.gain.setTargetAtTime(0, ctx.currentTime, 0.15); } return; }

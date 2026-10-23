@@ -1,7 +1,7 @@
 // Any coordinate on Earth: coarse GEBCO terrain + Natural Earth coast, an authored
 // arrival marker with an honest data-status sign, and safe spawning (never into
 // unloaded tiles or deep water). Oceans and poles are valid world cells, not roads.
-import * as THREE from 'three';
+import { Mesh, Material, Vec3, boxGeometry, cylinderGeometry } from '@astro/core';
 import type { WorldCellManifest } from '@dark/geo';
 import type { Engine } from './engine';
 import type { Region, Interactable } from './region';
@@ -17,29 +17,29 @@ export async function makeCoarseRegion(e: Engine, o: CoarseOptions): Promise<Reg
   const t = await buildCoarseTerrain(e.phys, o.lat, o.lon, { halfKm: e.quality === 'low' ? 12 : 22, n: e.quality === 'low' ? 97 : 161, signal: o.signal, onProgress: (m, p) => e.setLoading(m, p) });
   const g = t.group;
   // safe spawn: land → terrain height; ocean → authored survey platform (fictional), never the sea floor
-  let spawn: THREE.Vector3;
+  let spawn: Vec3;
   if (t.centerOcean) {
-    const deck = new THREE.Mesh(new THREE.BoxGeometry(8, 0.6, 8), new THREE.MeshStandardMaterial({ color: 0xcfc6b2, roughness: 0.8 }));
+    const deck = new Mesh(boxGeometry(8, 0.6, 8), new Material({ color: 0xcfc6b2, roughness: 0.8 }));
     deck.position.set(0, 0.6, 0); deck.castShadow = deck.receiveShadow = true;
     g.add(deck);
     for (const [x, z] of [[-3.6, -3.6], [3.6, -3.6], [-3.6, 3.6], [3.6, 3.6]] as const) {
-      const post = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.25, 6, 12), MAT.metal(0x8a6b45));
+      const post = new Mesh(cylinderGeometry(0.25, 0.25, 6, 12), MAT.metal(0x8a6b45));
       post.position.set(x, -2, z); g.add(post);
     }
-    t.surfaces.set(e.phys.fixedBox(deck.position.clone(), new THREE.Vector3(4, 0.3, 4)).handle, 'wood');
-    spawn = new THREE.Vector3(0, 0.95, 1.5);
-  } else spawn = new THREE.Vector3(0, t.heightAt(0, 0) + 0.3, 2);
+    t.surfaces.set(e.phys.fixedBox(deck.position.clone(), new Vec3(4, 0.3, 4)).handle, 'wood');
+    spawn = new Vec3(0, 0.95, 1.5);
+  } else spawn = new Vec3(0, t.heightAt(0, 0) + 0.3, 2);
   // arrival marker with the reality contract written on it
   const country = manifest.country ?? (t.centerOcean ? 'open ocean' : 'no admin label');
-  const markerBase = new THREE.Vector3(0, t.centerOcean ? 0.9 : t.heightAt(0, -2), -2);
-  const stele = new THREE.Mesh(new THREE.BoxGeometry(2.4, 2.2, 0.35), new THREE.MeshStandardMaterial({ color: 0x2b2f36, roughness: 0.5, metalness: 0.2 }));
-  stele.position.copy(markerBase).add(new THREE.Vector3(0, 1.1, 0)); stele.castShadow = true; g.add(stele);
-  e.phys.fixedBox(stele.position.clone(), new THREE.Vector3(1.2, 1.1, 0.2));
+  const markerBase = new Vec3(0, t.centerOcean ? 0.9 : t.heightAt(0, -2), -2);
+  const stele = new Mesh(boxGeometry(2.4, 2.2, 0.35), new Material({ color: 0x2b2f36, roughness: 0.5, metalness: 0.2 }));
+  stele.position.copy(markerBase).add(new Vec3(0, 1.1, 0)); stele.castShadow = true; g.add(stele);
+  e.phys.fixedBox(stele.position.clone(), new Vec3(1.2, 1.1, 0.2));
   const title = e.signs.create(signEntity('arrival-title', 'wayfinding', o.name, 2.2, 0.55, { fictional: false, emission: { hue: 80, chroma: 0.08, lightness: 0.92, brightness: 0.7 } }), { panelColor: 0x1b1e23 });
-  title.group.position.copy(markerBase).add(new THREE.Vector3(0, 1.75, 0.2)); g.add(title.group);
+  title.group.position.copy(markerBase).add(new Vec3(0, 1.75, 0.2)); g.add(title.group);
   const roads = manifest.layers.find((l) => l.layer === 'roads-buildings')!;
   const info = e.signs.create(signEntity('arrival-info', 'diegetic_interface', `${o.lat.toFixed(3)}°, ${o.lon.toFixed(3)}° · ${country} · terrain GEBCO 6' (model) · roads ${roads.status}`, 2.2, 0.8, { fictional: false, emission: { hue: 200, chroma: 0.05, lightness: 0.85, brightness: 0.5 } }), { panelColor: 0x1b1e23 });
-  info.group.position.copy(markerBase).add(new THREE.Vector3(0, 0.95, 0.2)); g.add(info.group);
+  info.group.position.copy(markerBase).add(new Vec3(0, 0.95, 0.2)); g.add(info.group);
 
   let lastSafe = spawn.clone();
   let warnT = 0;

@@ -1,7 +1,7 @@
 // Living NPCs. Minds are @dark/core NpcMind (deterministic decide/respondToRide);
 // bodies are Rapier kinematic capsules with MakeHuman models; speech uses the
 // repository's English eSpeak NG lines with captions. Names and roles are fictional.
-import * as THREE from 'three';
+import { Vec3, type Box3, type Node } from '@astro/core';
 import { decide, respondToRide, remember, assignTiers, type NpcMind, type Tier } from '@dark/core';
 import type { SpeechLine } from './audio';
 import { makeHuman, type Human } from './characters';
@@ -15,12 +15,12 @@ export interface Agent {
   human: Human;
   body: Character;
   state: NpcState;
-  path: THREE.Vector3[];
+  path: Vec3[];
   facing: number;
   tier: Tier;
   lastDecision: { activity: string; reason: string };
   speechCooldown: number;
-  pedestrian?: { loop: THREE.Vector3[]; i: number };
+  pedestrian?: { loop: Vec3[]; i: number };
   hiddenInVehicle: boolean;
 }
 
@@ -31,16 +31,16 @@ const ACT_LINES: Record<string, Record<string, string>> = {
 };
 
 // Authored places (three coordinates: x = east, z = −north)
-export const PLACES: Record<string, THREE.Vector3> = {
-  corner: new THREE.Vector3(-22.9, 0.15, -9.2),
-  corner2: new THREE.Vector3(-23.3, 0.15, -10.6),
-  awning: new THREE.Vector3(-22.6, 0.15, -26.5),
-  awning2: new THREE.Vector3(-22.6, 0.15, -29.2),
-  cafeDoorOut: new THREE.Vector3(CAFE.x1 + 1.3, 0.15, -CAFE.doorN),
-  cafeDoorIn: new THREE.Vector3(CAFE.x1 - 1.3, 0.16, -CAFE.doorN),
-  counterBehind: new THREE.Vector3(CAFE.x0 + 0.9, 0.16, -(CAFE.n0 + CAFE.n1) / 2 - 2.5),
-  cafeSeat: new THREE.Vector3(CAFE.x0 + 5.2, 0.16, -CAFE.n1 + 3),
-  home: new THREE.Vector3(-22.8, 0.15, -60),
+export const PLACES: Record<string, Vec3> = {
+  corner: new Vec3(-22.9, 0.15, -9.2),
+  corner2: new Vec3(-23.3, 0.15, -10.6),
+  awning: new Vec3(-22.6, 0.15, -26.5),
+  awning2: new Vec3(-22.6, 0.15, -29.2),
+  cafeDoorOut: new Vec3(CAFE.x1 + 1.3, 0.15, -CAFE.doorN),
+  cafeDoorIn: new Vec3(CAFE.x1 - 1.3, 0.16, -CAFE.doorN),
+  counterBehind: new Vec3(CAFE.x0 + 0.9, 0.16, -(CAFE.n0 + CAFE.n1) / 2 - 2.5),
+  cafeSeat: new Vec3(CAFE.x0 + 5.2, 0.16, -CAFE.n1 + 3),
+  home: new Vec3(-22.8, 0.15, -60),
 };
 
 export class NpcSystem {
@@ -49,9 +49,9 @@ export class NpcSystem {
   speak: ((a: Agent, act: string, line: SpeechLine | null, caption: string) => void) | null = null;
   private pairTimer = 6;
 
-  constructor(private phys: Physics, private scene: THREE.Object3D) {}
+  constructor(private phys: Physics, private scene: Node) {}
 
-  async init(lines: SpeechLine[], pedestrians: THREE.Vector3[][]) {
+  async init(lines: SpeechLine[], pedestrians: Vec3[][]) {
     for (const l of lines) this.lines.set(l.id, l);
     const ana: NpcMind = {
       id: 'npc:ana', name: 'Ana', role: 'courier', fictional: true, busyUntil: 0, memory: [], relationship: {},
@@ -73,7 +73,7 @@ export class NpcSystem {
     }
   }
 
-  private async spawn(mind: NpcMind, model: 'citizen' | 'citizen-alt' | 'citizen-lod' | 'citizen-alt-lod', tint: number, at: THREE.Vector3): Promise<Agent> {
+  private async spawn(mind: NpcMind, model: 'citizen' | 'citizen-alt' | 'citizen-lod' | 'citizen-alt-lod', tint: number, at: Vec3): Promise<Agent> {
     const human = await makeHuman(model, tint);
     this.scene.add(human.root);
     const body = new Character(this.phys, at, { member: GROUP.NPC });
@@ -94,17 +94,17 @@ export class NpcSystem {
   }
 
   /** Route through the café door when entering/leaving the interior. */
-  routeTo(a: Agent, dest: THREE.Vector3, interior: THREE.Box3) {
+  routeTo(a: Agent, dest: Vec3, interior: Box3) {
     const p = a.body.feet();
-    const inside = (v: THREE.Vector3) => v.x > interior.min.x && v.x < interior.max.x && v.z > interior.min.z && v.z < interior.max.z;
-    const path: THREE.Vector3[] = [];
+    const inside = (v: Vec3) => v.x > interior.min.x && v.x < interior.max.x && v.z > interior.min.z && v.z < interior.max.z;
+    const path: Vec3[] = [];
     if (inside(p) && !inside(dest)) path.push(PLACES.cafeDoorIn!.clone(), PLACES.cafeDoorOut!.clone());
     if (!inside(p) && inside(dest)) path.push(PLACES.cafeDoorOut!.clone(), PLACES.cafeDoorIn!.clone());
     path.push(dest.clone());
     a.path = path;
   }
 
-  update(dt: number, h: number, ctx: { hour: number; worldTime: number; raining: boolean; player: THREE.Vector3; interior: THREE.Box3; tick: number }) {
+  update(dt: number, h: number, ctx: { hour: number; worldTime: number; raining: boolean; player: Vec3; interior: Box3; tick: number }) {
     const tiers = assignTiers(this.agents.map((a) => { const f = a.body.feet(); return { id: a.mind.id, x: f.x, z: f.z, causallyRelevant: a.state === 'boarding' || a.state === 'riding' || !a.pedestrian }; }), ctx.player.x, ctx.player.z, { focusedRadius: 8, activeRadius: 90, cohortRadius: 300, maxActive: 10 });
     for (const a of this.agents) {
       a.tier = tiers.get(a.mind.id) ?? 'virtual';
@@ -135,7 +135,7 @@ export class NpcSystem {
       let vx = 0, vz = 0;
       const next = a.path[0];
       if (next) {
-        const d = new THREE.Vector3(next.x - feet.x, 0, next.z - feet.z);
+        const d = new Vec3(next.x - feet.x, 0, next.z - feet.z);
         const dist = d.length();
         if (dist < 0.45) a.path.shift();
         else {
@@ -168,7 +168,7 @@ export class NpcSystem {
   }
 
   /** Post-physics: copy capsule positions into the rendered models and advance animation. */
-  render(dt: number, onStep: (a: Agent, pos: THREE.Vector3) => void) {
+  render(dt: number, onStep: (a: Agent, pos: Vec3) => void) {
     for (const a of this.agents) {
       if (a.hiddenInVehicle || !a.human.root.visible) { a.human.mixer.update(dt); continue; }
       const f = a.body.feet();

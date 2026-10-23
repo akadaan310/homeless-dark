@@ -44,7 +44,9 @@ export class Geometry {
   deleteAttribute(name: string) { delete this.attributes[name]; return this; }
   setIndex(idx: number[] | Uint32Array | Uint16Array | null) {
     if (!idx) { this.index = null; return this; }
-    const arr = idx instanceof Uint32Array || idx instanceof Uint16Array ? idx : (Math.max(0, ...idx) > 65535 ? new Uint32Array(idx) : new Uint16Array(idx));
+    let max = 0;
+    if (!(idx instanceof Uint32Array || idx instanceof Uint16Array)) for (const v of idx) if (v > max) max = v;
+    const arr = idx instanceof Uint32Array || idx instanceof Uint16Array ? idx : max > 65535 ? new Uint32Array(idx) : new Uint16Array(idx);
     this.index = new Attribute(arr, 1);
     return this;
   }

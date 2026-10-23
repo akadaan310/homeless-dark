@@ -125,6 +125,7 @@ export async function parseGLB(buf: ArrayBuffer, decodeImage: ImageDecoder | nul
       transparent: m.alphaMode === 'BLEND', side: m.doubleSided ? 'double' : 'front', normalScale: m.normalTexture?.scale ?? 1,
     });
     if (m.alphaMode === 'BLEND') mat.depthWrite = false;
+    if (m.alphaMode === 'MASK') mat.alphaTest = (m as { alphaCutoff?: number }).alphaCutoff ?? 0.5;
     return mat;
   });
   const defaultMat = new Material({ name: 'default', roughness: 0.8, metalness: 0 });

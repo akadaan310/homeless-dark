@@ -1,0 +1,8 @@
+{
+  "name": "@astro/render-webgpu",
+  "private": true,
+  "version": "0.4.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "description": "Optional ASTRO WebGPU backend: adapter probe and a reference pass executing the same DSL programs (WGSL) as the WebGL2 backend, with readback for cross-backend equivalence."
+}

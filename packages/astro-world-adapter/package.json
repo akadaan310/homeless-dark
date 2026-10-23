@@ -1,0 +1,8 @@
+{
+  "name": "@astro/world-adapter",
+  "private": true,
+  "version": "0.4.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "description": "Observe → Project boundary between HOMELESS world authority and ASTRO: read-only view addresses, projection digests, replay equivalence."
+}

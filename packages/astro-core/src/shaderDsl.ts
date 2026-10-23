@@ -145,3 +145,73 @@ export function shaderDigest(src: string): string {
   for (let i = 0; i < src.length; i++) { h1 = Math.imul(h1 ^ src.charCodeAt(i), 0x01000193) >>> 0; h2 = Math.imul(h2 ^ src.charCodeAt(i), 0x5bd1e995) >>> 0; }
   return h1.toString(16).padStart(8, '0') + h2.toString(16).padStart(8, '0');
 }
+
+// ---------------------------------------------------------------- CPU backend (§046 equivalence oracle)
+type Val = number | number[];
+export interface CpuTexture { width: number; height: number; data: Float32Array } // RGBA, rows bottom-up, nearest + clamp
+const lanes = (v: Val) => (typeof v === 'number' ? [v] : v);
+const map2 = (a: Val, b: Val, f: (x: number, y: number) => number): Val => {
+  if (typeof a === 'number' && typeof b === 'number') return f(a, b);
+  const A = lanes(a), B = lanes(b), n = Math.max(A.length, B.length);
+  return Array.from({ length: n }, (_, i) => f(A.length === 1 ? A[0]! : A[i]!, B.length === 1 ? B[0]! : B[i]!));
+};
+const map1 = (a: Val, f: (x: number) => number): Val => (typeof a === 'number' ? f(a) : a.map(f));
+const f32 = Math.fround;
+
+/** Evaluate a validated program for one fragment (float32 rounding per operation). */
+export function evalFragment(p: ShaderProgram, env: { uv: [number, number]; resolution: [number, number]; time: number; uniforms: Record<string, Val>; samplers: Record<string, CpuTexture> }): number[] {
+  const scope = new Map<string, Val>([['uv', env.uv], ['resolution', env.resolution], ['time', env.time], ...Object.entries(env.uniforms)]);
+  let out: number[] | null = null;
+  const ex = (e: Expr): Val => {
+    switch (e.k) {
+      case 'num': return f32(e.v);
+      case 'ref': { const v = scope.get(e.name); if (v === undefined) throw new Error(`undeclared ${e.name}`); return v; }
+      case 'bin': return map2(ex(e.a), ex(e.b), (x, y) => f32(e.op === '+' ? x + y : e.op === '-' ? x - y : e.op === '*' ? x * y : x / y));
+      case 'swz': { const v = lanes(ex(e.e)); const idx = [...e.s].map((c) => 'xyzw'.indexOf(c)); return idx.length === 1 ? v[idx[0]!]! : idx.map((i) => v[i]!); }
+      case 'ctor': { const parts = e.args.flatMap((a) => lanes(ex(a))); const n = e.t === 'f32' ? 1 : Number(e.t.slice(3)); const r = parts.length === 1 ? Array(n).fill(parts[0]) : parts.slice(0, n); return n === 1 ? r[0]! : r; }
+      case 'sample': {
+        const t = env.samplers[e.tex]!; const uv = lanes(ex(e.uv));
+        const x = Math.min(t.width - 1, Math.max(0, Math.floor(uv[0]! * t.width))), y = Math.min(t.height - 1, Math.max(0, Math.floor(uv[1]! * t.height)));
+        const o = (y * t.width + x) * 4; return [t.data[o]!, t.data[o + 1]!, t.data[o + 2]!, t.data[o + 3]!];
+      }
+      case 'call': {
+        const a = e.args.map(ex);
+        switch (e.fn) {
+          case 'sin': return map1(a[0]!, (x) => f32(Math.sin(x))); case 'cos': return map1(a[0]!, (x) => f32(Math.cos(x)));
+          case 'exp': return map1(a[0]!, (x) => f32(Math.exp(x))); case 'abs': return map1(a[0]!, Math.abs);
+          case 'sqrt': return map1(a[0]!, (x) => f32(Math.sqrt(x))); case 'fract': return map1(a[0]!, (x) => f32(x - Math.floor(x))); case 'floor': return map1(a[0]!, Math.floor);
+          case 'min': return map2(a[0]!, a[1]!, Math.min); case 'max': return map2(a[0]!, a[1]!, Math.max);
+          case 'pow': return map2(a[0]!, a[1]!, (x, y) => f32(Math.pow(x, y)));
+          case 'step': return map2(a[0]!, a[1]!, (edge, x) => (x < edge ? 0 : 1));
+          case 'clamp': return map2(map2(a[0]!, a[1]!, Math.max), a[2]!, Math.min);
+          case 'mix': return map2(a[0]!, map2(map2(a[0]!, a[1]!, (x, y) => f32(y - x)), a[2]!, (d, t) => f32(d * t)), (x, y) => f32(x + y));
+          case 'smoothstep': return map2(map2(a[2]!, a[0]!, (x, e0) => x - e0), map2(a[1]!, a[0]!, (e1, e0) => e1 - e0), (n, d) => { const t = Math.min(1, Math.max(0, n / d)); return f32(t * t * (3 - 2 * t)); });
+          case 'dot': { const A = lanes(a[0]!), B = lanes(a[1]!); let s = 0; for (let i = 0; i < A.length; i++) s = f32(s + f32(A[i]! * B[i]!)); return s; }
+          case 'length': { const A = lanes(a[0]!); return f32(Math.hypot(...A)); }
+          case 'normalize': { const A = lanes(a[0]!); const l = Math.hypot(...A) || 1; return A.map((x) => f32(x / l)); }
+        }
+      }
+    }
+    throw new Error('unreachable');
+  };
+  const st = (s: Stmt): void => {
+    if (s.k === 'let' || s.k === 'set') scope.set(s.name, ex(s.e));
+    else if (s.k === 'out') out = lanes(ex(s.e));
+    else for (let i = s.from; i < s.to; i++) { scope.set(s.v, i); s.body.forEach(st); }
+  };
+  p.body.forEach(st);
+  if (!out) throw new Error('no out');
+  return out;
+}
+
+/** Run a full-screen program over a w×h target on the CPU (the DSL's reference backend). */
+export function evalPass(p: ShaderProgram, w: number, h: number, uniforms: Record<string, Val>, samplers: Record<string, CpuTexture>, time = 0): CpuTexture {
+  const v = validate(p);
+  if (!v.ok) throw new Error(v.errors.join('; '));
+  const data = new Float32Array(w * h * 4);
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const o = evalFragment(p, { uv: [f32((x + 0.5) / w), f32((y + 0.5) / h)], resolution: [w, h], time, uniforms, samplers });
+    data.set([o[0] ?? 0, o[1] ?? 0, o[2] ?? 0, o[3] ?? 1], (y * w + x) * 4);
+  }
+  return { width: w, height: h, data };
+}

@@ -6,6 +6,7 @@ import { Touch } from './Touch';
 import { TravelPanel } from './TravelPanel';
 import { SignConsole } from './SignConsole';
 import * as persist from '../engine/persist';
+import { Vec3 } from '@astro/core';
 
 declare global { interface Window { __dark?: Engine } }
 
@@ -57,7 +58,7 @@ export function App() {
       const s = await persist.load('auto');
       if (s && s.location.name.startsWith('Tampa')) {
         engine.gameUtc = s.gameUtc;
-        engine.player.teleport(new (await import('three')).Vector3(s.player.x, s.player.y + 0.1, s.player.z));
+        engine.player.teleport(new Vec3(s.player.x, s.player.y + 0.1, s.player.z));
         engine.rig.yaw = s.player.yaw;
         engine.restoreNpcs(s.npcs);
         if (s.settings.haptics) engine.haptics.preference = s.settings.haptics as never;

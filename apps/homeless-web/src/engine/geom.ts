@@ -1,6 +1,5 @@
-// Procedural geometry from sourced vector data. ENU (east, north) → Three (x = east, z = −north).
-import * as THREE from 'three';
-import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
+// Procedural geometry from sourced vector data. ENU (east, north) → scene (x = east, z = −north).
+import { Geometry, Attribute, Vec3, Mat4, Node, Group, Mesh, Material, Color, triangulate, mergeGeometries } from '@astro/core';
 
 export type P2 = [number, number];
 export const toXZ = (p: P2): [number, number] => [p[0], -p[1]];
@@ -43,7 +42,7 @@ export function offsetPolyline(pts: P2[], off: number): P2[] {
 const norm = (v: P2): P2 => { const l = Math.hypot(v[0], v[1]) || 1; return [v[0] / l, v[1] / l]; };
 
 /** Flat ribbon between lateral offsets [o0, o1] at height y; UV u across (m), v along (m). */
-export function ribbon(pts: P2[], o0: number, o1: number, y: number, uvScale = 1): THREE.BufferGeometry | null {
+export function ribbon(pts: P2[], o0: number, o1: number, y: number, uvScale = 1): Geometry | null {
   if (pts.length < 2) return null;
   const a = offsetPolyline(pts, o0), b = offsetPolyline(pts, o1);
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
@@ -55,9 +54,9 @@ export function ribbon(pts: P2[], o0: number, o1: number, y: number, uvScale = 1
     uv.push(o0 / uvScale, s / uvScale, o1 / uvScale, s / uvScale);
     if (i > 0) { const k = i * 2; idx.push(k - 2, k - 1, k, k - 1, k + 1, k); }
   }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  const g = new Geometry();
+  g.setAttribute('position', new Attribute(new Float32Array(pos), 3));
+  g.setAttribute('uv', new Attribute(new Float32Array(uv), 2));
   g.setIndex(idx);
   fixWinding(g);
   g.computeVertexNormals();
@@ -65,7 +64,7 @@ export function ribbon(pts: P2[], o0: number, o1: number, y: number, uvScale = 1
 }
 
 /** Vertical strip (curb face) along an offset line, from y0 to y1. */
-export function wallStrip(pts: P2[], off: number, y0: number, y1: number): THREE.BufferGeometry | null {
+export function wallStrip(pts: P2[], off: number, y0: number, y1: number): Geometry | null {
   if (pts.length < 2) return null;
   const l = offsetPolyline(pts, off);
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
@@ -77,36 +76,35 @@ export function wallStrip(pts: P2[], off: number, y0: number, y1: number): THREE
     uv.push(s, y0, s, y1);
     if (i > 0) { const k = i * 2; idx.push(k - 2, k, k - 1, k - 1, k, k + 1); }
   }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  const g = new Geometry();
+  g.setAttribute('position', new Attribute(new Float32Array(pos), 3));
+  g.setAttribute('uv', new Attribute(new Float32Array(uv), 2));
   g.setIndex(idx);
   g.computeVertexNormals();
   return g;
 }
 
 /** Ensure upward-facing triangles for flat ribbons (offset sign can flip winding). */
-function fixWinding(g: THREE.BufferGeometry) {
-  const p = g.getAttribute('position') as THREE.BufferAttribute;
-  const idx = g.getIndex()!;
-  const arr = idx.array as unknown as number[];
-  const a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3();
+function fixWinding(g: Geometry) {
+  const p = g.getAttribute('position');
+  const arr = g.index!.array;
+  const a = new Vec3(), b = new Vec3(), c = new Vec3();
   for (let i = 0; i < arr.length; i += 3) {
     a.fromBufferAttribute(p, arr[i]!); b.fromBufferAttribute(p, arr[i + 1]!); c.fromBufferAttribute(p, arr[i + 2]!);
     const ny = (b.z - a.z) * (c.x - a.x) - (b.x - a.x) * (c.z - a.z);
     if (ny < 0) { const t = arr[i + 1]!; arr[i + 1] = arr[i + 2]!; arr[i + 2] = t; }
   }
-  idx.needsUpdate = true;
+  g.index!.version++;
 }
 
-export interface ExtrudeOut { walls: THREE.BufferGeometry; roof: THREE.BufferGeometry; frontage: number; longestEdge: { a: P2; b: P2; len: number } }
+export interface ExtrudeOut { walls: Geometry; roof: Geometry; frontage: number; longestEdge: { a: P2; b: P2; len: number } }
 
 /**
  * Extrude a footprint ring (ENU) to height h. Walls get UVs in metres (u along the
  * perimeter, v up) and a per-vertex aFacade = (bayWidth, floorHeight, seed, commercial)
  * plus vertex colour (palette wall tint).
  */
-export function extrudeFootprint(ring: P2[], h: number, facade: [number, number, number, number], tint: THREE.Color, base = 0): ExtrudeOut {
+export function extrudeFootprint(ring: P2[], h: number, facade: [number, number, number, number], tint: Color, base = 0): ExtrudeOut {
   let r = ring.slice();
   if (r.length > 1 && r[0]![0] === r[r.length - 1]![0] && r[0]![1] === r[r.length - 1]![1]) r = r.slice(0, -1);
   // CCW in ENU so outward normals face out
@@ -126,95 +124,62 @@ export function extrudeFootprint(ring: P2[], h: number, facade: [number, number,
     for (const q of quad) { pos.push(q[0]!, q[1]!, q[2]!); uv.push(q[3]!, q[4]!); fac.push(...facade); col.push(tint.r, tint.g, tint.b); }
     s += len;
   }
-  const walls = new THREE.BufferGeometry();
-  walls.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-  walls.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
-  walls.setAttribute('aFacade', new THREE.Float32BufferAttribute(fac, 4));
-  walls.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  const walls = new Geometry();
+  walls.setAttribute('position', new Attribute(new Float32Array(pos), 3));
+  walls.setAttribute('uv', new Attribute(new Float32Array(uv), 2));
+  walls.setAttribute('aFacade', new Attribute(new Float32Array(fac), 4));
+  walls.setAttribute('color', new Attribute(new Float32Array(col), 3));
   walls.computeVertexNormals();
   // roof
-  const contour = r.map((p) => new THREE.Vector2(p[0], p[1]));
-  const tris = THREE.ShapeUtils.triangulateShape(contour, []);
+  const tris = triangulate(r.map((p) => ({ x: p[0], y: p[1] })));
   const rp: number[] = [], ruv: number[] = [], rfac: number[] = [], rcol: number[] = [];
   for (const t of tris) for (const k of [t[0]!, t[2]!, t[1]!]) {
     const [x, z] = toXZ(r[k]!);
     rp.push(x, h, z); ruv.push(r[k]![0], -1); rfac.push(...facade); rcol.push(tint.r * 0.55, tint.g * 0.55, tint.b * 0.55);
   }
-  const roof = new THREE.BufferGeometry();
-  roof.setAttribute('position', new THREE.Float32BufferAttribute(rp, 3));
-  roof.setAttribute('uv', new THREE.Float32BufferAttribute(ruv, 2));
-  roof.setAttribute('aFacade', new THREE.Float32BufferAttribute(rfac, 4));
-  roof.setAttribute('color', new THREE.Float32BufferAttribute(rcol, 3));
+  const roof = new Geometry();
+  roof.setAttribute('position', new Attribute(new Float32Array(rp), 3));
+  roof.setAttribute('uv', new Attribute(new Float32Array(ruv), 2));
+  roof.setAttribute('aFacade', new Attribute(new Float32Array(rfac), 4));
+  roof.setAttribute('color', new Attribute(new Float32Array(rcol), 3));
   roof.computeVertexNormals();
   return { walls, roof, frontage: longest.len, longestEdge: longest };
 }
 
-export function merge(geoms: (THREE.BufferGeometry | null)[]): THREE.BufferGeometry | null {
-  const g = geoms.filter((x): x is THREE.BufferGeometry => !!x);
-  if (!g.length) return null;
-  return mergeGeometries(g.map((x) => (x.index ? x.toNonIndexed() : x)), false);
-}
-
-/** KHR_mesh_quantization/meshopt attributes are normalized integers; baking a transform needs Float32. */
-export function dequantize(g: THREE.BufferGeometry): THREE.BufferGeometry {
-  for (const name of Object.keys(g.attributes)) {
-    const a = g.getAttribute(name) as THREE.BufferAttribute | THREE.InterleavedBufferAttribute;
-    if (a.array instanceof Float32Array && !(a as THREE.InterleavedBufferAttribute).isInterleavedBufferAttribute) continue;
-    const out = new Float32Array(a.count * a.itemSize);
-    for (let i = 0; i < a.count; i++) for (let k = 0; k < a.itemSize; k++) out[i * a.itemSize + k] = a.getComponent(i, k);
-    g.setAttribute(name, new THREE.BufferAttribute(out, a.itemSize));
-  }
-  return g;
-}
-
-function flipWinding(g: THREE.BufferGeometry) {
-  if (g.index) {
-    const a = g.index.array as unknown as number[];
-    for (let i = 0; i < a.length; i += 3) { const t = a[i + 1]!; a[i + 1] = a[i + 2]!; a[i + 2] = t; }
-    g.index.needsUpdate = true;
-  } else {
-    for (const name of Object.keys(g.attributes)) {
-      const attr = g.getAttribute(name) as THREE.BufferAttribute;
-      const n = attr.itemSize, arr = attr.array as unknown as number[];
-      for (let i = 0; i < attr.count; i += 3) for (let k = 0; k < n; k++) { const t = arr[(i + 1) * n + k]!; arr[(i + 1) * n + k] = arr[(i + 2) * n + k]!; arr[(i + 2) * n + k] = t; }
-      attr.needsUpdate = true;
-    }
-  }
+export function merge(geoms: (Geometry | null)[]): Geometry | null {
+  return mergeGeometries(geoms.filter((x): x is Geometry => !!x));
 }
 
 /** Merge every static mesh of a glTF scene by material into a few meshes (draw-call control). Keeps named nodes separate. */
-export function consolidate(root: THREE.Object3D, keep: (o: THREE.Object3D) => boolean): THREE.Group {
+export function consolidate(root: Node, keep: (o: Node) => boolean): Group {
   root.updateMatrixWorld(true);
-  const inv = new THREE.Matrix4().copy(root.matrixWorld).invert();
-  const byMat = new Map<THREE.Material, THREE.BufferGeometry[]>();
-  const kept: THREE.Object3D[] = [];
+  const inv = root.matrixWorld.clone().invert();
+  const byMat = new Map<Material, Geometry[]>();
+  const kept: Node[] = [];
   root.traverse((o) => {
     if (o !== root && keep(o)) { kept.push(o); return; }
-    const m = o as THREE.Mesh;
-    if (!m.isMesh || (m as THREE.SkinnedMesh).isSkinnedMesh) return;
-    let anc: THREE.Object3D | null = o.parent;
+    if (!(o instanceof Mesh) || o.skin) return;
+    let anc: Node | null = o.parent;
     while (anc && anc !== root) { if (keep(anc)) return; anc = anc.parent; }
-    const mat = m.material as THREE.Material;
-    const xf = new THREE.Matrix4().multiplyMatrices(inv, m.matrixWorld);
-    const g = dequantize(m.geometry.clone()).applyMatrix4(xf);
-    // mirrored parts (negative determinant) would flip winding once baked: restore it
-    if (xf.determinant() < 0) flipWinding(g);
+    const xf = new Mat4().multiplyMatrices(inv, o.matrixWorld);
+    // Geometry.applyMatrix4 dequantizes (meshopt int16 → float) and restores winding for mirrored parts
+    const g = o.geometry.clone().applyMatrix4(xf);
     for (const k of Object.keys(g.attributes)) if (!['position', 'normal', 'uv'].includes(k)) g.deleteAttribute(k);
-    if (!g.getAttribute('uv')) g.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array(g.getAttribute('position').count * 2), 2));
-    byMat.set(mat, [...(byMat.get(mat) ?? []), g.index ? g.toNonIndexed() : g]);
+    if (!g.hasAttribute('uv')) g.setAttribute('uv', new Attribute(new Float32Array(g.vertexCount * 2), 2));
+    byMat.set(o.material, [...(byMat.get(o.material) ?? []), g]);
   });
-  const out = new THREE.Group();
+  const out = new Group();
   for (const [mat, gs] of byMat) {
-    const merged = mergeGeometries(gs, false);
+    const merged = mergeGeometries(gs);
     if (!merged) continue;
-    const mesh = new THREE.Mesh(merged, mat);
+    const mesh = new Mesh(merged, mat);
     mesh.castShadow = mesh.receiveShadow = true;
     out.add(mesh);
   }
   for (const k of kept) {
-    const wrapper = new THREE.Group();
+    const wrapper = new Group();
     wrapper.name = k.name;
-    const m = new THREE.Matrix4().multiplyMatrices(inv, k.matrixWorld);
+    const m = new Mat4().multiplyMatrices(inv, k.matrixWorld);
     m.decompose(wrapper.position, wrapper.quaternion, wrapper.scale);
     const inner = consolidate(k.clone(), () => false);
     inner.position.set(0, 0, 0);

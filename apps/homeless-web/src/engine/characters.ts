@@ -1,20 +1,20 @@
 // Humans: MakeHuman CC0 masters rigged in this repository with clips Idle, WalkInPlace,
 // JogInPlace, Talk, Listen, Wave, Seated and EnterVehicle. Each instance is a
-// SkeletonUtils clone with its own mixer. The rig's rest pose is an A-pose; an authored
+// skeleton-aware ASTRO clone (skins rebound to cloned bones) with its own mixer. The rig's rest pose is an A-pose; an authored
 // post-mixer correction lowers the upper arms (world-space rotation about the body's
 // forward axis) so the clips read as natural standing posture.
-import * as THREE from 'three';
-import { clone as skeletonClone } from 'three/examples/jsm/utils/SkeletonUtils.js';
+import { Group, Mesh, Node, Quat, Vec3, Color, type ColorLike } from '@astro/core';
+import { Mixer, type Action } from '@astro/geometry';
 import { loadGLB } from './assets';
 
 export type Pose = 'idle' | 'walk' | 'run' | 'talk' | 'listen' | 'wave' | 'seated' | 'enter';
 type ClipKey = 'idle' | 'walk' | 'run' | 'talk' | 'listen' | 'wave' | 'seated' | 'enter';
 
 export interface Human {
-  root: THREE.Group;
-  model: THREE.Object3D;
-  mixer: THREE.AnimationMixer;
-  actions: Record<ClipKey, THREE.AnimationAction>;
+  root: Group;
+  model: Node;
+  mixer: Mixer;
+  actions: Record<ClipKey, Action>;
   pose: Pose;
   speed: number;
   phase: number;
@@ -25,39 +25,38 @@ export interface Human {
 
 const CLIPS: Record<ClipKey, string> = { idle: 'Idle', walk: 'WalkInPlace', run: 'JogInPlace', talk: 'Talk', listen: 'Listen', wave: 'Wave', seated: 'Seated', enter: 'EnterVehicle' };
 
-export async function makeHuman(variant: 'citizen' | 'citizen-alt' | 'citizen-lod' | 'citizen-alt-lod', tint?: THREE.ColorRepresentation): Promise<Human> {
+export async function makeHuman(variant: 'citizen' | 'citizen-alt' | 'citizen-lod' | 'citizen-alt-lod', tint?: ColorLike): Promise<Human> {
   const g = await loadGLB(variant);
-  const model = skeletonClone(g.scene);
+  const model = g.scene.clone();
   model.traverse((o) => {
-    const m = o as THREE.Mesh;
-    if (!m.isMesh) return;
-    m.castShadow = true; m.receiveShadow = true; m.frustumCulled = false;
-    if (tint !== undefined && m.name.toLowerCase().includes('outfit')) {
-      const mat = (m.material as THREE.MeshStandardMaterial).clone();
-      mat.color = new THREE.Color(tint);
-      m.material = mat;
+    if (!(o instanceof Mesh)) return;
+    o.castShadow = true; o.receiveShadow = true; o.frustumCulled = false;
+    if (tint !== undefined && o.name.toLowerCase().includes('outfit')) {
+      const mat = o.material.clone();
+      mat.color = tint instanceof Color ? tint.clone() : new Color().setHex(tint);
+      o.material = mat;
     }
   });
-  const root = new THREE.Group();
+  const root = new Group();
   root.add(model);
-  const mixer = new THREE.AnimationMixer(model);
-  const find = (name: string) => g.animations.find((c) => c.name.endsWith(`|${name}`) || c.name === name);
-  const actions = {} as Record<ClipKey, THREE.AnimationAction>;
+  const mixer = new Mixer(model);
+  const find = (name: string) => g.clips.find((c) => c.name.endsWith(`|${name}`) || c.name === name);
+  const actions = {} as Record<ClipKey, Action>;
   for (const [k, name] of Object.entries(CLIPS) as [ClipKey, string][]) {
-    const clip = find(name) ?? find('Idle') ?? g.animations[0]!;
+    const clip = find(name) ?? find('Idle') ?? g.clips[0]!;
     const a = mixer.clipAction(clip);
     a.play(); a.setEffectiveWeight(k === 'idle' ? 1 : 0);
     actions[k] = a;
   }
-  actions.enter.setLoop(THREE.LoopOnce, 1); actions.enter.clampWhenFinished = true;
-  const bones: Record<string, THREE.Bone> = {};
-  model.traverse((o) => { if ((o as THREE.Bone).isBone) bones[o.name] = o as THREE.Bone; });
+  actions.enter.setLoop('once'); actions.enter.clampWhenFinished = true;
+  const bones: Record<string, Node> = {};
+  model.traverse((o) => { if (o.name) bones[o.name] ??= o; });
   const armL = bones['upperarm01.L'], armR = bones['upperarm01.R'];
   const walkDur = actions.walk.getClip().duration || 1;
   const runDur = actions.run.getClip().duration || 1;
-  const qa = new THREE.Quaternion(), qp = new THREE.Quaternion(), qr = new THREE.Quaternion(), axis = new THREE.Vector3();
+  const qa = new Quat(), qp = new Quat(), qr = new Quat(), axis = new Vec3();
 
-  const relax = (bone: THREE.Bone | undefined, angle: number) => {
+  const relax = (bone: Node | undefined, angle: number) => {
     if (!bone || !bone.parent) return;
     root.getWorldQuaternion(qr);
     axis.set(0, 0, 1).applyQuaternion(qr); // body forward in world

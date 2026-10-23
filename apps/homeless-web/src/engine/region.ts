@@ -1,4 +1,4 @@
-import type * as THREE from 'three';
+import type { Vec3, Group, Box3, Quat } from '@astro/core';
 import type { SurfaceKind } from '@dark/somatostratum';
 import type { Engine } from './engine';
 
@@ -7,7 +7,7 @@ export type RegionKind = 'street' | 'coarse' | 'airport' | 'cabin' | 'harbor' | 
 export interface Interactable {
   id: string;
   label: string;
-  pos: THREE.Vector3;
+  pos: Vec3;
   radius: number;
   key?: 'interact' | 'vehicle';
   action(e: Engine): void;
@@ -22,19 +22,19 @@ export interface Region {
   name: string;
   lat: number;
   lon: number;
-  group: THREE.Group;
+  group: Group;
   surfaces: Map<number, SurfaceKind>;
-  spawn: THREE.Vector3;
+  spawn: Vec3;
   spawnYaw: number;
   sourceLabels: SourceLabel[];
-  interiors: THREE.Box3[];
+  interiors: Box3[];
   /** When the player is not on foot the region can own control (car, aircraft, boat). */
   controlsPlayer?(): boolean;
   fixed?(h: number, e: Engine): void;
   frame?(dt: number, e: Engine): void;
   interactables(e: Engine): Interactable[];
-  obstacles?(): THREE.Vector3[];
-  focus?(): { pos: THREE.Vector3; heading?: number; eye?: THREE.Vector3; quat?: THREE.Quaternion; mode: 'vehicle' | 'cabin' | 'cockpit' | 'follow' } | null;
+  obstacles?(): Vec3[];
+  focus?(): { pos: Vec3; heading?: number; eye?: Vec3; quat?: Quat; mode: 'vehicle' | 'cabin' | 'cockpit' | 'follow' } | null;
   hudExtra?(): Record<string, unknown>;
   dispose(): void;
 }

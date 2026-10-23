@@ -4,6 +4,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 import path from 'node:path';
 
 const pkg = (n: string) => path.resolve(__dirname, `../../packages/dark-${n}/src/index.ts`);
+const astro = (n: string) => path.resolve(__dirname, `../../packages/astro-${n}/src/index.ts`);
+const ASTRO = ['core', 'glyphs', 'geometry', 'optics', 'pixels', 'physics', 'render-webgl2', 'render-webgpu', 'sky', 'world-adapter'];
 
 export default defineConfig({
   base: './',
@@ -11,6 +13,7 @@ export default defineConfig({
     alias: {
       '@dark/core': pkg('core'), '@dark/geo': pkg('geo'), '@dark/visual-grammar': pkg('visual-grammar'),
       '@dark/somatostratum': pkg('somatostratum'), '@dark/subjects': pkg('subjects'), '@dark/travel': pkg('travel'),
+      ...Object.fromEntries(ASTRO.map((n) => [`@astro/${n}`, astro(n)])),
     },
   },
   plugins: [
@@ -34,6 +37,10 @@ export default defineConfig({
       },
     }),
   ],
-  build: { target: 'es2022', chunkSizeWarningLimit: 4000, sourcemap: false },
+  build: {
+    target: 'es2022', chunkSizeWarningLimit: 4000, sourcemap: false,
+    // the game and the renderer conformance lab (§110) ship together; the Three oracle is a separate app
+    rollupOptions: { input: { main: path.resolve(__dirname, 'index.html'), lab: path.resolve(__dirname, 'astro-lab.html') } },
+  },
   server: { host: true },
 });

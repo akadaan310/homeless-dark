@@ -2,23 +2,22 @@
 // spacing) sampled on a local ENU grid with Earth-curvature drop, Natural Earth land mask
 // for coast/ocean, biome splatting by latitude/height/slope, an animated sea surface and a
 // matching Rapier trimesh. It never invents street detail: near-detail is authored and labelled.
-import * as THREE from 'three';
+import { Group, Mesh, Material, Geometry, Attribute, Vec3, planeGeometry, type Texture } from '@astro/core';
 import { enuToGeodetic, tilesForSpan, MEAN_RADIUS } from '@dark/geo';
 import type { SurfaceKind } from '@dark/somatostratum';
 import { globe } from './globe';
-import { pbrSet } from './assets';
-import { weather } from './materials';
+import { pbrSet, canvasTexture } from './assets';
 import type { Physics } from './physics';
 
 export interface CoarseTerrain {
-  group: THREE.Group;
+  group: Group;
   surfaces: Map<number, SurfaceKind>;
   heightAt(x: number, z: number): number;
   oceanAt(x: number, z: number): boolean;
   centerOcean: boolean;
   centerHeight: number;
   landFraction: number;
-  water: THREE.Mesh;
+  water: Mesh;
   halfM: number;
   stats: { tiles: number; vertices: number; minH: number; maxH: number };
 }
@@ -71,29 +70,29 @@ export async function buildCoarseTerrain(phys: Physics, lat: number, lon: number
   }
   const idx: number[] = [];
   for (let j = 0; j < n - 1; j++) for (let i = 0; i < n - 1; i++) { const a = j * n + i, b = a + 1, c = a + n, d = c + 1; idx.push(a, b, c, b, d, c); }
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  geo.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
-  geo.setAttribute('aSplat', new THREE.BufferAttribute(splat, 3));
+  const geo = new Geometry();
+  geo.setAttribute('position', new Attribute(pos, 3));
+  geo.setAttribute('uv', new Attribute(uv, 2));
+  geo.setAttribute('aSplat', new Attribute(splat, 3));
   geo.setIndex(idx);
   // winding: ENU rows go north (−z): ensure normals point up
-  const p0 = new THREE.Vector3().fromArray(pos, 0), p1 = new THREE.Vector3().fromArray(pos, 3), p2 = new THREE.Vector3().fromArray(pos, n * 3);
-  if (new THREE.Vector3().subVectors(p1, p0).cross(new THREE.Vector3().subVectors(p2, p0)).y < 0) {
+  const p0 = new Vec3().fromArray(pos, 0), p1 = new Vec3().fromArray(pos, 3), p2 = new Vec3().fromArray(pos, n * 3);
+  if (new Vec3().subVectors(p1, p0).cross(new Vec3().subVectors(p2, p0)).y < 0) {
     for (let t = 0; t < idx.length; t += 3) { const x = idx[t + 1]!; idx[t + 1] = idx[t + 2]!; idx[t + 2] = x; }
     geo.setIndex(idx);
   }
   geo.computeVertexNormals();
   const mat = terrainMaterial();
-  const mesh = new THREE.Mesh(geo, mat);
+  const mesh = new Mesh(geo, mat);
   mesh.receiveShadow = true; mesh.castShadow = true;
   mesh.name = 'gebco-terrain';
-  const group = new THREE.Group();
+  const group = new Group();
   group.add(mesh);
   const surfaces = new Map<number, SurfaceKind>();
   const col = phys.fixedTrimesh(geo);
   surfaces.set(col.handle, absLat > 66 ? 'unknown' : 'grass');
   // sea surface
-  const water = new THREE.Mesh(new THREE.PlaneGeometry(halfM * 2.4, halfM * 2.4, 1, 1).rotateX(-Math.PI / 2), waterMaterial());
+  const water = new Mesh(planeGeometry(halfM * 2.4, halfM * 2.4).rotateX(-Math.PI / 2), waterMaterial());
   water.name = 'sea-surface';
   water.position.y = 0;
   water.receiveShadow = true;
@@ -117,26 +116,14 @@ export async function buildCoarseTerrain(phys: Physics, lat: number, lon: number
   };
 }
 
-function terrainMaterial(): THREE.MeshStandardMaterial {
+function terrainMaterial(): Material {
   const grass = pbrSet('grass', { repeat: 1 }), sand = pbrSet('sand', { repeat: 1 });
-  const m = new THREE.MeshStandardMaterial({ map: grass.map, normalMap: grass.normalMap, roughness: 0.95, metalness: 0 });
-  m.onBeforeCompile = (s) => {
-    s.uniforms.uSand = { value: sand.map };
-    s.vertexShader = s.vertexShader.replace('#include <common>', '#include <common>\nattribute vec3 aSplat; varying vec3 vSplat;').replace('#include <uv_vertex>', '#include <uv_vertex>\nvSplat = aSplat;');
-    s.fragmentShader = s.fragmentShader
-      .replace('#include <common>', '#include <common>\nuniform sampler2D uSand; varying vec3 vSplat;')
-      .replace('#include <map_fragment>', `#include <map_fragment>
-        vec3 sandC = texture2D(uSand, vMapUv).rgb;
-        diffuseColor.rgb = mix(diffuseColor.rgb * vec3(0.78, 0.86, 0.7), sandC, clamp(vSplat.x, 0.0, 1.0));
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.32, 0.3, 0.28) * (0.8 + 0.4 * sandC.r), clamp(vSplat.y, 0.0, 1.0));
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.86, 0.89, 0.93), clamp(vSplat.z, 0.0, 1.0));`);
-  };
-  m.customProgramCacheKey = () => 'gebco-splat';
-  return m;
+  // 'terrain' feature: aSplat (sand, rock, snow) blends grass → sand (detailMap) → rock → snow
+  return new Material({ feature: 'terrain', map: grass.map, normalMap: grass.normalMap, detailMap: sand.map, roughness: 0.95, metalness: 0, name: 'gebco-splat' });
 }
 
-let waterNormal: THREE.Texture | null = null;
-export function waterMaterial(): THREE.MeshPhysicalMaterial {
+let waterNormal: Texture | null = null;
+export function waterMaterial(): Material {
   if (!waterNormal) {
     // tileable procedural wave normals (sum of sines), authored
     const s = 256, c = document.createElement('canvas');
@@ -155,21 +142,10 @@ export function waterMaterial(): THREE.MeshPhysicalMaterial {
       img.data[i] = (nx / l * 0.5 + 0.5) * 255; img.data[i + 1] = (ny / l * 0.5 + 0.5) * 255; img.data[i + 2] = (nz / l * 0.5 + 0.5) * 255; img.data[i + 3] = 255;
     }
     ctx.putImageData(img, 0, 0);
-    waterNormal = new THREE.CanvasTexture(c);
-    waterNormal.wrapS = waterNormal.wrapT = THREE.RepeatWrapping;
-    waterNormal.colorSpace = THREE.NoColorSpace;
-    waterNormal.repeat.set(400, 400);
+    waterNormal = canvasTexture(c, false);
+    waterNormal.wrap = 'repeat';
+    waterNormal.repeat = { x: 400, y: 400 };
   }
-  const m = new THREE.MeshPhysicalMaterial({ color: 0x0b2f3f, roughness: 0.06, metalness: 0, normalMap: waterNormal, normalScale: new THREE.Vector2(0.5, 0.5), clearcoat: 0.6, clearcoatRoughness: 0.12, envMapIntensity: 1.1 });
-  m.onBeforeCompile = (s) => {
-    s.uniforms.uTime = weather.uTime;
-    s.fragmentShader = s.fragmentShader.replace('#include <common>', '#include <common>\nuniform float uTime;')
-      .replace('#include <normal_fragment_maps>', `
-        vec3 n1 = texture2D(normalMap, vNormalMapUv + vec2(uTime * 0.004, uTime * 0.002)).xyz * 2.0 - 1.0;
-        vec3 n2 = texture2D(normalMap, vNormalMapUv * 1.7 - vec2(uTime * 0.003, -uTime * 0.005)).xyz * 2.0 - 1.0;
-        vec3 mapN = normalize(vec3((n1.xy + n2.xy) * normalScale, n1.z * n2.z));
-        normal = normalize(tbn * mapN);`);
-  };
-  m.customProgramCacheKey = () => 'sea';
-  return m;
+  // 'water' feature: two scrolled normal samples driven by uTime (world seconds)
+  return new Material({ feature: 'water', color: 0x0b2f3f, roughness: 0.06, metalness: 0, normalMap: waterNormal, normalScale: 0.5, clearcoat: 0.6, clearcoatRoughness: 0.12, envIntensity: 1.1, name: 'sea' });
 }

@@ -1,7 +1,7 @@
 // Camera grammar: third-person follow, vehicle chase, cabin/cockpit and cinematic
 // modes with authored transitions; collision against Rapier (CAMERA_BLOCK group);
 // frame-rate-invariant damping; stable horizon; no shake unless opted in.
-import * as THREE from 'three';
+import { Vec3, Quat, Euler, type Camera } from '@astro/core';
 import type { Physics } from './physics';
 import { GROUP } from './physics';
 
@@ -12,15 +12,15 @@ export class CameraRig {
   pitch = -0.18;
   distance = 4.2;
   mode: CamMode = 'follow';
-  readonly target = new THREE.Vector3();
-  private cur = new THREE.Vector3();
+  readonly target = new Vec3();
+  private cur = new Vec3();
   private initialized = false;
   sensitivity = 0.0042;
   collisions = 0;
   reducedMotion = false;
-  cinematic: { from: THREE.Vector3; to: THREE.Vector3; look: THREE.Vector3; t: number; dur: number } | null = null;
+  cinematic: { from: Vec3; to: Vec3; look: Vec3; t: number; dur: number } | null = null;
 
-  constructor(readonly camera: THREE.PerspectiveCamera, private phys: Physics) {}
+  constructor(readonly camera: Camera, private phys: Physics) {}
 
   look(dx: number, dy: number) {
     this.yaw -= dx * this.sensitivity;
@@ -28,8 +28,8 @@ export class CameraRig {
   }
 
   /** Forward direction on the ground plane for movement input. */
-  forward(out = new THREE.Vector3()): THREE.Vector3 { return out.set(-Math.sin(this.yaw), 0, -Math.cos(this.yaw)); }
-  right(out = new THREE.Vector3()): THREE.Vector3 { return out.set(Math.cos(this.yaw), 0, -Math.sin(this.yaw)); }
+  forward(out = new Vec3()): Vec3 { return out.set(-Math.sin(this.yaw), 0, -Math.cos(this.yaw)); }
+  right(out = new Vec3()): Vec3 { return out.set(Math.cos(this.yaw), 0, -Math.sin(this.yaw)); }
 
   setMode(m: CamMode) {
     if (m === this.mode) return;
@@ -39,7 +39,7 @@ export class CameraRig {
     this.camera.updateProjectionMatrix();
   }
 
-  update(dt: number, focus: THREE.Vector3, heading?: number, interiorEye?: THREE.Vector3, interiorQuat?: THREE.Quaternion): void {
+  update(dt: number, focus: Vec3, heading?: number, interiorEye?: Vec3, interiorQuat?: Quat): void {
     if (this.cinematic) {
       const c = this.cinematic;
       c.t += dt;
@@ -51,7 +51,7 @@ export class CameraRig {
     }
     if ((this.mode === 'cabin' || this.mode === 'cockpit') && interiorEye) {
       this.camera.position.copy(interiorEye);
-      const q = new THREE.Quaternion().setFromEuler(new THREE.Euler(this.pitch * 0.8, this.yaw, 0, 'YXZ'));
+      const q = new Quat().setFromEuler(new Euler(this.pitch * 0.8, this.yaw, 0, 'YXZ'));
       if (interiorQuat) this.camera.quaternion.copy(interiorQuat).multiply(q); else this.camera.quaternion.copy(q);
       return;
     }
@@ -62,7 +62,7 @@ export class CameraRig {
       this.yaw += d * (1 - Math.exp(-dt * 1.6));
     }
     this.target.copy(focus);
-    const dir = new THREE.Vector3(Math.sin(this.yaw) * Math.cos(this.pitch), -Math.sin(this.pitch), Math.cos(this.yaw) * Math.cos(this.pitch));
+    const dir = new Vec3(Math.sin(this.yaw) * Math.cos(this.pitch), -Math.sin(this.pitch), Math.cos(this.yaw) * Math.cos(this.pitch));
     let dist = this.distance;
     const hit = this.phys.ray(this.target, dir, dist + 0.3, GROUP.CAMERA_BLOCK);
     if (hit && hit.toi < dist + 0.3) { dist = Math.max(0.6, hit.toi - 0.3); this.collisions++; }

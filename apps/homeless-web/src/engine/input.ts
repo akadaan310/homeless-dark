@@ -17,6 +17,8 @@ export class Input {
   private touchPressed = new Set<string>();
   enabled = true;
   lastDevice: 'keyboard' | 'touch' | 'gamepad' = 'keyboard';
+  /** Deterministic replay hook (tests only): when set, read() returns this instead of device input. */
+  scripted: (() => InputState) | null = null;
 
   constructor(private el: HTMLElement) {
     window.addEventListener('keydown', (e) => {
@@ -45,6 +47,7 @@ export class Input {
   releaseTouch(b: string) { this.touchButtons.delete(b); }
 
   read(): InputState {
+    if (this.scripted) return this.scripted();
     const k = (c: string) => this.keys.has(c);
     const once = (c: string, t?: string) => { const v = this.pressed.has(c) || (t ? this.touchPressed.has(t) : false); return v; };
     let x = (k('KeyD') || k('ArrowRight') ? 1 : 0) - (k('KeyA') || k('ArrowLeft') ? 1 : 0);

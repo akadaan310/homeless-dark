@@ -2,7 +2,7 @@
 // N Dale Mabry Hwy & W Spruce St, composed with authored detail. Every object keeps
 // a data-status: roads/footprints 'verified' (OSM fixture), heights per source tag,
 // façades/café/props 'authored' (fictional).
-import * as THREE from 'three';
+import { Group, Mesh, InstancedMesh, Material, PointLight, Vec3, Quat, Mat4, Box3, Color, planeGeometry, boxGeometry, cylinderGeometry, coneGeometry, sphereGeometry, type Geometry, type Node } from '@astro/core';
 import type RAPIER from '@dimforge/rapier3d-compat';
 import { composeFacade, districtPalette, furnishStreet, weave } from '@dark/subjects';
 import { fnv1a } from '@dark/core';
@@ -11,7 +11,7 @@ import { ribbon, wallStrip, extrudeFootprint, merge, consolidate, polylineLength
 import { wetSurface, facadeMaterial, MAT } from './materials';
 import { Physics, GROUP } from './physics';
 import { SignSystem, signEntity } from './signs';
-import { loadGLB, loadJSON } from './assets';
+import { loadGLB, loadJSON, canvasTexture } from './assets';
 
 export interface TampaCell {
   anchor: { lat: number; lon: number; osmNode: number };
@@ -24,7 +24,7 @@ const VEHICLE = new Set(['motorway', 'motorway_link', 'primary', 'primary_link',
 const SIDEWALKED = new Set(['primary', 'secondary', 'tertiary', 'residential', 'unclassified']);
 const carriageway = (r: TampaCell['roads'][number]) => (r.class === 'primary' ? 10.5 : r.class === 'motorway' ? 11 : r.class === 'tertiary' ? 8 : r.class === 'residential' ? 7 : r.class === 'service' ? 5 : r.width);
 
-export type Lamp = THREE.Vector3 & { yaw?: number; head?: THREE.Vector3 };
+export type Lamp = Vec3 & { yaw?: number; head?: Vec3 };
 
 export const CAFE = { x0: -32, x1: -24, n0: 20, n1: 36, doorN: 28, name: 'Spruce Corner Café' } as const;
 
@@ -32,22 +32,22 @@ export const CAFE = { x0: -32, x1: -24, n0: 20, n1: 36, doorN: 28, name: 'Spruce
 const SHOP_NAMES = ['Laurel Hardware', 'Bayside Books', 'Palmetto Florist', 'Harbor Tailors', 'Cypress Pharmacy', 'Gulf Coast Optics', 'Sunshine Laundry', 'Mangrove Records', 'Pelican Bakery', 'Driftwood Repairs', 'Citrus Market', 'Heron Barber'];
 
 export interface TampaWorld {
-  group: THREE.Group;
+  group: Group;
   surfaces: Map<number, SurfaceKind>;
   streetlights: Lamp[];
-  spawn: THREE.Vector3;
-  carSpawn: { pos: THREE.Vector3; yaw: number };
-  cafe: { door: THREE.Mesh; doorCollider: RAPIER.Collider; doorWorld: THREE.Vector3; interior: THREE.Box3; music: THREE.Vector3; counter: THREE.Vector3; sign: string };
+  spawn: Vec3;
+  carSpawn: { pos: Vec3; yaw: number };
+  cafe: { door: Mesh; doorCollider: RAPIER.Collider; doorWorld: Vec3; interior: Box3; music: Vec3; counter: Vec3; sign: string };
   trafficLanes: { pts: P2[]; dir: 1 | -1; name: string }[];
-  signalHeads: THREE.Mesh[];
+  signalHeads: Mesh[];
   stats: { roads: number; buildings: number; sidewalkM: number; triangles: number; drawGroups: number };
   sourceLabels: { id: string; status: string; note: string }[];
-  stores: { name: string; pos: THREE.Vector3 }[];
+  stores: { name: string; pos: Vec3 }[];
 }
 
 export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low' | 'high'): Promise<TampaWorld> {
   const cell = await loadJSON<TampaCell>('data/tampa-cell.json');
-  const group = new THREE.Group();
+  const group = new Group();
   group.name = 'tampa-cell';
   const surfaces = new Map<number, SurfaceKind>();
   const radius = quality === 'low' ? 520 : 800;
@@ -55,11 +55,11 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
 
   // ---------------------------------------------------------------- ground
   const groundMat = wetSurface('grass', { repeat: 220, tint: 0x9aa58a, puddles: false });
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(2400, 2400).rotateX(-Math.PI / 2), groundMat);
+  const ground = new Mesh(planeGeometry(2400, 2400).rotateX(-Math.PI / 2), groundMat);
   ground.receiveShadow = true;
   ground.position.y = -0.005;
   group.add(ground);
-  const gcol = phys.fixedBox(new THREE.Vector3(0, -0.5, 0), new THREE.Vector3(1200, 0.5, 1200));
+  const gcol = phys.fixedBox(new Vec3(0, -0.5, 0), new Vec3(1200, 0.5, 1200));
   surfaces.set(gcol.handle, 'grass');
 
   // ---------------------------------------------------------------- roads
@@ -83,8 +83,8 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
   const concrete = wetSurface('concrete', { repeat: 1, tint: 0xd6d2c8, puddles: false });
   const paving = wetSurface('paving', { repeat: 1, tint: 0xcfc7b8, puddles: false });
   const curbMat = MAT.curb();
-  const roadGeoms: THREE.BufferGeometry[] = [], walkGeoms: THREE.BufferGeometry[] = [], curbGeoms: THREE.BufferGeometry[] = [];
-  const white: THREE.BufferGeometry[] = [], yellow: THREE.BufferGeometry[] = [];
+  const roadGeoms: Geometry[] = [], walkGeoms: Geometry[] = [], curbGeoms: Geometry[] = [];
+  const white: Geometry[] = [], yellow: Geometry[] = [];
   let sidewalkM = 0;
 
   const outsideJunctions = (pts: P2[], pad: number): P2[][] => {
@@ -147,10 +147,10 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
   // crosswalks across every arm of the anchor junction
   for (const [a, b] of [[[-24, -6.5], [8, -6.5]], [[-24, 6.5], [8, 6.5]], [[-25.5, -4], [-25.5, 4]], [[9.5, -4], [9.5, 4]]] as [P2, P2][]) zebra([a, b], 3.2, white, 0.034);
 
-  const addMerged = (geoms: THREE.BufferGeometry[], mat: THREE.Material, surface: SurfaceKind | null, castShadow = false) => {
+  const addMerged = (geoms: Geometry[], mat: Material, surface: SurfaceKind | null, castShadow = false) => {
     const g = merge(geoms);
     if (!g) return;
-    const m = new THREE.Mesh(g, mat);
+    const m = new Mesh(g, mat);
     m.receiveShadow = true; m.castShadow = castShadow;
     group.add(m);
     if (surface) surfaces.set(phys.fixedTrimesh(g).handle, surface);
@@ -163,9 +163,9 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
 
   // ---------------------------------------------------------------- buildings via FacadeGrammar
   const cafeBox = { minE: CAFE.x0 - 2, maxE: CAFE.x1 + 1, minN: CAFE.n0 - 2, maxN: CAFE.n1 + 2 };
-  const byMat = new Map<string, { walls: THREE.BufferGeometry[]; roofs: THREE.BufferGeometry[] }>();
-  const allBuilding: THREE.BufferGeometry[] = [];
-  const stores: { name: string; pos: THREE.Vector3 }[] = [];
+  const byMat = new Map<string, { walls: Geometry[]; roofs: Geometry[] }>();
+  const allBuilding: Geometry[] = [];
+  const stores: { name: string; pos: Vec3 }[] = [];
   const shopfrontCandidates: { b: TampaCell['buildings'][number]; edge: { a: P2; b: P2; len: number }; dist: number; prog: ReturnType<typeof composeFacade> }[] = [];
   let nBuild = 0;
   for (const b of cell.buildings) {
@@ -177,7 +177,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
     const commercial = nearPrimary || b.kind === 'retail' || b.kind === 'commercial' || !!b.name;
     const prog = composeFacade({ buildingId: b.id, districtId: district, frontageM: 20, heightM: b.height, ground: commercial ? 'commercial' : 'residential' });
     const pal = districtPalette(district);
-    const tint = new THREE.Color().setRGB(pal.wall[0], pal.wall[1], pal.wall[2], THREE.LinearSRGBColorSpace).lerp(new THREE.Color(1, 1, 1), prog.material === 'bricks' ? 0.6 : 0.15);
+    const tint = new Color().setRGB(pal.wall[0], pal.wall[1], pal.wall[2]).lerp(new Color(1, 1, 1), prog.material === 'bricks' ? 0.6 : 0.15);
     const floorH = b.height / Math.max(1, prog.floors);
     const ex = extrudeFootprint(b.ring, b.height, [prog.bayWidth, Math.min(4.2, Math.max(2.8, floorH)), (fnv1a(b.id) % 997) / 7.3, commercial ? 1 : 0], tint);
     const slot = byMat.get(prog.material) ?? { walls: [], roofs: [] };
@@ -190,16 +190,16 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
   for (const [mat, s] of byMat) {
     const fm = facadeMaterial({ id: mat as 'stucco', repeatM: mat === 'bricks' ? 2.2 : 3.5 });
     const w = merge(s.walls), r = merge(s.roofs);
-    if (w) { const m = new THREE.Mesh(w, fm); m.castShadow = m.receiveShadow = true; group.add(m); }
-    if (r) { const m = new THREE.Mesh(r, fm); m.receiveShadow = true; group.add(m); }
+    if (w) { const m = new Mesh(w, fm); m.castShadow = m.receiveShadow = true; group.add(m); }
+    if (r) { const m = new Mesh(r, fm); m.receiveShadow = true; group.add(m); }
   }
   const bcol = merge(allBuilding);
   if (bcol) surfaces.set(phys.fixedTrimesh(bcol).handle, 'concrete');
 
   // close-range storefront detail: awnings + fictional shop signs on the nearest commercial frontages
   shopfrontCandidates.sort((a, b) => a.dist - b.dist);
-  const awnings: THREE.BufferGeometry[] = [];
-  const awningMat = new Map<string, THREE.Material>();
+  const awnings: Geometry[] = [];
+  const awningMat = new Map<string, Material>();
   shopfrontCandidates.slice(0, quality === 'low' ? 8 : 12).forEach((s, i) => {
     const { a, b } = s.edge;
     const mid: P2 = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
@@ -208,11 +208,11 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
     const yaw = Math.atan2(-outward[1], outward[0]) - Math.PI / 2; // face outward in XZ
     const name = SHOP_NAMES[i % SHOP_NAMES.length]!;
     const pal = s.prog.palette;
-    const col = new THREE.Color().setRGB(pal.awning[0], pal.awning[1], pal.awning[2], THREE.LinearSRGBColorSpace);
+    const col = new Color().setRGB(pal.awning[0], pal.awning[1], pal.awning[2]);
     const key = col.getHexString();
     if (!awningMat.has(key)) awningMat.set(key, MAT.fabric(col));
     const aw = Math.min(s.edge.len * 0.7, 14);
-    const awning = new THREE.Mesh(new THREE.BoxGeometry(aw, 0.12, 1.6).translate(0, 0, 0.8).rotateX(0.28), awningMat.get(key));
+    const awning = new Mesh(boxGeometry(aw, 0.12, 1.6).translate(0, 0, 0.8).rotateX(0.28), awningMat.get(key)!);
     const [mx, mz] = toXZ([mid[0] + outward[0] * 0.05, mid[1] + outward[1] * 0.05]);
     awning.position.set(mx, 3.4, mz); awning.rotation.y = yaw; awning.castShadow = true;
     group.add(awning);
@@ -220,7 +220,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
     const [sx, sz] = toXZ([mid[0] + outward[0] * 0.12, mid[1] + outward[1] * 0.12]);
     sign.group.position.set(sx, 4.2, sz); sign.group.rotation.y = yaw;
     group.add(sign.group);
-    stores.push({ name, pos: new THREE.Vector3(sx, 0, sz) });
+    stores.push({ name, pos: new Vec3(sx, 0, sz) });
   });
   void awnings;
 
@@ -243,7 +243,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
       if (q[0] > cafeBox.minE - 1 && q[0] < cafeBox.maxE + 1 && q[1] > cafeBox.minN && q[1] < cafeBox.maxN) continue;
       const [x, z] = toXZ(q);
       if (f.kind === 'streetlight') {
-        const v = new THREE.Vector3(x, 0.15, z) as Lamp;
+        const v = new Vec3(x, 0.15, z) as Lamp;
         v.yaw = Math.atan2(-n[0] * f.side, n[1] * f.side); // arm points across the carriageway
         streetlights.push(v);
       }
@@ -257,15 +257,15 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
   await buildPalms(group, palms, phys);
 
   // traffic signal heads at the anchor (cycle driven by the game loop)
-  const signalHeads: THREE.Mesh[] = [];
+  const signalHeads: Mesh[] = [];
   for (const [e, n, yaw] of [[-23.5, 8.5, 0], [7.5, -8.5, Math.PI], [7.5, 8.5, -Math.PI / 2], [-23.5, -8.5, Math.PI / 2]] as const) {
-    const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.11, 5.4, 10), MAT.metal(0x3a3d40));
+    const pole = new Mesh(cylinderGeometry(0.09, 0.11, 5.4, 10), MAT.metal(0x3a3d40));
     const [x, z] = toXZ([e, n]);
     pole.position.set(x, 2.85, z); pole.castShadow = true; group.add(pole);
-    const head = new THREE.Mesh(new THREE.BoxGeometry(0.36, 1.0, 0.3), MAT.emissive(0x000000, 0));
+    const head = new Mesh(boxGeometry(0.36, 1.0, 0.3), MAT.emissive(0x000000, 0));
     head.position.set(x, 5.2, z); head.rotation.y = yaw; head.castShadow = true;
     group.add(head); signalHeads.push(head);
-    phys.fixedBox(new THREE.Vector3(x, 2.7, z), new THREE.Vector3(0.12, 2.7, 0.12));
+    phys.fixedBox(new Vec3(x, 2.7, z), new Vec3(0.12, 2.7, 0.12));
   }
   // route sign: wayfinding with real road names (source: OSM names), distance to the airport computed at runtime
   const route = signs.create(signEntity('route-north', 'wayfinding', 'N Dale Mabry Hwy  ↑  Airport', 3.4, 0.8, { emission: { hue: 150, chroma: 0.11, lightness: 0.86, brightness: 0.6 }, fictional: false }), { panelColor: 0x0d5a35 });
@@ -284,12 +284,12 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
   }
 
   let triangles = 0;
-  group.traverse((o) => { const m = o as THREE.Mesh; if (m.isMesh && m.geometry) triangles += (m.geometry.index ? m.geometry.index.count : m.geometry.getAttribute('position').count) / 3; });
+  group.traverse((m) => { if (m instanceof Mesh) triangles += m.geometry.triangleCount * (m instanceof InstancedMesh ? 1 : 1); });
 
   return {
     group, surfaces, streetlights,
-    spawn: new THREE.Vector3(-22.6, 0.2, -12),
-    carSpawn: { pos: new THREE.Vector3(-42, 0.05, 2.2), yaw: -Math.PI / 2 },
+    spawn: new Vec3(-22.6, 0.2, -12),
+    carSpawn: { pos: new Vec3(-42, 0.05, 2.2), yaw: -Math.PI / 2 },
     cafe, trafficLanes, signalHeads, stores,
     stats: { roads: roads.length, buildings: nBuild, sidewalkM: Math.round(sidewalkM), triangles: Math.round(triangles), drawGroups: group.children.length },
     sourceLabels: [
@@ -302,7 +302,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
     ],
   };
 
-  function dashes(pts: P2[], off: number, dash: number, gap: number, halfW: number, y: number, out: THREE.BufferGeometry[]) {
+  function dashes(pts: P2[], off: number, dash: number, gap: number, halfW: number, y: number, out: Geometry[]) {
     const L = polylineLength(pts);
     for (let s = 0; s + dash < L; s += dash + gap) {
       const a = along(pts, s / L).p, b = along(pts, (s + dash) / L).p;
@@ -310,7 +310,7 @@ export async function buildTampa(phys: Physics, signs: SignSystem, quality: 'low
       if (g) out.push(g);
     }
   }
-  function zebra(seg: P2[], width: number, out: THREE.BufferGeometry[], y: number) {
+  function zebra(seg: P2[], width: number, out: Geometry[], y: number) {
     const L = polylineLength(seg);
     for (let s = 0.3; s + 0.5 < L; s += 1.0) {
       const a = along(seg, s / L).p, b = along(seg, (s + 0.5) / L).p;
@@ -337,22 +337,22 @@ export function distToPolyline(p: P2, pts: P2[]): number {
 }
 
 // ---------------------------------------------------------------- café
-async function buildCafe(group: THREE.Group, phys: Physics, surfaces: Map<number, SurfaceKind>, signs: SignSystem) {
-  const g = new THREE.Group();
+async function buildCafe(group: Group, phys: Physics, surfaces: Map<number, SurfaceKind>, signs: SignSystem) {
+  const g = new Group();
   g.name = 'cafe (authored, fictional)';
   const [x0, x1] = [CAFE.x0, CAFE.x1];
   const z0 = -CAFE.n1, z1 = -CAFE.n0; // three z
   const zDoor = -CAFE.doorN;
   const H = 4.2;
   const wallMat = facadeMaterial({ id: 'plaster', repeatM: 3 });
-  const plain = (w: number, h: number, d: number, mat: THREE.Material, x: number, y: number, z: number, collide = true, surface: SurfaceKind = 'concrete') => {
-    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  const plain = (w: number, h: number, d: number, mat: Material, x: number, y: number, z: number, collide = true, surface: SurfaceKind = 'concrete') => {
+    const m = new Mesh(boxGeometry(w, h, d), mat);
     m.position.set(x, y, z); m.castShadow = m.receiveShadow = true;
     g.add(m);
-    if (collide) surfaces.set(phys.fixedBox(new THREE.Vector3(x, y, z), new THREE.Vector3(w / 2, h / 2, d / 2)).handle, surface);
+    if (collide) surfaces.set(phys.fixedBox(new Vec3(x, y, z), new Vec3(w / 2, h / 2, d / 2)).handle, surface);
     return m;
   };
-  const plasterMat = new THREE.MeshStandardMaterial({ map: (wallMat as THREE.MeshStandardMaterial).map, normalMap: (wallMat as THREE.MeshStandardMaterial).normalMap, color: 0xf1e3cf, roughness: 0.9 });
+  const plasterMat = new Material({ map: wallMat.map, normalMap: wallMat.normalMap, color: 0xf1e3cf, roughness: 0.9, uvScale: 1, name: 'plaster' });
   // back, north and south walls
   plain(0.3, H, z1 - z0, plasterMat, x0, H / 2, (z0 + z1) / 2);
   plain(x1 - x0, H, 0.3, plasterMat, (x0 + x1) / 2, H / 2, z0);
@@ -363,31 +363,31 @@ async function buildCafe(group: THREE.Group, phys: Physics, surfaces: Map<number
   const segA = [z0, zDoor - doorW / 2], segB = [zDoor + doorW / 2, z1];
   for (const [za, zb] of [segA, segB] as [number, number][]) {
     plain(0.2, 0.6, zb - za, plasterMat, x1, 0.3, (za + zb) / 2);
-    const pane = new THREE.Mesh(new THREE.BoxGeometry(0.05, 2.6, zb - za), glass);
+    const pane = new Mesh(boxGeometry(0.05, 2.6, zb - za), glass);
     pane.position.set(x1, 1.9, (za + zb) / 2); g.add(pane);
-    surfaces.set(phys.fixedBox(pane.position.clone(), new THREE.Vector3(0.05, 1.3, (zb - za) / 2)).handle, 'concrete');
+    surfaces.set(phys.fixedBox(pane.position.clone(), new Vec3(0.05, 1.3, (zb - za) / 2)).handle, 'concrete');
     for (let z = za; z <= zb + 0.01; z += (zb - za) / 3) plain(0.12, 2.6, 0.08, MAT.metal(0x22252a), x1 + 0.02, 1.9, z, false);
   }
   plain(0.3, H - 3.2, z1 - z0, plasterMat, x1, 3.2 + (H - 3.2) / 2, (z0 + z1) / 2);
   // south wall mural (sign class artist_mural): an authored generative painting from the interval orbit ⟨5⟩ ⊂ ℤ/12
   g.add(muralMesh(x1 - x0 - 0.8, 3.3, (x0 + x1) / 2, 2.05, z1 + 0.17));
   // roof + interior floor (wood) + ceiling
-  plain(x1 - x0 + 0.4, 0.25, z1 - z0 + 0.4, new THREE.MeshStandardMaterial({ color: 0x5b5450, roughness: 0.9 }), (x0 + x1) / 2, H + 0.12, (z0 + z1) / 2);
+  plain(x1 - x0 + 0.4, 0.25, z1 - z0 + 0.4, new Material({ color: 0x5b5450, roughness: 0.9 }), (x0 + x1) / 2, H + 0.12, (z0 + z1) / 2);
   const woodMat = wetSurface('wood', { repeat: 1, puddles: false });
-  const floorGeo = new THREE.BoxGeometry(x1 - x0, 0.16, z1 - z0);
-  const uv = floorGeo.getAttribute('uv') as THREE.BufferAttribute;
+  const floorGeo = boxGeometry(x1 - x0, 0.16, z1 - z0);
+  const uv = floorGeo.getAttribute('uv');
   for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) * (x1 - x0) / 2.5, uv.getY(i) * (z1 - z0) / 2.5);
-  const floor = new THREE.Mesh(floorGeo, woodMat);
+  const floor = new Mesh(floorGeo, woodMat);
   floor.position.set((x0 + x1) / 2, 0.08, (z0 + z1) / 2); floor.receiveShadow = true; g.add(floor);
-  surfaces.set(phys.fixedBox(floor.position.clone(), new THREE.Vector3((x1 - x0) / 2, 0.08, (z1 - z0) / 2)).handle, 'wood');
+  surfaces.set(phys.fixedBox(floor.position.clone(), new Vec3((x1 - x0) / 2, 0.08, (z1 - z0) / 2)).handle, 'wood');
   // sliding glass door leaf (kinematic collider; opens only when the motion grammar admits PASS_DOOR)
-  const door = new THREE.Mesh(new THREE.BoxGeometry(0.06, 2.3, doorW), glass.clone());
+  const door = new Mesh(boxGeometry(0.06, 2.3, doorW), glass.clone());
   door.position.set(x1 + 0.08, 1.31, zDoor); g.add(door);
   const doorBody = phys.world.createRigidBody(phys.R.RigidBodyDesc.kinematicPositionBased().setTranslation(door.position.x, door.position.y, door.position.z));
   const doorCollider = phys.world.createCollider(phys.R.ColliderDesc.cuboid(0.05, 1.15, doorW / 2).setCollisionGroups((GROUP.STATIC << 16) | 0xffff), doorBody);
   // counter, shelves, tables
-  const wood = new THREE.MeshStandardMaterial({ map: woodMat.map, color: 0x8a5a3a, roughness: 0.55 });
-  const stone = new THREE.MeshStandardMaterial({ color: 0xe7e2da, roughness: 0.25, metalness: 0 });
+  const wood = new Material({ map: woodMat.map, color: 0x8a5a3a, roughness: 0.55, name: 'wood' });
+  const stone = new Material({ color: 0xe7e2da, roughness: 0.25, metalness: 0, name: 'stone' });
   plain(1.0, 1.05, 6.5, wood, x0 + 1.7, 0.68, (z0 + z1) / 2 - 2.5);
   plain(1.1, 0.06, 6.6, stone, x0 + 1.7, 1.23, (z0 + z1) / 2 - 2.5, false);
   plain(0.3, 0.05, 5, wood, x0 + 0.35, 1.9, (z0 + z1) / 2 - 2.5, false);
@@ -395,23 +395,23 @@ async function buildCafe(group: THREE.Group, phys: Physics, surfaces: Map<number
   const cup = (await loadGLB('cup')).scene;
   for (let i = 0; i < 6; i++) { const c = cup.clone(); c.position.set(x0 + 1.6, 1.26, (z0 + z1) / 2 - 5 + i * 0.9); g.add(c); }
   for (const [tx, tz] of [[x0 + 4.4, z0 + 3], [x0 + 4.4, z0 + 6.2], [x0 + 6.2, z1 - 2.4], [x0 + 4.4, z1 - 4.8]] as [number, number][]) {
-    const top = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, 0.04, 28), stone); top.position.set(tx, 0.92, tz); top.castShadow = true; g.add(top);
-    const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.25, 0.75, 16), MAT.metal(0x1c1d20)); leg.position.set(tx, 0.53, tz); g.add(leg);
-    surfaces.set(phys.fixedBox(new THREE.Vector3(tx, 0.55, tz), new THREE.Vector3(0.4, 0.4, 0.4)).handle, 'wood');
+    const top = new Mesh(cylinderGeometry(0.42, 0.42, 0.04, 28), stone); top.position.set(tx, 0.92, tz); top.castShadow = true; g.add(top);
+    const leg = new Mesh(cylinderGeometry(0.05, 0.25, 0.75, 16), MAT.metal(0x1c1d20)); leg.position.set(tx, 0.53, tz); g.add(leg);
+    surfaces.set(phys.fixedBox(new Vec3(tx, 0.55, tz), new Vec3(0.4, 0.4, 0.4)).handle, 'wood');
     for (const a of [0, Math.PI]) {
-      const seat = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 0.05, 20), wood); seat.position.set(tx + Math.cos(a) * 0.75, 0.62, tz + Math.sin(a) * 0.75); seat.castShadow = true; g.add(seat);
-      const sleg = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.46, 8), MAT.metal(0x1c1d20)); sleg.position.set(seat.position.x, 0.38, seat.position.z); g.add(sleg);
+      const seat = new Mesh(cylinderGeometry(0.2, 0.2, 0.05, 20), wood); seat.position.set(tx + Math.cos(a) * 0.75, 0.62, tz + Math.sin(a) * 0.75); seat.castShadow = true; g.add(seat);
+      const sleg = new Mesh(cylinderGeometry(0.03, 0.03, 0.46, 8), MAT.metal(0x1c1d20)); sleg.position.set(seat.position.x, 0.38, seat.position.z); g.add(sleg);
     }
   }
   // pendant lamps: warm 2700 K bounded lights (photometric intensity in candela)
   for (const lz of [z0 + 3.5, (z0 + z1) / 2, z1 - 3.5]) {
-    const shade = new THREE.Mesh(new THREE.ConeGeometry(0.28, 0.3, 24, 1, true), new THREE.MeshStandardMaterial({ color: 0x1b1b1b, roughness: 0.6, side: THREE.DoubleSide, emissive: 0xffb46b, emissiveIntensity: 0.4 }));
+    const shade = new Mesh(coneGeometry(0.28, 0.3, 24, true), new Material({ color: 0x1b1b1b, roughness: 0.6, side: 'double', emissive: 0xffb46b, emissiveIntensity: 0.4, name: 'shade' }));
     shade.position.set(x0 + 4.6, 3.1, lz); g.add(shade);
-    const bulb = new THREE.Mesh(new THREE.SphereGeometry(0.07, 12, 8), MAT.emissive(0xffc98a, 6)); bulb.position.set(x0 + 4.6, 2.98, lz); g.add(bulb);
-    if (lz === (z0 + z1) / 2) { const l = new THREE.PointLight(0xffc28a, 60, 12, 2); l.position.set(x0 + 4.6, 2.9, lz); g.add(l); } // one real light; the others are emissive only
+    const bulb = new Mesh(sphereGeometry(0.07, 12, 8), MAT.emissive(0xffc98a, 6)); bulb.position.set(x0 + 4.6, 2.98, lz); g.add(bulb);
+    if (lz === (z0 + z1) / 2) { const l = new PointLight(0xffc28a, 60, 12, 2); l.position.set(x0 + 4.6, 2.9, lz); g.add(l); } // one real light; the others are emissive only
   }
   // awning + sign
-  const awning = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.1, z1 - z0).translate(0.9, 0, 0), MAT.fabric(0x6b2a24));
+  const awning = new Mesh(boxGeometry(1.8, 0.1, z1 - z0).translate(0.9, 0, 0), MAT.fabric(0x6b2a24));
   awning.position.set(x1 + 0.15, 3.3, (z0 + z1) / 2); awning.rotation.z = -0.3; awning.castShadow = true; g.add(awning);
   const sign = signs.create(signEntity('cafe-sign', 'shopfront', CAFE.name.toUpperCase(), 6.5, 0.85, {
     emission: { hue: 70, chroma: 0.11, lightness: 0.9, brightness: 0.9 }, schedule: { onHour: 6, offHour: 24 }, preferredReadDistance: 35,
@@ -427,12 +427,12 @@ async function buildCafe(group: THREE.Group, phys: Physics, surfaces: Map<number
   });
   group.add(g);
   return {
-    door, doorCollider, doorWorld: new THREE.Vector3(x1, 0, zDoor), interior: new THREE.Box3(new THREE.Vector3(x0, 0, z0), new THREE.Vector3(x1, H, z1)),
-    music: new THREE.Vector3(x0 + 1, 2.5, (z0 + z1) / 2), counter: new THREE.Vector3(x0 + 2.6, 0.16, (z0 + z1) / 2 - 2.5), sign: 'cafe-sign',
+    door, doorCollider, doorWorld: new Vec3(x1, 0, zDoor), interior: new Box3(new Vec3(x0, 0, z0), new Vec3(x1, H, z1)),
+    music: new Vec3(x0 + 1, 2.5, (z0 + z1) / 2), counter: new Vec3(x0 + 2.6, 0.16, (z0 + z1) / 2 - 2.5), sign: 'cafe-sign',
   };
 }
 
-function muralMesh(w: number, h: number, x: number, y: number, z: number): THREE.Mesh {
+function muralMesh(w: number, h: number, x: number, y: number, z: number): Mesh {
   const c = document.createElement('canvas');
   c.width = 1024; c.height = Math.round(1024 * (h / w));
   const ctx = c.getContext('2d')!;
@@ -444,7 +444,7 @@ function muralMesh(w: number, h: number, x: number, y: number, z: number): THREE
     const cx = (i + 0.5) * (c.width / hues.length), cy = c.height * (0.45 + 0.25 * Math.sin(i * 1.7));
     const r = c.height * (0.28 + 0.12 * ((i * 5) % 12) / 12);
     const grd = ctx.createRadialGradient(cx, cy, r * 0.1, cx, cy, r);
-    const col = new THREE.Color().setHSL(hues[i]! / 360, 0.55, 0.55);
+    const col = new Color().setHSL(hues[i]! / 360, 0.55, 0.55);
     grd.addColorStop(0, `#${col.getHexString()}`); grd.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.fillStyle = grd; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
   }
@@ -453,59 +453,58 @@ function muralMesh(w: number, h: number, x: number, y: number, z: number): THREE
   for (let k = 0; k <= 12; k++) { const a = ((k * 5) % 12) / 12 * Math.PI * 2; const px = c.width / 2 + Math.cos(a) * c.height * 0.38, py = c.height / 2 + Math.sin(a) * c.height * 0.38; if (k) ctx.lineTo(px, py); else ctx.moveTo(px, py); }
   ctx.stroke();
   ctx.fillStyle = css(pal.wall, 0.9); ctx.font = '600 34px Inter, sans-serif'; ctx.fillText('⟨5⟩ ⊂ ℤ/12 · a walk of fourths', 24, c.height - 26);
-  const tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
-  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.85 }));
+  const tex = canvasTexture(c, true);
+  tex.anisotropy = 8; tex.wrap = 'clamp';
+  const m = new Mesh(planeGeometry(w, h), new Material({ map: tex, roughness: 0.85, name: 'mural' }));
   m.position.set(x, y, z);
   m.name = 'mural (authored)';
   m.receiveShadow = true;
   return m;
 }
 
-function buildStreetlights(group: THREE.Group, pts: THREE.Vector3[], phys: Physics) {
+function buildStreetlights(group: Group, pts: Vec3[], phys: Physics) {
   const n = pts.length;
   if (!n) return;
-  const poleGeo = new THREE.CylinderGeometry(0.07, 0.11, 7.5, 10).translate(0, 3.75, 0);
-  const armGeo = new THREE.BoxGeometry(0.08, 0.08, 1.9).translate(0, 7.35, 0.9);
-  const headGeo = new THREE.BoxGeometry(0.34, 0.12, 0.7).translate(0, 7.28, 1.75);
-  const poles = new THREE.InstancedMesh(poleGeo, MAT.metal(0x3b3e42), n);
-  const arms = new THREE.InstancedMesh(armGeo, MAT.metal(0x3b3e42), n);
-  const heads = new THREE.InstancedMesh(headGeo, MAT.emissive(0xffd6a0, 0), n);
+  const poleGeo = cylinderGeometry(0.07, 0.11, 7.5, 10).translate(0, 3.75, 0);
+  const armGeo = boxGeometry(0.08, 0.08, 1.9).translate(0, 7.35, 0.9);
+  const headGeo = boxGeometry(0.34, 0.12, 0.7).translate(0, 7.28, 1.75);
+  const poles = new InstancedMesh(poleGeo, MAT.metal(0x3b3e42), n);
+  const arms = new InstancedMesh(armGeo, MAT.metal(0x3b3e42), n);
+  const heads = new InstancedMesh(headGeo, MAT.emissive(0xffd6a0, 0), n);
   heads.name = 'streetlight-heads';
-  const m = new THREE.Matrix4(), q = new THREE.Quaternion();
+  const m = new Mat4(), q = new Quat();
   pts.forEach((p, i) => {
-    q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), (p as Lamp).yaw ?? 0);
-    m.compose(p, q, new THREE.Vector3(1, 1, 1));
+    q.setFromAxisAngle(new Vec3(0, 1, 0), (p as Lamp).yaw ?? 0);
+    m.compose(p, q, new Vec3(1, 1, 1));
     poles.setMatrixAt(i, m); arms.setMatrixAt(i, m); heads.setMatrixAt(i, m);
-    phys.fixedBox(new THREE.Vector3(p.x, 3, p.z), new THREE.Vector3(0.12, 3, 0.12));
+    phys.fixedBox(new Vec3(p.x, 3, p.z), new Vec3(0.12, 3, 0.12));
     // lamp head position in world for light pooling
-    const head = new THREE.Vector3(0, 7.2, 1.75).applyQuaternion(q).add(p);
+    const head = new Vec3(0, 7.2, 1.75).applyQuaternion(q).add(p);
     (p as Lamp).head = head;
   });
   for (const im of [poles, arms, heads]) { im.castShadow = im !== heads; im.receiveShadow = true; group.add(im); }
 }
 
-async function buildPalms(group: THREE.Group, spots: { x: number; z: number; r: number; s: number }[], phys: Physics) {
+async function buildPalms(group: Group, spots: { x: number; z: number; r: number; s: number }[], phys: Physics) {
   if (!spots.length) return;
   // instanced street trees: simplified derivative, merged by material first (≈900 sub-meshes → a few draws)
   const palm = consolidate((await loadGLB('palm-lod')).scene, () => false);
   palm.updateMatrixWorld(true);
-  const meshes: THREE.Mesh[] = [];
-  palm.traverse((o) => { if ((o as THREE.Mesh).isMesh) meshes.push(o as THREE.Mesh); });
-  const m = new THREE.Matrix4(), q = new THREE.Quaternion(), sc = new THREE.Vector3();
+  const meshes: Mesh[] = [];
+  palm.traverse((o) => { if (o instanceof Mesh) meshes.push(o); });
+  const m = new Mat4(), q = new Quat(), sc = new Vec3();
   for (const mesh of meshes) {
-    const mat = (mesh.material as THREE.MeshStandardMaterial).clone();
-    mat.side = THREE.DoubleSide; // fronds are single-sheet geometry
-    const im = new THREE.InstancedMesh(mesh.geometry, mat, spots.length);
+    const mat = mesh.material.clone();
+    mat.side = 'double'; // fronds are single-sheet geometry
+    const im = new InstancedMesh(mesh.geometry, mat, spots.length);
     spots.forEach((s, i) => {
-      q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), s.r);
+      q.setFromAxisAngle(new Vec3(0, 1, 0), s.r);
       sc.setScalar(s.s);
-      m.compose(new THREE.Vector3(s.x, 0.15, s.z), q, sc).multiply(mesh.matrixWorld);
+      m.compose(new Vec3(s.x, 0.15, s.z), q, sc).multiply(mesh.matrixWorld);
       im.setMatrixAt(i, m);
     });
     im.castShadow = true; im.receiveShadow = true;
     group.add(im);
   }
-  for (const s of spots) phys.fixedBox(new THREE.Vector3(s.x, 2, s.z), new THREE.Vector3(0.22, 2, 0.22));
+  for (const s of spots) phys.fixedBox(new Vec3(s.x, 2, s.z), new Vec3(0.22, 2, 0.22));
 }

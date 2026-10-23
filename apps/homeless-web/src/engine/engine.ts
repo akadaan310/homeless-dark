@@ -1,7 +1,13 @@
 // HOMELESS engine: one authoritative world (WorldAuthority), Rapier physics at a fixed
-// 60 Hz step, Three.js projection, Web Audio + haptics projections, and a throttled
-// HUD store for React. No React rerender happens per frame.
-import * as THREE from 'three';
+// 60 Hz step, the ASTRO WebGL2 projection (own renderer; no Three.js), Web Audio + haptics
+// projections, and a throttled HUD store for React. No React rerender happens per frame.
+import { Scene, Camera, Vec3 } from '@astro/core';
+import { Renderer } from '@astro/render-webgl2';
+import { probeWebGPU, type WebGPUProbe } from '@astro/render-webgpu';
+import { stereoRig, DEFAULT_STEREO } from '@astro/optics';
+import { formatView, observe, type LensId } from '@astro/world-adapter';
+import { GlobeView, SkyView, GlyphView, PixelLens } from './lenses';
+import { applyWeather, weather } from './materials';
 import { BorneGraph, type CommittedEvent } from '@dark/core';
 import { SubjectRegistry } from '@dark/subjects';
 import { HapticScheduler, SensoryTelemetry, cuesFor, thunderDelay, type SurfaceKind } from '@dark/somatostratum';
@@ -41,9 +47,13 @@ export interface HudState {
 const START_UTC = Date.UTC(2026, 9, 21, 21, 35); // 17:35 EDT in Tampa: dry late afternoon
 
 export class Engine {
-  renderer!: THREE.WebGLRenderer;
-  scene = new THREE.Scene();
-  camera = new THREE.PerspectiveCamera(60, 1, 0.1, 12000);
+  renderer!: Renderer;
+  scene = new Scene();
+  camera = (() => { const c = new Camera(); c.fov = 60; c.near = 0.1; c.far = 12000; c.updateProjectionMatrix(); return c; })();
+  /** Active ASTRO lens (§057–§061): every lens projects the same committed world. */
+  lens: LensId = 'player';
+  private lenses: { globe?: GlobeView; sky?: SkyView; glyph?: GlyphView; pixel?: PixelLens } = {};
+  webgpu: WebGPUProbe | null = null;
   phys = new Physics();
   atmo!: Atmosphere;
   audio = new AudioEngine();
@@ -99,17 +109,17 @@ export class Engine {
   setLoading(msg: string | null, progress = 0) { this.hud.loading = msg; this.hud.loadProgress = progress; this.publish(); }
 
   async init(): Promise<void> {
-    const r = new THREE.WebGLRenderer({ canvas: this.canvas, antialias: this.quality === 'high', powerPreference: 'high-performance', preserveDrawingBuffer: true });
-    r.setPixelRatio(Math.min(window.devicePixelRatio, this.quality === 'high' ? 2 : 1.25));
-    r.shadowMap.enabled = true;
-    r.shadowMap.type = THREE.PCFSoftShadowMap;
+    const r = new Renderer(this.canvas, { antialias: this.quality === 'high', powerPreference: 'high-performance', preserveDrawingBuffer: true });
+    r.pixelRatio = Math.min(window.devicePixelRatio, this.quality === 'high' ? 2 : 1.25);
     this.renderer = r;
+    void probeWebGPU().then((p) => { this.webgpu = p; });
     this.canvas.addEventListener('webglcontextlost', (e) => { e.preventDefault(); this.contextLost = true; this.hud.error = 'Graphics context lost — restoring…'; this.publish(); });
     this.canvas.addEventListener('webglcontextrestored', () => { this.contextLost = false; this.hud.error = null; this.publish(); });
     this.resize();
     window.addEventListener('resize', () => this.resize());
     this.atmo = new Atmosphere(r, this.scene, this.quality);
     this.input = new Input(this.canvas);
+    await this.signs.init();
     this.setLoading('Initialising Rapier physics (WASM)', 0.05);
     await this.phys.init();
     this.rig = new CameraRig(this.camera, this.phys);
@@ -126,7 +136,7 @@ export class Engine {
 
   resize() {
     const w = this.canvas.clientWidth || window.innerWidth, h = this.canvas.clientHeight || window.innerHeight;
-    this.renderer.setSize(w, h, false);
+    this.renderer.setSize(w, h);
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
   }
@@ -219,7 +229,7 @@ export class Engine {
   stop() { cancelAnimationFrame(this.loopHandle); }
 
   /** Test/capture hook: stop the loop and render exactly one frame (deterministic screenshots on slow GPUs). */
-  freeze(): void { this.stop(); this.renderer.render(this.scene, this.camera); }
+  freeze(): void { this.stop(); this.draw(0); }
   thaw(): void { this.start(); }
 
   /** Capture helper: advance wetness and exposure dynamics by `worldSeconds` in closed form (no frames rendered). */
@@ -243,7 +253,7 @@ export class Engine {
     return (((d.getUTCHours() + d.getUTCMinutes() / 60 + lon / 15) % 24) + 24) % 24;
   }
 
-  playerPos(): THREE.Vector3 { return this.player.feet(); }
+  playerPos(): Vec3 { return this.player.feet(); }
 
   resetToSpawn() {
     if (!this.region) return;
@@ -260,8 +270,8 @@ export class Engine {
   renderMs = 0;
   private frame(dt: number, now: number) {
     this.frames++;
-    if (!this.region) { this.renderer.render(this.scene, this.camera); return; }
-    if (this.paused) { this.renderer.render(this.scene, this.camera); return; }
+    if (!this.region) { this.draw(dt); return; }
+    if (this.paused) { this.draw(dt); return; }
     const region = this.region;
     this.gameUtc += dt * 1000 * this.timeScale;
     const worldDt = dt * this.timeScale;
@@ -327,10 +337,10 @@ export class Engine {
       this.rig.update(dt, focus.pos, focus.heading, focus.eye, focus.quat);
     } else {
       this.rig.setMode('follow');
-      this.rig.update(dt, new THREE.Vector3(feet.x, feet.y + 1.55, feet.z));
+      this.rig.update(dt, new Vec3(feet.x, feet.y + 1.55, feet.z));
     }
     // interior detection (exposure + audio muffling + rain roof)
-    const inside = region.interiors.some((b) => b.containsPoint(new THREE.Vector3(feet.x, 1, feet.z))) || (!!focus && (focus.mode === 'vehicle' || focus.mode === 'cabin' || focus.mode === 'cockpit') && !this.onFoot);
+    const inside = region.interiors.some((b) => b.containsPoint(new Vec3(feet.x, 1, feet.z))) || (!!focus && (focus.mode === 'vehicle' || focus.mode === 'cabin' || focus.mode === 'cockpit') && !this.onFoot);
     this.atmo.interiorFactor += ((inside ? 1 : 0) - this.atmo.interiorFactor) * (1 - Math.exp(-dt * 2.5));
     this.audio.setInterior(this.atmo.interiorFactor * 0.85);
     this.audio.setRain(this.atmo.state.rain, inside);
@@ -338,8 +348,9 @@ export class Engine {
 
     this.atmo.update(new Date(this.gameUtc), region.lat, region.lon, dt, feet, this.camera, dt * Math.min(this.timeScale, 60));
     this.signs.update(now / 1000, this.atmo.state.night, this.atmo.state.wet.wetness, hour);
+    weather.uTime.value = (this.gameUtc - START_UTC) / 1000;
     const r0 = performance.now();
-    this.renderer.render(this.scene, this.camera);
+    this.draw(dt);
     this.renderMs = performance.now() - r0;
 
     // telemetry
@@ -351,7 +362,83 @@ export class Engine {
     if (this.hudTimer > 0.2) { this.hudTimer = 0; this.updateHud(hour, inside); }
   }
 
-  playerVel = new THREE.Vector3();
+  playerVel = new Vec3();
+
+  // ---------------------------------------------------------------- ASTRO projection
+  setLens(l: LensId) {
+    this.lens = l;
+    if (l !== 'pixel') this.lenses.pixel?.step(false);
+    this.trace('IV Imagistratum', `lens → ${l} (projection only; world authority unchanged)`);
+    this.publish();
+  }
+  /** Shareable read-only view address of what is on screen (§102). */
+  viewAddress(): string {
+    return formatView({ region: this.region?.id ?? 'none', lens: this.lens, utc: new Date(this.gameUtc).toISOString().slice(0, 19) + 'Z', lat: this.region?.lat ?? 0, lon: this.region?.lon ?? 0, yaw: this.rig?.yaw ?? 0, pitch: this.rig?.pitch ?? 0 });
+  }
+  /** Project a world point to normalised screen coordinates (0..1, y up) or null if behind. */
+  screenOf(p: Vec3): [number, number] | null {
+    this.camera.updateView();
+    const v = p.clone().applyMatrix4(this.camera.view);
+    if (v.z > -0.1) return null;
+    const c = v.applyMatrix4(this.camera.projection);
+    return [(c.x + 1) / 2, (c.y + 1) / 2];
+  }
+  private draw(dt: number) {
+    if (this.noDraw) return;
+    const r = this.renderer;
+    applyWeather(r.globals);
+    const w = r.width, h = r.height, utc = new Date(this.gameUtc);
+    const lat = this.region?.lat ?? 27.96, lon = this.region?.lon ?? -82.5, yaw = this.rig?.yaw ?? 0, pitch = this.rig?.pitch ?? 0;
+    r.lensMode = 'normal';
+    if (this.lens === 'stereo' || this.lens === 'anaglyph') {
+      const ana = this.lens === 'anaglyph';
+      r.lensMode = ana ? 'anaglyph' : 'sideBySide';
+      const aspect = ana ? w / h : w / 2 / h;
+      const rig = stereoRig({ position: this.camera.position, quaternion: this.camera.quaternion }, { ...DEFAULT_STEREO, vergenceDistance: Math.max(2, this.rig?.distance ?? 6) }, aspect);
+      const eyes = [rig.left, rig.right].map((e) => { const c = new Camera(); c.position.copy(e.position); c.quaternion.copy(e.quaternion); Object.assign(c, { fov: this.camera.fov, aspect, near: this.camera.near, far: this.camera.far }); c.updateProjectionMatrix(); return c; });
+      r.render(this.scene, this.camera, eyes);
+      return;
+    }
+    if (this.lens === 'globe' || this.lens === 'sky' || this.lens === 'glyph') {
+      const sky = r.sky; r.sky = null; // space/catalogue lenses have no atmosphere
+      const shadows = r.shadowsEnabled; r.shadowsEnabled = this.lens !== 'sky';
+      if (this.lens === 'globe') { const g = (this.lenses.globe ??= new GlobeView()); g.update(lat, lon, utc, w / h, yaw, pitch); r.render(g.scene, g.camera); this.witness.globe = g.facts; }
+      else if (this.lens === 'sky') { const s = (this.lenses.sky ??= new SkyView(this.signs.atlas)); s.update(lat, lon, utc, w / h, yaw, pitch); r.render(s.scene, s.camera); this.witness.sky = s.facts; }
+      else { const g = (this.lenses.glyph ??= new GlyphView(this.signs.atlas)); g.update(dt, w / h); r.render(g.scene, g.camera); this.witness.glyph = g.facts; }
+      r.sky = sky; r.shadowsEnabled = shadows;
+      return;
+    }
+    if (this.lens === 'pixel') {
+      const px = (this.lenses.pixel ??= new PixelLens(r));
+      if (this.atmo.state.rain > 0.1) for (let i = 0; i < 3; i++) px.impulse(Math.random(), Math.random() * 0.45, 0.25 * this.atmo.state.rain, null);
+      px.step(true);
+      this.witness.pixel = px.facts;
+    }
+    r.render(this.scene, this.camera);
+  }
+  /** Pixel lens: a committed event at a world point becomes a field impulse at its screen sample. */
+  private fieldEvent(pos: Vec3, amp: number, id: string | undefined) {
+    if (this.lens !== 'pixel' || !this.lenses.pixel) return;
+    const s = this.screenOf(pos);
+    if (s) this.lenses.pixel.impulse(s[0], s[1], amp, id ?? null);
+  }
+  pixelWitness() { return this.lenses.pixel?.witness() ?? null; }
+  projection() { return observe(this.world as never, performance.now()); }
+
+  // ---------------------------------------------------------------- deterministic replay (§101)
+  /** Drive N fixed frames with scripted input (no rAF): the legacy oracle runs the identical script. */
+  replay(script: (frame: number) => Partial<ReturnType<Input['read']>>, frames: number, dt = 1 / 60, render = false): void {
+    this.stop();
+    const base = { move: { x: 0, y: 0 }, look: { dx: 0, dy: 0 }, run: false, jump: false, interact: false, vehicle: false, brake: false, up: false, down: false, zoom: 0 };
+    for (let f = 0; f < frames; f++) {
+      this.input.scripted = () => ({ ...base, ...script(f) });
+      this.lastRealMs = dt * 1000;
+      if (render) this.frame(dt, f * dt * 1000); else this.frameNoDraw(dt, f * dt * 1000);
+    }
+    this.input.scripted = null;
+  }
+  private noDraw = false;
+  private frameNoDraw(dt: number, now: number) { this.noDraw = true; try { this.frame(dt, now); } finally { this.noDraw = false; } }
   /** Scenario/test handle set by the active region (not used by gameplay). */
   debug: Record<string, any> = {};
   programSign: ((address: string) => { ok: boolean; reason: string }) | null = null;
@@ -364,17 +451,18 @@ export class Engine {
   closeDialog() { this.dialog = null; this.hud.dialog = null; this.publish(); }
   lastInput: ReturnType<Input['read']> | null = null;
 
-  footstep(actor: string, pos: THREE.Vector3, speed: number) {
+  footstep(actor: string, pos: Vec3, speed: number) {
     const surface = this.surfaceAt(pos);
     const ev = this.world.commit({ type: 'FOOTSTEP', actor, payload: { surface, speed: Math.round(speed * 10) / 10, wet: Math.round(this.atmo.state.wet.wetness * 100) / 100 } });
     const id = 'id' in ev ? ev.id : undefined;
     this.audio.footstep(surface, pos, speed, this.atmo.state.wet.wetness, 0, id);
+    this.fieldEvent(pos, 0.6, id);
     if (id) { const t = performance.now() / 1000; this.telemetry.log(id, 'animation', t, 'foot contact'); this.telemetry.log(id, 'audio', t, `footstep:${surface}`); }
     this.stepTimer++;
   }
 
-  surfaceAt(pos: THREE.Vector3): SurfaceKind {
-    const hit = this.phys.ray(new THREE.Vector3(pos.x, pos.y + 0.5, pos.z), new THREE.Vector3(0, -1, 0), 2, GROUP.STATIC, this.player?.collider);
+  surfaceAt(pos: Vec3): SurfaceKind {
+    const hit = this.phys.ray(new Vec3(pos.x, pos.y + 0.5, pos.z), new Vec3(0, -1, 0), 2, GROUP.STATIC, this.player?.collider);
     const s = hit ? this.region?.surfaces.get(hit.collider.handle) ?? 'unknown' : 'unknown';
     return s === 'asphalt' && this.atmo.state.wet.wetness > 0.35 ? 'wet_asphalt' : s;
   }
@@ -412,13 +500,14 @@ export class Engine {
     const ft = [...this.frameTimes].sort((a, b) => a - b);
     const q = (p: number) => ft[Math.min(ft.length - 1, Math.floor(ft.length * p))] ?? 0;
     const info = this.renderer.info;
+    const ri = { backend: this.renderer.backend, hdr: info.hdr, msaa: info.msaa, gpuMs: info.gpuMs === null ? null : +info.gpuMs.toFixed(2), cpuMs: +info.cpuMs.toFixed(2), programs: info.programs, passes: info.passes.join('→'), shadowCalls: info.shadowCalls, culled: info.culled, device: this.renderer.caps.renderer, webgpu: this.webgpu ? (this.webgpu.available ? 'available' : `NOT_RUN: ${this.webgpu.reason}`) : 'probing', lens: this.lens };
     const st = this.atmo.state;
     const now = performance.now();
     this.captions = this.captions.filter((c) => c.until > now);
     const hh = Math.floor(hour), mm = Math.floor((hour - hh) * 60);
     Object.assign(this.hud, {
       fps: ft.length ? Math.round(1000 / q(0.5)) : 0, p50: +q(0.5).toFixed(1), p95: +q(0.95).toFixed(1), p99: +q(0.99).toFixed(1),
-      drawCalls: info.render.calls, triangles: info.render.triangles,
+      drawCalls: info.calls, triangles: Math.round(info.triangles),
       heapMB: (performance as unknown as { memory?: { usedJSHeapSize: number } }).memory ? Math.round((performance as unknown as { memory: { usedJSHeapSize: number } }).memory.usedJSHeapSize / 1048576) : null,
       localTime: `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')} local solar`, utc: new Date(this.gameUtc).toISOString().slice(0, 16).replace('T', ' ') + ' UTC',
       timeScale: this.timeScale, profile: st.profile === 'blend' ? Object.entries(st.weights).map(([k, v]) => `${k} ${(v! * 100).toFixed(0)}%`).join(' / ') : st.profile,
@@ -427,7 +516,7 @@ export class Engine {
       captions: [...this.captions], dialog: this.dialog,
       audio: this.audio.unlocked, hrtf: this.audio.hrtf, haptics: this.haptics.preference, hapticDriver: this.haptics.driverName,
       refusals: this.world.refusals.slice(-6).reverse().map((r) => ({ type: r.ev.type, reason: r.reason })),
-      extra: { ...(this.region?.hudExtra?.() ?? {}), inside, colorAuditOk: colorAudit.every((c) => c.ok), colorAuditCount: colorAudit.length, physicsStepMs: +this.phys.stepMs.toFixed(2), journal: this.world.journal.length },
+      extra: { ...(this.region?.hudExtra?.() ?? {}), inside, colorAuditOk: colorAudit.every((c) => c.ok), colorAuditCount: colorAudit.length, physicsStepMs: +this.phys.stepMs.toFixed(2), journal: this.world.journal.length, renderer: ri, view: this.viewAddress() },
     });
     this.publish();
   }
