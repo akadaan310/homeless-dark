@@ -1,0 +1,126 @@
+{
+ "frames": 120,
+ "compare": {
+  "maxErr": 0.0008232593536376953,
+  "maxBend": 4.845920085906982
+ },
+ "series": [
+  {
+   "f": 1,
+   "bendGpu": 0.00021096209766897014,
+   "bendCpu": 0.00021096101104469046,
+   "press": 0
+  },
+  {
+   "f": 10,
+   "bendGpu": 0.007797554435310362,
+   "bendCpu": 0.007797773776722965,
+   "press": 0
+  },
+  {
+   "f": 19,
+   "bendGpu": 0.01719951917102369,
+   "bendCpu": 0.01720027668780681,
+   "press": 0
+  },
+  {
+   "f": 28,
+   "bendGpu": 0.09964174695750451,
+   "bendCpu": 0.09954955806348449,
+   "press": 1
+  },
+  {
+   "f": 37,
+   "bendGpu": 1.6329469573754873,
+   "bendCpu": 1.632871664485986,
+   "press": 1
+  },
+  {
+   "f": 46,
+   "bendGpu": 1.2566695847147897,
+   "bendCpu": 1.256669136789819,
+   "press": 1
+  },
+  {
+   "f": 55,
+   "bendGpu": 1.0036113982506447,
+   "bendCpu": 1.0036125690366295,
+   "press": 1
+  },
+  {
+   "f": 64,
+   "bendGpu": 1.6365738533221175,
+   "bendCpu": 1.63661303279583,
+   "press": 1
+  },
+  {
+   "f": 73,
+   "bendGpu": 1.2701721375031385,
+   "bendCpu": 1.2701725476527774,
+   "press": 1
+  },
+  {
+   "f": 82,
+   "bendGpu": 1.0008147586419438,
+   "bendCpu": 1.000832215767779,
+   "press": 1
+  },
+  {
+   "f": 91,
+   "bendGpu": 1.6355718771469387,
+   "bendCpu": 1.6354979898587427,
+   "press": 1
+  },
+  {
+   "f": 100,
+   "bendGpu": 1.2648129558340644,
+   "bendCpu": 1.264812932287516,
+   "press": 1
+  },
+  {
+   "f": 109,
+   "bendGpu": 1.0028981346720185,
+   "bendCpu": 1.0029294479620245,
+   "press": 0.9622387886047363
+  },
+  {
+   "f": 118,
+   "bendGpu": 1.105283547204875,
+   "bendCpu": 1.1052478150821972,
+   "press": 0.9214590787887573
+  }
+ ],
+ "tel": {
+  "grassSteps": 120,
+  "contacts": 1,
+  "rippleSteps": 120,
+  "splashes": 5,
+  "drops": 0,
+  "gpuPassMs": 0.10000000009313226,
+  "window": [
+   -6,
+   -6
+  ],
+  "blades": 120000
+ },
+ "simMs": 4024.3000000000466,
+ "caps": {
+  "floatRT": true,
+  "floatLinear": true,
+  "maxSamples": 4,
+  "anisotropy": 16,
+  "timer": true,
+  "maxTexture": 8192,
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "vendor": "Google Inc. (Google)"
+ },
+ "blocked": null,
+ "digests": {
+  "grass": "89def3a1d0da8a6c",
+  "contact": "01f460a5167c8992"
+ }
+}
+[warning] [.WebGL-0x2f640011a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x2f640011a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x2f640011a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x2f640011a000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)

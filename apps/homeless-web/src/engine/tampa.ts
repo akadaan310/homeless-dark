@@ -26,6 +26,9 @@ const carriageway = (r: TampaCell['roads'][number]) => (r.class === 'primary' ? 
 
 export type Lamp = Vec3 & { yaw?: number; head?: Vec3 };
 
+/** A storefront pane admitted as breakable glass (world entity id → render mesh + static collider). */
+export interface CafePane { id: string; mesh: Mesh; collider: RAPIER.Collider; x: number; za: number; zb: number; y0: number; height: number; mullions: Mesh[] }
+
 export const CAFE = { x0: -32, x1: -24, n0: 20, n1: 36, doorN: 28, name: 'Spruce Corner Café' } as const;
 
 /** Fictional storefront names (authored; no real business is implied). */
@@ -37,7 +40,7 @@ export interface TampaWorld {
   streetlights: Lamp[];
   spawn: Vec3;
   carSpawn: { pos: Vec3; yaw: number };
-  cafe: { door: Mesh; doorCollider: RAPIER.Collider; doorWorld: Vec3; interior: Box3; music: Vec3; counter: Vec3; sign: string };
+  cafe: { door: Mesh; doorCollider: RAPIER.Collider; doorWorld: Vec3; interior: Box3; music: Vec3; counter: Vec3; sign: string; panes: CafePane[] };
   trafficLanes: { pts: P2[]; dir: 1 | -1; name: string }[];
   signalHeads: Mesh[];
   stats: { roads: number; buildings: number; sidewalkM: number; triangles: number; drawGroups: number };
@@ -365,12 +368,16 @@ async function buildCafe(group: Group, phys: Physics, surfaces: Map<number, Surf
   const glass = MAT.glass();
   const doorW = 1.8;
   const segA = [z0, zDoor - doorW / 2], segB = [zDoor + doorW / 2, z1];
-  for (const [za, zb] of [segA, segB] as [number, number][]) {
+  const panes: CafePane[] = [];
+  for (const [za, zb, id] of [[segA[0], segA[1], 'glass/cafe-south'], [segB[0], segB[1], 'glass/cafe-north']] as [number, number, string][]) {
     plain(0.2, 0.6, zb - za, plasterMat, x1, 0.3, (za + zb) / 2);
-    const pane = new Mesh(boxGeometry(0.05, 2.6, zb - za), glass);
-    pane.position.set(x1, 1.9, (za + zb) / 2); g.add(pane);
-    surfaces.set(phys.fixedBox(pane.position.clone(), new Vec3(0.05, 1.3, (zb - za) / 2)).handle, 'concrete');
-    for (let z = za; z <= zb + 0.01; z += (zb - za) / 3) plain(0.12, 2.6, 0.08, MAT.metal(0x22252a), x1 + 0.02, 1.9, z, false);
+    const pane = new Mesh(boxGeometry(0.05, 2.6, zb - za), glass.clone());
+    pane.position.set(x1, 1.9, (za + zb) / 2); pane.name = id; pane.userData.contract = 'cafe-glass'; g.add(pane);
+    const collider = phys.fixedBox(pane.position.clone(), new Vec3(0.05, 1.3, (zb - za) / 2));
+    surfaces.set(collider.handle, 'concrete');
+    const mullions: Mesh[] = [];
+    for (let z = za; z <= zb + 0.01; z += (zb - za) / 3) mullions.push(plain(0.12, 2.6, 0.08, MAT.metal(0x22252a), x1 + 0.02, 1.9, z, false));
+    panes.push({ id, mesh: pane, collider, x: x1, za, zb, y0: 0.6, height: 2.6, mullions });
   }
   plain(0.3, H - 3.2, z1 - z0, plasterMat, x1, 3.2 + (H - 3.2) / 2, (z0 + z1) / 2);
   // south wall mural (sign class artist_mural): an authored generative painting from the interval orbit ⟨5⟩ ⊂ ℤ/12
@@ -432,7 +439,7 @@ async function buildCafe(group: Group, phys: Physics, surfaces: Map<number, Surf
   group.add(g);
   return {
     door, doorCollider, doorWorld: new Vec3(x1, 0, zDoor), interior: new Box3(new Vec3(x0, 0, z0), new Vec3(x1, H, z1)),
-    music: new Vec3(x0 + 1, 2.5, (z0 + z1) / 2), counter: new Vec3(x0 + 2.6, 0.16, (z0 + z1) / 2 - 2.5), sign: 'cafe-sign',
+    music: new Vec3(x0 + 1, 2.5, (z0 + z1) / 2), counter: new Vec3(x0 + 2.6, 0.16, (z0 + z1) / 2 - 2.5), sign: 'cafe-sign', panes,
   };
 }
 

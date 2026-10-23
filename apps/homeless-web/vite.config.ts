@@ -40,7 +40,7 @@ export default defineConfig({
   build: {
     target: 'es2022', chunkSizeWarningLimit: 4000, sourcemap: false,
     // the game and the renderer conformance lab (§110) ship together; the Three oracle is a separate app
-    rollupOptions: { input: { main: path.resolve(__dirname, 'index.html'), lab: path.resolve(__dirname, 'astro-lab.html') } },
+    rollupOptions: { input: { main: path.resolve(__dirname, 'index.html'), lab: path.resolve(__dirname, 'astro-lab.html'), materials: path.resolve(__dirname, 'material-lab.html') } },
   },
   server: { host: true },
 });

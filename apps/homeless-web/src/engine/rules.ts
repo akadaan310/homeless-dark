@@ -6,7 +6,7 @@ import { applyImpact, newGlass, GLASS_DENSITY, type GlassSpec, type GlassState }
 /** Admitted, safely fictional glass (v4.1 §07): the café storefront panes. Not every window on Earth. */
 export const GLASS: Record<string, GlassSpec> = {
   'glass/cafe-south': { id: 'glass/cafe-south', width: 7.1, height: 2.6, thickness: 0.006, density: GLASS_DENSITY, seed: 11 },
-  'glass/cafe-north': { id: 'glass/cafe-north', width: 6.1, height: 2.6, thickness: 0.006, density: GLASS_DENSITY, seed: 23 },
+  'glass/cafe-north': { id: 'glass/cafe-north', width: 7.1, height: 2.6, thickness: 0.006, density: GLASS_DENSITY, seed: 23 },
 };
 
 const obj = (p: unknown): p is Record<string, unknown> => typeof p === 'object' && p !== null;

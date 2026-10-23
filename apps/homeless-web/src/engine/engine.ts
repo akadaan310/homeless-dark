@@ -208,7 +208,7 @@ export class Engine {
     this.scene.add(region.group);
     // material fields: grass only where the region declares real grass ground; ripples everywhere
     const mask = region.grass ? rasterMask(region.grass.size, this.quality === 'low' ? 1536 : 3072, region.grass.origin, region.grass.blockers) : null;
-    this.fields = new FieldSystem(this.renderer, mask ? { tex: mask.tex, origin: region.grass!.origin, size: region.grass!.size } : null, this.quality === 'low' ? 4500 : 15000);
+    this.fields = new FieldSystem(this.renderer, mask ? { tex: mask.tex, origin: region.grass!.origin, size: region.grass!.size } : null, this.quality === 'low' ? 9000 : 30000);
     if (this.fields.blades) this.scene.add(this.fields.blades);
     if (this.fields.blocked) this.trace('IV Imagistratum', `material fields BLOCKED: ${this.fields.blocked}`);
     this.scene.add(this.avatar.root);

@@ -103,7 +103,8 @@ void main() {
   vec2 side = vec2(cos(ang), sin(ang));
   vec3 wpos = vec3(root.x + side.x * position.x * fade + dir.x * along * fade, uGrassY + up * fade, root.y + side.y * position.x * fade + dir.y * along * fade);
   p = vec4(wpos, 1.0);
-  n = normalize(vec3(-side.y, 0.35 + 0.65 * s, side.x));
+  // thin blades: up-biased normal (no back-face darkening; approximates light transmitted through the blade)
+  n = normalize(vec3(-side.y * 0.35, 1.0, side.x * 0.35) + vec3(dir.x, 0.0, dir.y) * 0.4 * th);
   vec4 wp = p;
   vec3 wn = n;
 #else
@@ -322,7 +323,9 @@ void main() {
 #endif
   float metal = metalness;
   vec3 Ng = normalize(vNormal);
+#ifndef FEATURE_GRASS
   if (!gl_FrontFacing) Ng = -Ng;
+#endif
   vec3 N = Ng;
 #ifdef FEATURE_WATER
   vec3 n1 = texture(normalMap, uvc + vec2(uTime * 0.004, uTime * 0.002)).xyz * 2.0 - 1.0;
@@ -375,7 +378,7 @@ void main() {
 #endif
 #ifdef FEATURE_GRASS
   // blade colour: dark, occluded root → lighter tip; per-blade hue jitter from the seed
-  albedo *= mix(0.35, 1.05, clamp(vRawUv.y, 0.0, 1.0)) * (0.85 + 0.3 * fract(vCustom.z * 13.7));
+  albedo *= mix(0.55, 1.1, clamp(vRawUv.y, 0.0, 1.0)) * (0.85 + 0.3 * fract(vCustom.z * 13.7));
   rough = 0.75;
 #endif
 #ifdef FEATURE_TERRAIN

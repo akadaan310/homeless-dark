@@ -1,0 +1,192 @@
+{
+ "frames": 220,
+ "compare": {
+  "maxErr": 0.0005863606929779053,
+  "maxBend": 2.3030612468719482
+ },
+ "series": [
+  {
+   "f": 1,
+   "bendGpu": 0.00021096209766897014,
+   "bendCpu": 0.00021096101104469046,
+   "press": 0
+  },
+  {
+   "f": 10,
+   "bendGpu": 0.007797554435310362,
+   "bendCpu": 0.007797773776722965,
+   "press": 0
+  },
+  {
+   "f": 19,
+   "bendGpu": 0.01719951917102369,
+   "bendCpu": 0.01720027668780681,
+   "press": 0
+  },
+  {
+   "f": 28,
+   "bendGpu": 0.09964174695750451,
+   "bendCpu": 0.09954955806348449,
+   "press": 1
+  },
+  {
+   "f": 37,
+   "bendGpu": 1.6329469573754873,
+   "bendCpu": 1.632871664485986,
+   "press": 1
+  },
+  {
+   "f": 46,
+   "bendGpu": 1.2566695847147897,
+   "bendCpu": 1.256669136789819,
+   "press": 1
+  },
+  {
+   "f": 55,
+   "bendGpu": 1.0036113982506447,
+   "bendCpu": 1.0036125690366295,
+   "press": 1
+  },
+  {
+   "f": 64,
+   "bendGpu": 1.6365738533221175,
+   "bendCpu": 1.63661303279583,
+   "press": 1
+  },
+  {
+   "f": 73,
+   "bendGpu": 1.2701721375031385,
+   "bendCpu": 1.2701725476527774,
+   "press": 1
+  },
+  {
+   "f": 82,
+   "bendGpu": 1.0008147586419438,
+   "bendCpu": 1.000832215767779,
+   "press": 1
+  },
+  {
+   "f": 91,
+   "bendGpu": 1.6355718771469387,
+   "bendCpu": 1.6354979898587427,
+   "press": 1
+  },
+  {
+   "f": 100,
+   "bendGpu": 1.2648129558340644,
+   "bendCpu": 1.264812932287516,
+   "press": 1
+  },
+  {
+   "f": 109,
+   "bendGpu": 1.0028981346720185,
+   "bendCpu": 1.0029294479620245,
+   "press": 0.9622387886047363
+  },
+  {
+   "f": 118,
+   "bendGpu": 1.105283547204875,
+   "bendCpu": 1.1052478150821972,
+   "press": 0.9214590787887573
+  },
+  {
+   "f": 127,
+   "bendGpu": 0.9392011704567118,
+   "bendCpu": 0.9391816386125952,
+   "press": 0.8824077248573303
+  },
+  {
+   "f": 136,
+   "bendGpu": 0.9262725449036504,
+   "bendCpu": 0.9263066202628059,
+   "press": 0.8450112342834473
+  },
+  {
+   "f": 145,
+   "bendGpu": 0.870484925495435,
+   "bendCpu": 0.870447164996723,
+   "press": 0.8091996908187866
+  },
+  {
+   "f": 154,
+   "bendGpu": 0.8053106917681435,
+   "bendCpu": 0.8053372769011349,
+   "press": 0.774905800819397
+  },
+  {
+   "f": 163,
+   "bendGpu": 0.7863193823033667,
+   "bendCpu": 0.7863391220238,
+   "press": 0.7420653700828552
+  },
+  {
+   "f": 172,
+   "bendGpu": 0.7420368414633608,
+   "bendCpu": 0.7420477834145899,
+   "press": 0.7106166481971741
+  },
+  {
+   "f": 181,
+   "bendGpu": 0.7020512684763908,
+   "bendCpu": 0.7020527256486002,
+   "press": 0.6805006861686707
+  },
+  {
+   "f": 190,
+   "bendGpu": 0.6716951475910342,
+   "bendCpu": 0.6716780785673878,
+   "press": 0.6516610980033875
+  },
+  {
+   "f": 199,
+   "bendGpu": 0.6375874970006588,
+   "bendCpu": 0.6375615931816371,
+   "press": 0.6240437030792236
+  },
+  {
+   "f": 208,
+   "bendGpu": 0.605229901163223,
+   "bendCpu": 0.6051960138093305,
+   "press": 0.5975967049598694
+  },
+  {
+   "f": 217,
+   "bendGpu": 0.5761822676100379,
+   "bendCpu": 0.5761365600040973,
+   "press": 0.5722705721855164
+  }
+ ],
+ "tel": {
+  "grassSteps": 220,
+  "contacts": 0,
+  "rippleSteps": 220,
+  "splashes": 9,
+  "drops": 0,
+  "gpuPassMs": 0,
+  "window": [
+   -6,
+   -6
+  ],
+  "blades": 120000
+ },
+ "simMs": 5727.800000000047,
+ "caps": {
+  "floatRT": true,
+  "floatLinear": true,
+  "maxSamples": 4,
+  "anisotropy": 16,
+  "timer": true,
+  "maxTexture": 8192,
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "vendor": "Google Inc. (Google)"
+ },
+ "blocked": null,
+ "digests": {
+  "grass": "89def3a1d0da8a6c",
+  "contact": "01f460a5167c8992"
+ }
+}
+[warning] [.WebGL-0x89400129400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x89400129400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x89400129400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x89400129400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)

@@ -1,0 +1,180 @@
+{
+ "frames": 200,
+ "compare": {
+  "maxErr": 0.0010404586791992188,
+  "maxBend": 5.543087482452393
+ },
+ "series": [
+  {
+   "f": 1,
+   "bendGpu": 0.00021096209766897014,
+   "bendCpu": 0.00021093570700562487,
+   "press": 0
+  },
+  {
+   "f": 10,
+   "bendGpu": 0.007796982032978187,
+   "bendCpu": 0.007797773776722965,
+   "press": 0
+  },
+  {
+   "f": 19,
+   "bendGpu": 0.01719951917102369,
+   "bendCpu": 0.017198050736266624,
+   "press": 0
+  },
+  {
+   "f": 28,
+   "bendGpu": 0.09707205676232487,
+   "bendCpu": 0.09727964557697015,
+   "press": 1
+  },
+  {
+   "f": 37,
+   "bendGpu": 1.6368225742499651,
+   "bendCpu": 1.6368009061968531,
+   "press": 1
+  },
+  {
+   "f": 46,
+   "bendGpu": 1.267652284879241,
+   "bendCpu": 1.2676108331293099,
+   "press": 1
+  },
+  {
+   "f": 55,
+   "bendGpu": 1.0019744423328152,
+   "bendCpu": 1.0020160437909558,
+   "press": 1
+  },
+  {
+   "f": 64,
+   "bendGpu": 1.6331925003261034,
+   "bendCpu": 1.6332727174293247,
+   "press": 1
+  },
+  {
+   "f": 73,
+   "bendGpu": 1.2711510850984191,
+   "bendCpu": 1.2711725467182962,
+   "press": 1
+  },
+  {
+   "f": 82,
+   "bendGpu": 1.0008904694073697,
+   "bendCpu": 1.0008694864361236,
+   "press": 1
+  },
+  {
+   "f": 91,
+   "bendGpu": 1.6362199055791595,
+   "bendCpu": 1.6361502238955816,
+   "press": 1
+  },
+  {
+   "f": 100,
+   "bendGpu": 1.266911452430702,
+   "bendCpu": 1.2669203971813077,
+   "press": 1
+  },
+  {
+   "f": 109,
+   "bendGpu": 1.0026474912790544,
+   "bendCpu": 1.0026885995507988,
+   "press": 0.9622387886047363
+  },
+  {
+   "f": 118,
+   "bendGpu": 1.1003370558767354,
+   "bendCpu": 1.1003176204219776,
+   "press": 0.9214590787887573
+  },
+  {
+   "f": 127,
+   "bendGpu": 0.9423512357942327,
+   "bendCpu": 0.9423655210301856,
+   "press": 0.8824077248573303
+  },
+  {
+   "f": 136,
+   "bendGpu": 0.925942704749436,
+   "bendCpu": 0.9259715134463344,
+   "press": 0.8450112342834473
+  },
+  {
+   "f": 145,
+   "bendGpu": 0.8699804619199095,
+   "bendCpu": 0.8700029798146871,
+   "press": 0.8091996908187866
+  },
+  {
+   "f": 154,
+   "bendGpu": 0.8051304071549399,
+   "bendCpu": 0.8051474507385787,
+   "press": 0.774905800819397
+  },
+  {
+   "f": 163,
+   "bendGpu": 0.7862204510202795,
+   "bendCpu": 0.7862262942651448,
+   "press": 0.7420653700828552
+  },
+  {
+   "f": 172,
+   "bendGpu": 0.7420696709114569,
+   "bendCpu": 0.742065558492636,
+   "press": 0.7106166481971741
+  },
+  {
+   "f": 181,
+   "bendGpu": 0.7022287764906985,
+   "bendCpu": 0.7022139471190699,
+   "press": 0.6805006861686707
+  },
+  {
+   "f": 190,
+   "bendGpu": 0.6719546470161215,
+   "bendCpu": 0.6719291309830865,
+   "press": 0.6516610980033875
+  },
+  {
+   "f": 199,
+   "bendGpu": 0.6379402039440576,
+   "bendCpu": 0.6379050977676878,
+   "press": 0.6240437030792236
+  }
+ ],
+ "tel": {
+  "grassSteps": 200,
+  "contacts": 1,
+  "rippleSteps": 200,
+  "splashes": 8,
+  "drops": 0,
+  "gpuPassMs": 0,
+  "window": [
+   -8,
+   -8
+  ],
+  "blades": 48000
+ },
+ "simMs": 5067.09999999986,
+ "caps": {
+  "floatRT": true,
+  "floatLinear": true,
+  "maxSamples": 4,
+  "anisotropy": 16,
+  "timer": true,
+  "maxTexture": 8192,
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "vendor": "Google Inc. (Google)"
+ },
+ "blocked": null,
+ "digests": {
+  "grass": "89def3a1d0da8a6c",
+  "contact": "01f460a5167c8992"
+ }
+}
+[warning] [.WebGL-0x50400121400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x50400121400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x50400121400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[warning] [.WebGL-0x50400121400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)

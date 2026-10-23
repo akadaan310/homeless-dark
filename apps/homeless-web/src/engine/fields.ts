@@ -1,6 +1,6 @@
 // HOMELESS material fields (v4.1 §03–§08): the SAME DSL kernels the laboratory and the CPU
 // reference execute, stepped on the GPU every frame and sampled by the renderer.
-//  · Grass: a 16 m world-aligned window (256² cells, 6.25 cm) of blade state, driven by a
+//  · Grass: a 12 m world-aligned window (256² cells, 4.7 cm) of blade state, driven by a
 //    contact field stamped from actual foot-bone positions of the player and nearby NPCs.
 //  · Ripples: a 24 m window damped-wave field; impulses come from footsteps and tyres that
 //    land in standing water (puddle cover from the same depression law as the wet shader)
@@ -108,7 +108,7 @@ export class FieldSystem {
   readonly grass: GpuFieldSet | null = null;
   readonly ripple: GpuFieldSet | null = null;
   readonly blades: Mesh | null = null;
-  readonly N = 256; readonly dx = 0.0625; // grass: 16 m window
+  readonly N = 256; readonly dx = 0.046875; // grass: 12 m window (4.7 cm cells)
   readonly RN = 256; readonly rdx = 0.09375; // ripples: 24 m window
   origin: [number, number] = [0, 0];
   rOrigin: [number, number] = [0, 0];
